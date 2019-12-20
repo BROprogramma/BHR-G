@@ -3,7 +3,7 @@ var respecConfig = {
   specType: "IM",
   //canonicalURI: "WV",
   //publishDate: "2019-09-30",
-  maxTocLevel: 3,
+  maxTocLevel: 4,
   editors: [
     {
       name: "TNO Geologische Dienst Nederland",
