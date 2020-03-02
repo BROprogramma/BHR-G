@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<domeintabel>	
+<waardelijst>	
 	<GeologischeGrondsoort>
 		<Waarde>blokken</Waarde>
 		<Categorie>zeer grove grond</Categorie>
@@ -310,4 +310,4 @@
 		<Categorie>bijzondere grond</Categorie>
 		<Omschrijving>Een bijzondere grond, grond die vrijwel volledig uit kalk bestaat, wittig tot gelig is en een pasta-achtige consistentie heeft.</Omschrijving>
 	</GeologischeGrondsoort>
-</domeintabel>
+</waardelijst>
