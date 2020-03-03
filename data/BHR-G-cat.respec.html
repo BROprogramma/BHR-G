@@ -7697,8 +7697,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>antropogeen</em> gelijk is aan <em>ja</em>.<br clear="none">
-                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>beschrijfkwaliteit</em> van de entiteit <em>Boorprofiel</em> gelijk is aan <em>geologischStandaardOngeroerd</em> of <em>geologischUitgebreidOngeroerd</em> en de waarde van het attribuut <em>antropogeen</em> gelijk is aan <em>ja</em>.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>antropogeen</em> niet gelijk is aan <em>ja</em>.
                         </p>
                         
                      </td>
@@ -9053,17 +9053,6 @@
                      <td>Glimmergehalteklasse</td>
                   </tr>
                   <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>geologische grondsoort</em> gelijk is aan <em>mineraalarmVeen</em>, <em>zwakKleiigVeen</em>, <em>sterkKleiigVeen</em>, <em>zwakZandigVeen</em>, <em>sterkZandigVeen</em>, <em>mineraalarmeDetritus</em>, <em>zwakKleiigeDetritus</em>, <em>sterkKleiigeDetritus</em>, <em>zwakZandigeDetritus</em> of <em>sterkZandigeDetritus</em>.
-                        </p>
-                        
-                        <p>Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
-                        
-                     </td>
-                  </tr>
-                  <tr>
                      <th>Toelichting</th>
                      <td>
                         
@@ -9384,7 +9373,7 @@
                   </tr>
                   <tr>
                      <th>Kardinaliteit</th>
-                     <td>0..1</td>
+                     <td>1</td>
                   </tr>
                   <tr>
                      <th>Domein</th>
@@ -9393,20 +9382,6 @@
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Kalkgehalteklasse</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>Het attribuut mag niet aanwezig zijn wanneer de <em>geologische grondsoort</em> een schelprijke grond is.
-                        </p>
-                        
-                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>geologische grondsoort</em> gelijk is aan <em>kalkgyttja</em>.
-                        </p>
-                        
-                        <p>Het attribuut moet aanwezig zijn in alle andere gevallen.</p>
-                        
-                     </td>
                   </tr>
                   <tr>
                      <th>Toelichting</th>
@@ -11190,6 +11165,16 @@
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Bontheid</td>
                   </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>beschrijfkwaliteit</em> van de entiteit <em>Boorprofiel</em> gelijk is aan <em>geologischStandaardGeroerd</em> of <em>geologischStandaardOngeroerd</em>.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.
+                        </p>
+                        
+                     </td>
+                  </tr>
                </tbody>
             </table>
             
@@ -12957,11 +12942,10 @@
                   <th>Regels</th>
                   <td>
                      
-                     <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>beschrijfkwaliteit</em> van de entiteit <em>Boorprofiel</em> gelijk is aan <em>geologischUitgebreidGeroerd</em> of <em>geologischUitgebreidOngeroerd</em> en wanneer de <em>geologische grondsoort</em> een schelprijke grond, een organische grond, een grindige minerale grond of een niet-grindige
-                        minerale grond is.
+                     <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>beschrijfkwaliteit</em> van de entiteit <em>Boorprofiel</em> gelijk is aan <em>geologischUitgebreidGeroerd</em> of <em>geologischUitgebreidOngeroerd</em> en wanneer de <em>geologische grondsoort</em> een schelprijke grond, een organische grond, een grindrijke minerale grond of een
+                        grindarme minerale grond is.<br clear="none">
+                        De entiteit mag niet aanwezig zijn in alle andere gevallen.
                      </p>
-                     
-                     <p>De entiteit mag niet aanwezig zijn in alle andere gevallen.</p>
                      
                   </td>
                </tr>
@@ -12970,7 +12954,7 @@
                   <td>
                      
                      <p>In de geologische boormonsterbeschrijving worden zes categorieen grond onderscheiden:
-                        zeer grove minerale gronden, grindige minerale gronden, niet-grindige minerale gronden,
+                        zeer grove minerale gronden, grindrijke minerale gronden, grindarme minerale gronden,
                         schelprijke gronden, organische gronden en een restcategorie met bijzondere gronden.
                         Grond is bijna altijd een mengsel van fracties die wat betreft materiaal of korrelgrootte
                         van elkaar verschillen. Het mengsel wordt nader beschreven, behalve als het om de
@@ -13220,11 +13204,10 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut moet aanwezig zijn wanneer de <em>geologische grondsoort</em> een organische grond, een grindige minerale grond of een niet-grindige minerale grond
-                           is.
+                        <p>Het attribuut moet aanwezig zijn wanneer de <em>geologische grondsoort</em> een organische grond, een grindrijke minerale grond of een grindarme minerale grond
+                           is.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.
                         </p>
-                        
-                        <p>Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
                         
                      </td>
                   </tr>
@@ -13746,7 +13729,7 @@
                   <th>Definitie</th>
                   <td>
                      
-                     <p>De samenstelling van de fijne fractie van het minerale deel van grindige minerale
+                     <p>De samenstelling van de fijne fractie van het minerale deel van grindrijke minerale
                         grond. 
                      </p>
                      
@@ -13756,12 +13739,9 @@
                   <th>Regels</th>
                   <td>
                      
-                     <p>De entiteit moet aanwezig zijn wanneer de <em>geologische grondsoort</em> een grindige minerale grond is.
-                     </p>
-                     
-                     <p>De entiteit mag niet aanwezig zijn in alle andere gevallen.</p>
-                     
-                     <p>De som van het <em>geschat massa</em>-<em>aandeel zand</em>, <em>geschat massa</em>-<em>aandeel silt</em>, <em>geschat massa</em>-<em>aandeel lutum</em> en het <em>geschat massa</em>-<em>aandeel grind</em> van de entiteit <em>Fractieverdeling</em> is gelijk aan <em>100</em>.
+                     <p>De entiteit moet aanwezig zijn wanneer de <em>geologische grondsoort</em> een grindrijke minerale grond is.<br clear="none">
+                        De entiteit mag niet aanwezig zijn in alle andere gevallen.<br clear="none">
+                        De som van het <em>geschat massa</em>-<em>aandeel zand</em>, <em>geschat massa</em>-<em>aandeel silt</em>, <em>geschat massa</em>-<em>aandeel lutum</em> en het <em>geschat massa</em>-<em>aandeel grind</em> van de entiteit <em>Fractieverdeling</em> is gelijk aan <em>100</em>.
                      </p>
                      
                   </td>
@@ -13771,10 +13751,10 @@
                   <td>
                      
                      <p>De fijne fractie van het minerale bestanddeel van grond omvat de zand-, silt en lutumfracties.
-                        Van grindige grond worden de aandelen in de massa geschat en wordt het geheel van
-                        de vier minerale fracties op honderd procent gesteld. Omdat grindige minerale grond
-                        voor ten minste 30 procent uit grind bestaat, bedraagt de bijdrage van de fijne fracties
-                        altijd minder dan 70 procent.
+                        Van grindrijke grond worden de aandelen in de massa geschat en wordt het geheel van
+                        de vier minerale fracties op honderd procent gesteld. Omdat grindrijke minerale grond
+                        voor ten minste 30 % uit grind bestaat, bedraagt de bijdrage van de fijne fracties
+                        altijd minder dan 70 %.
                      </p>
                      
                   </td>
@@ -13954,8 +13934,8 @@
                   <th>Definitie</th>
                   <td>
                      
-                     <p>De samenstelling van de fijne fractie van het minerale deel van niet-grindige minerale
-                        grond. 
+                     <p>De samenstelling van de fijne fractie van het minerale deel van grindarme minerale
+                        grond.
                      </p>
                      
                   </td>
@@ -13964,23 +13944,9 @@
                   <th>Regels</th>
                   <td>
                      
-                     <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>geologische grondsoort</em> van de entiteit <em>Grond</em> gelijk is aan <em>zwakSiltigeKlei</em>, <em>matigSiltigeKlei</em>, <em>sterkSiltigeKlei</em>, <em>uiterstSiltigeKlei</em>, <em>zwakZandigeKlei</em>, <em>matigZandigeKlei</em>, <em>sterkZandigeKlei</em>, <em>zwakZandigeLeem</em>, <em>sterkZandigeLeem</em>, <em>zand</em>, <em>kleiigZand</em>, <em>zwakSiltigZand</em>, <em>matigSiltigZand</em>, <em>sterkSiltigZand</em> of <em>uiterstSiltigZand</em>.
-                     </p>
-                     
-                     <p>De entiteit mag niet aanwezig zijn in alle andere gevallen.</p>
-                     
-                     <p>De som van het <em>geschat massa</em>-<em>aandeel zand</em>, <em>geschat massa</em>-<em>aandeel silt</em> en <em>geschat massa</em>-<em>aandeel lutum</em> is gelijk aan <em>100</em>.
-                     </p>
-                     
-                  </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     
-                     <p>De entiteit moet aanwezig zijn wanneer de geologische grondsoort een niet-grindige
-                        minerale grond is.
+                     <p>De entiteit moet aanwezig zijn wanneer de <em>geologische grondsoort</em> een grindarme minerale grond is.<br clear="none">
                         De entiteit mag niet aanwezig zijn in alle andere gevallen.
+                        De som van het <em>geschat massa</em>-<em>aandeel zand</em>, <em>geschat massa</em>-<em>aandeel silt</em> en <em>geschat massa</em>-<em>aandeel lutum</em> is gelijk aan <em>100</em>.
                      </p>
                      
                   </td>
@@ -14440,7 +14406,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Meetwaarde 4.2</td>
+                     <td>Meetwaarde 4.3</td>
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Type</th>
@@ -14490,7 +14456,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Meetwaarde 4.2</td>
+                     <td>Meetwaarde 4.3</td>
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Type</th>
@@ -26157,6 +26123,16 @@
                <td>
                   
                   <p>Opgebracht materiaal dat los gestort is.</p>
+                  
+               </td>
+            </tr>
+            <tr>
+               <td>nietBepaald</td>
+               <td>
+                  
+                  <p>De wijze waarop de mens in de opbouw van de ondergrond heeft ingegrepen, kon niet
+                     worden bepaald.
+                  </p>
                   
                </td>
             </tr>
