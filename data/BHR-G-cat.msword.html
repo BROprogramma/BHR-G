@@ -13,7 +13,7 @@
    <body>
       <p>Conceptual model/Geologisch booronderzoek (BHR-G)/20200203</p>
       <p>Imvertor: 1.59.2</p>
-      <p>Model release: Conceptualmodel-GeologischbooronderzoekBHR-G-0.91-0-20200203-20200305-090303</p>
+      <p>Model release: Conceptualmodel-GeologischbooronderzoekBHR-G-0.91-0-20200203-20200305-155224</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -259,8 +259,8 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De organisatie moet binnen de basisregistratie ondergrond als bronhouder van booronderzoek
-                                    bekend zijn.
+                                 <p>De organisatie moet bekend zijn binnen de basisregistratie ondergrond als bronhouder
+                                    van booronderzoek.
                                  </p>
                                  
                               </td>
@@ -375,8 +375,8 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De organisatie moet binnen de basisregistratie ondergrond als dataleverancier van
-                                    booronderzoek bekend zijn.
+                                 <p>De organisatie moet bekend zijn binnen de basisregistratie ondergrond als dataleverancier
+                                    van booronderzoek.
                                  </p>
                                  
                               </td>
@@ -652,12 +652,9 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>registratiestatus</em> van de entiteit <em>Registratiegeschiedenis</em> gelijk is aan <em>voltooid</em>.
-                                 </p>
-                                 
-                                 <p>Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
-                                 
-                                 <p>De <em>rapportagedatum onderzoek</em> mag niet liggen na het <em>tijdstip voltooiing registratie</em> van de entiteit <em>Registratiegeschiedenis</em>.
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>registratiestatus</em> van de entiteit <em>Registratiegeschiedenis</em> gelijk is aan <em>voltooid</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen.<br clear="none">
+                                    De <em>rapportagedatum onderzoek</em> mag niet liggen na het <em>tijdstip voltooiing registratie</em> van de entiteit <em>Registratiegeschiedenis</em>.
                                  </p>
                                  
                               </td>
@@ -775,10 +772,9 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>lokaal verticaal referentiepunt</em> van de entiteit <em>Aangeleverde verticale positie</em> gelijk is aan <em>maaiveld</em>. 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>lokaal verticaal referentiepunt</em> van de entiteit <em>Aangeleverde verticale positie</em> gelijk is aan <em>maaiveld</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen.
                                  </p>
-                                 
-                                 <p>Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
                                  
                               </td>
                            </tr>
@@ -832,8 +828,8 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De organisatie moet binnen de basisregistratie ondergrond als uitvoerder van booronderzoek
-                                    bekend zijn.
+                                 <p>De organisatie moet bekend zijn binnen de basisregistratie ondergrond als uitvoerder
+                                    van booronderzoek.
                                  </p>
                                  
                               </td>
@@ -1780,10 +1776,8 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De <em>datum gebeurtenis</em> mag niet liggen voor de <em>startdatum rapportage</em> van de entiteit <em>Rapportagegeschiedenis</em>.
-                                 </p>
-                                 
-                                 <p>De <em>datum gebeurtenis</em> mag niet liggen na de <em>einddatum rapportage</em> van de entiteit <em>Rapportagegeschiedenis</em>.
+                                 <p>De <em>datum gebeurtenis</em> mag niet liggen voor de <em>startdatum rapportage</em> van de entiteit <em>Rapportagegeschiedenis</em>.<br clear="none">
+                                    De <em>datum gebeurtenis</em> mag niet liggen na de <em>einddatum rapportage</em> van de entiteit <em>Rapportagegeschiedenis</em>.
                                  </p>
                                  
                               </td>
@@ -1867,7 +1861,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De locatie ligt in Nederland of zijn Exclusieve Economische Zone.</p>
+                                 <p>De locatie moet liggen in Nederland of zijn Exclusieve Economische Zone.</p>
                                  
                               </td>
                            </tr>
@@ -1910,11 +1904,11 @@
                               <td>Referentiestelsel</td>
                            </tr>
                            <tr>
-                              <th>Toelichting</th>
+                              <th>Regels</th>
                               <td>
                                  
-                                 <p>Een locatie aan de landzijde van de UNCLOS-basislijn is gedefinieerd in RD of ETRS89
-                                    en een locatie aan de zeezijde van de lijn in WGS84 of ETRS89.
+                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>ETRS89</em> of <em>RD</em> wanneer de locatie aan de landzijde van de UNCLOS-basislijn ligt.<br clear="none">
+                                    De waarde van het attribuut moet gelijk zijn aan <em>ETRS89</em> of <em>WGS84</em> wanneer de locatie aan de zeezijde van de UNCLOS-basislijn ligt.
                                  </p>
                                  
                               </td>
@@ -2070,8 +2064,8 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De organisatie moet binnen de basisregistratie ondergrond als uitvoerder van booronderzoek
-                                    bekend zijn.
+                                 <p>De organisatie moet bekend zijn binnen de basisregistratie ondergrond als uitvoerder
+                                    van booronderzoek.
                                  </p>
                                  
                               </td>
@@ -2151,8 +2145,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>maaiveld</em> of <em>waterbodem</em> wanneer de locatie op land ligt.<br clear="none">
-                                    De waarde van het attribuut moet gelijk zijn aan <em>waterbodem</em> wanneer de locatie op zee ligt. 
+                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>waterbodem</em> wanneer de locatie aan de zeezijde van de UNCLOS-basislijn ligt.
                                  </p>
                                  
                               </td>
@@ -2284,11 +2277,9 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>lokaal</em> 
-                                    <em>verticaal referentiepunt</em> gelijk is aan <em>waterbodem</em>. 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>lokaal verticaal referentiepunt</em> gelijk is aan <em>waterbodem</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen.
                                  </p>
-                                 
-                                 <p>Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
                                  
                               </td>
                            </tr>
@@ -2347,10 +2338,8 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>NAP</em> wanneer de locatie aan de landzijde van de UNCLOS-basislijn ligt. 
-                                 </p>
-                                 
-                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>LAT</em> of <em>MSL</em> wanneer de locatie aan de zeezijde van de UNCLOS-lijn ligt.
+                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>NAP</em> wanneer de locatie aan de landzijde van de UNCLOS-basislijn ligt.<br clear="none">
+                                    De waarde van het attribuut moet gelijk zijn aan <em>LAT</em> of <em>MSL</em> wanneer de locatie aan de zeezijde van de UNCLOS-lijn ligt.
                                  </p>
                                  
                               </td>
@@ -2401,7 +2390,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De datum <em>verticale positiebepaling</em> mag niet liggen na de <em>startdatum rapportage</em> van de entiteit <em>Rapportagegeschiedenis</em>.
+                                 <p>De <em>datum verticale positiebepaling</em> mag niet liggen na de <em>startdatum rapportage</em> van de entiteit <em>Rapportagegeschiedenis</em>.
                                  </p>
                                  
                               </td>
@@ -2517,8 +2506,8 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De organisatie moet binnen de basisregistratie ondergrond als uitvoerder van booronderzoek
-                                    bekend zijn.
+                                 <p>De organisatie moet bekend zijn binnen de basisregistratie ondergrond als uitvoerder
+                                    van booronderzoek.
                                  </p>
                                  
                               </td>
@@ -2717,12 +2706,9 @@
                            <th>Regels</th>
                            <td>
                               
-                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>terreintoestand bepaald</em> van de entiteit <em>Booronderzoek</em> gelijk is aan <em>ja</em>.
-                              </p>
-                              
-                              <p>De entiteit mag niet aanwezig zijn in alle andere gevallen.</p>
-                              
-                              <p>Ten minste één van de attributen <em>bodemgebruik</em>, <em>ligging op grondlichaam</em>, <em>hydrologische omstandigheid</em>, <em>landschapselement</em>, <em>actueel proces</em> of <em>tijdelijke verandering</em> moet aanwezig zijn.
+                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>terreintoestand bepaald</em> van de entiteit <em>Booronderzoek</em> gelijk is aan <em>ja</em>.<br clear="none">
+                                 De entiteit mag niet aanwezig zijn in alle andere gevallen.<br clear="none">
+                                 Ten minste één van de volgende gegevens moet aanwezig zijn: het attribuut <em>bodemgebruik</em>, <em>ligging op grondlichaam</em>, <em>landschapselement</em>, <em>hydrologische omstandigheid</em>, <em>actueel proces</em> of <em>tijdelijke verandering</em>.
                               </p>
                               
                            </td>
@@ -3276,10 +3262,9 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>voorbereiding</em> gelijk is aan <em>bevriezing</em>, <em>injectieDragendVermogen</em>, <em>injectieWaterdoorlatendheid</em>, tijdelijkeVerbuizingVooraf, <em>vacuümconsolidatie</em> of <em>verticaleDrainage</em>. 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>voorbereiding</em> gelijk is aan <em>bevriezing</em>, <em>injectieDragendVermogen</em>, <em>injectieWaterdoorlatendheid</em>, <em>tijdelijkeVerbuizingVooraf</em>, <em>vacuumconsolidatie</em> of <em>verticaleDrainage</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen.
                                  </p>
-                                 
-                                 <p>Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
                                  
                               </td>
                            </tr>
@@ -3401,10 +3386,9 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>traject weggegraven</em> gelijk is aan <em>ja</em>. 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>traject weggegraven</em> gelijk is aan <em>ja</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen.
                                  </p>
-                                 
-                                 <p>Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
                                  
                               </td>
                            </tr>
@@ -3660,8 +3644,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>boortechniek</em> van de entiteit <em>Geboord</em> 
-                                    <em>interval</em> in ten minste 1 van de geboorde intervallen gelijk is aan <em>handDraaien</em>, <em>mechanischDraaienOnverbuisd</em>, <em>mechanischGrijpen</em>, <em>mechanischSpuitenOnverbuisd</em> of <em>mechanischSpuitenDraaien</em>.<br clear="none">
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>boortechniek</em> van de entiteit <em>Geboord interval</em> in ten minste één van de geboorde intervallen gelijk is aan <em>handDraaien</em>, <em>mechanischDraaienOnverbuisd</em>, <em>mechanischGrijpen</em>, <em>mechanischSpuitenOnverbuisd</em> of <em>mechanischSpuitenDraaien</em>.<br clear="none">
                                     Het attribuut mag niet aanwezig zijn in alle andere gevallen.
                                  </p>
                                  
@@ -3734,10 +3717,9 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>tijdelijke verbuizing aangebracht</em> gelijk is aan <em>ja</em>. 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>tijdelijke verbuizing aangebracht</em> gelijk is aan <em>ja</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen.
                                  </p>
-                                 
-                                 <p>Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
                                  
                               </td>
                            </tr>
@@ -3787,7 +3769,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>boortechniek</em> van de entiteit <em>Geboord interval</em> in ten minste 1 van de geboorde intervallen gelijk is aan <em>mechanischDraaienOnverbuisd</em>, <em>mechanischGrijpen</em>, <em>mechanischSpuitenOnverbuisd</em> of <em>mechanischSpuitenDraaien</em>.<br clear="none">
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>boortechniek</em> van de entiteit <em>Geboord interval</em> in ten minste één van de geboorde intervallen gelijk is aan <em>mechanischDraaienOnverbuisd</em>, <em>mechanischGrijpen</em>, <em>mechanischSpuitenOnverbuisd</em> of <em>mechanischSpuitenDraaien</em>.<br clear="none">
                                     Het attribuut mag niet aanwezig zijn in alle andere gevallen.
                                  </p>
                                  
@@ -3851,10 +3833,9 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>spoeling gebruikt</em> gelijk is aan <em>ja</em>. 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>spoeling gebruikt</em> gelijk is aan <em>ja</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen.
                                  </p>
-                                 
-                                 <p>Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
                                  
                               </td>
                            </tr>
@@ -3914,7 +3895,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>lokaal verticaal referentiepunt</em> van de entiteit <em>Aangeleverde verticale positie</em> gelijk is aan <em>waterbodem</em>. 
+                                 <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>lokaal verticaal referentiepunt</em> van de entiteit <em>Aangeleverde verticale positie</em> gelijk is aan <em>waterbodem</em>.
                                  </p>
                                  
                               </td>
@@ -4203,8 +4184,8 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De organisatie moet binnen de basisregistratie ondergrond als uitvoerder van booronderzoek
-                                    bekend zijn.
+                                 <p>De organisatie moet bekend zijn binnen de basisregistratie ondergrond als uitvoerder
+                                    van booronderzoek.
                                  </p>
                                  
                               </td>
@@ -4919,8 +4900,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Bij de classificatie van bemonsteren wordt gekeken naar de manier waarop het gebruikte
-                                    apparaat de grond in is gedreven.
+                                 <p>Bij de classificatie van bemonsteren wordt gekeken naar de manier waarop het materiaal
+                                    uit de ondergrond naar boven is gehaald.
                                  </p>
                                  
                               </td>
@@ -6762,7 +6743,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Een extra hulpmiddel dat voor het beschijven van de monsters is gebruikt.</p>
+                                 <p>Een extra hulpmiddel dat voor het beschrijven van de monsters is gebruikt.</p>
                                  
                               </td>
                            </tr>
@@ -6796,7 +6777,7 @@
                               <td>
                                  
                                  <p>Het gegeven wordt alleen vastgelegd wanneer er in aanvulling op de procedure extra
-                                    hulpmiddelen zijn gebruikt. De hulpmiddelen wordt gebruikt om eigenschappen van de
+                                    hulpmiddelen zijn gebruikt. De hulpmiddelen worden gebruikt om eigenschappen van de
                                     zandfractie op een meer betrouwbare wijze te bepalen.
                                  </p>
                                  
@@ -7171,7 +7152,7 @@
                               <td>
                                  
                                  <p>Het gegeven is bedoeld voor grondmonsters die in het laboratorium zijn beschreven,
-                                    omdat die vocht kunnen hebben verloren. Monsters beschreven in het veld of veldlab
+                                    omdat die vocht kunnen hebben verloren. Monsters beschreven in het veld of een veldlab
                                     zijn altijd veldvochtig.
                                  </p>
                                  
@@ -7388,11 +7369,11 @@
                                  vallen de grenzen samen met grenzen tussen monsters en is de laag een beschrijfeenheid.
                                  In een boorprofiel dat het resultaat is van de beschrijving van ongeroerde monsters,
                                  markeren de grenzen veranderingen in materiaal of structuur en is de laag een genetische
-                                 eenheid, een eenheid die op een bepaalde manier is ontstaan. Lagen aan maaiveld, kunnen
-                                 gevormd zijn door de mens, en heten dan antropogeen. Niet-antropogene lagen zijn gewoonlijk
-                                 lagen waarvan het materiaal onder gelijke omstandigheden is afgezet. Een uitzondering
-                                 daarop zijn lagen die gedefinieerd zijn op grond van structuur die na afzetting van
-                                 het materiaal is ontstaan; die lagen heten post-sedimentair.
+                                 eenheid, een eenheid die op een bepaalde manier is ontstaan. Lagen aan of nabij maaiveld,
+                                 kunnen gevormd zijn door de mens, en heten dan antropogeen. Niet-antropogene lagen
+                                 zijn gewoonlijk lagen waarvan het materiaal onder gelijke omstandigheden is afgezet.
+                                 Een uitzondering daarop zijn lagen die gedefinieerd zijn op grond van structuur die
+                                 na afzetting van het materiaal is ontstaan; die lagen heten post-sedimentair.
                               </p>
                               
                            </td>
@@ -8426,7 +8407,7 @@
                                  antropogene bestanddelen die wel en antropogene bestanddelen die geen betekenis hebben
                                  vanuit een archeologisch perspectief. Wanneer ongeroerde monsters archeologisch interessante
                                  bestanddelen bevatten kan dat gebruikt als criterium voor het bepalen van laaggrenzen.
-                                 Omdat een precieze duiding van wat archeologsche betekenis heeft niet binnen de expertise
+                                 Omdat een precieze duiding van wat archeologische betekenis heeft niet binnen de expertise
                                  van geologische beschrijvers valt, zijn de gegevens niet authentiek.
                               </p>
                               
@@ -8529,7 +8510,7 @@
                            <td>
                               
                               <p>Van een laag die niet uit lagen bestaat die in grondsoort verschillen, maar uit anders,
-                                 meer grillig, gevormde delen die in grondsoort verschillen, een deel dat dezelfde
+                                 meer grillig, gevormde delen die in grondsoort verschillen, een deel dat uit dezelfde
                                  grondsoort bestaat.
                               </p>
                               
@@ -8551,9 +8532,9 @@
                               
                               <p>Sommige lagen worden door syn- of post-sedimentaire processen dermate verstoord dat
                                  ze niet goed als laag of lagen beschreven kunnen worden. Voorbeelden zijn sterk gekryoturbeerde
-                                 of doorgraven lagen waar twee of meer soorten grond als grillige vormen in een interval
-                                 aanwezig zijn. Ook zeer grillige inspoelingslagen kunnen op deze wijze in twee of
-                                 meer laagdelen beschreven worden.
+                                 of doorgraven intervallen waarin twee of meer soorten grond een grillige samenhang
+                                 vertonen. Ook zeer grillige inspoelingslagen kunnen op deze wijze in twee of meer
+                                 laagdelen beschreven worden.
                               </p>
                               
                            </td>
@@ -8908,7 +8889,7 @@
                               <td>
                                  
                                  <p>Voor de geoloog staat bij het benoemen van de grondsoort de samenstelling van het
-                                    materiaal centraal. De gebruikte classificatie is een in de Standaard BoorBeschrijvingsmethode
+                                    materiaal centraal. De gebruikte classificatie is een in de Standaard Boor Beschrijvingsmethode
                                     SBB 6.0 beschreven uitbreiding van de driehoeksystematiek die de basis vormt van de
                                     tot 2019 algemeen gebruikte norm NEN 5104. 
                                  </p>
@@ -9043,7 +9024,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De mate van vezeligheid van organische grond uitgedrukt in een klasse.</p>
+                                 <p>Het gehalte aan glimmer uitgedrukt in een klasse.</p>
                                  
                               </td>
                            </tr>
@@ -9062,17 +9043,6 @@
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
                               <td>Glimmergehalteklasse</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>De textuur wordt bepaald voor organische gronden, met uitzondering van bruinkool en
-                                    gyttja. Bruinkool bestaat uit een vast mengsel van vezels en amorfe massa en gyttja
-                                    is per definitie amorf. De waarde voor humus en detritus is fijnvezelig of grofvezelig.
-                                 </p>
-                                 
-                              </td>
                            </tr>
                         </tbody>
                      </table>
@@ -9449,7 +9419,7 @@
                                  
                                  <p>Het bepalen van kleur kent een zekere mate van subjectiviteit wanneer dat gebeurt
                                     zonder gebruik te maken van hulpmiddelen en dat is het geval bij de standaardmanier
-                                    van beschijven. Bij de uitgebreide manier wordt gebruikt gemaakt van een kleurenkaart.
+                                    van beschrijven. Bij de uitgebreide manier wordt gebruikt gemaakt van een kleurenkaart.
                                     Om de namen van kleuren een meer objectieve basis te geven, is de vertaling naar de
                                     codes van de Munsell kleurenkaarten voor grond en gesteente opgenomen in de  waardelijst
                                     (Munsell Soil Color Chart en Munsell Rock Color Chart). 
@@ -9740,7 +9710,8 @@
                                  
                                  <p>De textuur wordt bepaald voor organische gronden, met uitzondering van bruinkool en
                                     gyttja. Bruinkool bestaat uit een vast mengsel van vezels en amorfe massa en gyttja
-                                    is per definitie amorf. De waarde voor humus en detritus is fijnvezelig of grofvezelig.
+                                    is per definitie amorf. De waarde voor humus en detritus is vezelig, fijnvezelig of
+                                    grofvezelig.<br clear="none">
                                     Bij het beschrijven van organische gronden, wordt het gegeven alleen vastgelegd wanneer
                                     de waarde bepaald kan worden. De uitvoerder beoordeelt zelf wanneer dat het geval
                                     is.
@@ -10512,7 +10483,7 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>Massapercentageklasse</td>
+                              <td>MassaPercentageklasse</td>
                            </tr>
                         </tbody>
                      </table>
@@ -10550,7 +10521,7 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>Massapercentageklasse</td>
+                              <td>MassaPercentageklasse</td>
                            </tr>
                         </tbody>
                      </table>
@@ -10588,7 +10559,7 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>Massapercentageklasse</td>
+                              <td>MassaPercentageklasse</td>
                            </tr>
                         </tbody>
                      </table>
@@ -10941,7 +10912,7 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>Massapercentageklasse</td>
+                              <td>MassaPercentageklasse</td>
                            </tr>
                         </tbody>
                      </table>
@@ -11059,7 +11030,7 @@
                               <td>
                                  
                                  <p>De indeling is naar Powers, 1953 en Hillen &amp; Kruse, 1981. Het gegeven geeft inzicht
-                                    in de omstandigheden waaronder het sediment is afgezet en de herkomst van het materiaal.
+                                    in het afzettingsmilieu en de herkomst van het materiaal.
                                  </p>
                                  
                               </td>
@@ -11967,7 +11938,7 @@
                               <td>
                                  
                                  <p>De categorie kan betrekking hebben op een soort of subsoort, maar ook op een geslacht
-                                    of een hierarchisch hogere taxonomische eenheid.<br clear="none">
+                                    of een hiërarchisch hogere taxonomische eenheid.<br clear="none">
                                     Bij de standaard beschrijving wordt een veel kortere lijst gebruikt dan bij de uitgebreide
                                     beschrijving.
                                  </p>
@@ -12578,7 +12549,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Een of meer geisoleerde, veelal grillig gevormde en onduidelijk begrensde voorkomens
+                              <p>Een of meer geïsoleerde, veelal grillig gevormde en onduidelijk begrensde voorkomens
                                  van een afwijkende grondsoort die herkend worden als ontstaan uit vervorming van eerder
                                  afgezet sediment.
                               </p>
@@ -12599,7 +12570,7 @@
                            <td>
                               
                               <p>Het gegeven wordt alleen vastgelegd bij de beschrijving van ongeroerde monsters. Insluitsels
-                                 varieren in grootte van enkele millimeters tot enkele decimeters.
+                                 variëren in grootte van enkele millimeters tot enkele decimeters.
                               </p>
                               
                            </td>
@@ -12699,7 +12670,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Een of meer geisoleerde, duidelijk begrensde, lensvormige voorkomens van een afwijkende
+                              <p>Een of meer geïsoleerde, duidelijk begrensde, lensvormige voorkomens van een afwijkende
                                  grondsoort, die herkend worden als in deeltjes afgezet.
                               </p>
                               
@@ -12719,7 +12690,7 @@
                            <td>
                               
                               <p>Het gegeven wordt alleen vastgelegd bij de beschrijving van ongeroerde monsters. Lenzen
-                                 varieren in grootte van enkele millimeters tot enkele centimeters. Er is voor gekozen
+                                 variëren in grootte van enkele millimeters tot enkele centimeters. Er is voor gekozen
                                  de lensvormige voorkomens van fijnkorrelig materiaal en zand die typisch zijn voor
                                  flaser- en linsengelaagdheid niet als Sedimentlens te beschrijven maar als een sedimentaire
                                  structuur. 
@@ -12859,7 +12830,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Een categorie van fossiele overblijselen van dieren.</p>
+                                 <p>Een categorie van fossiele overblijfselen van dieren.</p>
                                  
                               </td>
                            </tr>
@@ -12964,12 +12935,12 @@
                            <th>Toelichting</th>
                            <td>
                               
-                              <p>In de geologische boormonsterbeschrijving worden zes categorieen grond onderscheiden:
+                              <p>In de geologische boormonsterbeschrijving worden zes categorieën grond onderscheiden:
                                  zeer grove minerale gronden, grindrijke minerale gronden, schelprijke gronden, organische
                                  gronden, grindarme minerale gronden en een restcategorie met bijzondere gronden. Grond
                                  is bijna altijd een mengsel van fracties die wat betreft materiaal of korrelgrootte
                                  van elkaar verschillen. Het mengsel wordt nader beschreven, behalve als het om de
-                                 categorieen zeer grove minerale gronden en bijzondere gronden gaat. Dat gebeurt door
+                                 categorieën zeer grove minerale gronden en bijzondere gronden gaat. Dat gebeurt door
                                  de grond te beschouwen als een mengsel van zes fracties en dat zijn grind, zand, silt,
                                  lutum, schelpmateriaal en organische stof. Van ieder van de fracties wordt door experts
                                  het aandeel geschat. Over welk totaal het aandeel wordt bepaald verschilt per categorie
@@ -13094,7 +13065,7 @@
                                  
                                  <p>Het gegeven werd voor de invoering van de Standaard Boorbeschrijfmethode 6 versie
                                     2020 systematisch vastgelegd. Het gegeven past eigenlijk niet in de systematiek die
-                                    voor het vastleggen van de fractieverdeling volgens de Standaard Boorbeschrijfmethode
+                                    voor het vastleggen van de fractieverdeling volgens de Standaard Boor Beschrijvingsmethode
                                     6 versie 2020 wordt gehanteerd, maar kan door de uitvoerder vastgelegd worden om de
                                     aansluiting op oudere methodes te borgen. 
                                  </p>
@@ -15060,7 +15031,7 @@
                   <tr>
                      <td>diatomiet</td>
                      <td>bijzondere grond</td>
-                     <td>Een bijzondere grond, grond die vrijwel volledig uit de kiezelskeletjes van diatomeeen
+                     <td>Een bijzondere grond, grond die vrijwel volledig uit de kiezelskeletjes van diatomeeën
                         bestaat, wittig en veelal dun gelaagd of gelamineerd is.
                      </td>
                   </tr>
@@ -16079,8 +16050,8 @@
                      <td>GDN_SBB6v2020</td>
                      <td>
                         
-                        <p>Standaard Boorbeschrijfmethode 6 versie 2020. Een door de Geologische Dienst Nederland
-                           vastgestelde procedure voor de beschrijving van boormonsters.
+                        <p>Standaard Boor Beschrijvingsmethode 6 versie 2020. Een door de Geologische Dienst
+                           Nederland vastgestelde procedure voor de beschrijving van boormonsters.
                         </p>
                         
                      </td>
@@ -16773,7 +16744,7 @@
                      <td>mechanischTrillen</td>
                      <td>
                         
-                        <p>De techniek waarbij een apparaat mechanisch wordt aangedreven en door hoog-frequent
+                        <p>De techniek waarbij een apparaat mechanisch wordt aangedreven en door hoogfrequent
                            trillen dieper de grond in wordt gedreven. Het trillen kan gecombineerd worden met
                            drukken of draaien. Voorbeelden zijn (roterend) sonisch boren, vibrocoring en boren
                            met de trilflip, geodoff, de Zenkovitch-boor en de Aqualocksampler.
@@ -17224,7 +17195,7 @@
                      <td>hellingmateriaal</td>
                      <td>
                         
-                        <p>Grond die door hellingsprocessen verplaatst is en bestaat uit een mengsel van lokaal
+                        <p>Grond die door hellingprocessen verplaatst is en bestaat uit een mengsel van lokaal
                            hoger gelegen grond en grond die al deel uitmaakte van de helling. De waarde is alleen
                            van toepassing bij de uitgebreide beschrijving.
                         </p>
@@ -17327,7 +17298,7 @@
                            of overstroming wat leidt tot het oplichten van het bovenste veenpakket. Dit ingespoelde
                            materiaal wordt tussen de twee veenlagen afgezet, de grens met het boven- en onderliggende
                            veenpakket is zeer scherp. Het materiaal kan zandig of kleiig zijn; in het laatste
-                           geval wordt er ookwel gesproken over klapklei. Diktes variëren van enkele millimeters
+                           geval wordt er wel gesproken over klapklei. Diktes variëren van enkele millimeters
                            tot meer dan 10 cm.
                         </p>
                         
@@ -18239,8 +18210,8 @@
                         
                         <p>Grind dat aangevoerd is door het Maas riviersysteem en voornamelijk afkomstig uit
                            de Ardennen, Noord-Frankrijk en de Vogezen. Kenmerkende grindsoorten zijn: groot aandeel
-                           wittekwarts met in mindere mate heldere kwarts, gerolde vuursteen (ook wel Maas-eitjes),
-                           conglomeraat en kalksteen. Zeldzame gidssoorten zijn: Révinienkwartsiet en Vogezengraniet.
+                           witte kwarts met in mindere mate heldere kwarts, gerolde vuursteen (ook wel Maas-eitjes),
+                           conglomeraat en kalksteen. Zeldzame gidssoorten zijn: Revinienkwartsiet en Vogezengraniet.
                         </p>
                         
                      </td>
@@ -18250,9 +18221,9 @@
                      <td>
                         
                         <p>Grind dat aangevoerd is door het Noord-Duits riviersysteem en voornamelijk afkomstig
-                           is uit de Noord-Duitse Middengebergten. Kenmerkende veel voorkomende grindsoorten
-                           zijn: porfier, lydiet, rode zandsteen, witte en heldere kwarts.
-                           Een zeldzame gidssoort is: Thüringerwoudporfier.
+                           is uit de Noord-Duitse middengebergten. Kenmerkende veel voorkomende grindsoorten
+                           zijn: porfier, lydiet, rode zandsteen, witte en heldere kwarts. Een zeldzame gidssoort
+                           is: Thüringerwoudporfier.
                         </p>
                         
                      </td>
@@ -20176,8 +20147,8 @@
                      <td>gemoerneerdTerrein</td>
                      <td>
                         
-                        <p>Menselijk landschapselement. Onregelmatig hobbelig, terrein onstaan door delving van
-                           zout veen. De ontstane putten werden daarna gedempt met uitgegraven klei.
+                        <p>Menselijk landschapselement. Onregelmatig hobbelig, terrein ontstaan door delving
+                           van zout veen. De ontstane putten werden daarna gedempt met uitgegraven klei.
                         </p>
                         
                      </td>
@@ -20403,7 +20374,7 @@
                      <td>rivierterras</td>
                      <td>
                         
-                        <p>Natuurlijk landschapselement. Restant van een vroegere riviervlakte die door tectonische
+                        <p>Natuurlijk landschapselement. Restant van een vroegere riviervlakte die door tektonische
                            en klimatologische processen hoger ligt dan de huidige rivierbedding.
                         </p>
                         
@@ -20452,7 +20423,7 @@
                      <td>zandbank</td>
                      <td>
                         
-                        <p>Natuurlijk zeebodemelement. Ondiepe banken van zand die vaak onstaan in de branding
+                        <p>Natuurlijk zeebodemelement. Ondiepe banken van zand die vaak ontstaan in de branding
                            nabij een strand.
                         </p>
                         
@@ -20472,7 +20443,7 @@
                      <td>zetwal</td>
                      <td>
                         
-                        <p>Menselijk landschapselement. Vaak smalle, langerekte strook grond in het veengebied,
+                        <p>Menselijk landschapselement. Vaak smalle, langgerekte strook grond in het veengebied,
                            waar het uitgebaggerde veen op te drogen werd gelegd om er turven van te maken.
                         </p>
                         
@@ -20482,8 +20453,8 @@
                      <td>zinkgat</td>
                      <td>
                         
-                        <p>Natuurlijk landschapselement. Vertikaal gat in kalksteen van enkele meters breed en
-                           diep, dat vaak opgevuld is met lokaal hellingsmateriaal.
+                        <p>Natuurlijk landschapselement. Verticaal gat in kalksteen van enkele meters breed en
+                           diep, dat vaak opgevuld is met lokaal hellingmateriaal.
                         </p>
                         
                      </td>
@@ -20684,8 +20655,8 @@
             </table>
             
          </section>
-         <section id="detail_class_DomeinmodelBHRBHRG_Massapercentageklasse">
-            <h3>  Massapercentageklasse</h3>
+         <section id="detail_class_DomeinmodelBHRBHRG_MassaPercentageklasse">
+            <h3>  MassaPercentageklasse</h3>
             
             <table style="width: 100%;" class="list">
                <colgroup></colgroup>
@@ -20711,7 +20682,7 @@
                      <th>Omschrijving</th>
                   </tr>
                   <tr>
-                     <td>spoorTot&nbsp;1</td>
+                     <td>spoorTot1</td>
                      <td>
                         
                         <p>Er komt een spoor voor en dat betekent dat het aandeel in de massa minder dan 1 %
@@ -21222,7 +21193,7 @@
                            2007 en 2012. Voor de bepaling van de verticale positie is het rasterbestand van 50
                            x 50 cm gebruikt. De uitvoerder heeft met kennis van zaken gebruik gemaakt van het
                            ruwe rasterbestand of het gefilterde rasterbestand, het zogenaamde maaiveldraster
-                           is gefilterd voor elementen die op het maaiveld staan zoals begroeing en bebouwing.
+                           is gefilterd voor elementen die op het maaiveld staan zoals begroeiing en bebouwing.
                         </p>
                         
                      </td>
@@ -21235,7 +21206,7 @@
                            2014 en 2019. Voor de bepaling van de verticale positie is het rasterbestand van 50
                            x 50 cm gebruikt. De uitvoerder heeft met kennis van zaken gebruik gemaakt van het
                            ruwe rasterbestand of het gefilterde rasterbestand, het zogenaamde maaiveldraster
-                           is gefilterd voor elementen die op het maaiveld staan zoals begroeing en bebouwing.
+                           is gefilterd voor elementen die op het maaiveld staan zoals begroeiing en bebouwing.
                         </p>
                         
                      </td>
@@ -22263,7 +22234,7 @@
                      <td>dropClast</td>
                      <td>
                         
-                        <p>Een geisoleerde klast bestaande uit klei of leem die de laag eronder heeft ingedrukt.</p>
+                        <p>Een geïsoleerde klast bestaande uit klei of leem die de laag eronder heeft ingedrukt.</p>
                         
                      </td>
                   </tr>
@@ -22271,7 +22242,7 @@
                      <td>dropStone</td>
                      <td>
                         
-                        <p>Een geisoleerde klast varierend in grootte van grind tot keitje in meer fijnkorrelige
+                        <p>Een geïsoleerde klast variërend in grootte van grind tot keitje in meer fijnkorrelige
                            grond, die de laag eronder heeft ingedrukt.
                         </p>
                         
@@ -22523,7 +22494,7 @@
                      <td>doppleriet</td>
                      <td>
                         
-                        <p>Natuurlijk bestanddeel: samengeklonterde gelei-achtige humuszuren in oude wortelgangen
+                        <p>Natuurlijk bestanddeel: samengeklonterde geleiachtige humuszuren in oude wortelgangen
                            of holtes in veen of het onderliggende substraat. Ontstaat bij het draineren van hoogveen
                            en de daarop volgende oxidatie van veen waardoor de humuszuren als stroperige zwarte
                            brij naar beneden sijpelen en samenklonteren. Doppleriet heeft de consistentie en
@@ -22538,7 +22509,7 @@
                      <td>
                         
                         <p>Natuurlijk bestanddeel: bolronde of knolvormige fosforieten of fosfaatconcreties hebben
-                           een groen-grijze tot zwarte kleur. De concreties worden vooral gevonden in glauconiethoudende
+                           een groengrijze tot zwarte kleur. De concreties worden vooral gevonden in glauconiethoudende
                            zanden uit het Tertiair of Midden-Krijt. De waarde is alleen van toepassing bij de
                            uitgebreide beschrijving.
                         </p>
@@ -22562,7 +22533,7 @@
                         
                         <p>Natuurlijk bestanddeel: fijne vulkanische resten (puimsteen) en as met een korrelgrootte
                            kleiner dan 2 mm. De puimsteen is herkenbaar aan de gelig-grijze kleur, de in de korrels
-                           aanwezige kleine porien en het lage gewicht waardoor het drijft. Bij een korrelgrootte
+                           aanwezige kleine poriën en het lage gewicht waardoor het drijft. Bij een korrelgrootte
                            groter dan 2 mm wordt het als grind beschreven. In de volksmond wordt het ook wel
                            bimsen of bimsenzand genoemd. De waarde is alleen van toepassing bij de uitgebreide
                            beschrijving.
@@ -22597,7 +22568,7 @@
                         
                         <p>Natuurlijk bestanddeel: korrels of brokken samengesteld materiaal van neergeslagen
                            ijzerverbindingen in een matrix van zand en/of grind, klei of silt. Het is meestal
-                           geel-bruin, rood-bruin of donker-bruin van kleur (roestig) maar kan als het opengebroken
+                           geelbruin, roodbruin of donkerbruin van kleur (roestig) maar kan als het opengebroken
                            wordt van binnen donkergrijs tot bijna zwart zijn. De grootte van de brokken is meestal
                            0,5 tot 50 mm, maar grotere brokken zijn mogelijk. De concreties komen soms in laagjes
                            voor. Klapperstenen zijn ook een soort ijzerconcretie maar die worden apart benoemd.
@@ -22612,12 +22583,12 @@
                         
                         <p>Natuurlijk bestanddeel: bijzonder soort ijzerconcretie die als bolvormige (concentrische)
                            concretie gevormd is rond een klei- of leembrok met een grootte van enkele millimeters
-                           tot centimeters. De concretie is meestal geel-bruin, rood-bruin of donker-bruin van
-                           kleur (roestig) aan de buiten en binnenzijde, maar het binnenste van de concretie
-                           is meestal donkergrijs tot bijna zwart van kleur. Bij geroerde boormethoden breken
-                           de concreties vaak waardoor er alleen bolvormige fragmenten aanwezig zijn in het boormonster.
-                           Intacte klapperstenen makken meestal een tikkend of klapperend geluid als ze geschud
-                           worden. 
+                           tot centimeters. De concretie is meestal geelbruin, roodbruin of donkerbruin van kleur
+                           (roestig) aan de buiten en binnenzijde, maar het binnenste van de concretie is meestal
+                           donkergrijs tot bijna zwart van kleur. Bij geroerde boormethoden breken de concreties
+                           vaak waardoor er alleen bolvormige fragmenten aanwezig zijn in het boormonster. Intacte
+                           klapperstenen makken meestal een tikkend of klapperend geluid als ze geschud worden.
+                           
                         </p>
                         
                      </td>
@@ -22800,7 +22771,7 @@
                      <td>
                         
                         <p>Natuurlijk bestanddeel: een bijzonder soort ijzerconcretie opgebouwd uit ijzercarbonaat
-                           met een grijs-bruine, donker rood-bruine of donker bruine kleur. Kenmerkende eigenschap
+                           met een grijs-bruine, donker roodbruine of donker bruine kleur. Kenmerkende eigenschap
                            is dat het reageert op zoutzuur (HCl). De vorm is vaak langwerpig en de grootte loopt
                            tot enkele decimeters. De waarde is alleen van toepassing bij de uitgebreide beschrijving.
                         </p>
@@ -22853,7 +22824,7 @@
                      <td>vivianiet</td>
                      <td>
                         
-                        <p>Natuurlijk bestanddeel: mineraal (gehydrateerd ferro-fosfaat) dat meestal in de vorm
+                        <p>Natuurlijk bestanddeel: mineraal (gehydrateerd ferrofosfaat) dat meestal in de vorm
                            van kleine brokjes voorkomt in (organisch rijke) klei of leem. Meest herkenbare eigenschap
                            is dat het verse witte mineraal binnen korte tijd verkleurd naar fel blauw bij blootstelling
                            aan de lucht. De brokjes hebben meestal een grootte van 0,5 tot 10 mm. Komt incidenteel
@@ -22984,7 +22955,7 @@
                      <td>ostracode</td>
                      <td>
                         
-                        <p>Schildjes van Ostracoden, ook wel mosselkreeftjes, zijn gemaakt van chitine en meestal
+                        <p>Schildjes van ostracoden, ook wel mosselkreeftjes, zijn gemaakt van chitine en meestal
                            verkalkt. Variëren sterk in vorm en versiering met een grootte van meestal 0,1 tot
                            2 mm. 
                         </p>
@@ -23171,9 +23142,9 @@
                      <td>
                         
                         <p>Grind bestaand uit barnsteen, de versteende hars van naaldbomen. Barnsteen is vrij
-                           zacht, amorf, met een donkergele, bruine of rood-bruine kleur en soms transparant.
-                           Wordt ook wel amber genoemd.
-                           De waarde wordt in de standaardbeschrijving gewoonlijk niet gebruikt.
+                           zacht, amorf, met een donkergele, bruine of roodbruine kleur en soms transparant.
+                           Wordt ook wel amber genoemd. De waarde wordt in de standaardbeschrijving gewoonlijk
+                           niet gebruikt.
                         </p>
                         
                      </td>
@@ -23196,7 +23167,7 @@
                         
                         <p>Grind van kalksteen, een sedimentair gesteente dat voornamelijk is opgebouwd uit calciumcarbonaat
                            (CaCO3, kalk). Kleur varieert, maar vaak wit tot donkergrijs van kleur. Hieronder
-                           valt alle kalksteen met uitzondering van mergel en oolietische kalksteen die apart
+                           valt alle kalksteen met uitzondering van mergel en oölietische kalksteen die apart
                            onderscheiden worden. De waarde wordt in de standaardbeschrijving gewoonlijk niet
                            gebruikt.
                         </p>
@@ -23228,7 +23199,7 @@
                      <td>kalksteenOolietisch</td>
                      <td>
                         
-                        <p>Grind van oolietische kalksteen, een verkiezelde kalksteen die grotendeels bestaat
+                        <p>Grind van oölietische kalksteen, een verkiezelde kalksteen die grotendeels bestaat
                            uit ooïden en dat zijn afgeronde, concentrisch gelaagde kalkkorrels van enkele millimeters
                            tot centimeters groot. Meestal donkergrijs van kleur. In het verleden ook bekend onder
                            de naam Ringenkiezel. De waarde wordt in de standaardbeschrijving gewoonlijk niet
@@ -23255,7 +23226,7 @@
                            met de nagel gekrast kan worden en alleen gebroken kan worden door een hamerslag.
                            Het materiaal is verkit door neerslag van ijzerhoudend mineralen zoals sideriet. Heeft
                            een bijzonder hoge soortelijke massa. Als de verkitting gebroken wordt is de buitenste
-                           schil (tot enkele millimeters dik) meestal roest-bruin van kleur, de binnenkant is
+                           schil (tot enkele millimeters dik) meestal roestbruin van kleur, de binnenkant is
                            donkerbruin met soms concentrische banden erin.
                         </p>
                         
@@ -23278,7 +23249,7 @@
                         
                         <p>Grind van klei- of siltsteen, een sedimentair gesteente dat ontstaan is door de compactie
                            en verkitting van klei of leem. Het omvat zowel kleisteen, siltsteen als tussenvormen
-                           daarvan (analoog aan hetwat in het Engels mudstone wordt genoemd). Klei-en siltsteen
+                           daarvan (analoog aan wat in het Engels mudstone wordt genoemd). Klei- en siltsteen
                            zijn, in tegenstelling tot schalie, massief zonder duidelijke splijting. Er kan wel
                            gelaagdheid aanwezig zijn, vooral in siltstenen. De kleur is vaak licht tot donker
                            grijs. De waarde wordt in de standaardbeschrijving gewoonlijk niet gebruikt.
@@ -23317,7 +23288,7 @@
                            mm groot) in hoofdzaak bestaand uit overwegend kwarts, veldspaat (kali-veldspaat en
                            plagioklaas) en mica's (muscoviet of biotiet). Door de verschillende mineralen heeft
                            het een wisselende kleursamenstelling, maar overwegend is het combinatie van grijs/transparant
-                           (kwarts), roze/melkwit/creme (veldspaat) en bruin/grijs (mica). Twee soorten graniet
+                           (kwarts), roze/melkwit/crème (veldspaat) en bruin/grijs (mica). Twee soorten graniet
                            worden apart onderscheiden: Rapakivi- en Vogezengraniet.
                         </p>
                         
@@ -23378,8 +23349,8 @@
                      <td>
                         
                         <p>Grind van rhombenporfier, een soort porfier die herkend wordt aan de grote (ca. 1
-                           cm) wittige kristallen die een rhombisch of ruitvorminge vorm hebben en in een veelal
-                           donkergrijze tot grijze matrix liggen. De ruitvorminge kristallen zijn meestal veldspaten.
+                           cm) wittige kristallen die een rhombisch of ruitvormige vorm hebben en in een veelal
+                           donkergrijze tot grijze matrix liggen. De ruitvormige kristallen zijn meestal veldspaten.
                            Op een vers breukvlak vallen de ruitvormige kristallen nauwelijks op; op een licht
                            verweerd oppervlak zijn ze goed herkenbaar. De waarde wordt in de standaardbeschrijving
                            gewoonlijk niet gebruikt.
@@ -23475,12 +23446,12 @@
                      <td>kwartsietRevinien</td>
                      <td>
                         
-                        <p>Grind van Revinien-kwartsiet, een metamorfe zandsteen met een oorsprong in de Ardennen.
+                        <p>Grind van Revinienkwartsiet, een metamorfe zandsteen met een oorsprong in de Ardennen.
                            Het is een grijze, donkergrijze, blauwgrijze of blauwgroene kwartsiet met duidelijk
                            herkenbare pyrietkubussen. De pyriet is aan de buitenkant verweerd waardoor alleen
                            de sterk hoekige tot vierkante holtes zijn achtergebleven; binnenin zijn de goudglanzende
-                           kubische pyrieten zichtbaar met een grootte tot enkele millimeters. De waarde wordt
-                           in de standaardbeschrijving gewoonlijk niet gebruikt.
+                           kubische pyrietkristallen zichtbaar met een grootte tot enkele millimeters. De waarde
+                           wordt in de standaardbeschrijving gewoonlijk niet gebruikt.
                         </p>
                         
                      </td>
@@ -23489,7 +23460,7 @@
                      <td>kwartsIJzerkiezel</td>
                      <td>
                         
-                        <p>Grind bestaand uit cryptokristallijne kwarts met een donkerrode, donkergele tot bruin-rode
+                        <p>Grind bestaand uit cryptokristallijne kwarts met een donkerrode, donkergele tot bruinrode
                            kleur; matte glans en niet-transparant. Wordt ook wel jaspis genoemd. De waarde wordt
                            in de standaardbeschrijving gewoonlijk niet gebruikt.
                         </p>
@@ -23521,7 +23492,7 @@
                      <td>kwartsWit</td>
                      <td>
                         
-                        <p>Grind bestaand uit kwarts met een (vrijwel) volledig melk-witte kleur, niet-transparant.</p>
+                        <p>Grind bestaand uit kwarts met een (vrijwel) volledig melkwitte kleur, niet-transparant.</p>
                         
                      </td>
                   </tr>
@@ -23530,13 +23501,13 @@
                      <td>
                         
                         <p>Grind van lydiet, een metamorfe radiolariet en dat is een sedimentair gesteente dat
-                           in de diepzee is gevormd en voor een groot deel uit radiolarien bestaat. Het bestaat
+                           in de diepzee is gevormd en voor een groot deel uit radiolariën bestaat. Het bestaat
                            vrijwel geheel uit kwarts en is herkenbaar aan de egaal zwarte of heel donkergrijze
                            kleur en de matte glans; daarnaast heeft het vaak de vorm van een parallellepipedum
                            waarvan de hoeken afgerond zijn. Het is zeer hard en vormvast. Incidenteel komen er
-                           dunne witte vrij richte aders in voor. Lydiet en radiolariet verschillen van elkaar
-                           in structuur: lydiet is, op de aders na, zeer homogeen van kleur en structuur, terwijl
-                           radiolariet vaak tweekleurig is en verschillende laagjes heeft.
+                           dunne witte aders in voor. Lydiet en radiolariet verschillen van elkaar in structuur:
+                           lydiet is, op de aders na, zeer homogeen van kleur en structuur, terwijl radiolariet
+                           vaak tweekleurig is en verschillende laagjes heeft.
                         </p>
                         
                      </td>
@@ -23569,14 +23540,14 @@
                      <td>
                         
                         <p>Grind van radiolariet, een sedimentair gesteente dat in de diepzee is gevormd en voor
-                           een groot deel uit radiolarien bestaat. Het is herkenbaar aan de enigszins gebande
+                           een groot deel uit radiolariën bestaat. Het is herkenbaar aan de enigszins gebande
                            of gelaagde fijne structuur en zwarte, donkergrijze, bruine of grijsgroene kleur.
                            Als deze laagjes verschillen in textuur gaat het vaak een afwisseling van zeer gladde
                            homogene laagjes en iets ruwere enigszins pokdalige laagjes. Het heeft een matte glans.
                            Radiolariet als geheel is zeer hard en is vaak vrij kubisch met afgeronde hoeken.
                            Incidenteel komen er dunne witte vrij rechte aders in voor. Lydiet en radiolariet
                            verschillen van elkaar in structuur: lydiet is op de aders na zeer homogeen van kleur
-                           en structuur terwijl radiolariet vaak uit twee kleuren bestaat en enigzins een verschil
+                           en structuur terwijl radiolariet vaak uit twee kleuren bestaat en enigszins een verschil
                            in textuur tussen verschillende laagjes heeft. De waarde wordt in de standaardbeschrijving
                            gewoonlijk niet gebruikt.
                         </p>
@@ -23624,7 +23595,7 @@
                      <td>verkiezeldFossiel</td>
                      <td>
                         
-                        <p>Grind bestaand uit verkiezelde schelpen, koralen, bryozoen of resten van andere dierlijke
+                        <p>Grind bestaand uit verkiezelde schelpen, koralen, bryozoa of resten van andere dierlijke
                            organismen. Het heeft de vorm van het oorspronkelijke fragment behouden en is soms
                            nog herkenbaar en door verkiezeling sterk verhard. De kleuren zijn vaak grijs, soms
                            donkergrijs, maar soms ook lichtbeige met roestbruine aanslag van ijzeroxide.
@@ -23651,7 +23622,7 @@
                            als die aanwezig zijn lijken deze te 'zweven' in een amorfe matrix. Het is overwegend
                            donkergrijs tot zwart van kleur; bij verwering ontstaat vaak een bruinige schil van
                            1 a 2 mm dik en daaronder is de basalt weer donker van kleur. Basalt is meestal afkomstig
-                           uit het Oostzeegebied. Amygdaloide basalt wordt apart onderscheiden. De waarde wordt
+                           uit het Oostzeegebied. Amygdaloïde basalt wordt apart onderscheiden. De waarde wordt
                            in de standaardbeschrijving gewoonlijk niet gebruikt.
                         </p>
                         
@@ -23663,7 +23634,7 @@
                         
                         <p>Grind van zeer oude basalt gekenmerkt door het voorkomen van amygdales, (deels) opgevulde
                            holtes die sterk in grootte wisselen. Veelal afkomstig uit West-Duitsland en zuidelijk
-                           Zweden. Ookwel melafier, melafier-amandelsteen of diabaasporfieriet genoemd. De waarde
+                           Zweden. Ook wel melafier, melafieramandelsteen of diabaasporfieriet genoemd. De waarde
                            wordt in de standaardbeschrijving gewoonlijk niet gebruikt.
                         </p>
                         
@@ -23675,7 +23646,7 @@
                         
                         <p>Grind van puimsteen, een vulkanisch gesteente dat herkenbaar is aan de lage soortelijke
                            massa, de gelig-grijze kleur en de grote porositeit. Puimsteen drijft op water. In
-                           de volksmond wordt het ook wel bimsen of bimsenzand genoemd.
+                           de volksmond wordt het wel bimsen of bimsenzand genoemd.
                         </p>
                         
                      </td>
@@ -23736,7 +23707,7 @@
                      <td>
                         
                         <p>Grind van lichtgele, gele, lichtbruin of bruine zandsteen, een sedimentair gesteente
-                           ontstaan door compactie en verkitting van zand. De porien zijn deels of geheel gevuld
+                           ontstaan door compactie en verkitting van zand. De poriën zijn deels of geheel gevuld
                            met kalk of kwarts. De zandsteen kan gelaagd zijn en grind en fossielen bevatten.
                         </p>
                         
@@ -23748,7 +23719,7 @@
                         
                         <p>Grind van lichtgele, gele, soms grijzige of groenige zandsteen, een sedimentair gesteente
                            ontstaan door compactie en verkitting van zand met daarin groene tot donkergroene
-                           glauconietkorrels. De porien zijn deels of geheel gevuld met kalk of kwarts. De zandsteen
+                           glauconietkorrels. De poriën zijn deels of geheel gevuld met kalk of kwarts. De zandsteen
                            kan gelaagd zijn en grind en fossielen bevatten. De waarde wordt in de standaardbeschrijving
                            gewoonlijk niet gebruikt.
                         </p>
@@ -23760,7 +23731,7 @@
                      <td>
                         
                         <p>Grind van lichtgrijze, grijze of donkergrijze zandsteen, een sedimentair gesteente
-                           ontstaan door compactie en verkitting van zand. De porien zijn deels of geheel gevuld
+                           ontstaan door compactie en verkitting van zand. De poriën zijn deels of geheel gevuld
                            met kalk of kwarts. De zandsteen kan gelaagd zijn en grind en fossielen bevatten.
                         </p>
                         
@@ -23772,7 +23743,7 @@
                         
                         <p>Grind van lichtgroene, groene of donkergroen zandsteen, een sedimentair gesteente
                            ontstaan door compactie en verkitting van zand, waarin geen glauconietkorrels zichtbaar
-                           zijn. De porien zijn deels of geheel gevuld met kalk of kwarts. De zandsteen kan gelaagd
+                           zijn. De poriën zijn deels of geheel gevuld met kalk of kwarts. De zandsteen kan gelaagd
                            zijn en grind en fossielen bevatten.
                         </p>
                         
@@ -23786,9 +23757,9 @@
                            van zand met een kiezelcement. Herkenbaar aan de grijze kleur, zeer hoekige zandkorrels,
                            het uiterlijk van voegen-cement en zeer grote hardheid. Het is nooit normaal gelaagd;
                            het breukvlak is mat en splinterig terwijl het oppervlak vaak glanst. Kwartsietische
-                           zandsteen, ookwel cement-kwartsiet genoemd, is oorspronkelijk gevormd in Tertiaire
-                           zandsteen die door circulerend grondwater met veel silica is verkiezeld. Kan ook grind
-                           bevatten en zelfs als conglomeraat ontwikkeld zijn. De waarde wordt in de standaardbeschrijving
+                           zandsteen, ook cementkwartsiet genoemd, is oorspronkelijk gevormd in Tertiaire zandsteen
+                           die door circulerend grondwater met veel silica is verkiezeld. Kan ook grind bevatten
+                           en zelfs als conglomeraat ontwikkeld zijn. De waarde wordt in de standaardbeschrijving
                            gewoonlijk niet gebruikt.
                         </p>
                         
@@ -23799,7 +23770,7 @@
                      <td>
                         
                         <p>Grind van lichtrode, rode, roze of donkerrode tot paarsige zandsteen, een sedimentair
-                           gesteente ontstaan door compactie en verkitting van zand. De porien zijn deels of
+                           gesteente ontstaan door compactie en verkitting van zand. De poriën zijn deels of
                            geheel gevuld met kalk of kwarts. De zandsteen kan gelaagd zijn en grind en fossielen
                            bevatten. Soms is de zandsteen sterk glimmerhoudend. Sommige van deze rode zandstenen
                            kunnen toegekend worden aan het zogenaamde Bontzandsteen, maar dit onderscheid is
@@ -23814,8 +23785,8 @@
                         
                         <p>Grind van een door verkitting verhard zand dat niet met de nagel gekrast kan worden
                            en alleen gebroken kan worden door een hamerslag. Het heeft vaak een bolvorm en kan
-                           centimeters groot worden. Wordt ook wel plaatseigen zandsteen genoemd, al kan het
-                           door erosie getransporteerd zijn.
+                           centimeters groot worden. Wordt ook plaatseigen zandsteen genoemd, al kan het door
+                           erosie getransporteerd zijn.
                         </p>
                         
                      </td>
@@ -24098,7 +24069,7 @@
                      <td>plantenrestenEik</td>
                      <td>
                         
-                        <p>Roodbruin tot gelige harde houtresten, eikels, en symmetrisch gelobte bladeren</p>
+                        <p>Roodbruin tot gelige harde houtresten, eikels, en symmetrisch gelobde bladeren.</p>
                         
                      </td>
                   </tr>
@@ -24194,7 +24165,7 @@
                   <tr>
                      <td>
                         
-                        <p>De lijst met de namen van de taxonomische categorieen schelpen.</p>
+                        <p>De lijst met de namen van de taxonomische categorieën schelpen.</p>
                         
                      </td>
                   </tr>
@@ -26084,7 +26055,7 @@
                         
                         <p>Post-sedimentaire structuur: de laag is een opeenvolging van onregelmatig ondulerende
                            homogene gedeelten op cm tot m-schaal (plooien, zakvormen) zonder duidelijk onderling
-                           verband en wordt toegeschreven aan postsedimentaire processen die in de bodem kunnen
+                           verband en wordt toegeschreven aan post-sedimentaire processen die in de bodem kunnen
                            optreden boven een permafrostniveau.
                         </p>
                         
@@ -26095,7 +26066,7 @@
                      <td>
                         
                         <p>Post-sedimentaire structuur: de laag heeft zijn oorspronkelijke structuur grotendeels
-                           verloren; de grond is verbroken tot een mozaiek van brokjes met een grootte van enkele
+                           verloren; de grond is verbroken tot een mozaïek van brokjes met een grootte van enkele
                            millimeters tot enkele centimeters. Komt voor in fijnkorrelige lagen. In individuele
                            brokjes kan de oorspronkelijke structuur (deels) behouden zijn.
                         </p>
@@ -26365,7 +26336,7 @@
                      <td>vacuumconsolidatie</td>
                      <td>
                         
-                        <p>Voor de start van het onderzoek was er in de ondergrond vacuumconsolidatie toegepast
+                        <p>Voor de start van het onderzoek was er in de ondergrond vacuümconsolidatie toegepast
                            ten behoeve van andere werkzaamheden.
                         </p>
                         
@@ -26450,7 +26421,7 @@
                      <td>krimpscheur</td>
                      <td>
                         
-                        <p>Een smalle, (sub)verticale wigvormige discontinuiteit in fijnkorrelige grond, die
+                        <p>Een smalle, (sub)verticale wigvormige discontinuïteit in fijnkorrelige grond, die
                            met andersoortig materiaal gevuld is.
                         </p>
                         
@@ -27164,7 +27135,7 @@
                      </td>
                   </tr>
                   <tr>
-                     <td>injectieDragendVermorgen</td>
+                     <td>injectieDragendVermogen</td>
                      <td>
                         
                         <p>De uitvoerder heeft voordat met boren is begonnen de ondergrond tot op een bepaalde
@@ -27457,7 +27428,7 @@
                      <td>matigKlein</td>
                      <td>
                         
-                        <p>Zand waarvan meer dan 90 % van de korrels binnen twee aansluitende zandmediaanklasses
+                        <p>Zand waarvan meer dan 90 % van de korrels binnen twee aansluitende zandmediaanklassen
                            valt.
                         </p>
                         
@@ -27467,7 +27438,7 @@
                      <td>matigGroot</td>
                      <td>
                         
-                        <p>Zand waarvan meer dan 90 % van de korrels binnen drie aansluitende zandmediaanklasses
+                        <p>Zand waarvan meer dan 90 % van de korrels binnen drie aansluitende zandmediaanklassen
                            valt en de zandmediaan in de middelste van de drie zandmediaanklassen ligt.
                         </p>
                         
@@ -27477,7 +27448,7 @@
                      <td>zeerGroot</td>
                      <td>
                         
-                        <p>Zand waarvan minder dan 90 % van de korrels binnen drie aansluitende zandmediaanklasses
+                        <p>Zand waarvan minder dan 90 % van de korrels binnen drie aansluitende zandmediaanklassen
                            valt en de zandmediaan niet in de middelste van de drie zandmediaanklassen ligt.
                         </p>
                         
