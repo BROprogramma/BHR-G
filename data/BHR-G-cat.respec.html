@@ -631,8 +631,10 @@
                      <td>
                         
                         <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>registratiestatus</em> van de entiteit <em>Registratiegeschiedenis</em> gelijk is aan <em>voltooid</em>.<br clear="none">
-                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.<br clear="none">
-                           De <em>rapportagedatum onderzoek</em> mag niet liggen na het <em>tijdstip voltooiing registratie</em> van de entiteit <em>Registratiegeschiedenis</em>.
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.
+                        </p>
+                        
+                        <p>De <em>rapportagedatum onderzoek</em> mag niet liggen na het <em>tijdstip voltooiing registratie</em> van de entiteit <em>Registratiegeschiedenis</em>.
                         </p>
                         
                      </td>
@@ -2685,8 +2687,10 @@
                   <td>
                      
                      <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>terreintoestand bepaald</em> van de entiteit <em>Booronderzoek</em> gelijk is aan <em>ja</em>.<br clear="none">
-                        De entiteit mag niet aanwezig zijn in alle andere gevallen.<br clear="none">
-                        Ten minste één van de volgende gegevens moet aanwezig zijn: het attribuut <em>bodemgebruik</em>, <em>ligging op grondlichaam</em>, <em>landschapselement</em>, <em>hydrologische omstandigheid</em>, <em>actueel proces</em> of <em>tijdelijke verandering</em>.
+                        De entiteit mag niet aanwezig zijn in alle andere gevallen.
+                     </p>
+                     
+                     <p>Ten minste één van de volgende gegevens moet aanwezig zijn: het attribuut <em>bodemgebruik</em>, <em>ligging op grondlichaam</em>, <em>landschapselement</em>, <em>hydrologische omstandigheid</em>, <em>actueel proces</em> of <em>tijdelijke verandering</em>.
                      </p>
                      
                   </td>
@@ -4266,10 +4270,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De <em>bovengrens</em> van de bovenste weggegraven laag moet gelijk zijn aan <em>0</em>.
-                        </p>
-                        
-                        <p>De <em>bovengrens</em> van iedere andere weggegraven laag moet gelijk zijn aan de <em>ondergrens</em> van de weggegraven laag erboven.
+                        <p>De <em>bovengrens</em> van de bovenste weggegraven laag moet gelijk zijn aan <em>0</em>.<br clear="none">
+                           De weggegraven lagen moeten precies op elkaar aansluiten.
                         </p>
                         
                      </td>
@@ -4328,10 +4330,9 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De <em>ondergrens</em> moet groter zijn dan <em>bovengrens</em> van de weggegraven laag.
-                        </p>
-                        
-                        <p>De <em>ondergrens</em> van de onderste weggegraven laag moet gelijk zijn aan de <em>einddiepte graven</em> van de entiteit <em>Boring</em>.
+                        <p>De <em>ondergrens</em> moet groter zijn dan de <em>bovengrens</em> van de weggegraven laag.<br clear="none">
+                           De <em>ondergrens</em> van de onderste weggegraven laag moet gelijk zijn aan de waarde van het attribuut
+                           <em>einddiepte graven</em> van de entiteit <em>Boring</em>.
                         </p>
                         
                      </td>
@@ -4531,10 +4532,9 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De <em>einddiepte</em> moet groter zijn dan de <em>begindiepte</em> van het <em>geboord interval</em>.
-                        </p>
-                        
-                        <p>De <em>einddiepte</em> van het onderste interval moet gelijk zijn aan de <em>einddiepte boren</em> van de entiteit <em>Boring</em>.
+                        <p>De <em>einddiepte</em> moet groter zijn dan de <em>begindiepte</em> van het geboord interval.<br clear="none">
+                           De <em>einddiepte</em> van het onderste geboord interval moet gelijk zijn aan de waarde van het attribuut
+                           <em>einddiepte boren</em> van de entiteit <em>Boring</em>.
                         </p>
                         
                      </td>
@@ -4791,7 +4791,8 @@
                      <td>
                         
                         <p>De <em>einddiepte</em> moet groter zijn dan de <em>begindiepte</em> van het bemonsterd interval.<br clear="none">
-                           De <em>einddiepte</em> van het onderste interval mag niet groter zijn dan de <em>einddiepte boren</em> van de entiteit <em>Boring</em>.
+                           De <em>einddiepte</em> van het onderste bemonsterd interval mag niet groter zijn dan de waarde van het attribuut
+                           <em>einddiepte boren</em> van de entiteit <em>Boring</em>.
                         </p>
                         
                      </td>
@@ -4991,10 +4992,9 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>bemonsteringsmethode</em> gelijk is aan <em>opDiepteUitsteken</em>. 
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>bemonsteringsmethode</em> gelijk is aan <em>opDiepteUitsteken</em>.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.
                         </p>
-                        
-                        <p>Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
                         
                      </td>
                   </tr>
@@ -5037,8 +5037,8 @@
                   <th>Regels</th>
                   <td>
                      
-                     <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>bemonsteringsmethode</em> van de entiteit <em>Bemonsterd interval</em> gelijk is aan <em>opDiepteKernen</em> of <em>opDiepteUitsteken</em>.<br clear="none">
-                        Het attribuut mag niet aanwezig zijn in alle andere gevallen.
+                     <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>bemonsteringsmethode</em> van de entiteit <em>Bemonsterd interval</em> gelijk is aan <em>opDiepteKernen</em> of <em>opDiepteUitsteken</em>.<br clear="none">
+                        De entiteit mag niet aanwezig zijn in alle andere gevallen.
                      </p>
                      
                   </td>
@@ -5147,10 +5147,9 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>guts</em>. 
+                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>guts</em>.<br clear="none">
+                           Het attribuut moet aanwezig zijn in alle andere gevallen.
                         </p>
-                        
-                        <p>Het attribuut moet aanwezig zijn in alle andere gevallen.</p>
                         
                      </td>
                   </tr>
@@ -5208,10 +5207,9 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>guts</em>. 
+                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>guts</em>.<br clear="none">
+                           Het attribuut moet aanwezig zijn in alle andere gevallen.
                         </p>
-                        
-                        <p>Het attribuut moet aanwezig zijn in alle andere gevallen.</p>
                         
                      </td>
                   </tr>
@@ -5271,10 +5269,9 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>guts</em>. 
+                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>guts</em>.<br clear="none">
+                           Het attribuut moet aanwezig zijn in alle andere gevallen.
                         </p>
-                        
-                        <p>Het attribuut moet aanwezig zijn in alle andere gevallen.</p>
                         
                      </td>
                   </tr>
@@ -5326,10 +5323,9 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>guts</em>. 
+                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>guts</em>.<br clear="none">
+                           Het attribuut moet aanwezig zijn in alle andere gevallen.
                         </p>
-                        
-                        <p>Het attribuut moet aanwezig zijn in alle andere gevallen.</p>
                         
                      </td>
                   </tr>
@@ -5379,10 +5375,9 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>steekbus</em>, <em>steekbusDLDS</em> of <em>steekbusMetLiner</em>. 
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>steekbus</em>, <em>steekbusDLDS</em> of <em>steekbusMetLiner</em>.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.
                         </p>
-                        
-                        <p>Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
                         
                      </td>
                   </tr>
@@ -5440,10 +5435,9 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het gegeven is aanwezig wanneer de waarde van het attribuut <em>haakse steekmond</em> gelijk is aan <em>nee</em>. 
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>haakse steekmond</em> gelijk is aan <em>nee</em>.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.
                         </p>
-                        
-                        <p>In andere gevallen ontbreekt het gegeven.</p>
                         
                      </td>
                   </tr>
@@ -5501,10 +5495,9 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het gegeven is aanwezig wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>steekbus, steekbusDLDS</em> of <em>steekbusMetLiner</em>. 
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>steekbus</em>, <em>steekbusDLDS</em> of <em>steekbusMetLiner</em>.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.
                         </p>
-                        
-                        <p>In andere gevallen ontbreekt het gegeven.</p>
                         
                      </td>
                   </tr>
@@ -5556,10 +5549,9 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>corebarrelSingleTube</em>, <em>corebarrelDoubleTube</em>, <em>corebarrelTripleTube</em> of <em>steekbus</em>. 
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>corebarrelSingleTube</em>, <em>corebarrelDoubleTube</em>, <em>corebarrelTripleTube</em> of <em>steekbus</em>.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.
                         </p>
-                        
-                        <p>Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
                         
                      </td>
                   </tr>
@@ -5624,10 +5616,9 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>guts</em>. 
+                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>guts</em>.<br clear="none">
+                           Het attribuut moet aanwezig zijn in alle andere gevallen.
                         </p>
-                        
-                        <p>Het attribuut moet aanwezig zijn in alle andere gevallen.</p>
                         
                      </td>
                   </tr>
@@ -5679,10 +5670,9 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>guts</em>.
+                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>apparaattype</em> gelijk is aan <em>guts</em>.<br clear="none">
+                           Het attribuut moet aanwezig zijn in alle andere gevallen.
                         </p>
-                        
-                        <p> Het attribuut moet aanwezig zijn in alle andere gevallen.</p>
                         
                      </td>
                   </tr>
@@ -5726,12 +5716,11 @@
                   <th>Regels</th>
                   <td>
                      
-                     <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>ondergrond verontreinigd</em> van de entiteit <em>Boring</em> gelijk is aan <em>ja</em>. 
+                     <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>ondergrond verontreinigd</em> van de entiteit <em>Boring</em> gelijk is aan <em>ja</em>.<br clear="none">
+                        De entiteit mag niet aanwezig zijn in alle andere gevallen.
                      </p>
                      
-                     <p>Het attribuut mag niet aanwezig zijn in alle andere gevallen. </p>
-                     
-                     <p>Verontreinigde intervallen overlappen elkaar niet.</p>
+                     <p>De verontreinigde intervallen mogen elkaar niet overlappen.</p>
                      
                   </td>
                </tr>
