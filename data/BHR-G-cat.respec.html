@@ -14163,7 +14163,7 @@
             </section>
       </section><a class="anchor" id="graph_EAID_2A85811A_3E9F_4a76_9752_6A86F4B7BB4D"></a><a class="anchor" id="global_class_Model_Bepalingdrogevolumiekemassa"></a><section id="global_class_Model_Bepalingdrogevolumiekemassa">
          <h3>   Bepaling droge volumieke massa</h3>
-         <div class="imageinfo "><img src="data/Images/EAID_69786105_1B9F_4c78_A26F_E4C271001489.png" usemap="#imagemap-EAID_69786105_1B9F_4c78_A26F_E4C271001489" alt="Diagram "><map name="imagemap-EAID_69786105_1B9F_4c78_A26F_E4C271001489"><area shape="rect" alt="Bepaling droge volumieke massa" coords="10,10,290,150" href="#graph_EAID_2A85811A_3E9F_4a76_9752_6A86F4B7BB4D"></map><p><b></b></p>
+         <div class="imageinfo "><img src="data/Images/EAID_69786105_1B9F_4c78_A26F_E4C271001489.png" usemap="#imagemap-EAID_69786105_1B9F_4c78_A26F_E4C271001489" alt="Diagram "><map name="imagemap-EAID_69786105_1B9F_4c78_A26F_E4C271001489"><area shape="rect" alt="Zoutcorrectiemethode" coords="566,272,749,360" href="#graph_EAID_E92EFAE1_6323_415f_BCF6_0A94E5C53758"><area shape="rect" alt="Droogtemperatuur" coords="566,187,749,249" href="#graph_EAID_E8A9C654_6F39_4e73_842E_3798AAC46F2F"><area shape="rect" alt="BijzonderheidUitvoering" coords="354,181,537,243" href="#graph_EAID_A1C8B1DA_DADC_4917_B0A2_D47FF0389360"><area shape="rect" alt="BijzonderheidMateriaal" coords="566,11,749,164" href="#graph_EAID_2DB6B02D_D054_400e_AF7C_FED89AD042CA"><area shape="rect" alt="Bepalingsmethode" coords="354,11,537,73" href="#graph_EAID_121F1353_865E_4d90_BDA2_33E283671265"><area shape="rect" alt="Bepalingsprocedure" coords="354,96,537,158" href="#graph_EAID_432D4A75_623B_4617_958E_F73A45FC2E8E"><area shape="rect" alt="Bepaling droge volumieke massa" coords="10,10,290,150" href="#graph_EAID_2A85811A_3E9F_4a76_9752_6A86F4B7BB4D"></map><p><b></b></p>
          </div>
          <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
@@ -14176,8 +14176,8 @@
                <tr>
                   <th>Definitie</th>
                   <td>
-                     Het volgens een bepaalde methode bepalen van de massa van het materiaal per eenheid
-                     van volume. 
+                     Het volgens een bepaalde methode bepalen van de massa van het droge materiaal per
+                     eenheid van volume. 
                      </td>
                </tr>
                <tr>
@@ -14190,7 +14190,7 @@
                      gebruikt wordt in berekeningen. In geologisch booronderzoek wordt de droge volumieke
                      massa gebruikt om de porositeit de bereken.
                      De volumieke massa wordt berekend uit het volume en de massa van het materiaal.
-                     De bepaling volumieke massa is een zogenaamde classificatieproef die is opgenomen
+                     De bepaling droge volumieke massa is een zogenaamde classificatieproef die is opgenomen
                      in de ISO 14688-2. 
                      </td>
                </tr>
@@ -14442,7 +14442,8 @@
                         Voor het juiste gebruik van het gegeven is het van belang te weten of de massa van
                         het droge materiaal is gecorrigeerd voor het gehalte aan opgeloste zouten en of dat
                         is gebeurd op basis van een aanname of op basis van een gemeten zoutgehalte.
-                        In de huidige praktijk wordt niet gecorrigeerd voor zouten. 
+                        In de huidige praktijk wordt niet gecorrigeerd voor zouten (waarde nietToegepast).
+                        
                         </td>
                   </tr>
                </tbody>
@@ -14471,7 +14472,7 @@
                   </tr>
                   <tr>
                      <th>Kardinaliteit</th>
-                     <td>0..1</td>
+                     <td>0..2</td>
                   </tr>
                   <tr>
                      <th>Domein</th>
@@ -14514,7 +14515,7 @@
                   </tr>
                   <tr>
                      <th>Kardinaliteit</th>
-                     <td>0..1</td>
+                     <td>0..2</td>
                   </tr>
                   <tr>
                      <th>Domein</th>
@@ -28680,7 +28681,10 @@
          <colgroup></colgroup>
          <tbody>
             <tr>
-               <td></td>
+               <td>
+                  De lijst met de bijzonderheden van het onderzochte materiaal die tijdens bepalingen
+                  in geologische monsteranalyse zijn geconstateerd. 
+                  </td>
             </tr>
          </tbody>
       </table>
@@ -28696,19 +28700,52 @@
             <tr>
                <td>desintegratie</td>
                <td>
-                  Methode voor het bepalen van de volumieke massa. De volumieke massa is bepaald van
-                  het materiaal dat met een ring uit een monster is gestoken en dat vervolgens geheel
-                  pas is gemaakt. Massa en inhoud van de steekring zijn heel nauwkeurig bekend. De massa
-                  van de volle steekring is met een balans bepaald. 
+                  Het onderzochte materiaal is na droging in de oven op 105 of 110 °C gedesintegreerd.
+                  Dit kan wijzen op een bijzondere samenstelling van het materiaal. 
+                  </td>
+            </tr>
+            <tr>
+               <td>geaggregeerd</td>
+               <td>
+                  Het onderzochte materiaal is enigszins geaggregeerd (verkit). 
+                  </td>
+            </tr>
+            <tr>
+               <td>gelaagd</td>
+               <td>
+                  Het onderzochte materiaal is gelaagd. 
+                  </td>
+            </tr>
+            <tr>
+               <td>gescheurd</td>
+               <td>
+                  Het onderzochte materiaal is gescheurd. 
+                  </td>
+            </tr>
+            <tr>
+               <td>insluitsel</td>
+               <td>
+                  In het onderzochte materiaal komen 1 of meer insluitsels voor, bijvoorbeeld een grindkorrel,
+                  schelp, een stukje puin of hout. 
                   </td>
             </tr>
             <tr>
                <td>verkleuring</td>
                <td>
-                  Methode voor het bepalen van de volumieke massa. De volumieke massa is bepaald van
-                  het materiaal dat met een ring uit een monster is gestoken en dat vervolgens geheel
-                  pas is gemaakt. Massa en inhoud van de steekring zijn heel nauwkeurig bekend. De massa
-                  van de volle steekring is met een balans bepaald. 
+                  Het onderzochte materiaal is na droging in de oven op 105 of 110 °C van kleur veranderd.
+                  Dit kan wijzen op een bijzondere samenstelling van het materiaal. 
+                  </td>
+            </tr>
+            <tr>
+               <td>wormgat</td>
+               <td>
+                  In het onderzochte materiaal komen 1 of meer wormgaten voor. 
+                  </td>
+            </tr>
+            <tr>
+               <td>wortelgang</td>
+               <td>
+                  In het onderzochte materiaal komen 1 of meer wortelgangen voor. 
                   </td>
             </tr>
          </tbody>
@@ -28721,7 +28758,10 @@
          <colgroup></colgroup>
          <tbody>
             <tr>
-               <td></td>
+               <td>
+                  De lijst met de bijzonderheden die zich tijdens de uitvoering van bepalingen in de
+                  geologische monsteranalyse hebben voorgedaan. 
+                  </td>
             </tr>
          </tbody>
       </table>
@@ -28737,10 +28777,7 @@
             <tr>
                <td>volumeProefstuk</td>
                <td>
-                  Methode voor het bepalen van de volumieke massa. De volumieke massa is bepaald van
-                  het materiaal dat met een ring uit een monster is gestoken en dat vervolgens geheel
-                  pas is gemaakt. Massa en inhoud van de steekring zijn heel nauwkeurig bekend. De massa
-                  van de volle steekring is met een balans bepaald. 
+                  Het volume van het proefstuk is kleiner dan de procedure voorschrijft. 
                   </td>
             </tr>
          </tbody>
@@ -28799,7 +28836,9 @@
          <colgroup></colgroup>
          <tbody>
             <tr>
-               <td></td>
+               <td>
+                  De lijst met de temperaturen waarbij het materiaal is gedroogd. 
+                  </td>
             </tr>
          </tbody>
       </table>
@@ -29409,7 +29448,10 @@
          <colgroup></colgroup>
          <tbody>
             <tr>
-               <td></td>
+               <td>
+                  De lijst met de methoden voor het corrigeren voor het gehalte aan opgeloste zouten.
+                  
+                  </td>
             </tr>
          </tbody>
       </table>
@@ -29424,15 +29466,23 @@
             </tr>
             <tr>
                <td>nietToegepast</td>
-               <td></td>
+               <td>
+                  Het watergehalte is niet gecorrigeerd voor het gehalte aan opgeloste zouten. 
+                  </td>
             </tr>
             <tr>
                <td>zoutgehalteAangenomen</td>
-               <td></td>
+               <td>
+                  Het watergehalte is gecorrigeerd voor het gehalte aan opgeloste zouten. Het zoutgehalte
+                  van het poriënwater is een aangenomen waarde. 
+                  </td>
             </tr>
             <tr>
                <td>zoutgehalteBepaald</td>
-               <td></td>
+               <td>
+                  Het watergehalte is gecorrigeerd voor het gehalte aan opgeloste zouten. Het zoutgehalte
+                  van het poriënwater is bepaald. 
+                  </td>
             </tr>
          </tbody>
       </table>
