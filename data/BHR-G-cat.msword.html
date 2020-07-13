@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Geologisch booronderzoek (BHR-G)/20200518</p>
       <p>Imvertor: 1.61.0</p>
-      <p>Model release: Conceptualmodel-GeologischbooronderzoekBHR-G-0.99-3-20200518-20200713-205221</p>
+      <p>Model release: Conceptualmodel-GeologischbooronderzoekBHR-G-0.99-3-20200518-20200714-001933</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -13989,8 +13989,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De aanduiding die aangeeft van welke eigenschappen van het materiaal waaruit het onderzochte
-                                    interval bestaat de waarde is bepaald.</p>
+                                 <p>De aanduiding die aangeeft van welke samenstellingseigenschappen van het materiaal
+                                    waaruit het onderzochte interval bestaat de waarde is bepaald.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -14013,6 +14013,17 @@
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Waardelijst uitbreidbaar</td>
                            </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Standaard is de korrelgrootteverdeling bepaald met het organisch stofgehalte en kalkgehalte
+                                    (standaard). Vaak zijn ook het orangisch koolstofgehalte en zwavelgehalte bepaald
+                                    (standaardMetChemie). Andere chemische parameters zijn vooralsnog buiten scope. In
+                                    uitzonderlijke gevallen [TODO] slaagt de bepaling van de korrelgrootteverdeling niet
+                                    (<em>zonderKorrelverdeling</em>).</p>
+                                 </td>
+                           </tr>
                         </tbody>
                      </table>
                      </section><a class="anchor" id="detail_attribute_Model_Onderzochtinterval_bepaaldehydrofysischeeigenschappen"></a><section id="detail_attribute_Model_Onderzochtinterval_bepaaldehydrofysischeeigenschappen">
@@ -14030,8 +14041,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De aanduiding die aangeeft van welke eigenschappen van het materiaal waaruit het onderzochte
-                                    interval bestaat de waarde is bepaald.</p>
+                                 <p>De aanduiding die aangeeft van welke hydrofysische eigenschappen van het materiaal
+                                    waaruit het onderzochte interval bestaat de waarde is bepaald.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -14053,6 +14064,14 @@
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Waardelijst uitbreidbaar</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Standaard is de waterdoorlatendheid bepaald met de droge volumieke massa en volumieke
+                                    massa (<em>standaard</em>) of de volumieke massa vaste delen (<em>uitgebreid</em>). In uitzonderlijke gevallen slaagt de bepaling van de waterdoorlatendheid niet (<em>zonderWaterdoorlatendheid</em>).</p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -14862,6 +14881,15 @@
                               <td>Waardelijst uitbreidbaar</td>
                            </tr>
                            <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de <em>geologische grondsoort</em> een waarde uit de categorie schelprijke grond is.<br clear="none">
+                                    Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>schelpmateriaalgehalteklasse</em> gelijk is aan <em>spoorTot1</em>, <em>weinig1tot10</em> of <em>veel10tot30</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Toelichting</th>
                               <td>
                                  
@@ -14907,6 +14935,15 @@
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Waardelijst uitbreidbaar</td>
+                           </tr>
+                           <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de <em>geologische grondsoort</em> een waarde uit de categorie schelprijke grond is.<br clear="none">
+                                    Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>schelpmateriaalgehalteklasse</em> gelijk is aan <em>spoorTot1</em>, <em>weinig1tot10</em> of <em>veel10tot30</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
@@ -14955,6 +14992,15 @@
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Waardelijst uitbreidbaar</td>
                            </tr>
+                           <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de <em>geologische grondsoort</em> een waarde uit de categorie schelprijke grond is.<br clear="none">
+                                    Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>schelpmateriaalgehalteklasse</em> gelijk is aan <em>spoorTot1</em>, <em>weinig1tot10</em> of <em>veel10tot30</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                                 </td>
+                           </tr>
                         </tbody>
                      </table>
                      </section>
@@ -15000,7 +15046,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Het soort grond waaruit de eenheid bestaat, grof getypeerd.</p>
+                                 <p>[TODO]</p>
                                  </td>
                            </tr>
                            <tr>
@@ -15022,6 +15068,13 @@
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Waardelijst uitbreidbaar</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>[TODO]</p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -15170,7 +15223,29 @@
                            <th>Toelichting</th>
                            <td>
                               
-                              <p>TODO</p>
+                              <p>Voor de korrelgrootteverdeling wordt grond gezien als een mengsel van minerale deeltjes
+                                 van verschillende grootte. De minerale deeltjes worden korrels genoemd. 
+                                 Standaard wordt een deel van het materiaal waaruit het onderzocht interval bestaat
+                                 uitgeschept waarbij grind en grover materiaal wordt gemeden. Niet-cohesief materiaal
+                                 wordt vooraf 24 uur gedroogd, standaard op 70 graden Celsius en nat materiaal op 60
+                                 graden. Het gedroogde materiaal wordt droog gezeefd over de 2 mm-zeef. Het materiaal
+                                 groter dan 2 mm wordt gedroogd op 105/110 graden Celsius en gewogen. Cohesief materiaal
+                                 wordt niet vooraf gedroogd, en in dat geval wordt het aandeel groter dan 2 mm na de
+                                 meting bepaald. 
+                                 Het materiaal kleiner dan 2 mm wordt gehomogeniseerd, het organische stof wordt verwijderd,
+                                 normaliter wordt de koolzure kalk verwijderd en samengeklonterde korreltjes worden
+                                 van elkaar los gemaakt (dispersie). Het materiaal wordt vervolgens op een bepaalde
+                                 manier verdeeld in fracties. 
+                                 Wanneer het materiaal uit het onderzocht interval bestaat uit grind of grover materiaal
+                                 wordt nog een deel van het materiaal uitgeschept. Het materiaal wordt vooraf 24 uur
+                                 gedroogd, standaard op 70 graden Celsius en nat materiaal op 60 graden. Het materiaal
+                                 wordt gehomogeniseerd en samengeklonterd materiaal wordt eventueel met de hand losgemaakt.
+                                 Het materiaal wordt vervolgens middels droge zeving verdeeld in fracties. 
+                                 De droge massa van iedere fractie wordt bepaald en het resultaat wordt omgerekend
+                                 naar een percentage van de totale massa. De bepaling wordt uitgevoerd aan grond en
+                                 aan bijzonder materiaal en de monsterkwaliteit kan alle waarden hebben. De bepaling
+                                 korrelgrootteverdeling is een zogenaamde classificatieproef die is opgenomen in de
+                                 NEN-EN-ISO 14688-2.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -15273,7 +15348,7 @@
                               <td>
                                  
                                  <p>De waarde van het attribuut moet gelijk zijn aan <em>droogZevenLaser</em> wanneer de waarde van het attribuut <em>bepalingsprocedure</em> gelijk is aan <em>ISO13320v2009</em>.<br clear="none">
-                                    De waarde van het attribuut moet gelijk zijn aan <em>natDroogZevenPipet</em> wanneer de waarde van het attribuut <em>bepalingsprocedure</em> gelijk is aan <em>ISO17892d4v2016</em>. </p>
+                                    De waarde van het attribuut moet gelijk zijn aan <em>droogZeven</em> of <em>natDroogZevenPipet</em> wanneer de waarde van het attribuut <em>bepalingsprocedure</em> gelijk is aan <em>ISO17892d4v2016</em>. </p>
                                  </td>
                            </tr>
                            <tr>
@@ -15281,22 +15356,18 @@
                               <td>
                                  
                                  <p>Standaard wordt de verdeling van de korrels kleiner dan 2 mm bepaald door middel van
-                                    laserdiffractie en de fractie groter dan 2 mm wordt niet nader onderverdeeld. Bij
-                                    de andere methode wordt het materiaal na de voorbehandeling nat gezeefd over de 63µm-zeef.
-                                    Hiermee worden de korrels kleiner dan 63 µm, gewoonlijk aangeduid als fijne fractie,
-                                    gescheiden van de korrels groter dan 63 µm, gewoonlijk aangeduid als de grove fractie.
-                                    
-                                    De fractie groter dan 2 mm wordt verder onderverdeeld door het droge materiaal te
-                                    zeven. De fijne fractie wordt eventueel verder onderverdeeld op basis van de bezinksnelheid
+                                    laserdiffractie en de fractie groter dan 2 mm wordt niet nader onderverdeeld.<br clear="none">
+                                    Wanneer het materiaal uit het onderzocht interval uit grof materiaal bestaat wordt
+                                    een tweede bepaling van de korrelgrootteverdeling uitgevoerd aan het zelfde onderzocht
+                                    interval om het materiaal groter dan 2 mm nader onder te verdelen. Dit gebeurt door
+                                    middel van droge zeving (<em>droogZeven</em>).<br clear="none">
+                                    Binnen geologisch booronderzoek wordt in zeer uitzonderlijke gevallen een controle
+                                    bepaling uitgevoerd voor de verdeling van de korrels kleiner dan 2 mm met behulp van
+                                    de pipet en zeving. Het materiaal wordt na de voorbehandeling nat gezeefd over de
+                                    63µm-zeef. De fractie 63 µm tot  2 mm wordt verder onderverdeeld door het droge materiaal
+                                    te zeven. De fijne fractie wordt verder onderverdeeld op basis van de bezinksnelheid
                                     van de korrels en die wordt bepaald met behulp van een pipet. De klassegrenzen bij
-                                    deze methoden zijn minder nauwkeurig dan bij zeving. 
-                                    Binnen geologisch booronderzoek wordt de korrelgrootteverdeling altijd door middel
-                                    van laserdiffractie bepaald en de pipet-zeef methode wordt in uitzonderlijke gevallen
-                                    als tweede bepaling van de korrelgrootteverdeling uitgevoerd aan het zelfde onderzocht
-                                    interval. Bij cohesief materiaal wordt de tweede bepaling uitgevoerd om te beoordelen
-                                    of de verdeling van de fractie kleiner dan 63 µm door middel van laserdiffractie betrouwbaar
-                                    is. Bij grind en grover materiaal wordt de tweede bepaling uitgevoerd om de fractie
-                                    groter dan 2 mm onder te verdelen.</p>
+                                    deze methoden zijn minder nauwkeurig dan bij zeving.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -15344,7 +15415,8 @@
                               <td>
                                  
                                  <p>De waarde van het attribuut moet gelijk zijn aan <em>uitgebreidUitgebreidBasis</em> wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>droogZevenLaser</em>.<br clear="none">
-                                    De waarde van het attribuut moet gelijk zijn aan <em>basisMinimaalStandaard</em> of <em>standaardStandaardBasis</em> wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>natDroogZevenPipet</em>. </p>
+                                    De waarde van het attribuut moet gelijk zijn aan <em>basisMinimaalStandaard</em> wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>droogZeven</em>.<br clear="none">
+                                    De waarde van het attribuut moet gelijk zijn aan <em>standaardStandaardBasis</em> wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>natDroogZevenPipet</em>.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -15502,13 +15574,20 @@
                               <td>Waardelijst uitbreidbaar</td>
                            </tr>
                            <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut bepalingsmethode
+                                    gelijk is aan <em>droogZeven</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Afhankelijk van de opdracht kunnen bepaalde bestanddelen vooraf worden verwijderd.
-                                    Die bestanddelen worden gespecificeerd. Verwijdering gebeurt handmatig en enkel grove
-                                    bestanddelen uit het materiaal groter dan 2 mm worden verwijderd. In het geval er
-                                    geen bestanddelen worden verwijderd wordt de waarde geen vastgelegd. </p>
+                                 <p>In geologisch booronderzoek worden geen bestanddelen verwijderd en wordt de waarde
+                                    <em>geen</em> vastgelegd. </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -15546,7 +15625,7 @@
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
                               <td>Meetwaarde 
-                                 2.1</td>
+                                 5.1</td>
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
@@ -15564,7 +15643,9 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Bij zeven [TODO]</p>
+                                 <p>De procedure schrijft een minimale massa voor het deel van het materiaal dat wordt
+                                    gezeefd voor, en deze is afhankelijk van de grootste korreldiameter.<br clear="none">
+                                    </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -15593,7 +15674,7 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>1</td>
+                              <td>0..1</td>
                            </tr>
                            <tr>
                               <th>Domein</th>
@@ -15608,10 +15689,12 @@
                               <td>Waardelijst uitbreidbaar</td>
                            </tr>
                            <tr>
-                              <th>Toelichting</th>
+                              <th>Regels</th>
                               <td>
                                  
-                                 <p>In geologisch booronderzoek wordt het materiaal altijd gedispergeerd.</p>
+                                 <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut bepalingsmethode
+                                    gelijk is aan <em>droogZeven</em>.<br clear="none">
+                                    Het attribuut moet aanwezig zijn in alle andere gevallen.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -15834,10 +15917,13 @@
                               <td>
                                  
                                  <p>Tijdens de uitvoering kunnen zich kleine problemen voordoen waardoor de uitvoerder
-                                    de bepaling niet helemaal op de ideale wijze kan uitvoeren. Wanneer een dergelijke
-                                    situatie zich voordoet en het probleem van invloed kan zijn op het resultaat, legt
-                                    de uitvoerder het als bijzonderheid vast.<br clear="none">
-                                    </p>
+                                    de bepaling niet helemaal op de ideale wijze kan uitvoeren. Het kan voorkomen dat
+                                    de bepaling is uitgevoerd op het materiaal waarvan eerst de hydrofysische eigenschappen
+                                    zijn bepaald. Het kan zijn dat er materiaal verloren is gegaan. De bepaling is hierdoor
+                                    minder nauwkeurig. Het kan ook voorkomen dat tijdens het zeven een klein deel van
+                                    het materiaal verloren is gegaan. Wanneer een dergelijke situatie zich voordoet en
+                                    het probleem van invloed kan zijn op het resultaat, legt de uitvoerder het als bijzonderheid
+                                    vast.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -15886,8 +15972,10 @@
                               <td>
                                  
                                  <p>Tijdens de uitvoering kunnen er bijzonderheden worden geconstateerd die extra informatie
-                                    over de aard van het onderzochte materiaal geven. In de huidige praktijk legt de uitvoerder
-                                    eventuele bijzonderheden altijd vast. </p>
+                                    over de aard van het onderzochte materiaal geven. Het materiaal kan door droging in
+                                    de oven desintegreren of van kleur veranderen en dat kan wijzen op een bijzondere
+                                    samenstelling. In de huidige praktijk legt de uitvoerder eventuele bijzonderheden
+                                    altijd vast. </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -16097,13 +16185,6 @@
                                  De entiteit mag niet aanwezig zijn in alle andere gevallen.</p>
                               
                               <p>De som van alle fracties moet gelijk zijn aan de waarde van het attribuut <em>fractie kleiner63um</em> van de entiteit <em>Basis korrelgrootteverdeling</em>.</p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              
-                              <p>De klassegrenzen van de fracties kleiner dan 63 µm zijn niet heel nauwkeurig bepaald.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -16479,13 +16560,6 @@
                                  De entiteit mag niet aanwezig zijn in alle andere gevallen. </p>
                               
                               <p>De som van alle fracties moet gelijk zijn aan de waarde van het attribuut <em>fractie kleiner63um</em> van de entiteit <em>Basis korrelgrootteverdeling</em>.</p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              
-                              <p>De klassegrenzen van de fracties kleiner dan 63 µm zijn niet heel nauwkeurig bepaald.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -21986,7 +22060,7 @@
                                  uit het massaverlies dat het gevolg is van de verwijdering van het water uit het materiaal.
                                  
                                  De bepaling watergehalte is een zogenaamde classificatieproef die is opgenomen in
-                                 de ISO 14688-2.</p>
+                                 de NEN-EN-ISO 14688-2.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -22530,7 +22604,7 @@
                                  QM1, QM2 en QM3 en aan bijzonder materiaal. De volumieke massa wordt berekend uit
                                  het volume en de massa van het materiaal.<br clear="none">
                                  De bepaling volumieke massa is een zogenaamde classificatieproef die is opgenomen
-                                 in de ISO 14688-2.</p>
+                                 in de NEN-EN-ISO 14688-2.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -22757,7 +22831,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>TODO</p>
+                                 <p>De aanduiding die aangeeft of het proefstuk onder belasting is bepaald. </p>
                                  </td>
                            </tr>
                            <tr>
@@ -22784,7 +22858,9 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>TODO</p>
+                                 <p>Het doel van geologisch booronderzoek is het bepalen van in-situ eigenschappen. Cohesief
+                                    materiaal wordt eerst onder druk gezet. De verticale druk die op het proefstuk wordt
+                                    uitgeoefend komt overeen met de druk in-situ.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -22848,9 +22924,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Het doel van geologisch booronderzoek is het bepalen van in-situ eigenschappen. Cohesief
-                                    materiaal wordt eerst onder druk gezet. De verticale druk die op het proefstuk wordt
-                                    uitgeoefend komt overeen met de druk in-situ.<br clear="none">
+                                 <p>De verticale druk die op het proefstuk wordt uitgeoefend komt overeen met de druk
+                                    in-situ.<br clear="none">
                                     De verticale druk wordt aangeduid met het symbool p.</p>
                                  </td>
                            </tr>
@@ -22944,7 +23019,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>TODO</p>
+                                 <p>De aanduiding die aangeeft of het proefstuk vooraf de gelegenheid heeft gekregen om
+                                    water op te nemen.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -23076,7 +23152,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>gebruikt medium</em> gelijk is aan TODO.<br clear="none">
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>gebruikt medium</em> gelijk is aan <em>leidingwater</em> of <em>SAR13water</em>.<br clear="none">
                                     Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
                                  </td>
                            </tr>
@@ -23401,7 +23477,7 @@
                                  massa gebruikt om de porositeit de bereken.<br clear="none">
                                  De volumieke massa wordt berekend uit het volume en de massa van het materiaal.<br clear="none">
                                  De bepaling droge volumieke massa is een zogenaamde classificatieproef die is opgenomen
-                                 in de ISO 14688-2.</p>
+                                 in de NEN-EN-ISO 14688-2.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -24150,7 +24226,7 @@
                                  <p>Tijdens de uitvoering kunnen er bijzonderheden worden geconstateerd die extra informatie
                                     over de aard van het onderzochte materiaal geven. In het proefstuk kunnen insluitsels,
                                     wormgaten of wortelgangen voorkomen, het materiaal kan geaggregeerd zijn en het materiaal
-                                    kan door droging desintegreren of van kleur veranderen.<br clear="none">
+                                    kan door droging in de oven desintegreren of van kleur veranderen.<br clear="none">
                                     In de huidige praktijk legt de uitvoerder eventuele bijzonderheden altijd vast.</p>
                                  </td>
                            </tr>
@@ -24251,7 +24327,7 @@
                                  worden bepaalde bestanddelen verwijderd, wordt het materiaal losgemaakt en worden
                                  de grove delen (groter dan 4 mm) vergruisd.<br clear="none">
                                  De bepaling volumieke massa vaste delen is een zogenaamde classificatieproef die is
-                                 opgenomen in de ISO 14688-2 als dichtheid gronddeeltjes.</p>
+                                 opgenomen in de NEN-EN-ISO 14688-2 als dichtheid gronddeeltjes.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -24611,8 +24687,8 @@
                               <td>
                                  
                                  <p>Tijdens de uitvoering kunnen er bijzonderheden worden geconstateerd die extra informatie
-                                    over de aard van het onderzochte materiaal geven. Het materiaal kan door droging desintegreren
-                                    of van kleur veranderen.<br clear="none">
+                                    over de aard van het onderzochte materiaal geven. Het materiaal kan door droging in
+                                    de oven desintegreren of van kleur veranderen.<br clear="none">
                                     In de huidige praktijk legt de uitvoerder eventuele bijzonderheden altijd vast.</p>
                                  </td>
                            </tr>
@@ -35788,52 +35864,47 @@
                      <td>geen</td>
                      <td>
                         
-                        <p>De waterdoorlatendheid is bepaald en de zettingseigenschappen, de ongedraineerde schuifsterkte,
-                           het schuifspanningsverloop, de consistentiegrenzen en de korrelgrootteverdeling zijn
-                           niet bepaald. Van de basisparameters zijn het watergehalte en de volumieke massa bij
-                           cohesieve grond altijd bepaald, en bij niet-cohesieve grond kunnen ze zijn bepaald.
-                           De volumieke massa vaste delen, het organischestofgehalte en het kalkgehalte kunnen
-                           zijn bepaald. Dit vereist voor cohesieve grond een interval met een minimum lengte
-                           van 2 cm en dan moet het monster eigenlijk zo breed zijn dat er voldoende materiaal
-                           overblijft om daarvan het watergehalte te bepalen. Is er niet genoeg materiaal dan
-                           wordt het interval verlengt tot minimaal 5 cm; het watergehalte wordt dan zogezegd
-                           bepaald aan de afsnijdsels. Bij niet cohesieve grond is een interval met een minimum
-                           lengte van 10 cm nodig. De vereiste monsterkwaliteit is QM1, QM2 of QM3 voor cohesieve
-                           grond en bij niet-cohesieve grond stelt de monsterkwaliteit geen beperkingen.</p>
+                        <p>Er zijn geen samenstellingseigenschappen bepaald.</p>
                         </td>
                   </tr>
                   <tr>
                      <td>standaard</td>
                      <td>
                         
-                        <p>De korrelgrootteverdeling is bepaald, en de zettingseigenschappen, de ongedraineerde
-                           schuifsterkte, het schuifspanningsverloop, de consistentiegrenzen en de waterdoorlatendheid
-                           zijn niet bepaald. Van de basisparameters is het watergehalte altijd bepaald, kunnen
-                           het organischestofgehalte, het kalkgehalte, de volumieke massa en de volumieke massa
-                           vaste delen zijn bepaald. Dit vereist een interval met een minimum lengte van 5 cm.
-                           De monsterkwaliteit stelt geen beperkingen. Alleen wanneer ook de volumieke massa
-                           is bepaald is de vereiste monsterkwaliteit gelijk aan QM1, QM2 of QM3.</p>
+                        <p>De korrelgrootteverdeling is bepaald, en het organischestofgehalte en kalkgehalte
+                           zijn bepaald. Het organisch koolstofgehalte en zwavelgehalte zijn niet bepaald.<br clear="none">
+                           Dit vereist een interval met een minimum lengte van 1 cm. De monsterkwaliteit stelt
+                           geen beperkingen. </p>
                         </td>
                   </tr>
                   <tr>
                      <td>standaardMetChemie</td>
-                     <td></td>
+                     <td>
+                        
+                        <p>De korrelgrootteverdeling is bepaald, en het organischestofgehalte, kalkgehalte, organisch
+                           koolstofgehalte en zwavelgehalte zijn bepaald.<br clear="none">
+                           Dit vereist een interval met een minimum lengte van 1 cm. De monsterkwaliteit stelt
+                           geen beperkingen. </p>
+                        </td>
                   </tr>
                   <tr>
                      <td>zonderKorrelverdeling</td>
-                     <td></td>
+                     <td>
+                        
+                        <p>Het organischestofgehalte en kalkgehalte zijn bepaald. De korrelgrootteverdeling,
+                           het organisch koolstofgehalte en zwavelgehalte zijn niet bepaald.<br clear="none">
+                           Dit vereist een interval met een minimum lengte van 1 cm. De monsterkwaliteit stelt
+                           geen beperkingen. </p>
+                        </td>
                   </tr>
                   <tr>
                      <td>zonderKorrelverdelingMetChemie</td>
                      <td>
                         
-                        <p>De korrelgrootteverdeling is bepaald, en de zettingseigenschappen, de ongedraineerde
-                           schuifsterkte, het schuifspanningsverloop, de consistentiegrenzen en de waterdoorlatendheid
-                           zijn niet bepaald. Van de basisparameters is het watergehalte altijd bepaald, kunnen
-                           het organischestofgehalte, het kalkgehalte, de volumieke massa en de volumieke massa
-                           vaste delen zijn bepaald. Dit vereist een interval met een minimum lengte van 5 cm.
-                           De monsterkwaliteit stelt geen beperkingen. Alleen wanneer ook de volumieke massa
-                           is bepaald is de vereiste monsterkwaliteit gelijk aan QM1, QM2 of QM3.</p>
+                        <p>Het organischestofgehalte,kalkgehalte, organisch koolstofgehalte en zwavelgehalte
+                           zijn bepaald. De korrelgrootteverdeling is niet bepaald.<br clear="none">
+                           Dit vereist een interval met een minimum lengte van 1 cm. De monsterkwaliteit stelt
+                           geen beperkingen. </p>
                         </td>
                   </tr>
                </tbody>
@@ -35866,57 +35937,37 @@
                      <td>geen</td>
                      <td>
                         
-                        <p>De korrelgrootteverdeling is bepaald, en de zettingseigenschappen, de ongedraineerde
-                           schuifsterkte, het schuifspanningsverloop, de consistentiegrenzen en de waterdoorlatendheid
-                           zijn niet bepaald. Van de basisparameters is het watergehalte altijd bepaald, kunnen
-                           het organischestofgehalte, het kalkgehalte, de volumieke massa en de volumieke massa
-                           vaste delen zijn bepaald. Dit vereist een interval met een minimum lengte van 5 cm.
-                           De monsterkwaliteit stelt geen beperkingen. Alleen wanneer ook de volumieke massa
-                           is bepaald is de vereiste monsterkwaliteit gelijk aan QM1, QM2 of QM3.</p>
+                        <p>Er zijn geen hydrofysische eigenschappen bepaald.</p>
                         </td>
                   </tr>
                   <tr>
                      <td>standaard</td>
                      <td>
                         
-                        <p>De korrelgrootteverdeling is bepaald, en de zettingseigenschappen, de ongedraineerde
-                           schuifsterkte, het schuifspanningsverloop, de consistentiegrenzen en de waterdoorlatendheid
-                           zijn niet bepaald. Van de basisparameters is het watergehalte altijd bepaald, kunnen
-                           het organischestofgehalte, het kalkgehalte, de volumieke massa en de volumieke massa
-                           vaste delen zijn bepaald. Dit vereist een interval met een minimum lengte van 5 cm.
-                           De monsterkwaliteit stelt geen beperkingen. Alleen wanneer ook de volumieke massa
-                           is bepaald is de vereiste monsterkwaliteit gelijk aan QM1, QM2 of QM3.</p>
+                        <p>De verzadigde waterdoorlatendheid is bepaald en de droge volumieke massa en de volumieke
+                           massa is bepaald, en de volumieke massa vaste delen is niet bepaald.<br clear="none">
+                           Dit vereist een interval met een minimum lengte van 2 cm. De vereiste monsterkwaliteit
+                           is QM1, QM2 of QM3.</p>
                         </td>
                   </tr>
                   <tr>
                      <td>uitgebreid</td>
                      <td>
                         
-                        <p>De korrelgrootteverdeling is bepaald, en de zettingseigenschappen, de ongedraineerde
-                           schuifsterkte, het schuifspanningsverloop, de consistentiegrenzen en de waterdoorlatendheid
-                           zijn niet bepaald. Van de basisparameters is het watergehalte altijd bepaald, kunnen
-                           het organischestofgehalte, het kalkgehalte, de volumieke massa en de volumieke massa
-                           vaste delen zijn bepaald. Dit vereist een interval met een minimum lengte van 5 cm.
-                           De monsterkwaliteit stelt geen beperkingen. Alleen wanneer ook de volumieke massa
-                           is bepaald is de vereiste monsterkwaliteit gelijk aan QM1, QM2 of QM3.</p>
+                        <p>De verzadigde waterdoorlatendheid is bepaald en de droge volumieke massa en de volumieke
+                           massa vaste delen is bepaald.<br clear="none">
+                           Dit vereist een interval met een minimum lengte van 2 cm. De vereiste monsterkwaliteit
+                           is QM1, QM2 of QM3.</p>
                         </td>
                   </tr>
                   <tr>
                      <td>zonderWaterdoorlatendheid</td>
                      <td>
                         
-                        <p>De waterdoorlatendheid is bepaald en de zettingseigenschappen, de ongedraineerde schuifsterkte,
-                           het schuifspanningsverloop, de consistentiegrenzen en de korrelgrootteverdeling zijn
-                           niet bepaald. Van de basisparameters zijn het watergehalte en de volumieke massa bij
-                           cohesieve grond altijd bepaald, en bij niet-cohesieve grond kunnen ze zijn bepaald.
-                           De volumieke massa vaste delen, het organischestofgehalte en het kalkgehalte kunnen
-                           zijn bepaald. Dit vereist voor cohesieve grond een interval met een minimum lengte
-                           van 2 cm en dan moet het monster eigenlijk zo breed zijn dat er voldoende materiaal
-                           overblijft om daarvan het watergehalte te bepalen. Is er niet genoeg materiaal dan
-                           wordt het interval verlengt tot minimaal 5 cm; het watergehalte wordt dan zogezegd
-                           bepaald aan de afsnijdsels. Bij niet cohesieve grond is een interval met een minimum
-                           lengte van 10 cm nodig. De vereiste monsterkwaliteit is QM1, QM2 of QM3 voor cohesieve
-                           grond en bij niet-cohesieve grond stelt de monsterkwaliteit geen beperkingen.</p>
+                        <p>De verzadigde waterdoorlatendheid is niet bepaald. De droge volumieke massa is bepaald
+                           en de volumieke massa of de volumieke massa vaste delen is bepaald.<br clear="none">
+                           Dit vereist een interval met een minimum lengte van 2 cm. De monsterkwaliteit stelt
+                           geen beperkingen.</p>
                         </td>
                   </tr>
                </tbody>
@@ -35947,33 +35998,12 @@
                      <th>Omschrijving</th>
                   </tr>
                   <tr>
-                     <td>berekenenPorositeitGeconsolideerd</td>
+                     <td>droogZeven</td>
                      <td>
                         
-                        <p>Methode voor het bepalen van de porositeit van cohesieve grond. Het materiaal is met
-                           een ring uit een boormonster gestoken en dat is vervolgens geheel pas gemaakt. Het
-                           proefstuk is eerst onder een bepaalde druk gezet om het te laten consolideren. De
-                           afmetingen van het proefstuk zijn nauwkeurig gemeten en de massa is met een balans
-                           bepaald. Uit de massa en het volume is de volumieke massa van de geconsolideerde grond
-                           berekend.
-                           Vervolgens is het materiaal gedroogd in de oven waardoor het water verdampt en is
-                           de droge volumieke massa bepaald. 
-                           De porositeit is op een bepaalde manier berekend.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>berekenenPorositeitOngeconsolideerd</td>
-                     <td>
-                        
-                        <p>Methode voor het bepalen van de porositeit van niet-cohesieve grond. Het materiaal
-                           is met een ring uit een boormonster gestoken en dat is vervolgens geheel pas gemaakt.
-                           Het proefstuk is eerst heel zorgvuldig verzadigd. 
-                           Massa en inhoud van de steekring zijn heel nauwkeurig bekend. De massa van de volle
-                           steekring is met een balans bepaald. Uit de massa en het volume is de volumieke massa
-                           van de verzadigde grond berekend.
-                           Vervolgens is het materiaal gedroogd in de oven waardoor het water verdampt en is
-                           de droge volumieke massa bepaald.
-                           De porositeit is berekend. </p>
+                        <p>Methode voor het bepalen van de korrelgrootteverdeling. Voor het bepalen van de verdeling
+                           van de fractie groter dan 63 µm is droge zeving gebruikt. Deze methode wordt gebruikt
+                           wanneer het materiaal uit het onderzocht uit grind of grover materiaal bestaat.</p>
                         </td>
                   </tr>
                   <tr>
@@ -36010,9 +36040,9 @@
                      <td>
                         
                         <p>Methode voor het bepalen van de korrelgrootteverdeling. Het materiaal is nat gezeefd
-                           over de 63 µm-zeef. Wanneer de verdeling van de korrels kleiner dan 63 µm is bepaald
-                           is dit gebeurd door middel van pipetteren. De verdeling van de korrels groter dan
-                           63 µm is bepaald door middel van droge zeving. </p>
+                           over de 63 µm-zeef. De verdeling van de korrels kleiner dan 63 µm is bepaald door
+                           middel van pipetteren. De verdeling van de korrels groter dan 63 µm is bepaald door
+                           middel van droge zeving.</p>
                         </td>
                   </tr>
                   <tr>
@@ -36258,19 +36288,20 @@
                      <th>Omschrijving</th>
                   </tr>
                   <tr>
+                     <td>aggregatie</td>
+                     <td>
+                        
+                        <p>Het onderzochte materiaal is nadat het uit de ondergrond is genomen, bijvoorbeeld
+                           door droging, enigszins geaggregeerd (verkit). Er zijn brokjes aanwezig die meestal,
+                           maar niet altijd eenvoudig verpulverd kunnen worden.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <td>desintegratie</td>
                      <td>
                         
                         <p>Het onderzochte materiaal is na droging in de oven op 105 of 110 °C gedesintegreerd.
                            Dit kan wijzen op een bijzondere samenstelling van het materiaal.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>geaggregeerd</td>
-                     <td>
-                        
-                        <p>Het onderzochte materiaal is enigszins geaggregeerd (verkit). Er zijn brokjes aanwezig
-                           die meestal, maar niet altijd eenvoudig verpulverd kunnen worden.</p>
                         </td>
                   </tr>
                   <tr>
@@ -36358,6 +36389,14 @@
                         <p>Er is een correctie op de verdeling van de fractie groter dan 63 µm toegepast omdat
                            tijdens het zeven een klein deel (niet meer dan 1 %) van het materiaal verloren is
                            gegaan.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>sequentieelUitgevoerd</td>
+                     <td>
+                        
+                        <p>De bepaling is na een andere bepaling op hetzelfde materiaal uitgevoerd. Het kan zijn
+                           dat er materiaal verloren is gegaan. De bepaling is hierdoor minder nauwkeurig.</p>
                         </td>
                   </tr>
                   <tr>
@@ -36634,15 +36673,15 @@
                      <td>SAR13water</td>
                      <td>
                         
-                        <p>In de bepaling is de vloeistof spiritus gebruikt.</p>
+                        <p>In de bepaling is zogenaamd SAR-water gebruikt met SAR waarde (sodium adsorption ratio)
+                           13. De SAR waarde geeft de verhouding tussen natrium en calcium plus magnesium.</p>
                         </td>
                   </tr>
                   <tr>
                      <td>spiritus</td>
                      <td>
                         
-                        <p>In de bepaling is zogenaamd SAR-water gebruikt met SAR waarde (sodium adsorption ratio)
-                           13. De SAR waarde geeft de verhouding tussen natrium en calcium plus magnesium.</p>
+                        <p>In de bepaling is de vloeistof spiritus gebruikt.</p>
                         </td>
                   </tr>
                </tbody>
@@ -36879,23 +36918,23 @@
                      <td></td>
                   </tr>
                   <tr>
-                     <td>ergDunGelamineerd</td>
+                     <td>laagjesErgDunGelamineerd</td>
                      <td></td>
                   </tr>
                   <tr>
-                     <td>dunGelamineerd</td>
+                     <td>laagjesDunGelamineerd</td>
                      <td></td>
                   </tr>
                   <tr>
-                     <td>dikGelamineerd</td>
+                     <td>laagjesDikGelamineerd</td>
                      <td></td>
                   </tr>
                   <tr>
-                     <td>ergDunGelaagd</td>
+                     <td>laagjesErgDunGelaagd</td>
                      <td></td>
                   </tr>
                   <tr>
-                     <td>dunGelaagd</td>
+                     <td>laagjesDunGelaagd</td>
                      <td></td>
                   </tr>
                </tbody>
