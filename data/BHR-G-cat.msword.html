@@ -14,8 +14,8 @@
    </head>
    <body>
       <p>Conceptual model/Geologisch booronderzoek (BHR-G)/20200518</p>
-      <p>Imvertor: 1.61.0</p>
-      <p>Model release: Conceptualmodel-GeologischbooronderzoekBHR-G-0.99-3-20200518-20200714-111804</p>
+      <p>Imvertor: 1.60.1</p>
+      <p>Model release: Conceptualmodel-GeologischbooronderzoekBHR-G-0.99-3-20200518-20200715-152032</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -20219,6 +20219,28 @@
                                  van het materiaal. </p>
                               </td>
                         </tr>
+                        <tr>
+                           <th>Regels</th>
+                           <td>
+                              
+                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>bepaalde samenstellingseigenschappen</em> van de entiteit <em>Onderzocht interval</em> gelijk is aan <em>standaard</em> of <em>standaardMetChemie.</em>
+                                 </p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              <p>De bepaling wordt uitgevoerd op het materiaal kleiner dan 2 mm. Het materiaal wordt
+                                 vooraf gehomogeniseerd, de fractie groter dan 2 mm gezeefd. Het materiaal kleiner
+                                 dan 2 mm wordt gemalen en gedroogd bij 60 °C. Vervolgens wordt het monster gedroogd
+                                 op 105 °C. Het gehalte aan organische stof wordt berekend uit het massaverlies dat
+                                 het gevolg is van de verwijdering van de organische stof uit het materiaal. De bepaling
+                                 wordt uitgevoerd aan grond en de monsterkwaliteit kan alle waarden hebben. De bepaling
+                                 organischestofgehalte is een zogenaamde classificatieproef die is opgenomen in de
+                                 ISO 14688-2. </p>
+                              </td>
+                        </tr>
                      </tbody>
                   </table><a class="anchor" id="detail_attribute_Model_Bepalingorganischestofgehalte_bepalingsprocedure"></a><section id="detail_attribute_Model_Bepalingorganischestofgehalte_bepalingsprocedure">
                      <h4>  bepalingsprocedure</h4>
@@ -20262,22 +20284,18 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>ISO14688d2v2019</em>.</p>
+                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>ISO14688d2v2019plusGDN</em>.</p>
                                  </td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Bepaling van het organischestofgehalte wordt uitgevoerd conform NEN-EN-ISO 14688-2.
-                                    In NEN-EN-ISO 14688-2 zijn de proefbeschrijvingen 28 en 36 uit de RAW (Rationalisatie
+                                 <p>Bepaling van het organischestofgehalte wordt uitgevoerd conform NEN-EN-ISO 14688-2
+                                    en is op onderdelen wat specifieker conform een door GDN voor eigen gebruik opgestelde
+                                    procedure. In NEN-EN-ISO 14688-2 zijn de proefbeschrijvingen 28 en 36 uit de RAW (Rationalisatie
                                     en Automatisering Grond-, Water- en Wegenbouw) overgenomen voor de bepaling van het
-                                    organischestofgehalte. </p>
-                                 
-                                 <p>Een ijzercorrectie die volgens de procedure bij verhitten zou moeten worden doorgevoerd,
-                                    wordt optioneel gekozen bij ijerhoudende gronden.</p>
-                                 
-                                 <p>Aandachtspunt: temperatuur in de norm is 550 graden ipv de 500 graden</p>
+                                    organischestofgehalte. Bij de GDN wordt het organischestofgehalte op 550 °C bepaald.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -20324,7 +20342,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>verhitten550</em>.</p>
+                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>getraptVerhitten550</em>.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -20333,8 +20351,7 @@
                                  
                                  <p>Het gehalte organische stof wordt berekend uit het massaverlies dat het gevolg is
                                     van de verwijdering van de organische stof. De organische stof wordt verwijderd door
-                                    het te verbranden. Er wordt altijd eerst op 450 graden Celsius verhit en vervolgens
-                                    op 550 graden Celsius verhit in de geologische praktijk.</p>
+                                    het te verbranden. </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -20349,6 +20366,13 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Attribuut van Bepaling organischestofgehalte</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De lengte van de periode gedurende welke het materiaal is gedroogd.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -20369,6 +20393,69 @@
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Waardelijst uitbreidbaar</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Standaard wordt het materiaal op een bepaalde temperatuur gedroogd tot de massa van
+                                    het materiaal niet meer afneemt dan 0.5 % per 5 minuten drogen (<em>stabieleMassa5minuten</em>). </p>
+                                 </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Bepalingorganischestofgehalte_bijzonderheiduitvoering"></a><section id="detail_attribute_Model_Bepalingorganischestofgehalte_bijzonderheiduitvoering">
+                     <h4>  bijzonderheid uitvoering</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Bepaling organischestofgehalte</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Een bijzonderheid die zich tijdens de uitvoering van de bepaling heeft voorgedaan
+                                    en die van invloed kan zijn op de resultaten.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>0..3</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td><a class="link" href="#detail_class_Model_BijzonderheidUitvoering">BijzonderheidUitvoering</a></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Waardelijst uitbreidbaar</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Tijdens de uitvoering kunnen zich kleine problemen voordoen waardoor de uitvoerder
+                                    de bepaling niet helemaal op de ideale wijze kan uitvoeren. Het kan voorkomen dat
+                                    de massa van het proefstuk kleiner is dan de procedure voorschrijft of het kan voorkomen
+                                    dat de bepaling is uitgevoerd op het materiaal waarvan eerst de hydrofysische eigenschappen
+                                    zijn bepaald. Ook kan het voorkomen dat het proefstuk na droging op 60 graden Celsius
+                                    meer dan 3 procent water bevat bij extreem vochtige of organische gronden. Wanneer
+                                    een dergelijke situatie zich voordoet en het probleem van invloed kan zijn op het
+                                    resultaat, legt de uitvoerder het als bijzonderheid vast.</p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -20423,58 +20510,6 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Bepalingorganischestofgehalte_bijzonderheiduitvoering"></a><section id="detail_attribute_Model_Bepalingorganischestofgehalte_bijzonderheiduitvoering">
-                     <h4>  bijzonderheid uitvoering</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Bepaling organischestofgehalte</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Een bijzonderheid die zich tijdens de uitvoering van de bepaling heeft voorgedaan
-                                    en die van invloed kan zijn op de resultaten.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td><a class="link" href="#detail_class_Model_BijzonderheidUitvoering">BijzonderheidUitvoering</a></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Waardelijst uitbreidbaar</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>Tijdens de uitvoering kunnen zich kleine problemen voordoen waardoor de uitvoerder
-                                    de bepaling niet helemaal op de ideale wijze kan uitvoeren. Het kan voorkomen dat
-                                    de massa van het proefstuk kleiner is dan de procedure voorschrijft. Wanneer een dergelijke
-                                    situatie zich voordoet en het probleem van invloed kan zijn op het resultaat, legt
-                                    de uitvoerder het als bijzonderheid vast.</p>
-                                 </td>
-                           </tr>
-                        </tbody>
-                     </table>
                      </section><a class="anchor" id="detail_attribute_Model_Bepalingorganischestofgehalte_lutumcorrectietoegepast"></a><section id="detail_attribute_Model_Bepalingorganischestofgehalte_lutumcorrectietoegepast">
                      <h4>  lutumcorrectie toegepast</h4>
                      
@@ -20520,9 +20555,13 @@
                                  
                                  <p>De meetresultaten kunnen zijn gecorrigeerd voor het verlies van water dat door kleideeltjes
                                     wordt vastgehouden. De correctie is gebaseerd op het aandeel van de fractie 0-8 µm
-                                    zoals bepaald in de korrelgrootteverdeling met de lasermethode. Deze fractie wordt
-                                    representatief geacht voor de lutumfractie (0-2 µm). Standaard wordt deze correctie
-                                    toegepast binnen het geologische booronderzoek.</p>
+                                    zoals bepaald in de korrelgrootteverdeling met laserdiffractie. Deze fractie wordt
+                                    representatief geacht voor de lutumfractie (0-2 µm). In de huidige praktijk wordt
+                                    nooit gecorrigeerd met een lutumfractie die volgens een andere methode is bepaald.
+                                    In de huidige praktijk wordt de lutumcorrectie bepaald door te corrigeren voor 0.07
+                                    maal het percentage lutum.  Standaard wordt deze correctie toegepast binnen het geologische
+                                    booronderzoek. In het uitzonderlijke geval dat het materiaal meer dan 95 % organischestof
+                                    bevat wordt de correctie meestal niet toegepast. </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -20570,11 +20609,11 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Het organischestofgehalte kan gecorrigeerd zijn voor de hoeveelheid ijzer die in de
-                                    vorm van ijzeroxiden in de grond voorkomt. Dat is zelden nodig en gebeurt alleen wanneer
-                                    vermoed wordt dat de grond meer veel vrij ijzer bevat. Het voorkomen van veel vrij
-                                    ijzer betekent dat het uitgangsmateriaal een niet te verwaarlozen hoeveelheid water
-                                    bevat die pas tijdens het verhitten verdampt. </p>
+                                 <p>Het organischestofgehalte kan gecorrigeerd zijn voor de hoeveelheid water die in de
+                                    vorm van ijzeroxiden in de grond voorkomt. Dat is zelden nodig en wordt optioneel
+                                    gekozen wanneer vermoed wordt dat de grond meer dan 3 procent vrij ijzer bevat. Het
+                                    voorkomen van veel vrij ijzer betekent dat het uitgangsmateriaal een niet te verwaarlozen
+                                    hoeveelheid water bevat die pas tijdens het verhitten verdampt. </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -20612,7 +20651,7 @@
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
                               <td>Meetwaarde 
-                                 6.0</td>
+                                 2.1</td>
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
@@ -20620,18 +20659,17 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>mg/kg</td>
+                              <td>procent</td>
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td>0 tot 1000000</td>
+                              <td>0 tot 70</td>
                            </tr>
                            <tr>
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut vrij ijzer correctie
-                                    toegepast gelijk is aan <em>ja</em>.<br clear="none">
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>vrij ijzer correctie toegepast</em> gelijk is aan <em>ja</em>.<br clear="none">
                                     Het attribuut mag niet aanwezig zijn in alle andere gevallen. </p>
                                  </td>
                            </tr>
@@ -20639,58 +20677,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De correctie is gebaseerd op de bepaling van het gehalte aan vrij ijzer in lijn met
-                                    de NEN-EN-ISO 12782-2 uit 2012.</p>
-                                 </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Bepalingorganischestofgehalte_watergehalte"></a><section id="detail_attribute_Model_Bepalingorganischestofgehalte_watergehalte">
-                     <h4>  watergehalte</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Bepaling organischestofgehalte</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De verhouding tussen de hoeveelheid water en de hoeveelheid droge stof uitgedrukt
-                                    in massaprocenten.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>Dit geeft voor de expert extra informatie over hoeveel water er in het materiaal zit.
-                                    </p>
+                                 <p>De bepaling van het gehalte aan vrij ijzer is uitgevoerd conform de NEN-EN-ISO 12782-2
+                                    uit 2012</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -36250,6 +36238,24 @@
                         </td>
                   </tr>
                   <tr>
+                     <td>getraptVerhitten550</td>
+                     <td>
+                        
+                        <p>Methode voor het bepalen van het organischestofgehalte. Het materiaal wordt getrapt
+                           verhit van 105  °C naar 450 °C en vervolgens naar 550 °C, waardoor de organische stof
+                           verbrandt. Uit het massaverlies is het gehalte berekend. </p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>getraptVerhitten800</td>
+                     <td>
+                        
+                        <p>Methode voor het bepalen van het kalkgehalte. Het materiaal wordt verhit van 550 tot
+                           800 °C waardoor de koolzure kalk wordt omgezet in calciumoxide. Uit het massaverlies
+                           is het gehalte berekend. </p>
+                        </td>
+                  </tr>
+                  <tr>
                      <td>natDroogZevenPipet</td>
                      <td>
                         
@@ -36267,24 +36273,6 @@
                            de vaste delen is bepaald met een met vloeistof gevulde pyknometer. De massa is bepaald
                            met een balans. Het volume is berekend uit het volumeverschil van de vloeistof in
                            de pyknometer.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>verhitten550</td>
-                     <td>
-                        
-                        <p>Methode voor het bepalen van het organischestofgehalte. Het materiaal wordt verhit
-                           tot 550 °C, waardoor de organische stof verbrandt. Uit het massaverlies is het gehalte
-                           berekend. </p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>verhitten800</td>
-                     <td>
-                        
-                        <p>Methode voor het bepalen van het kalkgehalte. Het materiaal wordt verhit van 550 tot
-                           800 °C waardoor de koolzure kalk wordt omgezet in calciumoxide. Uit het massaverlies
-                           is het gehalte berekend. </p>
                         </td>
                   </tr>
                   <tr>
@@ -36365,7 +36353,7 @@
                         </td>
                   </tr>
                   <tr>
-                     <td>ISO14688d2v2019</td>
+                     <td>ISO14688d2v2019plusGDN</td>
                      <td>
                         
                         <p>NEN-EN-ISO 14688-2:2019 <em>Geotechnisch onderzoek en beproeving - Identificatie en classificatie van grond -
@@ -36603,6 +36591,14 @@
                         <p>Er is een correctie op de verdeling van de fractie groter dan 63 µm toegepast omdat
                            tijdens het zeven een klein deel (niet meer dan 1 %) van het materiaal verloren is
                            gegaan.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>onvoldoendeDroog</td>
+                     <td>
+                        
+                        <p>Het watergehalte van het proefstuk is na droging op 60 °C is meer dan 3 %. Het resultaat
+                           van de bepaling is daardoor minder nauwkeurig. </p>
                         </td>
                   </tr>
                   <tr>
