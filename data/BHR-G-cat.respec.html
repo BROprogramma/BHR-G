@@ -13700,7 +13700,15 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Waardebereik</th>
-                     <td>???? tot heden</td>
+                     <td>2020 tot heden</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Historische gegevens vallen nog buiten het bereik van deze versie van de catalogus
+                           vallen.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -13944,7 +13952,7 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De <em>einddiepte</em> moet groter zijn dan de <em>begindiepte</em> van het onderzocht interval.<br clear="none">
+                        <p>De <em>einddiepte</em> moet groter zijn dan de <em>begindiepte</em> van het <em>Onderzocht interval</em>.<br clear="none">
                            De <em>einddiepte</em> mag niet groter zijn dan de waarde van het attribuut <em>einddiepte bemonstering</em> van de entiteit <em>Boring</em>.</p>
                         </td>
                   </tr>
@@ -14035,7 +14043,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td><a class="link" href="#detail_class_Model_BepaaldeSamenstellingsEigenschappen">BepaaldeSamenstellingsEigenschappen</a></td>
+                     <td><a class="link" href="#detail_class_Model_BepaaldeSamenstellingseigenschappen">BepaaldeSamenstellingseigenschappen</a></td>
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Type</th>
@@ -14046,10 +14054,12 @@
                      <td>
                         
                         <p>Standaard is de korrelgrootteverdeling bepaald met het organisch stofgehalte en kalkgehalte
-                           (standaard). Vaak zijn ook het orangisch koolstofgehalte en zwavelgehalte bepaald
-                           (standaardMetChemie). Andere chemische parameters zijn vooralsnog buiten scope. In
-                           uitzonderlijke gevallen [TODO] slaagt de bepaling van de korrelgrootteverdeling niet
-                           (<em>zonderKorrelverdeling</em>).</p>
+                           (<em>standaard</em>). Vaak zijn ook het organisch koolstofgehalte en zwavelgehalte bepaald (<em>standaardMetChemie</em>). Andere chemische parameters zijn vooralsnog buiten scope. De bepaling van de korrelgrootteverdeling
+                           ontbreekt wanneer de bepaling niet is gelukt en dat is het geval bij sterk organisch
+                           materiaal (<em>zonderKorrelverdeling</em>).<br clear="none">
+                           In zeer uitzonderijke gevallen kan het voorkomen dat bij de bepaling van het kalkgehalte,
+                           organische stof gehalte, organisch koolstofgehalte of zwavelgehalte iets misgaat in
+                           de uitvoering en alleen in dat geval ontbreken die bepalingen.</p>
                         </td>
                   </tr>
                </tbody>
@@ -14143,19 +14153,11 @@
                      <td>Waardelijst niet uitbreidbaar</td>
                   </tr>
                   <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>De waarde van het attribuut moet gelijk zijn aan <em>ja</em> wanneer de waarde van het attribuut <em>bepaalde eigenschappen</em> gelijk is aan <em>consistentie</em>, <em>consistentieKorrelverdeling</em>, <em>korrelverdeling</em>, <em>schuifspanningsverloopBelastingPlus</em>, <em>schuifspanningsverloopHorVervormingPlus</em>, <em>schuifsterktePlus</em>, <em>waterdoorlatendheidPlus</em>, <em>zetting</em> of <em>zettingWaterdoorlatendheid</em>.<br clear="none">
-                           De waarde van het attribuut mag gelijk zijn aan <em>ja</em> in alle andere gevallen. </p>
-                        </td>
-                  </tr>
-                  <tr>
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>Het watergehalte is een basisparameter die altijd samen met andere gegevens gebruikt
-                           wordt in berekeningen. </p>
+                        <p>Het watergehalte is een parameter die altijd samen met andere gegevens gebruikt wordt
+                           in berekeningen. </p>
                         </td>
                   </tr>
                </tbody>
@@ -14200,18 +14202,10 @@
                      <td>Waardelijst niet uitbreidbaar</td>
                   </tr>
                   <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>De waarde van het attribuut moet gelijk zijn aan <em>ja</em> wanneer de waarde van het attribuut <em>bepaalde eigenschappen</em> gelijk is aan <em>zetting</em> of <em>zettingWaterdoorlatendheid</em>.<br clear="none">
-                           De waarde van het attribuut mag gelijk zijn aan <em>ja</em> in alle andere gevallen. </p>
-                        </td>
-                  </tr>
-                  <tr>
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>De volumieke massa is een basisparameter die altijd samen met andere gegevens gebruikt
+                        <p>De volumieke massa is een parameter die altijd samen met andere gegevens gebruikt
                            wordt in berekeningen.</p>
                         </td>
                   </tr>
@@ -14462,7 +14456,10 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>[TODO]</p>
+                        <p>Het attribuut mag niet aanwezig zijn wanneer het attribuut <em>geologische grondsoort</em> ontbreekt.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn wanneer de <em>geologische grondsoort</em> een waarde uit de categorie schelprijke grond of bijzondere grond is.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>geologische grondsoort</em> gelijk is aan <em>blokken</em>.<br clear="none">
+                           Het attribuut moet aanwezig zijn in alle andere gevallen.</p>
                         </td>
                   </tr>
                   <tr>
@@ -14577,8 +14574,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer het attribuut <em>bijzonder materiaal</em> aanwezig.<br clear="none">
-                           Het attribuut mag niet aanwezig zijn wanneer de <em>geologische grondsoort</em> een waarde uit de categorie organische grond is.<br clear="none">
+                        <p>Het attribuut mag niet aanwezig zijn wanneer het attribuut <em>geotechnische grondsoort</em> ontbreekt.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut <em>geotechnische grondsoort</em> gelijk is aan <em>detritus</em>, <em>zwakZandigeDetritus</em>, <em>sterkZandigeDetritus</em>, <em>siltigeDetritus</em>, <em>kleiigeDetritus</em>, <em>humus</em>, <em>zwakZandigeHumus</em>, <em>sterkZandigeHumus</em>, <em>siltigeHumus</em>, <em>kleiigeHumus</em>, <em>veen</em>, <em>zwakZandigVeen</em>, <em>sterkZandigVeen</em>, <em>siltigVeen</em>, <em>kleiigVeen</em>, <em>bruinkool</em> of <em>gyttja</em>.<br clear="none">
                            Het attribuut moet aanwezig zijn in alle andere gevallen.</p>
                         </td>
                   </tr>
@@ -14588,7 +14585,8 @@
                         
                         <p>Het aandeel organische stof wordt volgens NEN-EN-ISO 14688-1 bepaald op basis van
                            waarneembare en voelbare eigenschappen. De organischestofgehalteklasse wordt niet
-                           bepaald als de grond is geclassificeerd als organische grond.</p>
+                           bepaald als de grond vanuit geotechnisch perspectief is geclassificeerd als organische
+                           grond en de primaire fractie uit veen, humus, detritus, bruinkool of gyttja bestaat.</p>
                         </td>
                   </tr>
                </tbody>
@@ -14635,7 +14633,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer de <em>geologische grondsoort</em> een waarde uit de categorie organische grond is.<br clear="none">
+                        <p>Het attribuut mag niet aanwezig zijn wanneer het attribuut <em>geologische grondsoort</em> ontbreekt.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn wanneer de <em>geologische grondsoort</em> een waarde uit de categorie organische grond is.<br clear="none">
                            Het attribuut moet aanwezig zijn in alle andere gevallen.</p>
                         </td>
                   </tr>
@@ -14693,7 +14692,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer de <em>geologische grondsoort</em> een waarde uit de categorie <em> </em> schelprijke grond is.<br clear="none">
+                        <p>Het attribuut mag niet aanwezig zijn wanneer het attribuut <em>geologische grondsoort</em> ontbreekt.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn wanneer de <em>geologische grondsoort</em> een waarde uit de categorie <em> </em> schelprijke grond is.<br clear="none">
                            Het attribuut moet aanwezig zijn in alle andere gevallen.</p>
                         </td>
                   </tr>
@@ -14749,7 +14749,7 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer het attribuut <em>bijzonder materiaal</em> aanwezig is.<br clear="none">
+                        <p>Het attribuut mag niet aanwezig zijn wanneer het attribuut <em>geologische grondsoort</em> ontbreekt.<br clear="none">
                            Het attribuut moet aanwezig zijn in alle andere gevallen. </p>
                         </td>
                   </tr>
@@ -14808,7 +14808,7 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut mag niet aanwezig zijn wanneer het attribuut <em>bijzonder materiaal</em> aanwezig is.</p>
+                        <p>Het attribuut mag niet aanwezig zijn wanneer het attribuut <em>geologische grondsoort</em> ontbreekt.</p>
                         </td>
                   </tr>
                   <tr>
@@ -15048,14 +15048,14 @@
                   <th>Definitie</th>
                   <td>
                      
-                     <p>[TODO]</p>
+                     <p>Een voorkomen in grond van een afwijkende grondsoort.</p>
                      </td>
                </tr>
                <tr>
-                  <th>Toelichting</th>
+                  <th>Regels</th>
                   <td>
                      
-                     <p>[TODO]</p>
+                     <p>De entiteit mag niet aanwezig zijn wanneer het attribuut <em>bijzonder materiaal</em> aanwezig is.</p>
                      </td>
                </tr>
             </tbody>
@@ -15074,7 +15074,7 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>[TODO]</p>
+                        <p>De vorm van het voorkomen.</p>
                         </td>
                   </tr>
                   <tr>
@@ -15101,7 +15101,8 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>[TODO]</p>
+                        <p>In grond komen brokjes, afwijkende laagjes en sedimentlenzen voor. De afwijkende laagjes
+                           zijn getypeerd naar dikte en de brokjes naar lengte.</p>
                         </td>
                   </tr>
                </tbody>
@@ -15183,6 +15184,14 @@
                   <tr>
                      <th>&nbsp;&nbsp;Type</th>
                      <td>Waardelijst uitbreidbaar</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het attribuut moet aanwezig zijn wanneer het attribuut <em>soort grond</em> ontbreekt.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -22739,6 +22748,14 @@
                      </td>
                </tr>
                <tr>
+                  <th>Regels</th>
+                  <td>
+                     
+                     <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>watergehalte bepaald</em> van de entiteit <em>Onderzocht interval</em> gelijk is aan <em>ja</em>.<br clear="none">
+                        De entiteit mag niet aanwezig zijn in alle andere gevallen.</p>
+                     </td>
+               </tr>
+               <tr>
                   <th>Toelichting</th>
                   <td>
                      
@@ -23285,6 +23302,14 @@
                      
                      <p>Het volgens een bepaalde methode bepalen van de massa van het materiaal per eenheid
                         van volume.</p>
+                     </td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td>
+                     
+                     <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>volumieke massa bepaald</em> van de entiteit <em>Onderzocht interval</em> gelijk is aan <em>ja</em>.<br clear="none">
+                        De entiteit mag niet aanwezig zijn in alle andere gevallen.</p>
                      </td>
                </tr>
                <tr>
@@ -36285,7 +36310,8 @@
             <tr>
                <td>
                   
-                  <p>De lijst met de categorieën van eigenschappen die van het materiaal zijn bepaald.</p>
+                  <p>De lijst met de categorieën van hydrofysische eigenschappen die van het materiaal
+                     zijn bepaald.</p>
                   </td>
             </tr>
          </tbody>
@@ -36339,8 +36365,8 @@
          </tbody>
       </table>
       </section>
-   <section id="detail_class_Model_BepaaldeSamenstellingsEigenschappen">
-      <h2>  BepaaldeSamenstellingsEigenschappen</h2>
+   <section id="detail_class_Model_BepaaldeSamenstellingseigenschappen">
+      <h2>  BepaaldeSamenstellingseigenschappen</h2>
       
       <table style="width: 100%;" class="list">
          <colgroup></colgroup>
@@ -36348,7 +36374,8 @@
             <tr>
                <td>
                   
-                  <p>De lijst met de categorieën van eigenschappen die van het materiaal zijn bepaald.</p>
+                  <p>De lijst met de categorieën van samenstellingseigenschappen die van het materiaal
+                     zijn bepaald.</p>
                   </td>
             </tr>
          </tbody>
@@ -36373,28 +36400,39 @@
                <td>standaard</td>
                <td>
                   
-                  <p>De korrelgrootteverdeling is bepaald, en het organischestofgehalte en kalkgehalte
-                     zijn bepaald. Het organisch koolstofgehalte en zwavelgehalte zijn niet bepaald.<br clear="none">
-                     Dit vereist een interval met een minimum lengte van 1 cm. De monsterkwaliteit stelt
-                     geen beperkingen. </p>
+                  <p>Van het onderzocht interval zijn de standaard samenstellingseigenschappen bepaald
+                     en dat zijn de korrelgrootteverdeling, het kalkgehalte en organische stof gehalte.
+                     Het organisch koolstofgehalte en zwavelgehalte zijn niet bepaald.<br clear="none">
+                     In zeer uitzonderijke gevallen kan het voorkomen dat bij de bepaling van het organische
+                     stof gehalte of kalkgehalte iets misgaat in de uitvoering en alleen in dat geval ontbreken
+                     die bepalingen.<br clear="none">
+                     De bepaling van de standaard samenstellingseigenschappen vereist een interval met
+                     een minimum lengte van 1 cm. De monsterkwaliteit stelt geen beperkingen. </p>
                   </td>
             </tr>
             <tr>
                <td>standaardMetChemie</td>
                <td>
                   
-                  <p>De korrelgrootteverdeling is bepaald, en het organischestofgehalte, kalkgehalte, organisch
-                     koolstofgehalte en zwavelgehalte zijn bepaald.<br clear="none">
-                     Dit vereist een interval met een minimum lengte van 1 cm. De monsterkwaliteit stelt
-                     geen beperkingen. </p>
+                  <p>Van het onderzocht interval zijn de standaard samenstellingseigenschappen en chemische
+                     eigenschappen bepaald en dat zijn de korrelgrootteverdeling, het kalkgehalte, organische
+                     stof gehalte, organisch koolstofgehalte en zwavelgehalte.<br clear="none">
+                     In zeer uitzonderijke gevallen kan het voorkomen dat bij de bepaling van het kalkgehalte,
+                     organische stof gehalte, organisch koolstofgehalte of zwavelgehalte iets misgaat in
+                     de uitvoering en alleen in dat geval ontbreken die bepalingen.<br clear="none">
+                     De bepaling van de standaard samenstellingseigenschappen en chemische eigenschappen
+                     vereist een interval met een minimum lengte van 1 cm. De monsterkwaliteit stelt geen
+                     beperkingen. </p>
                   </td>
             </tr>
             <tr>
                <td>zonderKorrelverdeling</td>
                <td>
                   
-                  <p>Het organischestofgehalte en kalkgehalte zijn bepaald. De korrelgrootteverdeling,
-                     het organisch koolstofgehalte en zwavelgehalte zijn niet bepaald.<br clear="none">
+                  <p>Van het onderzocht interval zijn het organische stof gehalte en kalkgehalte bepaald.
+                     Het organisch koolstofgehalte en zwavelgehalte zijn niet bepaald. De bepaling van
+                     de korrelgrootteverdeling ontbreekt omdat de bepaling niet is gelukt en dat is het
+                     geval bij sterk organisch materiaal.<br clear="none">
                      Dit vereist een interval met een minimum lengte van 1 cm. De monsterkwaliteit stelt
                      geen beperkingen. </p>
                   </td>
@@ -36403,10 +36441,12 @@
                <td>zonderKorrelverdelingMetChemie</td>
                <td>
                   
-                  <p>Het organischestofgehalte,kalkgehalte, organisch koolstofgehalte en zwavelgehalte
-                     zijn bepaald. De korrelgrootteverdeling is niet bepaald.<br clear="none">
+                  <p>Van het onderzocht interval zijn het organische stof gehalte, kalkgehalte, organisch
+                     koolstofgehalte en zwavelgehalte bepaald. De bepaling van de korrelgrootteverdeling
+                     ontbreekt omdat de bepaling niet is gelukt en dat is het geval bij sterk organisch
+                     materiaal.<br clear="none">
                      Dit vereist een interval met een minimum lengte van 1 cm. De monsterkwaliteit stelt
-                     geen beperkingen. </p>
+                     geen beperkingen.</p>
                   </td>
             </tr>
          </tbody>
@@ -37480,7 +37520,10 @@
          <colgroup></colgroup>
          <tbody>
             <tr>
-               <td></td>
+               <td>
+                  
+                  <p>De lijst met de vormen van voorkomens van andere soorten grond of gesteente in grond.</p>
+                  </td>
             </tr>
          </tbody>
       </table>
@@ -37497,75 +37540,79 @@
                <td>brokjesErgKlein</td>
                <td>
                   
-                  <p>De lengte is minder dan 2 mm.</p>
+                  <p>Brokjes met een lengte minder dan 2 mm.</p>
                   </td>
             </tr>
             <tr>
                <td>brokjesKlein</td>
                <td>
                   
-                  <p>De lengte ligt tussen 2 en 6 mm.</p>
+                  <p>Brokjes met een lengte tussen 2 en 6 mm.</p>
                   </td>
             </tr>
             <tr>
                <td>brokjesVrijKlein</td>
                <td>
                   
-                  <p>De lengte ligt tussen 6 en 20 mm.</p>
+                  <p>Brokjes met een lengte tussen 6 en 20 mm.</p>
                   </td>
             </tr>
             <tr>
                <td>brokjesVrijGroot</td>
                <td>
                   
-                  <p>De lengte ligt tussen 20 en 60 mm.</p>
+                  <p>Brokjes met een lengte tussen 20 en 60 mm.</p>
                   </td>
             </tr>
             <tr>
                <td>brokjesGroot</td>
                <td>
                   
-                  <p>De lengte ligt tussen 60 en 200 mm.</p>
+                  <p>Brokjes met een lengte tussen 60 en 200 mm.</p>
                   </td>
             </tr>
             <tr>
                <td>laagjesErgDunGelamineerd</td>
                <td>
                   
-                  <p>De dikte van de laagjes is kleiner dan 2 mm.</p>
+                  <p>Een of meer laagjes met een dikte kleiner dan 2 mm.</p>
                   </td>
             </tr>
             <tr>
                <td>laagjesDunGelamineerd</td>
                <td>
                   
-                  <p>De dikte van de laagjes ligt tussen 2 en 6 mm.</p>
+                  <p>Een of meer laagjes met een dikte tussen 2 en 6 mm.</p>
                   </td>
             </tr>
             <tr>
                <td>laagjesDikGelamineerd</td>
                <td>
                   
-                  <p>De dikte van de laagjes ligt tussen 6 en 20 mm.</p>
+                  <p>Een of meer laagjes met een dikte tussen 6 en 20 mm.</p>
                   </td>
             </tr>
             <tr>
                <td>laagjesErgDunGelaagd</td>
                <td>
                   
-                  <p>De dikte van de laagjes ligt tussen 20 en 60 mm.</p>
+                  <p>Een of meer laagjes met een dikte tussen 20 en 60 mm.</p>
                   </td>
             </tr>
             <tr>
                <td>laagjesDunGelaagd</td>
                <td>
                   
-                  <p>De dikte van de laagjes ligt tussen 60 en 200 mm.</p>
+                  <p>Een of meer laagjes met een dikte tussen 60 en 200 mm.</p>
                   </td>
             </tr>
             <tr>
                <td>sedimentlenzen</td>
-               <td></td>
+               <td>
+                  
+                  <p>Een of meer geïsoleerde, duidelijk begrensde, lensvormige voorkomens die herkend worden
+                     als in deeltjes afgezet.</p>
+                  </td>
             </tr>
          </tbody>
       </table>
