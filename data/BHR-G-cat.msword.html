@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Geologisch booronderzoek (BHR-G)/20200518</p>
       <p>Imvertor: 1.61.0</p>
-      <p>Model release: Conceptualmodel-GeologischbooronderzoekBHR-G-0.99-3-20200518-20200719-225105</p>
+      <p>Model release: Conceptualmodel-GeologischbooronderzoekBHR-G-0.99-3-20200518-20200720-020228</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -15281,32 +15281,30 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Regels</th>
+                           <td>
+                              
+                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>bepaalde samenstellingseigenschappen</em> van de entiteit <em>Onderzocht interval</em> gelijk is aan <em>standaard</em> of <em>standaarMetChemie</em>.<br clear="none">
+                                 De entiteit mag niet aanwezig zijn in alle andere gevallen.</p>
+                              </td>
+                        </tr>
+                        <tr>
                            <th>Toelichting</th>
                            <td>
                               
                               <p>Voor de korrelgrootteverdeling wordt grond gezien als een mengsel van minerale deeltjes
-                                 van verschillende grootte. De minerale deeltjes worden korrels genoemd. 
-                                 Standaard wordt een deel van het materiaal waaruit het onderzocht interval bestaat
-                                 uitgeschept waarbij grind en grover materiaal wordt gemeden. Niet-cohesief materiaal
-                                 wordt vooraf 24 uur gedroogd, standaard op 70 graden Celsius en nat materiaal op 60
-                                 graden. Het gedroogde materiaal wordt droog gezeefd over de 2 mm-zeef. Het materiaal
-                                 groter dan 2 mm wordt gedroogd op 105/110 graden Celsius en gewogen. Cohesief materiaal
-                                 wordt niet vooraf gedroogd, en in dat geval wordt het aandeel groter dan 2 mm na de
-                                 meting bepaald. 
-                                 Het materiaal kleiner dan 2 mm wordt gehomogeniseerd, het organische stof wordt verwijderd,
-                                 normaliter wordt de koolzure kalk verwijderd en samengeklonterde korreltjes worden
-                                 van elkaar los gemaakt (dispersie). Het materiaal wordt vervolgens op een bepaalde
-                                 manier verdeeld in fracties. 
-                                 Wanneer het materiaal uit het onderzocht interval bestaat uit grind of grover materiaal
-                                 wordt nog een deel van het materiaal uitgeschept. Het materiaal wordt vooraf 24 uur
-                                 gedroogd, standaard op 70 graden Celsius en nat materiaal op 60 graden. Het materiaal
-                                 wordt gehomogeniseerd en samengeklonterd materiaal wordt eventueel met de hand losgemaakt.
-                                 Het materiaal wordt vervolgens middels droge zeving verdeeld in fracties. 
-                                 De droge massa van iedere fractie wordt bepaald en het resultaat wordt omgerekend
-                                 naar een percentage van de totale massa. De bepaling wordt uitgevoerd aan grond en
-                                 aan bijzonder materiaal en de monsterkwaliteit kan alle waarden hebben. De bepaling
-                                 korrelgrootteverdeling is een zogenaamde classificatieproef die is opgenomen in de
-                                 NEN-EN-ISO 14688-2.</p>
+                                 van verschillende grootte. De minerale deeltjes worden korrels genoemd.<br clear="none">
+                                 Standaard wordt aan 1 onderzocht interval 1 korrelgrootteverdeling bepaald waarbij
+                                 het materiaal kleiner dan 2 mm wordt onderverdeeld. Bij grind en grover materiaal
+                                 wordt een tweede korrelgrootteverdeling bepaald aan het zelfde onderzocht interval
+                                 waarbij ook het materiaal groter dan 2 mm wordt onderverdeeld.<br clear="none">
+                                 Het materiaal wordt uit het onderzocht interval geschept. Bij de standaard bepaling
+                                 wordt bij het uitscheppen grind en grover materiaal gemeden. Het organische stof wordt
+                                 verwijderd en normaliter wordt de koolzure kalk verwijderd. Het materiaal wordt vervolgens
+                                 op een bepaalde manier verdeeld in fracties.<br clear="none">
+                                 De bepaling wordt uitgevoerd aan grond en aan bijzonder materiaal en de monsterkwaliteit
+                                 kan alle waarden hebben. De bepaling korrelgrootteverdeling is een zogenaamde classificatieproef
+                                 die is opgenomen in de NEN-EN-ISO 14688-2.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -15359,9 +15357,10 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De korrelgrootteverdeling wordt volgens een bepaalde methode of combinatie van methoden
-                                    uitgevoerd conform ISO 17892-4. Wanneer de verdeling wordt bepaald met laserdiffractie,
-                                    wordt de bepaling uitgevoerd conform ISO 13320.</p>
+                                 <p>De korrelgrootteverdeling wordt standaard bepaald met laserdiffractie en die wordt
+                                    uitgevoerd conform ISO 13320. Wanneer de korrelgrootteverdeling wordt bepaald door
+                                    middel van zeven of een combinatie van zeven en pipeteren wordt de bepaling uitgevoerd
+                                    conform ISO 17892-4. </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -15416,19 +15415,32 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Standaard wordt de verdeling van de korrels kleiner dan 2 mm bepaald door middel van
-                                    laserdiffractie en de fractie groter dan 2 mm wordt niet nader onderverdeeld.<br clear="none">
-                                    Wanneer het materiaal uit het onderzocht interval uit grof materiaal bestaat wordt
-                                    een tweede bepaling van de korrelgrootteverdeling uitgevoerd aan het zelfde onderzocht
-                                    interval om het materiaal groter dan 2 mm nader onder te verdelen. Dit gebeurt door
-                                    middel van droge zeving (<em>droogZeven</em>).<br clear="none">
+                                 <p>Standaard wordt de korrelgrootteverdeling bepaald door middel van laserdiffractie
+                                    (<em>droogZevenLaser</em>). Niet-cohesief materiaal wordt vooraf 24 uur in een oven gedroogd, standaard op
+                                    70 °C en nat materiaal op 60 °C. Cohesief materiaal wordt niet vooraf gedroogd. Het
+                                    materiaal wordt vervolgens droog gezeefd over de 2 mm-zeef. Het materiaal kleiner
+                                    dan 2 mm wordt gehomogeniseerd, het organische stof wordt verwijderd en normaliter
+                                    wordt de koolzure kalk verwijderd. Tenslotte worden samengeklonterde korreltjes van
+                                    elkaar los gemaakt (<em>dispersie</em>). Het materiaal kleiner dan 2 mm wordt door middel van laserdiffractie verdeeld in
+                                    fracties. Het gemeten lichtpatroon wordt met behulp van een optisch model omgerekend
+                                    naar een percentage van de totale droge massa. Het materiaal groter dan 2 mm wordt
+                                    gedroogd op 105/110 °C en gewogen.<br clear="none">
+                                    Wanneer het materiaal van het onderzocht interval uit grind of grover materiaal bestaat
+                                    wordt aan hetzelfde onderzocht interval een tweede korrelgrootteverdeling bepaald
+                                    om het materiaal groter dan 2 mm onder te verdelen. Dit gebeurt door middel van droge
+                                    zeving (<em>droogZeven</em>). Het materiaal wordt eerst 24 uur gedroogd, standaard op 70 °C en nat materiaal
+                                    op 60 °C. Het materiaal wordt gehomogeniseerd, het organische stof wordt verwijderd
+                                    en normaliter wordt de koolzure kalk verwijderd. Ten slotte wordt samengeklonterd
+                                    materiaal met de hand losgemaakt. Het materiaal wordt vervolgens middels droge zeving
+                                    verdeeld in fracties. De droge massa van iedere fractie wordt bepaald en het resultaat
+                                    wordt omgerekend naar een percentage van de totale droge massa.<br clear="none">
                                     Binnen geologisch booronderzoek wordt in zeer uitzonderlijke gevallen een controle
                                     bepaling uitgevoerd voor de verdeling van de korrels kleiner dan 2 mm met behulp van
-                                    de pipet en zeving. Het materiaal wordt na de voorbehandeling nat gezeefd over de
-                                    63µm-zeef. De fractie 63 µm tot  2 mm wordt verder onderverdeeld door het droge materiaal
-                                    te zeven. De fijne fractie wordt verder onderverdeeld op basis van de bezinksnelheid
-                                    van de korrels en die wordt bepaald met behulp van een pipet. De klassegrenzen bij
-                                    deze methoden zijn minder nauwkeurig dan bij zeving.</p>
+                                    de pipet en zeving (<em>natDroogZevenPipet</em>). Het materiaal wordt na de voorbehandeling nat gezeefd over de 63µm-zeef. De fractie
+                                    63 µm tot 2 mm wordt verder onderverdeeld door het droge materiaal te zeven. De fijne
+                                    fractie wordt verder onderverdeeld op basis van de bezinksnelheid van de korrels en
+                                    die wordt bepaald met behulp van een pipet. De klassegrenzen bij deze methode zijn
+                                    minder nauwkeurig dan bij zeving.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -15475,9 +15487,9 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>uitgebreidUitgebreidBasis</em> wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>droogZevenLaser</em>.<br clear="none">
+                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>standaardStandaardBasis</em> wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>droogZevenLaser</em>.<br clear="none">
                                     De waarde van het attribuut moet gelijk zijn aan <em>basisMinimaalStandaard</em> wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>droogZeven</em>.<br clear="none">
-                                    De waarde van het attribuut moet gelijk zijn aan <em>standaardStandaardBasis</em> wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>natDroogZevenPipet</em>.</p>
+                                    De waarde van het attribuut moet gelijk zijn aan <em>controleControleBasis</em> wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>natDroogZevenPipet</em>.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -15485,9 +15497,13 @@
                               <td>
                                  
                                  <p>Er wordt altijd een verdeling in drie klassen bepaald: het aandeel van de korrels
-                                    kleiner dan 63 µm, het aandeel van de korrels tussen de 63 µm en het aandeel van de
-                                    korrels groter dan 2 mm. Er worden altijd twee van de drie fracties nader onderverdeeld
-                                    volgens de minimale, standaard of uitgebreide verdeling. </p>
+                                    kleiner dan 63 µm, het aandeel van de korrels tussen de 63 µm en 2 mm en het aandeel
+                                    van de korrels groter dan 2 mm. Dit is de <em>basis</em>
+                                    <em>korrelgrootteverdeling</em>. Bij de standaardverdeling worden de fractie kleiner dan 63 µm en de fractie tussen
+                                    de 63 µm en 2 mm op een standaard manier onderverdeeld. Wanneer grind of grover materiaal
+                                    wordt gezeefd  worden de fractie 63 µm en 2 mm (<em>minimaal</em>) en de fractie groter dan 2 mm nader onderverdeeld (<em>standaard</em>). In het uitzonderlijke geval er een tweede bepaling ter controle wordt uitgevoerd
+                                    worden de fractie kleiner dan 63 µm en de fractie tussen de 63 µm en 2 mm onderverdeeld.
+                                    </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -15535,11 +15551,9 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Voorafgaand aan de bepaling van de korrelgrootteverdeling is standaard alle organische
-                                    stof verwijderd met H2O2 (15 %).<br clear="none">
-                                    Alle organische stof wordt verwijderd. Het kan voorkomen dat de behandeling een paar
-                                    keer uitgevoerd moet worden. Het gehalte organische stof van het onderzocht interval
-                                    is altijd bepaald. </p>
+                                 <p>Voorafgaand aan de bepaling van de korrelgrootteverdeling is altijd alle organische
+                                    stof verwijderd met H<sub>2</sub>O<sub>2</sub> (15 %). Het kan voorkomen dat de behandeling een paar keer uitgevoerd moet worden.
+                                    Het gehalte organische stof van het onderzocht interval is altijd bepaald (<em>Bepaling organischestofgehalte</em>). </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -15588,9 +15602,9 @@
                               <td>
                                  
                                  <p>Voorafgaand aan de bepaling van de korrelgrootteverdeling is normaliter alle koolzure
-                                    kalk verwijderd met HCl (0,5 M). Alle kalk wordt verwijderd. Het kan voorkomen dat
-                                    de behandeling een paar keer uitgevoerd moet worden. Het kalkgehalte van het onderzocht
-                                    interval is altijd bepaald. </p>
+                                    kalk verwijderd met HCl (0,5 M). Het kan voorkomen dat de behandeling een paar keer
+                                    uitgevoerd moet worden. Het kalkgehalte van het onderzocht interval is altijd bepaald
+                                    (<em>Bepaling kalkgehalte</em>). </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -15647,14 +15661,14 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>In geologisch booronderzoek worden geen bestanddelen verwijderd en wordt de waarde
-                                    <em>geen</em> vastgelegd. </p>
+                                 <p>In geologisch booronderzoek worden standaard geen bestanddelen verwijderd (de waarde
+                                    <em>geen)</em>. </p>
                                  </td>
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Bepalingkorrelgrootteverdeling_massaonderzochtmateriaal"></a><section id="detail_attribute_Model_Bepalingkorrelgrootteverdeling_massaonderzochtmateriaal">
-                     <h4>  massa onderzocht materiaal</h4>
+                     </section><a class="anchor" id="detail_attribute_Model_Bepalingkorrelgrootteverdeling_massadroogmateriaal"></a><section id="detail_attribute_Model_Bepalingkorrelgrootteverdeling_massadroogmateriaal">
+                     <h4>  massa droog materiaal</h4>
                      
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -15668,7 +15682,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De massa van het onderzocht materiaal.</p>
+                                 <p>De massa van het droge materiaal waarvan de korrelgrootteverdeling is bepaald.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -15677,7 +15691,7 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>1</td>
+                              <td>0..1</td>
                            </tr>
                            <tr>
                               <th>Domein</th>
@@ -15701,11 +15715,21 @@
                               <td> vanaf 0</td>
                            </tr>
                            <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>droogZeven</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De procedure schrijft een minimale massa voor het deel van het materiaal dat wordt
-                                    gezeefd voor, en deze is afhankelijk van de grootste korreldiameter.<br clear="none">
+                                 <p>De massa van het droge materiaal, na droging op 105/110 °C en na verwijdering van
+                                    organische stof en koolzure kalk.<br clear="none">
+                                    Het gegeven wordt gebruikt om te bepalen in hoeverre de massa per fractie voldoet
+                                    aan de eisen in de procedure.<br clear="none">
                                     </p>
                                  </td>
                            </tr>
@@ -15812,7 +15836,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>natDroogZevenPipet</em> en de waarde van het attribuut fractieverdeling gelijk is aan <em>standaardStandaardBasis</em>.<br clear="none">
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>natDroogZevenPipet</em>.<br clear="none">
                                     Het attribuut mag niet aanwezig zijn in alle andere gevallen. </p>
                                  </td>
                            </tr>
@@ -15949,8 +15973,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De aanduiding die aangeeft of de meetresultaten zijn gecorrigeerd voor het verlies
-                                    van water dat aan korrels kleiner dan 2 µm gebonden is.</p>
+                                 <p>De aanduiding die aangeeft of de omgerekende resultaten zijn gecorrigeerd naar 100
+                                    procent. </p>
                                  </td>
                            </tr>
                            <tr>
@@ -15985,10 +16009,9 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Laserdiffractie is een optische meetmethode waarbij het gemeten patroon met behulp
-                                    van een optisch model wordt omgerekend naar de korrelgrootteverdeling.<br clear="none">
-                                    Wanneer de korrelgrootteverdeling niet exact op 100% uitkomt wordt een correctie toegepast,
-                                    normaliter ligt de correctie tussen -0,2 en 0,2 %.</p>
+                                 <p>Bij laserdiffractie is het gemeten lichtpatroon met behulp van een optisch model omgerekend
+                                    naar de korrelgrootteverdeling. Wanneer de korrelgrootteverdeling niet exact op 100%
+                                    uitkomt wordt een correctie toegepast.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -16008,8 +16031,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De  waarde van de volumieke massa die nodig is om de diameter van de korrels uit de
-                                    bezinksnelheid te berekenen.</p>
+                                 <p>Het percentage waarvoor is gecorrigeerd. </p>
                                  </td>
                            </tr>
                            <tr>
@@ -16038,10 +16060,6 @@
                               <td>% (procent)</td>
                            </tr>
                            <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                           <tr>
                               <th>Regels</th>
                               <td>
                                  
@@ -16053,7 +16071,7 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>IN de meeste gevallen zal de waarde tussen de -0,2 en 0,2 % liggen.</p>
+                                 <p>In de meeste gevallen ligt de waarde tussen de -0,2 en 0,2 %.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -16103,12 +16121,12 @@
                                  
                                  <p>Tijdens de uitvoering kunnen zich kleine problemen voordoen waardoor de uitvoerder
                                     de bepaling niet helemaal op de ideale wijze kan uitvoeren. Het kan voorkomen dat
-                                    de bepaling is uitgevoerd op het materiaal waarvan eerst de hydrofysische eigenschappen
-                                    zijn bepaald. Het kan zijn dat er materiaal verloren is gegaan. De bepaling is hierdoor
-                                    minder nauwkeurig. Het kan ook voorkomen dat tijdens het zeven een klein deel van
-                                    het materiaal verloren is gegaan. Wanneer een dergelijke situatie zich voordoet en
-                                    het probleem van invloed kan zijn op het resultaat, legt de uitvoerder het als bijzonderheid
-                                    vast.</p>
+                                    de massa van het proefstuk kleiner is dan de procedure voorschrijft. Het kan voorkomen
+                                    dat de bepaling is uitgevoerd op het materiaal waarvan eerst de hydrofysische eigenschappen
+                                    zijn bepaald waardoor materiaal verloren is gegaan of dat er tijdens het zeven materiaal
+                                    verloren is gegaan. De bepaling is hierdoor minder nauwkeurig. Wanneer een dergelijke
+                                    situatie zich voordoet en het probleem van invloed kan zijn op het resultaat, legt
+                                    de uitvoerder het als bijzonderheid vast.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -16182,8 +16200,7 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>De verdeling in een fijne en een grove fractie, die de basis voor iedere verdere indeling
-                                 is.</p>
+                              <p>De verdeling in drie fracties, die de basis voor iedere verdere indeling is.</p>
                               </td>
                         </tr>
                         <tr>
@@ -16209,7 +16226,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Het aandeel van de korrels met een diameter van 0 tot 63 µm in de massa van het materiaal.</p>
+                                 <p>Het aandeel van de korrels met een diameter kleiner dan 63 µm in de massa van het
+                                    droge materiaal.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -16258,7 +16276,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Het aandeel van de korrels met een diameter van 0 tot 63 µm in de massa van het materiaal.</p>
+                                 <p>Het aandeel van de korrels met een diameter van 63 µm tot 2 mm in de massa van het
+                                    droge materiaal.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -16307,8 +16326,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Het aandeel van de korrels met een diameter van 63 µm en groter in de massa van het
-                                    materiaal.</p>
+                                 <p>Het aandeel van de korrels met een diameter van 2 mm en groter in de massa van het
+                                    droge materiaal.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -16367,7 +16386,7 @@
                            <th>Regels</th>
                            <td>
                               
-                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>fractieverdeling</em> van de entiteit <em>Bepaling korrelgrootteverdeling</em> gelijk is aan <em>uitgebreidUitgebreidBasis</em>.<br clear="none">
+                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>fractieverdeling</em> van de entiteit <em>Bepaling korrelgrootteverdeling</em> gelijk is aan <em>standaardStandaardBasis</em>.<br clear="none">
                                  De entiteit mag niet aanwezig zijn in alle andere gevallen. </p>
                               
                               <p>De som van alle fracties moet gelijk zijn aan de waarde van het attribuut <em>fractie kleiner63um</em> van de entiteit <em>Basis korrelgrootteverdeling</em>.</p>
@@ -16916,6 +16935,380 @@
                         </tbody>
                      </table>
                      </section>
+               </section><a class="anchor" id="graph_EAID_A81260B1_7C9C_49b5_859A_A69571BECD4E"></a><a class="anchor" id="global_class_Model_Controleverdelingfractiekleiner63um"></a><section id="global_class_Model_Controleverdelingfractiekleiner63um">
+                  <h3>   Controleverdeling fractie kleiner63um</h3>
+                  <div class="imageinfo "><img src="Images/EAID_54446149_5F19_43f6_9115_8EA684E1D4FD.png" usemap="#imagemap-EAID_54446149_5F19_43f6_9115_8EA684E1D4FD" alt="Diagram "><map name="imagemap-EAID_54446149_5F19_43f6_9115_8EA684E1D4FD"><area shape="rect" alt="Controleverdeling fractie kleiner63um" coords="10,10,196,137" href="#graph_EAID_A81260B1_7C9C_49b5_859A_A69571BECD4E"></map><p><b></b></p>
+                  </div>
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Type gegeven</th>
+                           <td>Entiteit</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>De fractie kleiner dan 63 µm verdeeld in de fracties die standaard worden onderscheiden.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Regels</th>
+                           <td>
+                              
+                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>fractieverdeling</em> van de entiteit <em>Bepaling korrelgrootteverdeling</em> gelijk is aan <em>controleControleBasis</em>.<br clear="none">
+                                 De entiteit mag niet aanwezig zijn in alle andere gevallen.</p>
+                              
+                              <p>De som van alle fracties moet gelijk zijn aan de waarde van het attribuut <em>fractie kleiner63um</em> van de entiteit <em>Basis korrelgrootteverdeling</em>.</p>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table><a class="anchor" id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie0tot2um"></a><section id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie0tot2um">
+                     <h4>  fractie 0tot2um</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Controleverdeling fractie kleiner63um</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter kleiner dan 2 µm in de massa van het materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie2tot4um"></a><section id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie2tot4um">
+                     <h4>  fractie 2tot4um</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Controleverdeling fractie kleiner63um</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 2 tot 4 µm in de massa van het materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie4tot8um"></a><section id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie4tot8um">
+                     <h4>  fractie 4tot8um</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Controleverdeling fractie kleiner63um</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 4 tot 8 µm in de massa van het materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie8tot16um"></a><section id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie8tot16um">
+                     <h4>  fractie 8tot16um</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Controleverdeling fractie kleiner63um</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 8 tot 16 µm in de massa van het materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie16tot32um"></a><section id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie16tot32um">
+                     <h4>  fractie 16tot32um</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Controleverdeling fractie kleiner63um</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 16 tot 32 µm in de massa van het materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie32tot50um"></a><section id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie32tot50um">
+                     <h4>  fractie 32tot50um</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Controleverdeling fractie kleiner63um</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 32 tot 50 µm in de massa van het materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie50tot63um"></a><section id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie50tot63um">
+                     <h4>  fractie 50tot63um</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Controleverdeling fractie kleiner63um</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 50 tot 63 µm in de massa van het materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
                </section><a class="anchor" id="graph_EAID_6B18685C_A68D_4478_B8B0_6AB2253CEC5B"></a><a class="anchor" id="global_class_Model_Standaardverdelingfractie63umtot2mm"></a><section id="global_class_Model_Standaardverdelingfractie63umtot2mm">
                   <h3>   Standaardverdeling fractie 63umtot2mm</h3>
                   <div class="imageinfo "><img src="Images/EAID_4F9478F4_14E6_47e3_9D59_B3057BA30B51.png" usemap="#imagemap-EAID_4F9478F4_14E6_47e3_9D59_B3057BA30B51" alt="Diagram "><map name="imagemap-EAID_4F9478F4_14E6_47e3_9D59_B3057BA30B51"><area shape="rect" alt="Standaardverdeling fractie 63umtot2mm" coords="10,10,229,332" href="#graph_EAID_6B18685C_A68D_4478_B8B0_6AB2253CEC5B"></map><p><b></b></p>
@@ -16940,7 +17333,7 @@
                            <th>Regels</th>
                            <td>
                               
-                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>fractieverdeling</em> van de entiteit <em>Bepaling korrelgrootteverdeling</em> gelijk is aan <em>uitgebreidUitgebreidBasis</em>.<br clear="none">
+                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>fractieverdeling</em> van de entiteit <em>Bepaling korrelgrootteverdeling</em> gelijk is aan <em>standaardStandaardBasis</em>.<br clear="none">
                                  De entiteit mag niet aanwezig zijn in alle andere gevallen. </p>
                               
                               <p>De som van alle fracties moet gelijk zijn aan de waarde van het attribuut <em>fractie 63umTot2mm</em> van de entiteit <em>Basis korrelgrootteverdeling</em>. </p>
@@ -17610,8 +18003,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Het aandeel van de korrels met een diameter van 500 tot 600 µm tot 2 mm in de massa
-                                    van het materiaal.</p>
+                                 <p>Het aandeel van de korrels met een diameter van 500 tot 600 µm in de massa van het
+                                    materiaal.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -18046,1238 +18439,6 @@
                         </tbody>
                      </table>
                      </section>
-               </section><a class="anchor" id="graph_EAID_37C18EF1_F6E5_4100_81F0_5B2455DC7B56"></a><a class="anchor" id="global_class_Model_Minimaleverdelingfractie63umtot2mm"></a><section id="global_class_Model_Minimaleverdelingfractie63umtot2mm">
-                  <h3>   Minimale verdeling fractie 63umtot2mm</h3>
-                  <div class="imageinfo "><img src="Images/EAID_4DA4676D_68A7_42ce_8DE2_9C61165BE483.png" usemap="#imagemap-EAID_4DA4676D_68A7_42ce_8DE2_9C61165BE483" alt="Diagram "><map name="imagemap-EAID_4DA4676D_68A7_42ce_8DE2_9C61165BE483"><area shape="rect" alt="Minimale verdeling fractie 63umtot2mm" coords="10,10,205,150" href="#graph_EAID_37C18EF1_F6E5_4100_81F0_5B2455DC7B56"></map><p><b></b></p>
-                  </div>
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Type gegeven</th>
-                           <td>Entiteit</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>De fractie 63 µm tot 2 mm verdeeld in de fracties die minimaal worden onderscheiden.</p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Regels</th>
-                           <td>
-                              
-                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>fractieverdeling</em> van de entiteit <em>Bepaling korrelgrootteverdeling</em> gelijk is aan <em>basisMinimaalStandaard</em>.<br clear="none">
-                                 De entiteit mag niet aanwezig zijn in alle andere gevallen. </p>
-                              
-                              <p>De som van alle fracties moet gelijk zijn aan de waarde van het attribuut <em>fractie 63umTot2mm</em> van de entiteit <em>Basis korrelgrootteverdeling</em>. </p>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie63tot300um"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie63tot300um">
-                     <h4>  fractie 63tot300um</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 63 tot 300 µm in de massa van het
-                                    materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie300tot420um"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie300tot420um">
-                     <h4>  fractie 300tot420um</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 300 tot 420 µm in de massa van het
-                                    materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie420tot600um"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie420tot600um">
-                     <h4>  fractie 420tot600um</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 420 tot 600 µm in de massa van het
-                                    materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie600tot630um"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie600tot630um">
-                     <h4>  fractie 600tot630um</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 600 tot 630 µm in de massa van het
-                                    materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie630tot1000um"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie630tot1000um">
-                     <h4>  fractie 630tot1000um</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 630 tot 1000 µm in de massa van het
-                                    materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie1000tot1200um"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie1000tot1200um">
-                     <h4>  fractie 1000tot1200um</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 1000 tot 1200 µm in de massa van het
-                                    materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie1200tot1400um"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie1200tot1400um">
-                     <h4>  fractie 1200tot1400um</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 1200 tot 1400 µm in de massa van het
-                                    materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie1400umtot2mm"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie1400umtot2mm">
-                     <h4>  fractie 1400umtot2mm</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 1400 µm tot 2 mm in de massa van het
-                                    materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section>
-               </section><a class="anchor" id="graph_EAID_DEDDD48B_845A_4a4b_B5F8_66754B3716E5"></a><a class="anchor" id="global_class_Model_Standaardverdelingfractiegroter2mm"></a><section id="global_class_Model_Standaardverdelingfractiegroter2mm">
-                  <h3>   Standaardverdeling fractie groter2mm</h3>
-                  <div class="imageinfo "><img src="Images/EAID_D7A8E4B1_A7CB_43ed_9F0A_6DA0DC86B357.png" usemap="#imagemap-EAID_D7A8E4B1_A7CB_43ed_9F0A_6DA0DC86B357" alt="Diagram "><map name="imagemap-EAID_D7A8E4B1_A7CB_43ed_9F0A_6DA0DC86B357"><area shape="rect" alt="Standaardverdeling fractie groter2mm" coords="10,10,229,150" href="#graph_EAID_DEDDD48B_845A_4a4b_B5F8_66754B3716E5"></map><p><b></b></p>
-                  </div>
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Type gegeven</th>
-                           <td>Entiteit</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>De fractie groter dan 2 mm verdeeld in de fracties die standaard worden onderscheiden.</p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Regels</th>
-                           <td>
-                              
-                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>fractieverdeling</em> van de entiteit <em>Bepaling korrelgrootteverdeling</em> gelijk is aan <em>basisMinimaalStandaard</em>.<br clear="none">
-                                 De entiteit mag niet aanwezig zijn in alle andere gevallen. </p>
-                              
-                              <p>De som van alle fracties moet gelijk zijn aan de waarde van het attribuut <em>fractie groter2mm</em> van de entiteit <em>Basis korrelgrootteverdeling</em>.</p>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie2tot56mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie2tot56mm">
-                     <h4>  fractie 2tot5.6mm</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 2 tot 5,6 mm in de massa van het materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie56tot63mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie56tot63mm">
-                     <h4>  fractie 5.6tot6.3mm</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 5,6 tot 6,3 mm in de massa van het
-                                    materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie63tot10mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie63tot10mm">
-                     <h4>  fractie 6.3tot10mm</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 6,3 tot 10 mm in de massa van het
-                                    materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie10tot16mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie10tot16mm">
-                     <h4>  fractie 10tot16mm</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 10 tot 16 mm in de massa van het materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie16tot20mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie16tot20mm">
-                     <h4>  fractie 16tot20mm</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 16 tot 20 mm in de massa van het materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie20tot375mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie20tot375mm">
-                     <h4>  fractie 20tot37.5mm</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 20 tot 37,5 mm in de massa van het
-                                    materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie375tot63mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie375tot63mm">
-                     <h4>  fractie 37.5tot63mm</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 37,5 tot 63 mm in de massa van het
-                                    materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractiegroter63mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractiegroter63mm">
-                     <h4>  fractie groter63mm</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter groter dan 63 mm in de massa van het materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section>
-               </section><a class="anchor" id="graph_EAID_A81260B1_7C9C_49b5_859A_A69571BECD4E"></a><a class="anchor" id="global_class_Model_Controleverdelingfractiekleiner63um"></a><section id="global_class_Model_Controleverdelingfractiekleiner63um">
-                  <h3>   Controleverdeling fractie kleiner63um</h3>
-                  <div class="imageinfo "><img src="Images/EAID_54446149_5F19_43f6_9115_8EA684E1D4FD.png" usemap="#imagemap-EAID_54446149_5F19_43f6_9115_8EA684E1D4FD" alt="Diagram "><map name="imagemap-EAID_54446149_5F19_43f6_9115_8EA684E1D4FD"><area shape="rect" alt="Controleverdeling fractie kleiner63um" coords="10,10,196,137" href="#graph_EAID_A81260B1_7C9C_49b5_859A_A69571BECD4E"></map><p><b></b></p>
-                  </div>
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Type gegeven</th>
-                           <td>Entiteit</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>De fractie kleiner dan 63 µm verdeeld in de fracties die standaard worden onderscheiden.</p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Regels</th>
-                           <td>
-                              
-                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>fractieverdeling</em> van de entiteit <em>Bepaling korrelgrootteverdeling</em> gelijk is aan <em>standaardStandaardBasis</em>.<br clear="none">
-                                 De entiteit mag niet aanwezig zijn in alle andere gevallen.</p>
-                              
-                              <p>De som van alle fracties moet gelijk zijn aan de waarde van het attribuut <em>fractie kleiner63um</em> van de entiteit <em>Basis korrelgrootteverdeling</em>.</p>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table><a class="anchor" id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie0tot2um"></a><section id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie0tot2um">
-                     <h4>  fractie 0tot2um</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Controleverdeling fractie kleiner63um</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter kleiner dan 2 µm in de massa van het materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie2tot4um"></a><section id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie2tot4um">
-                     <h4>  fractie 2tot4um</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Controleverdeling fractie kleiner63um</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 2 tot 4 µm in de massa van het materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie4tot8um"></a><section id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie4tot8um">
-                     <h4>  fractie 4tot8um</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Controleverdeling fractie kleiner63um</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 4 tot 8 µm in de massa van het materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie8tot16um"></a><section id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie8tot16um">
-                     <h4>  fractie 8tot16um</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Controleverdeling fractie kleiner63um</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 8 tot 16 µm in de massa van het materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie16tot32um"></a><section id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie16tot32um">
-                     <h4>  fractie 16tot32um</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Controleverdeling fractie kleiner63um</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 16 tot 32 µm in de massa van het materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie32tot50um"></a><section id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie32tot50um">
-                     <h4>  fractie 32tot50um</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Controleverdeling fractie kleiner63um</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 32 tot 50 µm in de massa van het materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie50tot63um"></a><section id="detail_attribute_Model_Controleverdelingfractiekleiner63um_fractie50tot63um">
-                     <h4>  fractie 50tot63um</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Controleverdeling fractie kleiner63um</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het aandeel van de korrels met een diameter van 50 tot 63 µm in de massa van het materiaal.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Meetwaarde 
-                                 2.1</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Getal</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Eenheid</th>
-                              <td>% (procent)</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 0</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section>
                </section><a class="anchor" id="graph_EAID_8EFCF3B0_F02E_4bf7_B06A_D093E01FEE7D"></a><a class="anchor" id="global_class_Model_Controleverdelingfractie63umtot2mm"></a><section id="global_class_Model_Controleverdelingfractie63umtot2mm">
                   <h3>   Controleverdeling fractie 63umtot2mm</h3>
                   <div class="imageinfo "><img src="Images/EAID_A9F737FD_9AE3_40b1_A860_EE392B39CF09.png" usemap="#imagemap-EAID_A9F737FD_9AE3_40b1_A860_EE392B39CF09" alt="Diagram "><map name="imagemap-EAID_A9F737FD_9AE3_40b1_A860_EE392B39CF09"><area shape="rect" alt="Controleverdeling fractie 63umtot2mm" coords="10,10,205,280" href="#graph_EAID_8EFCF3B0_F02E_4bf7_B06A_D093E01FEE7D"></map><p><b></b></p>
@@ -19301,7 +18462,7 @@
                            <th>Regels</th>
                            <td>
                               
-                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>fractieverdeling</em> van de entiteit <em>Bepaling korrelgrootteverdeling</em> gelijk is aan <em>standaardStandaardBasis</em>.<br clear="none">
+                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>fractieverdeling</em> van de entiteit <em>Bepaling korrelgrootteverdeling</em> gelijk is aan <em>controleControleBasis</em>.<br clear="none">
                                  De entiteit mag niet aanwezig zijn in alle andere gevallen. </p>
                               
                               <p>De som van alle fracties moet gelijk zijn aan de waarde van het attribuut <em>fractie 63umTot2mm</em> van de entiteit <em>Basis korrelgrootteverdeling</em>.<br clear="none">
@@ -20175,6 +19336,864 @@
                                  
                                  <p>Het aandeel van de korrels met een diameter van 1400 µm tot 2 mm in de massa van het
                                     materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+               </section><a class="anchor" id="graph_EAID_37C18EF1_F6E5_4100_81F0_5B2455DC7B56"></a><a class="anchor" id="global_class_Model_Minimaleverdelingfractie63umtot2mm"></a><section id="global_class_Model_Minimaleverdelingfractie63umtot2mm">
+                  <h3>   Minimale verdeling fractie 63umtot2mm</h3>
+                  <div class="imageinfo "><img src="Images/EAID_4DA4676D_68A7_42ce_8DE2_9C61165BE483.png" usemap="#imagemap-EAID_4DA4676D_68A7_42ce_8DE2_9C61165BE483" alt="Diagram "><map name="imagemap-EAID_4DA4676D_68A7_42ce_8DE2_9C61165BE483"><area shape="rect" alt="Minimale verdeling fractie 63umtot2mm" coords="10,10,205,150" href="#graph_EAID_37C18EF1_F6E5_4100_81F0_5B2455DC7B56"></map><p><b></b></p>
+                  </div>
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Type gegeven</th>
+                           <td>Entiteit</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>De fractie 63 µm tot 2 mm verdeeld in de fracties die minimaal worden onderscheiden.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Regels</th>
+                           <td>
+                              
+                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>fractieverdeling</em> van de entiteit <em>Bepaling korrelgrootteverdeling</em> gelijk is aan <em>basisMinimaalStandaard</em>.<br clear="none">
+                                 De entiteit mag niet aanwezig zijn in alle andere gevallen. </p>
+                              
+                              <p>De som van alle fracties moet gelijk zijn aan de waarde van het attribuut <em>fractie 63umTot2mm</em> van de entiteit <em>Basis korrelgrootteverdeling</em>. </p>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie63tot300um"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie63tot300um">
+                     <h4>  fractie 63tot300um</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 63 tot 300 µm in de massa van het
+                                    materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie300tot420um"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie300tot420um">
+                     <h4>  fractie 300tot420um</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 300 tot 420 µm in de massa van het
+                                    materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie420tot600um"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie420tot600um">
+                     <h4>  fractie 420tot600um</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 420 tot 600 µm in de massa van het
+                                    materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie600tot630um"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie600tot630um">
+                     <h4>  fractie 600tot630um</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 600 tot 630 µm in de massa van het
+                                    materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie630tot1000um"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie630tot1000um">
+                     <h4>  fractie 630tot1000um</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 630 tot 1000 µm in de massa van het
+                                    materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie1000tot1200um"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie1000tot1200um">
+                     <h4>  fractie 1000tot1200um</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 1000 tot 1200 µm in de massa van het
+                                    materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie1200tot1400um"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie1200tot1400um">
+                     <h4>  fractie 1200tot1400um</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 1200 tot 1400 µm in de massa van het
+                                    materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie1400umtot2mm"></a><section id="detail_attribute_Model_Minimaleverdelingfractie63umtot2mm_fractie1400umtot2mm">
+                     <h4>  fractie 1400umtot2mm</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Minimale verdeling fractie 63umtot2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 1400 µm tot 2 mm in de massa van het
+                                    materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+               </section><a class="anchor" id="graph_EAID_DEDDD48B_845A_4a4b_B5F8_66754B3716E5"></a><a class="anchor" id="global_class_Model_Standaardverdelingfractiegroter2mm"></a><section id="global_class_Model_Standaardverdelingfractiegroter2mm">
+                  <h3>   Standaardverdeling fractie groter2mm</h3>
+                  <div class="imageinfo "><img src="Images/EAID_D7A8E4B1_A7CB_43ed_9F0A_6DA0DC86B357.png" usemap="#imagemap-EAID_D7A8E4B1_A7CB_43ed_9F0A_6DA0DC86B357" alt="Diagram "><map name="imagemap-EAID_D7A8E4B1_A7CB_43ed_9F0A_6DA0DC86B357"><area shape="rect" alt="Standaardverdeling fractie groter2mm" coords="10,10,229,150" href="#graph_EAID_DEDDD48B_845A_4a4b_B5F8_66754B3716E5"></map><p><b></b></p>
+                  </div>
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Type gegeven</th>
+                           <td>Entiteit</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>De fractie groter dan 2 mm verdeeld in de fracties die standaard worden onderscheiden.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Regels</th>
+                           <td>
+                              
+                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>fractieverdeling</em> van de entiteit <em>Bepaling korrelgrootteverdeling</em> gelijk is aan <em>basisMinimaalStandaard</em>.<br clear="none">
+                                 De entiteit mag niet aanwezig zijn in alle andere gevallen. </p>
+                              
+                              <p>De som van alle fracties moet gelijk zijn aan de waarde van het attribuut <em>fractie groter2mm</em> van de entiteit <em>Basis korrelgrootteverdeling</em>.</p>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie2tot56mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie2tot56mm">
+                     <h4>  fractie 2tot5.6mm</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 2 tot 5,6 mm in de massa van het materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie56tot63mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie56tot63mm">
+                     <h4>  fractie 5.6tot6.3mm</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 5,6 tot 6,3 mm in de massa van het
+                                    materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie63tot10mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie63tot10mm">
+                     <h4>  fractie 6.3tot10mm</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 6,3 tot 10 mm in de massa van het
+                                    materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie10tot16mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie10tot16mm">
+                     <h4>  fractie 10tot16mm</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 10 tot 16 mm in de massa van het materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie16tot20mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie16tot20mm">
+                     <h4>  fractie 16tot20mm</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 16 tot 20 mm in de massa van het materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie20tot375mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie20tot375mm">
+                     <h4>  fractie 20tot37.5mm</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 20 tot 37,5 mm in de massa van het
+                                    materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie375tot63mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractie375tot63mm">
+                     <h4>  fractie 37.5tot63mm</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter van 37,5 tot 63 mm in de massa van het
+                                    materiaal.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Meetwaarde 
+                                 2.1</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td> vanaf 0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractiegroter63mm"></a><section id="detail_attribute_Model_Standaardverdelingfractiegroter2mm_fractiegroter63mm">
+                     <h4>  fractie groter63mm</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Standaardverdeling fractie groter2mm</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het aandeel van de korrels met een diameter groter dan 63 mm in de massa van het materiaal.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -22785,8 +22804,8 @@
                               
                               <p>De bepaling wordt uitgevoerd aan grond en aan bijzonder materiaal en de monsterkwaliteit
                                  kan alle waarden hebben.<br clear="none">
-                                 Het watergehalte is een basisparameter die altijd samen met andere gegevens gebruikt
-                                 wordt in berekeningen. In geologisch booronderzoek wordt het watergehalte niet standaard
+                                 Het watergehalte is een parameter die altijd samen met andere gegevens gebruikt wordt
+                                 in berekeningen. In geologisch booronderzoek wordt het watergehalte niet standaard
                                  gebruikt.<br clear="none">
                                  Het materiaal waaruit het onderzocht interval bestaat wordt vooraf gehomogeniseerd,
                                  eventueel worden bepaalde bestanddelen verwijderd. De hoeveelheid water wordt berekend
@@ -22913,7 +22932,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De vochtigheidstoestand van het materiaal op het moment van bepalen.</p>
+                                 <p>De vochtigheidstoestand van het materiaal voorafgaand aan de bepaling.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -22940,7 +22959,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Volledig uitgedroogd materiaal wordt niet gebruikt voor de bepaling.</p>
+                                 <p>De vochtigheidstoestand is de toestand van het materiaal bij opening van de monstercontainer.<br clear="none">
+                                    Volledig uitgedroogd materiaal wordt niet gebruikt voor de bepaling.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -22970,7 +22990,7 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>1..*</td>
+                              <td>1..3</td>
                            </tr>
                            <tr>
                               <th>Domein</th>
@@ -23039,9 +23059,8 @@
                               <td>
                                  
                                  <p>De droogtemperatuur is in deze bepaling de temperatuur van de oven. In de huidige
-                                    praktijk wordt het materiaal standaard gedroogd bij 105 graden Celsius. Om er zeker
-                                    van te zijn dat het overal in de oven 105 graden is wordt de oven ook wel op 110 graden
-                                    ingesteld.</p>
+                                    praktijk wordt het materiaal standaard gedroogd bij 105 °C. Om er zeker van te zijn
+                                    dat het overal in de oven 105 °C is wordt de oven ook wel op 110 °C ingesteld.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -23090,7 +23109,7 @@
                                  
                                  <p>Meestal wordt het materiaal gedurende een bepaalde tijd gedroogd en neemt men aan
                                     dat al het water dan is verdampt. In sommige gevallen wordt het materiaal gedroogd
-                                    tot de massa van het materiaal na een uur drogen niet meer verandert (<em>stabieleMassa</em>). In dat geval weet men zeker dat al het water is verdampt.</p>
+                                    tot de massa van het materiaal na een uur drogen niet meer verandert (<em>stabieleMassa1uur</em>). In dat geval weet men zeker dat al het water is verdampt.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -23340,8 +23359,12 @@
                            <th>Toelichting</th>
                            <td>
                               
-                              <p>De bepaling wordt gewoonlijk uitgevoerd aan cohesieve grond, en dat wil zeggen grond
-                                 dat samenhang vertoont doordat het een zekere consistentie heeft, met monsterkwaliteit
+                              <p>Binnen geologisch booronderzoek wordt de volumieke massa van een waterverzadigd volume
+                                 samen met de droge volumieke massa gebruikt om het volume van de waterverzadigde poriën
+                                 te berekenen. Het proefstuk krijgt daarom eerst de gelegenheid om water op te nemen
+                                 (<em>waterverzadiging</em>).<br clear="none">
+                                 De bepaling wordt gewoonlijk uitgevoerd aan cohesieve grond, en dat wil zeggen grond
+                                 die samenhang vertoont doordat het een zekere consistentie heeft, met monsterkwaliteit
                                  QM1, QM2 en QM3 en aan bijzonder materiaal. De volumieke massa wordt berekend uit
                                  het volume en de massa van het materiaal.<br clear="none">
                                  De bepaling volumieke massa is een zogenaamde classificatieproef die is opgenomen
@@ -23466,7 +23489,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De vochtigheidstoestand van het materiaal op het moment van bepalen.</p>
+                                 <p>De vochtigheidstoestand van het materiaal voorafgaand aan de bepaling.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -23493,7 +23516,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Volledig uitgedroogd materiaal wordt niet in behandeling genomen omdat de kans groot
+                                 <p>De vochtigheidstoestand is de toestand van het materiaal bij opening van de monstercontainer.<br clear="none">
+                                    Volledig uitgedroogd materiaal wordt niet in behandeling genomen omdat de kans groot
                                     is dat door de verdamping van water het volume van het monster is gewijzigd.</p>
                                  </td>
                            </tr>
@@ -23551,8 +23575,8 @@
                               <td>
                                  
                                  <p>Wanneer het volume van het proefstuk kleiner is dan de procedure voorschrijft en dat
-                                    is 50 cm<sup>3</sup>, is het van belang het volume te weten.<br clear="none">
-                                    Het volume (in het Engels <em>volume</em> wordt aangeduid met het symbool V.</p>
+                                    is 50 cm<sup>3</sup>, wordt het volume van het proefstuk vast gelegd.<br clear="none">
+                                    Het volume (in het Engels <em>volume</em>) <em> </em> wordt aangeduid met het symbool V.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -23572,7 +23596,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De aanduiding die aangeeft of het proefstuk onder belasting is bepaald. </p>
+                                 <p>De aanduiding die aangeeft of er tijdens de bepaling druk op het proefstuk is uitgeoefend.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -23599,9 +23623,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Het doel van geologisch booronderzoek is het bepalen van in-situ eigenschappen. Cohesief
-                                    materiaal wordt eerst onder druk gezet. De verticale druk die op het proefstuk wordt
-                                    uitgeoefend komt overeen met de druk in-situ.</p>
+                                 <p>Door het onder druk zetten van het proefstuk wordt het materiaal samengedrukt. De
+                                    kans is groot dat door het samendrukken het volume van het proefstuk wijzigt. </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -23666,15 +23689,9 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Het proefstuk wordt onder druk gezet en krijgt de gelegenheid te consolideren. Tijdens
-                                    de consolidatie verandert de hoogte van het proefstuk. Na consolidatie komt de toestand
-                                    van het proefstuk overeen met de in-situ situatie in de ondergrond.<br clear="none">
-                                    Idealiter zou men de ondergrond altijd in-situ willen onderzoeken, maar in de praktijk
-                                    onderzoekt men monsters uit de ondergrond en dat betekent dat er onvermijdelijk sprake
-                                    is van een zekere mate van verstoring. De verticale rek tijdens de consolidatie wordt
-                                    gebruikt om de monsterverstoringsindex te kunnen bepalen. De monsterverstoringsindex
-                                    is een indicatie voor de mate van verstoring.<br clear="none">
-                                    Verticale rek wordt aangeduid met het symbool ɛ<sub>v</sub>. De beginhoogte van het proefstuk is de hoogte na inbouw.</p>
+                                 <p>Wanneer het proefstuk onder druk is gezet, verandert de hoogte van het proefstuk.
+                                    De hoogteverandering wordt vastgelegd als verticale rek en dat wordt aangeduid met
+                                    het symbool ɛ<sub>v</sub>. De beginhoogte van het proefstuk is de hoogte van de ring.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -23722,7 +23739,7 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>TODO</p>
+                                 <p>Binnen geologisch booronderzoek wordt het proefstuk altijd eerst waterverzadigd.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -23778,9 +23795,9 @@
                               <td>
                                  
                                  <p>Door toevoeging van water kan het gebeuren dat het materiaal gaat zwellen. Dat is
-                                    ongewenst. Normaliter gaat het materiaal niet zwellen tijdens de verzadiging.
-                                    Normaliter gaat het proefstuk tijdens de verzadiging niet zwellen. Wanneer het proefstuk
-                                    tijdens de verzadiging gaat zwellen wordt dit vastgelegd.</p>
+                                    ongewenst. De kans is groot dat door zwel het volume van het proefstuk is gewijzigd.<br clear="none">
+                                    Normaliter gaat het proefstuk niet zwellen. Wanneer het wel gebeurt wordt dit vastgelegd.
+                                    </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -23830,9 +23847,10 @@
                                  
                                  <p>Tijdens de uitvoering kunnen zich kleine problemen voordoen waardoor de uitvoerder
                                     de bepaling niet helemaal op de ideale wijze kan uitvoeren. Het kan voorkomen dat
-                                    het volume van het proefstuk kleiner is dan de procedure voorschrijft. Wanneer een
-                                    dergelijke situatie zich voordoet en het probleem van invloed kan zijn op het resultaat,
-                                    legt de uitvoerder het als bijzonderheid vast.</p>
+                                    het volume van het proefstuk kleiner is dan de procedure voorschrijft of dat er tijdens
+                                    het waterverzadigen water is weggelekt. Wanneer een dergelijke situatie zich voordoet
+                                    en het probleem van invloed kan zijn op het resultaat, legt de uitvoerder het als
+                                    bijzonderheid vast.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -23881,7 +23899,7 @@
                               <td>
                                  
                                  <p>Tijdens de uitvoering kunnen er bijzonderheden worden geconstateerd die extra informatie
-                                    over de aard van het onderzochte materiaal geven. In het proefstuk kunnen insluitsels,
+                                    over de aard van het onderzochte materiaal geven. In het proefstuk kunnen insluitingen,
                                     wormgaten of wortelgangen voorkomen en het materiaal kan gescheurd zijn.<br clear="none">
                                     In de huidige praktijk legt de uitvoerder eventuele bijzonderheden altijd vast.</p>
                                  </td>
@@ -23976,7 +23994,7 @@
                                  De droge volumieke massa is een basisparameter die altijd samen met andere gegevens
                                  gebruikt wordt in berekeningen. In geologisch booronderzoek wordt de droge volumieke
                                  massa gebruikt om de porositeit de bereken.<br clear="none">
-                                 De volumieke massa wordt berekend uit het volume en de massa van het materiaal.<br clear="none">
+                                 De droge volumieke massa wordt berekend uit het volume en de massa van het droge materiaal.<br clear="none">
                                  De bepaling droge volumieke massa is een zogenaamde classificatieproef die is opgenomen
                                  in de NEN-EN-ISO 14688-2.</p>
                               </td>
@@ -24080,7 +24098,7 @@
                                  
                                  <p>De droge volumieke massa wordt berekend uit het volume en de massa van het droge materiaal.
                                     De droge volumieke massa wordt bepaald van een proefstuk met een bekend volume.<br clear="none">
-                                    De metingen vallen altijd onder de lineaire meetmethode in de ISO 17892-2.</p>
+                                    De metingen vallen in de ISO 17892-2 altijd onder de lineaire meetmethode.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -24100,7 +24118,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De vochtigheidstoestand van het materiaal op het moment van bepalen.</p>
+                                 <p>De vochtigheidstoestand van het materiaal voorafgaand aan de bepaling.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -24127,7 +24145,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Volledig uitgedroogd materiaal wordt niet gebruikt voor de bepaling. De kans is groot
+                                 <p>De vochtigheidstoestand is de toestand van het materiaal bij opening van de monstercontainer.<br clear="none">
+                                    Volledig uitgedroogd materiaal wordt niet gebruikt voor de bepaling. De kans is groot
                                     dat door de verdamping van water het volume van het proefstuk is gewijzigd.</p>
                                  </td>
                            </tr>
@@ -24185,8 +24204,8 @@
                               <td>
                                  
                                  <p>Wanneer het volume van het proefstuk kleiner is dan de procedure voorschrijft en dat
-                                    is 50 cm<sup>3</sup>, is het van belang het volume te weten.<br clear="none">
-                                    Het volume (in het Engels <em>volume</em> wordt aangeduid met het symbool V.</p>
+                                    is 50 cm<sup>3</sup>, wordt het volume van het proefstuk vast gelegd.<br clear="none">
+                                    Het volume (in het Engels <em>volume)</em> wordt aangeduid met het symbool V. </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -24206,7 +24225,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>TODO</p>
+                                 <p>De aanduiding die aangeeft of er tijdens de bepaling druk op het proefstuk is uitgeoefend.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -24233,7 +24252,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>TODO</p>
+                                 <p>Door het onder druk zetten van het proefstuk wordt het materiaal samengedrukt. De
+                                    kans is groot dat door het samendrukken het volume van het proefstuk wijzigt. </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -24298,15 +24318,9 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Het proefstuk wordt onder druk gezet en krijgt de gelegenheid te consolideren. Tijdens
-                                    de consolidatie verandert de hoogte van het proefstuk. Na consolidatie komt de toestand
-                                    van het proefstuk overeen met de in-situ situatie in de ondergrond.<br clear="none">
-                                    Idealiter zou men de ondergrond altijd in-situ willen onderzoeken, maar in de praktijk
-                                    onderzoekt men monsters uit de ondergrond en dat betekent dat er onvermijdelijk sprake
-                                    is van een zekere mate van verstoring. De verticale rek tijdens de consolidatie wordt
-                                    gebruikt om de monsterverstoringsindex te kunnen bepalen. De monsterverstoringsindex
-                                    is een indicatie voor de mate van verstoring.<br clear="none">
-                                    Verticale rek wordt aangeduid met het symbool ɛ<sub>v</sub>. De beginhoogte van het proefstuk is de hoogte na inbouw.</p>
+                                 <p>Wanneer het proefstuk onder druk is gezet, verandert de hoogte van het proefstuk.
+                                    De hoogteverandering wordt vastgelegd als verticale rek en dat wordt aangeduid met
+                                    het symbool ɛ<sub>v</sub>. De beginhoogte van het proefstuk is de hoogte van de ring.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -24326,7 +24340,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>TODO</p>
+                                 <p>De aanduiding die aangeeft of het proefstuk vooraf de gelegenheid heeft gekregen om
+                                    water op te nemen.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -24353,7 +24368,7 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>TODO</p>
+                                 <p>Binnen geologisch booronderzoek wordt het proefstuk altijd eerst waterverzadigd.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -24400,8 +24415,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut waterverzadigd
-                                    gelijk is aan <em>ja</em>.<br clear="none">
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>waterverzadigd</em> gelijk is aan <em>ja</em>.<br clear="none">
                                     Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
                                  </td>
                            </tr>
@@ -24410,9 +24424,9 @@
                               <td>
                                  
                                  <p>Door toevoeging van water kan het gebeuren dat het materiaal gaat zwellen. Dat is
-                                    ongewenst. Normaliter gaat het materiaal niet zwellen tijdens de verzadiging.
-                                    Normaliter gaat het proefstuk tijdens de verzadiging niet zwellen. Wanneer het proefstuk
-                                    tijdens de verzadiging gaat zwellen wordt dit vastgelegd.</p>
+                                    ongewenst. De kans is groot dat door zwel het volume van het proefstuk is gewijzigd.<br clear="none">
+                                    Normaliter gaat het proefstuk niet zwellen. Wanneer het wel gebeurt wordt dit vastgelegd.
+                                    </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -24460,10 +24474,8 @@
                               <td>
                                  
                                  <p>De droogtemperatuur is in deze bepaling de temperatuur van de oven. In de huidige
-                                    praktijk wordt er standaard gedroogd bij 105 graden Celsius. Bij een volle oven wordt
-                                    een droogtemperatuur van 110 graden ingesteld. Zodat in alle hoeken de 105 graden
-                                    wordt gehaald.<br clear="none">
-                                    De kans is groot dat door zwel het volume van het proefstuk is gewijzigd. </p>
+                                    praktijk wordt het materiaal standaard gedroogd bij 105 °C. Om er zeker van te zijn
+                                    dat het overal in de oven 105 °C is wordt de oven ook wel op 110 °C ingesteld.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -24510,8 +24522,9 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Standaard wordt het materiaal 24 uur gedroogd en neemt men aan dat al het water dan
-                                    is verdampt.</p>
+                                 <p>Meestal wordt het materiaal gedurende een bepaalde tijd gedroogd en neemt men aan
+                                    dat al het water dan is verdampt. In sommige gevallen wordt het materiaal gedroogd
+                                    tot de massa van het materiaal na een uur drogen niet meer verandert (<em>stabieleMassa1uur</em>). In dat geval weet men zeker dat al het water is verdampt.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -24559,9 +24572,9 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>In geologisch booronderzoek wordt het proefstuk vooraf verzadigd met water. Het water
-                                    kan zouten bevatten. Bij het drogen van het materiaal verdampt het water en gaan de
-                                    opgeloste zouten deel uitmaken van de massa van de droge stof.<br clear="none">
+                                 <p>In geologisch booronderzoek wordt het proefstuk vooraf waterverzadigd. Het water kan
+                                    zouten bevatten. Bij het drogen van het materiaal verdampt het water en gaan de opgeloste
+                                    zouten deel uitmaken van de massa van de droge stof.<br clear="none">
                                     Voor het juiste gebruik van het gegeven is het van belang te weten of de massa van
                                     het droge materiaal is gecorrigeerd voor het gehalte aan opgeloste zouten en of dat
                                     is gebeurd op basis van een aanname of op basis van een gemeten zoutgehalte.</p>
@@ -24665,7 +24678,7 @@
                               <td>
                                  
                                  <p>Tijdens de uitvoering kunnen er bijzonderheden worden geconstateerd die extra informatie
-                                    over de aard van het onderzochte materiaal geven. In het proefstuk kunnen insluitsels,
+                                    over de aard van het onderzochte materiaal geven. In het proefstuk kunnen insluitingen,
                                     wormgaten of wortelgangen voorkomen, het materiaal kan geaggregeerd zijn en het materiaal
                                     kan door droging in de oven desintegreren of van kleur veranderen.<br clear="none">
                                     In de huidige praktijk legt de uitvoerder eventuele bijzonderheden altijd vast.</p>
@@ -24756,17 +24769,15 @@
                            <th>Toelichting</th>
                            <td>
                               
-                              <p>De bepaling wordt uitgevoerd aan cohesief materiaal, en dat wil zeggen grond of bijzonder
-                                 materiaal dat samenhang vertoont doordat het een zekere consistentie heeft. De monsterkwaliteit
+                              <p>De bepaling wordt uitgevoerd aan grond of bijzonder materiaal. De monsterkwaliteit
                                  kan alle waarden hebben.<br clear="none">
                                  De volumieke massa vaste delen is een basisparameter die altijd samen met andere gegevens
                                  gebruikt wordt in berekeningen. In geologisch booronderzoek wordt de volumieke massa
-                                 gebruikt om de porositeit de bereken. Het gegeven wordt ook gebruikt om bijv. de verzadigingsgraad
-                                 te kunnen bepalen.<br clear="none">
+                                 vaste delen gebruikt om de porositeit, het quotiënt van het volume van de poriën en
+                                 het volume van het materiaal, te bereken. Het gegeven wordt ook gebruikt om bijv.
+                                 de verzadigingsgraad te kunnen bepalen.<br clear="none">
                                  De volumieke massa vaste delen wordt berekend uit het volume en de massa van de vaste
-                                 delen van het materiaal. Het materiaal wordt vooraf gehomogeniseerd en gedroogd, eventueel
-                                 worden bepaalde bestanddelen verwijderd, wordt het materiaal losgemaakt en worden
-                                 de grove delen (groter dan 4 mm) vergruisd.<br clear="none">
+                                 delen van het materiaal.<br clear="none">
                                  De bepaling volumieke massa vaste delen is een zogenaamde classificatieproef die is
                                  opgenomen in de NEN-EN-ISO 14688-2 als dichtheid gronddeeltjes.</p>
                               </td>
@@ -24879,6 +24890,9 @@
                                     de massa van de vaste delen van het materiaal. In geologisch booronderzoek worden
                                     de metingen altijd uitgevoerd met een vloeistof gevulde pyknometer conform ISO 17892-3.
                                     Afhankelijk van het gebruikte medium is de bepaling meer of minder nauwkeurig.<br clear="none">
+                                    Het materiaal wordt vooraf gehomogeniseerd en gedroogd, eventueel worden bepaalde
+                                    bestanddelen verwijderd, wordt het materiaal losgemaakt en worden de grove delen (groter
+                                    dan 4 mm) vergruisd.<br clear="none">
                                     De meting wordt herhaald tot de voorgeschreven betrouwbaarheid is bereikt.</p>
                                  </td>
                            </tr>
@@ -24909,7 +24923,7 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>1..*</td>
+                              <td>1..3</td>
                            </tr>
                            <tr>
                               <th>Domein</th>
@@ -36508,7 +36522,7 @@
                         
                         <p>Methode voor het bepalen van de korrelgrootteverdeling. Voor het bepalen van de verdeling
                            van de fractie groter dan 63 µm is droge zeving gebruikt. Deze methode wordt gebruikt
-                           wanneer het materiaal uit het onderzocht uit grind of grover materiaal bestaat.</p>
+                           wanneer het materiaal uit het onderzocht interval uit grind of grover materiaal bestaat.</p>
                         </td>
                   </tr>
                   <tr>
@@ -36653,8 +36667,7 @@
                         <p>NEN-EN-ISO 14688-2:2019 <em>Geotechnisch onderzoek en beproeving - Identificatie en classificatie van grond -
                               Deel 2: Grondslagen voor een classificatie</em>. Een door de NEN voor Nederland vastgestelde norm t.b.v. het classificeren van onverharde
                            grondmonsters voor geotechniek gebaseerd op de ISO norm. De uitwerking van de bepaling
-                           van de ongedraineerde schuifsterke, het organischestofgehalte en het kalkgehalte zijn
-                           in de Nederlandse bijlage opgenomen.</p>
+                           van het organischestofgehalte en het kalkgehalte zijn in de Nederlandse bijlage opgenomen.</p>
                         </td>
                   </tr>
                   <tr>
@@ -36725,56 +36738,6 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_class_Model_Berekeningsmethode">
-            <h3>  Berekeningsmethode</h3>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <td>
-                        
-                        <p>De lijst met de methoden die voor berekeningen in de geologische monsteranalyse worden
-                           toegepast.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Waarde</th>
-                     <th>Omschrijving</th>
-                  </tr>
-                  <tr>
-                     <td>volumeVasteDelen</td>
-                     <td>
-                        
-                        <p>Methode voor het berekenen van de porositeit. Het volume van de poriën is het verschil
-                           tussen het volume van het geconsolideerde proefstuk en het volume van de vaste delen.
-                           Het volume van de vaste delen is berekend uit de massa van het droge materiaal en
-                           de volumieke massa van de vaste delen.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <td>volumeWater</td>
-                     <td>
-                        
-                        <p>Methode voor het berekenen van de porositeit. Het volume van de poriën is gelijk aan
-                           het volume van het water in het volledig verzadigde proefstuk. Het volume van het
-                           water is berekend uit de massa van het water en de volumieke massa van water met de
-                           standaardwaarde 1,0. Het watergehalte is bepaald volgens de daarvoor geldende procedure
-                           door droging van het materiaal op 105 of 110 graden Celsius met een droogtijd van
-                           16 tot 24 uur.<br clear="none">
-                           Het volume van het proefstuk is bekend.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section>
          <section id="detail_class_Model_BijzonderheidMateriaal">
             <h3>  BijzonderheidMateriaal</h3>
             
@@ -36831,10 +36794,10 @@
                         </td>
                   </tr>
                   <tr>
-                     <td>insluitsel</td>
+                     <td>insluiting</td>
                      <td>
                         
-                        <p>In het onderzochte materiaal komen 1 of meer insluitsels voor, bijvoorbeeld een grindkorrel,
+                        <p>In het onderzochte materiaal komen 1 of meer insluitingen voor, bijvoorbeeld een grindkorrel,
                            schelp, een stukje puin, hout of een klei- of leemkluit.</p>
                         </td>
                   </tr>
@@ -37068,7 +37031,7 @@
                      <td>
                         
                         <p>Het materiaal is gedroogd tot het materiaal een stabiele massa heeft en dat is wanneer
-                           de massa van het materiaal niet meer veranderd na 1 uur drogen.</p>
+                           de massa van het materiaal niet meer dan 0,1 % veranderd na 1 uur drogen.</p>
                         </td>
                   </tr>
                   <tr>
@@ -37076,7 +37039,7 @@
                      <td>
                         
                         <p>Het materiaal is gedroogd tot het materiaal een stabiele massa heeft en dat is wanneer
-                           de massa van het materiaal niet meer veranderd na 5 minuten drogen.</p>
+                           de massa van het materiaal niet meer dan 0,5 % veranderd na 5 minuten drogen.</p>
                         </td>
                   </tr>
                </tbody>
@@ -37092,7 +37055,7 @@
                      <td>
                         
                         <p>De lijst voor de classificatie van de fracties die voor de bepaling van korrelgrootteverdeling
-                           in de geotechniek is gebruikt.</p>
+                           in de geologie is gebruikt.</p>
                         </td>
                   </tr>
                </tbody>
