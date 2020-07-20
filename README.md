@@ -8,7 +8,7 @@ Werkversie van de catalogus: https://broprogramma.github.io/BHR-G/ (niet gebruik
 De publieke consultatie voor Booronderzoek Geologische boormonsterbeschrijving start in augustus. Op [basisregistratieondergrond.nl](https://basisregistratieondergrond.nl/inhoud-bro/registratieobjecten/standaarden/publieke-consultaties/) vindt u meer informatie over de consultatie waaronder ook het webformulier waarmee u kan reageren.
 
 
-##  versies
+##  Definitieve versies
 Op [basisregistratieondergrond.nl is een overzicht][8] te vinden van alle vastgestelde catalogi van de BRO en de verwerking van de publieke consultatie van alle catalogu vanaf tranche 3.
 
 [1]: https://github.com/BROprogramma/BHR-g/raw/gh-pages/Catalogus%20BHR-g0.9_20190930.pdf
