@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registrationRequest
+    xmlns="http://www.broservices.nl/xsd/isbhrg/1.0"
+    xmlns:bhrgcommon="http://www.broservices.nl/xsd/bhrgcommon/1.0"
+    xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.broservices.nl/xsd/isbhrg/1.0 file:///C:/Users/welmerhj/OneDrive%20-%20TNO/Documents/development/werkdocumenten/2020/20200528%20BHR-G%20review%20XDSs/bhrg/isbhrg.xsd">
+	<brocom:requestReference>blabla</brocom:requestReference>
+	<brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+	<sourceDocument>
+	  <BHR_G_completeReport_v1 gml:id="id_0001">
+      <objectIdAccountableParty>blablablabla</objectIdAccountableParty>
+      <deliveryContext codeSpace="urn:brocom:bhrg:DeliveryContext">?</deliveryContext>
+      <surveyPurpose codeSpace="urn:brocom:bhrg:SurveyPurpose">?</surveyPurpose>
+      <discipline codeSpace="urn:brocom:bhrg:Discipline">?</discipline>
+      <researchReportDate>2020-05-29</researchReportDate>
+      <surveyProcedure codeSpace="urn:brocom:bhrg:SurveyProcedure">?</surveyProcedure>
+      <deliveredLocation>
+        <bhrgcommon:location>
+          <gml:Point gml:id="id_0002">
+            <gml:pos>50 450</gml:pos>
+          </gml:Point>
+        </bhrgcommon:location>
+        <bhrgcommon:horizontalPositioningDate>2020-05-10</bhrgcommon:horizontalPositioningDate>
+        <bhrgcommon:horizontalPositioningMethod codeSpace="urn:brocom:bhrg:HorizontalPositioningMethod">?</bhrgcommon:horizontalPositioningMethod>
+      </deliveredLocation>
+      <deliveredVerticalPosition>
+        <bhrgcommon:localVerticalReferencePoint codeSpace="urn:brocom:bhrg:LocalVerticalReferencePoint">?</bhrgcommon:localVerticalReferencePoint>
+        <bhrgcommon:offset uom="m">4.578</bhrgcommon:offset>
+        <bhrgcommon:verticalDatum codeSpace="urn:brocom:bhrg:VerticalDatum">NAP</bhrgcommon:verticalDatum>
+        <bhrgcommon:verticalPositioningDate>2020-05-10</bhrgcommon:verticalPositioningDate>
+        <bhrgcommon:verticalPositioningMethod codeSpace="urn:brocom:bhrg:VerticalPositioningMethod">?</bhrgcommon:verticalPositioningMethod>
+      </deliveredVerticalPosition>
+      <boreholeSampleDescription>
+        <bhrgcommon:BoreholeSampleDescription gml:id="id_0010">
+          <bhrgcommon:descriptionReportDate>2020-05-29</bhrgcommon:descriptionReportDate>
+          <bhrgcommon:descriptionProcedure codeSpace="urn:brocom:bhrg:DescriptionProcedure">?</bhrgcommon:descriptionProcedure>
+          <bhrgcommon:descriptiveBoreholeLog>
+            <bhrgcommon:DescriptiveBoreholeLog gml:id="id_0011">
+              <bhrgcommon:descriptionQuality codeSpace="urn:brocom:bhrg:DescriptionQuality">?</bhrgcommon:descriptionQuality>
+              <bhrgcommon:continuouslySampled>ja</bhrgcommon:continuouslySampled>
+              <bhrgcommon:descriptionLocation codeSpace="urn:brocom:bhrg:DescriptionLocation">?</bhrgcommon:descriptionLocation>
+              <bhrgcommon:describedMaterial codeSpace="urn:brocom:bhrg:DescribedMaterial">?</bhrgcommon:describedMaterial>
+              <bhrgcommon:sampleMoistness codeSpace="urn:brocom:bhrg:SampleMoistness">?</bhrgcommon:sampleMoistness>
+              <bhrgcommon:layer>
+                <bhrgcommon:Layer gml:id="id_0012">
+                  <bhrgcommon:upperBoundary uom="m">4.578</bhrgcommon:upperBoundary>
+                  <bhrgcommon:upperBoundaryDetermination codeSpace="urn:brocom:bhrg:BoundaryPositioningMethod"></bhrgcommon:upperBoundaryDetermination>
+                  <bhrgcommon:lowerBoundary uom="m">23.24</bhrgcommon:lowerBoundary>
+                  <bhrgcommon:lowerBoundaryDetermination codeSpace="urn:brocom:bhrg:BoundaryPositioningMethod"></bhrgcommon:lowerBoundaryDetermination>
+                  <bhrgcommon:anthropogenic>ja</bhrgcommon:anthropogenic>
+                </bhrgcommon:Layer>
+              </bhrgcommon:layer>
+            </bhrgcommon:DescriptiveBoreholeLog>
+          </bhrgcommon:descriptiveBoreholeLog>
+        </bhrgcommon:BoreholeSampleDescription>
+      </boreholeSampleDescription>
+      <boring>
+        <bhrgcommon:Boring gml:id="id_0003">
+          <bhrgcommon:boringStartDate>2020-05-10</bhrgcommon:boringStartDate>
+          <bhrgcommon:boringEndDate>2020-05-10</bhrgcommon:boringEndDate>
+          <bhrgcommon:preparation codeSpace="urn:brocom:bhrg:Preparation">?</bhrgcommon:preparation>
+          <bhrgcommon:trajectoryExcavated>nee</bhrgcommon:trajectoryExcavated>
+          <bhrgcommon:rockReached>nee</bhrgcommon:rockReached>
+          <bhrgcommon:boringProcedure codeSpace="urn:brocom:bhrg:BoringProcedure">?</bhrgcommon:boringProcedure>
+          <bhrgcommon:finalDepthBoring uom="m">23.24</bhrgcommon:finalDepthBoring>
+          <bhrgcommon:stopCriterion codeSpace="urn:brocom:bhrg:StopCriterionField">?</bhrgcommon:stopCriterion>
+          <bhrgcommon:samplingProcedure codeSpace="urn:brocom:bhrg:SamplingProcedure">?</bhrgcommon:samplingProcedure>
+          <bhrgcommon:finalDepthSampling uom="m">23.24</bhrgcommon:finalDepthSampling>
+          <bhrgcommon:subsurfaceContaminated>nee</bhrgcommon:subsurfaceContaminated>
+          <bhrgcommon:boreholeCompleted>ja</bhrgcommon:boreholeCompleted>
+          <bhrgcommon:sampledInterval>
+            <bhrgcommon:SampledInterval gml:id="id_0004">
+              <bhrgcommon:beginDepth uom="m">4.578</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">23.24</bhrgcommon:endDepth>
+              <bhrgcommon:preTreatment codeSpace="urn:brocom:bhrg:PreTreatment">?</bhrgcommon:preTreatment>
+              <bhrgcommon:samplingMethod codeSpace="urn:brocom:bhrg:SamplingMethod">?</bhrgcommon:samplingMethod>
+              <bhrgcommon:samplingQuality codeSpace="urn:brocom:bhrg:SamplingQuality">?</bhrgcommon:samplingQuality>
+            </bhrgcommon:SampledInterval>
+          </bhrgcommon:sampledInterval>
+          <bhrgcommon:boredInterval>
+            <bhrgcommon:BoredInterval gml:id="id_0005">
+              <bhrgcommon:beginDepth uom="m">4.578</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">23.24</bhrgcommon:endDepth>
+              <bhrgcommon:boringTechnique codeSpace="urn:brocom:bhrg:BoringTechnique">?</bhrgcommon:boringTechnique>
+              <bhrgcommon:boredDiameter uom="mm">115</bhrgcommon:boredDiameter>
+            </bhrgcommon:BoredInterval>
+          </bhrgcommon:boredInterval>
+        </bhrgcommon:Boring>
+      </boring>
+    </BHR_G_completeReport_v1>
+	</sourceDocument>
+</registrationRequest>
