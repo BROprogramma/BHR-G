@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+xmlns:dsbhrg="http://www.broservices.nl/xsd/dsbhrg/1.0" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/1.0" 
+xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0" 
+xmlns:gml="http://www.opengis.net/gml/3.2" 
+xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0" 
+targetNamespace="http://www.broservices.nl/xsd/dsbhrg/1.0" 
+elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0"><xs:annotation>
+		<xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+			<gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
+		</xs:appinfo>
+	</xs:annotation>
+	<xs:import namespace="http://www.broservices.nl/xsd/bhrgcommon/1.0" schemaLocation="https://schema.broservices.nl/xsd/bhrgcommon/1.0/bhrgcommon.xsd"/>
+	<xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
+	<xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+	<xs:element name="DispatchDataRequest" type="brocom:DispatchDataRequestType"/> 
+	<xs:element name="BHR_G_O_DP" type="dsbhrg:BHR_G_O_DPType" substitutionGroup="dsbhrg:BHR_G_O">
+		<xs:annotation>
+			<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over een booronderzoek registratieobject in de basisregistratie ondergrond, dat niet uit registratie is genomen en welke verstrekt worden aan een aanvrager die tevens bronhouder en/of dataleverancier van het registratieobject is.
+Explanation:  </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="BHR_G_O_DPType">
+		<xs:complexContent>
+			<xs:extension base="dsbhrg:BHR_G_OType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="BHR_G_O_DPPropertyType">
+		<xs:sequence minOccurs="1">
+			<xs:element ref="dsbhrg:BHR_G_O_DP"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="BHR_G_O" type="dsbhrg:BHR_G_OType" substitutionGroup="brocom:RegistrationObject">
+		<xs:annotation>
+			<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat de gegevens van een geotechnisch booronderzoek dat niet uit registratie is genomen bevat die voor een standaard afnemer beschikbaar zijn.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="BHR_G_OType">
+		<xs:complexContent>
+			<xs:extension base="brocom:RegistrationObjectType">
+				<xs:sequence>
+					<xs:element name="deliveryContext" type="bhrgcom:DeliveryContextType" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:appinfo>
+								<CodeListName>DeliveryContext</CodeListName>
+								<CodeListURI/>
+							</xs:appinfo>
+							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
+Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="surveyPurpose" type="bhrgcom:SurveyPurposeType" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:appinfo>
+								<CodeListName>SurveyPurpose</CodeListName>
+								<CodeListURI/>
+							</xs:appinfo>
+							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het doel waarvoor het onderzoek is uitgevoerd.
+Explanation: Onderzoek wordt normaliter projectmatig uitgevoerd, zelfs als het direct gebonden is aan een publieke taak. Het gegeven beschrijft het hogere doel van het project waarvoor het onderzoek is uitgevoerd of preciseert de taak.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="discipline" type="bhrgcom:DisciplineType" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:appinfo>
+								<CodeListName>Discipline</CodeListName>
+								<CodeListURI/>
+							</xs:appinfo>
+							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De discipline waarbinnen het booronderzoek is uitgevoerd.
+Explanation: Het vakgebied is een gegeven dat dient om een categorie van booronderzoek in de registratie ondergrond te identificeren. Het gegeven bepaalt hoe het onderzoek is uitgevoerd en welke gegevens en categorieën van gegevens vastgelegd kunnen zijn. Onder geologisch onderzoek wordt geologisch specialistisch onderzoek verstaan dat nauw verbonden is met het doel modellen die de opbouw van de ondergrond in termen van (hydro)geologische eenheden beschrijven te maken en te verbeteren. Naast geologisch booronderzoek worden geologisch toegepast booronderzoek, geotechnisch booronderzoek, bodemkundig booronderzoek en cultuurtechnisch booronderzoek onderscheiden. In de uitvoeringspraktijk komt het voor dat in een booronderzoek gegevens worden vastgelegd die onder een van de vijf vakgebieden vallen en gegevens die eigenlijk in het domein van de milieukunde of de archeologie thuishoren. Omdat die disciplines buiten het bereik van de basisregistratie ondergrond liggen, zijn die extra gegevens niet gedefinieerd. Geologisch booronderzoek met een dergelijk multidisciplinair karakter wordt in de basisregistratie ondergrond opgenomen maar zonder die extra gegevens. Om gebruikers duidelijk te maken dat de onderzoeksresultaten niet volledig geregistreerd zijn wordt als waarde voor het vakgebied niet de waarde geologie vermeld, maar een waarde als geologieArcheologie.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="researchReportDate" type="xs:date" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de uitvoerder van het booronderzoek alle gegevens van het booronderzoek aan de bronhouder heeft overgedragen of in het geval van historische gegevens de datum waarop alle gegevens zijn vastgesteld.
+Explanation: Het gegeven is alleen aanwezig wanneer alle deelonderzoeken zijn gerapporteerd en het onderzoek is afgesloten. Hoewel historische gegevens nog buiten het bereik van deze versie van de catalogus vallen, is wel al met zekerheid vast te stellen dat de eerste datum waarop een onderzoek kan zijn afgerond in 1877 ligt.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="surveyProcedure" type="bhrgcom:SurveyProcedureType" minOccurs="1" maxOccurs="1">
+						<xs:annotation>
+							<xs:appinfo>
+								<CodeListName>SurveyProcedure</CodeListName>
+								<CodeListURI/>
+							</xs:appinfo>
+							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De procedure die de uitvoering van projecten waarbinnen het booronderzoek wordt uitgevoerd reguleert en daarmee de kaders bepaalt voor de uitvoering van het booronderzoek.
+Explanation: De procedure beschrijft de manier van werken, de passende hulpmiddelen en de eisen waaraan de uitvoering moet voldoen. Procedures zijn in het algemeen vastgelegd in een norm, protocol of richtlijn. Dat kan overigens een richtlijn zijn die de uitvoerder voor zichzelf gebruikt. Het gegeven is opgenomen omdat het inzicht biedt in de kwaliteit van het werk.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="siteCharacteristicDetermined" type="brocom:IndicationYesNoType" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding die aangeeft of in het onderzoek gegevens over de toestand van het terrein zijn vastgelegd die van betekenis zijn voor de beoordeling van de resultaten.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="researchOperator" type="brocom:OrganizationType" minOccurs="0" maxOccurs="1">
+						<xs:annotation>
+							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die voor de bronhouder geldt als verantwoordelijk voor de uitvoering van het booronderzoek, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
+Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="reportHistory" type="bhrgcom:ReportHistoryType" nillable="false" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="deliveredLocation" type="bhrgcom:DeliveredLocationType" nillable="false" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="deliveredVerticalPosition" type="bhrgcom:DeliveredVerticalPositionType" nillable="false" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="standardizedLocation" type="bhrgcom:StandardizedLocationType" nillable="false" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="siteCharacteristic" type="bhrgcom:SiteCharacteristicType" nillable="false" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="fluidMudLayer" type="bhrgcom:FluidMudLayerPropertyType" nillable="false" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="boreholeSampleDescripion" type="bhrgcom:BoreholeSampleDescriptionPropertyType" nillable="false" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="boring" type="bhrgcom:BoringPropertyType" nillable="false" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="BHR_G_OPropertyType">
+		<xs:sequence minOccurs="1">
+			<xs:element ref="dsbhrg:BHR_G_O"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="dispatchDataResponse" type="dsbhrg:DispatchDataResponseType">
+		<xs:annotation>
+			<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchDataResponse is een specialisatie van DispatchResponse in de package brocommon, waaraan het een element dispatchDocument toevoegt.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="DispatchDataResponseType">
+		<xs:complexContent>
+			<xs:extension base="brocom:DispatchResponseType">
+				<xs:sequence>
+					<xs:element name="dispatchDocument" type="brocom:AbstractRegistrationObjectPropertyType" nillable="false" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>
