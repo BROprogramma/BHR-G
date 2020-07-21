@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dsbhrg:dispatchDataResponse
+    xmlns="http://www.broservices.nl/xsd/brocommon/3.0"
+    xmlns:dsbhrg="http://www.broservices.nl/xsd/dsbhrg/1.0"
+    xmlns:bhrgcommon="http://www.broservices.nl/xsd/bhrgcommon/1.0"
+    xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.broservices.nl/xsd/dsbhrg/1.0 dsbhrg.xsd">
+	<responseType>dispatch</responseType>
+	<requestReference>blabla</requestReference>
+	<dispatchTime>2020-05-29T13:47:00+02:00</dispatchTime>
+	<dsbhrg:dispatchDocument>
+	  <dsbhrg:BHR_G_O_DP gml:id="id_001">
+    <broId>BHR123456789012</broId>
+    <qualityRegime>IMBRO</qualityRegime>
+    <dsbhrg:deliveryContext codeSpace="urn:brocom:bhrg:DeliveryContext">?</dsbhrg:deliveryContext>
+    <dsbhrg:surveyPurpose codeSpace="urn:brocom:bhrg:SurveyPurpose">?</dsbhrg:surveyPurpose>
+    <dsbhrg:discipline codeSpace="urn:brocom:bhrg:Discipline">?</dsbhrg:discipline>
+    <dsbhrg:surveyProcedure codeSpace="urn:brocom:bhrg:SurveyProcedure">?</dsbhrg:surveyProcedure>
+    <dsbhrg:reportHistory>
+      <bhrgcommon:reportStartDate>2020-05-29</bhrgcommon:reportStartDate>
+      <bhrgcommon:reportEndDate>2020-05-29</bhrgcommon:reportEndDate>
+    </dsbhrg:reportHistory>
+    <dsbhrg:deliveredLocation>
+      <bhrgcommon:location>
+        <gml:Point gml:id="id_002">
+          <gml:pos>50 450</gml:pos>
+        </gml:Point>
+      </bhrgcommon:location>
+      <bhrgcommon:horizontalPositioningDate>2020-05-10</bhrgcommon:horizontalPositioningDate>
+      <bhrgcommon:horizontalPositioningMethod codeSpace="urn:brocom:bhrg:HorizontalPositioningMethod">?</bhrgcommon:horizontalPositioningMethod>
+    </dsbhrg:deliveredLocation>
+    <dsbhrg:deliveredVerticalPosition>
+      <bhrgcommon:localVerticalReferencePoint codeSpace="urn:brocom:bhrg:LocalVerticalReferencePoint">?</bhrgcommon:localVerticalReferencePoint>
+      <bhrgcommon:offset uom="m">12.567</bhrgcommon:offset>
+      <bhrgcommon:verticalDatum codeSpace="urn:brocom:bhrg:VerticalDatum">?</bhrgcommon:verticalDatum>
+      <bhrgcommon:verticalPositioningDate>2020-05-10</bhrgcommon:verticalPositioningDate>
+      <bhrgcommon:verticalPositioningMethod codeSpace="urn:brocom:bhrg:VerticalPositioningMethod">?</bhrgcommon:verticalPositioningMethod>
+    </dsbhrg:deliveredVerticalPosition>
+    <dsbhrg:standardizedLocation>
+      <location gml:id="id_003">
+        <gml:pos>50 450</gml:pos>
+      </location>
+      <coordinateTransformation codeSpace="urn:bro:CoordinateTransformation">?</coordinateTransformation>
+    </dsbhrg:standardizedLocation>
+    <dsbhrg:boreholeSampleDescripion></dsbhrg:boreholeSampleDescripion>
+    <dsbhrg:boring>
+      <bhrgcommon:Boring gml:id="id_004">
+        <bhrgcommon:boringStartDate>2020-05-10</bhrgcommon:boringStartDate>
+        <bhrgcommon:boringEndDate>2020-05-10</bhrgcommon:boringEndDate>
+        <bhrgcommon:preparation codeSpace="urn:brocom:bhrg:Preparation">?</bhrgcommon:preparation>
+        <bhrgcommon:trajectoryExcavated>nee</bhrgcommon:trajectoryExcavated>
+        <bhrgcommon:rockReached>nee</bhrgcommon:rockReached>
+        <bhrgcommon:boringProcedure codeSpace="urn:brocom:bhrg:BoringProcedure">?</bhrgcommon:boringProcedure>
+        <bhrgcommon:finalDepthBoring uom="m">23.24</bhrgcommon:finalDepthBoring>
+        <bhrgcommon:stopCriterion codeSpace="urn:brocom:bhrg:StopCriterionField">?</bhrgcommon:stopCriterion>
+        <bhrgcommon:samplingProcedure codeSpace="urn:brocom:bhrg:SamplingProcedure">?</bhrgcommon:samplingProcedure>
+        <bhrgcommon:finalDepthSampling uom="m">23.24</bhrgcommon:finalDepthSampling>
+        <bhrgcommon:subsurfaceContaminated>nee</bhrgcommon:subsurfaceContaminated>
+        <bhrgcommon:boreholeCompleted>ja</bhrgcommon:boreholeCompleted>
+        <bhrgcommon:sampledInterval>
+          <bhrgcommon:SampledInterval gml:id="id_005">
+            <bhrgcommon:beginDepth uom="m">4.578</bhrgcommon:beginDepth>
+            <bhrgcommon:endDepth uom="m">23.24</bhrgcommon:endDepth>
+            <bhrgcommon:preTreatment codeSpace="urn:brocom:bhrg:PreTreatment">?</bhrgcommon:preTreatment>
+            <bhrgcommon:samplingMethod codeSpace="urn:brocom:bhrg:SamplingMethod">?</bhrgcommon:samplingMethod>
+            <bhrgcommon:samplingQuality codeSpace="urn:brocom:bhrg:SamplingQuality">?</bhrgcommon:samplingQuality>
+          </bhrgcommon:SampledInterval>
+        </bhrgcommon:sampledInterval>
+        <bhrgcommon:boredInterval>
+          <bhrgcommon:BoredInterval gml:id="id_006">
+            <bhrgcommon:beginDepth uom="m">4.578</bhrgcommon:beginDepth>
+            <bhrgcommon:endDepth uom="m">23.24</bhrgcommon:endDepth>
+            <bhrgcommon:boringTechnique codeSpace="urn:brocom:bhrg:BoringTechnique">?</bhrgcommon:boringTechnique>
+            <bhrgcommon:boredDiameter uom="mm">115</bhrgcommon:boredDiameter>
+          </bhrgcommon:BoredInterval>
+        </bhrgcommon:boredInterval>
+      </bhrgcommon:Boring>
+    </dsbhrg:boring>
+  </dsbhrg:BHR_G_O_DP>
+	</dsbhrg:dispatchDocument>
+</dsbhrg:dispatchDataResponse>
