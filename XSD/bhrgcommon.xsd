@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema 
-xmlns:bhrgcommon="http://www.broservices.nl/xsd/bhrgcommon/1.0" 
-xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0" 
-xmlns:gml="http://www.opengis.net/gml/3.2" 
-xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0" 
-targetNamespace="http://www.broservices.nl/xsd/bhrgcommon/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0">
+<xs:schema xmlns:bhrgcommon="http://www.broservices.nl/xsd/bhrgcommon/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0" targetNamespace="http://www.broservices.nl/xsd/bhrgcommon/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0">
 	<xs:annotation>
 		<xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
 			<gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
@@ -78,91 +72,6 @@ Explanation: Het gaat om de diameter van het gat dat door boren is ontstaan. Het
 	<xs:complexType name="BoredIntervalPropertyType">
 		<xs:sequence minOccurs="0">
 			<xs:element ref="bhrgcommon:BoredInterval"/>
-		</xs:sequence>
-		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-	</xs:complexType>
-	<xs:element name="BoreholeResearch" type="bhrgcommon:BoreholeResearchType" substitutionGroup="brocom:RegistrationObject">
-		<xs:annotation>
-			<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens die het booronderzoek identificeren en inzicht geven in de geschiedenis van het object voorafgaand aan opname in de registratie ondergrond.</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:complexType name="BoreholeResearchType">
-		<xs:complexContent>
-			<xs:extension base="brocom:RegistrationObjectType">
-				<xs:sequence>
-					<xs:element name="deliveryContext" type="bhrgcommon:DeliveryContextType" minOccurs="1" maxOccurs="1">
-						<xs:annotation>
-							<xs:appinfo>
-								<CodeListName>DeliveryContext</CodeListName>
-								<CodeListURI/>
-							</xs:appinfo>
-							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
-Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie.</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="surveyPurpose" type="bhrgcommon:SurveyPurposeType" minOccurs="1" maxOccurs="1">
-						<xs:annotation>
-							<xs:appinfo>
-								<CodeListName>SurveyPurpose</CodeListName>
-								<CodeListURI/>
-							</xs:appinfo>
-							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het doel waarvoor het onderzoek is uitgevoerd.
-Explanation: Onderzoek wordt normaliter projectmatig uitgevoerd, zelfs als het direct gebonden is aan een publieke taak. Het gegeven beschrijft het hogere doel van het project waarvoor het onderzoek is uitgevoerd of preciseert de taak.</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="discipline" type="bhrgcommon:DisciplineType" minOccurs="1" maxOccurs="1">
-						<xs:annotation>
-							<xs:appinfo>
-								<CodeListName>Discipline</CodeListName>
-								<CodeListURI/>
-							</xs:appinfo>
-							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De discipline waarbinnen het booronderzoek is uitgevoerd.
-Explanation: Het vakgebied is een gegeven dat dient om een categorie van booronderzoek in de registratie ondergrond te identificeren. Het gegeven bepaalt hoe het onderzoek is uitgevoerd en welke gegevens en categorieën van gegevens vastgelegd kunnen zijn. Onder geologisch onderzoek wordt geologisch specialistisch onderzoek verstaan dat nauw verbonden is met het doel modellen die de opbouw van de ondergrond in termen van (hydro)geologische eenheden beschrijven te maken en te verbeteren. Naast geologisch booronderzoek worden geologisch toegepast booronderzoek, geotechnisch booronderzoek, bodemkundig booronderzoek en cultuurtechnisch booronderzoek onderscheiden. In de uitvoeringspraktijk komt het voor dat in een booronderzoek gegevens worden vastgelegd die onder een van de vijf vakgebieden vallen en gegevens die eigenlijk in het domein van de milieukunde of de archeologie thuishoren. Omdat die disciplines buiten het bereik van de basisregistratie ondergrond liggen, zijn die extra gegevens niet gedefinieerd. Geologisch booronderzoek met een dergelijk multidisciplinair karakter wordt in de basisregistratie ondergrond opgenomen maar zonder die extra gegevens. Om gebruikers duidelijk te maken dat de onderzoeksresultaten niet volledig geregistreerd zijn wordt als waarde voor het vakgebied niet de waarde geologie vermeld, maar een waarde als geologieArcheologie.</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="researchReportDate" type="xs:date" minOccurs="0" maxOccurs="1">
-						<xs:annotation>
-							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de uitvoerder van het booronderzoek alle gegevens van het booronderzoek aan de bronhouder heeft overgedragen of in het geval van historische gegevens de datum waarop alle gegevens zijn vastgesteld.
-Explanation: Het gegeven is alleen aanwezig wanneer alle deelonderzoeken zijn gerapporteerd en het onderzoek is afgesloten. Hoewel historische gegevens nog buiten het bereik van deze versie van de catalogus vallen, is wel al met zekerheid vast te stellen dat de eerste datum waarop een onderzoek kan zijn afgerond in 1877 ligt.</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="surveyProcedure" type="bhrgcommon:SurveyProcedureType" minOccurs="1" maxOccurs="1">
-						<xs:annotation>
-							<xs:appinfo>
-								<CodeListName>SurveyProcedure</CodeListName>
-								<CodeListURI/>
-							</xs:appinfo>
-							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De procedure die de uitvoering van projecten waarbinnen het booronderzoek wordt uitgevoerd reguleert en daarmee de kaders bepaalt voor de uitvoering van het booronderzoek.
-Explanation: De procedure beschrijft de manier van werken, de passende hulpmiddelen en de eisen waaraan de uitvoering moet voldoen. Procedures zijn in het algemeen vastgelegd in een norm, protocol of richtlijn. Dat kan overigens een richtlijn zijn die de uitvoerder voor zichzelf gebruikt. Het gegeven is opgenomen omdat het inzicht biedt in de kwaliteit van het werk.</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="siteCharacteristicDetermined" type="brocom:IndicationYesNoEnumeration" minOccurs="0" maxOccurs="1">
-						<xs:annotation>
-							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding die aangeeft of in het onderzoek gegevens over de toestand van het terrein zijn vastgelegd die van betekenis zijn voor de beoordeling van de resultaten.</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="researchOperator" type="brocom:OrganizationType" minOccurs="0" maxOccurs="1">
-						<xs:annotation>
-							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die voor de bronhouder geldt als verantwoordelijk voor de uitvoering van het booronderzoek, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
-Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</xs:documentation>
-						</xs:annotation>
-					</xs:element>
-					<xs:element name="registrationHistory" type="brocom:RegistrationHistoryType" nillable="false" minOccurs="1" maxOccurs="1"/>
-					<xs:element name="reportHistory" type="bhrgcommon:ReportHistoryType" nillable="false" minOccurs="1" maxOccurs="1"/>
-					<xs:element name="deliveredLocation" type="bhrgcommon:DeliveredLocationType" nillable="false" minOccurs="1" maxOccurs="1"/>
-					<xs:element name="deliveredVerticalPosition" type="bhrgcommon:DeliveredVerticalPositionType" nillable="false" minOccurs="1" maxOccurs="1"/>
-					<xs:element name="standardizedLocation" type="bhrgcommon:StandardizedLocationType" nillable="false" minOccurs="1" maxOccurs="1"/>
-					<xs:element name="siteCharacteristic" type="bhrgcommon:SiteCharacteristicType" nillable="false" minOccurs="0" maxOccurs="1"/>
-					<xs:element name="boreholeSampleDescription" type="bhrgcommon:BoreholeSampleDescriptionPropertyType" nillable="false" minOccurs="0" maxOccurs="1"/>
-					<xs:element name="fluidMudLayer" type="bhrgcommon:FluidMudLayerPropertyType" nillable="false" minOccurs="0" maxOccurs="1"/>
-					<xs:element name="boring" type="bhrgcommon:BoringPropertyType" nillable="false" minOccurs="1" maxOccurs="1"/>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-	<xs:complexType name="BoreholeResearchPropertyType">
-		<xs:sequence minOccurs="0">
-			<xs:element ref="bhrgcommon:BoreholeResearch"/>
 		</xs:sequence>
 		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
 	</xs:complexType>
@@ -998,15 +907,30 @@ Explanation: Het gegeven wordt alleen vastgelegd bij de beschrijving van ongeroe
 		<xs:complexContent>
 			<xs:extension base="gml:AbstractFeatureType">
 				<xs:sequence>
-					<xs:element name="beginDepth" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
+					<xs:element name="beginDepth" minOccurs="1" maxOccurs="1">
 						<xs:annotation>
 							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De diepte waarop de discontinuïteit begint.</xs:documentation>
 						</xs:annotation>
+												<xs:complexType>
+							<xs:simpleContent>
+								<xs:restriction base="gml:MeasureType">
+									<xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="m"/>
+								</xs:restriction>
+							</xs:simpleContent>
+						</xs:complexType>
 					</xs:element>
-					<xs:element name="endDepth" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
+					
+					<xs:element name="endDepth" minOccurs="1" maxOccurs="1">
 						<xs:annotation>
 							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De diepte waarop de discontinuïteit eindigt.</xs:documentation>
 						</xs:annotation>
+												<xs:complexType>
+							<xs:simpleContent>
+								<xs:restriction base="gml:MeasureType">
+									<xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="m"/>
+								</xs:restriction>
+							</xs:simpleContent>
+						</xs:complexType>
 					</xs:element>
 					<xs:element name="discontinuityType" type="bhrgcommon:DiscontinuityTypeType" minOccurs="1" maxOccurs="1">
 						<xs:annotation>
@@ -1024,23 +948,6 @@ Explanation: Het gegeven wordt alleen vastgelegd bij de beschrijving van ongeroe
 	<xs:complexType name="PostSedimentaryDiscontinuityPropertyType">
 		<xs:sequence minOccurs="0">
 			<xs:element ref="bhrgcommon:PostSedimentaryDiscontinuity"/>
-		</xs:sequence>
-		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-	</xs:complexType>
-	<xs:element name="RegistrationObject" type="bhrgcommon:RegistrationObjectType" substitutionGroup="gml:AbstractFeature">
-		<xs:annotation>
-			<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Name: Booronderzoek
-Definition: Het geheel van gegevens dat betrekking heeft op een booronderzoek dat vanuit een bepaalde opdracht is uitgevoerd door op een bepaald moment op een bepaalde locatie in Nederland of zijn Exclusieve Economische Zone een boring uit te voeren en de monsters die daarmee uit de ondergrond zijn verkregen te beschrijven en/of te onderzoeken en/of in het boorgat zelf metingen aan de ondergrond uit te voeren.</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:complexType name="RegistrationObjectType">
-		<xs:complexContent>
-			<xs:extension base="gml:AbstractFeatureType"/>
-		</xs:complexContent>
-	</xs:complexType>
-	<xs:complexType name="RegistrationObjectPropertyType">
-		<xs:sequence minOccurs="0">
-			<xs:element ref="bhrgcommon:RegistrationObject"/>
 		</xs:sequence>
 		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
 	</xs:complexType>
@@ -1282,18 +1189,9 @@ Explanation: In geroerde monsters zijn de afmetingen van brokjes van geen beteke
 	</xs:complexType>
 	<xs:complexType name="DeliveredLocationType">
 		<xs:sequence>
-			<xs:element name="coordinates" type="gml:PointPropertyType" minOccurs="1" maxOccurs="1">
+			<xs:element name="location" type="gml:PointPropertyType" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De coördinaten die zijn aangeleverd.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="CRS" type="bhrgcommon:CRSType" minOccurs="1" maxOccurs="1">
-				<xs:annotation>
-					<xs:appinfo>
-						<CodeListName>CRS</CodeListName>
-						<CodeListURI/>
-					</xs:appinfo>
-					<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het referentiestelsel van de aangeleverde coördinaten.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="horizontalPositioningDate" type="xs:date" minOccurs="1" maxOccurs="1">
@@ -2479,33 +2377,6 @@ Explanation: De textuur wordt bepaald voor organische gronden, met uitzondering 
 			<xs:element name="fractionDistribution" type="bhrgcommon:FractionDistributionType" nillable="false" minOccurs="0" maxOccurs="1"/>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="StandardizedLocationType">
-		<xs:sequence>
-			<xs:element name="coordinates" type="bhrgcommon:CoordinateSetPropertyType" minOccurs="1" maxOccurs="1">
-				<xs:annotation>
-					<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De coördinaten in het standaard referentiestelsel.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="CRS" type="bhrgcommon:CRSType" minOccurs="1" maxOccurs="1">
-				<xs:annotation>
-					<xs:appinfo>
-						<CodeListName>CRS</CodeListName>
-						<CodeListURI/>
-					</xs:appinfo>
-					<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het referentiestelsel van de gestandaardiseerde coördinaten.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="coordinateTransformation" type="bhrgcommon:CoordinateTransformationType" minOccurs="1" maxOccurs="1">
-				<xs:annotation>
-					<xs:appinfo>
-						<CodeListName>CoordinateTransformation</CodeListName>
-						<CodeListURI/>
-					</xs:appinfo>
-					<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De methode die de basisregistratie ondergrond heeft gebruikt voor het omzetten van de aangeleverde coördinaten.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
 	<xs:complexType name="ThinStratumType">
 		<xs:sequence>
 			<xs:element name="layerProportion" minOccurs="1" maxOccurs="1">
@@ -2549,6 +2420,7 @@ Explanation: Het gegeven wordt alleen vastgelegd wanneer een laag onder bepaalde
 		</xs:annotation>
 	</xs:element>
 	<xs:complexType name="GeologicalSoilNameType">
+	<!--Geologicalsoilname is a external referencelist-->
 		<xs:sequence>
 			<xs:element name="Waarde" type="xs:string" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
@@ -2575,602 +2447,588 @@ Explanation: Het gegeven wordt alleen vastgelegd wanneer een laag onder bepaalde
 	<xs:complexType name="ActivityTypeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:ActivityType"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:ActivityType"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="AnimalFossilTypeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:AnimalFossilType"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:AnimalFossilType"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="AngularityType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:Angularity"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:Angularity"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="ArcheologicalConstituentTypeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:ArcheologicalConstituentType"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:ArcheologicalConstituentType"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="BackfillMaterialType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:BackfillMaterial"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:BackfillMaterial"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="BoringProcedureType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:BoringProcedure"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:BoringProcedure"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="BoringTechniqueType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:BoringTechnique"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:BoringTechnique"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="BoundaryPositioningMethodType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:BoundaryPositioningMethod"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:BoundaryPositioningMethod"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="CarbonateContentClassType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:CarbonateContentClass"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:CarbonateContentClass"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="CasingMaterialType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:CasingMaterial"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:CasingMaterial"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="ChunkSizeClassType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:ChunkSizeClass"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:ChunkSizeClass"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="ColourType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:Colour"/>
-			</xs:restriction>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:complexType name="CoordinateTransformationType">
-		<xs:simpleContent>
-			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:CoordinateTransformation"/>
-			</xs:restriction>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:complexType name="CRSType">
-		<xs:simpleContent>
-			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:Colour"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="CurrentProcesType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:CurrentProces"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:CurrentProces"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="DeliveryContextType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:DeliveryContext"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:DeliveryContext"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="DescribedMaterialType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:DescribedMaterial"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:DescribedMaterial"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="DescriptionLocationType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:DescriptionLocation"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:DescriptionLocation"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="DescriptionProcedureType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:DescriptionProcedure"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:DescriptionProcedure"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="DescriptionQualityType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:DescriptionQuality"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:DescriptionQuality"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="DisciplineType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:Discipline"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:Discipline"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="DiscontinuityTypeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:DiscontinuityType"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:DiscontinuityType"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="EventNameType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:EventName"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:EventName"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="ExcavatedMaterialType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:ExcavatedMaterial"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:ExcavatedMaterial"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="FineSoilConsistencyType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:FineSoilConsistency"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:FineSoilConsistency"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="FluidMudLayerPositioningMethodType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:FluidMudLayerPositioningMethod"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:FluidMudLayerPositioningMethod"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="FlushingAdditiveType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:FlushingAdditive"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:FlushingAdditive"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="GeologicalOriginType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:GeologicalOrigin"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:GeologicalOrigin"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="GeotechnicalSoilNameType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:GeotechnicalSoilName"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:GeotechnicalSoilName"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="GrainColourType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:GrainColour"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:GrainColour"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="GravelContentClassType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:GravelContentClass"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:GravelContentClass"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="GravelProvenanceType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:GravelProvenance"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:GravelProvenance"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="GravelMedianClassType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:GravelMedianClass"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:GravelMedianClass"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="GravelTypeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:GravelType"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:GravelType"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="HorizonCodeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:HorizonCode"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:HorizonCode"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="HorizontalPositioningMethodType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:HorizontalPositioningMethod"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:HorizontalPositioningMethod"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="HumanMarkType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:HumanMark"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:HumanMark"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="HydrologicalSettingType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:HydrologicalSetting"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:HydrologicalSetting"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="LandscapeElementType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:LandscapeElement"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:LandscapeElement"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="LocalVerticalReferencePointType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:LocalVerticalReferencePoint"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:LocalVerticalReferencePoint"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="MassPercentageClassType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:MassPercentageClass"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:MassPercentageClass"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="MicaContentClassType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:MicaContentClass"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:MicaContentClass"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="MottlingDensityType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:MottlingDensity"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:MottlingDensity"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="MunsellHueType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:MunsellHue"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:MunsellHue"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="MunsellValueType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:MunsellValue"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:MunsellValue"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="MunsellChromaType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:MunsellChroma"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:MunsellChroma"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="NoDescriptionReasonType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:NoDescriptionReason"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:NoDescriptionReason"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="OrganicMatterContentClassType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:OrganicMatterContentClass"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:OrganicMatterContentClass"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="OrganicMatterContentClassNEN5104Type">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:OrganicMatterContentClassNEN5104"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:OrganicMatterContentClassNEN5104"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="OrganicSoilConsistencyType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:OrganicSoilConsistency"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:OrganicSoilConsistency"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="OrganicSoilTextureType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:OrganicSoilTexture"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:OrganicSoilTexture"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="ParticularConstituentTypeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:ParticularConstituentType"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:ParticularConstituentType"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="PeatTypeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:PeatType"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:PeatType"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="PlantRemainTypeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:PlantRemainType"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:PlantRemainType"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="PositionOnGroundBodyType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:PositionOnGroundBody"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:PositionOnGroundBody"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="PreparationType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:Preparation"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:Preparation"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="PreTreatmentType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:PreTreatment"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:PreTreatment"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="RockTypeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:RockType"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:RockType"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="SampleMoistnessType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:SampleMoistness"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:SampleMoistness"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="SamplerTypeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:SamplerType"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:SamplerType"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="SamplingQualityType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:SamplingQuality"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:SamplingQuality"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="SamplingMethodType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:SamplingMethod"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:SamplingMethod"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="SamplingProcedureType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:SamplingProcedure"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:SamplingProcedure"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="SandMedianClassType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:SandMedianClass"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:SandMedianClass"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="SandSortingType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:SandSorting"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:SandSorting"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="SedimentaryPhenomenonType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:SedimentaryPhenomenon"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:SedimentaryPhenomenon"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="ShellTaxonType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:ShellTaxon"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:ShellTaxon"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="SoilTypeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:SoilType"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:SoilType"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="SoilUseType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:SoilUse"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:SoilUse"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="SpecialMaterialType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:SpecialMaterial"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:SpecialMaterial"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="SphericityType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:Sphericity"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:Sphericity"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="StainColourType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:StainColour"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:StainColour"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="StratumThicknessClassType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:StratumThicknessClass"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:StratumThicknessClass"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="StructureType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:Structure"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:Structure"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="StopCriterionFieldType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:StopCriterionField"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:StopCriterionField"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="SurveyPurposeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:SurveyPurpose"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:SurveyPurpose"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="SurveyProcedureType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:SurveyProcedure"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:SurveyProcedure"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="TemporaryChangeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:TemporaryChange"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:TemporaryChange"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="UtensilType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:Utensil"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:Utensil"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="VariegationType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:Variegation"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:Variegation"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="VerticalDatumType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:VerticalDatum"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:VerticalDatum"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="VerticalTrendType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:VerticalTrend"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:VerticalTrend"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="VerticalPositioningMethodType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:VerticalPositioningMethod"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:VerticalPositioningMethod"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="VeryCoarseFractionContentClassType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:VeryCoarseFractionContentClass"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:VeryCoarseFractionContentClass"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="VolumePercentageClassType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:VolumePercentageClass"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:VolumePercentageClass"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="WheateringDegreeType">
 		<xs:simpleContent>
 			<xs:restriction base="gml:CodeWithAuthorityType">
-				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:brocom:bhrg:WheateringDegree"/>
+				<xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:WheateringDegree"/>
 			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
