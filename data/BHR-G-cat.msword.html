@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Geologisch booronderzoek (BHR-G)/20200518</p>
       <p>Imvertor: 1.61.2</p>
-      <p>Model release: Conceptualmodel-GeologischbooronderzoekBHR-G-0.99-3-20200518-20200721-111046</p>
+      <p>Model release: Conceptualmodel-GeologischbooronderzoekBHR-G-0.99-3-20200518-20200723-141628</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -22274,7 +22274,7 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td><a class="link" href="#detail_class_Model_Verzadigingsmethode">Verzadigingsmethode</a></td>
+                              <td><a class="link" href="#detail_class_Model_Verzadigigingsmethode">Verzadigigingsmethode</a></td>
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
@@ -22284,7 +22284,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>waterverzadiging</em> wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>fallingHeadOnvoldoendeCohesief.</em> 
+                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>waterverzadigen</em> wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>fallingHeadOnvoldoendeCohesief.</em> 
                                     De waarde van het attribuut moet gelijk zijn aan <em>onderBelasting</em> wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>fallingHead.</em>
                                     </p>
                                  </td>
@@ -22295,10 +22295,12 @@
                                  
                                  <p>Er zijn twee manieren van verzadigen van het proefstuk. Bij de falling head methode
                                     voor onvoldoende cohesief materiaal wordt het proefstuk in een bad geplaatst en krijgt
-                                    het proefstuk de gelegenheid om van onderaf water op te nemen (<em>waterverzadiging</em>). Dit duurt 4 tot 10 dagen. Bij de standaard falling head methode voor cohesief materiaal
-                                    wordt het proefstuk eerst onder druk gezet en krijgt het proefstuk de gelegenheid
-                                    om te consolideren, consolidatie duurt 1 dag. Vervolgens krijgt het proefstuk de gelegenheid
-                                    om van onderaf water op te nemen. Dit duurt 1 tot 3 dagen. </p>
+                                    het proefstuk de gelegenheid om van onderaf water op te nemen (<em>waterverzadigen</em>). Dit duurt 4 tot 10 dagen. De aanname is dat het proefstuk volledig verzadigd is.
+                                    Bij de standaard falling head methode voor cohesief materiaal wordt het proefstuk
+                                    eerst onder druk gezet en krijgt het proefstuk de gelegenheid om te consolideren,
+                                    consolidatie duurt 1 dag. Vervolgens krijgt het proefstuk de gelegenheid om van onderaf
+                                    water op te nemen. Dit duurt 1 tot 3 dagen. De verzadigingsgraad kan achteraf worden
+                                    berekend of ingeschat met behulp van het watergehalte na afloop.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -22452,8 +22454,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut gebruikt medium
-                                    gelijk is aan <em>SAR13water</em>.<br clear="none">
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>gebruikt medium</em> gelijk is aan <em>SAR13water</em>.<br clear="none">
                                     Het attribuut mag niet aanwezig zijn in alle andere gevallen. </p>
                                  </td>
                            </tr>
@@ -22481,6 +22482,13 @@
                               <td>Attribuut van Bepaling verzadigde waterdoorlatendheid</td>
                            </tr>
                            <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De aanduiding die aangeeft of natte poreuze stenen zijn gebruikt. </p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Juridische status</th>
                               <td>Authentiek</td>
                            </tr>
@@ -22499,6 +22507,25 @@
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Waardelijst niet uitbreidbaar</td>
+                           </tr>
+                           <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>verzadigingsmethode</em> gelijk is aan <em>onderBelasting</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen. </p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Bij de standaard falling head methode wordt de bepaling normaliter uitgevoerd met
+                                    poreuze stenen die oppervlakkig nat zijn gemaakt. Wanneer men verwacht dat het materiaal
+                                    door opname van water zal gaan zwellen, worden droge stenen gebruikt. Bij droge stenen
+                                    duurt het langer voordat het gehele proefstuk is verzadigd voor aanvang van de proef.
+                                    </p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -22514,6 +22541,14 @@
                               <td>Attribuut van Bepaling verzadigde waterdoorlatendheid</td>
                            </tr>
                            <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Het quotiënt van het verschil tussen de beginhoogte van het proefstuk en de hoogte
+                                    aan het eind van de consolidatie, en de beginhoogte.</p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Juridische status</th>
                               <td>Authentiek</td>
                            </tr>
@@ -22528,11 +22563,35 @@
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
                               <td>Meetwaarde 
-                                 </td>
+                                 1.2</td>
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td>0 tot 1</td>
+                           </tr>
+                           <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>fallingHead</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen. </p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Normaliter vervormt het proefstuk tijdens de verzadiging niet. Wanneer het proefstuk
+                                    tijdens de verzadiging gaat zwellen wordt dit vastgelegd. </p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -22548,70 +22607,11 @@
                               <td>Attribuut van Bepaling verzadigde waterdoorlatendheid</td>
                            </tr>
                            <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>0..1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>IndicatieJaNee</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Waardelijst niet uitbreidbaar</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_ringwaterafstotend"></a><section id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_ringwaterafstotend">
-                     <h4>  ring waterafstotend</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Bepaling verzadigde waterdoorlatendheid</td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>0..1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>IndicatieJaNee</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Waardelijst niet uitbreidbaar</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_stromingneerwaarts"></a><section id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_stromingneerwaarts">
-                     <h4>  stroming neerwaarts</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Bepaling verzadigde waterdoorlatendheid</td>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De indicatie die aangeeft of tijdens de bepaling zwel is geconstateerd.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -22633,6 +22633,132 @@
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Waardelijst niet uitbreidbaar</td>
                            </tr>
+                           <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>fallingHead</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen. </p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Normaliter vervormt het proefstuk tijdens het waterverzadigen niet. Wanneer het proefstuk
+                                    tijdens het waterverzadigen gaat zwellen wordt dit vastgelegd. </p>
+                                 </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_ringwaterafstotend"></a><section id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_ringwaterafstotend">
+                     <h4>  ring waterafstotend</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Bepaling verzadigde waterdoorlatendheid</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De aanduiding die aangeeft of er in de steekring een waterafstotende laag is aangebracht.
+                                    </p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>0..1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>IndicatieJaNee</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Waardelijst niet uitbreidbaar</td>
+                           </tr>
+                           <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>fallingHead</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen. </p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Bij toepassing van de falling head methode kan er aan de binnenkant van de steekring
+                                    een waterafstotende laag worden aangebracht om lekkage van water tussen de randen
+                                    van het monster en de steekring te voorkomen. De laag vermindert ook de wrijving bij
+                                    het uitsteken. Veel gebruikte waterafstotende media zijn naaimachine-olie en vaseline.
+                                    
+                                    Dit is niet nodig bij de fallinghead methode voor onvoldoende cohesief materiaal,
+                                    omdat daarbij het uitsteken gebeurd met een door de GDN ontworpen apparaat. </p>
+                                 </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_stromingneerwaarts"></a><section id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_stromingneerwaarts">
+                     <h4>  stroming neerwaarts</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Bepaling verzadigde waterdoorlatendheid</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De aanduiding die aangeeft of de stroming van boven naar onder is gericht.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>IndicatieJaNee</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Waardelijst niet uitbreidbaar</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>In geologisch booronderzoek is de stroming standaard opwaarts. In de bodemkunde is
+                                    de stroming standaard neerwaarts. </p>
+                                 </td>
+                           </tr>
                         </tbody>
                      </table>
                      </section><a class="anchor" id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_temperatuur"></a><section id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_temperatuur">
@@ -22645,6 +22771,13 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Attribuut van Bepaling verzadigde waterdoorlatendheid</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De temperatuur waaronder de bepaling is uitgevoerd. </p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -22661,11 +22794,28 @@
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
                               <td>Meetwaarde 
-                                 </td>
+                                 2.1</td>
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>°C (graden Celsius)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td>5 tot 30</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>De waterdoorlatendheid varieert met de viscositeit van het water en die is weer afhankelijk
+                                    van de temperatuur. De resultaten worden nooit omgerekend naar een andere temperatuur.
+                                    </p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -22679,6 +22829,14 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Attribuut van Bepaling verzadigde waterdoorlatendheid</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Een bijzonderheid die zich tijdens de uitvoering van de bepaling heeft voorgedaan
+                                    en die van invloed kan zijn op de resultaten. </p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -22700,6 +22858,17 @@
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Waardelijst uitbreidbaar</td>
                            </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Tijdens de uitvoering kunnen zich bijzonderheden  voordoen waardoor de uitvoerder
+                                    de bepaling niet helemaal op de ideale wijze kan uitvoeren. Het kan voorkomen dat
+                                    de poreuze steen tijdens de uitvoering is gebroken. Wanneer een dergelijke situatie
+                                    zich voordoet en het probleem van invloed kan zijn op het resultaat, legt de uitvoerder
+                                    het als bijzonderheid vast.</p>
+                                 </td>
+                           </tr>
                         </tbody>
                      </table>
                      </section><a class="anchor" id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_bijzonderheidmateriaal"></a><section id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_bijzonderheidmateriaal">
@@ -22712,6 +22881,14 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Attribuut van Bepaling verzadigde waterdoorlatendheid</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Een bijzonderheid die tijdens de bepaling is geconstateerd door het onderzochte materiaal
+                                    te bekijken, en die van invloed kan zijn op de resultaten van de bepaling. </p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -22733,10 +22910,21 @@
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Waardelijst uitbreidbaar</td>
                            </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Tijdens de uitvoering kunnen er bijzonderheden worden geconstateerd die extra informatie
+                                    over de aard van het onderzochte materiaal geven. In het proefstuk kunnen insluitsels,
+                                    wormgaten of wortelgangen voorkomen, het materiaal kan gescheurd, gelaagd of geaggregeerd
+                                    zijn. In de huidige praktijk legt de uitvoerder eventuele bijzonderheden altijd vast.
+                                    </p>
+                                 </td>
+                           </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_maximalegradient"></a><section id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_maximalegradient">
-                     <h4>  maximale gradient</h4>
+                     </section><a class="anchor" id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_maximalegradint"></a><section id="detail_attribute_Model_Bepalingverzadigdewaterdoorlatendheid_maximalegradint">
+                     <h4>  maximale gradiënt</h4>
                      
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -22745,6 +22933,13 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Attribuut van Bepaling verzadigde waterdoorlatendheid</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De maximale hydraulische gradiënt tijdens de bepaling.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -22761,11 +22956,30 @@
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
                               <td>Meetwaarde 
-                                 </td>
+                                 2.1</td>
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>cm/cm (centimeter per centimeter)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td>0 tot 50</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Tijdens de bepaling moeten laminaire stromingscondities heersen om te voorkomen dat
+                                    er deeltjes in het proefstuk worden getransporteerd. Hoe groter de doorlatendheid
+                                    van de grond, des te makkelijk worden deeltjes getransporteerd en des te lager de
+                                    maximaal toegestane gradiënt. De uitvoerder bepaalt van te voren de maximale gradiënt
+                                    en die is afhankelijk van het het te onderzoeken materiaal. </p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -22779,6 +22993,14 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Attribuut van Bepaling verzadigde waterdoorlatendheid</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De verhouding tussen de hoeveelheid water en de hoeveelheid droge stof uitgedrukt
+                                    in massaprocenten na afloop van de bepaling. </p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -22795,11 +23017,38 @@
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
                               <td>Meetwaarde 
-                                 </td>
+                                 4.1</td>
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>% (procent)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td>0 tot 2000</td>
+                           </tr>
+                           <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>bepalingsmethode</em> gelijk is aan <em>fallingHead</em>. </p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Bij de falling head methode wordt het watergehalte na afloop van de bepaling   bepaald.
+                                    Wanneer de volumieke massa vaste delen van het onderzochte interval bepaald is, kan
+                                    worden vastgesteld in welke mate het proefstuk verzadigd was. Wanneer dat niet bepaald
+                                    is, moeten aannames worden gedaan over de mate van verzadiging. Het watergehalte is
+                                    bepaald volgens de daarvoor geldende procedure door droging van het materiaal op 105
+                                    of 110 graden Celsius met een droogtijd van 16 tot 24 uur. </p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -22816,6 +23065,22 @@
                            <th>Type gegeven</th>
                            <td>Entiteit</td>
                         </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>De snelheid waarmee water door de met waterverzadigde grond stroomt bij een bepaalde
+                                 belasting. </p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              <p>Bij bepaling volgens de falling head methode wordt de verzadigde waterdoorlatendheid
+                                 een keer gemeten bij een bepaalde belasting. </p>
+                              </td>
+                        </tr>
                      </tbody>
                   </table><a class="anchor" id="detail_attribute_Model_Verzadigdewaterdoorlatendheidbijbepaaldebelasting_belasting"></a><section id="detail_attribute_Model_Verzadigdewaterdoorlatendheidbijbepaaldebelasting_belasting">
                      <h4>  belasting</h4>
@@ -22827,6 +23092,13 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Attribuut van Verzadigde waterdoorlatendheid bij bepaalde belasting</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De hoeveelheid druk die op het proefstuk is aangebracht.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -22843,11 +23115,31 @@
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
                               <td>Meetwaarde 
-                                 </td>
+                                 5.1</td>
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>kPa (kilopascal)</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td>0 tot 15000</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>De druk die wordt opgelegd volgt uit de opdracht. In het geologisch booronderzoek
+                                    wil men een druk die overeenkomt met de druk op de in-situ diepte. Bij het bepalen
+                                    van de verzadigde waterdoorlatendheid bij onvoldoende cohesief materiaal, is de aanname
+                                    dat de in situ situatie voldoende wordt nageboots door een druk van 0 kilopascal te
+                                    nemen.<br clear="none">
+                                    Het symbool voor de verzadigde waterdoorlatendheid is <em>p</em>. </p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -22863,6 +23155,13 @@
                               <td>Attribuut van Verzadigde waterdoorlatendheid bij bepaalde belasting</td>
                            </tr>
                            <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De snelheid waarmee water door de met waterverzadigde grond stroomt.</p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Juridische status</th>
                               <td>Authentiek</td>
                            </tr>
@@ -22877,11 +23176,31 @@
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
                               <td>Meetwaarde 
-                                 </td>
+                                 3.2</td>
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
                               <td>Getal</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>m/dag</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Waardebereik</th>
+                              <td>0.05 tot 150</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>De verzadigde waterdoorlatendheid wordt bepaald door op 5 gemeten tijdstippen de stijghoogte
+                                    vast te leggen. Deze 5 metingen worden gebruikt om een lineaire regressie uit te voeren
+                                    en het resultaat hiervan wordt vastgelegd als de verzadigde waterdoorlatendheid. De
+                                    verzadigde waterdoorlatendheid is altijd bij de temperatuur de gemeten temperatuur
+                                    weergegeven. 
+                                    Het symbool voor de verzadigde waterdoorlatendheid is <em>k</em>. </p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -37631,8 +37950,8 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_class_Model_Verzadigingsmethode">
-            <h3>  Verzadigingsmethode</h3>
+         <section id="detail_class_Model_Verzadigigingsmethode">
+            <h3>  Verzadigigingsmethode</h3>
             
             <table style="width: 100%;" class="list">
                <colgroup></colgroup>
@@ -37643,11 +37962,33 @@
                </tbody>
             </table>
             
-            <table style="width: 100%;">
+            <table style="width: 100%;" class="list">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup></colgroup>
                <tbody>
                   <tr>
                      <th>Waarde</th>
                      <th>Omschrijving</th>
+                  </tr>
+                  <tr>
+                     <td>waterverzadigen</td>
+                     <td>
+                        
+                        <p>Methode voor het vooraf verzadigen van het proefstuk. Het proefstuk in de ring wordt
+                           met behulp van een monsterhouder in een waterbad met deksel geplaatst. Het proefstuk
+                           wordt uiterst langzaam van onderaf verzadigd. Dit duurt ca. 4 tot 10 dagen. Na verzadiging
+                           wordt aan de bovenkant van het proefstuk eenmalig 25 mm water afgezogen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>onderBelasting</td>
+                     <td>
+                        
+                        <p>Methode voor het vooraf verzadigen van het proefstuk. Het proefstuk wordt tussen twee
+                           poreuze stenen in het apparaat geplaatst onder  druk en krijgt eerst de gelegenheid
+                           om zich aan te passen aan de nieuwe druk (het proefstuk is <em>geconsolideerd</em>). Dit duurt 24 uur. Vervolgens krijgt het proefstuk de gelegenheid om water vanaf
+                           de onderkant op te nemen. Dit duurt circa 1 tot 3 dagen. </p>
+                        </td>
                   </tr>
                </tbody>
             </table>
