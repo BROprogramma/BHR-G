@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registrationRequest
+    xmlns="http://www.broservices.nl/xsd/isbhrg/1.0"
+    xmlns:bhrgcommon="http://www.broservices.nl/xsd/bhrgcommon/1.0"
+    xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.broservices.nl/xsd/isbhrg/1.0 ../../XSD/isbhr-g-messages.xsd">
+  <brocom:requestReference>BRO-BHR-G-1596</brocom:requestReference>
+  <!-- Optional: -->
+  <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
+  <!--Optional: not allowwed in combination with sourceDocument BHR_G_completeReport_v1.
+  <brocom:broId>GLD123456789012</brocom:broId>
+  -->
+  <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+  <sourceDocument>
+    <BHR_G_completeReport_v1 gml:id="id_0001">
+      <objectIdAccountableParty>myIdForThisBoreholeResearch</objectIdAccountableParty>
+      <deliveryContext codeSpace="urn:bro:bhrg:DeliveryContext">RO</deliveryContext>
+      <surveyPurpose codeSpace="urn:bro:bhrg:SurveyPurpose">gebiedsmodelOrdeningOndergrond</surveyPurpose>
+      <discipline codeSpace="urn:bro:bhrg:Discipline">geologie</discipline>
+      <researchReportDate>2020-08-01</researchReportDate>
+      <surveyProcedure codeSpace="urn:bro:bhrg:SurveyProcedure">EN1997d2v2007</surveyProcedure>
+      <!--Optional: only allowed and mandatory if deliveredVerticalPosition.localVerticalReferencePoint='maaiveld'. -->
+      <siteCharacteristicDetermined>ja</siteCharacteristicDetermined>
+      <!-- Optional: -->
+      <researchOperator>
+        <!-- You have a CHOICE of the next 2 items at this level
+        <brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
+        <brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
+        -->
+        <brocom:chamberOfCommerceNumber>52754834</brocom:chamberOfCommerceNumber>
+      </researchOperator>
+      <deliveredLocation>
+        <bhrgcommon:location>
+          <gml:Point gml:id="id_0002" srsName="urn:ogc:def:crs:EPSG::28992">
+            <gml:pos>134750.000 477800.000</gml:pos>
+          </gml:Point>
+        </bhrgcommon:location>
+        <bhrgcommon:horizontalPositioningDate>2020-07-13</bhrgcommon:horizontalPositioningDate>
+        <bhrgcommon:horizontalPositioningMethod codeSpace="urn:bro:bhrg:HorizontalPositioningMethod">RTKGPS2tot5cm</bhrgcommon:horizontalPositioningMethod>
+        <!-- Optional: -->
+        <bhrgcommon:horizontalPositioningOperator>
+          <!-- You have a CHOICE of the next 2 items at this level
+          <brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
+          <brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
+          -->
+          <brocom:chamberOfCommerceNumber>83454527</brocom:chamberOfCommerceNumber>
+        </bhrgcommon:horizontalPositioningOperator>
+      </deliveredLocation>
+      <deliveredVerticalPosition>
+        <bhrgcommon:localVerticalReferencePoint codeSpace="urn:bro:bhrg:LocalVerticalReferencePoint">maaiveld</bhrgcommon:localVerticalReferencePoint>
+        <bhrgcommon:offset uom="m">-1.38</bhrgcommon:offset>
+        <!-- Optional: only allowed and mandatory if localVerticalReferencePoint='waterbodem'.
+        <bhrgcommon:waterDepth uom="m">?</bhrgcommon:waterDepth>
+        -->
+        <bhrgcommon:verticalDatum codeSpace="urn:bro:bhrg:VerticalDatum">NAP</bhrgcommon:verticalDatum>
+        <bhrgcommon:verticalPositioningDate>2020-07-13</bhrgcommon:verticalPositioningDate>
+        <bhrgcommon:verticalPositioningMethod codeSpace="urn:bro:bhrg:VerticalPositioningMethod">RTKGPS0tot4cm</bhrgcommon:verticalPositioningMethod>
+        <!-- Optional: -->
+        <bhrgcommon:verticalPositioningOperator>
+          <!-- You have a CHOICE of the next 2 items at this level
+          <brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
+          <brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
+          -->
+          <brocom:chamberOfCommerceNumber>83454527</brocom:chamberOfCommerceNumber>
+        </bhrgcommon:verticalPositioningOperator>
+      </deliveredVerticalPosition>
+      <!-- Optional: -->
+      <siteCharacteristic>
+        <!-- Optional: -->
+        <bhrgcommon:soilUse codeSpace="urn:bro:bhrg:SoilUse">grasland</bhrgcommon:soilUse>
+        <!-- Optional: -->
+        <bhrgcommon:positionOnGroundBody codeSpace="urn:bro:bhrg:PositionOnGroundBody">binnenteen</bhrgcommon:positionOnGroundBody>
+        <!-- Optional: -->
+        <bhrgcommon:landscapeElement codeSpace="urn:bro:bhrg:LandscapeElement">restRandNietVerveend</bhrgcommon:landscapeElement>
+        <!-- Optional: -->
+        <bhrgcommon:hydrologicalSetting codeSpace="urn:bro:bhrg:HydrologicalSetting">kwelGeenWijst</bhrgcommon:hydrologicalSetting>
+        <!-- Optional: -->
+        <bhrgcommon:currentProces codeSpace="urn:bro:bhrg:CurrentProces">piping</bhrgcommon:currentProces>
+        <!-- Optional: -->
+        <bhrgcommon:temporaryChange codeSpace="urn:bro:bhrg:TemporaryChange">voorbelasting</bhrgcommon:temporaryChange>
+      </siteCharacteristic>
+      <!-- Optional: mandatory in a BHR_G_completeReport_v1 sourceDocument -->
+      <boreholeSampleDescription>
+        <bhrgcommon:BoreholeSampleDescription gml:id="id_1000">
+          <bhrgcommon:descriptionReportDate>2020-08-01</bhrgcommon:descriptionReportDate>
+          <bhrgcommon:descriptionProcedure codeSpace="urn:bro:bhrg:DescriptionProcedure">GDN_SBB6v2020</bhrgcommon:descriptionProcedure>
+          <!-- Optional: -->
+          <bhrgcommon:utensil codeSpace="urn:bro:bhrg:Utensil">beeldanalyseapparaat</bhrgcommon:utensil>
+          <!-- Optional: -->
+          <bhrgcommon:descriptionOperator>
+            <!-- You have a CHOICE of the next 2 items at this level
+            <brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
+            <brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
+            -->
+            <brocom:chamberOfCommerceNumber>45483527</brocom:chamberOfCommerceNumber>
+          </bhrgcommon:descriptionOperator>
+          <!--1 to 2 repetitions: -->
+          <bhrgcommon:descriptiveBoreholeLog>
+            <bhrgcommon:DescriptiveBoreholeLog gml:id="id_1001">
+              <bhrgcommon:descriptionQuality codeSpace="urn:bro:bhrg:DescriptionQuality">geologischStandaardGeroerd</bhrgcommon:descriptionQuality>
+              <bhrgcommon:continuouslySampled>nee</bhrgcommon:continuouslySampled>
+              <bhrgcommon:descriptionLocation codeSpace="urn:bro:bhrg:DescriptionLocation">veldlab</bhrgcommon:descriptionLocation>
+              <bhrgcommon:describedMaterial codeSpace="urn:bro:bhrg:DescribedMaterial">grond</bhrgcommon:describedMaterial>
+              <bhrgcommon:sampleMoistness codeSpace="urn:bro:bhrg:SampleMoistness">veldvochtig</bhrgcommon:sampleMoistness>
+              <!-- Optional: -->
+              <bhrgcommon:meanHighestGroundwaterLevel uom="m">0.00</bhrgcommon:meanHighestGroundwaterLevel>
+              <!-- Optional: -->
+              <bhrgcommon:meanLowestGroundwaterLevel uom="m">0.35</bhrgcommon:meanLowestGroundwaterLevel>
+              <!--0 or more repetitions: -->
+              <bhrgcommon:postSedimentaryDiscontinuity>
+                <bhrgcommon:PostSedimentaryDiscontinuity gml:id="id_1002">
+                  <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
+                  <bhrgcommon:endDepth uom="m">0.15</bhrgcommon:endDepth>
+                  <bhrgcommon:discontinuityType codeSpace="urn:bro:bhrg:DiscontinuityType">antropogeen</bhrgcommon:discontinuityType>
+                </bhrgcommon:PostSedimentaryDiscontinuity>
+              </bhrgcommon:postSedimentaryDiscontinuity>
+              <bhrgcommon:postSedimentaryDiscontinuity>
+                <bhrgcommon:PostSedimentaryDiscontinuity gml:id="id_1003">
+                  <bhrgcommon:beginDepth uom="m">.060</bhrgcommon:beginDepth>
+                  <bhrgcommon:endDepth uom="m">0.68</bhrgcommon:endDepth>
+                  <bhrgcommon:discontinuityType codeSpace="urn:bro:bhrg:DiscontinuityType">opbarsting</bhrgcommon:discontinuityType>
+                </bhrgcommon:PostSedimentaryDiscontinuity>
+              </bhrgcommon:postSedimentaryDiscontinuity>
+              <!--0 or more repetitions:
+              <bhrgcommon:notDescribedInterval> ... </bhrgcommon:notDescribedInterval>
+              -->
+              <!--1 or more repetitions: -->
+              <bhrgcommon:layer>
+                <bhrgcommon:Layer gml:id="id_1004">
+                  <bhrgcommon:upperBoundary uom="m">0.00</bhrgcommon:upperBoundary>
+                  <bhrgcommon:upperBoundaryDetermination codeSpace="urn:bro:bhrg:BoundaryPositioningMethod">voorbepaald</bhrgcommon:upperBoundaryDetermination>
+                  <bhrgcommon:lowerBoundary uom="m">0.35</bhrgcommon:lowerBoundary>
+                  <bhrgcommon:lowerBoundaryDetermination codeSpace="urn:bro:bhrg:BoundaryPositioningMethod">waargenomenGeleidelijk</bhrgcommon:lowerBoundaryDetermination>
+                  <bhrgcommon:anthropogenic>ja</bhrgcommon:anthropogenic>
+                  <!-- Optional: -->
+                  <bhrgcommon:activityType codeSpace="urn:bro:bhrg:ActivityType">gecontroleerdAangebracht</bhrgcommon:activityType>
+                  <!-- Optional: 
+                  <bhrgcommon:specialMaterial codeSpace="urn:bro:bhrg:SpecialMaterial"></bhrgcommon:specialMaterial>
+                  -->
+                  <!-- Optional: -->
+                  <bhrgcommon:postSedimentary>ja</bhrgcommon:postSedimentary>
+                  <!-- Optional:
+                  <bhrgcommon:horizonCode codeSpace="urn:bro:bhrg:HorizonCode">A</bhrgcommon:horizonCode>
+                  -->
+                  <!-- Optional:
+                  <bhrgcommon:rooted>ja</bhrgcommon:rooted>
+                  -->
+                  <!-- Optional: 
+                  <bhrgcommon:humanMark codeSpace="urn:bro:bhrg:HumanMark">?</bhrgcommon:humanMark>
+                  -->
+                  <!-- Optional:
+                  <bhrgcommon:geologicalOrigin codeSpace="urn:bro:bhrg:GeologicalOrigin">?</bhrgcommon:geologicalOrigin>
+                  -->
+                  <!-- Optional:
+                  <bhrgcommon:internalStructureIntact>ja</bhrgcommon:internalStructureIntact>
+                  -->
+                  <!-- Optional:
+                  <bhrgcommon:bioturbated>nee</bhrgcommon:bioturbated>
+                  -->
+                  <!-- Optional:
+                  <bhrgcommon:slant>nee</bhrgcommon:slant>
+                  -->
+                  <!-- Optional:
+                  <bhrgcommon:structure codeSpace="urn:bro:bhrg:Structure">?</bhrgcommon:structure>
+                  -->
+                  <!-- Optional:
+                  <bhrgcommon:verticalTrend codeSpace="urn:bro:bhrg:VerticalTrend">?</bhrgcommon:verticalTrend>
+                  -->
+                  <!--0 to 3 repetitions:
+                  <bhrgcommon:archeologicalConstituent> ... </bhrgcommon:archeologicalConstituent>
+                  -->
+                  <!--0 to 4 repetitions:
+                  <bhrgcommon:layerComponent> ... </bhrgcommon:layerComponent>
+                  -->
+                  <!--0 to 4 repetitions:
+                  <bhrgcommon:thinStratum> ... </bhrgcommon:thinStratum>
+                  -->
+                  <!-- Optional: -->
+                  <bhrgcommon:soil>
+                      <!--
+                      <bhrgcommon:geologicalSoilName>
+                        <bhrgcommon:GeologicalSoilName>
+                          <bhrgcommon:Waarde>zand</bhrgcommon:Waarde>
+                          <bhrgcommon:Categorie>grindarme minerale grond</bhrgcommon:Categorie>
+                          <bhrgcommon:Omschrijving>Een grindarme minerale grond, grond die voor 100 % uit zand bestaat.</bhrgcommon:Omschrijving>
+                        </bhrgcommon:GeologicalSoilName>
+                      </bhrgcommon:geologicalSoilName>
+                      -->
+                      <bhrgcommon:geologicalSoilName codeSpace="urn:bro:bhrg:GeologicalSoilName">zand</bhrgcommon:geologicalSoilName>
+                    <bhrgcommon:geotechnicalSoilName codeSpace="urn:bro:bhrg:GeotechnicalSoilName">zand</bhrgcommon:geotechnicalSoilName>
+                    <!-- Optional -->
+                    <bhrgcommon:gravelContentClass codeSpace="urn:bro:bhrg:GravelContentClass">nietGrindig</bhrgcommon:gravelContentClass>
+                    <bhrgcommon:micaContentClass codeSpace="urn:bro:bhrg:MicaContentClass">glimmersGeen</bhrgcommon:micaContentClass>
+                    <!-- Optional -->
+                    <bhrgcommon:organicMatterContentClass codeSpace="urn:bro:bhrg:OrganicMatterContentClass">nietOrganisch</bhrgcommon:organicMatterContentClass>
+                    <!-- Optional -->
+                    <bhrgcommon:organicMatterContentClassNEN5104 codeSpace="urn:bro:bhrg:OrganicMatterContentClassNEN5104">nietHumeus</bhrgcommon:organicMatterContentClassNEN5104>
+                    <!-- Optional -->
+                    <bhrgcommon:shellMatterContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">geen</bhrgcommon:shellMatterContentClass>
+                    <!-- Optional -->
+                    <bhrgcommon:veryCoarseFractionContentClass codeSpace="urn:bro:bhrg:VeryCoarseFractionContentClass">keitjesWeinigTotVeel</bhrgcommon:veryCoarseFractionContentClass>
+                    <bhrgcommon:glauconiteContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">geen</bhrgcommon:glauconiteContentClass>
+                    <bhrgcommon:carbonateContentClass codeSpace="urn:bro:bhrg:CarbonateContentClass">zwakKalkhoudend</bhrgcommon:carbonateContentClass>
+                    <bhrgcommon:colour codeSpace="urn:bro:bhrg:Colour">lichtgrijs</bhrgcommon:colour>
+                    <!-- Optional
+                    <bhrgcommon:mottled>nee</bhrgcommon:mottled>
+                    -->
+                    <!-- Optional
+                    <bhrgcommon:fineSoilConsistency codeSpace="urn:bro:bhrg:FineSoilConsistency">zeerSlap</bhrgcommon:fineSoilConsistency>
+                    -->
+                    <!-- Optional
+                    <bhrgcommon:organicSoilConsistency codeSpace="urn:bro:bhrg:OrganicSoilConsistency">matigSlap</bhrgcommon:organicSoilConsistency>
+                    -->
+                    <!-- Optional
+                    <bhrgcommon:sedimentaryPhenomenon codeSpace="urn:bro:bhrg:SedimentaryPhenomenon">?</bhrgcommon:sedimentaryPhenomenon>
+                    -->
+                    <!-- Optional
+                    <bhrgcommon:organicSoilTexture codeSpace="urn:bro:bhrg:OrganicSoilTexture">?</bhrgcommon:organicSoilTexture>
+                    -->
+                    <!--0 or more repetitions:
+                    <bhrgcommon:particularConstituent> ... </bhrgcommon:particularConstituent>
+                    --> 
+                    <!--0 to 4 repetitions:
+                    <bhrgcommon:anomalousLayer> ... </bhrgcommon:anomalousLayer>
+                    -->
+                    <!--0 to 4 repetitions:
+                    <bhrgcommon:chunk> ... </bhrgcommon:chunk>
+                    -->
+                    <!-- Optional
+                    <bhrgcommon:gravelFraction> ... </bhrgcommon:gravelFraction>
+                    -->
+                    <!-- Optional -->
+                    <bhrgcommon:sandFraction>
+                      <bhrgcommon:darkGrainContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">geen</bhrgcommon:darkGrainContentClass>
+                      <bhrgcommon:angularity codeSpace="urn:bro:bhrg:Angularity">hoekig</bhrgcommon:angularity>
+                      <bhrgcommon:sandMedianClass codeSpace="urn:bro:bhrg:SandMedianClass">middelgrof200tot300um</bhrgcommon:sandMedianClass>
+                      <bhrgcommon:sandSorting codeSpace="urn:bro:bhrg:SandSorting">matigKlein</bhrgcommon:sandSorting>
+                      <!-- Optional -->
+                      <bhrgcommon:variegation codeSpace="urn:bro:bhrg:Variegation">nietBont</bhrgcommon:variegation>
+                      <!-- Optional
+                      <bhrgcommon:anomalouslyCoarseContentClass codeSpace="">?</bhrgcommon:anomalouslyCoarseContentClass>
+                      -->
+                      <!-- Optional
+                      <bhrgcommon:estimatedMedian uom="">?</bhrgcommon:estimatedMedian>
+                      -->
+                      <!--0 or more repetitions:
+                      <bhrgcommon:sandConstituent> ... </bhrgcommon:sandConstituent>
+                      --> 
+                    </bhrgcommon:sandFraction>
+                    <!-- Optional
+                    <bhrgcommon:shellFraction> ... </bhrgcommon:shellFraction>
+                    -->
+                    <!-- Optional
+                    <bhrgcommon:peatFraction> ... </bhrgcommon:peatFraction>
+                    -->
+                    <!-- Optional
+                    <bhrgcommon:munsellColour> ... </bhrgcommon:munsellColour>
+                    -->
+                    <!--0 to 2 repetitions:
+                    <bhrgcommon:mottle> ... </bhrgcommon:mottle>
+                    -->
+                    <!--0 to 3 repetitions:
+                    <bhrgcommon:inclusion> ... </bhrgcommon:inclusion>
+                    -->
+                    <!--0 to 4 repetitions:
+                    <bhrgcommon:sedimentLens> ... </bhrgcommon:sedimentLens>
+                    -->
+                    <!--0 or more repetitions:
+                    <bhrgcommon:animalFossil> ... </bhrgcommon:animalFossil>
+                    -->
+                    <!-- Optional
+                    <bhrgcommon:fractionDistribution> ... </bhrgcommon:fractionDistribution>
+                    -->
+                  </bhrgcommon:soil>
+                </bhrgcommon:Layer>
+              </bhrgcommon:layer>
+            </bhrgcommon:DescriptiveBoreholeLog>
+          </bhrgcommon:descriptiveBoreholeLog>
+          <bhrgcommon:descriptiveBoreholeLog>
+            <bhrgcommon:DescriptiveBoreholeLog gml:id="id_1101">
+              <bhrgcommon:descriptionQuality codeSpace="urn:bro:bhrg:DescriptionQuality">geologischStandaardOngeroerd</bhrgcommon:descriptionQuality>
+              <bhrgcommon:continuouslySampled>nee</bhrgcommon:continuouslySampled>
+              <bhrgcommon:descriptionLocation codeSpace="urn:bro:bhrg:DescriptionLocation">veldlab</bhrgcommon:descriptionLocation>
+              <bhrgcommon:describedMaterial codeSpace="urn:bro:bhrg:DescribedMaterial">grond</bhrgcommon:describedMaterial>
+              <bhrgcommon:sampleMoistness codeSpace="urn:bro:bhrg:SampleMoistness">veldvochtig</bhrgcommon:sampleMoistness>
+              <!-- Optional: -->
+              <bhrgcommon:meanHighestGroundwaterLevel uom="m">0.85</bhrgcommon:meanHighestGroundwaterLevel>
+              <!-- Optional: -->
+              <bhrgcommon:meanLowestGroundwaterLevel uom="m">1.75</bhrgcommon:meanLowestGroundwaterLevel>
+              <!--0 or more repetitions: -->
+              <bhrgcommon:postSedimentaryDiscontinuity>
+                <bhrgcommon:PostSedimentaryDiscontinuity gml:id="id_1102">
+                  <bhrgcommon:beginDepth uom="m">4.10</bhrgcommon:beginDepth>
+                  <bhrgcommon:endDepth uom="m">4.85</bhrgcommon:endDepth>
+                  <bhrgcommon:discontinuityType codeSpace="urn:bro:bhrg:DiscontinuityType">krimpscheur</bhrgcommon:discontinuityType>
+                </bhrgcommon:PostSedimentaryDiscontinuity>
+              </bhrgcommon:postSedimentaryDiscontinuity>
+              <!--0 or more repetitions: -->
+              <bhrgcommon:notDescribedInterval>
+                <bhrgcommon:NotDescribedInterval gml:id="id_1005">
+                  <bhrgcommon:beginDepth uom="m">3.05</bhrgcommon:beginDepth>
+                  <bhrgcommon:endDepth uom="m">3.15</bhrgcommon:endDepth>
+                  <bhrgcommon:noDescriptionReason codeSpace="urn:bro:bhrg:NoDescriptionReason">geenMonster</bhrgcommon:noDescriptionReason>
+                </bhrgcommon:NotDescribedInterval>
+              </bhrgcommon:notDescribedInterval>
+              <bhrgcommon:notDescribedInterval>
+                <bhrgcommon:NotDescribedInterval gml:id="id_1006">
+                  <bhrgcommon:beginDepth uom="m">4.85</bhrgcommon:beginDepth>
+                  <bhrgcommon:endDepth uom="m">5.50</bhrgcommon:endDepth>
+                  <bhrgcommon:noDescriptionReason codeSpace="urn:bro:bhrg:NoDescriptionReason">geenOpbrengst</bhrgcommon:noDescriptionReason>
+                </bhrgcommon:NotDescribedInterval>
+              </bhrgcommon:notDescribedInterval>
+              <!--1 or more repetitions: -->
+              <bhrgcommon:layer>
+                <bhrgcommon:Layer gml:id="id_1007">
+                  <bhrgcommon:upperBoundary uom="m">0.35</bhrgcommon:upperBoundary>
+                  <bhrgcommon:upperBoundaryDetermination codeSpace="urn:bro:bhrg:BoundaryPositioningMethod">waargenomenGeleidelijk</bhrgcommon:upperBoundaryDetermination>
+                  <bhrgcommon:lowerBoundary uom="m">0.85</bhrgcommon:lowerBoundary>
+                  <bhrgcommon:lowerBoundaryDetermination codeSpace="urn:bro:bhrg:BoundaryPositioningMethod">waargenomenDiffuus</bhrgcommon:lowerBoundaryDetermination>
+                  <bhrgcommon:anthropogenic>nee</bhrgcommon:anthropogenic>
+                  <!-- Optional:
+                  <bhrgcommon:activityType codeSpace="urn:bro:bhrg:ActivityType">?</bhrgcommon:activityType>
+                  -->
+                  <!-- Optional: -->
+                  <bhrgcommon:specialMaterial codeSpace="urn:bro:bhrg:SpecialMaterial">plantenrestenNietHoutig</bhrgcommon:specialMaterial>
+                  <!-- Optional: 
+                  <bhrgcommon:postSedimentary>?</bhrgcommon:postSedimentary>
+                  -->
+                  <!-- Optional: 
+                  <bhrgcommon:horizonCode codeSpace="urn:bro:bhrg:HorizonCode">?</bhrgcommon:horizonCode>
+                  -->
+                  <!-- Optional: 
+                  <bhrgcommon:rooted>?</bhrgcommon:rooted>
+                  -->
+                  <!-- Optional: -->
+                  <bhrgcommon:humanMark codeSpace="urn:bro:bhrg:HumanMark">nee</bhrgcommon:humanMark>
+                  <!-- Optional:
+                  <bhrgcommon:geologicalOrigin codeSpace="urn:bro:bhrg:GeologicalOrigin">?</bhrgcommon:geologicalOrigin>
+                  -->
+                  <!-- Optional: 
+                  <bhrgcommon:internalStructureIntact>?</bhrgcommon:internalStructureIntact>
+                  -->
+                  <!-- Optional:
+                  <bhrgcommon:bioturbated>?</bhrgcommon:bioturbated>
+                  -->
+                  <!-- Optional: 
+                  <bhrgcommon:slant>?</bhrgcommon:slant>
+                  -->
+                  <!-- Optional:
+                  <bhrgcommon:structure codeSpace="urn:bro:bhrg:Structure">?</bhrgcommon:structure>
+                  -->
+                  <!-- Optional:
+                  <bhrgcommon:verticalTrend codeSpace="urn:bro:bhrg:VerticalTrend">?</bhrgcommon:verticalTrend>
+                  -->
+                  <!--0 to 3 repetitions: 
+                  <bhrgcommon:archeologicalConstituent> ... </bhrgcommon:archeologicalConstituent>
+                  -->
+                  <!--0 to 4 repetitions: 
+                  <bhrgcommon:layerComponent> ... </bhrgcommon:layerComponent>
+                  -->
+                  <!--0 to 4 repetitions: 
+                  <bhrgcommon:thinStratum> ... </bhrgcommon:thinStratum>
+                  -->
+                  <!-- Optional:
+                  <bhrgcommon:soil> ... </bhrgcommon:soil>
+                  -->
+                </bhrgcommon:Layer>
+              </bhrgcommon:layer>
+              <bhrgcommon:layer>
+                <bhrgcommon:Layer gml:id="id_1008">
+                  <bhrgcommon:upperBoundary uom="m">0.85</bhrgcommon:upperBoundary>
+                  <bhrgcommon:upperBoundaryDetermination codeSpace="urn:bro:bhrg:BoundaryPositioningMethod">waargenomenDiffuus</bhrgcommon:upperBoundaryDetermination>
+                  <bhrgcommon:lowerBoundary uom="m">3.50</bhrgcommon:lowerBoundary>
+                  <bhrgcommon:lowerBoundaryDetermination codeSpace="urn:bro:bhrg:BoundaryPositioningMethod">waargenomenGeleidelijk</bhrgcommon:lowerBoundaryDetermination>
+                  <bhrgcommon:anthropogenic>nee</bhrgcommon:anthropogenic>
+                  <!-- Optional: 
+                  <bhrgcommon:activityType codeSpace="urn:bro:bhrg:ActivityType">?</bhrgcommon:activityType>
+                  -->
+                  <!-- Optional: 
+                  <bhrgcommon:specialMaterial codeSpace="urn:bro:bhrg:SpecialMaterial">?</bhrgcommon:specialMaterial>
+                  -->
+                  <!-- Optional: -->
+                  <bhrgcommon:postSedimentary>ja</bhrgcommon:postSedimentary>
+                  <!-- Optional: -->
+                  <bhrgcommon:horizonCode codeSpace="urn:bro:bhrg:HorizonCode">B</bhrgcommon:horizonCode>
+                  <!-- Optional: -->
+                  <bhrgcommon:rooted>nee</bhrgcommon:rooted>
+                  <!-- Optional: -->
+                  <bhrgcommon:humanMark codeSpace="urn:bro:bhrg:HumanMark">nee</bhrgcommon:humanMark>
+                  <!-- Optional: -->
+                  <bhrgcommon:geologicalOrigin codeSpace="urn:bro:bhrg:GeologicalOrigin">geulbasis</bhrgcommon:geologicalOrigin>
+                  <!-- Optional: -->
+                  <bhrgcommon:internalStructureIntact>ja</bhrgcommon:internalStructureIntact>
+                  <!-- Optional: -->
+                  <bhrgcommon:bioturbated>nee</bhrgcommon:bioturbated>
+                  <!-- Optional: -->
+                  <bhrgcommon:slant>nee</bhrgcommon:slant>
+                  <!-- Optional: -->
+                  <bhrgcommon:structure codeSpace="urn:bro:bhrg:Structure">onregelmatigVervormd</bhrgcommon:structure>
+                  <!-- Optional: 
+                  <bhrgcommon:verticalTrend codeSpace="urn:bro:bhrg:VerticalTrend">?</bhrgcommon:verticalTrend>
+                  -->
+                  <!--0 to 3 repetitions: -->
+                  <bhrgcommon:archeologicalConstituent>
+                    <bhrgcommon:constituentType codeSpace="urn:bro:bhrg:ArcheologicalConstituentType">botVerbrand</bhrgcommon:constituentType>
+                    <bhrgcommon:percentageClass codeSpace="urn:bro:bhrg:VolumePercentageClass">weinig1tot10</bhrgcommon:percentageClass>
+                  </bhrgcommon:archeologicalConstituent>
+                  <bhrgcommon:archeologicalConstituent>
+                    <bhrgcommon:constituentType codeSpace="urn:bro:bhrg:ArcheologicalConstituentType">houtskoolBrokken</bhrgcommon:constituentType>
+                    <bhrgcommon:percentageClass codeSpace="urn:bro:bhrg:VolumePercentageClass">weinig1tot10</bhrgcommon:percentageClass>
+                  </bhrgcommon:archeologicalConstituent>
+                  <bhrgcommon:archeologicalConstituent>
+                    <bhrgcommon:constituentType codeSpace="urn:bro:bhrg:ArcheologicalConstituentType">houtskoolSpikkels</bhrgcommon:constituentType>
+                    <bhrgcommon:percentageClass codeSpace="urn:bro:bhrg:VolumePercentageClass">spoorTot1</bhrgcommon:percentageClass>
+                  </bhrgcommon:archeologicalConstituent>
+                  <!--0 to 4 repetitions: -->
+                  <bhrgcommon:layerComponent>
+                    <bhrgcommon:layerProportion uom="%">70</bhrgcommon:layerProportion>
+                    <bhrgcommon:soil>
+                      <!--
+                      <bhrgcommon:geologicalSoilName>
+                        <bhrgcommon:GeologicalSoilName>
+                          <bhrgcommon:Waarde>keitjesMetZand</bhrgcommon:Waarde>
+                          <bhrgcommon:Categorie>zeer grove grond</bhrgcommon:Categorie>
+                          <bhrgcommon:Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit keitjes en voor de rest vooral uit zand bestaat.</bhrgcommon:Omschrijving>
+                        </bhrgcommon:GeologicalSoilName>
+                      </bhrgcommon:geologicalSoilName>
+                      -->
+                      <bhrgcommon:geologicalSoilName codeSpace="urn:bro:bhrg:GeologicalSoilName">keitjesMetZand</bhrgcommon:geologicalSoilName>
+                      <bhrgcommon:geotechnicalSoilName codeSpace="urn:bro:bhrg:GeotechnicalSoilName">keitjesMetZand</bhrgcommon:geotechnicalSoilName>
+                      <!-- Optional
+                      <bhrgcommon:gravelContentClass codeSpace="urn:bro:bhrg:GravelContentClass">nietGrindig</bhrgcommon:gravelContentClass>
+                      -->
+                      <bhrgcommon:micaContentClass codeSpace="urn:bro:bhrg:MicaContentClass">glimmerVeel</bhrgcommon:micaContentClass>
+                      <!-- Optional -->
+                      <bhrgcommon:organicMatterContentClass codeSpace="urn:bro:bhrg:OrganicMatterContentClass">nietOrganisch</bhrgcommon:organicMatterContentClass>
+                      <!-- Optional -->
+                      <bhrgcommon:organicMatterContentClassNEN5104 codeSpace="urn:bro:bhrg:OrganicMatterContentClassNEN5104">nietHumeus</bhrgcommon:organicMatterContentClassNEN5104>
+                      <!-- Optional -->
+                      <bhrgcommon:shellMatterContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">spoorTot1</bhrgcommon:shellMatterContentClass>
+                      <!-- Optional 
+                      <bhrgcommon:veryCoarseFractionContentClass codeSpace="urn:bro:bhrg:VeryCoarseFractionContentClass">?</bhrgcommon:veryCoarseFractionContentClass>
+                      -->
+                      <bhrgcommon:glauconiteContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">veel10tot30</bhrgcommon:glauconiteContentClass>
+                      <bhrgcommon:carbonateContentClass codeSpace="urn:bro:bhrg:CarbonateContentClass">kalkhoudend</bhrgcommon:carbonateContentClass>
+                      <bhrgcommon:colour codeSpace="urn:bro:bhrg:Colour">lichtblauwGrijs</bhrgcommon:colour>
+                      <!-- Optional -->
+                      <bhrgcommon:mottled>nee</bhrgcommon:mottled>
+                      <!-- Optional 
+                      <bhrgcommon:fineSoilConsistency codeSpace="urn:bro:bhrg:FineSoilConsistency">zeerSlap</bhrgcommon:fineSoilConsistency>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:organicSoilConsistency codeSpace="urn:bro:bhrg:OrganicSoilConsistency">matigSlap</bhrgcommon:organicSoilConsistency>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:sedimentaryPhenomenon codeSpace="urn:bro:bhrg:SedimentaryPhenomenon">?</bhrgcommon:sedimentaryPhenomenon>
+                      -->
+                      <!-- Optional
+                      <bhrgcommon:organicSoilTexture codeSpace="urn:bro:bhrg:OrganicSoilTexture">?</bhrgcommon:organicSoilTexture>
+                      -->
+                      <!--0 or more repetitions: 
+                      <bhrgcommon:particularConstituent> ... </bhrgcommon:particularConstituent>
+                      -->
+                      <!--0 to 4 repetitions: 
+                      <bhrgcommon:anomalousLayer> ... </bhrgcommon:anomalousLayer>
+                      -->
+                      <!--0 to 4 repetitions:
+                      <bhrgcommon:chunk> ... </bhrgcommon:chunk>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:gravelFraction> ... </bhrgcommon:gravelFraction>
+                      -->
+                      <!-- Optional -->
+                      <bhrgcommon:sandFraction>
+                        <bhrgcommon:darkGrainContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">geen</bhrgcommon:darkGrainContentClass>
+                        <bhrgcommon:angularity codeSpace="urn:bro:bhrg:Angularity">hoekig</bhrgcommon:angularity>
+                        <bhrgcommon:sandMedianClass codeSpace="urn:bro:bhrg:SandMedianClass">grof630tot2000um</bhrgcommon:sandMedianClass>
+                        <bhrgcommon:sandSorting codeSpace="urn:bro:bhrg:SandSorting">matigKlein</bhrgcommon:sandSorting>
+                        <!-- Optional -->
+                        <bhrgcommon:variegation codeSpace="urn:bro:bhrg:Variegation">zeerBont</bhrgcommon:variegation>
+                        <!-- Optional -->
+                        <bhrgcommon:anomalouslyCoarseContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">uiterstVeelMinstens50 </bhrgcommon:anomalouslyCoarseContentClass>
+                        <!-- Optional
+                        <bhrgcommon:estimatedMedian uom="um">?</bhrgcommon:estimatedMedian>
+                        -->
+                        <!--0 or more repetitions: 
+                        <bhrgcommon:sandConstituent> ... </bhrgcommon:sandConstituent>
+                        -->
+                      </bhrgcommon:sandFraction>
+                      <!-- Optional -->
+                      <bhrgcommon:shellFraction>
+                        <bhrgcommon:fragmentContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">weinig1tot10</bhrgcommon:fragmentContentClass>
+                        <bhrgcommon:gritContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">uiterstVeelMinstens50 </bhrgcommon:gritContentClass>
+                        <bhrgcommon:wholeContentClasss codeSpace="urn:bro:bhrg:VolumePercentageClass">veel10tot30</bhrgcommon:wholeContentClasss>
+                        <!-- Optional -->
+                        <bhrgcommon:doublets>nee</bhrgcommon:doublets>
+                        <!-- Optional 
+                        <bhrgcommon:thickWalledContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">?</bhrgcommon:thickWalledContentClass>
+                        -->
+                        <!-- Optional 
+                        <bhrgcommon:thinWalledContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">?</bhrgcommon:thinWalledContentClass>
+                        -->
+                        <!-- Optional -->
+                        <bhrgcommon:inSitu>ja</bhrgcommon:inSitu>
+                        <!-- Optional 
+                        <bhrgcommon:weatheringDegree codeSpace="urn:bro:bhrg:WheateringDegree">?</bhrgcommon:weatheringDegree>
+                        -->
+                        <!--0 or more repetitions: -->
+                        <bhrgcommon:shellConstituent>
+                          <bhrgcommon:shellTaxon codeSpace="urn:bro:bhrg:ShellTaxon">hydrobiidae</bhrgcommon:shellTaxon>
+                          <bhrgcommon:relativeAbundance uom="%">30</bhrgcommon:relativeAbundance>
+                        </bhrgcommon:shellConstituent>
+                        <bhrgcommon:shellConstituent>
+                          <bhrgcommon:shellTaxon codeSpace="urn:bro:bhrg:ShellTaxon">bittiumReticulatum</bhrgcommon:shellTaxon>
+                          <bhrgcommon:relativeAbundance uom="%">10</bhrgcommon:relativeAbundance>
+                        </bhrgcommon:shellConstituent>
+                      </bhrgcommon:shellFraction>
+                      <!-- Optional 
+                      <bhrgcommon:peatFraction> ... </bhrgcommon:peatFraction>
+                      -->
+                      <!-- Optional
+                      <bhrgcommon:munsellColour> ... </bhrgcommon:munsellColour>
+                      -->
+                      <!--0 to 2 repetitions:
+                      <bhrgcommon:mottle> ... </bhrgcommon:mottle>
+                      -->
+                      <!--0 to 3 repetitions:
+                      <bhrgcommon:inclusion> ... </bhrgcommon:inclusion>
+                      -->
+                      <!--0 to 4 repetitions:
+                      <bhrgcommon:sedimentLens> ... </bhrgcommon:sedimentLens>
+                      -->
+                      <!--0 or more repetitions:
+                      <bhrgcommon:animalFossil> ... </bhrgcommon:animalFossil>
+                      -->
+                      <!-- Optional
+                      <bhrgcommon:fractionDistribution> ... </bhrgcommon:fractionDistribution>
+                      -->
+                    </bhrgcommon:soil>
+                  </bhrgcommon:layerComponent>
+                  <bhrgcommon:layerComponent>
+                    <bhrgcommon:layerProportion uom="%">30</bhrgcommon:layerProportion>
+                    <bhrgcommon:soil>
+                      <!--
+                      <bhrgcommon:geologicalSoilName>
+                        <bhrgcommon:GeologicalSoilName>
+                          <bhrgcommon:Waarde>sterkZandigGrind</bhrgcommon:Waarde>
+                          <bhrgcommon:Categorie>grindrijke minerale grond</bhrgcommon:Categorie>
+                          <bhrgcommon:Omschrijving>Een grindrijke minerale grond, grond die voor minimaal 30 % van de massa uit grind, voor meer dan 30 tot maximaal 50 % uit zand en voor maximaal 20 % uit silt plus lutum bestaat, en niet veel organische stof bevat.</bhrgcommon:Omschrijving>
+                        </bhrgcommon:GeologicalSoilName>
+                      </bhrgcommon:geologicalSoilName>
+                      -->
+                      <bhrgcommon:geologicalSoilName codeSpace="urn:bro:bhrg:GeologicalSoilName">sterkZandigGrind</bhrgcommon:geologicalSoilName>
+                      <bhrgcommon:geotechnicalSoilName codeSpace="urn:bro:bhrg:GeotechnicalSoilName">sterkZandigGrind</bhrgcommon:geotechnicalSoilName>
+                      <!-- Optional 
+                      <bhrgcommon:gravelContentClass codeSpace="urn:bro:bhrg:GravelContentClass">nietGrindig</bhrgcommon:gravelContentClass>
+                      -->
+                      <bhrgcommon:micaContentClass codeSpace="urn:bro:bhrg:MicaContentClass">glimmerVeel</bhrgcommon:micaContentClass>
+                      <!-- Optional -->
+                      <bhrgcommon:organicMatterContentClass codeSpace="urn:bro:bhrg:OrganicMatterContentClass">nietOrganisch</bhrgcommon:organicMatterContentClass>
+                      <!-- Optional -->
+                      <bhrgcommon:organicMatterContentClassNEN5104 codeSpace="urn:bro:bhrg:OrganicMatterContentClassNEN5104">nietHumeus</bhrgcommon:organicMatterContentClassNEN5104>
+                      <!-- Optional -->
+                      <bhrgcommon:shellMatterContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">geen</bhrgcommon:shellMatterContentClass>
+                      <!-- Optional -->
+                      <bhrgcommon:veryCoarseFractionContentClass codeSpace="urn:bro:bhrg:VeryCoarseFractionContentClass">keienWeinigTotVeel</bhrgcommon:veryCoarseFractionContentClass>
+                      <bhrgcommon:glauconiteContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">weinig1tot10</bhrgcommon:glauconiteContentClass>
+                      <bhrgcommon:carbonateContentClass codeSpace="urn:bro:bhrg:CarbonateContentClass">kalkrijk</bhrgcommon:carbonateContentClass>
+                      <bhrgcommon:colour codeSpace="urn:bro:bhrg:Colour">lichtblauwGrijs</bhrgcommon:colour>
+                      <!-- Optional -->
+                      <bhrgcommon:mottled>nee</bhrgcommon:mottled>
+                      <!-- Optional 
+                      <bhrgcommon:fineSoilConsistency codeSpace="urn:bro:bhrg:FineSoilConsistency">zeerSlap</bhrgcommon:fineSoilConsistency>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:organicSoilConsistency codeSpace="urn:bro:bhrg:OrganicSoilConsistency">matigSlap</bhrgcommon:organicSoilConsistency>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:sedimentaryPhenomenon codeSpace="urn:bro:bhrg:SedimentaryPhenomenon">?</bhrgcommon:sedimentaryPhenomenon>
+                      -->
+                      <!-- Optional
+                      <bhrgcommon:organicSoilTexture codeSpace="urn:bro:bhrg:OrganicSoilTexture">?</bhrgcommon:organicSoilTexture>
+                      -->
+                      <!--0 or more repetitions: 
+                      <bhrgcommon:particularConstituent> ... </bhrgcommon:particularConstituent>
+                      -->
+                      <!--0 to 4 repetitions: -->
+                      <bhrgcommon:anomalousLayer>
+                        <!-- Optional -->
+                        <bhrgcommon:soilType codeSpace="urn:bro:bhrg:SoilType">kalkgyttja</bhrgcommon:soilType>
+                        <!-- Optional
+                        <bhrgcommon:rockType codeSpace="urn:bro:bhrg:RockType">?</bhrgcommon:rockType>
+                        -->
+                        <bhrgcommon:layerProportion uom="%">2</bhrgcommon:layerProportion>
+                        <bhrgcommon:stratumThicknessClass codeSpace="urn:bro:bhrg:StratumThicknessClass">ergDunGelaagd</bhrgcommon:stratumThicknessClass>
+                        <!-- Optional -->
+                        <bhrgcommon:colour codeSpace="urn:bro:bhrg:Colour">geelBruin</bhrgcommon:colour>
+                        <!-- Optional -->
+                        <bhrgcommon:geologicalOrigin codeSpace="urn:bro:bhrg:GeologicalOrigin">mudDrape</bhrgcommon:geologicalOrigin>
+                      </bhrgcommon:anomalousLayer>
+                      <bhrgcommon:anomalousLayer>
+                        <!-- Optional 
+                        <bhrgcommon:soilType codeSpace="urn:bro:bhrg:SoilType">?</bhrgcommon:soilType>
+                        -->
+                        <!-- Optional -->
+                        <bhrgcommon:rockType codeSpace="urn:bro:bhrg:RockType">vuursteen</bhrgcommon:rockType>
+                        <bhrgcommon:layerProportion uom="%">5</bhrgcommon:layerProportion>
+                        <bhrgcommon:stratumThicknessClass codeSpace="urn:bro:bhrg:StratumThicknessClass">dikGelamineerd</bhrgcommon:stratumThicknessClass>
+                        <!-- Optional -->
+                        <bhrgcommon:colour codeSpace="urn:bro:bhrg:Colour">lichtbruinGrijs</bhrgcommon:colour>
+                        <!-- Optional -->
+                        <bhrgcommon:geologicalOrigin codeSpace="urn:bro:bhrg:GeologicalOrigin">geulbasis</bhrgcommon:geologicalOrigin>
+                      </bhrgcommon:anomalousLayer>
+                      <!--0 to 4 repetitions:
+                      <bhrgcommon:chunk> ... </bhrgcommon:chunk>
+                      -->
+                      <!-- Optional -->
+                      <bhrgcommon:gravelFraction>
+                        <bhrgcommon:gravelMedianClass codeSpace="urn:bro:bhrg:GravelMedianClass">fijn2tot6.3mm</bhrgcommon:gravelMedianClass>
+                        <bhrgcommon:angularity codeSpace="urn:bro:bhrg:Angularity">subrond</bhrgcommon:angularity>
+                        <bhrgcommon:fineGravelContentClass codeSpace="urn:bro:bhrg:MassPercentageClass">zeerVeel50tot75</bhrgcommon:fineGravelContentClass>
+                        <bhrgcommon:mediumCoarseGravelContentClass codeSpace="urn:bro:bhrg:MassPercentageClass">veel25tot50</bhrgcommon:mediumCoarseGravelContentClass>
+                        <bhrgcommon:veryCoarseGravelContentClass codeSpace="urn:bro:bhrg:MassPercentageClass">weinig1tot25</bhrgcommon:veryCoarseGravelContentClass>
+                        <bhrgcommon:ventifactPresent>nee</bhrgcommon:ventifactPresent>
+                        <bhrgcommon:sphericity codeSpace="urn:bro:bhrg:Sphericity">langwerpig</bhrgcommon:sphericity>
+                        <bhrgcommon:variegation codeSpace="urn:bro:bhrg:Variegation">zeerBont</bhrgcommon:variegation>
+                        <!-- Optional 
+                        <bhrgcommon:estimatedMedian uom="mm"></bhrgcommon:estimatedMedian>
+                        -->
+                        <!-- Optional 
+                        <bhrgcommon:gravelProvenance codeSpace=""></bhrgcommon:gravelProvenance>
+                        -->
+                        <!--1 or more repetitions: -->
+                        <bhrgcommon:gravelConstituent>
+                          <bhrgcommon:gravelType codeSpace="urn:bro:bhrg:GravelType">kwartsWit</bhrgcommon:gravelType>
+                          <bhrgcommon:fractionProportion codeSpace="urn:bro:bhrg:MassPercentageClass">zeerVeel50tot75</bhrgcommon:fractionProportion>
+                        </bhrgcommon:gravelConstituent>
+                        <bhrgcommon:gravelConstituent>
+                          <bhrgcommon:gravelType codeSpace="urn:bro:bhrg:GravelType">zandsteenGeelBruin</bhrgcommon:gravelType>
+                          <bhrgcommon:fractionProportion codeSpace="urn:bro:bhrg:MassPercentageClass">veel25tot50</bhrgcommon:fractionProportion>
+                        </bhrgcommon:gravelConstituent>
+                        <bhrgcommon:gravelConstituent>
+                          <bhrgcommon:gravelType codeSpace="urn:bro:bhrg:GravelType">kalksteenNietGespecificeerd</bhrgcommon:gravelType>
+                          <bhrgcommon:fractionProportion codeSpace="urn:bro:bhrg:MassPercentageClass">weinig1tot25</bhrgcommon:fractionProportion>
+                        </bhrgcommon:gravelConstituent>
+                        <bhrgcommon:gravelConstituent>
+                          <bhrgcommon:gravelType codeSpace="urn:bro:bhrg:GravelType">kleiLeemVerkitting</bhrgcommon:gravelType>
+                          <bhrgcommon:fractionProportion codeSpace="urn:bro:bhrg:MassPercentageClass">weinig1tot25</bhrgcommon:fractionProportion>
+                        </bhrgcommon:gravelConstituent>
+                        <bhrgcommon:gravelConstituent>
+                          <bhrgcommon:gravelType codeSpace="urn:bro:bhrg:GravelType">kleiIJzerVerkitting</bhrgcommon:gravelType>
+                          <bhrgcommon:fractionProportion codeSpace="urn:bro:bhrg:MassPercentageClass">weinig1tot25</bhrgcommon:fractionProportion>
+                        </bhrgcommon:gravelConstituent>
+                        <bhrgcommon:gravelConstituent>
+                          <bhrgcommon:gravelType codeSpace="urn:bro:bhrg:GravelType">kristallijnDonker</bhrgcommon:gravelType>
+                          <bhrgcommon:fractionProportion codeSpace="urn:bro:bhrg:MassPercentageClass">weinig1tot25</bhrgcommon:fractionProportion>
+                        </bhrgcommon:gravelConstituent>
+                        <bhrgcommon:gravelConstituent>
+                          <bhrgcommon:gravelType codeSpace="urn:bro:bhrg:GravelType">vuursteenGerold</bhrgcommon:gravelType>
+                          <bhrgcommon:fractionProportion codeSpace="urn:bro:bhrg:MassPercentageClass">spoorTot1</bhrgcommon:fractionProportion>
+                        </bhrgcommon:gravelConstituent>
+                      </bhrgcommon:gravelFraction>
+                      <!-- Optional
+                      <bhrgcommon:sandFraction> ... </bhrgcommon:sandFraction>
+                      -->
+                      <!-- Optional
+                      <bhrgcommon:shellFraction> ... </bhrgcommon:shellFraction>
+                      -->
+                      <!-- Optional
+                      <bhrgcommon:peatFraction> ... </bhrgcommon:peatFraction>
+                      -->
+                      <!-- Optional
+                      <bhrgcommon:munsellColour> ... </bhrgcommon:munsellColour>
+                      -->
+                      <!--0 to 2 repetitions: 
+                      <bhrgcommon:mottle> ... </bhrgcommon:mottle>
+                      -->
+                      <!--0 to 3 repetitions:
+                      <bhrgcommon:inclusion> ... </bhrgcommon:inclusion>
+                      -->
+                      <!--0 to 4 repetitions:
+                      <bhrgcommon:sedimentLens> ... </bhrgcommon:sedimentLens>
+                      -->
+                      <!--0 or more repetitions:
+                      <bhrgcommon:animalFossil> ... </bhrgcommon:animalFossil>
+                      -->
+                      <!-- Optional
+                      <bhrgcommon:fractionDistribution> ... </bhrgcommon:fractionDistribution>
+                      -->
+                    </bhrgcommon:soil>
+                  </bhrgcommon:layerComponent>
+                  <!--0 to 4 repetitions: 
+                  <bhrgcommon:thinStratum> ... </bhrgcommon:thinStratum>
+                  -->
+                  <!-- Optional:
+                  <bhrgcommon:soil> ... </bhrgcommon:soil>
+                  -->
+                </bhrgcommon:Layer>
+              </bhrgcommon:layer>
+              <bhrgcommon:layer>
+                <bhrgcommon:Layer gml:id="id_1009">
+                  <bhrgcommon:upperBoundary uom="m">3.50</bhrgcommon:upperBoundary>
+                  <bhrgcommon:upperBoundaryDetermination codeSpace="urn:bro:bhrg:BoundaryPositioningMethod">waargenomenGeleidelijk</bhrgcommon:upperBoundaryDetermination>
+                  <bhrgcommon:lowerBoundary uom="m">6.80</bhrgcommon:lowerBoundary>
+                  <bhrgcommon:lowerBoundaryDetermination codeSpace="urn:bro:bhrg:BoundaryPositioningMethod">waargenomenScherp</bhrgcommon:lowerBoundaryDetermination>
+                  <bhrgcommon:anthropogenic>nee</bhrgcommon:anthropogenic>
+                  <!-- Optional: 
+                  <bhrgcommon:activityType codeSpace="urn:bro:bhrg:ActivityType">?</bhrgcommon:activityType>
+                  -->
+                  <!-- Optional: 
+                  <bhrgcommon:specialMaterial codeSpace="urn:bro:bhrg:SpecialMaterial">?</bhrgcommon:specialMaterial>
+                  -->
+                  <!-- Optional: -->
+                  <bhrgcommon:postSedimentary>nee</bhrgcommon:postSedimentary>
+                  <!-- Optional: -->
+                  <bhrgcommon:horizonCode codeSpace="urn:bro:bhrg:HorizonCode">C</bhrgcommon:horizonCode>
+                  <!-- Optional: -->
+                  <bhrgcommon:rooted>nee</bhrgcommon:rooted>
+                  <!-- Optional: -->
+                  <bhrgcommon:humanMark codeSpace="urn:bro:bhrg:HumanMark">nee</bhrgcommon:humanMark>
+                  <!-- Optional: -->
+                  <bhrgcommon:geologicalOrigin codeSpace="urn:bro:bhrg:GeologicalOrigin">potklei</bhrgcommon:geologicalOrigin>
+                  <!-- Optional: -->
+                  <bhrgcommon:internalStructureIntact>ja</bhrgcommon:internalStructureIntact>
+                  <!-- Optional: -->
+                  <bhrgcommon:bioturbated>nee</bhrgcommon:bioturbated>
+                  <!-- Optional: -->
+                  <bhrgcommon:slant>nee</bhrgcommon:slant>
+                  <!-- Optional: -->
+                  <bhrgcommon:structure codeSpace="urn:bro:bhrg:Structure">heterogeenGelaagd</bhrgcommon:structure>
+                  <!-- Optional: -->
+                  <bhrgcommon:verticalTrend codeSpace="urn:bro:bhrg:VerticalTrend">naarBovenFijner</bhrgcommon:verticalTrend>
+                  <!--0 to 3 repetitions: 
+                  <bhrgcommon:archeologicalConstituent> ... </bhrgcommon:archeologicalConstituent>
+                  -->
+                  <!--0 to 4 repetitions: 
+                  <bhrgcommon:layerComponent> ... </bhrgcommon:layerComponent>
+                  -->
+                  <!--0 to 4 repetitions: -->
+                  <bhrgcommon:thinStratum>
+                    <bhrgcommon:layerProportion uom="%">40</bhrgcommon:layerProportion>
+                    <bhrgcommon:stratumThicknessClass codeSpace="urn:bro:bhrg:StratumThicknessClass">dunGelaagd</bhrgcommon:stratumThicknessClass>
+                    <!-- Optional: -->
+                    <bhrgcommon:geologicalOrigin codeSpace="urn:bro:bhrg:GeologicalOrigin">loess</bhrgcommon:geologicalOrigin>
+                    <bhrgcommon:soil>
+                      <!--
+                      <bhrgcommon:geologicalSoilName>
+                        <bhrgcommon:GeologicalSoilName>
+                          <bhrgcommon:Waarde>zwakZandigeLeem</bhrgcommon:Waarde>
+                          <bhrgcommon:Categorie>grindarme minerale grond</bhrgcommon:Categorie>
+                          <bhrgcommon:Omschrijving>Een grindarme minerale grond, grond die minder dan 30 % grind en minder dan 30 % organische stof bevat en die, als die twee bestanddelen worden uitgesloten, voor meer dan 65 uit silt, voor maximaal 25 % uit lutum en voor maximaal 15 % uit zand bestaat, maar waarvan de precieze verhouding tussen de hoeveelheden zand, silt en lutum niet goed in woorden is uit te drukken.</bhrgcommon:Omschrijving>
+                        </bhrgcommon:GeologicalSoilName>
+                      </bhrgcommon:geologicalSoilName>
+                      -->
+                      <bhrgcommon:geologicalSoilName codeSpace="urn:bro:bhrg:GeologicalSoilName">zwakZandigeLeem</bhrgcommon:geologicalSoilName>
+                      <bhrgcommon:geotechnicalSoilName codeSpace="urn:bro:bhrg:GeotechnicalSoilName">zwakZandigSilt</bhrgcommon:geotechnicalSoilName>
+                      <!-- Optional: -->
+                      <bhrgcommon:gravelContentClass codeSpace="urn:bro:bhrg:GravelContentClass">nietGrindig</bhrgcommon:gravelContentClass>
+                      <bhrgcommon:micaContentClass codeSpace="urn:bro:bhrg:MicaContentClass">glimmerSpoor</bhrgcommon:micaContentClass>
+                      <!-- Optional: -->
+                      <bhrgcommon:organicMatterContentClass codeSpace="urn:bro:bhrg:OrganicMatterContentClass">nietOrganisch</bhrgcommon:organicMatterContentClass>
+                      <!-- Optional: -->
+                      <bhrgcommon:organicMatterContentClassNEN5104 codeSpace="urn:bro:bhrg:OrganicMatterContentClassNEN5104">nietHumeus</bhrgcommon:organicMatterContentClassNEN5104>
+                      <!-- Optional: -->
+                      <bhrgcommon:shellMatterContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">geen</bhrgcommon:shellMatterContentClass>
+                      <!-- Optional: -->
+                      <bhrgcommon:veryCoarseFractionContentClass codeSpace="urn:bro:bhrg:VeryCoarseFractionContentClass">keitjesWeinigTotVeel</bhrgcommon:veryCoarseFractionContentClass>
+                      <bhrgcommon:glauconiteContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">geen</bhrgcommon:glauconiteContentClass>
+                      <bhrgcommon:carbonateContentClass codeSpace="urn:bro:bhrg:CarbonateContentClass">kalkrijk</bhrgcommon:carbonateContentClass>
+                      <bhrgcommon:colour codeSpace="urn:bro:bhrg:Colour">geelRood</bhrgcommon:colour>
+                      <!-- Optional: -->
+                      <bhrgcommon:mottled>ja</bhrgcommon:mottled>
+                      <!-- Optional: -->
+                      <bhrgcommon:fineSoilConsistency codeSpace="urn:bro:bhrg:FineSoilConsistency">stijf</bhrgcommon:fineSoilConsistency>
+                      <!-- Optional: 
+                      <bhrgcommon:organicSoilConsistency codeSpace="">?</bhrgcommon:organicSoilConsistency>
+                      -->
+                      <!-- Optional: 
+                      <bhrgcommon:sedimentaryPhenomenon codeSpace="urn:bro:bhrg:SedimentaryPhenomenon">dropStone</bhrgcommon:sedimentaryPhenomenon>
+                      -->
+                      <!-- Optional: 
+                      <bhrgcommon:organicSoilTexture codeSpace="">?</bhrgcommon:organicSoilTexture>
+                      -->
+                      <!--0 or more repetitions: 
+                      <bhrgcommon:particularConstituent> ... </bhrgcommon:particularConstituent>
+                      -->
+                      <!--0 to 4 repetitions: 
+                      <bhrgcommon:anomalousLayer> ... </bhrgcommon:anomalousLayer>
+                      -->
+                      <!--0 to 4 repetitions: -->
+                      <bhrgcommon:chunk>
+                        <bhrgcommon:soilType codeSpace="urn:bro:bhrg:SoilType">concreties</bhrgcommon:soilType>
+                        <!-- Optional -->
+                        <bhrgcommon:sizeClass codeSpace="urn:bro:bhrg:ChunkSizeClass">klein</bhrgcommon:sizeClass>
+                        <bhrgcommon:percentageClass codeSpace="urn:bro:bhrg:VolumePercentageClass">spoorTot1</bhrgcommon:percentageClass>
+                      </bhrgcommon:chunk>
+                      <bhrgcommon:chunk>
+                        <bhrgcommon:soilType codeSpace="urn:bro:bhrg:SoilType">zand</bhrgcommon:soilType>
+                        <!-- Optional
+                        <bhrgcommon:sizeClass codeSpace="urn:bro:bhrg:ChunkSizeClass">klein</bhrgcommon:sizeClass>
+                        -->
+                        <bhrgcommon:percentageClass codeSpace="urn:bro:bhrg:VolumePercentageClass">uiterstVeelMinstens50 </bhrgcommon:percentageClass>
+                      </bhrgcommon:chunk>
+                      <!-- Optional 
+                      <bhrgcommon:gravelFraction> ... </bhrgcommon:gravelFraction>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:sandFraction> ... </bhrgcommon:sandFraction>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:shellFraction> ... </bhrgcommon:shellFraction>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:peatFraction> ... </bhrgcommon:peatFraction>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:munsellColour> ... </bhrgcommon:munsellColour>
+                      -->
+                      <!--0 to 2 repetitions: 
+                      <bhrgcommon:mottle> ... </bhrgcommon:mottle>
+                      -->
+                      <!--0 to 2 repetitions: -->
+                      <bhrgcommon:mottle>
+                        <bhrgcommon:colour codeSpace="urn:bro:bhrg:StainColour">geelTotLichtgeel</bhrgcommon:colour>
+                        <bhrgcommon:density codeSpace="urn:bro:bhrg:MottlingDensity">matig2tot20</bhrgcommon:density>
+                      </bhrgcommon:mottle>
+                      <bhrgcommon:mottle>
+                        <bhrgcommon:colour codeSpace="urn:bro:bhrg:StainColour">oranjeroodTotRoodbruin</bhrgcommon:colour>
+                        <bhrgcommon:density codeSpace="urn:bro:bhrg:MottlingDensity">weinigTot2</bhrgcommon:density>
+                      </bhrgcommon:mottle>
+                      <!--0 to 3 repetitions: 
+                      <bhrgcommon:inclusion> ... </bhrgcommon:inclusion>
+                      -->
+                      <!--0 to 4 repetitions: 
+                      <bhrgcommon:sedimentLens> ... </bhrgcommon:sedimentLens>
+                      -->
+                      <!--0 or more repetitions: 
+                      <bhrgcommon:animalFossil> ... </bhrgcommon:animalFossil>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:fractionDistribution> ... </bhrgcommon:fractionDistribution>
+                      -->
+                    </bhrgcommon:soil>
+                  </bhrgcommon:thinStratum>
+                  <bhrgcommon:thinStratum>
+                    <bhrgcommon:layerProportion uom="%">5</bhrgcommon:layerProportion>
+                    <bhrgcommon:stratumThicknessClass codeSpace="urn:bro:bhrg:StratumThicknessClass">dikGelamineerd</bhrgcommon:stratumThicknessClass>
+                    <!-- Optional: -->
+                    <bhrgcommon:geologicalOrigin codeSpace="urn:bro:bhrg:GeologicalOrigin">ingestovenZand</bhrgcommon:geologicalOrigin>
+                    <bhrgcommon:soil>
+                      <!--
+                      <bhrgcommon:geologicalSoilName>
+                        <bhrgcommon:GeologicalSoilName>
+                          <bhrgcommon:Waarde>zwakSiltigZand</bhrgcommon:Waarde>
+                          <bhrgcommon:Categorie>grindarme minerale grond</bhrgcommon:Categorie>
+                          <bhrgcommon:Omschrijving>Een grindarme minerale grond, grond die minder dan 30 % grind en minder dan 30 % organische stof bevat en die, als die twee bestanddelen worden uitgesloten, voor minimaal 90 % van de massa uit zand, voor maximaal 5 % uit lutum en voor maximaal 10 % uit silt bestaat.</bhrgcommon:Omschrijving>
+                        </bhrgcommon:GeologicalSoilName>
+                      </bhrgcommon:geologicalSoilName>
+                      -->
+                      <bhrgcommon:geologicalSoilName codeSpace="urn:bro:bhrg:GeologicalSoilName">zwakSiltigZand</bhrgcommon:geologicalSoilName>
+                      <bhrgcommon:geotechnicalSoilName codeSpace="urn:bro:bhrg:GeotechnicalSoilName">siltigZand</bhrgcommon:geotechnicalSoilName>
+                      <bhrgcommon:gravelContentClass codeSpace="urn:bro:bhrg:GravelContentClass">zwakGrindig</bhrgcommon:gravelContentClass>
+                      <bhrgcommon:micaContentClass codeSpace="urn:bro:bhrg:MicaContentClass">glimmerWeinig</bhrgcommon:micaContentClass>
+                      <!-- Optional: -->
+                      <bhrgcommon:organicMatterContentClass codeSpace="urn:bro:bhrg:OrganicMatterContentClass">nietOrganisch</bhrgcommon:organicMatterContentClass>
+                      <!-- Optional: -->
+                      <bhrgcommon:organicMatterContentClassNEN5104 codeSpace="urn:bro:bhrg:OrganicMatterContentClassNEN5104">nietHumeus</bhrgcommon:organicMatterContentClassNEN5104>
+                      <!-- Optional: -->
+                      <bhrgcommon:shellMatterContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">geen</bhrgcommon:shellMatterContentClass>
+                      <!-- Optional: -->
+                      <bhrgcommon:veryCoarseFractionContentClass codeSpace="urn:bro:bhrg:VeryCoarseFractionContentClass">keitjesWeinigTotVeel</bhrgcommon:veryCoarseFractionContentClass>
+                      <bhrgcommon:glauconiteContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">weinig1tot10</bhrgcommon:glauconiteContentClass>
+                      <bhrgcommon:carbonateContentClass codeSpace="urn:bro:bhrg:CarbonateContentClass">zwakKalkhoudend</bhrgcommon:carbonateContentClass>
+                      <bhrgcommon:colour codeSpace="urn:bro:bhrg:Colour">geel</bhrgcommon:colour>
+                      <!-- Optional: -->
+                      <bhrgcommon:mottled>nee</bhrgcommon:mottled>
+                      <!-- Optional: 
+                      <bhrgcommon:fineSoilConsistency codeSpace="">?</bhrgcommon:fineSoilConsistency>
+                      -->
+                      <!-- Optional: 
+                      <bhrgcommon:organicSoilConsistency codeSpace="">?</bhrgcommon:organicSoilConsistency>
+                      -->
+                      <!-- Optional: 
+                      <bhrgcommon:sedimentaryPhenomenon codeSpace="urn:bro:bhrg:SedimentaryPhenomenon">dropStone</bhrgcommon:sedimentaryPhenomenon>
+                      -->
+                      <!-- Optional: 
+                      <bhrgcommon:organicSoilTexture codeSpace="">?</bhrgcommon:organicSoilTexture>
+                      -->
+                      <!--0 or more repetitions: 
+                      <bhrgcommon:particularConstituent> ... </bhrgcommon:particularConstituent>
+                      -->
+                      <!--0 to 4 repetitions: 
+                      <bhrgcommon:anomalousLayer> ... </bhrgcommon:anomalousLayer>
+                      -->
+                      <!--0 to 4 repetitions:
+                      <bhrgcommon:chunk> ... </bhrgcommon:chunk>
+                      -->
+                      <!-- Optional -->
+                      <bhrgcommon:gravelFraction>
+                        <bhrgcommon:gravelMedianClass codeSpace="urn:bro:bhrg:GravelMedianClass">fijn2tot6.3mm</bhrgcommon:gravelMedianClass>
+                        <bhrgcommon:angularity codeSpace="urn:bro:bhrg:Angularity">hoekig</bhrgcommon:angularity>
+                        <bhrgcommon:fineGravelContentClass codeSpace="urn:bro:bhrg:MassPercentageClass">uiterstVeelMinstens75</bhrgcommon:fineGravelContentClass>
+                        <bhrgcommon:mediumCoarseGravelContentClass codeSpace="urn:bro:bhrg:MassPercentageClass">spoorTot1</bhrgcommon:mediumCoarseGravelContentClass>
+                        <bhrgcommon:veryCoarseGravelContentClass codeSpace="urn:bro:bhrg:MassPercentageClass">spoorTot1</bhrgcommon:veryCoarseGravelContentClass>
+                        <bhrgcommon:ventifactPresent>ja</bhrgcommon:ventifactPresent>
+                        <bhrgcommon:sphericity codeSpace="urn:bro:bhrg:Sphericity">bol</bhrgcommon:sphericity>
+                        <bhrgcommon:variegation codeSpace="urn:bro:bhrg:Variegation">zeerBont</bhrgcommon:variegation>
+                        <!-- Optional 
+                        <bhrgcommon:estimatedMedian uom="mm"></bhrgcommon:estimatedMedian>
+                        -->
+                        <!-- Optional 
+                        <bhrgcommon:gravelProvenance codeSpace=""></bhrgcommon:gravelProvenance>
+                        -->
+                        <!--1 or more repetitions: -->
+                        <bhrgcommon:gravelConstituent>
+                          <bhrgcommon:gravelType codeSpace="urn:bro:bhrg:GravelType">kalksteenNietGespecificeerd</bhrgcommon:gravelType>
+                          <bhrgcommon:fractionProportion codeSpace="urn:bro:bhrg:MassPercentageClass">zeerVeel50tot75</bhrgcommon:fractionProportion>
+                        </bhrgcommon:gravelConstituent>
+                        <bhrgcommon:gravelConstituent>
+                          <bhrgcommon:gravelType codeSpace="urn:bro:bhrg:GravelType">zandsteenGeelBruin</bhrgcommon:gravelType>
+                          <bhrgcommon:fractionProportion codeSpace="urn:bro:bhrg:MassPercentageClass">veel25tot50</bhrgcommon:fractionProportion>
+                        </bhrgcommon:gravelConstituent>
+                        <bhrgcommon:gravelConstituent>
+                          <bhrgcommon:gravelType codeSpace="urn:bro:bhrg:GravelType">kristallijnDonker</bhrgcommon:gravelType>
+                          <bhrgcommon:fractionProportion codeSpace="urn:bro:bhrg:MassPercentageClass">weinig1tot25</bhrgcommon:fractionProportion>
+                        </bhrgcommon:gravelConstituent>
+                      </bhrgcommon:gravelFraction>
+                      <!-- Optional -->
+                      <bhrgcommon:sandFraction>
+                        <bhrgcommon:darkGrainContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">geen</bhrgcommon:darkGrainContentClass>
+                        <bhrgcommon:angularity codeSpace="urn:bro:bhrg:Angularity">hoekig</bhrgcommon:angularity>
+                        <bhrgcommon:sandMedianClass codeSpace="urn:bro:bhrg:SandMedianClass">fijn63tot105um</bhrgcommon:sandMedianClass>
+                        <bhrgcommon:sandSorting codeSpace="urn:bro:bhrg:SandSorting">zeerKlein</bhrgcommon:sandSorting>
+                        <!-- Optional -->
+                        <bhrgcommon:variegation codeSpace="urn:bro:bhrg:Variegation">zeerBont</bhrgcommon:variegation>
+                        <!-- Optional -->
+                        <bhrgcommon:anomalouslyCoarseContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">geen</bhrgcommon:anomalouslyCoarseContentClass>
+                        <!-- Optional
+                        <bhrgcommon:estimatedMedian uom="um">?</bhrgcommon:estimatedMedian>
+                        -->
+                        <!--0 or more repetitions: 
+                        <bhrgcommon:sandConstituent> ... </bhrgcommon:sandConstituent>
+                        -->
+                      </bhrgcommon:sandFraction>
+                      <!-- Optional 
+                      <bhrgcommon:shellFraction> ... </bhrgcommon:shellFraction>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:peatFraction> ... </bhrgcommon:peatFraction>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:munsellColour> ... </bhrgcommon:munsellColour>
+                      -->
+                      <!--0 to 2 repetitions: 
+                      <bhrgcommon:mottle> ... </bhrgcommon:mottle>
+                      -->
+                      <!--0 to 3 repetitions: 
+                      <bhrgcommon:inclusion> ... </bhrgcommon:inclusion>
+                      -->
+                      <!--0 to 4 repetitions: 
+                      <bhrgcommon:sedimentLens> ... </bhrgcommon:sedimentLens>
+                      -->
+                      <!--0 or more repetitions: 
+                      <bhrgcommon:animalFossil> ... </bhrgcommon:animalFossil>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:fractionDistribution> ... </bhrgcommon:fractionDistribution>
+                      -->
+                    </bhrgcommon:soil>
+                  </bhrgcommon:thinStratum>
+                  <bhrgcommon:thinStratum>
+                    <bhrgcommon:layerProportion uom="%">55</bhrgcommon:layerProportion>
+                    <bhrgcommon:stratumThicknessClass codeSpace="urn:bro:bhrg:StratumThicknessClass">dunGelaagd</bhrgcommon:stratumThicknessClass>
+                    <!-- Optional: -->
+                    <bhrgcommon:geologicalOrigin codeSpace="urn:bro:bhrg:GeologicalOrigin">dekzand</bhrgcommon:geologicalOrigin>
+                    <bhrgcommon:soil>
+                      <!--
+                      <bhrgcommon:geologicalSoilName>
+                        <bhrgcommon:GeologicalSoilName>
+                          <bhrgcommon:Waarde>zand</bhrgcommon:Waarde>
+                          <bhrgcommon:Categorie>grindarme minerale grond</bhrgcommon:Categorie>
+                          <bhrgcommon:Omschrijving>Een grindarme minerale grond, grond die voor 100 % uit zand bestaat.</bhrgcommon:Omschrijving>
+                        </bhrgcommon:GeologicalSoilName>
+                      </bhrgcommon:geologicalSoilName>
+                      -->
+                      <bhrgcommon:geologicalSoilName codeSpace="urn:bro:bhrg:GeologicalSoilName">zand</bhrgcommon:geologicalSoilName>
+                      <bhrgcommon:geotechnicalSoilName codeSpace="urn:bro:bhrg:GeotechnicalSoilName">zand</bhrgcommon:geotechnicalSoilName>
+                      <bhrgcommon:gravelContentClass codeSpace="urn:bro:bhrg:GravelContentClass">nietGrindig</bhrgcommon:gravelContentClass>
+                      <bhrgcommon:micaContentClass codeSpace="urn:bro:bhrg:MicaContentClass">glimmersGeen</bhrgcommon:micaContentClass>
+                      <!-- Optional: -->
+                      <bhrgcommon:organicMatterContentClass codeSpace="urn:bro:bhrg:OrganicMatterContentClass">nietOrganisch</bhrgcommon:organicMatterContentClass>
+                      <!-- Optional: -->
+                      <bhrgcommon:organicMatterContentClassNEN5104 codeSpace="urn:bro:bhrg:OrganicMatterContentClassNEN5104">nietHumeus</bhrgcommon:organicMatterContentClassNEN5104>
+                      <!-- Optional: -->
+                      <bhrgcommon:shellMatterContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">geen</bhrgcommon:shellMatterContentClass>
+                      <!-- Optional: -->
+                      <bhrgcommon:veryCoarseFractionContentClass codeSpace="urn:bro:bhrg:VeryCoarseFractionContentClass">keitjesWeinigTotVeel</bhrgcommon:veryCoarseFractionContentClass>
+                      <bhrgcommon:glauconiteContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">geen</bhrgcommon:glauconiteContentClass>
+                      <bhrgcommon:carbonateContentClass codeSpace="urn:bro:bhrg:CarbonateContentClass">kalkrijk</bhrgcommon:carbonateContentClass>
+                      <bhrgcommon:colour codeSpace="urn:bro:bhrg:Colour">geelBruin</bhrgcommon:colour>
+                      <!-- Optional: -->
+                      <bhrgcommon:mottled>nee</bhrgcommon:mottled>
+                      <!-- Optional: 
+                      <bhrgcommon:fineSoilConsistency codeSpace="">?</bhrgcommon:fineSoilConsistency>
+                      -->
+                      <!-- Optional: 
+                      <bhrgcommon:organicSoilConsistency codeSpace="">?</bhrgcommon:organicSoilConsistency>
+                      -->
+                      <!-- Optional: -->
+                      <bhrgcommon:sedimentaryPhenomenon codeSpace="urn:bro:bhrg:SedimentaryPhenomenon">dropStone</bhrgcommon:sedimentaryPhenomenon>
+                      <!-- Optional: 
+                      <bhrgcommon:organicSoilTexture codeSpace="">?</bhrgcommon:organicSoilTexture>
+                      -->
+                      <!--0 or more repetitions: 
+                      <bhrgcommon:particularConstituent> ... </bhrgcommon:particularConstituent>
+                      -->
+                      <!--0 to 4 repetitions: 
+                      <bhrgcommon:anomalousLayer> ... </bhrgcommon:anomalousLayer>
+                      -->
+                      <!--0 to 4 repetitions:
+                      <bhrgcommon:chunk> ... </bhrgcommon:chunk>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:gravelFraction> ... </bhrgcommon:gravelFraction>
+                      -->
+                      <!-- Optional -->
+                      <bhrgcommon:sandFraction>
+                        <bhrgcommon:darkGrainContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">geen</bhrgcommon:darkGrainContentClass>
+                        <bhrgcommon:angularity codeSpace="urn:bro:bhrg:Angularity">hoekig</bhrgcommon:angularity>
+                        <bhrgcommon:sandMedianClass codeSpace="urn:bro:bhrg:SandMedianClass">fijn63tot105um</bhrgcommon:sandMedianClass>
+                        <bhrgcommon:sandSorting codeSpace="urn:bro:bhrg:SandSorting">zeerKlein</bhrgcommon:sandSorting>
+                        <!-- Optional -->
+                        <bhrgcommon:variegation codeSpace="urn:bro:bhrg:Variegation">matigBont</bhrgcommon:variegation>
+                        <!-- Optional -->
+                        <bhrgcommon:anomalouslyCoarseContentClass codeSpace="urn:bro:bhrg:VolumePercentageClass">geen</bhrgcommon:anomalouslyCoarseContentClass>
+                        <!-- Optional
+                        <bhrgcommon:estimatedMedian uom="um">?</bhrgcommon:estimatedMedian>
+                        -->
+                        <!--0 or more repetitions: 
+                        <bhrgcommon:sandConstituent> ... </bhrgcommon:sandConstituent>
+                        -->
+                      </bhrgcommon:sandFraction>
+                      <!-- Optional 
+                      <bhrgcommon:shellFraction> ... </bhrgcommon:shellFraction>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:peatFraction> ... </bhrgcommon:peatFraction>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:munsellColour> ... </bhrgcommon:munsellColour>
+                      -->
+                      <!--0 to 2 repetitions: 
+                      <bhrgcommon:mottle> ... </bhrgcommon:mottle>
+                      -->
+                      <!--0 to 3 repetitions: -->
+                      <bhrgcommon:inclusion>
+                        <bhrgcommon:soilType codeSpace="urn:bro:bhrg:SoilType">leem</bhrgcommon:soilType>
+                        <bhrgcommon:percentageClass codeSpace="urn:bro:bhrg:VolumePercentageClass">veel10tot30</bhrgcommon:percentageClass>
+                      </bhrgcommon:inclusion>
+                      <bhrgcommon:inclusion>
+                        <bhrgcommon:soilType codeSpace="urn:bro:bhrg:SoilType">diatomiet</bhrgcommon:soilType>
+                        <bhrgcommon:percentageClass codeSpace="urn:bro:bhrg:VolumePercentageClass">spoorTot1</bhrgcommon:percentageClass>
+                      </bhrgcommon:inclusion>
+                      <!--0 to 4 repetitions: -->
+                      <bhrgcommon:sedimentLens>
+                        <bhrgcommon:soilType codeSpace="urn:bro:bhrg:SoilType">ijzeroer</bhrgcommon:soilType>
+                        <bhrgcommon:percentageClass codeSpace="urn:bro:bhrg:VolumePercentageClass">weinig1tot10</bhrgcommon:percentageClass>
+                      </bhrgcommon:sedimentLens>
+                      <bhrgcommon:sedimentLens>
+                        <bhrgcommon:soilType codeSpace="urn:bro:bhrg:SoilType">zandVerkit</bhrgcommon:soilType>
+                        <bhrgcommon:percentageClass codeSpace="urn:bro:bhrg:VolumePercentageClass">spoorTot1</bhrgcommon:percentageClass>
+                      </bhrgcommon:sedimentLens>
+                      <!--0 or more repetitions: 
+                      <bhrgcommon:animalFossil> ... </bhrgcommon:animalFossil>
+                      -->
+                      <!-- Optional 
+                      <bhrgcommon:fractionDistribution> ... </bhrgcommon:fractionDistribution>
+                      -->
+                    </bhrgcommon:soil>
+                  </bhrgcommon:thinStratum>
+                  <!-- Optional:
+                  <bhrgcommon:soil> ... </bhrgcommon:soil>
+                  -->
+                </bhrgcommon:Layer>
+              </bhrgcommon:layer>
+            </bhrgcommon:DescriptiveBoreholeLog>
+          </bhrgcommon:descriptiveBoreholeLog>
+        </bhrgcommon:BoreholeSampleDescription>
+      </boreholeSampleDescription>
+      <boring>
+        <bhrgcommon:Boring gml:id="id_2001">
+          <bhrgcommon:boringStartDate>2020-07-14</bhrgcommon:boringStartDate>
+          <bhrgcommon:boringEndDate>2020-07-31</bhrgcommon:boringEndDate>
+          <bhrgcommon:preparation codeSpace="urn:bro:bhrg:Preparation">verticaleDrainage</bhrgcommon:preparation>
+          <!-- Optional: -->
+          <bhrgcommon:finalDepthPreparation uom="m">4.00</bhrgcommon:finalDepthPreparation>
+          <bhrgcommon:trajectoryExcavated>ja</bhrgcommon:trajectoryExcavated>
+          <!-- Optional: -->
+          <bhrgcommon:finalDepthExcavation uom="m">1.00</bhrgcommon:finalDepthExcavation>
+          <bhrgcommon:rockReached>nee</bhrgcommon:rockReached>
+          <!--1 to 2 repetitions: -->
+          <bhrgcommon:boringProcedure codeSpace="urn:bro:bhrg:BoringProcedure">SIKB2001vanafV6.0</bhrgcommon:boringProcedure>
+          <bhrgcommon:boringProcedure codeSpace="urn:bro:bhrg:BoringProcedure">bedrijfSpecifiek</bhrgcommon:boringProcedure>
+          <bhrgcommon:finalDepthBoring uom="m">6.80</bhrgcommon:finalDepthBoring>
+          <bhrgcommon:stopCriterion codeSpace="urn:bro:bhrg:StopCriterionField">einddoel</bhrgcommon:stopCriterion>
+          <!-- Optional: -->
+          <bhrgcommon:temporaryCasingUsed>ja</bhrgcommon:temporaryCasingUsed>
+          <!-- Optional: -->
+          <bhrgcommon:finalDepthTemporaryCasing uom="m">4.00</bhrgcommon:finalDepthTemporaryCasing>
+          <!-- Optional: -->
+          <bhrgcommon:flushingMediumUsed>ja</bhrgcommon:flushingMediumUsed>
+          <!-- Optional: -->
+          <bhrgcommon:flushingAdditive codeSpace="urn:bro:bhrg:FlushingAdditive">bentoniet</bhrgcommon:flushingAdditive>
+          <!-- Optional: -->
+          <bhrgcommon:groundwaterLevel uom="m">0.80</bhrgcommon:groundwaterLevel>
+          <bhrgcommon:samplingProcedure codeSpace="urn:bro:bhrg:SamplingProcedure">ISO22475d1v2006</bhrgcommon:samplingProcedure>
+          <bhrgcommon:finalDepthSampling uom="m">6.80</bhrgcommon:finalDepthSampling>
+          <bhrgcommon:subsurfaceContaminated>ja</bhrgcommon:subsurfaceContaminated>
+          <bhrgcommon:boreholeCompleted>ja</bhrgcommon:boreholeCompleted>
+          <!-- Optional: -->
+          <bhrgcommon:boringOperator>
+            <!-- You have a CHOICE of the next 2 items at this level
+            <brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
+            <brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
+            -->
+            <brocom:chamberOfCommerceNumber>45483527</brocom:chamberOfCommerceNumber>
+          </bhrgcommon:boringOperator>
+          <!--1 or more repetitions: -->
+          <bhrgcommon:sampledInterval>
+            <bhrgcommon:SampledInterval gml:id="id_2010">
+              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">1.00</bhrgcommon:endDepth>
+              <bhrgcommon:preTreatment codeSpace="urn:bro:bhrg:PreTreatment">geen</bhrgcommon:preTreatment>
+              <bhrgcommon:samplingMethod codeSpace="urn:bro:bhrg:SamplingMethod">graven</bhrgcommon:samplingMethod>
+              <bhrgcommon:samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseE</bhrgcommon:samplingQuality>
+              <!-- Optional: -->
+              <bhrgcommon:orientatedSampled>nee</bhrgcommon:orientatedSampled>
+              <!-- Optional: -->
+              <bhrgcommon:sampler>
+                <bhrgcommon:samplerType codeSpace="urn:bro:bhrg:SamplerType">guts</bhrgcommon:samplerType>
+                <!-- Optional: not allowed if samplerType=guts
+                <bhrgcommon:sampleContainerDiameter uom="mm"></bhrgcommon:sampleContainerDiameter>
+                -->
+                <!-- Optional: not allowed if samplerType=guts
+                <bhrgcommon:sampleContainerLength uom="m"></bhrgcommon:sampleContainerLength>
+                -->
+                <!-- Optional: not allowed if samplerType=guts
+                <bhrgcommon:cuttingShoeInsideDiameter uom="mm"></bhrgcommon:cuttingShoeInsideDiameter>
+                -->
+                <!-- Optional: not allowed if samplerType=guts
+                <bhrgcommon:stockingUsed></bhrgcommon:stockingUsed>
+                -->
+                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner]
+                <bhrgcommon:rightAngledCuttingShoe></bhrgcommon:rightAngledCuttingShoe>
+                -->
+                <!-- Optional: only allowed if rightAngledCuttingShoe=nee
+                <bhrgcommon:taperAngle uom="deg"></bhrgcommon:taperAngle>
+                -->
+                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner]
+                <bhrgcommon:cuttingShoeOutsideDiameter uom="mm"></bhrgcommon:cuttingShoeOutsideDiameter>
+                -->
+                <!-- Optional: mandatory and only allowed if samplerType=[corebarrelSingleTube, corebarrelDoubleTube, corebarrelTripleTube, steekbus]
+                <bhrgcommon:lubricationFluidUsed></bhrgcommon:lubricationFluidUsed>
+                -->
+                <!-- Optional: not allowed if samplerType=guts
+                <bhrgcommon:coreCatcherPresent></bhrgcommon:coreCatcherPresent>
+                -->
+                <!-- Optional: not allowed if samplerType=guts
+                <bhrgcommon:pistonPresent></bhrgcommon:pistonPresent>
+                -->
+              </bhrgcommon:sampler>
+            </bhrgcommon:SampledInterval>
+          </bhrgcommon:sampledInterval>
+          <bhrgcommon:sampledInterval>
+            <bhrgcommon:SampledInterval gml:id="id_2011">
+              <bhrgcommon:beginDepth uom="m">1.00</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">3.50</bhrgcommon:endDepth>
+              <bhrgcommon:preTreatment codeSpace="urn:bro:bhrg:PreTreatment">geen</bhrgcommon:preTreatment>
+              <bhrgcommon:samplingMethod codeSpace="urn:bro:bhrg:SamplingMethod">opDiepteGrijpen</bhrgcommon:samplingMethod>
+              <bhrgcommon:samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseD</bhrgcommon:samplingQuality>
+              <!-- Optional: -->
+              <bhrgcommon:orientatedSampled>ja</bhrgcommon:orientatedSampled>
+              <!-- Optional: -->
+              <bhrgcommon:sampler>
+                <bhrgcommon:samplerType codeSpace="urn:bro:bhrg:SamplerType">steekbusDLDS</bhrgcommon:samplerType>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:sampleContainerDiameter uom="mm">80</bhrgcommon:sampleContainerDiameter>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:sampleContainerLength uom="m">0.10</bhrgcommon:sampleContainerLength>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:cuttingShoeInsideDiameter uom="mm">40</bhrgcommon:cuttingShoeInsideDiameter>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:stockingUsed>ja</bhrgcommon:stockingUsed>
+                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner] -->
+                <bhrgcommon:rightAngledCuttingShoe>nee</bhrgcommon:rightAngledCuttingShoe>
+                <!-- Optional: only allowed if rightAngledCuttingShoe=nee -->
+                <bhrgcommon:taperAngle uom="deg">30</bhrgcommon:taperAngle>
+                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner] -->
+                <bhrgcommon:cuttingShoeOutsideDiameter uom="mm">44</bhrgcommon:cuttingShoeOutsideDiameter>
+                <!-- Optional: mandatory and only allowed if samplerType=[corebarrelSingleTube, corebarrelDoubleTube, corebarrelTripleTube, steekbus]
+                <bhrgcommon:lubricationFluidUsed></bhrgcommon:lubricationFluidUsed>
+                -->
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:coreCatcherPresent>nee</bhrgcommon:coreCatcherPresent>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:pistonPresent>ja</bhrgcommon:pistonPresent>
+              </bhrgcommon:sampler>
+            </bhrgcommon:SampledInterval>
+          </bhrgcommon:sampledInterval>
+          <bhrgcommon:sampledInterval>
+            <bhrgcommon:SampledInterval gml:id="id_2012">
+              <bhrgcommon:beginDepth uom="m">3.50</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">6.80</bhrgcommon:endDepth>
+              <bhrgcommon:preTreatment codeSpace="urn:bro:bhrg:PreTreatment">geen</bhrgcommon:preTreatment>
+              <bhrgcommon:samplingMethod codeSpace="urn:bro:bhrg:SamplingMethod">opDiepteKernen</bhrgcommon:samplingMethod>
+              <bhrgcommon:samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseA</bhrgcommon:samplingQuality>
+              <!-- Optional: -->
+              <bhrgcommon:orientatedSampled>ja</bhrgcommon:orientatedSampled>
+              <!-- Optional: -->
+              <bhrgcommon:sampler>
+                <bhrgcommon:samplerType codeSpace="urn:bro:bhrg:SamplerType">corebarrelDoubleTube</bhrgcommon:samplerType>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:sampleContainerDiameter uom="mm">60</bhrgcommon:sampleContainerDiameter>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:sampleContainerLength uom="m">0.20</bhrgcommon:sampleContainerLength>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:cuttingShoeInsideDiameter uom="mm">20</bhrgcommon:cuttingShoeInsideDiameter>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:stockingUsed>nee</bhrgcommon:stockingUsed>
+                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner]
+                <bhrgcommon:rightAngledCuttingShoe>nee</bhrgcommon:rightAngledCuttingShoe>
+                -->
+                <!-- Optional: only allowed if rightAngledCuttingShoe=nee
+                <bhrgcommon:taperAngle uom="deg">30</bhrgcommon:taperAngle>
+                -->
+                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner]
+                <bhrgcommon:cuttingShoeOutsideDiameter uom="mm">44</bhrgcommon:cuttingShoeOutsideDiameter>
+                -->
+                <!-- Optional: mandatory and only allowed if samplerType=[corebarrelSingleTube, corebarrelDoubleTube, corebarrelTripleTube, steekbus] -->
+                <bhrgcommon:lubricationFluidUsed>nee</bhrgcommon:lubricationFluidUsed>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:coreCatcherPresent>ja</bhrgcommon:coreCatcherPresent>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:pistonPresent>ja</bhrgcommon:pistonPresent>
+              </bhrgcommon:sampler>
+            </bhrgcommon:SampledInterval>
+          </bhrgcommon:sampledInterval>
+          <!--0 or more repetitions: -->
+          <bhrgcommon:completedInterval>
+            <bhrgcommon:CompletedInterval gml:id="id_2020">
+              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">3.50</bhrgcommon:endDepth>
+              <bhrgcommon:permanentCasingPresent>nee</bhrgcommon:permanentCasingPresent>
+              <!-- Optional: Mandatory and only allowed if permanentCasingPresent=ja
+              <bhrgcommon:diameterPermanentCasing uom=""></bhrgcommon:diameterPermanentCasing>
+              -->
+              <!-- Optional: Mandatory and only allowed if permanentCasingPresent=ja
+              <bhrgcommon:materialPermanentCasing codeSpace=""></bhrgcommon:materialPermanentCasing>
+              -->
+              <bhrgcommon:backfillMaterial codeSpace="urn:bro:bhrg:BackfillMaterial">zandMiddelgrof</bhrgcommon:backfillMaterial>
+              <!-- Optional: Mandatory and only allowed if BackfillMaterial=[zand, zandGrof, zandMiddelgrof, zandMiddelgrofGrof, grind, grindZand, grindZandGrof, grindZandOngezeefd] -->
+              <bhrgcommon:backfillMaterialWashed>ja</bhrgcommon:backfillMaterialWashed>
+              <!-- Optional: Not allowed if BackfillMaterial=[geen, verwijderdMateriaal, wegverhardingsmateriaal] -->
+              <bhrgcommon:backfillMaterialCertified>ja</bhrgcommon:backfillMaterialCertified>
+            </bhrgcommon:CompletedInterval>
+          </bhrgcommon:completedInterval>
+          <bhrgcommon:completedInterval>
+            <bhrgcommon:CompletedInterval gml:id="id_2021">
+              <bhrgcommon:beginDepth uom="m">3.50</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">6.80</bhrgcommon:endDepth>
+              <bhrgcommon:permanentCasingPresent>ja</bhrgcommon:permanentCasingPresent>
+              <!-- Optional: Mandatory and only allowed if permanentCasingPresent=ja -->
+              <bhrgcommon:diameterPermanentCasing uom="mm">70</bhrgcommon:diameterPermanentCasing>
+              <!-- Optional: Mandatory and only allowed if permanentCasingPresent=ja -->
+              <bhrgcommon:materialPermanentCasing codeSpace="urn:bro:bhrg:CasingMaterial">staalRoestvrij</bhrgcommon:materialPermanentCasing>
+              <bhrgcommon:backfillMaterial codeSpace="urn:bro:bhrg:BackfillMaterial">bentoniet</bhrgcommon:backfillMaterial>
+              <!-- Optional: Mandatory and only allowed if BackfillMaterial=[zand, zandGrof, zandMiddelgrof, zandMiddelgrofGrof, grind, grindZand, grindZandGrof, grindZandOngezeefd]
+              <bhrgcommon:backfillMaterialWashed>ja</bhrgcommon:backfillMaterialWashed>
+              -->
+              <!-- Optional: Not allowed if BackfillMaterial=[geen, verwijderdMateriaal, wegverhardingsmateriaal] -->
+              <bhrgcommon:backfillMaterialCertified>nee</bhrgcommon:backfillMaterialCertified>
+            </bhrgcommon:CompletedInterval>
+          </bhrgcommon:completedInterval>
+          <!--0 or more repetitions: -->
+          <bhrgcommon:contaminatedInterval>
+            <bhrgcommon:ContaminatedInterval gml:id="id_2030">
+              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">0.70</bhrgcommon:endDepth>
+            </bhrgcommon:ContaminatedInterval>
+          </bhrgcommon:contaminatedInterval>
+          <!--1 or more repetitions: -->
+          <bhrgcommon:boredInterval>
+            <bhrgcommon:BoredInterval gml:id="id_2040">
+              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">1.20</bhrgcommon:endDepth>
+              <bhrgcommon:boringTechnique codeSpace="urn:bro:bhrg:BoringTechnique">handDraaien</bhrgcommon:boringTechnique>
+              <bhrgcommon:boredDiameter uom="mm">20</bhrgcommon:boredDiameter>
+            </bhrgcommon:BoredInterval>
+          </bhrgcommon:boredInterval>
+          <bhrgcommon:boredInterval>
+            <bhrgcommon:BoredInterval gml:id="id_2041">
+              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">4.20</bhrgcommon:endDepth>
+              <bhrgcommon:boringTechnique codeSpace="urn:bro:bhrg:BoringTechnique">mechanischDrukken</bhrgcommon:boringTechnique>
+              <bhrgcommon:boredDiameter uom="mm">40</bhrgcommon:boredDiameter>
+            </bhrgcommon:BoredInterval>
+          </bhrgcommon:boredInterval>
+          <bhrgcommon:boredInterval>
+            <bhrgcommon:BoredInterval gml:id="id_2042">
+              <bhrgcommon:beginDepth uom="m">4.20</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">6.80</bhrgcommon:endDepth>
+              <bhrgcommon:boringTechnique codeSpace="urn:bro:bhrg:BoringTechnique">mechanischDraaienOnverbuisd</bhrgcommon:boringTechnique>
+              <bhrgcommon:boredDiameter uom="mm">60</bhrgcommon:boredDiameter>
+            </bhrgcommon:BoredInterval>
+          </bhrgcommon:boredInterval>
+          <!--0 or more repetitions: -->
+          <bhrgcommon:excavatedLayer>
+            <bhrgcommon:ExcavatedLayer gml:id="id_2050">
+              <bhrgcommon:upperBoundary uom="m">0.00</bhrgcommon:upperBoundary>
+              <bhrgcommon:excavatedMaterial codeSpace="urn:bro:bhrg:ExcavatedMaterial">ophoogmateriaalLicht</bhrgcommon:excavatedMaterial>
+              <bhrgcommon:lowerBoundary uom="m">0.35</bhrgcommon:lowerBoundary>
+            </bhrgcommon:ExcavatedLayer>
+          </bhrgcommon:excavatedLayer>
+          <bhrgcommon:excavatedLayer>
+            <bhrgcommon:ExcavatedLayer gml:id="id_2051">
+              <bhrgcommon:upperBoundary uom="m">0.35</bhrgcommon:upperBoundary>
+              <bhrgcommon:excavatedMaterial codeSpace="urn:bro:bhrg:ExcavatedMaterial">veen</bhrgcommon:excavatedMaterial>
+              <bhrgcommon:lowerBoundary uom="m">0.85</bhrgcommon:lowerBoundary>
+            </bhrgcommon:ExcavatedLayer>
+          </bhrgcommon:excavatedLayer>
+        </bhrgcommon:Boring>
+      </boring>
+      <!-- Optional: -->
+      <fluidMudLayer>
+        <bhrgcommon:FluidMudLayer gml:id="id_3001">
+          <bhrgcommon:thickness uom="m">0.20</bhrgcommon:thickness>
+          <bhrgcommon:colour codeSpace="urn:bro:bhrg:Colour">bruinZwart</bhrgcommon:colour>
+          <bhrgcommon:upperBoundaryPositioningMethod codeSpace="urn:bro:bhrg:FluidMudLayerPositioningMethod">visueel</bhrgcommon:upperBoundaryPositioningMethod>
+          <bhrgcommon:lowerBoundaryPositioningMethod codeSpace="urn:bro:bhrg:FluidMudLayerPositioningMethod">visueel</bhrgcommon:lowerBoundaryPositioningMethod>
+        </bhrgcommon:FluidMudLayer>
+      </fluidMudLayer>
+    </BHR_G_completeReport_v1>
+  </sourceDocument>
+</registrationRequest>
