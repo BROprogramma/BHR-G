@@ -6,11 +6,15 @@
     xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.broservices.nl/xsd/isbhrg/1.0 ../../XSD/isbhr-g-messages.xsd">
+  <!--Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de innameservice.
+      Het is niet gevalideert door de innameservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
+    xsi:schemaLocation="http://www.broservices.nl/xsd/isbhrg/1.0 https://schema.broservices.nl/xsd/isbhrg/1.0/isbhr-g-messages.xsd">
+  -->
   <brocom:requestReference>BRO-BHR-G-1596</brocom:requestReference>
   <!-- Optional: -->
   <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
-  <!--Optional: not allowwed in combination with sourceDocument BHR_G_completeReport_v1.
-  <brocom:broId>GLD123456789012</brocom:broId>
+  <!--Optional: not allowed in combination with sourceDocument BHR_G_completeReport_v1.
+  <brocom:broId>?</brocom:broId>
   -->
   <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
   <sourceDocument>
@@ -83,7 +87,7 @@
       </siteCharacteristic>
       <!-- Optional: mandatory in a BHR_G_completeReport_v1 sourceDocument -->
       <boreholeSampleDescription>
-        <bhrgcommon:BoreholeSampleDescription gml:id="id_1000">
+        <bhrgcommon:BoreholeSampleDescription gml:id="id_0003">
           <bhrgcommon:descriptionReportDate>2020-08-01</bhrgcommon:descriptionReportDate>
           <bhrgcommon:descriptionProcedure codeSpace="urn:bro:bhrg:DescriptionProcedure">GDN_SBB6v2020</bhrgcommon:descriptionProcedure>
           <!-- Optional: -->
@@ -98,7 +102,7 @@
           </bhrgcommon:descriptionOperator>
           <!--1 to 2 repetitions: -->
           <bhrgcommon:descriptiveBoreholeLog>
-            <bhrgcommon:DescriptiveBoreholeLog gml:id="id_1001">
+            <bhrgcommon:DescriptiveBoreholeLog gml:id="id_0004">
               <bhrgcommon:descriptionQuality codeSpace="urn:bro:bhrg:DescriptionQuality">geologischStandaardGeroerd</bhrgcommon:descriptionQuality>
               <bhrgcommon:continuouslySampled>nee</bhrgcommon:continuouslySampled>
               <bhrgcommon:descriptionLocation codeSpace="urn:bro:bhrg:DescriptionLocation">veldlab</bhrgcommon:descriptionLocation>
@@ -108,27 +112,15 @@
               <bhrgcommon:meanHighestGroundwaterLevel uom="m">0.00</bhrgcommon:meanHighestGroundwaterLevel>
               <!-- Optional: -->
               <bhrgcommon:meanLowestGroundwaterLevel uom="m">0.35</bhrgcommon:meanLowestGroundwaterLevel>
-              <!--0 or more repetitions: -->
-              <bhrgcommon:postSedimentaryDiscontinuity>
-                <bhrgcommon:PostSedimentaryDiscontinuity gml:id="id_1002">
-                  <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
-                  <bhrgcommon:endDepth uom="m">0.15</bhrgcommon:endDepth>
-                  <bhrgcommon:discontinuityType codeSpace="urn:bro:bhrg:DiscontinuityType">antropogeen</bhrgcommon:discontinuityType>
-                </bhrgcommon:PostSedimentaryDiscontinuity>
-              </bhrgcommon:postSedimentaryDiscontinuity>
-              <bhrgcommon:postSedimentaryDiscontinuity>
-                <bhrgcommon:PostSedimentaryDiscontinuity gml:id="id_1003">
-                  <bhrgcommon:beginDepth uom="m">.060</bhrgcommon:beginDepth>
-                  <bhrgcommon:endDepth uom="m">0.68</bhrgcommon:endDepth>
-                  <bhrgcommon:discontinuityType codeSpace="urn:bro:bhrg:DiscontinuityType">opbarsting</bhrgcommon:discontinuityType>
-                </bhrgcommon:PostSedimentaryDiscontinuity>
-              </bhrgcommon:postSedimentaryDiscontinuity>
+              <!--0 or more repetitions: 
+              <bhrgcommon:postSedimentaryDiscontinuity> ... </bhrgcommon:postSedimentaryDiscontinuity>
+              -->
               <!--0 or more repetitions:
               <bhrgcommon:notDescribedInterval> ... </bhrgcommon:notDescribedInterval>
               -->
               <!--1 or more repetitions: -->
               <bhrgcommon:layer>
-                <bhrgcommon:Layer gml:id="id_1004">
+                <bhrgcommon:Layer gml:id="id_0005">
                   <bhrgcommon:upperBoundary uom="m">0.00</bhrgcommon:upperBoundary>
                   <bhrgcommon:upperBoundaryDetermination codeSpace="urn:bro:bhrg:BoundaryPositioningMethod">voorbepaald</bhrgcommon:upperBoundaryDetermination>
                   <bhrgcommon:lowerBoundary uom="m">0.35</bhrgcommon:lowerBoundary>
@@ -279,7 +271,7 @@
             </bhrgcommon:DescriptiveBoreholeLog>
           </bhrgcommon:descriptiveBoreholeLog>
           <bhrgcommon:descriptiveBoreholeLog>
-            <bhrgcommon:DescriptiveBoreholeLog gml:id="id_1101">
+            <bhrgcommon:DescriptiveBoreholeLog gml:id="id_0006">
               <bhrgcommon:descriptionQuality codeSpace="urn:bro:bhrg:DescriptionQuality">geologischStandaardOngeroerd</bhrgcommon:descriptionQuality>
               <bhrgcommon:continuouslySampled>nee</bhrgcommon:continuouslySampled>
               <bhrgcommon:descriptionLocation codeSpace="urn:bro:bhrg:DescriptionLocation">veldlab</bhrgcommon:descriptionLocation>
@@ -291,7 +283,14 @@
               <bhrgcommon:meanLowestGroundwaterLevel uom="m">1.75</bhrgcommon:meanLowestGroundwaterLevel>
               <!--0 or more repetitions: -->
               <bhrgcommon:postSedimentaryDiscontinuity>
-                <bhrgcommon:PostSedimentaryDiscontinuity gml:id="id_1102">
+                <bhrgcommon:PostSedimentaryDiscontinuity gml:id="id_0007">
+                  <bhrgcommon:beginDepth uom="m">1.60</bhrgcommon:beginDepth>
+                  <bhrgcommon:endDepth uom="m">2.48</bhrgcommon:endDepth>
+                  <bhrgcommon:discontinuityType codeSpace="urn:bro:bhrg:DiscontinuityType">opbarsting</bhrgcommon:discontinuityType>
+                </bhrgcommon:PostSedimentaryDiscontinuity>
+              </bhrgcommon:postSedimentaryDiscontinuity>
+              <bhrgcommon:postSedimentaryDiscontinuity>
+                <bhrgcommon:PostSedimentaryDiscontinuity gml:id="id_00008">
                   <bhrgcommon:beginDepth uom="m">4.10</bhrgcommon:beginDepth>
                   <bhrgcommon:endDepth uom="m">4.85</bhrgcommon:endDepth>
                   <bhrgcommon:discontinuityType codeSpace="urn:bro:bhrg:DiscontinuityType">krimpscheur</bhrgcommon:discontinuityType>
@@ -299,14 +298,14 @@
               </bhrgcommon:postSedimentaryDiscontinuity>
               <!--0 or more repetitions: -->
               <bhrgcommon:notDescribedInterval>
-                <bhrgcommon:NotDescribedInterval gml:id="id_1005">
+                <bhrgcommon:NotDescribedInterval gml:id="id_0009">
                   <bhrgcommon:beginDepth uom="m">3.05</bhrgcommon:beginDepth>
                   <bhrgcommon:endDepth uom="m">3.15</bhrgcommon:endDepth>
                   <bhrgcommon:noDescriptionReason codeSpace="urn:bro:bhrg:NoDescriptionReason">geenMonster</bhrgcommon:noDescriptionReason>
                 </bhrgcommon:NotDescribedInterval>
               </bhrgcommon:notDescribedInterval>
               <bhrgcommon:notDescribedInterval>
-                <bhrgcommon:NotDescribedInterval gml:id="id_1006">
+                <bhrgcommon:NotDescribedInterval gml:id="id_0010">
                   <bhrgcommon:beginDepth uom="m">4.85</bhrgcommon:beginDepth>
                   <bhrgcommon:endDepth uom="m">5.50</bhrgcommon:endDepth>
                   <bhrgcommon:noDescriptionReason codeSpace="urn:bro:bhrg:NoDescriptionReason">geenOpbrengst</bhrgcommon:noDescriptionReason>
@@ -314,7 +313,7 @@
               </bhrgcommon:notDescribedInterval>
               <!--1 or more repetitions: -->
               <bhrgcommon:layer>
-                <bhrgcommon:Layer gml:id="id_1007">
+                <bhrgcommon:Layer gml:id="id_0011">
                   <bhrgcommon:upperBoundary uom="m">0.35</bhrgcommon:upperBoundary>
                   <bhrgcommon:upperBoundaryDetermination codeSpace="urn:bro:bhrg:BoundaryPositioningMethod">waargenomenGeleidelijk</bhrgcommon:upperBoundaryDetermination>
                   <bhrgcommon:lowerBoundary uom="m">0.85</bhrgcommon:lowerBoundary>
@@ -369,7 +368,7 @@
                 </bhrgcommon:Layer>
               </bhrgcommon:layer>
               <bhrgcommon:layer>
-                <bhrgcommon:Layer gml:id="id_1008">
+                <bhrgcommon:Layer gml:id="id_0012">
                   <bhrgcommon:upperBoundary uom="m">0.85</bhrgcommon:upperBoundary>
                   <bhrgcommon:upperBoundaryDetermination codeSpace="urn:bro:bhrg:BoundaryPositioningMethod">waargenomenDiffuus</bhrgcommon:upperBoundaryDetermination>
                   <bhrgcommon:lowerBoundary uom="m">3.50</bhrgcommon:lowerBoundary>
@@ -700,7 +699,7 @@
                 </bhrgcommon:Layer>
               </bhrgcommon:layer>
               <bhrgcommon:layer>
-                <bhrgcommon:Layer gml:id="id_1009">
+                <bhrgcommon:Layer gml:id="id_0013">
                   <bhrgcommon:upperBoundary uom="m">3.50</bhrgcommon:upperBoundary>
                   <bhrgcommon:upperBoundaryDetermination codeSpace="urn:bro:bhrg:BoundaryPositioningMethod">waargenomenGeleidelijk</bhrgcommon:upperBoundaryDetermination>
                   <bhrgcommon:lowerBoundary uom="m">6.80</bhrgcommon:lowerBoundary>
@@ -1090,7 +1089,7 @@
         </bhrgcommon:BoreholeSampleDescription>
       </boreholeSampleDescription>
       <boring>
-        <bhrgcommon:Boring gml:id="id_2001">
+        <bhrgcommon:Boring gml:id="id_0014">
           <bhrgcommon:boringStartDate>2020-07-14</bhrgcommon:boringStartDate>
           <bhrgcommon:boringEndDate>2020-07-31</bhrgcommon:boringEndDate>
           <bhrgcommon:preparation codeSpace="urn:bro:bhrg:Preparation">verticaleDrainage</bhrgcommon:preparation>
@@ -1125,11 +1124,11 @@
             <brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
             <brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
             -->
-            <brocom:chamberOfCommerceNumber>45483527</brocom:chamberOfCommerceNumber>
+            <brocom:europeanCompanyRegistrationNumber>DEB8537.HRB66039</brocom:europeanCompanyRegistrationNumber>
           </bhrgcommon:boringOperator>
           <!--1 or more repetitions: -->
           <bhrgcommon:sampledInterval>
-            <bhrgcommon:SampledInterval gml:id="id_2010">
+            <bhrgcommon:SampledInterval gml:id="id_0015">
               <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
               <bhrgcommon:endDepth uom="m">1.00</bhrgcommon:endDepth>
               <bhrgcommon:preTreatment codeSpace="urn:bro:bhrg:PreTreatment">geen</bhrgcommon:preTreatment>
@@ -1174,7 +1173,7 @@
             </bhrgcommon:SampledInterval>
           </bhrgcommon:sampledInterval>
           <bhrgcommon:sampledInterval>
-            <bhrgcommon:SampledInterval gml:id="id_2011">
+            <bhrgcommon:SampledInterval gml:id="id_0016">
               <bhrgcommon:beginDepth uom="m">1.00</bhrgcommon:beginDepth>
               <bhrgcommon:endDepth uom="m">3.50</bhrgcommon:endDepth>
               <bhrgcommon:preTreatment codeSpace="urn:bro:bhrg:PreTreatment">geen</bhrgcommon:preTreatment>
@@ -1210,7 +1209,7 @@
             </bhrgcommon:SampledInterval>
           </bhrgcommon:sampledInterval>
           <bhrgcommon:sampledInterval>
-            <bhrgcommon:SampledInterval gml:id="id_2012">
+            <bhrgcommon:SampledInterval gml:id="id_0017">
               <bhrgcommon:beginDepth uom="m">3.50</bhrgcommon:beginDepth>
               <bhrgcommon:endDepth uom="m">6.80</bhrgcommon:endDepth>
               <bhrgcommon:preTreatment codeSpace="urn:bro:bhrg:PreTreatment">geen</bhrgcommon:preTreatment>
@@ -1249,7 +1248,7 @@
           </bhrgcommon:sampledInterval>
           <!--0 or more repetitions: -->
           <bhrgcommon:completedInterval>
-            <bhrgcommon:CompletedInterval gml:id="id_2020">
+            <bhrgcommon:CompletedInterval gml:id="id_0018">
               <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
               <bhrgcommon:endDepth uom="m">3.50</bhrgcommon:endDepth>
               <bhrgcommon:permanentCasingPresent>nee</bhrgcommon:permanentCasingPresent>
@@ -1267,7 +1266,7 @@
             </bhrgcommon:CompletedInterval>
           </bhrgcommon:completedInterval>
           <bhrgcommon:completedInterval>
-            <bhrgcommon:CompletedInterval gml:id="id_2021">
+            <bhrgcommon:CompletedInterval gml:id="id_0019">
               <bhrgcommon:beginDepth uom="m">3.50</bhrgcommon:beginDepth>
               <bhrgcommon:endDepth uom="m">6.80</bhrgcommon:endDepth>
               <bhrgcommon:permanentCasingPresent>ja</bhrgcommon:permanentCasingPresent>
@@ -1285,14 +1284,14 @@
           </bhrgcommon:completedInterval>
           <!--0 or more repetitions: -->
           <bhrgcommon:contaminatedInterval>
-            <bhrgcommon:ContaminatedInterval gml:id="id_2030">
+            <bhrgcommon:ContaminatedInterval gml:id="id_0020">
               <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
               <bhrgcommon:endDepth uom="m">0.70</bhrgcommon:endDepth>
             </bhrgcommon:ContaminatedInterval>
           </bhrgcommon:contaminatedInterval>
           <!--1 or more repetitions: -->
           <bhrgcommon:boredInterval>
-            <bhrgcommon:BoredInterval gml:id="id_2040">
+            <bhrgcommon:BoredInterval gml:id="id_0021">
               <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
               <bhrgcommon:endDepth uom="m">1.20</bhrgcommon:endDepth>
               <bhrgcommon:boringTechnique codeSpace="urn:bro:bhrg:BoringTechnique">handDraaien</bhrgcommon:boringTechnique>
@@ -1300,7 +1299,7 @@
             </bhrgcommon:BoredInterval>
           </bhrgcommon:boredInterval>
           <bhrgcommon:boredInterval>
-            <bhrgcommon:BoredInterval gml:id="id_2041">
+            <bhrgcommon:BoredInterval gml:id="id_0022">
               <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
               <bhrgcommon:endDepth uom="m">4.20</bhrgcommon:endDepth>
               <bhrgcommon:boringTechnique codeSpace="urn:bro:bhrg:BoringTechnique">mechanischDrukken</bhrgcommon:boringTechnique>
@@ -1308,7 +1307,7 @@
             </bhrgcommon:BoredInterval>
           </bhrgcommon:boredInterval>
           <bhrgcommon:boredInterval>
-            <bhrgcommon:BoredInterval gml:id="id_2042">
+            <bhrgcommon:BoredInterval gml:id="id_0023">
               <bhrgcommon:beginDepth uom="m">4.20</bhrgcommon:beginDepth>
               <bhrgcommon:endDepth uom="m">6.80</bhrgcommon:endDepth>
               <bhrgcommon:boringTechnique codeSpace="urn:bro:bhrg:BoringTechnique">mechanischDraaienOnverbuisd</bhrgcommon:boringTechnique>
@@ -1317,14 +1316,14 @@
           </bhrgcommon:boredInterval>
           <!--0 or more repetitions: -->
           <bhrgcommon:excavatedLayer>
-            <bhrgcommon:ExcavatedLayer gml:id="id_2050">
+            <bhrgcommon:ExcavatedLayer gml:id="id_0024">
               <bhrgcommon:upperBoundary uom="m">0.00</bhrgcommon:upperBoundary>
               <bhrgcommon:excavatedMaterial codeSpace="urn:bro:bhrg:ExcavatedMaterial">ophoogmateriaalLicht</bhrgcommon:excavatedMaterial>
               <bhrgcommon:lowerBoundary uom="m">0.35</bhrgcommon:lowerBoundary>
             </bhrgcommon:ExcavatedLayer>
           </bhrgcommon:excavatedLayer>
           <bhrgcommon:excavatedLayer>
-            <bhrgcommon:ExcavatedLayer gml:id="id_2051">
+            <bhrgcommon:ExcavatedLayer gml:id="id_0025">
               <bhrgcommon:upperBoundary uom="m">0.35</bhrgcommon:upperBoundary>
               <bhrgcommon:excavatedMaterial codeSpace="urn:bro:bhrg:ExcavatedMaterial">veen</bhrgcommon:excavatedMaterial>
               <bhrgcommon:lowerBoundary uom="m">0.85</bhrgcommon:lowerBoundary>
@@ -1334,7 +1333,7 @@
       </boring>
       <!-- Optional: -->
       <fluidMudLayer>
-        <bhrgcommon:FluidMudLayer gml:id="id_3001">
+        <bhrgcommon:FluidMudLayer gml:id="id_0026">
           <bhrgcommon:thickness uom="m">0.20</bhrgcommon:thickness>
           <bhrgcommon:colour codeSpace="urn:bro:bhrg:Colour">bruinZwart</bhrgcommon:colour>
           <bhrgcommon:upperBoundaryPositioningMethod codeSpace="urn:bro:bhrg:FluidMudLayerPositioningMethod">visueel</bhrgcommon:upperBoundaryPositioningMethod>
