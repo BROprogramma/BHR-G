@@ -344,9 +344,9 @@ Explanation: De diepte van het niveau wordt geschat op basis van aspecten als kl
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element name="postSedimentaryDiscontinuity" type="bhrgcommon:PostSedimentaryDiscontinuityPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
-          <xs:element name="notDescribedInterval" type="bhrgcommon:NotDescribedIntervalPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
           <xs:element name="layer" type="bhrgcommon:LayerPropertyType" nillable="false" minOccurs="1" maxOccurs="unbounded"/>
+          <xs:element name="notDescribedInterval" type="bhrgcommon:NotDescribedIntervalPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="postSedimentaryDiscontinuity" type="bhrgcommon:PostSedimentaryDiscontinuityPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -654,11 +654,11 @@ Explanation: De afwerking geeft inzicht in hoe de ondergrond is achtergelaten na
 Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="sampledInterval" type="bhrgcommon:SampledIntervalPropertyType" nillable="false" minOccurs="1" maxOccurs="unbounded"/>
-          <xs:element name="completedInterval" type="bhrgcommon:CompletedIntervalPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
-          <xs:element name="contaminatedInterval" type="bhrgcommon:ContaminatedIntervalPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
-          <xs:element name="boredInterval" type="bhrgcommon:BoredIntervalPropertyType" nillable="false" minOccurs="1" maxOccurs="unbounded"/>
           <xs:element name="excavatedLayer" type="bhrgcommon:ExcavatedLayerPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="boredInterval" type="bhrgcommon:BoredIntervalPropertyType" nillable="false" minOccurs="1" maxOccurs="unbounded"/>
+          <xs:element name="sampledInterval" type="bhrgcommon:SampledIntervalPropertyType" nillable="false" minOccurs="1" maxOccurs="unbounded"/>
+          <xs:element name="contaminatedInterval" type="bhrgcommon:ContaminatedIntervalPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="completedInterval" type="bhrgcommon:CompletedIntervalPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -2210,21 +2210,9 @@ Explanation: Het is goede praktijk dat de uitvoerder van het booronderzoek bijzo
       </xs:element>
     </xs:sequence>
   </xs:complexType>
-  <!-- TODO: verplaatsen naar de reeks met codelijsten: -->
-  <xs:complexType name="GeologicalSoilNameCodelistType">
-    <xs:simpleContent>
-      <xs:restriction base="gml:CodeWithAuthorityType">
-        <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:GeologicalSoilName"/>
-      </xs:restriction>
-    </xs:simpleContent>
-  </xs:complexType>
   <xs:complexType name="SoilType">
     <xs:sequence>
-      <!--
-      <xs:element name="geologicalSoilName" type="bhrgcommon:GeologicalSoilNamePropertyType" minOccurs="1" maxOccurs="1">
-        <xs:annotation>
-      -->
-      <xs:element name="geologicalSoilName" type="bhrgcommon:GeologicalSoilNameCodelistType" minOccurs="1" maxOccurs="1">
+      <xs:element name="geologicalSoilName" type="bhrgcommon:GeologicalSoilNameType" minOccurs="1" maxOccurs="1">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>GeologicalSoilName</CodeListName>
@@ -2430,36 +2418,6 @@ Explanation: Het gegeven wordt alleen vastgelegd wanneer een laag onder bepaalde
       <xs:element name="soil" type="bhrgcommon:SoilType" nillable="false" minOccurs="1" maxOccurs="1"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="GeologicalSoilName" type="bhrgcommon:GeologicalSoilNameType">
-    <xs:annotation>
-      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De lijst met de grondsoorten vanuit geologisch perspectief.</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="GeologicalSoilNameType">
-    <xs:sequence>
-      <xs:element name="Waarde" type="xs:string" minOccurs="1" maxOccurs="1">
-        <xs:annotation>
-          <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De naam van de geologische grondsoort.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="Categorie" type="xs:string" minOccurs="1" maxOccurs="1">
-        <xs:annotation>
-          <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De categorie waarin de geologische grondsoort valt.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="Omschrijving" type="xs:string" minOccurs="1" maxOccurs="1">
-        <xs:annotation>
-          <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De omschrijving van de geologische grondsoort.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-    <!--Geologicalsoilname is a external referencelist-->
-  </xs:complexType>
-  <xs:complexType name="GeologicalSoilNamePropertyType">
-    <xs:sequence minOccurs="0">
-      <xs:element ref="bhrgcommon:GeologicalSoilName"/>
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="ActivityTypeType">
     <xs:simpleContent>
       <xs:restriction base="gml:CodeWithAuthorityType">
@@ -2639,6 +2597,13 @@ Explanation: Het gegeven wordt alleen vastgelegd wanneer een laag onder bepaalde
     <xs:simpleContent>
       <xs:restriction base="gml:CodeWithAuthorityType">
         <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:GeologicalOrigin"/>
+      </xs:restriction>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="GeologicalSoilNameType">
+    <xs:simpleContent>
+      <xs:restriction base="gml:CodeWithAuthorityType">
+        <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:bhrg:GeologicalSoilName"/>
       </xs:restriction>
     </xs:simpleContent>
   </xs:complexType>
