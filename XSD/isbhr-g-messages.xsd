@@ -106,9 +106,9 @@ Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de b
           <xs:element name="deliveredLocation" type="bhrgcom:DeliveredLocationType" nillable="false" minOccurs="1" maxOccurs="1"/>
           <xs:element name="deliveredVerticalPosition" type="bhrgcom:DeliveredVerticalPositionType" nillable="false" minOccurs="1" maxOccurs="1"/>
           <xs:element name="siteCharacteristic" type="bhrgcom:SiteCharacteristicType" nillable="false" minOccurs="0" maxOccurs="1"/>
-          <xs:element name="boreholeSampleDescription" type="bhrgcom:BoreholeSampleDescriptionPropertyType" nillable="false" minOccurs="1" maxOccurs="1"/>
           <xs:element name="boring" type="bhrgcom:BoringPropertyType" nillable="false" minOccurs="1" maxOccurs="1"/>
           <xs:element name="fluidMudLayer" type="bhrgcom:FluidMudLayerPropertyType" nillable="false" minOccurs="0" maxOccurs="1"/>
+          <xs:element name="boreholeSampleDescription" type="bhrgcom:BoreholeSampleDescriptionPropertyType" nillable="false" minOccurs="1" maxOccurs="1"/>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>

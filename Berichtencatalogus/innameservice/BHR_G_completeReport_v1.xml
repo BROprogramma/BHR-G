@@ -85,6 +85,258 @@
         <!-- Optional: -->
         <bhrgcommon:temporaryChange codeSpace="urn:bro:bhrg:TemporaryChange">voorbelasting</bhrgcommon:temporaryChange>
       </siteCharacteristic>
+      <boring>
+        <bhrgcommon:Boring gml:id="id_0014">
+          <bhrgcommon:boringStartDate>2020-07-14</bhrgcommon:boringStartDate>
+          <bhrgcommon:boringEndDate>2020-07-31</bhrgcommon:boringEndDate>
+          <bhrgcommon:preparation codeSpace="urn:bro:bhrg:Preparation">verticaleDrainage</bhrgcommon:preparation>
+          <!-- Optional: -->
+          <bhrgcommon:finalDepthPreparation uom="m">4.00</bhrgcommon:finalDepthPreparation>
+          <bhrgcommon:trajectoryExcavated>ja</bhrgcommon:trajectoryExcavated>
+          <!-- Optional: -->
+          <bhrgcommon:finalDepthExcavation uom="m">1.00</bhrgcommon:finalDepthExcavation>
+          <bhrgcommon:rockReached>nee</bhrgcommon:rockReached>
+          <!--1 to 2 repetitions: -->
+          <bhrgcommon:boringProcedure codeSpace="urn:bro:bhrg:BoringProcedure">SIKB2001vanafV6.0</bhrgcommon:boringProcedure>
+          <bhrgcommon:boringProcedure codeSpace="urn:bro:bhrg:BoringProcedure">bedrijfSpecifiek</bhrgcommon:boringProcedure>
+          <bhrgcommon:finalDepthBoring uom="m">6.80</bhrgcommon:finalDepthBoring>
+          <bhrgcommon:stopCriterion codeSpace="urn:bro:bhrg:StopCriterionField">einddoel</bhrgcommon:stopCriterion>
+          <!-- Optional: -->
+          <bhrgcommon:temporaryCasingUsed>ja</bhrgcommon:temporaryCasingUsed>
+          <!-- Optional: -->
+          <bhrgcommon:finalDepthTemporaryCasing uom="m">4.00</bhrgcommon:finalDepthTemporaryCasing>
+          <!-- Optional: -->
+          <bhrgcommon:flushingMediumUsed>ja</bhrgcommon:flushingMediumUsed>
+          <!-- Optional: -->
+          <bhrgcommon:flushingAdditive codeSpace="urn:bro:bhrg:FlushingAdditive">bentoniet</bhrgcommon:flushingAdditive>
+          <!-- Optional: -->
+          <bhrgcommon:groundwaterLevel uom="m">0.80</bhrgcommon:groundwaterLevel>
+          <bhrgcommon:samplingProcedure codeSpace="urn:bro:bhrg:SamplingProcedure">ISO22475d1v2006</bhrgcommon:samplingProcedure>
+          <bhrgcommon:finalDepthSampling uom="m">6.80</bhrgcommon:finalDepthSampling>
+          <bhrgcommon:subsurfaceContaminated>ja</bhrgcommon:subsurfaceContaminated>
+          <bhrgcommon:boreholeCompleted>ja</bhrgcommon:boreholeCompleted>
+          <!-- Optional: -->
+          <bhrgcommon:boringOperator>
+            <!-- You have a CHOICE of the next 2 items at this level
+            <brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
+            <brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
+            -->
+            <brocom:europeanCompanyRegistrationNumber>DEB8537.HRB66039</brocom:europeanCompanyRegistrationNumber>
+          </bhrgcommon:boringOperator>
+          <!--1 or more repetitions: -->
+          <bhrgcommon:sampledInterval>
+            <bhrgcommon:SampledInterval gml:id="id_0015">
+              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">1.00</bhrgcommon:endDepth>
+              <bhrgcommon:preTreatment codeSpace="urn:bro:bhrg:PreTreatment">geen</bhrgcommon:preTreatment>
+              <bhrgcommon:samplingMethod codeSpace="urn:bro:bhrg:SamplingMethod">graven</bhrgcommon:samplingMethod>
+              <bhrgcommon:samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseE</bhrgcommon:samplingQuality>
+              <!-- Optional: -->
+              <bhrgcommon:orientatedSampled>nee</bhrgcommon:orientatedSampled>
+              <!-- Optional: -->
+              <bhrgcommon:sampler>
+                <bhrgcommon:samplerType codeSpace="urn:bro:bhrg:SamplerType">guts</bhrgcommon:samplerType>
+                <!-- Optional: not allowed if samplerType=guts
+                <bhrgcommon:sampleContainerDiameter uom="mm"></bhrgcommon:sampleContainerDiameter>
+                -->
+                <!-- Optional: not allowed if samplerType=guts
+                <bhrgcommon:sampleContainerLength uom="m"></bhrgcommon:sampleContainerLength>
+                -->
+                <!-- Optional: not allowed if samplerType=guts
+                <bhrgcommon:cuttingShoeInsideDiameter uom="mm"></bhrgcommon:cuttingShoeInsideDiameter>
+                -->
+                <!-- Optional: not allowed if samplerType=guts
+                <bhrgcommon:stockingUsed></bhrgcommon:stockingUsed>
+                -->
+                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner]
+                <bhrgcommon:rightAngledCuttingShoe></bhrgcommon:rightAngledCuttingShoe>
+                -->
+                <!-- Optional: only allowed if rightAngledCuttingShoe=nee
+                <bhrgcommon:taperAngle uom="deg"></bhrgcommon:taperAngle>
+                -->
+                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner]
+                <bhrgcommon:cuttingShoeOutsideDiameter uom="mm"></bhrgcommon:cuttingShoeOutsideDiameter>
+                -->
+                <!-- Optional: mandatory and only allowed if samplerType=[corebarrelSingleTube, corebarrelDoubleTube, corebarrelTripleTube, steekbus]
+                <bhrgcommon:lubricationFluidUsed></bhrgcommon:lubricationFluidUsed>
+                -->
+                <!-- Optional: not allowed if samplerType=guts
+                <bhrgcommon:coreCatcherPresent></bhrgcommon:coreCatcherPresent>
+                -->
+                <!-- Optional: not allowed if samplerType=guts
+                <bhrgcommon:pistonPresent></bhrgcommon:pistonPresent>
+                -->
+              </bhrgcommon:sampler>
+            </bhrgcommon:SampledInterval>
+          </bhrgcommon:sampledInterval>
+          <bhrgcommon:sampledInterval>
+            <bhrgcommon:SampledInterval gml:id="id_0016">
+              <bhrgcommon:beginDepth uom="m">1.00</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">3.50</bhrgcommon:endDepth>
+              <bhrgcommon:preTreatment codeSpace="urn:bro:bhrg:PreTreatment">geen</bhrgcommon:preTreatment>
+              <bhrgcommon:samplingMethod codeSpace="urn:bro:bhrg:SamplingMethod">opDiepteGrijpen</bhrgcommon:samplingMethod>
+              <bhrgcommon:samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseD</bhrgcommon:samplingQuality>
+              <!-- Optional: -->
+              <bhrgcommon:orientatedSampled>ja</bhrgcommon:orientatedSampled>
+              <!-- Optional: -->
+              <bhrgcommon:sampler>
+                <bhrgcommon:samplerType codeSpace="urn:bro:bhrg:SamplerType">steekbusDLDS</bhrgcommon:samplerType>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:sampleContainerDiameter uom="mm">80</bhrgcommon:sampleContainerDiameter>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:sampleContainerLength uom="m">0.10</bhrgcommon:sampleContainerLength>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:cuttingShoeInsideDiameter uom="mm">40</bhrgcommon:cuttingShoeInsideDiameter>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:stockingUsed>ja</bhrgcommon:stockingUsed>
+                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner] -->
+                <bhrgcommon:rightAngledCuttingShoe>nee</bhrgcommon:rightAngledCuttingShoe>
+                <!-- Optional: only allowed if rightAngledCuttingShoe=nee -->
+                <bhrgcommon:taperAngle uom="deg">30</bhrgcommon:taperAngle>
+                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner] -->
+                <bhrgcommon:cuttingShoeOutsideDiameter uom="mm">44</bhrgcommon:cuttingShoeOutsideDiameter>
+                <!-- Optional: mandatory and only allowed if samplerType=[corebarrelSingleTube, corebarrelDoubleTube, corebarrelTripleTube, steekbus]
+                <bhrgcommon:lubricationFluidUsed></bhrgcommon:lubricationFluidUsed>
+                -->
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:coreCatcherPresent>nee</bhrgcommon:coreCatcherPresent>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:pistonPresent>ja</bhrgcommon:pistonPresent>
+              </bhrgcommon:sampler>
+            </bhrgcommon:SampledInterval>
+          </bhrgcommon:sampledInterval>
+          <bhrgcommon:sampledInterval>
+            <bhrgcommon:SampledInterval gml:id="id_0017">
+              <bhrgcommon:beginDepth uom="m">3.50</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">6.80</bhrgcommon:endDepth>
+              <bhrgcommon:preTreatment codeSpace="urn:bro:bhrg:PreTreatment">geen</bhrgcommon:preTreatment>
+              <bhrgcommon:samplingMethod codeSpace="urn:bro:bhrg:SamplingMethod">opDiepteKernen</bhrgcommon:samplingMethod>
+              <bhrgcommon:samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseA</bhrgcommon:samplingQuality>
+              <!-- Optional: -->
+              <bhrgcommon:orientatedSampled>ja</bhrgcommon:orientatedSampled>
+              <!-- Optional: -->
+              <bhrgcommon:sampler>
+                <bhrgcommon:samplerType codeSpace="urn:bro:bhrg:SamplerType">corebarrelDoubleTube</bhrgcommon:samplerType>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:sampleContainerDiameter uom="mm">60</bhrgcommon:sampleContainerDiameter>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:sampleContainerLength uom="m">0.20</bhrgcommon:sampleContainerLength>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:cuttingShoeInsideDiameter uom="mm">20</bhrgcommon:cuttingShoeInsideDiameter>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:stockingUsed>nee</bhrgcommon:stockingUsed>
+                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner]
+                <bhrgcommon:rightAngledCuttingShoe>nee</bhrgcommon:rightAngledCuttingShoe>
+                -->
+                <!-- Optional: only allowed if rightAngledCuttingShoe=nee
+                <bhrgcommon:taperAngle uom="deg">30</bhrgcommon:taperAngle>
+                -->
+                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner]
+                <bhrgcommon:cuttingShoeOutsideDiameter uom="mm">44</bhrgcommon:cuttingShoeOutsideDiameter>
+                -->
+                <!-- Optional: mandatory and only allowed if samplerType=[corebarrelSingleTube, corebarrelDoubleTube, corebarrelTripleTube, steekbus] -->
+                <bhrgcommon:lubricationFluidUsed>nee</bhrgcommon:lubricationFluidUsed>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:coreCatcherPresent>ja</bhrgcommon:coreCatcherPresent>
+                <!-- Optional: not allowed if samplerType=guts -->
+                <bhrgcommon:pistonPresent>ja</bhrgcommon:pistonPresent>
+              </bhrgcommon:sampler>
+            </bhrgcommon:SampledInterval>
+          </bhrgcommon:sampledInterval>
+          <!--0 or more repetitions: -->
+          <bhrgcommon:completedInterval>
+            <bhrgcommon:CompletedInterval gml:id="id_0018">
+              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">3.50</bhrgcommon:endDepth>
+              <bhrgcommon:permanentCasingPresent>nee</bhrgcommon:permanentCasingPresent>
+              <!-- Optional: Mandatory and only allowed if permanentCasingPresent=ja
+              <bhrgcommon:diameterPermanentCasing uom=""></bhrgcommon:diameterPermanentCasing>
+              -->
+              <!-- Optional: Mandatory and only allowed if permanentCasingPresent=ja
+              <bhrgcommon:materialPermanentCasing codeSpace=""></bhrgcommon:materialPermanentCasing>
+              -->
+              <bhrgcommon:backfillMaterial codeSpace="urn:bro:bhrg:BackfillMaterial">zandMiddelgrof</bhrgcommon:backfillMaterial>
+              <!-- Optional: Mandatory and only allowed if BackfillMaterial=[zand, zandGrof, zandMiddelgrof, zandMiddelgrofGrof, grind, grindZand, grindZandGrof, grindZandOngezeefd] -->
+              <bhrgcommon:backfillMaterialWashed>ja</bhrgcommon:backfillMaterialWashed>
+              <!-- Optional: Not allowed if BackfillMaterial=[geen, verwijderdMateriaal, wegverhardingsmateriaal] -->
+              <bhrgcommon:backfillMaterialCertified>ja</bhrgcommon:backfillMaterialCertified>
+            </bhrgcommon:CompletedInterval>
+          </bhrgcommon:completedInterval>
+          <bhrgcommon:completedInterval>
+            <bhrgcommon:CompletedInterval gml:id="id_0019">
+              <bhrgcommon:beginDepth uom="m">3.50</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">6.80</bhrgcommon:endDepth>
+              <bhrgcommon:permanentCasingPresent>ja</bhrgcommon:permanentCasingPresent>
+              <!-- Optional: Mandatory and only allowed if permanentCasingPresent=ja -->
+              <bhrgcommon:diameterPermanentCasing uom="mm">70</bhrgcommon:diameterPermanentCasing>
+              <!-- Optional: Mandatory and only allowed if permanentCasingPresent=ja -->
+              <bhrgcommon:materialPermanentCasing codeSpace="urn:bro:bhrg:CasingMaterial">staalRoestvrij</bhrgcommon:materialPermanentCasing>
+              <bhrgcommon:backfillMaterial codeSpace="urn:bro:bhrg:BackfillMaterial">bentoniet</bhrgcommon:backfillMaterial>
+              <!-- Optional: Mandatory and only allowed if BackfillMaterial=[zand, zandGrof, zandMiddelgrof, zandMiddelgrofGrof, grind, grindZand, grindZandGrof, grindZandOngezeefd]
+              <bhrgcommon:backfillMaterialWashed>ja</bhrgcommon:backfillMaterialWashed>
+              -->
+              <!-- Optional: Not allowed if BackfillMaterial=[geen, verwijderdMateriaal, wegverhardingsmateriaal] -->
+              <bhrgcommon:backfillMaterialCertified>nee</bhrgcommon:backfillMaterialCertified>
+            </bhrgcommon:CompletedInterval>
+          </bhrgcommon:completedInterval>
+          <!--0 or more repetitions: -->
+          <bhrgcommon:contaminatedInterval>
+            <bhrgcommon:ContaminatedInterval gml:id="id_0020">
+              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">0.70</bhrgcommon:endDepth>
+            </bhrgcommon:ContaminatedInterval>
+          </bhrgcommon:contaminatedInterval>
+          <!--1 or more repetitions: -->
+          <bhrgcommon:boredInterval>
+            <bhrgcommon:BoredInterval gml:id="id_0021">
+              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">1.20</bhrgcommon:endDepth>
+              <bhrgcommon:boringTechnique codeSpace="urn:bro:bhrg:BoringTechnique">handDraaien</bhrgcommon:boringTechnique>
+              <bhrgcommon:boredDiameter uom="mm">20</bhrgcommon:boredDiameter>
+            </bhrgcommon:BoredInterval>
+          </bhrgcommon:boredInterval>
+          <bhrgcommon:boredInterval>
+            <bhrgcommon:BoredInterval gml:id="id_0022">
+              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">4.20</bhrgcommon:endDepth>
+              <bhrgcommon:boringTechnique codeSpace="urn:bro:bhrg:BoringTechnique">mechanischDrukken</bhrgcommon:boringTechnique>
+              <bhrgcommon:boredDiameter uom="mm">40</bhrgcommon:boredDiameter>
+            </bhrgcommon:BoredInterval>
+          </bhrgcommon:boredInterval>
+          <bhrgcommon:boredInterval>
+            <bhrgcommon:BoredInterval gml:id="id_0023">
+              <bhrgcommon:beginDepth uom="m">4.20</bhrgcommon:beginDepth>
+              <bhrgcommon:endDepth uom="m">6.80</bhrgcommon:endDepth>
+              <bhrgcommon:boringTechnique codeSpace="urn:bro:bhrg:BoringTechnique">mechanischDraaienOnverbuisd</bhrgcommon:boringTechnique>
+              <bhrgcommon:boredDiameter uom="mm">60</bhrgcommon:boredDiameter>
+            </bhrgcommon:BoredInterval>
+          </bhrgcommon:boredInterval>
+          <!--0 or more repetitions: -->
+          <bhrgcommon:excavatedLayer>
+            <bhrgcommon:ExcavatedLayer gml:id="id_0024">
+              <bhrgcommon:upperBoundary uom="m">0.00</bhrgcommon:upperBoundary>
+              <bhrgcommon:excavatedMaterial codeSpace="urn:bro:bhrg:ExcavatedMaterial">ophoogmateriaalLicht</bhrgcommon:excavatedMaterial>
+              <bhrgcommon:lowerBoundary uom="m">0.35</bhrgcommon:lowerBoundary>
+            </bhrgcommon:ExcavatedLayer>
+          </bhrgcommon:excavatedLayer>
+          <bhrgcommon:excavatedLayer>
+            <bhrgcommon:ExcavatedLayer gml:id="id_0025">
+              <bhrgcommon:upperBoundary uom="m">0.35</bhrgcommon:upperBoundary>
+              <bhrgcommon:excavatedMaterial codeSpace="urn:bro:bhrg:ExcavatedMaterial">veen</bhrgcommon:excavatedMaterial>
+              <bhrgcommon:lowerBoundary uom="m">0.85</bhrgcommon:lowerBoundary>
+            </bhrgcommon:ExcavatedLayer>
+          </bhrgcommon:excavatedLayer>
+        </bhrgcommon:Boring>
+      </boring>
+      <!-- Optional: -->
+      <fluidMudLayer>
+        <bhrgcommon:FluidMudLayer gml:id="id_0026">
+          <bhrgcommon:thickness uom="m">0.20</bhrgcommon:thickness>
+          <bhrgcommon:colour codeSpace="urn:bro:bhrg:Colour">bruinZwart</bhrgcommon:colour>
+          <bhrgcommon:upperBoundaryPositioningMethod codeSpace="urn:bro:bhrg:FluidMudLayerPositioningMethod">visueel</bhrgcommon:upperBoundaryPositioningMethod>
+          <bhrgcommon:lowerBoundaryPositioningMethod codeSpace="urn:bro:bhrg:FluidMudLayerPositioningMethod">visueel</bhrgcommon:lowerBoundaryPositioningMethod>
+        </bhrgcommon:FluidMudLayer>
+      </fluidMudLayer>
       <!-- Optional: mandatory in a BHR_G_CompleteReport_v1 sourceDocument -->
       <boreholeSampleDescription>
         <bhrgcommon:BoreholeSampleDescription gml:id="id_0003">
@@ -1088,258 +1340,6 @@
           </bhrgcommon:descriptiveBoreholeLog>
         </bhrgcommon:BoreholeSampleDescription>
       </boreholeSampleDescription>
-      <boring>
-        <bhrgcommon:Boring gml:id="id_0014">
-          <bhrgcommon:boringStartDate>2020-07-14</bhrgcommon:boringStartDate>
-          <bhrgcommon:boringEndDate>2020-07-31</bhrgcommon:boringEndDate>
-          <bhrgcommon:preparation codeSpace="urn:bro:bhrg:Preparation">verticaleDrainage</bhrgcommon:preparation>
-          <!-- Optional: -->
-          <bhrgcommon:finalDepthPreparation uom="m">4.00</bhrgcommon:finalDepthPreparation>
-          <bhrgcommon:trajectoryExcavated>ja</bhrgcommon:trajectoryExcavated>
-          <!-- Optional: -->
-          <bhrgcommon:finalDepthExcavation uom="m">1.00</bhrgcommon:finalDepthExcavation>
-          <bhrgcommon:rockReached>nee</bhrgcommon:rockReached>
-          <!--1 to 2 repetitions: -->
-          <bhrgcommon:boringProcedure codeSpace="urn:bro:bhrg:BoringProcedure">SIKB2001vanafV6.0</bhrgcommon:boringProcedure>
-          <bhrgcommon:boringProcedure codeSpace="urn:bro:bhrg:BoringProcedure">bedrijfSpecifiek</bhrgcommon:boringProcedure>
-          <bhrgcommon:finalDepthBoring uom="m">6.80</bhrgcommon:finalDepthBoring>
-          <bhrgcommon:stopCriterion codeSpace="urn:bro:bhrg:StopCriterionField">einddoel</bhrgcommon:stopCriterion>
-          <!-- Optional: -->
-          <bhrgcommon:temporaryCasingUsed>ja</bhrgcommon:temporaryCasingUsed>
-          <!-- Optional: -->
-          <bhrgcommon:finalDepthTemporaryCasing uom="m">4.00</bhrgcommon:finalDepthTemporaryCasing>
-          <!-- Optional: -->
-          <bhrgcommon:flushingMediumUsed>ja</bhrgcommon:flushingMediumUsed>
-          <!-- Optional: -->
-          <bhrgcommon:flushingAdditive codeSpace="urn:bro:bhrg:FlushingAdditive">bentoniet</bhrgcommon:flushingAdditive>
-          <!-- Optional: -->
-          <bhrgcommon:groundwaterLevel uom="m">0.80</bhrgcommon:groundwaterLevel>
-          <bhrgcommon:samplingProcedure codeSpace="urn:bro:bhrg:SamplingProcedure">ISO22475d1v2006</bhrgcommon:samplingProcedure>
-          <bhrgcommon:finalDepthSampling uom="m">6.80</bhrgcommon:finalDepthSampling>
-          <bhrgcommon:subsurfaceContaminated>ja</bhrgcommon:subsurfaceContaminated>
-          <bhrgcommon:boreholeCompleted>ja</bhrgcommon:boreholeCompleted>
-          <!-- Optional: -->
-          <bhrgcommon:boringOperator>
-            <!-- You have a CHOICE of the next 2 items at this level
-            <brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
-            <brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
-            -->
-            <brocom:europeanCompanyRegistrationNumber>DEB8537.HRB66039</brocom:europeanCompanyRegistrationNumber>
-          </bhrgcommon:boringOperator>
-          <!--1 or more repetitions: -->
-          <bhrgcommon:sampledInterval>
-            <bhrgcommon:SampledInterval gml:id="id_0015">
-              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
-              <bhrgcommon:endDepth uom="m">1.00</bhrgcommon:endDepth>
-              <bhrgcommon:preTreatment codeSpace="urn:bro:bhrg:PreTreatment">geen</bhrgcommon:preTreatment>
-              <bhrgcommon:samplingMethod codeSpace="urn:bro:bhrg:SamplingMethod">graven</bhrgcommon:samplingMethod>
-              <bhrgcommon:samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseE</bhrgcommon:samplingQuality>
-              <!-- Optional: -->
-              <bhrgcommon:orientatedSampled>nee</bhrgcommon:orientatedSampled>
-              <!-- Optional: -->
-              <bhrgcommon:sampler>
-                <bhrgcommon:samplerType codeSpace="urn:bro:bhrg:SamplerType">guts</bhrgcommon:samplerType>
-                <!-- Optional: not allowed if samplerType=guts
-                <bhrgcommon:sampleContainerDiameter uom="mm"></bhrgcommon:sampleContainerDiameter>
-                -->
-                <!-- Optional: not allowed if samplerType=guts
-                <bhrgcommon:sampleContainerLength uom="m"></bhrgcommon:sampleContainerLength>
-                -->
-                <!-- Optional: not allowed if samplerType=guts
-                <bhrgcommon:cuttingShoeInsideDiameter uom="mm"></bhrgcommon:cuttingShoeInsideDiameter>
-                -->
-                <!-- Optional: not allowed if samplerType=guts
-                <bhrgcommon:stockingUsed></bhrgcommon:stockingUsed>
-                -->
-                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner]
-                <bhrgcommon:rightAngledCuttingShoe></bhrgcommon:rightAngledCuttingShoe>
-                -->
-                <!-- Optional: only allowed if rightAngledCuttingShoe=nee
-                <bhrgcommon:taperAngle uom="deg"></bhrgcommon:taperAngle>
-                -->
-                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner]
-                <bhrgcommon:cuttingShoeOutsideDiameter uom="mm"></bhrgcommon:cuttingShoeOutsideDiameter>
-                -->
-                <!-- Optional: mandatory and only allowed if samplerType=[corebarrelSingleTube, corebarrelDoubleTube, corebarrelTripleTube, steekbus]
-                <bhrgcommon:lubricationFluidUsed></bhrgcommon:lubricationFluidUsed>
-                -->
-                <!-- Optional: not allowed if samplerType=guts
-                <bhrgcommon:coreCatcherPresent></bhrgcommon:coreCatcherPresent>
-                -->
-                <!-- Optional: not allowed if samplerType=guts
-                <bhrgcommon:pistonPresent></bhrgcommon:pistonPresent>
-                -->
-              </bhrgcommon:sampler>
-            </bhrgcommon:SampledInterval>
-          </bhrgcommon:sampledInterval>
-          <bhrgcommon:sampledInterval>
-            <bhrgcommon:SampledInterval gml:id="id_0016">
-              <bhrgcommon:beginDepth uom="m">1.00</bhrgcommon:beginDepth>
-              <bhrgcommon:endDepth uom="m">3.50</bhrgcommon:endDepth>
-              <bhrgcommon:preTreatment codeSpace="urn:bro:bhrg:PreTreatment">geen</bhrgcommon:preTreatment>
-              <bhrgcommon:samplingMethod codeSpace="urn:bro:bhrg:SamplingMethod">opDiepteGrijpen</bhrgcommon:samplingMethod>
-              <bhrgcommon:samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseD</bhrgcommon:samplingQuality>
-              <!-- Optional: -->
-              <bhrgcommon:orientatedSampled>ja</bhrgcommon:orientatedSampled>
-              <!-- Optional: -->
-              <bhrgcommon:sampler>
-                <bhrgcommon:samplerType codeSpace="urn:bro:bhrg:SamplerType">steekbusDLDS</bhrgcommon:samplerType>
-                <!-- Optional: not allowed if samplerType=guts -->
-                <bhrgcommon:sampleContainerDiameter uom="mm">80</bhrgcommon:sampleContainerDiameter>
-                <!-- Optional: not allowed if samplerType=guts -->
-                <bhrgcommon:sampleContainerLength uom="m">0.10</bhrgcommon:sampleContainerLength>
-                <!-- Optional: not allowed if samplerType=guts -->
-                <bhrgcommon:cuttingShoeInsideDiameter uom="mm">40</bhrgcommon:cuttingShoeInsideDiameter>
-                <!-- Optional: not allowed if samplerType=guts -->
-                <bhrgcommon:stockingUsed>ja</bhrgcommon:stockingUsed>
-                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner] -->
-                <bhrgcommon:rightAngledCuttingShoe>nee</bhrgcommon:rightAngledCuttingShoe>
-                <!-- Optional: only allowed if rightAngledCuttingShoe=nee -->
-                <bhrgcommon:taperAngle uom="deg">30</bhrgcommon:taperAngle>
-                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner] -->
-                <bhrgcommon:cuttingShoeOutsideDiameter uom="mm">44</bhrgcommon:cuttingShoeOutsideDiameter>
-                <!-- Optional: mandatory and only allowed if samplerType=[corebarrelSingleTube, corebarrelDoubleTube, corebarrelTripleTube, steekbus]
-                <bhrgcommon:lubricationFluidUsed></bhrgcommon:lubricationFluidUsed>
-                -->
-                <!-- Optional: not allowed if samplerType=guts -->
-                <bhrgcommon:coreCatcherPresent>nee</bhrgcommon:coreCatcherPresent>
-                <!-- Optional: not allowed if samplerType=guts -->
-                <bhrgcommon:pistonPresent>ja</bhrgcommon:pistonPresent>
-              </bhrgcommon:sampler>
-            </bhrgcommon:SampledInterval>
-          </bhrgcommon:sampledInterval>
-          <bhrgcommon:sampledInterval>
-            <bhrgcommon:SampledInterval gml:id="id_0017">
-              <bhrgcommon:beginDepth uom="m">3.50</bhrgcommon:beginDepth>
-              <bhrgcommon:endDepth uom="m">6.80</bhrgcommon:endDepth>
-              <bhrgcommon:preTreatment codeSpace="urn:bro:bhrg:PreTreatment">geen</bhrgcommon:preTreatment>
-              <bhrgcommon:samplingMethod codeSpace="urn:bro:bhrg:SamplingMethod">opDiepteKernen</bhrgcommon:samplingMethod>
-              <bhrgcommon:samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseA</bhrgcommon:samplingQuality>
-              <!-- Optional: -->
-              <bhrgcommon:orientatedSampled>ja</bhrgcommon:orientatedSampled>
-              <!-- Optional: -->
-              <bhrgcommon:sampler>
-                <bhrgcommon:samplerType codeSpace="urn:bro:bhrg:SamplerType">corebarrelDoubleTube</bhrgcommon:samplerType>
-                <!-- Optional: not allowed if samplerType=guts -->
-                <bhrgcommon:sampleContainerDiameter uom="mm">60</bhrgcommon:sampleContainerDiameter>
-                <!-- Optional: not allowed if samplerType=guts -->
-                <bhrgcommon:sampleContainerLength uom="m">0.20</bhrgcommon:sampleContainerLength>
-                <!-- Optional: not allowed if samplerType=guts -->
-                <bhrgcommon:cuttingShoeInsideDiameter uom="mm">20</bhrgcommon:cuttingShoeInsideDiameter>
-                <!-- Optional: not allowed if samplerType=guts -->
-                <bhrgcommon:stockingUsed>nee</bhrgcommon:stockingUsed>
-                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner]
-                <bhrgcommon:rightAngledCuttingShoe>nee</bhrgcommon:rightAngledCuttingShoe>
-                -->
-                <!-- Optional: only allowed if rightAngledCuttingShoe=nee
-                <bhrgcommon:taperAngle uom="deg">30</bhrgcommon:taperAngle>
-                -->
-                <!-- Optional: mandatory and only allowed if samplerType=[steekbus, steekbusDLDS, steekbusMetLiner]
-                <bhrgcommon:cuttingShoeOutsideDiameter uom="mm">44</bhrgcommon:cuttingShoeOutsideDiameter>
-                -->
-                <!-- Optional: mandatory and only allowed if samplerType=[corebarrelSingleTube, corebarrelDoubleTube, corebarrelTripleTube, steekbus] -->
-                <bhrgcommon:lubricationFluidUsed>nee</bhrgcommon:lubricationFluidUsed>
-                <!-- Optional: not allowed if samplerType=guts -->
-                <bhrgcommon:coreCatcherPresent>ja</bhrgcommon:coreCatcherPresent>
-                <!-- Optional: not allowed if samplerType=guts -->
-                <bhrgcommon:pistonPresent>ja</bhrgcommon:pistonPresent>
-              </bhrgcommon:sampler>
-            </bhrgcommon:SampledInterval>
-          </bhrgcommon:sampledInterval>
-          <!--0 or more repetitions: -->
-          <bhrgcommon:completedInterval>
-            <bhrgcommon:CompletedInterval gml:id="id_0018">
-              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
-              <bhrgcommon:endDepth uom="m">3.50</bhrgcommon:endDepth>
-              <bhrgcommon:permanentCasingPresent>nee</bhrgcommon:permanentCasingPresent>
-              <!-- Optional: Mandatory and only allowed if permanentCasingPresent=ja
-              <bhrgcommon:diameterPermanentCasing uom=""></bhrgcommon:diameterPermanentCasing>
-              -->
-              <!-- Optional: Mandatory and only allowed if permanentCasingPresent=ja
-              <bhrgcommon:materialPermanentCasing codeSpace=""></bhrgcommon:materialPermanentCasing>
-              -->
-              <bhrgcommon:backfillMaterial codeSpace="urn:bro:bhrg:BackfillMaterial">zandMiddelgrof</bhrgcommon:backfillMaterial>
-              <!-- Optional: Mandatory and only allowed if BackfillMaterial=[zand, zandGrof, zandMiddelgrof, zandMiddelgrofGrof, grind, grindZand, grindZandGrof, grindZandOngezeefd] -->
-              <bhrgcommon:backfillMaterialWashed>ja</bhrgcommon:backfillMaterialWashed>
-              <!-- Optional: Not allowed if BackfillMaterial=[geen, verwijderdMateriaal, wegverhardingsmateriaal] -->
-              <bhrgcommon:backfillMaterialCertified>ja</bhrgcommon:backfillMaterialCertified>
-            </bhrgcommon:CompletedInterval>
-          </bhrgcommon:completedInterval>
-          <bhrgcommon:completedInterval>
-            <bhrgcommon:CompletedInterval gml:id="id_0019">
-              <bhrgcommon:beginDepth uom="m">3.50</bhrgcommon:beginDepth>
-              <bhrgcommon:endDepth uom="m">6.80</bhrgcommon:endDepth>
-              <bhrgcommon:permanentCasingPresent>ja</bhrgcommon:permanentCasingPresent>
-              <!-- Optional: Mandatory and only allowed if permanentCasingPresent=ja -->
-              <bhrgcommon:diameterPermanentCasing uom="mm">70</bhrgcommon:diameterPermanentCasing>
-              <!-- Optional: Mandatory and only allowed if permanentCasingPresent=ja -->
-              <bhrgcommon:materialPermanentCasing codeSpace="urn:bro:bhrg:CasingMaterial">staalRoestvrij</bhrgcommon:materialPermanentCasing>
-              <bhrgcommon:backfillMaterial codeSpace="urn:bro:bhrg:BackfillMaterial">bentoniet</bhrgcommon:backfillMaterial>
-              <!-- Optional: Mandatory and only allowed if BackfillMaterial=[zand, zandGrof, zandMiddelgrof, zandMiddelgrofGrof, grind, grindZand, grindZandGrof, grindZandOngezeefd]
-              <bhrgcommon:backfillMaterialWashed>ja</bhrgcommon:backfillMaterialWashed>
-              -->
-              <!-- Optional: Not allowed if BackfillMaterial=[geen, verwijderdMateriaal, wegverhardingsmateriaal] -->
-              <bhrgcommon:backfillMaterialCertified>nee</bhrgcommon:backfillMaterialCertified>
-            </bhrgcommon:CompletedInterval>
-          </bhrgcommon:completedInterval>
-          <!--0 or more repetitions: -->
-          <bhrgcommon:contaminatedInterval>
-            <bhrgcommon:ContaminatedInterval gml:id="id_0020">
-              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
-              <bhrgcommon:endDepth uom="m">0.70</bhrgcommon:endDepth>
-            </bhrgcommon:ContaminatedInterval>
-          </bhrgcommon:contaminatedInterval>
-          <!--1 or more repetitions: -->
-          <bhrgcommon:boredInterval>
-            <bhrgcommon:BoredInterval gml:id="id_0021">
-              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
-              <bhrgcommon:endDepth uom="m">1.20</bhrgcommon:endDepth>
-              <bhrgcommon:boringTechnique codeSpace="urn:bro:bhrg:BoringTechnique">handDraaien</bhrgcommon:boringTechnique>
-              <bhrgcommon:boredDiameter uom="mm">20</bhrgcommon:boredDiameter>
-            </bhrgcommon:BoredInterval>
-          </bhrgcommon:boredInterval>
-          <bhrgcommon:boredInterval>
-            <bhrgcommon:BoredInterval gml:id="id_0022">
-              <bhrgcommon:beginDepth uom="m">0.00</bhrgcommon:beginDepth>
-              <bhrgcommon:endDepth uom="m">4.20</bhrgcommon:endDepth>
-              <bhrgcommon:boringTechnique codeSpace="urn:bro:bhrg:BoringTechnique">mechanischDrukken</bhrgcommon:boringTechnique>
-              <bhrgcommon:boredDiameter uom="mm">40</bhrgcommon:boredDiameter>
-            </bhrgcommon:BoredInterval>
-          </bhrgcommon:boredInterval>
-          <bhrgcommon:boredInterval>
-            <bhrgcommon:BoredInterval gml:id="id_0023">
-              <bhrgcommon:beginDepth uom="m">4.20</bhrgcommon:beginDepth>
-              <bhrgcommon:endDepth uom="m">6.80</bhrgcommon:endDepth>
-              <bhrgcommon:boringTechnique codeSpace="urn:bro:bhrg:BoringTechnique">mechanischDraaienOnverbuisd</bhrgcommon:boringTechnique>
-              <bhrgcommon:boredDiameter uom="mm">60</bhrgcommon:boredDiameter>
-            </bhrgcommon:BoredInterval>
-          </bhrgcommon:boredInterval>
-          <!--0 or more repetitions: -->
-          <bhrgcommon:excavatedLayer>
-            <bhrgcommon:ExcavatedLayer gml:id="id_0024">
-              <bhrgcommon:upperBoundary uom="m">0.00</bhrgcommon:upperBoundary>
-              <bhrgcommon:excavatedMaterial codeSpace="urn:bro:bhrg:ExcavatedMaterial">ophoogmateriaalLicht</bhrgcommon:excavatedMaterial>
-              <bhrgcommon:lowerBoundary uom="m">0.35</bhrgcommon:lowerBoundary>
-            </bhrgcommon:ExcavatedLayer>
-          </bhrgcommon:excavatedLayer>
-          <bhrgcommon:excavatedLayer>
-            <bhrgcommon:ExcavatedLayer gml:id="id_0025">
-              <bhrgcommon:upperBoundary uom="m">0.35</bhrgcommon:upperBoundary>
-              <bhrgcommon:excavatedMaterial codeSpace="urn:bro:bhrg:ExcavatedMaterial">veen</bhrgcommon:excavatedMaterial>
-              <bhrgcommon:lowerBoundary uom="m">0.85</bhrgcommon:lowerBoundary>
-            </bhrgcommon:ExcavatedLayer>
-          </bhrgcommon:excavatedLayer>
-        </bhrgcommon:Boring>
-      </boring>
-      <!-- Optional: -->
-      <fluidMudLayer>
-        <bhrgcommon:FluidMudLayer gml:id="id_0026">
-          <bhrgcommon:thickness uom="m">0.20</bhrgcommon:thickness>
-          <bhrgcommon:colour codeSpace="urn:bro:bhrg:Colour">bruinZwart</bhrgcommon:colour>
-          <bhrgcommon:upperBoundaryPositioningMethod codeSpace="urn:bro:bhrg:FluidMudLayerPositioningMethod">visueel</bhrgcommon:upperBoundaryPositioningMethod>
-          <bhrgcommon:lowerBoundaryPositioningMethod codeSpace="urn:bro:bhrg:FluidMudLayerPositioningMethod">visueel</bhrgcommon:lowerBoundaryPositioningMethod>
-        </bhrgcommon:FluidMudLayer>
-      </fluidMudLayer>
     </BHR_G_CompleteReport_V1>
   </sourceDocument>
 </registrationRequest>
