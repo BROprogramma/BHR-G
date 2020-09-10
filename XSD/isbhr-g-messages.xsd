@@ -22,7 +22,7 @@
     <xs:complexContent>
       <xs:extension base="brocom:RegistrationRequestType">
         <xs:sequence>
-          <xs:element name="sourceDocument" type="isbhrg:BHR_G_completeReport_v1PropertyType" nillable="false" minOccurs="1" maxOccurs="1">
+          <xs:element name="sourceDocument" type="isbhrg:BHR_G_CompleteReport_V1PropertyType" nillable="false" minOccurs="1" maxOccurs="1">
             <xs:annotation>
               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het element sourceDocument bevat gegevens die in het BRO-systeem geregistreerd zullen worden en die in de catalogus van het registratieobject zijn gespecificeerd, met uitzondering van de gegevens die door het BRO-systeem worden gegenereerd of afgeleid uit het innameverzoek.</xs:documentation>
             </xs:annotation>
@@ -31,12 +31,12 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="BHR_G_completeReport_v1" type="isbhrg:BHR_G_completeReport_v1Type" substitutionGroup="gml:AbstractFeature">
+  <xs:element name="BHR_G_CompleteReport_V1" type="isbhrg:BHR_G_CompleteReport_V1Type" substitutionGroup="gml:AbstractFeature">
     <xs:annotation>
       <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens die het booronderzoek identificeren en inzicht geven in de geschiedenis van het object voorafgaand aan opname in de registratie ondergrond.</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="BHR_G_completeReport_v1Type">
+  <xs:complexType name="BHR_G_CompleteReport_V1Type">
     <xs:complexContent>
       <xs:extension base="gml:AbstractFeatureType">
         <xs:sequence>
@@ -113,9 +113,9 @@ Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de b
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="BHR_G_completeReport_v1PropertyType">
+  <xs:complexType name="BHR_G_CompleteReport_V1PropertyType">
     <xs:sequence minOccurs="1">
-      <xs:element ref="isbhrg:BHR_G_completeReport_v1"/>
+      <xs:element ref="isbhrg:BHR_G_CompleteReport_V1"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>

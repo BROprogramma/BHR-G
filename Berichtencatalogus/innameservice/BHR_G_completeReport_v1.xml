@@ -13,12 +13,12 @@
   <brocom:requestReference>BRO-BHR-G-1596</brocom:requestReference>
   <!-- Optional: -->
   <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
-  <!--Optional: not allowed in combination with sourceDocument BHR_G_completeReport_v1.
+  <!--Optional: not allowed in combination with sourceDocument BHR_G_CompleteReport_v1.
   <brocom:broId>?</brocom:broId>
   -->
   <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
   <sourceDocument>
-    <BHR_G_completeReport_v1 gml:id="id_0001">
+    <BHR_G_CompleteReport_V1 gml:id="id_0001">
       <objectIdAccountableParty>myIdForThisBoreholeResearch</objectIdAccountableParty>
       <deliveryContext codeSpace="urn:bro:bhrg:DeliveryContext">RO</deliveryContext>
       <surveyPurpose codeSpace="urn:bro:bhrg:SurveyPurpose">gebiedsmodelOrdeningOndergrond</surveyPurpose>
@@ -85,7 +85,7 @@
         <!-- Optional: -->
         <bhrgcommon:temporaryChange codeSpace="urn:bro:bhrg:TemporaryChange">voorbelasting</bhrgcommon:temporaryChange>
       </siteCharacteristic>
-      <!-- Optional: mandatory in a BHR_G_completeReport_v1 sourceDocument -->
+      <!-- Optional: mandatory in a BHR_G_CompleteReport_v1 sourceDocument -->
       <boreholeSampleDescription>
         <bhrgcommon:BoreholeSampleDescription gml:id="id_0003">
           <bhrgcommon:descriptionReportDate>2020-08-01</bhrgcommon:descriptionReportDate>
@@ -1340,6 +1340,6 @@
           <bhrgcommon:lowerBoundaryPositioningMethod codeSpace="urn:bro:bhrg:FluidMudLayerPositioningMethod">visueel</bhrgcommon:lowerBoundaryPositioningMethod>
         </bhrgcommon:FluidMudLayer>
       </fluidMudLayer>
-    </BHR_G_completeReport_v1>
+    </BHR_G_CompleteReport_V1>
   </sourceDocument>
 </registrationRequest>
