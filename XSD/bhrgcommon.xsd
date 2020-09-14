@@ -348,9 +348,9 @@ Explanation: De diepte van het niveau wordt geschat op basis van aspecten als kl
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element minOccurs="0" maxOccurs="unbounded" name="postSedimentaryDiscontinuity" nillable="false" type="bhrgcommon:PostSedimentaryDiscontinuityPropertyType"/>
-          <xs:element minOccurs="0" maxOccurs="unbounded" name="notDescribedInterval" nillable="false" type="bhrgcommon:NotDescribedIntervalPropertyType"/>
           <xs:element minOccurs="1" maxOccurs="unbounded" name="layer" nillable="false" type="bhrgcommon:LayerPropertyType"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="notDescribedInterval" nillable="false" type="bhrgcommon:NotDescribedIntervalPropertyType"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="postSedimentaryDiscontinuity" nillable="false" type="bhrgcommon:PostSedimentaryDiscontinuityPropertyType"/>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -383,15 +383,6 @@ Explanation: Het gegeven is aanwezig wanneer in het onderzoek is vastgesteld dat
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element name="excavatedMaterial" minOccurs="1" maxOccurs="1" type="bhrgcommon:ExcavatedMaterialType">
-            <xs:annotation>
-              <xs:appinfo>
-                <CodeListName>ExcavatedMaterial</CodeListName>
-                <CodeListURI/>
-              </xs:appinfo>
-              <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De omschrijving van het materiaal waaruit de weggegraven laag bestaat.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
           <xs:element name="lowerBoundary" minOccurs="1" maxOccurs="1">
             <xs:annotation>
               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De diepte van de onderkant van de laag.</xs:documentation>
@@ -403,6 +394,15 @@ Explanation: Het gegeven is aanwezig wanneer in het onderzoek is vastgesteld dat
                 </xs:restriction>
               </xs:simpleContent>
             </xs:complexType>
+          </xs:element>
+          <xs:element name="excavatedMaterial" minOccurs="1" maxOccurs="1" type="bhrgcommon:ExcavatedMaterialType">
+            <xs:annotation>
+              <xs:appinfo>
+                <CodeListName>ExcavatedMaterial</CodeListName>
+                <CodeListURI/>
+              </xs:appinfo>
+              <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De omschrijving van het materiaal waaruit de weggegraven laag bestaat.</xs:documentation>
+            </xs:annotation>
           </xs:element>
         </xs:sequence>
       </xs:extension>
@@ -658,11 +658,11 @@ Explanation: De afwerking geeft inzicht in hoe de ondergrond is achtergelaten na
 Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element minOccurs="1" maxOccurs="unbounded" name="sampledInterval" nillable="false" type="bhrgcommon:SampledIntervalPropertyType"/>
-          <xs:element minOccurs="0" maxOccurs="unbounded" name="completedInterval" nillable="false" type="bhrgcommon:CompletedIntervalPropertyType"/>
-          <xs:element minOccurs="0" maxOccurs="unbounded" name="contaminatedInterval" nillable="false" type="bhrgcommon:ContaminatedIntervalPropertyType"/>
-          <xs:element minOccurs="1" maxOccurs="unbounded" name="boredInterval" nillable="false" type="bhrgcommon:BoredIntervalPropertyType"/>
           <xs:element minOccurs="0" maxOccurs="unbounded" name="excavatedLayer" nillable="false" type="bhrgcommon:ExcavatedLayerPropertyType"/>
+          <xs:element minOccurs="1" maxOccurs="unbounded" name="boredInterval" nillable="false" type="bhrgcommon:BoredIntervalPropertyType"/>
+          <xs:element minOccurs="1" maxOccurs="unbounded" name="sampledInterval" nillable="false" type="bhrgcommon:SampledIntervalPropertyType"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="contaminatedInterval" nillable="false" type="bhrgcommon:ContaminatedIntervalPropertyType"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="completedInterval" nillable="false" type="bhrgcommon:CompletedIntervalPropertyType"/>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
