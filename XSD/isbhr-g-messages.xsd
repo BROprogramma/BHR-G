@@ -161,19 +161,19 @@ Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de b
                            type="bhrgcommon:SiteCharacteristicType"/>
                <xs:element minOccurs="1"
                            maxOccurs="1"
-                           name="BoreholeSampleDescription"
-                           nillable="false"
-                           type="bhrgcommon:BoreholeSampleDescriptionPropertyType"/>
-               <xs:element minOccurs="1"
-                           maxOccurs="1"
-                           name="Boring"
+                           name="boring"
                            nillable="false"
                            type="bhrgcommon:BoringPropertyType"/>
                <xs:element minOccurs="0"
                            maxOccurs="1"
-                           name="FluidMudLayer"
+                           name="fluidMudLayer"
                            nillable="false"
                            type="bhrgcommon:FluidMudLayerPropertyType"/>
+               <xs:element minOccurs="1"
+                           maxOccurs="1"
+                           name="boreholeSampleDescription"
+                           nillable="false"
+                           type="bhrgcommon:BoreholeSampleDescriptionPropertyType"/>
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>
