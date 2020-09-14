@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:bhrgcommon="http://www.broservices.nl/xsd/bhrgcommon/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0" targetNamespace="http://www.broservices.nl/xsd/bhrgcommon/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0">
+<xs:schema xmlns:bhrgcommon="http://www.broservices.nl/xsd/bhrgcommon/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0" targetNamespace="http://www.broservices.nl/xsd/bhrgcommon/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.9.0">
   <xs:annotation>
     <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
       <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
     </xs:appinfo>
   </xs:annotation>
+  <!--
+   <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
+   <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+  -->
   <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
   <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
   <xs:element name="BoredInterval" type="bhrgcommon:BoredIntervalType" substitutionGroup="gml:AbstractFeature">
@@ -42,7 +46,7 @@ Explanation: Normaliter is de begindiepte van het bovenste geboord interval geli
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element name="boringTechnique" type="bhrgcommon:BoringTechniqueType" minOccurs="1" maxOccurs="1">
+          <xs:element name="boringTechnique" minOccurs="1" maxOccurs="1" type="bhrgcommon:BoringTechniqueType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>BoringTechnique</CodeListName>
@@ -90,7 +94,7 @@ Explanation: Het gaat om de diameter van het gat dat door boren is ontstaan. Het
 Explanation: Hoewel historische gegevens nog buiten het bereik van deze versie van de catalogus vallen, is wel al met zekerheid vast te stellen dat de eerste datum waarop een onderzoek kan zijn afgerond in 1877 ligt.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="descriptionProcedure" type="bhrgcommon:DescriptionProcedureType" minOccurs="1" maxOccurs="1">
+          <xs:element name="descriptionProcedure" minOccurs="1" maxOccurs="1" type="bhrgcommon:DescriptionProcedureType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>DescriptionProcedure</CodeListName>
@@ -100,7 +104,7 @@ Explanation: Hoewel historische gegevens nog buiten het bereik van deze versie v
 Explanation: De procedure beschrijft volgens welk stelsel van afspraken de monsters beschreven zijn en welke aspecten worden beschreven. Procedures zijn in het algemeen vastgelegd in een norm, protocol of richtlijn. Dat kan overigens een richtlijn zijn die de uitvoerder voor zichzelf gebruikt. Het gegeven is opgenomen omdat het inzicht biedt in de kwaliteit van het werk. Het gebruik van procedures varieert van vakgebied tot vakgebied en voor grond gelden andere afspraken dan voor gesteente.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="utensil" type="bhrgcommon:UtensilType" minOccurs="0" maxOccurs="1">
+          <xs:element name="utensil" minOccurs="0" maxOccurs="1" type="bhrgcommon:UtensilType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>Utensil</CodeListName>
@@ -110,13 +114,13 @@ Explanation: De procedure beschrijft volgens welk stelsel van afspraken de monst
 Explanation: Het gegeven wordt alleen vastgelegd wanneer er in aanvulling op de procedure extra hulpmiddelen zijn gebruikt. De hulpmiddelen worden gebruikt om eigenschappen van de zandfractie op een meer betrouwbare wijze te bepalen.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="descriptionOperator" type="brocom:OrganizationType" minOccurs="0" maxOccurs="1">
+          <xs:element name="descriptionOperator" minOccurs="0" maxOccurs="1" type="brocom:OrganizationType">
             <xs:annotation>
               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die voor de bronhouder geldt als verantwoordelijk voor de uitvoering van de boormonsterbeschrijving, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
 Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="descriptiveBoreholeLog" type="bhrgcommon:DescriptiveBoreholeLogPropertyType" nillable="false" minOccurs="1" maxOccurs="2"/>
+          <xs:element minOccurs="1" maxOccurs="2" name="descriptiveBoreholeLog" nillable="false" type="bhrgcommon:DescriptiveBoreholeLogPropertyType"/>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -223,7 +227,7 @@ Explanation: De wand van het geboorde gat kan over bepaalde trajecten worden ver
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element name="materialPermanentCasing" type="bhrgcommon:CasingMaterialType" minOccurs="0" maxOccurs="1">
+          <xs:element name="materialPermanentCasing" minOccurs="0" maxOccurs="1" type="bhrgcommon:CasingMaterialType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>CasingMaterial</CodeListName>
@@ -232,7 +236,7 @@ Explanation: De wand van het geboorde gat kan over bepaalde trajecten worden ver
               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het materiaal waaruit de op de gegeven diepte achtergebleven buizen bestaan.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="backfillMaterial" type="bhrgcommon:BackfillMaterialType" minOccurs="1" maxOccurs="1">
+          <xs:element name="backfillMaterial" minOccurs="1" maxOccurs="1" type="bhrgcommon:BackfillMaterialType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>BackfillMaterial</CodeListName>
@@ -273,7 +277,7 @@ Explanation: Het resultaat van de boormonsterbeschrijving omvat een of twee boor
     <xs:complexContent>
       <xs:extension base="gml:AbstractFeatureType">
         <xs:sequence>
-          <xs:element name="descriptionQuality" type="bhrgcommon:DescriptionQualityType" minOccurs="1" maxOccurs="1">
+          <xs:element name="descriptionQuality" minOccurs="1" maxOccurs="1" type="bhrgcommon:DescriptionQualityType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>DescriptionQuality</CodeListName>
@@ -289,7 +293,7 @@ Explanation: Het gegeven geeft de mate van detail van de beschrijving aan en of 
 Explanation: Het gegeven vormt voor booronderzoek dat onder kwaliteitsregime IMBRO valt, een brug tussen bemonstering en beschrijving. Wanneer de boring, eventueel inclusief het weggegraven traject, van maaiveld tot einddiepte is bemonsterd en de monsters voldoende in kwaliteit overeenstemmen, kan de ondergrond over het gehele traject worden beschreven als een aaneensluitende opeenvolging van lagen. Het is goede praktijk dat bij geroerde monsters het gehele traject is bemonsterd en beschreven. Door omstandigheden kan het voorkomen dat bepaalde intervallen niet beschreven worden. Bij continue bemonstering is het boorprofiel in dat geval een aaneensluitende opvolging van lagen en niet-beschreven intervallen.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="descriptionLocation" type="bhrgcommon:DescriptionLocationType" minOccurs="1" maxOccurs="1">
+          <xs:element name="descriptionLocation" minOccurs="1" maxOccurs="1" type="bhrgcommon:DescriptionLocationType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>DescriptionLocation</CodeListName>
@@ -299,7 +303,7 @@ Explanation: Het gegeven vormt voor booronderzoek dat onder kwaliteitsregime IMB
 Explanation: Het is bij mechanische boortechnieken gebruikelijk in het veld alleen de geroerde monsters te beschrijven en de ongeroerde monsters in het laboratorium. Beschrijven in het veld heeft als nadeel dat de omstandigheden niet ideaal zijn, bijvoorbeeld vanwege het weer, maar als voordeel dat de monsters veldvochtig zijn en niet verstoord door de handelingen die nodig zijn om de monsters in het laboratorium te krijgen. De nadelen van een beschrijving in het veld wegen zwaarder dan de voordelen wanneer een hoge kwaliteit monsters vereist is. Om die monsters zonder kwaliteitsverlies vanuit het veld aan het laboratorium over te dragen worden de procedures gevolgd die voor het vakgebied geotechniek zijn opgesteld. De procedures laten de uitvoerder vrij te besluiten alle monsters in het lab te beschrijven.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="describedMaterial" type="bhrgcommon:DescribedMaterialType" minOccurs="1" maxOccurs="1">
+          <xs:element name="describedMaterial" minOccurs="1" maxOccurs="1" type="bhrgcommon:DescribedMaterialType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>DescribedMaterial</CodeListName>
@@ -308,7 +312,7 @@ Explanation: Het is bij mechanische boortechnieken gebruikelijk in het veld alle
               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De omschrijving van het materiaal dat is beschreven in het profiel.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="sampleMoistness" type="bhrgcommon:SampleMoistnessType" minOccurs="1" maxOccurs="1">
+          <xs:element name="sampleMoistness" minOccurs="1" maxOccurs="1" type="bhrgcommon:SampleMoistnessType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>SampleMoistness</CodeListName>
@@ -344,9 +348,9 @@ Explanation: De diepte van het niveau wordt geschat op basis van aspecten als kl
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element name="layer" type="bhrgcommon:LayerPropertyType" nillable="false" minOccurs="1" maxOccurs="unbounded"/>
-          <xs:element name="notDescribedInterval" type="bhrgcommon:NotDescribedIntervalPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
-          <xs:element name="postSedimentaryDiscontinuity" type="bhrgcommon:PostSedimentaryDiscontinuityPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="postSedimentaryDiscontinuity" nillable="false" type="bhrgcommon:PostSedimentaryDiscontinuityPropertyType"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="notDescribedInterval" nillable="false" type="bhrgcommon:NotDescribedIntervalPropertyType"/>
+          <xs:element minOccurs="1" maxOccurs="unbounded" name="layer" nillable="false" type="bhrgcommon:LayerPropertyType"/>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -379,7 +383,7 @@ Explanation: Het gegeven is aanwezig wanneer in het onderzoek is vastgesteld dat
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element name="excavatedMaterial" type="bhrgcommon:ExcavatedMaterialType" minOccurs="1" maxOccurs="1">
+          <xs:element name="excavatedMaterial" minOccurs="1" maxOccurs="1" type="bhrgcommon:ExcavatedMaterialType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>ExcavatedMaterial</CodeListName>
@@ -432,7 +436,7 @@ Explanation: Bij boren op water is op sommige plaatsen niet direct duidelijk waa
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element name="colour" type="bhrgcommon:ColourType" minOccurs="1" maxOccurs="1">
+          <xs:element name="colour" minOccurs="1" maxOccurs="1" type="bhrgcommon:ColourType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>Colour</CodeListName>
@@ -441,7 +445,7 @@ Explanation: Bij boren op water is op sommige plaatsen niet direct duidelijk waa
               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De kleur van de sliblaag.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="upperBoundaryPositioningMethod" type="bhrgcommon:FluidMudLayerPositioningMethodType" minOccurs="1" maxOccurs="1">
+          <xs:element name="upperBoundaryPositioningMethod" minOccurs="1" maxOccurs="1" type="bhrgcommon:FluidMudLayerPositioningMethodType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>FluidMudLayerPositioningMethod</CodeListName>
@@ -451,7 +455,7 @@ Explanation: Bij boren op water is op sommige plaatsen niet direct duidelijk waa
 Explanation: De dikte van de sliblaag wordt bepaald door de bovenkant en de onderkant van de laag ten opzichte van het wateroppervlak te bepalen. In veel gevallen wordt voor de positiebepaling van de bovenkant een andere methode gebruikt dan voor de positiebepaling van de onderkant. Het gegeven geeft inzicht in de nauwkeurigheid waarmee de dikte van de sliblaag is bepaald.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="lowerBoundaryPositioningMethod" type="bhrgcommon:FluidMudLayerPositioningMethodType" minOccurs="1" maxOccurs="1">
+          <xs:element name="lowerBoundaryPositioningMethod" minOccurs="1" maxOccurs="1" type="bhrgcommon:FluidMudLayerPositioningMethodType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>FluidMudLayerPositioningMethod</CodeListName>
@@ -491,7 +495,7 @@ Explanation: Hoewel historische gegevens nog buiten het bereik van deze versie v
 Explanation: Hoewel historische gegevens nog buiten het bereik van deze versie van de catalogus vallen, is wel al met zekerheid vast te stellen dat de oudste datum van boren in 1605 ligt.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="preparation" type="bhrgcommon:PreparationType" minOccurs="1" maxOccurs="1">
+          <xs:element name="preparation" minOccurs="1" maxOccurs="1" type="bhrgcommon:PreparationType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>Preparation</CodeListName>
@@ -536,7 +540,7 @@ Explanation: Wanneer het bovenste deel van de ondergrond wordt weggegraven hangt
 Explanation: Wanneer de ondergrond niet uit grond maar uit gesteente bestaat, worden in het onderzoek andere gegevens vastgelegd dan gewoonlijk het geval is. In deze versie van de catalogus is het beschrijven van gesteente niet opgenomen.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="boringProcedure" type="bhrgcommon:BoringProcedureType" minOccurs="1" maxOccurs="2">
+          <xs:element name="boringProcedure" minOccurs="1" maxOccurs="2" type="bhrgcommon:BoringProcedureType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>BoringProcedure</CodeListName>
@@ -558,7 +562,7 @@ Explanation: De procedure beschrijft de manier van werken, de passende hulpmidde
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element name="stopCriterion" type="bhrgcommon:StopCriterionFieldType" minOccurs="1" maxOccurs="1">
+          <xs:element name="stopCriterion" minOccurs="1" maxOccurs="1" type="bhrgcommon:StopCriterionFieldType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>StopCriterionField</CodeListName>
@@ -592,7 +596,7 @@ Explanation: Bij bepaalde boortechnieken, de zgn. onverbuisde technieken, is tij
 Explanation: Bij bepaalde boortechnieken, de zgn. onverbuisde technieken, is tijdens het boren sprake van een geheel of gedeeltelijk open gat. Het kan nodig zijn tijdens het boren spoeling te gebruiken om in het gat voldoende tegendruk op te bouwen. In dat geval voegt men een bepaalde toeslag toe aan het werkwater om een vloeistof met voldoende massa samen te stellen. In de toekomst zal spoeling mogelijk ook gebruikt gaan worden bij andere boortechnieken.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="flushingAdditive" type="bhrgcommon:FlushingAdditiveType" minOccurs="0" maxOccurs="1">
+          <xs:element name="flushingAdditive" minOccurs="0" maxOccurs="1" type="bhrgcommon:FlushingAdditiveType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>FlushingAdditive</CodeListName>
@@ -614,7 +618,7 @@ Explanation: Het is goede praktijk de grondwaterstand te bepalen, maar aan een e
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element name="samplingProcedure" type="bhrgcommon:SamplingProcedureType" minOccurs="1" maxOccurs="1">
+          <xs:element name="samplingProcedure" minOccurs="1" maxOccurs="1" type="bhrgcommon:SamplingProcedureType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>SamplingProcedure</CodeListName>
@@ -648,17 +652,17 @@ Explanation: Het gegeven geeft aan of de eigenschappen van de ondergrond onbedoe
 Explanation: De afwerking geeft inzicht in hoe de ondergrond is achtergelaten na afloop van de werkzaamheden in het veld.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="boringOperator" type="brocom:OrganizationType" minOccurs="0" maxOccurs="1">
+          <xs:element name="boringOperator" minOccurs="0" maxOccurs="1" type="brocom:OrganizationType">
             <xs:annotation>
               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die voor de bronhouder geldt als verantwoordelijk voor de uitvoering van de boring en het eventueel leveren van monsters, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
 Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="excavatedLayer" type="bhrgcommon:ExcavatedLayerPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
-          <xs:element name="boredInterval" type="bhrgcommon:BoredIntervalPropertyType" nillable="false" minOccurs="1" maxOccurs="unbounded"/>
-          <xs:element name="sampledInterval" type="bhrgcommon:SampledIntervalPropertyType" nillable="false" minOccurs="1" maxOccurs="unbounded"/>
-          <xs:element name="contaminatedInterval" type="bhrgcommon:ContaminatedIntervalPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
-          <xs:element name="completedInterval" type="bhrgcommon:CompletedIntervalPropertyType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element minOccurs="1" maxOccurs="unbounded" name="sampledInterval" nillable="false" type="bhrgcommon:SampledIntervalPropertyType"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="completedInterval" nillable="false" type="bhrgcommon:CompletedIntervalPropertyType"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="contaminatedInterval" nillable="false" type="bhrgcommon:ContaminatedIntervalPropertyType"/>
+          <xs:element minOccurs="1" maxOccurs="unbounded" name="boredInterval" nillable="false" type="bhrgcommon:BoredIntervalPropertyType"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="excavatedLayer" nillable="false" type="bhrgcommon:ExcavatedLayerPropertyType"/>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -691,7 +695,7 @@ Explanation: De ondergrond wordt beschouwd als opgebouwd uit lagen en dat zijn h
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element name="upperBoundaryDetermination" type="bhrgcommon:BoundaryPositioningMethodType" minOccurs="1" maxOccurs="1">
+          <xs:element name="upperBoundaryDetermination" minOccurs="1" maxOccurs="1" type="bhrgcommon:BoundaryPositioningMethodType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>BoundaryPositioningMethod</CodeListName>
@@ -713,7 +717,7 @@ Explanation: Wanneer de bovengrens samenvalt met het maaiveld of de waterbodem, 
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element name="lowerBoundaryDetermination" type="bhrgcommon:BoundaryPositioningMethodType" minOccurs="1" maxOccurs="1">
+          <xs:element name="lowerBoundaryDetermination" minOccurs="1" maxOccurs="1" type="bhrgcommon:BoundaryPositioningMethodType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>BoundaryPositioningMethod</CodeListName>
@@ -728,7 +732,7 @@ Explanation: Wanneer de bovengrens samenvalt met het maaiveld of de waterbodem, 
 Explanation: Het gegeven heeft betrekking op een waarneming en krijgt alleen de waarde ja, wanneer de beschrijver geconstateerd heeft dat de laag antropogeen is.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="activityType" type="bhrgcommon:ActivityTypeType" minOccurs="0" maxOccurs="1">
+          <xs:element name="activityType" minOccurs="0" maxOccurs="1" type="bhrgcommon:ActivityTypeType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>ActivityType</CodeListName>
@@ -738,7 +742,7 @@ Explanation: Het gegeven heeft betrekking op een waarneming en krijgt alleen de 
 Explanation: Menselijk ingrijpen leidt tot veranderingen in de samenstelling en de eigenschappen van de ondergrond. Het is van belang het menselijk ingrijpen te typeren om ten minste een globaal beeld te geven van de aard van de verandering. Bij het beschrijven van geroerde monsters, wordt het gegeven alleen vastgelegd wanneer de waarde bepaald kan worden. De uitvoerder beoordeelt zelf wanneer dat het geval is.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="specialMaterial" type="bhrgcommon:SpecialMaterialType" minOccurs="0" maxOccurs="1">
+          <xs:element name="specialMaterial" minOccurs="0" maxOccurs="1" type="bhrgcommon:SpecialMaterialType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>SpecialMaterial</CodeListName>
@@ -754,7 +758,7 @@ Explanation: Een laag bestaat uit bijzonder materiaal wanneer meer dan de helft 
 Explanation: Na afzetting kan de laagopbouw van sedimenten veranderen door processen die op de grond inwerken. Het gegeven geeft aan of door het optreden van een dergelijk verandering een interval is ontstaan dat als een aparte laag wordt onderscheiden.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="horizonCode" type="bhrgcommon:HorizonCodeType" minOccurs="0" maxOccurs="1">
+          <xs:element name="horizonCode" minOccurs="0" maxOccurs="1" type="bhrgcommon:HorizonCodeType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>HorizonCode</CodeListName>
@@ -770,7 +774,7 @@ Explanation: Een laag kan deel uitmaken van een bodemhorizont of daarmee samenva
 Explanation: Het kan hier gaan om levende zowel als dode wortels.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="humanMark" type="bhrgcommon:HumanMarkType" minOccurs="0" maxOccurs="1">
+          <xs:element name="humanMark" minOccurs="0" maxOccurs="1" type="bhrgcommon:HumanMarkType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>HumanMark</CodeListName>
@@ -780,7 +784,7 @@ Explanation: Het kan hier gaan om levende zowel als dode wortels.</xs:documentat
 Explanation: Het gegeven geeft, in het geval de opbouw van een laag enigszins is verstoord door de aanwezigheid van de mens, wat de aard van de verstoring is. Het gaat om de verstoring van natuurlijke lagen, omdat het gegeven alleen in dat geval toegevoegde waarde heeft.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="geologicalOrigin" type="bhrgcommon:GeologicalOriginType" minOccurs="0" maxOccurs="1">
+          <xs:element name="geologicalOrigin" minOccurs="0" maxOccurs="1" type="bhrgcommon:GeologicalOriginType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>GeologicalOrigin</CodeListName>
@@ -802,13 +806,13 @@ Explanation: Het gegeven heeft alleen betekenis als het om natuurlijke lagen gaa
 Explanation: Het gegeven kan gebruikers inzicht geven in de omstandigheden waaronder de laag is gevormd.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="slant" type="brocom:IndicationYesNoEnumeration" minOccurs="0" maxOccurs="1">
+          <xs:element name="slant" type="brocom:IndicationYesNoType" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding die aangeeft of de laag scheef staat, terwijl die oorspronkelijk wel (sub-)horizontaal is afgezet.
 Explanation: Lagen in de ondergrond liggen niet altijd horizontaal. Onder bepaalde omstandigheden worden lagen onder een hoek afgezet en na afzetting kunnen lagen zijn scheefgesteld doordat ze onder druk zijn komen te staan. Het gegeven moet in die context worden begrepen.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="structure" type="bhrgcommon:StructureType" minOccurs="0" maxOccurs="1">
+          <xs:element name="structure" minOccurs="0" maxOccurs="1" type="bhrgcommon:StructureType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>Structure</CodeListName>
@@ -818,7 +822,7 @@ Explanation: Lagen in de ondergrond liggen niet altijd horizontaal. Onder bepaal
 Explanation: Het gegeven geeft inzicht in de omstandigheden waaronder de laag is gevormd. In het geval van sedimentaire lagen wordt de interne opbouw bepaald door de processen die tot afzetting hebben geleid. In het geval van post-sedimentaire lagen zijn processen die vanaf het aardoppervlak op de grond inwerken bepalend.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="verticalTrend" type="bhrgcommon:VerticalTrendType" minOccurs="0" maxOccurs="1">
+          <xs:element name="verticalTrend" minOccurs="0" maxOccurs="1" type="bhrgcommon:VerticalTrendType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>VerticalTrend</CodeListName>
@@ -828,10 +832,10 @@ Explanation: Het gegeven geeft inzicht in de omstandigheden waaronder de laag is
 Explanation: Het gegeven geeft inzicht in de omstandigheden waaronder de laag is gevormd.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="archeologicalConstituent" type="bhrgcommon:ArcheologicalConstituentType" nillable="false" minOccurs="0" maxOccurs="3"/>
-          <xs:element name="layerComponent" type="bhrgcommon:LayerComponentType" nillable="false" minOccurs="0" maxOccurs="4"/>
-          <xs:element name="thinStratum" type="bhrgcommon:ThinStratumType" nillable="false" minOccurs="0" maxOccurs="4"/>
-          <xs:element name="soil" type="bhrgcommon:SoilType" nillable="false" minOccurs="0" maxOccurs="1"/>
+          <xs:element minOccurs="0" maxOccurs="3" name="archeologicalConstituent" nillable="false" type="bhrgcommon:ArcheologicalConstituentType"/>
+          <xs:element minOccurs="0" maxOccurs="4" name="layerComponent" nillable="false" type="bhrgcommon:LayerComponentType"/>
+          <xs:element minOccurs="0" maxOccurs="4" name="thinStratum" nillable="false" type="bhrgcommon:ThinStratumType"/>
+          <xs:element minOccurs="0" maxOccurs="1" name="soil" nillable="false" type="bhrgcommon:SoilType"/>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -877,7 +881,7 @@ Explanation: Wanneer het hele traject is bemonsterd om het dieptebereik volledig
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element name="noDescriptionReason" type="bhrgcommon:NoDescriptionReasonType" minOccurs="1" maxOccurs="1">
+          <xs:element name="noDescriptionReason" minOccurs="1" maxOccurs="1" type="bhrgcommon:NoDescriptionReasonType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>NoDescriptionReason</CodeListName>
@@ -931,7 +935,7 @@ Explanation: Het gegeven wordt alleen vastgelegd bij de beschrijving van ongeroe
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element name="discontinuityType" type="bhrgcommon:DiscontinuityTypeType" minOccurs="1" maxOccurs="1">
+          <xs:element name="discontinuityType" minOccurs="1" maxOccurs="1" type="bhrgcommon:DiscontinuityTypeType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>DiscontinuityType</CodeListName>
@@ -984,7 +988,7 @@ Explanation: In het geval het bovenste deel van de ondergrond is weggegraven en 
               </xs:simpleContent>
             </xs:complexType>
           </xs:element>
-          <xs:element name="preTreatment" type="bhrgcommon:PreTreatmentType" minOccurs="1" maxOccurs="1">
+          <xs:element name="preTreatment" minOccurs="1" maxOccurs="1" type="bhrgcommon:PreTreatmentType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>PreTreatment</CodeListName>
@@ -993,7 +997,7 @@ Explanation: In het geval het bovenste deel van de ondergrond is weggegraven en 
               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De werkzaamheden die tijdens het boren zijn uitgevoerd om een bepaald diepte-interval te prepareren ten behoeve van de bemonstering.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="samplingMethod" type="bhrgcommon:SamplingMethodType" minOccurs="1" maxOccurs="1">
+          <xs:element name="samplingMethod" minOccurs="1" maxOccurs="1" type="bhrgcommon:SamplingMethodType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>SamplingMethod</CodeListName>
@@ -1003,7 +1007,7 @@ Explanation: In het geval het bovenste deel van de ondergrond is weggegraven en 
 Explanation: Bij de classificatie van bemonsteren wordt gekeken naar de manier waarop het materiaal uit de ondergrond naar boven is gehaald.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="samplingQuality" type="bhrgcommon:SamplingQualityType" minOccurs="1" maxOccurs="1">
+          <xs:element name="samplingQuality" minOccurs="1" maxOccurs="1" type="bhrgcommon:SamplingQualityType">
             <xs:annotation>
               <xs:appinfo>
                 <CodeListName>SamplingQuality</CodeListName>
@@ -1019,7 +1023,7 @@ Explanation: Idealiter zou men de ondergrond altijd in-situ willen onderzoeken, 
 Explanation: Voor bepaalde vormen van boormonsteranalyse is het nodig de bemonstering zo uit te voeren dat de oriëntatie van de structuur van de ondergrond behouden blijft.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="sampler" type="bhrgcommon:SamplerType" nillable="false" minOccurs="0" maxOccurs="1"/>
+          <xs:element minOccurs="0" maxOccurs="1" name="sampler" nillable="false" type="bhrgcommon:SamplerType"/>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -1030,25 +1034,9 @@ Explanation: Voor bepaalde vormen van boormonsteranalyse is het nodig de bemonst
     </xs:sequence>
     <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
   </xs:complexType>
-  <xs:element name="CoordinateSet" type="bhrgcommon:CoordinateSetType">
-    <xs:annotation>
-      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: zie inleiding catalogus</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="CoordinateSetType">
-    <xs:sequence>
-      <xs:element name="coordinate1" type="gml:MeasureType" minOccurs="1" maxOccurs="1"/>
-      <xs:element name="coordinate2" type="gml:MeasureType" minOccurs="1" maxOccurs="1"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="CoordinateSetPropertyType">
-    <xs:sequence minOccurs="0">
-      <xs:element ref="bhrgcommon:CoordinateSet"/>
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="AnomalousLayerType">
     <xs:sequence>
-      <xs:element name="soilType" type="bhrgcommon:SoilTypeType" minOccurs="0" maxOccurs="1">
+      <xs:element name="soilType" minOccurs="0" maxOccurs="1" type="bhrgcommon:SoilTypeType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>SoilType</CodeListName>
@@ -1057,7 +1045,7 @@ Explanation: Voor bepaalde vormen van boormonsteranalyse is het nodig de bemonst
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het soort grond waaruit de eenheid bestaat, grof getypeerd.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="rockType" type="bhrgcommon:RockTypeType" minOccurs="0" maxOccurs="1">
+      <xs:element name="rockType" minOccurs="0" maxOccurs="1" type="bhrgcommon:RockTypeType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>RockType</CodeListName>
@@ -1079,7 +1067,7 @@ Explanation: Het aandeel wordt geschat.</xs:documentation>
           </xs:simpleContent>
         </xs:complexType>
       </xs:element>
-      <xs:element name="stratumThicknessClass" type="bhrgcommon:StratumThicknessClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="stratumThicknessClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:StratumThicknessClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>StratumThicknessClass</CodeListName>
@@ -1088,7 +1076,7 @@ Explanation: Het aandeel wordt geschat.</xs:documentation>
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De voor het laagje kenmerkende dikte, uitgedrukt in een klasse.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="colour" type="bhrgcommon:ColourType" minOccurs="0" maxOccurs="1">
+      <xs:element name="colour" minOccurs="0" maxOccurs="1" type="bhrgcommon:ColourType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>Colour</CodeListName>
@@ -1098,7 +1086,7 @@ Explanation: Het aandeel wordt geschat.</xs:documentation>
 Explanation: De kleur wordt vastgelegd wanneer het een onderscheidend kenmerk is.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="geologicalOrigin" type="bhrgcommon:GeologicalOriginType" minOccurs="0" maxOccurs="1">
+      <xs:element name="geologicalOrigin" minOccurs="0" maxOccurs="1" type="bhrgcommon:GeologicalOriginType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>GeologicalOrigin</CodeListName>
@@ -1112,7 +1100,7 @@ Explanation: Het gegeven wordt alleen vastgelegd wanneer een laag onder bepaalde
   </xs:complexType>
   <xs:complexType name="ArcheologicalConstituentType">
     <xs:sequence>
-      <xs:element name="constituentType" type="bhrgcommon:ArcheologicalConstituentTypeType" minOccurs="1" maxOccurs="1">
+      <xs:element name="constituentType" minOccurs="1" maxOccurs="1" type="bhrgcommon:ArcheologicalConstituentTypeType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>ArcheologicalConstituentType</CodeListName>
@@ -1121,7 +1109,7 @@ Explanation: Het gegeven wordt alleen vastgelegd wanneer een laag onder bepaalde
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een categorie van bestanddelen die vanuit archeologisch oogpunt interessant is.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="percentageClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="percentageClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -1134,7 +1122,7 @@ Explanation: Het gegeven wordt alleen vastgelegd wanneer een laag onder bepaalde
   </xs:complexType>
   <xs:complexType name="AnimalFossilType">
     <xs:sequence>
-      <xs:element name="animalFossilType" type="bhrgcommon:AnimalFossilTypeType" minOccurs="1" maxOccurs="1">
+      <xs:element name="animalFossilType" minOccurs="1" maxOccurs="1" type="bhrgcommon:AnimalFossilTypeType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>AnimalFossilType</CodeListName>
@@ -1143,7 +1131,7 @@ Explanation: Het gegeven wordt alleen vastgelegd wanneer een laag onder bepaalde
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een categorie van fossiele overblijfselen van dieren.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="percentageClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="percentageClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -1156,7 +1144,7 @@ Explanation: Het gegeven wordt alleen vastgelegd wanneer een laag onder bepaalde
   </xs:complexType>
   <xs:complexType name="ChunkType">
     <xs:sequence>
-      <xs:element name="soilType" type="bhrgcommon:SoilTypeType" minOccurs="1" maxOccurs="1">
+      <xs:element name="soilType" minOccurs="1" maxOccurs="1" type="bhrgcommon:SoilTypeType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>SoilType</CodeListName>
@@ -1165,7 +1153,7 @@ Explanation: Het gegeven wordt alleen vastgelegd wanneer een laag onder bepaalde
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het soort grond waaruit de eenheid bestaat, grof getypeerd.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="sizeClass" type="bhrgcommon:ChunkSizeClassType" minOccurs="0" maxOccurs="1">
+      <xs:element name="sizeClass" minOccurs="0" maxOccurs="1" type="bhrgcommon:ChunkSizeClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>ChunkSizeClass</CodeListName>
@@ -1175,7 +1163,7 @@ Explanation: Het gegeven wordt alleen vastgelegd wanneer een laag onder bepaalde
 Explanation: In geroerde monsters zijn de afmetingen van brokjes van geen betekenis, in ongeroerde monsters kunnen zij voor de expert van betekenis zijn bij het bepalen van de omstandigheden waaronder de laag is gevormd.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="percentageClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="percentageClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -1198,7 +1186,7 @@ Explanation: In geroerde monsters zijn de afmetingen van brokjes van geen beteke
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de plaats van het booronderzoek op het aardoppervlak is bepaald.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="horizontalPositioningMethod" type="bhrgcommon:HorizontalPositioningMethodType" minOccurs="1" maxOccurs="1">
+      <xs:element name="horizontalPositioningMethod" minOccurs="1" maxOccurs="1" type="bhrgcommon:HorizontalPositioningMethodType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>HorizontalPositioningMethod</CodeListName>
@@ -1208,7 +1196,7 @@ Explanation: In geroerde monsters zijn de afmetingen van brokjes van geen beteke
 Explanation: Het gegeven geeft inzicht in de nauwkeurigheid waarmee de plaats van het booronderzoek op het aardoppervlak is bepaald.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="horizontalPositioningOperator" type="brocom:OrganizationType" minOccurs="0" maxOccurs="1">
+      <xs:element name="horizontalPositioningOperator" minOccurs="0" maxOccurs="1" type="brocom:OrganizationType">
         <xs:annotation>
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die voor de bronhouder geldt als verantwoordelijk voor de uitvoering van de plaatsbepaling, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
 Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</xs:documentation>
@@ -1218,7 +1206,7 @@ Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de b
   </xs:complexType>
   <xs:complexType name="DeliveredVerticalPositionType">
     <xs:sequence>
-      <xs:element name="localVerticalReferencePoint" type="bhrgcommon:LocalVerticalReferencePointType" minOccurs="1" maxOccurs="1">
+      <xs:element name="localVerticalReferencePoint" minOccurs="1" maxOccurs="1" type="bhrgcommon:LocalVerticalReferencePointType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>LocalVerticalReferencePoint</CodeListName>
@@ -1254,7 +1242,7 @@ Explanation: Het gegeven geldt op het moment van verticale positiebepaling. Er w
           </xs:simpleContent>
         </xs:complexType>
       </xs:element>
-      <xs:element name="verticalDatum" type="bhrgcommon:VerticalDatumType" minOccurs="1" maxOccurs="1">
+      <xs:element name="verticalDatum" minOccurs="1" maxOccurs="1" type="bhrgcommon:VerticalDatumType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VerticalDatum</CodeListName>
@@ -1269,7 +1257,7 @@ Explanation: Het gegeven geldt op het moment van verticale positiebepaling. Er w
 Explanation: Het gegeven is van belang in verband met mogelijke veranderingen in de positie van het maaiveld of de waterbodem. In het geval de positie is bepaald op basis van het AHN geldt als datum 1 januari van het jaar waarin de gebruikte versie van het AHN voor het gebied waarin de locatie ligt, is vastgesteld.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="verticalPositioningMethod" type="bhrgcommon:VerticalPositioningMethodType" minOccurs="1" maxOccurs="1">
+      <xs:element name="verticalPositioningMethod" minOccurs="1" maxOccurs="1" type="bhrgcommon:VerticalPositioningMethodType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VerticalPositioningMethod</CodeListName>
@@ -1279,7 +1267,7 @@ Explanation: Het gegeven is van belang in verband met mogelijke veranderingen in
 Explanation: Het gegeven geeft inzicht in de nauwkeurigheid waarmee de verticale positie is bepaald.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="verticalPositioningOperator" type="brocom:OrganizationType" minOccurs="0" maxOccurs="1">
+      <xs:element name="verticalPositioningOperator" minOccurs="0" maxOccurs="1" type="brocom:OrganizationType">
         <xs:annotation>
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die voor de bronhouder geldt als verantwoordelijk voor de uitvoering van de bepaling van de verticale positie, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
 Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</xs:documentation>
@@ -1514,15 +1502,15 @@ Explanation: Schelprijke gronden zijn gronden die voor ten minste dertig procent
           </xs:simpleContent>
         </xs:complexType>
       </xs:element>
-      <xs:element name="fineFractionDistributionGravellyMineralSoil" type="bhrgcommon:FineFractionDistributionGravellyMineralSoilType" nillable="false" minOccurs="0" maxOccurs="1"/>
-      <xs:element name="fineFractionDistributionShellySoil" type="bhrgcommon:FineFractionDistributionShellySoilType" nillable="false" minOccurs="0" maxOccurs="1"/>
-      <xs:element name="fineFractionDistributionOrganicSoil" type="bhrgcommon:FineFractionDistributionOrganicSoilType" nillable="false" minOccurs="0" maxOccurs="1"/>
-      <xs:element name="fineFractionDistributionNonGravellyMineralSoil" type="bhrgcommon:FineFractionDistributionNonGravellyMineralSoilType" nillable="false" minOccurs="0" maxOccurs="1"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="fineFractionDistributionGravellyMineralSoil" nillable="false" type="bhrgcommon:FineFractionDistributionGravellyMineralSoilType"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="fineFractionDistributionShellySoil" nillable="false" type="bhrgcommon:FineFractionDistributionShellySoilType"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="fineFractionDistributionOrganicSoil" nillable="false" type="bhrgcommon:FineFractionDistributionOrganicSoilType"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="fineFractionDistributionNonGravellyMineralSoil" nillable="false" type="bhrgcommon:FineFractionDistributionNonGravellyMineralSoilType"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="GravelConstituentType">
     <xs:sequence>
-      <xs:element name="gravelType" type="bhrgcommon:GravelTypeType" minOccurs="1" maxOccurs="1">
+      <xs:element name="gravelType" minOccurs="1" maxOccurs="1" type="bhrgcommon:GravelTypeType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>GravelType</CodeListName>
@@ -1532,7 +1520,7 @@ Explanation: Schelprijke gronden zijn gronden die voor ten minste dertig procent
 Explanation: De samenstelling van de grindfractie wordt bij uitgebreide beschrijvingen in detail beschreven. Bij standaardbeschrijvingen wordt gewoonlijk een kortere lijst gebruikt en worden bepaalde categorieën niet onderverdeeld. Het staat de uitvoerder echter vrij bij standaardbeschrijvingen dezelfde lijst te gebruiken als bij uitgebreide beschrijvingen.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="fractionProportion" type="bhrgcommon:MassPercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="fractionProportion" minOccurs="1" maxOccurs="1" type="bhrgcommon:MassPercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>MassPercentageClass</CodeListName>
@@ -1545,7 +1533,7 @@ Explanation: De samenstelling van de grindfractie wordt bij uitgebreide beschrij
   </xs:complexType>
   <xs:complexType name="GravelFractionType">
     <xs:sequence>
-      <xs:element name="gravelMedianClass" type="bhrgcommon:GravelMedianClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="gravelMedianClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:GravelMedianClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>GravelMedianClass</CodeListName>
@@ -1554,7 +1542,7 @@ Explanation: De samenstelling van de grindfractie wordt bij uitgebreide beschrij
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De mediane korrelgrootte van de grindfractie uitgedrukt in een klasse.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="angularity" type="bhrgcommon:AngularityType" minOccurs="1" maxOccurs="1">
+      <xs:element name="angularity" minOccurs="1" maxOccurs="1" type="bhrgcommon:AngularityType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>Angularity</CodeListName>
@@ -1564,7 +1552,7 @@ Explanation: De samenstelling van de grindfractie wordt bij uitgebreide beschrij
 Explanation: De indeling is naar Powers, 1953 en Hillen &amp; Kruse, 1981. Het gegeven geeft inzicht in het afzettingsmilieu en de herkomst van het materiaal.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="fineGravelContentClass" type="bhrgcommon:MassPercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="fineGravelContentClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:MassPercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>MassPercentageClass</CodeListName>
@@ -1573,7 +1561,7 @@ Explanation: De indeling is naar Powers, 1953 en Hillen &amp; Kruse, 1981. Het g
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het aandeel fijn grind in de massa van de grindfractie uitgedrukt in een klasse.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="mediumCoarseGravelContentClass" type="bhrgcommon:MassPercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="mediumCoarseGravelContentClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:MassPercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>MassPercentageClass</CodeListName>
@@ -1582,7 +1570,7 @@ Explanation: De indeling is naar Powers, 1953 en Hillen &amp; Kruse, 1981. Het g
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het aandeel matig grof grind in de massa van de grindfractie uitgedrukt in een klasse.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="veryCoarseGravelContentClass" type="bhrgcommon:MassPercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="veryCoarseGravelContentClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:MassPercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>MassPercentageClass</CodeListName>
@@ -1597,7 +1585,7 @@ Explanation: De indeling is naar Powers, 1953 en Hillen &amp; Kruse, 1981. Het g
 Explanation: Windkanters zijn grinden die gedurende lange tijd zijn blootgesteld aan winderosie en daardoor een zeer herkenbare hoekige vorm hebben gekregen. Dit is onafhankelijk van het soort grind, en indicatief voor koude klimatologische omstandigheden. Vaak zijn windkanters gepatineerd.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="sphericity" type="bhrgcommon:SphericityType" minOccurs="1" maxOccurs="1">
+      <xs:element name="sphericity" minOccurs="1" maxOccurs="1" type="bhrgcommon:SphericityType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>Sphericity</CodeListName>
@@ -1606,7 +1594,7 @@ Explanation: Windkanters zijn grinden die gedurende lange tijd zijn blootgesteld
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De mate van bolrondheid van de gemiddelde korrel ingedeeld op grond van de verhouding tussen de drie dimensies.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="variegation" type="bhrgcommon:VariegationType" minOccurs="1" maxOccurs="1">
+      <xs:element name="variegation" minOccurs="1" maxOccurs="1" type="bhrgcommon:VariegationType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>Variegation</CodeListName>
@@ -1627,7 +1615,7 @@ Explanation: Windkanters zijn grinden die gedurende lange tijd zijn blootgesteld
           </xs:simpleContent>
         </xs:complexType>
       </xs:element>
-      <xs:element name="gravelProvenance" type="bhrgcommon:GravelProvenanceType" minOccurs="0" maxOccurs="1">
+      <xs:element name="gravelProvenance" minOccurs="0" maxOccurs="1" type="bhrgcommon:GravelProvenanceType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>GravelProvenance</CodeListName>
@@ -1636,12 +1624,12 @@ Explanation: Windkanters zijn grinden die gedurende lange tijd zijn blootgesteld
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De omschrijving van het systeem dat het grind heeft aangevoerd.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="gravelConstituent" type="bhrgcommon:GravelConstituentType" nillable="false" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="gravelConstituent" nillable="false" type="bhrgcommon:GravelConstituentType"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="InclusionType">
     <xs:sequence>
-      <xs:element name="soilType" type="bhrgcommon:SoilTypeType" minOccurs="1" maxOccurs="1">
+      <xs:element name="soilType" minOccurs="1" maxOccurs="1" type="bhrgcommon:SoilTypeType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>SoilType</CodeListName>
@@ -1650,7 +1638,7 @@ Explanation: Windkanters zijn grinden die gedurende lange tijd zijn blootgesteld
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het soort grond waaruit de eenheid bestaat, grof getypeerd.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="percentageClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="percentageClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -1663,7 +1651,7 @@ Explanation: Windkanters zijn grinden die gedurende lange tijd zijn blootgesteld
   </xs:complexType>
   <xs:complexType name="IntermediateEventType">
     <xs:sequence>
-      <xs:element name="eventName" type="bhrgcommon:EventNameType" minOccurs="1" maxOccurs="1">
+      <xs:element name="eventName" minOccurs="1" maxOccurs="1" type="bhrgcommon:EventNameType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>EventName</CodeListName>
@@ -1694,12 +1682,12 @@ Explanation: Het aandeel wordt geschat.</xs:documentation>
           </xs:simpleContent>
         </xs:complexType>
       </xs:element>
-      <xs:element name="soil" type="bhrgcommon:SoilType" nillable="false" minOccurs="1" maxOccurs="1"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="soil" nillable="false" type="bhrgcommon:SoilType"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="MottleType">
     <xs:sequence>
-      <xs:element name="colour" type="bhrgcommon:StainColourType" minOccurs="1" maxOccurs="1">
+      <xs:element name="colour" minOccurs="1" maxOccurs="1" type="bhrgcommon:StainColourType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>StainColour</CodeListName>
@@ -1708,7 +1696,7 @@ Explanation: Het aandeel wordt geschat.</xs:documentation>
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De kleur van de vlekken.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="density" type="bhrgcommon:MottlingDensityType" minOccurs="1" maxOccurs="1">
+      <xs:element name="density" minOccurs="1" maxOccurs="1" type="bhrgcommon:MottlingDensityType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>MottlingDensity</CodeListName>
@@ -1721,7 +1709,7 @@ Explanation: Het aandeel wordt geschat.</xs:documentation>
   </xs:complexType>
   <xs:complexType name="MunsellColourType">
     <xs:sequence>
-      <xs:element name="munsellHue" type="bhrgcommon:MunsellHueType" minOccurs="1" maxOccurs="1">
+      <xs:element name="munsellHue" minOccurs="1" maxOccurs="1" type="bhrgcommon:MunsellHueType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>MunsellHue</CodeListName>
@@ -1731,7 +1719,7 @@ Explanation: Het aandeel wordt geschat.</xs:documentation>
 Explanation: De munsell hoofdkleur is een samengesteld gegeven: een of meer letters geven de globale plaats op de cirkel, een getal geeft een nadere precisering van de plaats.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="munsellValue" type="bhrgcommon:MunsellValueType" minOccurs="1" maxOccurs="1">
+      <xs:element name="munsellValue" minOccurs="1" maxOccurs="1" type="bhrgcommon:MunsellValueType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>MunsellValue</CodeListName>
@@ -1740,7 +1728,7 @@ Explanation: De munsell hoofdkleur is een samengesteld gegeven: een of meer lett
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De mate van witheid uitgedrukt in een getal.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="munsellChroma" type="bhrgcommon:MunsellChromaType" minOccurs="0" maxOccurs="1">
+      <xs:element name="munsellChroma" minOccurs="0" maxOccurs="1" type="bhrgcommon:MunsellChromaType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>MunsellChroma</CodeListName>
@@ -1753,7 +1741,7 @@ Explanation: De munsell hoofdkleur is een samengesteld gegeven: een of meer lett
   </xs:complexType>
   <xs:complexType name="ParticularConstituentType">
     <xs:sequence>
-      <xs:element name="constituentType" type="bhrgcommon:ParticularConstituentTypeType" minOccurs="1" maxOccurs="1">
+      <xs:element name="constituentType" minOccurs="1" maxOccurs="1" type="bhrgcommon:ParticularConstituentTypeType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>ParticularConstituentType</CodeListName>
@@ -1763,7 +1751,7 @@ Explanation: De munsell hoofdkleur is een samengesteld gegeven: een of meer lett
 Explanation: Bij de standaard beschrijving wordt een kortere lijst gebruikt dan bij de uitgebreide beschrijving.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="percentageClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="percentageClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -1776,7 +1764,7 @@ Explanation: Bij de standaard beschrijving wordt een kortere lijst gebruikt dan 
   </xs:complexType>
   <xs:complexType name="PeatConstituentType">
     <xs:sequence>
-      <xs:element name="plantRemainType" type="bhrgcommon:PlantRemainTypeType" minOccurs="1" maxOccurs="1">
+      <xs:element name="plantRemainType" minOccurs="1" maxOccurs="1" type="bhrgcommon:PlantRemainTypeType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>PlantRemainType</CodeListName>
@@ -1785,7 +1773,7 @@ Explanation: Bij de standaard beschrijving wordt een kortere lijst gebruikt dan 
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De categorie plantenresten.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="percentageClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="percentageClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -1798,7 +1786,7 @@ Explanation: Bij de standaard beschrijving wordt een kortere lijst gebruikt dan 
   </xs:complexType>
   <xs:complexType name="PeatFractionType">
     <xs:sequence>
-      <xs:element name="peatType" type="bhrgcommon:PeatTypeType" minOccurs="1" maxOccurs="1">
+      <xs:element name="peatType" minOccurs="1" maxOccurs="1" type="bhrgcommon:PeatTypeType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>PeatType</CodeListName>
@@ -1807,7 +1795,7 @@ Explanation: Bij de standaard beschrijving wordt een kortere lijst gebruikt dan 
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een nadere typering van het als veen omschreven bestanddeel van grond.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="peatConstituent" type="bhrgcommon:PeatConstituentType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="peatConstituent" nillable="false" type="bhrgcommon:PeatConstituentType"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ReportHistoryType">
@@ -1824,12 +1812,12 @@ Explanation: De basisregistratie ondergrond leidt bij het starten van de registr
 Explanation: De basisregistratie ondergrond leidt bij het beëindigen van de registratie de juiste waarde af uit de gegevens in het brondocument. De datum is gelijk aan de rapportagedatum van het onderzoek.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="intermediateEvent" type="bhrgcommon:IntermediateEventType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="intermediateEvent" nillable="false" type="bhrgcommon:IntermediateEventType"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="SamplerType">
     <xs:sequence>
-      <xs:element name="samplerType" type="bhrgcommon:SamplerTypeType" minOccurs="1" maxOccurs="1">
+      <xs:element name="samplerType" minOccurs="1" maxOccurs="1" type="bhrgcommon:SamplerTypeType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>SamplerType</CodeListName>
@@ -1929,7 +1917,7 @@ Explanation: Een zuiger dient om de bemonstering te vergemakkelijken en helpt he
   </xs:complexType>
   <xs:complexType name="SandConstituentType">
     <xs:sequence>
-      <xs:element name="grainColour" type="bhrgcommon:GrainColourType" minOccurs="1" maxOccurs="1">
+      <xs:element name="grainColour" minOccurs="1" maxOccurs="1" type="bhrgcommon:GrainColourType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>GrainColour</CodeListName>
@@ -1938,7 +1926,7 @@ Explanation: Een zuiger dient om de bemonstering te vergemakkelijken en helpt he
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De op basis van kleur onderscheiden categorie zandkorrels.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="percentageClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="percentageClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -1951,7 +1939,7 @@ Explanation: Een zuiger dient om de bemonstering te vergemakkelijken en helpt he
   </xs:complexType>
   <xs:complexType name="SandFractionType">
     <xs:sequence>
-      <xs:element name="darkGrainContentClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="darkGrainContentClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -1960,7 +1948,7 @@ Explanation: Een zuiger dient om de bemonstering te vergemakkelijken en helpt he
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het gehalte aan donkere mineralen uitgedrukt in een klasse.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="angularity" type="bhrgcommon:AngularityType" minOccurs="1" maxOccurs="1">
+      <xs:element name="angularity" minOccurs="1" maxOccurs="1" type="bhrgcommon:AngularityType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>Angularity</CodeListName>
@@ -1970,7 +1958,7 @@ Explanation: Een zuiger dient om de bemonstering te vergemakkelijken en helpt he
 Explanation: De indeling is naar Powers, 1953 en Hillen &amp; Kruse, 1981. Het gegeven geeft inzicht in het afzettingsmilieu en de herkomst van het materiaal.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="sandMedianClass" type="bhrgcommon:SandMedianClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="sandMedianClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:SandMedianClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>SandMedianClass</CodeListName>
@@ -1979,7 +1967,7 @@ Explanation: De indeling is naar Powers, 1953 en Hillen &amp; Kruse, 1981. Het g
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De mediane korrelgrootte van de zandfractie uitgedrukt in een klasse.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="sandSorting" type="bhrgcommon:SandSortingType" minOccurs="1" maxOccurs="1">
+      <xs:element name="sandSorting" minOccurs="1" maxOccurs="1" type="bhrgcommon:SandSortingType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>SandSorting</CodeListName>
@@ -1988,7 +1976,7 @@ Explanation: De indeling is naar Powers, 1953 en Hillen &amp; Kruse, 1981. Het g
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De mate van variatie in de grootte van de zandkorrels uitgedrukt in een klasse.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="variegation" type="bhrgcommon:VariegationType" minOccurs="0" maxOccurs="1">
+      <xs:element name="variegation" minOccurs="0" maxOccurs="1" type="bhrgcommon:VariegationType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>Variegation</CodeListName>
@@ -1997,7 +1985,7 @@ Explanation: De indeling is naar Powers, 1953 en Hillen &amp; Kruse, 1981. Het g
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het aandeel kleurige korrels uitgedrukt in een klasse.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="anomalouslyCoarseContentClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="0" maxOccurs="1">
+      <xs:element name="anomalouslyCoarseContentClass" minOccurs="0" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -2019,12 +2007,12 @@ Explanation: In de zandfractie kunnen korrels voorkomen die veel grover zijn dan
           </xs:simpleContent>
         </xs:complexType>
       </xs:element>
-      <xs:element name="sandConstituent" type="bhrgcommon:SandConstituentType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="sandConstituent" nillable="false" type="bhrgcommon:SandConstituentType"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="SedimentLensType">
     <xs:sequence>
-      <xs:element name="soilType" type="bhrgcommon:SoilTypeType" minOccurs="1" maxOccurs="1">
+      <xs:element name="soilType" minOccurs="1" maxOccurs="1" type="bhrgcommon:SoilTypeType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>SoilType</CodeListName>
@@ -2033,7 +2021,7 @@ Explanation: In de zandfractie kunnen korrels voorkomen die veel grover zijn dan
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het soort grond waaruit de eenheid bestaat.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="percentageClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="percentageClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -2046,7 +2034,7 @@ Explanation: In de zandfractie kunnen korrels voorkomen die veel grover zijn dan
   </xs:complexType>
   <xs:complexType name="ShellConstituentType">
     <xs:sequence>
-      <xs:element name="shellTaxon" type="bhrgcommon:ShellTaxonType" minOccurs="1" maxOccurs="1">
+      <xs:element name="shellTaxon" minOccurs="1" maxOccurs="1" type="bhrgcommon:ShellTaxonType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>ShellTaxon</CodeListName>
@@ -2073,7 +2061,7 @@ Explanation: Het aandeel wordt bepaald door het aantal herkenbare fragmenten en 
   </xs:complexType>
   <xs:complexType name="ShellFractionType">
     <xs:sequence>
-      <xs:element name="fragmentContentClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="fragmentContentClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -2083,7 +2071,7 @@ Explanation: Het aandeel wordt bepaald door het aantal herkenbare fragmenten en 
 Explanation: Fragmenten zijn stukjes schelp die groter zijn dan 2 millimeter.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="gritContentClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="gritContentClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -2093,7 +2081,7 @@ Explanation: Fragmenten zijn stukjes schelp die groter zijn dan 2 millimeter.</x
 Explanation: Gruis zijn stukjes schelp die kleiner zijn dan 2 millimeter.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="wholeContentClasss" type="bhrgcommon:VolumePercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="wholeContentClasss" minOccurs="1" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -2108,7 +2096,7 @@ Explanation: Gruis zijn stukjes schelp die kleiner zijn dan 2 millimeter.</xs:do
 Explanation: Doubletten, tweekleppige schelpen waarvan de twee helften nog aan elkaar zitten, vallen bij transport snel uiteen. De aanwezigheid van doubletten is daarom een indicatie voor beperkte verplaatsing van de schelpresten.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="thickWalledContentClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="0" maxOccurs="1">
+      <xs:element name="thickWalledContentClass" minOccurs="0" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -2118,7 +2106,7 @@ Explanation: Doubletten, tweekleppige schelpen waarvan de twee helften nog aan e
 Explanation: Schelpen of schelpfragmenten kunnen dikwandig (2 millimeter of dikker) of dunwandig (dunner dan 1 millimeter) zijn. Het gegeven geeft informatie over de omstandigheden waaronder het sediment is gevormd.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="thinWalledContentClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="0" maxOccurs="1">
+      <xs:element name="thinWalledContentClass" minOccurs="0" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -2134,7 +2122,7 @@ Explanation: Schelpen of schelpfragmenten kunnen dikwandig (2 millimeter of dikk
 Explanation: Het gegeven geeft nadere informatie over de omstandigheden waaronder de laag is gevormd.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="weatheringDegree" type="bhrgcommon:WheateringDegreeType" minOccurs="0" maxOccurs="1">
+      <xs:element name="weatheringDegree" minOccurs="0" maxOccurs="1" type="bhrgcommon:WheateringDegreeType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>WheateringDegree</CodeListName>
@@ -2143,12 +2131,12 @@ Explanation: Het gegeven geeft nadere informatie over de omstandigheden waaronde
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De mate van chemische verwering uitgedrukt in een klasse.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="shellConstituent" type="bhrgcommon:ShellConstituentType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="shellConstituent" nillable="false" type="bhrgcommon:ShellConstituentType"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="SiteCharacteristicType">
     <xs:sequence>
-      <xs:element name="soilUse" type="bhrgcommon:SoilUseType" minOccurs="0" maxOccurs="1">
+      <xs:element name="soilUse" minOccurs="0" maxOccurs="1" type="bhrgcommon:SoilUseType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>SoilUse</CodeListName>
@@ -2158,7 +2146,7 @@ Explanation: Het gegeven geeft nadere informatie over de omstandigheden waaronde
 Explanation: Bij bodemgebruik wordt onderscheid gemaakt tussen bodemgebruik in landelijk gebied en dat is agrarisch gebruik en natuur, en bodemgebruik in niet-landelijk (stedelijk) gebied.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="positionOnGroundBody" type="bhrgcommon:PositionOnGroundBodyType" minOccurs="0" maxOccurs="1">
+      <xs:element name="positionOnGroundBody" minOccurs="0" maxOccurs="1" type="bhrgcommon:PositionOnGroundBodyType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>PositionOnGroundBody</CodeListName>
@@ -2168,7 +2156,7 @@ Explanation: Bij bodemgebruik wordt onderscheid gemaakt tussen bodemgebruik in l
 Explanation: Wanneer door mensen een grondlichaam als een dijk of wal op het aardoppervlak is neergelegd, is een nadere precisering van de plaats op het grondlichaam relevant, omdat die de eigenschappen van de ondergrond beïnvloedt.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="landscapeElement" type="bhrgcommon:LandscapeElementType" minOccurs="0" maxOccurs="1">
+      <xs:element name="landscapeElement" minOccurs="0" maxOccurs="1" type="bhrgcommon:LandscapeElementType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>LandscapeElement</CodeListName>
@@ -2178,7 +2166,7 @@ Explanation: Wanneer door mensen een grondlichaam als een dijk of wal op het aar
 Explanation: De vorm van het landschap is in veel gevallen al volledig vastgelegd in de geomorfologische kaart. Bij uitzondering of voor bepaalde doeleinden is voor een goed begrip van de opbouw van de bodem meer detailinformatie nodig over het landschap waar het terrein in ligt.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="hydrologicalSetting" type="bhrgcommon:HydrologicalSettingType" minOccurs="0" maxOccurs="1">
+      <xs:element name="hydrologicalSetting" minOccurs="0" maxOccurs="1" type="bhrgcommon:HydrologicalSettingType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>HydrologicalSetting</CodeListName>
@@ -2188,7 +2176,7 @@ Explanation: De vorm van het landschap is in veel gevallen al volledig vastgeleg
 Explanation: Het is van belang te weten hoe vochtig het deel van de bodem is waarin de planten wortelen en of het om zoet of zout water gaat.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="currentProces" type="bhrgcommon:CurrentProcesType" minOccurs="0" maxOccurs="1">
+      <xs:element name="currentProces" minOccurs="0" maxOccurs="1" type="bhrgcommon:CurrentProcesType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>CurrentProces</CodeListName>
@@ -2198,7 +2186,7 @@ Explanation: Het is van belang te weten hoe vochtig het deel van de bodem is waa
 Explanation: Er kunnen processen in het gebied spelen die het landschap, de positie van het maaiveld en de opbouw van de bodem in korte tijd kunnen veranderen. In korte tijd betekent binnen enkele uren of enkele dagen.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="temporaryChange" type="bhrgcommon:TemporaryChangeType" minOccurs="0" maxOccurs="1">
+      <xs:element name="temporaryChange" minOccurs="0" maxOccurs="1" type="bhrgcommon:TemporaryChangeType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>TemporaryChange</CodeListName>
@@ -2214,15 +2202,11 @@ Explanation: Het is goede praktijk dat de uitvoerder van het booronderzoek bijzo
     <xs:sequence>
       <xs:element name="geologicalSoilName" type="bhrgcommon:GeologicalSoilNameType" minOccurs="1" maxOccurs="1">
         <xs:annotation>
-          <xs:appinfo>
-            <CodeListName>GeologicalSoilName</CodeListName>
-            <CodeListURI/>
-          </xs:appinfo>
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De naam van de grondsoort vanuit geologisch perspectief
 Explanation: Voor de geoloog staat bij het benoemen van de grondsoort de samenstelling van het materiaal centraal. De gebruikte classificatie is een in de Standaard Boor Beschrijvingsmethode SBB 6.0 beschreven uitbreiding van de driehoeksystematiek die de basis vormt van de tot 2019 algemeen gebruikte norm NEN 5104.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="geotechnicalSoilName" type="bhrgcommon:GeotechnicalSoilNameType" minOccurs="1" maxOccurs="1">
+      <xs:element name="geotechnicalSoilName" minOccurs="1" maxOccurs="1" type="bhrgcommon:GeotechnicalSoilNameType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>GeotechnicalSoilName</CodeListName>
@@ -2232,7 +2216,7 @@ Explanation: Voor de geoloog staat bij het benoemen van de grondsoort de samenst
 Explanation: De namen van de grondsoorten zijn conform NEN-EN-ISO 14688-1. Het gegeven wordt vastgelegd om de gegevens beter bruikbaar te maken voor toepassing in de geotechniek. Voor de geotechnicus staat bij het benoemen van de grondsoort niet de samenstelling, maar het gedrag centraal.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="gravelContentClass" type="bhrgcommon:GravelContentClassType" minOccurs="0" maxOccurs="1">
+      <xs:element name="gravelContentClass" minOccurs="0" maxOccurs="1" type="bhrgcommon:GravelContentClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>GravelContentClass</CodeListName>
@@ -2242,7 +2226,7 @@ Explanation: De namen van de grondsoorten zijn conform NEN-EN-ISO 14688-1. Het g
 Explanation: Het gehalte aan grind wordt altijd geschat. Het gegeven wordt apart vastgelegd wanneer het gehalte minder is dan 30 % (grindarme grond). Daarboven bepaalt het gehalte de naam van de grondsoort.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="micaContentClass" type="bhrgcommon:MicaContentClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="micaContentClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:MicaContentClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>MicaContentClass</CodeListName>
@@ -2251,7 +2235,7 @@ Explanation: Het gehalte aan grind wordt altijd geschat. Het gegeven wordt apart
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het gehalte aan glimmer uitgedrukt in een klasse.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="organicMatterContentClass" type="bhrgcommon:OrganicMatterContentClassType" minOccurs="0" maxOccurs="1">
+      <xs:element name="organicMatterContentClass" minOccurs="0" maxOccurs="1" type="bhrgcommon:OrganicMatterContentClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>OrganicMatterContentClass</CodeListName>
@@ -2261,7 +2245,7 @@ Explanation: Het gehalte aan grind wordt altijd geschat. Het gegeven wordt apart
 Explanation: Het aandeel organische stof wordt volgens NEN-EN-ISO 14688-1 bepaald op basis van waarneembare en voelbare eigenschappen. De organischestofgehalteklasse wordt niet bepaald als de grond is geclassificeerd als organische grond en de primaire fractie uit veen, humus, detritus, bruinkool of gyttja bestaat.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="organicMatterContentClassNEN5104" type="bhrgcommon:OrganicMatterContentClassNEN5104Type" minOccurs="0" maxOccurs="1">
+      <xs:element name="organicMatterContentClassNEN5104" minOccurs="0" maxOccurs="1" type="bhrgcommon:OrganicMatterContentClassNEN5104Type">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>OrganicMatterContentClassNEN5104</CodeListName>
@@ -2271,7 +2255,7 @@ Explanation: Het aandeel organische stof wordt volgens NEN-EN-ISO 14688-1 bepaal
 Explanation: In de NEN 5104 classificatie wordt het gehalte aan organische stof altijd geschat. Het gegeven wordt apart vastgelegd wanneer het gehalte onder een bepaald percentage ligt. Daarboven bepaalt het gehalte de naam van de grondsoort.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="shellMatterContentClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="0" maxOccurs="1">
+      <xs:element name="shellMatterContentClass" minOccurs="0" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -2281,7 +2265,7 @@ Explanation: In de NEN 5104 classificatie wordt het gehalte aan organische stof 
 Explanation: Het gegeven wordt niet vastgelegd wanneer de naam van de grondsoort al duidelijk maakt dat de grond schelpmateriaal bevat.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="veryCoarseFractionContentClass" type="bhrgcommon:VeryCoarseFractionContentClassType" minOccurs="0" maxOccurs="1">
+      <xs:element name="veryCoarseFractionContentClass" minOccurs="0" maxOccurs="1" type="bhrgcommon:VeryCoarseFractionContentClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VeryCoarseFractionContentClass</CodeListName>
@@ -2291,7 +2275,7 @@ Explanation: Het gegeven wordt niet vastgelegd wanneer de naam van de grondsoort
 Explanation: Het gegeven wordt niet vastgelegd wanneer de naam van de grondsoort al duidelijk maakt dat de grond zeer grof materiaal bevat.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="glauconiteContentClass" type="bhrgcommon:VolumePercentageClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="glauconiteContentClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:VolumePercentageClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>VolumePercentageClass</CodeListName>
@@ -2300,7 +2284,7 @@ Explanation: Het gegeven wordt niet vastgelegd wanneer de naam van de grondsoort
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het deel van het volume van de grond dat uit glauconiet bestaat, uitgedrukt in een percentageklasse.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="carbonateContentClass" type="bhrgcommon:CarbonateContentClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="carbonateContentClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:CarbonateContentClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>CarbonateContentClass</CodeListName>
@@ -2310,7 +2294,7 @@ Explanation: Het gegeven wordt niet vastgelegd wanneer de naam van de grondsoort
 Explanation: Het kalkgehalte wordt geschat naar de mate van opbruisen met verdund zoutzuur (10 % HCl). Het gegeven wordt altijd vastgelegd, ook wanneer de grond uit schelpmateriaal of kalk bestaat.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="colour" type="bhrgcommon:ColourType" minOccurs="1" maxOccurs="1">
+      <xs:element name="colour" minOccurs="1" maxOccurs="1" type="bhrgcommon:ColourType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>Colour</CodeListName>
@@ -2326,7 +2310,7 @@ Explanation: Het bepalen van kleur kent een zekere mate van subjectiviteit wanne
 Explanation: Het voorkomen van vlekken is een aanwijzing voor verandering van de chemische samenstelling van de grond na afzetting van het sediment.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="fineSoilConsistency" type="bhrgcommon:FineSoilConsistencyType" minOccurs="0" maxOccurs="1">
+      <xs:element name="fineSoilConsistency" minOccurs="0" maxOccurs="1" type="bhrgcommon:FineSoilConsistencyType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>FineSoilConsistency</CodeListName>
@@ -2336,7 +2320,7 @@ Explanation: Het voorkomen van vlekken is een aanwijzing voor verandering van de
 Explanation: Bij het beschrijven van geroerde monsters, wordt het gegeven alleen vastgelegd wanneer de waarde bepaald kan worden. De uitvoerder beoordeelt zelf wanneer dat het geval is.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="organicSoilConsistency" type="bhrgcommon:OrganicSoilConsistencyType" minOccurs="0" maxOccurs="1">
+      <xs:element name="organicSoilConsistency" minOccurs="0" maxOccurs="1" type="bhrgcommon:OrganicSoilConsistencyType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>OrganicSoilConsistency</CodeListName>
@@ -2346,7 +2330,7 @@ Explanation: Bij het beschrijven van geroerde monsters, wordt het gegeven alleen
 Explanation: Bruinkool heeft altijd de waarde vast. Bij het beschrijven van geroerde monsters, wordt het gegeven alleen vastgelegd wanneer de waarde bepaald kan worden. De uitvoerder beoordeelt zelf wanneer dat het geval is.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="sedimentaryPhenomenon" type="bhrgcommon:SedimentaryPhenomenonType" minOccurs="0" maxOccurs="1">
+      <xs:element name="sedimentaryPhenomenon" minOccurs="0" maxOccurs="1" type="bhrgcommon:SedimentaryPhenomenonType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>SedimentaryPhenomenon</CodeListName>
@@ -2356,7 +2340,7 @@ Explanation: Bruinkool heeft altijd de waarde vast. Bij het beschrijven van gero
 Explanation: Het gegeven wordt alleen vastgelegd bij de beschrijving van ongeroerde monsters.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="organicSoilTexture" type="bhrgcommon:OrganicSoilTextureType" minOccurs="0" maxOccurs="1">
+      <xs:element name="organicSoilTexture" minOccurs="0" maxOccurs="1" type="bhrgcommon:OrganicSoilTextureType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>OrganicSoilTexture</CodeListName>
@@ -2366,19 +2350,19 @@ Explanation: Het gegeven wordt alleen vastgelegd bij de beschrijving van ongeroe
 Explanation: De textuur wordt bepaald voor organische gronden, met uitzondering van bruinkool en gyttja. Bruinkool bestaat uit een vast mengsel van vezels en amorfe massa en gyttja is per definitie amorf. Bij het beschrijven van organische gronden, wordt het gegeven alleen vastgelegd wanneer de waarde bepaald kan worden. De uitvoerder beoordeelt zelf wanneer dat het geval is.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="particularConstituent" type="bhrgcommon:ParticularConstituentType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
-      <xs:element name="anomalousLayer" type="bhrgcommon:AnomalousLayerType" nillable="false" minOccurs="0" maxOccurs="4"/>
-      <xs:element name="chunk" type="bhrgcommon:ChunkType" nillable="false" minOccurs="0" maxOccurs="3"/>
-      <xs:element name="gravelFraction" type="bhrgcommon:GravelFractionType" nillable="false" minOccurs="0" maxOccurs="1"/>
-      <xs:element name="sandFraction" type="bhrgcommon:SandFractionType" nillable="false" minOccurs="0" maxOccurs="1"/>
-      <xs:element name="shellFraction" type="bhrgcommon:ShellFractionType" nillable="false" minOccurs="0" maxOccurs="1"/>
-      <xs:element name="peatFraction" type="bhrgcommon:PeatFractionType" nillable="false" minOccurs="0" maxOccurs="1"/>
-      <xs:element name="munsellColour" type="bhrgcommon:MunsellColourType" nillable="false" minOccurs="0" maxOccurs="1"/>
-      <xs:element name="mottle" type="bhrgcommon:MottleType" nillable="false" minOccurs="0" maxOccurs="2"/>
-      <xs:element name="inclusion" type="bhrgcommon:InclusionType" nillable="false" minOccurs="0" maxOccurs="3"/>
-      <xs:element name="sedimentLens" type="bhrgcommon:SedimentLensType" nillable="false" minOccurs="0" maxOccurs="4"/>
-      <xs:element name="animalFossil" type="bhrgcommon:AnimalFossilType" nillable="false" minOccurs="0" maxOccurs="unbounded"/>
-      <xs:element name="fractionDistribution" type="bhrgcommon:FractionDistributionType" nillable="false" minOccurs="0" maxOccurs="1"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="particularConstituent" nillable="false" type="bhrgcommon:ParticularConstituentType"/>
+      <xs:element minOccurs="0" maxOccurs="4" name="anomalousLayer" nillable="false" type="bhrgcommon:AnomalousLayerType"/>
+      <xs:element minOccurs="0" maxOccurs="3" name="chunk" nillable="false" type="bhrgcommon:ChunkType"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="gravelFraction" nillable="false" type="bhrgcommon:GravelFractionType"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="sandFraction" nillable="false" type="bhrgcommon:SandFractionType"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="shellFraction" nillable="false" type="bhrgcommon:ShellFractionType"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="peatFraction" nillable="false" type="bhrgcommon:PeatFractionType"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="munsellColour" nillable="false" type="bhrgcommon:MunsellColourType"/>
+      <xs:element minOccurs="0" maxOccurs="2" name="mottle" nillable="false" type="bhrgcommon:MottleType"/>
+      <xs:element minOccurs="0" maxOccurs="3" name="inclusion" nillable="false" type="bhrgcommon:InclusionType"/>
+      <xs:element minOccurs="0" maxOccurs="4" name="sedimentLens" nillable="false" type="bhrgcommon:SedimentLensType"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="animalFossil" nillable="false" type="bhrgcommon:AnimalFossilType"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="fractionDistribution" nillable="false" type="bhrgcommon:FractionDistributionType"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ThinStratumType">
@@ -2396,7 +2380,7 @@ Explanation: Het aandeel wordt geschat.</xs:documentation>
           </xs:simpleContent>
         </xs:complexType>
       </xs:element>
-      <xs:element name="stratumThicknessClass" type="bhrgcommon:StratumThicknessClassType" minOccurs="1" maxOccurs="1">
+      <xs:element name="stratumThicknessClass" minOccurs="1" maxOccurs="1" type="bhrgcommon:StratumThicknessClassType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>StratumThicknessClass</CodeListName>
@@ -2405,7 +2389,7 @@ Explanation: Het aandeel wordt geschat.</xs:documentation>
           <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De voor het laagje kenmerkende dikte, uitgedrukt in een klasse.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="geologicalOrigin" type="bhrgcommon:GeologicalOriginType" minOccurs="0" maxOccurs="1">
+      <xs:element name="geologicalOrigin" minOccurs="0" maxOccurs="1" type="bhrgcommon:GeologicalOriginType">
         <xs:annotation>
           <xs:appinfo>
             <CodeListName>GeologicalOrigin</CodeListName>
@@ -2415,7 +2399,7 @@ Explanation: Het aandeel wordt geschat.</xs:documentation>
 Explanation: Het gegeven wordt alleen vastgelegd wanneer een laag onder bepaalde omstandigheden is gevormd. Het kan gebruikers direct inzicht geven in de plaats van de eenheid in een geologisch model. Het gegeven heeft eerder een interpretatief dan een beschrijvend karakter, maar het niveau van interpretatie is zo globaal dat iedere beschrijver in het vakgebied geacht wordt over de noodzakelijke kennis te beschikken. Ook zijn deze gegevens het beste direct bij de beschrijving van boormonsters vast te leggen in plaats van achteraf op basis van alleen de boormonsterbeschrijving.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="soil" type="bhrgcommon:SoilType" nillable="false" minOccurs="1" maxOccurs="1"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="soil" nillable="false" type="bhrgcommon:SoilType"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ActivityTypeType">
