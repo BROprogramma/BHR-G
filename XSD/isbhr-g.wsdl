@@ -17,9 +17,10 @@
         <xsd:schema xmlns:tns="http://www.broservices.nl/wsdl/isbhrg/1.0" targetNamespace="http://www.broservices.nl/wsdl/isbhrg/1.0">
             <!--
             <xsd:import namespace="http://www.broservices.nl/xsd/isbhrg/1.0" schemaLocation="https://schema.broservices.nl/xsd/isbhrg/1.0/isbhr-g-messages.xsd" />
+            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd" />
             -->
             <xsd:import namespace="http://www.broservices.nl/xsd/isbhrg/1.0" schemaLocation="isbhr-g-messages.xsd" />
-            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd" />
+            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd" />
         </xsd:schema>
     </wsdl:types>
 
