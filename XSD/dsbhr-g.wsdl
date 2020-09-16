@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wsdl:definitions name="dsbhr-g"
-                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
-                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
-                  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-                  xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" 
-                  xmlns:msg="http://www.broservices.nl/xsd/dsbhrg/1.0" 
-                  xmlns:tns="http://www.broservices.nl/wsdl/dsbhrg/1.0" 
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                  xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+                  xmlns:msg="http://www.broservices.nl/xsd/dsbhrg/1.0"
+                  xmlns:tns="http://www.broservices.nl/wsdl/dsbhrg/1.0"
                   targetNamespace="http://www.broservices.nl/wsdl/dsbhrg/1.0">
 
   <wsdl:documentation>
-        Deze WSDL beschrijft de webservice voor uitgifte van geologisch booronderzoek
+    Deze WSDL beschrijft de webservice voor uitgifte van geologisch booronderzoek
   </wsdl:documentation>
 
   <wsdl:types>

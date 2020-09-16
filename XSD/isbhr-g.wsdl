@@ -37,7 +37,7 @@
     </wsdl:message>
 
     <wsdl:message name="DeliveryResponsiblePartyHeader">
-        <wsdl:part name="deliveryResponsibleParty" element="brocom:deliveryResponsibleParty"></wsdl:part>
+        <wsdl:part name="deliveryResponsibleParty" element="brocom:deliveryResponsibleParty"/>
     </wsdl:message>
 
     <wsdl:portType name="isbhr-g">
