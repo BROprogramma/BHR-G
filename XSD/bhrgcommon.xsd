@@ -2213,14 +2213,14 @@
                         Explanation: Voor de geoloog staat bij het benoemen van de grondsoort de samenstelling van het materiaal centraal. De gebruikte classificatie is een in de Standaard Boor Beschrijvingsmethode SBB 6.0 beschreven uitbreiding van de driehoeksystematiek die de basis vormt van de tot 2019 algemeen gebruikte norm NEN 5104.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="geotechnicalSoilName" minOccurs="1" maxOccurs="1" type="bhrgcommon:GeotechnicalSoilNameType">
+            <xs:element name="geotechnicalSoilName" minOccurs="0" maxOccurs="1" type="bhrgcommon:GeotechnicalSoilNameType">
                 <xs:annotation>
                     <xs:appinfo>
                         <CodeListName>GeotechnicalSoilName</CodeListName>
                         <CodeListURI/>
                     </xs:appinfo>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De naam van de grondsoort vanuit geotechnisch perspectief.
-                        Explanation: De namen van de grondsoorten zijn conform NEN-EN-ISO 14688-1. Het gegeven wordt vastgelegd om de gegevens beter bruikbaar te maken voor toepassing in de geotechniek. Voor de geotechnicus staat bij het benoemen van de grondsoort niet de samenstelling, maar het gedrag centraal.</xs:documentation>
+                        Explanation: De namen van de grondsoorten zijn conform NEN-EN-ISO 14688-1. Het gegeven wordt vastgelegd om de gegevens beter bruikbaar te maken voor toepassing in de geotechniek. Voor de geotechnicus staat bij het benoemen van de grondsoort niet de samenstelling, maar het gedrag centraal. Schelprijke gronden, vulkanisch as, diatomiet, dy, ijzeroer, kalkgyttja (bijzondere gronden) en blokken worden vanuit geotechnisch perspectief niet als grondsoort benoemt.</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="gravelContentClass" minOccurs="0" maxOccurs="1" type="bhrgcommon:GravelContentClassType">
