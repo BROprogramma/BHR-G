@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registrationRequest 
+        xmlns="http://www.broservices.nl/xsd/isbhr-g/1.0"
+        xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/1.0"
+        xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+        xmlns:swe="http://www.opengis.net/swe/2.0"
+        xmlns:gml="http://www.opengis.net/gml/3.2"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.broservices.nl/xsd/isbhr-g/1.0 ../../isbhr-g-messages1.xsd">
+    <!-- Disclaimer: dit voorbeeldbericht valideert tegen de validatieservice van de acceptatie omgeving van het bronhouderportaal, maar de gegevens zijn fictief en waarschijnlijk niet correct.-->
+ 
+    <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de innameservice.
+         Het houdt geen rekening met bedrijfsregels en is vaktechnisch/inhoudelijk niet voorbeeldig.
+        xsi:schemaLocation="http://www.broservices.nl/xsd/isbhr-gt/2.0 https://schema.broservices.nl/xsd/isbhr-gt/2.0/isbhr-gt-messages.xsd">
+    -->
+    <brocom:requestReference>verzoek_2</brocom:requestReference>
+    <brocom:deliveryAccountableParty>52766179</brocom:deliveryAccountableParty>
+    <brocom:broId>BHR123456789012</brocom:broId>
+    <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+    <sourceDocument>
+        <BHR_G_EndReport gml:id="id_0001">
+            <!--Optional:
+            <boreholeSampleDescription>
+            ...
+            </boreholeSampleDescription>
+            -->
+            <!--Optional:-->
+            <researchReportDate>
+             <brocom:date>2021-05-02</brocom:date>
+            </researchReportDate>
+        </BHR_G_EndReport>
+    </sourceDocument>
+</registrationRequest>

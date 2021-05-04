@@ -7,14 +7,14 @@
         xmlns:gml="http://www.opengis.net/gml/3.2"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.broservices.nl/xsd/isbhr-g/1.0 ../isbhr-g-messages.xsd">
+        xsi:schemaLocation="http://www.broservices.nl/xsd/isbhr-g/1.0 ../../isbhr-g-messages1.xsd">
     <!-- Disclaimer: dit voorbeeldbericht valideert tegen de validatieservice van de acceptatie omgeving van het bronhouderportaal, maar de gegevens zijn fictief en waarschijnlijk niet correct.-->
  
     <brocom:requestReference>verzoek_4</brocom:requestReference>
     <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
     <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
     <sourceDocument>
-        <BHR_G_StartReport gml:id="completeReport_id_01">
+        <BHR_G_CompleteReport gml:id="completeReport_id_01">
             <!--Optional:-->
             <!--Optional:-->
             <objectIdAccountableParty>objectIdAccountableParty</objectIdAccountableParty>
@@ -224,6 +224,9 @@
 			</boreholeSampleAnalysis>
             <!--Optional:-->
             <!--fluidMudLayer>...</fluidMudLayer-->
-        </BHR_G_StartReport>
+            <researchReportDate>
+				<brocom:date>2021-05-01</brocom:date>
+			</researchReportDate>
+        </BHR_G_CompleteReport>
     </sourceDocument>
 </registrationRequest>
