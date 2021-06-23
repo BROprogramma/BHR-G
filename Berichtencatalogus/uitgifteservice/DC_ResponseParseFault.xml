@@ -2,7 +2,7 @@
 <soap:Envelope 
         xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
         xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
-        xmlns:dsbhrg="http://www.broservices.nl/xsd/dsbhrg/1.0"
+        xmlns:dsbhrg="http://www.broservices.nl/xsd/dsbhr-g/1.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.broservices.nl/xsd/dsbhrg/1.0 ../../XSD/dsbhr-g-messages.xsd
         http://schemas.xmlsoap.org/soap/envelope/ http://schemas.xmlsoap.org/soap/envelope/">
