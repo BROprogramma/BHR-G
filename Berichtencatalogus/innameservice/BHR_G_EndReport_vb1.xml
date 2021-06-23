@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <registrationRequest 
-        xmlns="http://www.broservices.nl/xsd/isbhr-g/1.0"
-        xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/1.0"
+        xmlns="http://www.broservices.nl/xsd/isbhr-g/2.0"
+        xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/2.0"
         xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
         xmlns:swe="http://www.opengis.net/swe/2.0"
         xmlns:gml="http://www.opengis.net/gml/3.2"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.broservices.nl/xsd/isbhr-g/1.0 ../../isbhr-g-messages1.xsd">
+        xsi:schemaLocation="http://www.broservices.nl/xsd/isbhr-g/2.0 ../../isbhr-g-messages.xsd">
     <!-- Disclaimer: dit voorbeeldbericht valideert tegen de validatieservice van de acceptatie omgeving van het bronhouderportaal, maar de gegevens zijn fictief en waarschijnlijk niet correct.-->
  
     <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de innameservice.
@@ -32,3 +32,4 @@
         </BHR_G_EndReport>
     </sourceDocument>
 </registrationRequest>
+
