@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <registrationRequest 
-        xmlns="http://www.broservices.nl/xsd/isbhr-g/1.0"
-        xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/1.0"
+        xmlns="http://www.broservices.nl/xsd/isbhr-g/2.0"
+        xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/2.0"
         xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
         xmlns:swe="http://www.opengis.net/swe/2.0"
         xmlns:gml="http://www.opengis.net/gml/3.2"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.broservices.nl/xsd/isbhr-g/1.0 ../../isbhr-g-messages1.xsd">
+        xsi:schemaLocation="http://www.broservices.nl/xsd/isbhr-g/2.0 https://raw.githubusercontent.com/BROprogramma/BHR-G/gh-pages/XSD/isbhr-g-messages.xsd">
     <!-- Disclaimer: dit voorbeeldbericht valideert tegen de validatieservice van de acceptatie omgeving van het bronhouderportaal, maar de gegevens zijn fictief en waarschijnlijk niet correct.-->
  
     <brocom:requestReference>verzoek_4</brocom:requestReference>
@@ -34,7 +34,9 @@
                         <gml:pos>134750.000 477800.000</gml:pos>
                     </gml:Point>
                 </bhrgcom:location>
-                <bhrgcom:horizontalPositioningDate>2018-09-23</bhrgcom:horizontalPositioningDate>
+                <bhrgcom:horizontalPositioningDate>
+					<brocom:date>2018-09-23</brocom:date>
+                </bhrgcom:horizontalPositioningDate>
                 <bhrgcom:horizontalPositioningMethod codeSpace="urn:bro:bhrg:HorizontalPositioningMethod">tachymetrie0tot10cm</bhrgcom:horizontalPositioningMethod>
                 <!--Optional:-->
                 <bhrgcom:horizontalPositioningOperator>
@@ -47,7 +49,7 @@
                 <!--Optional:-->
                 <!--bhrgcom:waterDepth uom="m">1.2</bhrgcom:waterDepth-->
                 <bhrgcom:verticalDatum codeSpace="urn:bro:bhrg:VerticalDatum">NAP</bhrgcom:verticalDatum>
-                <bhrgcom:verticalPositioningDate>2018-09-23</bhrgcom:verticalPositioningDate>
+                <bhrgcom:verticalPositioningDate><brocom:date>2018-09-23</brocom:date></bhrgcom:verticalPositioningDate>
                 <bhrgcom:verticalPositioningMethod codeSpace="urn:bro:bhrg:VerticalPositioningMethod">tachymetrie0tot10cm</bhrgcom:verticalPositioningMethod>
                 <!--Optional:-->
                 <bhrgcom:verticalPositioningOperator>
@@ -56,8 +58,8 @@
             </deliveredVerticalPosition>
             <!--siteCharacteristic Optional: required if siteCharacteristicDetermined = ja; forbidden if siteCharacteristicDetermined = nee-->
             <boring gml:id="vb1">
-                <bhrgcom:boringStartDate>2018-09-23</bhrgcom:boringStartDate>
-                <bhrgcom:boringEndDate>2018-09-23</bhrgcom:boringEndDate>
+                <bhrgcom:boringStartDate><brocom:date>2018-09-23</brocom:date></bhrgcom:boringStartDate>
+                <bhrgcom:boringEndDate><brocom:date>2018-09-23</brocom:date></bhrgcom:boringEndDate>
                 <!--Optional:--> 
                 <bhrgcom:preparation codeSpace="urn:bro:bhrg:Preparation">geen</bhrgcom:preparation>
                 <!--Optional:-->
@@ -230,3 +232,4 @@
         </BHR_G_CompleteReport>
     </sourceDocument>
 </registrationRequest>
+
