@@ -73,16 +73,9 @@
 							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het element dispatchDocument bevat de gegevens van een FRD registratieobject. Vanwege het polymorfe karakter is het type of een BRODO uit de package brocom of een BRHGO of een BHRGODP uit de package dsbhrg. Deze drie types hebben allen als gemeenschappelijke vader het type AbstractRegistrationObject uit de package brocom.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="abstractRegistrationObject" type="brocom:AbstractRegistrationObjectPropertyType" nillable="false" minOccurs="0" maxOccurs="1"/>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
-	</xs:complexType>
-	<xs:complexType name="DispatchDataResponsePropertyType">
-		<xs:sequence minOccurs="0">
-			<xs:element ref="dsbhrg:DispatchDataResponse"/>
-		</xs:sequence>
-		<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
 	</xs:complexType>
 	<xs:element name="BHR_G_C" type="dsbhrg:BHR_G_CType" substitutionGroup="brocom:AbstractCharacteristics">
 		<xs:annotation>
@@ -182,13 +175,13 @@ Explanation: Wanneer de ondergrond niet uit grond maar uit gesteente bestaat, wo
 							</xs:simpleContent>
 						</xs:complexType>
 					</xs:element>
-					<xs:element name="descriptionReportDate" type="xs:date" minOccurs="1" maxOccurs="1">
+					<xs:element name="descriptionReportDate" type="brocom:PartialDateType" minOccurs="0" maxOccurs="1">
 						<xs:annotation>
 							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de uitvoerder van de beschrijving alle gegevens van de boormonsterbeschrijving aan de bronhouder heeft overgedragen, of in het geval van historische gegevens de datum waarop alle gegevens zijn vastgesteld.
 Explanation: Hoewel historische gegevens nog buiten het bereik van deze versie van de catalogus vallen, is wel al met zekerheid vast te stellen dat de eerste datum waarop een onderzoek kan zijn afgerond in 1877 ligt.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="descriptionProcedure" type="bhrgcom:DescriptionProcedureType" minOccurs="1" maxOccurs="1">
+					<xs:element name="descriptionProcedure" type="bhrgcom:DescriptionProcedureType" minOccurs="1" maxOccurs="2">
 						<xs:annotation>
 							<xs:appinfo>
 								<CodeListName>DescriptionProcedure</CodeListName>
@@ -208,7 +201,7 @@ Explanation: De procedure beschrijft volgens welk stelsel van afspraken de monst
 Explanation: Het gegeven geeft de mate van detail van de beschrijving aan en of de monsters waarop de beschrijving is gebaseerd al dan niet van een hoge kwaliteit zijn. Voor wat betreft dat laatste is het criterium of de bemonstering tot doel heeft gehad om monsters uit de ondergrond naar boven te halen waarvan de gelaagdheid intact is gebleven op het moment van beschrijven, oftewel ongeroerde monstername.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="analysisReportDate" type="xs:date" minOccurs="1" maxOccurs="1">
+					<xs:element name="analysisReportDate" type="xs:date" minOccurs="0" maxOccurs="1">
 						<xs:annotation>
 							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de uitvoerder van de analyse alle gegevens van de boormonsteranalyse aan de bronhouder heeft overgedragen.
 Explanation: Historische gegevens vallen nog buiten het bereik van deze versie van de catalogus vallen.</xs:documentation>
@@ -402,16 +395,21 @@ Explanation: Standaard is de waterdoorlatendheid bepaald met de droge volumieke 
 Explanation: Het gegeven is vastgelegd als einddatum boring.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
+					                   <xs:element name="rockReached" type="brocom:IndicationYesNoType" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding die aangeeft of het gesteente is doorboord en is bemonsterd.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
 					<xs:element name="depthInterval" type="dsbhrg:VerticalPositionRangeType" nillable="false" minOccurs="0" maxOccurs="1">
 						<xs:annotation>
 							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bereik waarbinnen de einddiepte van de boring ligt.
 Explanation: Het gegeven is vastgelegd als einddatum boring.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="samplingQuality" type="bhrgcom:SampleQualityType" minOccurs="0" maxOccurs="1">
+					<xs:element name="samplingQuality" type="bhrgcom:SamplingQualityType" minOccurs="0" maxOccurs="unbounded">
 						<xs:annotation>
 							<xs:appinfo>
-								<CodeListName>SampleQuality</CodeListName>
+								<CodeListName>SamplingQuality</CodeListName>
 								<CodeListURI/>
 							</xs:appinfo>
 							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding die aangeeft wat de beoogde monsterkwaliteit is.</xs:documentation>
