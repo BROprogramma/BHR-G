@@ -456,7 +456,49 @@
 		<Omschrijving></Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
-		<Waarde>schelpmateriaalNietGespecificeerd</Waarde>
+		<Waarde>schelpen</Waarde>
+		<Categorie>schelprijke grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving></Omschrijving>
+	</GeologischeGrondsoort>
+	<GeologischeGrondsoort>
+		<Waarde>siltigeSchelpen</Waarde>
+		<Categorie>schelprijke grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving></Omschrijving>
+	</GeologischeGrondsoort>
+	<GeologischeGrondsoort>
+		<Waarde>zwakZandigeSchelpen</Waarde>
+		<Categorie>schelprijke grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving></Omschrijving>
+	</GeologischeGrondsoort>
+	<GeologischeGrondsoort>
+		<Waarde>matigZandigeSchelpen</Waarde>
+		<Categorie>schelprijke grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving></Omschrijving>
+	</GeologischeGrondsoort>
+	<GeologischeGrondsoort>
+		<Waarde>sterkZandigeSchelpen</Waarde>
+		<Categorie>schelprijke grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving></Omschrijving>
+	</GeologischeGrondsoort>
+	<GeologischeGrondsoort>
+		<Waarde>uiterstZandigeSchelpen</Waarde>
+		<Categorie>schelprijke grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving></Omschrijving>
+	</GeologischeGrondsoort>
+	<GeologischeGrondsoort>
+		<Waarde>schelpenNietGespecificeerd</Waarde>
 		<Categorie>schelprijke grond</Categorie>
 		<IMBRO></IMBRO>
 		<IMBROA>v</IMBROA>
@@ -484,63 +526,7 @@
 		<Omschrijving></Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
-		<Waarde>kleiigeBruinkool</Waarde>
-		<Categorie>organische grond</Categorie>
-		<IMBRO></IMBRO>
-		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
-	</GeologischeGrondsoort>
-	<GeologischeGrondsoort>
-		<Waarde>kleiigeDetritus</Waarde>
-		<Categorie>organische grond</Categorie>
-		<IMBRO></IMBRO>
-		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
-	</GeologischeGrondsoort>
-	<GeologischeGrondsoort>
-		<Waarde>kleiigeGyttja</Waarde>
-		<Categorie>organische grond</Categorie>
-		<IMBRO></IMBRO>
-		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
-	</GeologischeGrondsoort>
-	<GeologischeGrondsoort>
-		<Waarde>kleiigVeen</Waarde>
-		<Categorie>organische grond</Categorie>
-		<IMBRO></IMBRO>
-		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
-	</GeologischeGrondsoort>
-	<GeologischeGrondsoort>
 		<Waarde>veenNietGespecificeerd</Waarde>
-		<Categorie>organische grond</Categorie>
-		<IMBRO></IMBRO>
-		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
-	</GeologischeGrondsoort>
-	<GeologischeGrondsoort>
-		<Waarde>zandigeBruinkool</Waarde>
-		<Categorie>organische grond</Categorie>
-		<IMBRO></IMBRO>
-		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
-	</GeologischeGrondsoort>
-	<GeologischeGrondsoort>
-		<Waarde>zandigeDetritus</Waarde>
-		<Categorie>organische grond</Categorie>
-		<IMBRO></IMBRO>
-		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
-	</GeologischeGrondsoort>
-	<GeologischeGrondsoort>
-		<Waarde>zandigeGyttja</Waarde>
-		<Categorie>organische grond</Categorie>
-		<IMBRO></IMBRO>
-		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
-	</GeologischeGrondsoort>
-	<GeologischeGrondsoort>
-		<Waarde>zandigVeen</Waarde>
 		<Categorie>organische grond</Categorie>
 		<IMBRO></IMBRO>
 		<IMBROA>v</IMBROA>
@@ -555,27 +541,6 @@
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>leemNietGespecificeerd</Waarde>
-		<Categorie>grindarme minerale grond</Categorie>
-		<IMBRO></IMBRO>
-		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
-	</GeologischeGrondsoort>
-	<GeologischeGrondsoort>
-		<Waarde>siltigeKlei</Waarde>
-		<Categorie>grindarme minerale grond</Categorie>
-		<IMBRO></IMBRO>
-		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
-	</GeologischeGrondsoort>
-	<GeologischeGrondsoort>
-		<Waarde>siltigZand</Waarde>
-		<Categorie>grindarme minerale grond</Categorie>
-		<IMBRO></IMBRO>
-		<IMBROA>v</IMBROA>
-		<Omschrijving></Omschrijving>
-	</GeologischeGrondsoort>
-	<GeologischeGrondsoort>
-		<Waarde>zandigeKlei</Waarde>
 		<Categorie>grindarme minerale grond</Categorie>
 		<IMBRO></IMBRO>
 		<IMBROA>v</IMBROA>
