@@ -123,7 +123,7 @@ Explanation: Het gegeven is alleen aanwezig wanneer alle deelonderzoeken zijn ge
 Explanation: Het gegeven is alleen aanwezig wanneer alle deelonderzoeken zijn gerapporteerd en het onderzoek is afgesloten. Hoewel historische gegevens nog buiten het bereik van deze versie van de catalogus vallen, is wel al met zekerheid vast te stellen dat de eerste datum waarop een onderzoek kan zijn afgerond in 1877 ligt.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="offset" minOccurs="1" maxOccurs="1">
+					<xs:element name="offset" nillable="true" minOccurs="1" maxOccurs="1">
 						<xs:annotation>
 							<xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De procedure die de uitvoering van projecten waarbinnen het booronderzoek wordt uitgevoerd reguleert en daarmee de kaders bepaalt voor de uitvoering van het booronderzoek.
 Explanation: De procedure beschrijft de manier van werken, de passende hulpmiddelen en de eisen waaraan de uitvoering moet voldoen. Procedures zijn in het algemeen vastgelegd in een norm, protocol of richtlijn. Dat kan overigens een richtlijn zijn die de uitvoerder voor zichzelf gebruikt. Het gegeven is opgenomen omdat het inzicht biedt in de kwaliteit van het werk.</xs:documentation>
