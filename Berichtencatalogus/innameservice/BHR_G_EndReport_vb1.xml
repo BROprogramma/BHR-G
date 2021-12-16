@@ -12,7 +12,7 @@
  
     <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de innameservice.
          Het houdt geen rekening met bedrijfsregels en is vaktechnisch/inhoudelijk niet voorbeeldig.
-        xsi:schemaLocation="http://www.broservices.nl/xsd/isbhr-gt/2.0 https://schema.broservices.nl/xsd/isbhr-gt/2.0/isbhr-gt-messages.xsd">
+        xsi:schemaLocation="http://www.broservices.nl/xsd/isbhr-g/2.0 https://schema.broservices.nl/xsd/isbhr-g/2.0/isbhr-g-messages.xsd">
     -->
     <brocom:requestReference>verzoek_2</brocom:requestReference>
     <brocom:deliveryAccountableParty>52766179</brocom:deliveryAccountableParty>
