@@ -745,7 +745,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e3371"></a><section id="detail_d363258e3371">
+            </section><a class="anchor" id="detail_d363236e3371"></a><section id="detail_d363236e3371">
             <h4>  registratiegeschiedenis</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -778,7 +778,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e3556"></a><section id="detail_d363258e3556">
+         </section><a class="anchor" id="detail_d363236e3556"></a><section id="detail_d363236e3556">
             <h4>  rapportagegeschiedenis</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -811,7 +811,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e3742"></a><section id="detail_d363258e3742">
+         </section><a class="anchor" id="detail_d363236e3742"></a><section id="detail_d363236e3742">
             <h4>  aangeleverde locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -845,7 +845,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e3927"></a><section id="detail_d363258e3927">
+         </section><a class="anchor" id="detail_d363236e3927"></a><section id="detail_d363236e3927">
             <h4>  aangeleverde verticale positie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -879,7 +879,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e4112"></a><section id="detail_d363258e4112">
+         </section><a class="anchor" id="detail_d363236e4112"></a><section id="detail_d363236e4112">
             <h4>  gestandaardiseerde locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -920,7 +920,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e4338"></a><section id="detail_d363258e4338">
+         </section><a class="anchor" id="detail_d363236e4338"></a><section id="detail_d363236e4338">
             <h4>  terreintoestand</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1771,7 +1771,7 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_d363258e6819"></a><section id="detail_d363258e6819">
+         </table><a class="anchor" id="detail_d363236e6819"></a><section id="detail_d363236e6819">
             <h4>  gebeurtenis</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -5413,7 +5413,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e20132"></a><section id="detail_d363258e20132">
+            </section><a class="anchor" id="detail_d363236e20132"></a><section id="detail_d363236e20132">
             <h4>  bemonsteringsapparaat</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -8225,8 +8225,8 @@
                         
                         <p>Het gegeven heeft betrekking op een waarneming en krijgt alleen de waarde <em>ja</em>, wanneer de beschrijver geconstateerd heeft dat de laag antropogeen is.<br clear="none">
                            [IMBRO/A] Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht is
-                           de laag die uit natuurlijk grond bestaat en door de mens is verstoord vaak minder
-                           uitgebreid beschreven.</p>
+                           dit gegeven niet expliciet vastgelegd. Het gegeven heeft alleen de waarde <em>ja</em> gekregen wanneer dat kon worden afgeleid. Bij archiefgegevens zijn antropogene lagen
+                           die uit natuurlijk grond bestaan vaak minder uitgebreid beschreven.</p>
                         </td>
                   </tr>
                </tbody>
@@ -8284,7 +8284,8 @@
                      <th>Regels IMBRO/A</th>
                      <td>
                         
-                        <p>Het attribuut mag aanwezig zijn wanneer de waarde van het attribuut <em>beschrijfkwaliteit</em> van de entiteit <em>Boorprofiel</em> gelijk is aan <em>geologischUitgebreidArchief</em> en de waarde van het attribuut <em>antropogeen</em> gelijk is aan <em>ja</em>.</p>
+                        <p>Voor IMBRO/A gegevens mag het attribuut aanwezig zijn de waarde van het attribuut
+                           <em>antropogeen</em> gelijk is aan <em>ja</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -8392,10 +8393,6 @@
                         </td>
                   </tr>
                   <tr>
-                     <th>&nbsp;&nbsp;Naam IMBRO/A</th>
-                     <td>IndicatieJaNeeOnbekend</td>
-                  </tr>
-                  <tr>
                      <th>&nbsp;&nbsp;Type</th>
                      <td>Waardelijst niet uitbreidbaar</td>
                   </tr>
@@ -8408,12 +8405,22 @@
                         </td>
                   </tr>
                   <tr>
+                     <th>Regels IMBRO/A</th>
+                     <td>
+                        
+                        <p>Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut beschrijfprocedure
+                           van de entiteit Boormonsterbeschrijving niet gelijk is aan GDN_SBB6v2022.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Toelichting</th>
                      <td>
                         
                         <p>Na afzetting kan de laagopbouw van sedimenten veranderen door processen die op de
                            grond inwerken. Het gegeven geeft aan of door het optreden van een dergelijk verandering
-                           een interval is ontstaan dat als een aparte laag wordt onderscheiden.</p>
+                           een interval is ontstaan dat als een aparte laag wordt onderscheiden.<br clear="none">
+                           [IMBRO/A] Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht is
+                           dit gegeven niet vastgelegd.</p>
                         </td>
                   </tr>
                </tbody>
@@ -8591,7 +8598,9 @@
                         
                         <p>Het gegeven geeft, in het geval de opbouw van een laag enigszins is verstoord door
                            de aanwezigheid van de mens, wat de aard van de verstoring is. Het gaat om de verstoring
-                           van natuurlijke lagen, omdat het gegeven alleen in dat geval toegevoegde waarde heeft.</p>
+                           van natuurlijke lagen, omdat het gegeven alleen in dat geval toegevoegde waarde heeft.<br clear="none">
+                           [IMBRO/A] Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht is
+                           het gegeven niet altijd vastgelegd.</p>
                         </td>
                   </tr>
                </tbody>
@@ -8649,7 +8658,9 @@
                            gegevens het beste direct bij de beschrijving van boormonsters vast te leggen in plaats
                            van achteraf op basis van alleen de boormonsterbeschrijving.
                            Bij de standaard beschrijving wordt een kortere lijst gebruikt dan bij de uitgebreide
-                           beschrijving. </p>
+                           beschrijving.<br clear="none">
+                           [IMBRO/A] Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht is
+                           het gegeven niet altijd vastgelegd.</p>
                         </td>
                   </tr>
                </tbody>
@@ -8703,20 +8714,14 @@
                         </td>
                   </tr>
                   <tr>
-                     <th>Regels IMBRO/A</th>
-                     <td>
-                        
-                        <p>Het attribuut mag aanwezig zijn wanneer het attribuut <em>bijzonder materiaal</em> niet aanwezig is en de waarde van het attribuut <em>beschrijfkwaliteit</em> van de entiteit <em>Boorprofiel</em> gelijk is aan <em>geologischUitgebreidArchief</em>.<br clear="none">
-                           De entiteit mag niet aanwezig zijn wanneer de waarde van het attribuut <em>kwaliteit beschreven monsters</em> gelijk is aan <em>geroerd</em>.</p>
-                        </td>
-                  </tr>
-                  <tr>
                      <th>Toelichting</th>
                      <td>
                         
                         <p>Het gegeven heeft alleen betekenis als het om natuurlijke lagen gaat. Het al dan niet
                            intact zijn bepaalt of  gegevens over de interne opbouw van een laag voorhanden zijn
-                           en dat soort gegevens geeft nadere informatie over het ontstaan van de laag.</p>
+                           en dat soort gegevens geeft nadere informatie over het ontstaan van de laag.<br clear="none">
+                           Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht is dit gegeven
+                           niet vastgelegd.</p>
                         </td>
                   </tr>
                </tbody>
@@ -8772,6 +8777,13 @@
                         
                         <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>interne structuur intact</em> gelijk is aan <em>ja</em> en de waarde van het attribuut <em>post</em>-<em>sedimentair</em> gelijk is aan <em>nee</em>.<br clear="none">
                            Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels IMBRO/A</th>
+                     <td>
+                        
+                        <p>Voor IMBRO/A gegevens mag het attribuut aanwezig zijn wanneer het attribuut <em>interne structuur intact</em> ontbreekt en het attribuut <em>post</em>-<em>sedimentair</em> ontbreekt.</p>
                         </td>
                   </tr>
                   <tr>
@@ -8838,6 +8850,13 @@
                         </td>
                   </tr>
                   <tr>
+                     <th>Regels IMBRO/A</th>
+                     <td>
+                        
+                        <p>Voor IMBRO/A gegevens mag het attribuut aanwezig zijn wanneer het attribuut <em>interne structuur intact</em> ontbreekt.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Toelichting</th>
                      <td>
                         
@@ -8901,7 +8920,7 @@
                      <th>Regels IMBRO/A</th>
                      <td>
                         
-                        <p>De waarde van het attribuut mag niet gelijk zijn aan <em>onregelmatigVervormd</em>.</p>
+                        <p>Voor IMBRO/A gegevens mag het attribuut aanwezig zijn wanneer het attribuut <em>interne structuur intact</em> ontbreekt.</p>
                         </td>
                   </tr>
                   <tr>
@@ -8911,9 +8930,7 @@
                         <p>Het gegeven geeft inzicht in de omstandigheden waaronder de laag is gevormd. In het
                            geval van sedimentaire lagen wordt de interne opbouw bepaald door de processen die
                            tot afzetting hebben geleid. In het geval van post-sedimentaire lagen zijn processen
-                           die vanaf het aardoppervlak op de grond inwerken bepalend.<br clear="none">
-                           [IMBRO/A] Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht zijn
-                           geen gegevens over de onregelmatig vervorming (laagdelen) vastgelegd.</p>
+                           die vanaf het aardoppervlak op de grond inwerken bepalend. </p>
                         </td>
                   </tr>
                </tbody>
@@ -8968,6 +8985,13 @@
                         </td>
                   </tr>
                   <tr>
+                     <th>Regels IMBRO/A</th>
+                     <td>
+                        
+                        <p>Voor IMBRO/A gegevens mag het attribuut aanwezig zijn wanneer het attribuut <em>interne structuur intact</em> ontbreekt en het attribuut <em>post</em>-<em>sedimentair</em> ontbreekt.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Toelichting</th>
                      <td>
                         
@@ -8980,7 +9004,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e32672"></a><section id="detail_d363258e32672">
+            </section><a class="anchor" id="detail_d363236e32756"></a><section id="detail_d363236e32756">
             <h4>  archeologisch bestanddeel</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -9015,7 +9039,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e32839"></a><section id="detail_d363258e32839">
+         </section><a class="anchor" id="detail_d363236e32923"></a><section id="detail_d363236e32923">
             <h4>  laagdeel</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -9050,7 +9074,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e33006"></a><section id="detail_d363258e33006">
+         </section><a class="anchor" id="detail_d363236e33090"></a><section id="detail_d363236e33090">
             <h4>  laagje</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -9084,7 +9108,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e33173"></a><section id="detail_d363258e33173">
+         </section><a class="anchor" id="detail_d363236e33257"></a><section id="detail_d363236e33257">
             <h4>  grond</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -9262,8 +9286,8 @@
                   <th>Regels</th>
                   <td>
                      
-                     <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>structuur</em> van de entiteit <em>Laag</em> gelijk is aan <em>onregelmatigVervormd</em>.<br clear="none">
-                        De entiteit mag niet aanwezig zijn in alle andere gevallen.</p>
+                     <p>De entiteit mag niet aanwezig zijn wanneer het attribuut <em>bijzonder materiaal</em> aanwezig is.<br clear="none">
+                        De entiteit mag niet aanwezig zijn wanneer de waarde van het attribuut <em>interne structuur intact</em> niet gelijk is aan <em>ja</em>.</p>
                      </td>
                </tr>
                <tr>
@@ -9274,7 +9298,10 @@
                         ze niet goed als laag of lagen beschreven kunnen worden. Voorbeelden zijn sterk gekryoturbeerde
                         of doorgraven intervallen waarin twee of meer soorten grond een grillige samenhang
                         vertonen. Ook zeer grillige inspoelingslagen kunnen op deze wijze in twee of meer
-                        laagdelen beschreven worden.</p>
+                        laagdelen beschreven worden.<br clear="none">
+                        [IMBRO/A] Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht zijn
+                        onregelmatig vervormde lagen niet als laagdelen beschreven en is dit gegeven niet
+                        vastgelegd.</p>
                      </td>
                </tr>
             </tbody>
@@ -9337,7 +9364,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e34150"></a><section id="detail_d363258e34150">
+            </section><a class="anchor" id="detail_d363236e34236"></a><section id="detail_d363236e34236">
             <h4>  grond</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -9395,8 +9422,15 @@
                   <th>Regels</th>
                   <td>
                      
-                     <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>structuur</em> van de entiteit <em>Laag</em> gelijk is aan <em>heterogeenGelaagd</em>.<br clear="none">
-                        De entiteit mag niet aanwezig zijn in alle andere gevallen.</p>
+                     <p>De entiteit mag niet aanwezig zijn wanneer het attribuut <em>bijzonder materiaal</em> aanwezig is.<br clear="none">
+                        De entiteit mag niet aanwezig zijn wanneer de waarde van het attribuut <em>interne structuur intact</em> niet gelijk is aan <em>ja</em>.</p>
+                     </td>
+               </tr>
+               <tr>
+                  <th>Regels IMBRO/A</th>
+                  <td>
+                     
+                     <p>Voor IMBRO/A gegevens mag het attribuut aanwezig zijn wanneer het attribuut <em>interne structuur intact</em> ontbreekt.</p>
                      </td>
                </tr>
                <tr>
@@ -9407,8 +9441,8 @@
                         elkaar verschillen, geeft dat aan dat de laag is gevormd in een milieu van afzetting
                         waarin de omstandigheden met regelmaat veranderen, zoals in een getijdegebied.<br clear="none">
                         [IMBRO/A] Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht zijn
-                        van de heterogeen gelaagde lagen 2 typen laagjes beschreven. Het laagje met het kleinste
-                        aandeel is vaak minder uitgebreid beschreven.</p>
+                        van de heterogeen gelaagde lagen die als laagjes zijn beschreven 2 typen laagjes beschreven.
+                        Het laagje met het kleinste aandeel is vaak minder uitgebreid beschreven.</p>
                      </td>
                </tr>
             </tbody>
@@ -9665,7 +9699,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e35355"></a><section id="detail_d363258e35355">
+            </section><a class="anchor" id="detail_d363236e35457"></a><section id="detail_d363236e35457">
             <h4>  grond</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -10706,7 +10740,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e39192"></a><section id="detail_d363258e39192">
+            </section><a class="anchor" id="detail_d363236e39311"></a><section id="detail_d363236e39311">
             <h4>  bijzonder bestanddeel</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -10741,7 +10775,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e39359"></a><section id="detail_d363258e39359">
+         </section><a class="anchor" id="detail_d363236e39478"></a><section id="detail_d363236e39478">
             <h4>  afwijkend laagje</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -10776,7 +10810,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e39526"></a><section id="detail_d363258e39526">
+         </section><a class="anchor" id="detail_d363236e39645"></a><section id="detail_d363236e39645">
             <h4>  brokje</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -10809,7 +10843,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e39693"></a><section id="detail_d363258e39693">
+         </section><a class="anchor" id="detail_d363236e39812"></a><section id="detail_d363236e39812">
             <h4>  grindfractie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -10842,7 +10876,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e39860"></a><section id="detail_d363258e39860">
+         </section><a class="anchor" id="detail_d363236e39979"></a><section id="detail_d363236e39979">
             <h4>  zandfractie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -10875,7 +10909,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e40027"></a><section id="detail_d363258e40027">
+         </section><a class="anchor" id="detail_d363236e40146"></a><section id="detail_d363236e40146">
             <h4>  schelpenfractie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -10908,7 +10942,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e40194"></a><section id="detail_d363258e40194">
+         </section><a class="anchor" id="detail_d363236e40313"></a><section id="detail_d363236e40313">
             <h4>  veenfractie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -10941,7 +10975,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e40361"></a><section id="detail_d363258e40361">
+         </section><a class="anchor" id="detail_d363236e40480"></a><section id="detail_d363236e40480">
             <h4>  munsellkleur</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -10974,7 +11008,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e40528"></a><section id="detail_d363258e40528">
+         </section><a class="anchor" id="detail_d363236e40647"></a><section id="detail_d363236e40647">
             <h4>  vlek</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -11007,7 +11041,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e40695"></a><section id="detail_d363258e40695">
+         </section><a class="anchor" id="detail_d363236e40814"></a><section id="detail_d363236e40814">
             <h4>  insluitsel</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -11042,7 +11076,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e40862"></a><section id="detail_d363258e40862">
+         </section><a class="anchor" id="detail_d363236e40981"></a><section id="detail_d363236e40981">
             <h4>  sedimentlens</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -11076,7 +11110,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e41030"></a><section id="detail_d363258e41030">
+         </section><a class="anchor" id="detail_d363236e41149"></a><section id="detail_d363236e41149">
             <h4>  dierlijk fossiel</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -11109,7 +11143,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e41197"></a><section id="detail_d363258e41197">
+         </section><a class="anchor" id="detail_d363236e41316"></a><section id="detail_d363236e41316">
             <h4>  fractieverdeling</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -12603,7 +12637,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e46308"></a><section id="detail_d363258e46308">
+            </section><a class="anchor" id="detail_d363236e46427"></a><section id="detail_d363236e46427">
             <h4>  grindbestanddeel</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -13282,7 +13316,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e48897"></a><section id="detail_d363258e48897">
+            </section><a class="anchor" id="detail_d363236e49016"></a><section id="detail_d363236e49016">
             <h4>  zandbestanddeel</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -13976,7 +14010,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e51455"></a><section id="detail_d363258e51455">
+            </section><a class="anchor" id="detail_d363236e51574"></a><section id="detail_d363236e51574">
             <h4>  schelpenbestanddeel</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -14298,7 +14332,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e52777"></a><section id="detail_d363258e52777">
+            </section><a class="anchor" id="detail_d363236e52896"></a><section id="detail_d363236e52896">
             <h4>  veenbestanddeel</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -15879,7 +15913,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e58432"></a><section id="detail_d363258e58432">
+            </section><a class="anchor" id="detail_d363236e58551"></a><section id="detail_d363236e58551">
             <h4>  verdeling fijne fractie grindrijke minerale grond</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -15913,7 +15947,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e58599"></a><section id="detail_d363258e58599">
+         </section><a class="anchor" id="detail_d363236e58718"></a><section id="detail_d363236e58718">
             <h4>  verdeling fijne fractie schelprijke grond</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -15946,7 +15980,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e58766"></a><section id="detail_d363258e58766">
+         </section><a class="anchor" id="detail_d363236e58885"></a><section id="detail_d363236e58885">
             <h4>  verdeling fijne fractie organische grond</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -15979,7 +16013,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e58933"></a><section id="detail_d363258e58933">
+         </section><a class="anchor" id="detail_d363236e59052"></a><section id="detail_d363236e59052">
             <h4>  verdeling fijne fractie grindarme minerale grond</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -16013,7 +16047,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e59100"></a><section id="detail_d363258e59100">
+         </section><a class="anchor" id="detail_d363236e59219"></a><section id="detail_d363236e59219">
             <h4>  archiefverdeling fijne fractie schelprijke grond</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -18017,7 +18051,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e68409"></a><section id="detail_d363258e68409">
+            </section><a class="anchor" id="detail_d363236e68528"></a><section id="detail_d363236e68528">
             <h4>  onderzocht materiaal</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -19292,7 +19326,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e71341"></a><section id="detail_d363258e71341">
+            </section><a class="anchor" id="detail_d363236e71460"></a><section id="detail_d363236e71460">
             <h4>  afwijkend materiaal</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -20361,7 +20395,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e74906"></a><section id="detail_d363258e74906">
+            </section><a class="anchor" id="detail_d363236e75025"></a><section id="detail_d363236e75025">
             <h4>  basis korrelgrootteverdeling</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -20569,7 +20603,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e75800"></a><section id="detail_d363258e75800">
+            </section><a class="anchor" id="detail_d363236e75919"></a><section id="detail_d363236e75919">
             <h4>  standaardverdeling fractie kleiner63um</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -20603,7 +20637,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e75985"></a><section id="detail_d363258e75985">
+         </section><a class="anchor" id="detail_d363236e76104"></a><section id="detail_d363236e76104">
             <h4>  minimale verdeling fractie kleiner63um</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -20636,7 +20670,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e76170"></a><section id="detail_d363258e76170">
+         </section><a class="anchor" id="detail_d363236e76289"></a><section id="detail_d363236e76289">
             <h4>  standaardverdeling fractie 63umtot2mm</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -20669,7 +20703,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e76355"></a><section id="detail_d363258e76355">
+         </section><a class="anchor" id="detail_d363236e76474"></a><section id="detail_d363236e76474">
             <h4>  minimale verdeling fractie 63umtot2mm</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -20702,7 +20736,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e76540"></a><section id="detail_d363258e76540">
+         </section><a class="anchor" id="detail_d363236e76659"></a><section id="detail_d363236e76659">
             <h4>  beperkte verdeling fractie 63umtot2mm</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -20735,7 +20769,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d363258e76725"></a><section id="detail_d363258e76725">
+         </section><a class="anchor" id="detail_d363236e76844"></a><section id="detail_d363236e76844">
             <h4>  standaardverdeling fractie groter2mm</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -24707,7 +24741,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e91528"></a><section id="detail_d363258e91528">
+            </section><a class="anchor" id="detail_d363236e91647"></a><section id="detail_d363236e91647">
             <h4>  massaverlies kalkgehalte</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -25471,7 +25505,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e94133"></a><section id="detail_d363258e94133">
+            </section><a class="anchor" id="detail_d363236e94252"></a><section id="detail_d363236e94252">
             <h4>  massaverlies organischestofgehalte</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -27445,7 +27479,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d363258e100737"></a><section id="detail_d363258e100737">
+            </section><a class="anchor" id="detail_d363236e100856"></a><section id="detail_d363236e100856">
             <h4>  verzadigde waterdoorlatendheid bij bepaalde belasting</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -43561,21 +43595,12 @@
                   </td>
             </tr>
             <tr>
-               <td>plantenrestenHoutigGeenBerkEikElsWilg</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Houtresten die niet kunnen toegewezen worden aan berk, eik, els of wilg.</p>
-                  </td>
-            </tr>
-            <tr>
                <td>plantenrestenHoutigNietGespecificeerd</td>
                <td>✔</td>
                <td>✔</td>
                <td>
                   
-                  <p>Houtresten waarvan de herkomst niet herkend wordt.</p>
+                  <p>Houtresten die niet herkend worden als afkomstig van berk, eik, els of wilg.</p>
                   </td>
             </tr>
             <tr>
