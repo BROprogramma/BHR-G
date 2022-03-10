@@ -24,24 +24,28 @@
 	<Grindmediaanklasse>
 		<Waarde>fijnNEN5104</Waarde>
 		<Bereik>2 - 5,6 mm</Bereik>
+		<IMBRO></IMBRO>
 		<IMBROA>✔</IMBROA>
 		<Omschrijving>De grindmediaan is gelijk aan of groter dan 2 mm en kleiner dan 5,6 mm. Een klasse onder de NEN 5104 procedure.</Omschrijving>
 	</Grindmediaanklasse>
 	<Grindmediaanklasse>
 		<Waarde>matigGrofNEN5104</Waarde>
 		<Bereik>5,6 - 16 mm</Bereik>
+		<IMBRO></IMBRO>
 		<IMBROA>✔</IMBROA>
 		<Omschrijving>De grindmediaan is gelijk aan of groter dan 5,6 mm en kleiner dan 16 mm. Een klasse onder de NEN 5104 procedure.</Omschrijving>
 	</Grindmediaanklasse>
 	<Grindmediaanklasse>
 		<Waarde>zeerGrofNEN5104</Waarde>
 		<Bereik>16 - 63 mm</Bereik>
+		<IMBRO></IMBRO>
 		<IMBROA>✔</IMBROA>
 		<Omschrijving>De grindmediaan is gelijk aan of groter dan 16 mm en kleiner dan 63 mm. Een klasse onder de NEN 5104 procedure.</Omschrijving>
 	</Grindmediaanklasse>
 	<Grindmediaanklasse>
 		<Waarde>onbekend</Waarde>
 		<Bereik>n.v.t.</Bereik>
+		<IMBRO></IMBRO>
 		<IMBROA>✔</IMBROA>
 		<Omschrijving>De mediaan van de grindfractie is niet bekend.</Omschrijving>
 	</Grindmediaanklasse>
