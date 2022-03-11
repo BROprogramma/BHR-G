@@ -1,59 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dispatchCharacteristicsResponse
-        xmlns="http://www.broservices.nl/xsd/dsbhr-g/1.0"
-        xmlns:bhrgcommon="http://www.broservices.nl/xsd/bhrgcommon/1.0"
-        xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
-        xmlns:gml="http://www.opengis.net/gml/3.2" 
+<soap:Envelope 
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.broservices.nl/xsd/dsbhrg/1.0 ../../XSD/dsbhr-g-messages.xsd">
-    <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de uitgiftewebservice.
-         Het is niet gevalideerd door de uitgiftewebservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
-        xsi:schemaLocation="http://www.broservices.nl/xsd/dsbhrg/1.0 https://schema.broservices.nl/xsd/dsbhrg/1.0/dsbhr-g-messages.xsd">
-    -->
-    <brocom:responseType>dispatch</brocom:responseType>
-    <brocom:requestReference>101</brocom:requestReference>
-    <brocom:dispatchTime>2017-03-10T09:09:43+01:00</brocom:dispatchTime>
-    <numberOfDocuments>2</numberOfDocuments>
-    <dispatchDocument>
-        <BHR_G_C gml:id="id_0001">
-            <brocom:broId>BHR000000003950</brocom:broId>
-            <brocom:deregistered>nee</brocom:deregistered>
-            <brocom:deliveryAccountableParty>52766179</brocom:deliveryAccountableParty>
-            <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
-            <brocom:objectRegistrationTime>2017-02-23T00:00:00+01:00</brocom:objectRegistrationTime>
-            <brocom:underReview>nee</brocom:underReview>
-            <brocom:standardizedLocation srsName="urn:ogc:def:crs:EPSG::4258" gml:id="id_0002">
-                <gml:pos>52.287820210 5.090415500</gml:pos>
-            </brocom:standardizedLocation>
-            <brocom:deliveredLocation srsName="urn:ogc:def:crs:EPSG::28992" gml:id="id_0003">
-                <gml:pos>134750.000 477800.000</gml:pos>
-            </brocom:deliveredLocation>
-            <surveyPurpose codeSpace="urn:bro:bhrg:SurveyPurpose">bodemfysischOnderzoek</surveyPurpose>
-            <discipline codeSpace="urn:bro:bhrg:Discipline">geologie</discipline>
-            <researchReportDate>2020-08-01</researchReportDate>
-            <localVerticalReferencePoint codeSpace="urn:bro:bhrg:LocalVerticalReferencePoint">maaiveld</localVerticalReferencePoint>
-            <offset uom="m">5.000</offset>
-            <verticalDatum codeSpace="urn:bro:bhrg:VerticalDatum">NAP</verticalDatum>
-			<boringStartDate>2020-07-14</boringStartDate>
-			<boringEndDate>2020-07-31</boringEndDate>
-			<rockReached>nee</rockReached>
-			<finalDepthBoring uom="m">6.80</finalDepthBoring>
-			<descriptionReportDate>2020-08-01</descriptionReportDate>
-			<descriptionProcedure codeSpace="urn:bro:bhrg:DescriptionProcedure">GDN_SBB6v2020</descriptionProcedure>
-			<descriptionQuality codeSpace="urn:bro:bhrg:DescriptionQuality">geologischStandaardGeroerd</descriptionQuality>
-			<descriptionQuality codeSpace="urn:bro:bhrg:DescriptionQuality">geologischStandaardOngeroerd</descriptionQuality>
-            <samplingQualityOverview>
-				<samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseA</samplingQuality>
-				<samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseD</samplingQuality>
-				<samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseE</samplingQuality>
-            </samplingQualityOverview>
-        </BHR_G_C>
-    </dispatchDocument>
-    <dispatchDocument>
-        <brocom:BRO_DO gml:id="id_0004">
-            <brocom:broId>BHR000000000666</brocom:broId>
-            <brocom:deregistered>ja</brocom:deregistered>
-            <brocom:deregistrationTime>2020-07-23T13:02:41+02:00</brocom:deregistrationTime>
-        </brocom:BRO_DO>
-    </dispatchDocument>
-</dispatchCharacteristicsResponse>
+        xsi:schemaLocation="http://schemas.xmlsoap.org/soap/envelope/ http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <dispatchCharacteristicsResponse
+                xmlns="http://www.broservices.nl/xsd/dsbhr-g/1.0"
+                xmlns:bhrgcommon="http://www.broservices.nl/xsd/bhrgcommon/1.0"
+                xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+                xmlns:gml="http://www.opengis.net/gml/3.2" 
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.broservices.nl/xsd/dsbhr-g/1.0 ../../dsbhr-g-messages.xsd">
+            <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de uitgiftewebservice.
+                 Het is niet gevalideerd door de uitgiftewebservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
+                xsi:schemaLocation="http://www.broservices.nl/xsd/dsbhrg/1.0 https://schema.broservices.nl/xsd/dsbhrg/1.0/dsbhr-g-messages.xsd">
+            -->
+            <brocom:responseType>dispatch</brocom:responseType>
+            <brocom:requestReference>101</brocom:requestReference>
+            <brocom:dispatchTime>2017-03-10T09:09:43+01:00</brocom:dispatchTime>
+            <numberOfDocuments>2</numberOfDocuments>
+            <dispatchDocument>
+                <BHR_G_C gml:id="id_0001">
+                    <brocom:broId>BHR000000003950</brocom:broId>
+                    <brocom:deregistered>nee</brocom:deregistered>
+                    <brocom:deliveryAccountableParty>52766179</brocom:deliveryAccountableParty>
+                    <brocom:qualityRegime>IMBRO/A</brocom:qualityRegime>
+                    <brocom:objectRegistrationTime>2017-02-23T00:00:00+01:00</brocom:objectRegistrationTime>
+                    <brocom:underReview>nee</brocom:underReview>
+                    <brocom:standardizedLocation srsName="urn:ogc:def:crs:EPSG::4258" gml:id="id_0002">
+                        <gml:pos>52.287820210 5.090415500</gml:pos>
+                    </brocom:standardizedLocation>
+                    <brocom:deliveredLocation srsName="urn:ogc:def:crs:EPSG::28992" gml:id="id_0003">
+                        <gml:pos>134750.000 477800.000</gml:pos>
+                    </brocom:deliveredLocation>
+                    <surveyPurpose codeSpace="urn:bro:bhrg:SurveyPurpose">bodemfysischOnderzoek</surveyPurpose>
+                    <discipline codeSpace="urn:bro:bhrg:Discipline">geologie</discipline>
+                    <researchReportDate>
+                        <brocom:date>2020-07-31</brocom:date>
+                    </researchReportDate>
+                    <localVerticalReferencePoint codeSpace="urn:bro:bhrg:LocalVerticalReferencePoint">maaiveld</localVerticalReferencePoint>
+                    <offset uom="m">5.000</offset>
+                    <verticalDatum codeSpace="urn:bro:bhrg:VerticalDatum">NAP</verticalDatum>
+                    <boringStartDate>
+                        <brocom:date>2020-07-31</brocom:date>
+                    </boringStartDate>
+                    <boringEndDate>
+                        <brocom:date>2020-07-31</brocom:date>	
+                    </boringEndDate>
+                    <rockReached>nee</rockReached>
+                    <finalDepthBoring uom="m">6.80</finalDepthBoring>
+                    <descriptionReportDate>
+                        <brocom:date>2020-08-01</brocom:date></descriptionReportDate>
+                    <descriptionProcedure codeSpace="urn:bro:bhrg:DescriptionProcedure">GDN_SBB6v2020</descriptionProcedure>
+                    <descriptionQuality codeSpace="urn:bro:bhrg:DescriptionQuality">geologischStandaardGeroerd</descriptionQuality>
+                    <analysisReportDate>2020-07-31</analysisReportDate>
+                    <!--<descriptionQuality codeSpace="urn:bro:bhrg:DescriptionQuality">geologischStandaardOngeroerd</descriptionQuality>-->
+                    <samplingQualityOverview>
+                        <samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseA</samplingQuality>
+                        <samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseD</samplingQuality>
+                        <samplingQuality codeSpace="urn:bro:bhrg:SamplingQuality">klasseE</samplingQuality>
+                    </samplingQualityOverview>
+                </BHR_G_C>
+            </dispatchDocument>
+            <dispatchDocument>
+                <brocom:BRO_DO gml:id="id_0004">
+                    <brocom:broId>BHR000000000666</brocom:broId>
+                    <brocom:deregistered>ja</brocom:deregistered>
+                    <brocom:deregistrationTime>2020-07-23T13:02:41+02:00</brocom:deregistrationTime>
+                </brocom:BRO_DO>
+            </dispatchDocument>
+        </dispatchCharacteristicsResponse>
+    </soap:Body>
+</soap:Envelope>
