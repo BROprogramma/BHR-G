@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Grindmediaanklasse>
+		<Waarde>fijn</Waarde>
+		<Bereik>2 - 6,3 mm</Bereik>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De grindmediaan is groter dan 2 mm en kleiner dan of gelijk aan 6,3 mm. Een klasse onder de NEN-EN-ISO 14688 procedure.</Omschrijving>
+	</Grindmediaanklasse>
+	<Grindmediaanklasse>
+		<Waarde>middelgrof</Waarde>
+		<Bereik>6,3 - 20 mm</Bereik>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De grindmediaan is groter dan 6,3 mm en kleiner dan of gelijk aan 20 mm. Een klasse onder de NEN-EN-ISO 14688 procedure.</Omschrijving>
+	</Grindmediaanklasse>
+	<Grindmediaanklasse>
+		<Waarde>grof</Waarde>
+		<Bereik>20 - 63 mm</Bereik>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De grindmediaan is groter dan 20 mm en kleiner dan of gelijk aan 63 mm. Een klasse onder de NEN-EN-ISO 14688 procedure.</Omschrijving>
+	</Grindmediaanklasse>
+	<Grindmediaanklasse>
+		<Waarde>fijnNEN5104</Waarde>
+		<Bereik>2 - 5,6 mm</Bereik>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De grindmediaan is gelijk aan of groter dan 2 mm en kleiner dan 5,6 mm. Een klasse onder de NEN 5104 procedure.</Omschrijving>
+	</Grindmediaanklasse>
+	<Grindmediaanklasse>
+		<Waarde>matigGrofNEN5104</Waarde>
+		<Bereik>5,6 - 16 mm</Bereik>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De grindmediaan is gelijk aan of groter dan 5,6 mm en kleiner dan 16 mm. Een klasse onder de NEN 5104 procedure.</Omschrijving>
+	</Grindmediaanklasse>
+	<Grindmediaanklasse>
+		<Waarde>zeerGrofNEN5104</Waarde>
+		<Bereik>16 - 63 mm</Bereik>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De grindmediaan is gelijk aan of groter dan 16 mm en kleiner dan 63 mm. Een klasse onder de NEN 5104 procedure.</Omschrijving>
+	</Grindmediaanklasse>
+	<Grindmediaanklasse>
+		<Waarde>onbekend</Waarde>
+		<Bereik>n.v.t.</Bereik>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De mediaan van de grindfractie is niet bekend.</Omschrijving>
+	</Grindmediaanklasse>
+</domeintabel>
