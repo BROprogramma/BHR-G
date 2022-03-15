@@ -5,112 +5,126 @@
 		<Categorie>zeer grove grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit blokken, voor een onbepaald deel uit minder grof mineraal materiaal bestaat en een onbepaald deel organische stof bevat.</Omschrijving>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit blokken (groter dan 630 mm) bestaat, voor een onbepaald deel uit minder grof mineraal materiaal bestaat en een onbepaald deel organische stof bevat.</Omschrijving>
+	</GeologischeGrondsoort>
+	<GeologischeGrondsoort>
+		<Waarde>keien</Waarde>
+		<Categorie>zeer grove grond</Categorie>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit keien bestaat, zonder waarneembare andere bijmenging.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>keienMetKeitjes</Waarde>
 		<Categorie>zeer grove grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit keien en voor de rest vooral uit keitjes bestaat.</Omschrijving>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit keien bestaat, en voor de rest vooral uit keitjes bestaat.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>keienMetGrind</Waarde>
 		<Categorie>zeer grove grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit keien en voor de rest vooral uit grind bestaat.</Omschrijving>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit keien bestaat, en voor de rest vooral uit grind bestaat.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>keienMetZand</Waarde>
 		<Categorie>zeer grove grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit keien en voor de rest vooral uit zand bestaat.</Omschrijving>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit keien bestaat, en voor de rest vooral uit zand bestaat.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>keienMetSilt</Waarde>
 		<Categorie>zeer grove grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit keien en voor de rest vooral uit silt bestaat.</Omschrijving>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit keien bestaat, en voor de rest vooral uit silt bestaat.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>keienMetKlei</Waarde>
 		<Categorie>zeer grove grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit keien en voor de rest vooral uit klei bestaat.</Omschrijving>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit keien bestaat, en voor de rest vooral uit klei bestaat.</Omschrijving>
+	</GeologischeGrondsoort>
+	<GeologischeGrondsoort>
+		<Waarde>keitjes</Waarde>
+		<Categorie>zeer grove grond</Categorie>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit keitjes bestaat, zonder waarneembare andere bijmenging.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>keitjesMetKeien</Waarde>
 		<Categorie>zeer grove grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit keitjes en voor de rest vooral uit keien bestaat.</Omschrijving>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit keitjes bestaat, en voor de rest vooral uit keien bestaat.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>keitjesMetGrind</Waarde>
 		<Categorie>zeer grove grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit keitjes en voor de rest vooral uit grind bestaat.</Omschrijving>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit keitjes bestaat, en voor de rest vooral uit grind bestaat.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>keitjesMetZand</Waarde>
 		<Categorie>zeer grove grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit keitjes en voor de rest vooral uit zand bestaat.</Omschrijving>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit keitjes bestaat, en voor de rest vooral uit zand bestaat.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>keitjesMetSilt</Waarde>
 		<Categorie>zeer grove grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit keitjes en voor de rest vooral uit silt bestaat.</Omschrijving>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit keitjes bestaat, en voor de rest vooral uit silt bestaat.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>keitjesMetKlei</Waarde>
 		<Categorie>zeer grove grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit keitjes en voor de rest vooral uit klei bestaat.</Omschrijving>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit keitjes bestaat, en voor de rest vooral uit klei bestaat.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>siltigGrind</Waarde>
 		<Categorie>grindrijke minerale grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een grindrijke grond, grond die niet veel schelpmateriaal bevat, waarvan de minerale fractie (grind, zand, lutum, silt) voor minimaal 30 % van de massa uit grind bestaat, voor minder dan 50 % uit zand en voor meer dan 20 % uit silt plus lutum bestaat. Daarnaast kan er organische stof aanwezig zijn. </Omschrijving>
+		<Omschrijving>Een grindrijke grond, grond die niet veel schelpmateriaal bevat, waarvan de minerale fractie (grind, zand, lutum, silt) voor minimaal 30 % van de massa uit grind bestaat, voor minder dan 50 % uit zand en voor meer dan 20 % uit silt plus lutum bestaat. Daarnaast kan er organische stof aanwezig zijn.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>zwakZandigGrind</Waarde>
 		<Categorie>grindrijke minerale grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een grindrijke grond, grond die niet veel schelpmateriaal bevat, waarvan de minerale fractie (grind, zand, lutum, silt) voor minimaal 70 % van de massa uit grind bestaat, voor maximaal 10 % uit zand en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organische stof aanwezig zijn. </Omschrijving>
+		<Omschrijving>Een grindrijke grond, grond die niet veel schelpmateriaal bevat, waarvan de minerale fractie (grind, zand, lutum, silt) voor minimaal 70 % van de massa uit grind bestaat, voor maximaal 10 % uit zand en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organische stof aanwezig zijn.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>matigZandigGrind</Waarde>
 		<Categorie>grindrijke minerale grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een grindrijke grond, grond die niet veel schelpmateriaal bevat, waarvan de minerale fractie (grind, zand, lutum, silt) voor minimaal 50 % van de massa uit grind bestaat, voor meer dan 10 en minder dan 30 % uit zand en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organisch stof aanwezig zijn. </Omschrijving>
+		<Omschrijving>Een grindrijke grond, grond die niet veel schelpmateriaal bevat, waarvan de minerale fractie (grind, zand, lutum, silt) voor minimaal 50 % van de massa uit grind bestaat, voor meer dan 10 en minder dan 30 % uit zand en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organisch stof aanwezig zijn.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>sterkZandigGrind</Waarde>
 		<Categorie>grindrijke minerale grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een grindrijke grond, grond die niet veel schelpmateriaal bevat, waarvan de minerale fractie (grind, zand, lutum, silt) voor minimaal 30 % van de massa uit grind bestaat, voor minimaal 30 en minder dan 50 % uit zand en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organisch stof aanwezig zijn. </Omschrijving>
+		<Omschrijving>Een grindrijke grond, grond die niet veel schelpmateriaal bevat, waarvan de minerale fractie (grind, zand, lutum, silt) voor minimaal 30 % van de massa uit grind bestaat, voor minimaal 30 en minder dan 50 % uit zand en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organisch stof aanwezig zijn.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>uiterstZandigGrind</Waarde>
 		<Categorie>grindrijke minerale grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een grindrijke grond, grond die niet veel schelpmateriaal bevat, waarvan de minerale fractie (grind, zand, lutum, silt) voor minimaal 30 % van de massa uit grind bestaat, voor meer dan 50 % uit zand en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organisch stof aanwezig zijn. </Omschrijving>
+		<Omschrijving>Een grindrijke grond, grond die niet veel schelpmateriaal bevat, waarvan de minerale fractie (grind, zand, lutum, silt) voor minimaal 30 % van de massa uit grind bestaat, voor meer dan 50 % uit zand en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organisch stof aanwezig zijn.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>schelpmateriaal</Waarde>
@@ -124,35 +138,35 @@
 		<Categorie>schelprijke grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een schelprijke grond, grond die voor minimaal 30 % van het volume uit schelpmateriaal bestaat, voor minder dan 50 % uit zand plus grind en voor meer dan 20 % uit silt plus lutum bestaat. Daarnaast kan er organische stof aanwezig zijn. </Omschrijving>
+		<Omschrijving>Een schelprijke grond, grond die voor minimaal 30 % van het volume uit schelpmateriaal bestaat, voor minder dan 50 % uit zand plus grind en voor meer dan 20 % uit silt plus lutum bestaat. Daarnaast kan er organische stof aanwezig zijn.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>zwakZandigSchelpmateriaal</Waarde>
 		<Categorie>schelprijke grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een schelprijke grond, grond die voor minimaal 70 % van het volume uit schelpmateriaal bestaat, voormaximaal 10 % uit zand plus grind en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organische stof aanwezig zijn. </Omschrijving>
+		<Omschrijving>Een schelprijke grond, grond die voor minimaal 70 % van het volume uit schelpmateriaal bestaat, voormaximaal 10 % uit zand plus grind en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organische stof aanwezig zijn.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>matigZandigSchelpmateriaal</Waarde>
 		<Categorie>schelprijke grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een schelprijke grond, grond die voor meer dan 50 % van het volume uit schelpmateriaal bestaat, voor meer dan 10 en minder dan 30 % uit zand plus grind en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organische stof aanwezig zijn. </Omschrijving>
+		<Omschrijving>Een schelprijke grond, grond die voor meer dan 50 % van het volume uit schelpmateriaal bestaat, voor meer dan 10 en minder dan 30 % uit zand plus grind en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organische stof aanwezig zijn.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>sterkZandigSchelpmateriaal</Waarde>
 		<Categorie>schelprijke grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een schelprijke grond, grond die voor minimaal 30 % van het volume uit schelpmateriaal bestaat, voor minimaal 30 en maximaal 50 % uit zand plus grind en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organische stof aanwezig zijn. </Omschrijving>
+		<Omschrijving>Een schelprijke grond, grond die voor minimaal 30 % van het volume uit schelpmateriaal bestaat, voor minimaal 30 en maximaal 50 % uit zand plus grind en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organische stof aanwezig zijn.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>uiterstZandigSchelpmateriaal</Waarde>
 		<Categorie>schelprijke grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een schelprijke grond, grond die voor minimaal 30 % van het volume uit schelpmateriaal bestaat, voor meer dan 50 % uit zand plus grind en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organische stof aanwezig zijn. </Omschrijving>
+		<Omschrijving>Een schelprijke grond, grond die voor minimaal 30 % van het volume uit schelpmateriaal bestaat, voor meer dan 50 % uit zand plus grind en voor minder dan of gelijk aan 20 % uit silt plus lutum bestaat. Daarnaast kan er organische stof aanwezig zijn.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>mineraalarmVeen</Waarde>
@@ -194,7 +208,7 @@
 		<Categorie>organische grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een organische grond, grond die niet veel schelpmateriaal bevat en waarvan de minerale fractie (grind, zand, lutum, silt) voor minder dan 30 % van de massa uit grind bestaat, en als die twee bestanddelen worden uitgesloten, voor meer dan 35 % van de massa uit organische stof die vezelig is en samenhang vertoont en ingekoold is, voor maximaal 30 % uit lutum en voor maximaal 65 % uit silt plus zand bestaat. </Omschrijving>
+		<Omschrijving>Een organische grond, grond die niet veel schelpmateriaal bevat en waarvan de minerale fractie (grind, zand, lutum, silt) voor minder dan 30 % van de massa uit grind bestaat, en als die twee bestanddelen worden uitgesloten, voor meer dan 35 % van de massa uit organische stof die vezelig is en samenhang vertoont en ingekoold is, voor maximaal 30 % uit lutum en voor maximaal 65 % uit silt plus zand bestaat.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>zwakKleiigeBruinkool</Waarde>
@@ -362,7 +376,7 @@
 		<Categorie>grindarme minerale grond</Categorie>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een grindarme minerale grond, grond die niet veel schelpmateriaal bevat, waarvan de minerale fractie (grind, zand, lutum, silt) voor minder dan 30 % van de massa uit grind bestaat en weinig organische stof bevat, en als die drie bestanddelen worden uitgesloten, de fijne minerale fractie (zand, silt, lutum) voor 100 % uit zand bestaat. </Omschrijving>
+		<Omschrijving>Een grindarme minerale grond, grond die niet veel schelpmateriaal bevat, waarvan de minerale fractie (grind, zand, lutum, silt) voor minder dan 30 % van de massa uit grind bestaat en weinig organische stof bevat, en als die drie bestanddelen worden uitgesloten, de fijne minerale fractie (zand, silt, lutum) voor 100 % uit zand bestaat.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>kleiigZand</Waarde>
@@ -439,14 +453,14 @@
 		<Categorie>zeer grove grond</Categorie>
 		<IMBRO></IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit keien bestaat.</Omschrijving>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit keien bestaat.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>keitjesNietGespecificeerd</Waarde>
 		<Categorie>zeer grove grond</Categorie>
 		<IMBRO></IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit keien bestaat.</Omschrijving>
+		<Omschrijving>Een zeer grove grond, waarvan de zeer grove fractie voor meer dan 50 % uit keitjes bestaat.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>grindNietGespecificeerd</Waarde>
