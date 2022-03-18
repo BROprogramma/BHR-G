@@ -15,13 +15,6 @@
 		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit de zeer grove fractie (groter dan 63 mm) bestaat, en waarvan de zeer grove fractie voor meer dan 50 % uit keien bestaat. De rest van de grond, als de zeer grove fractie wordt uitgesloten, bevat geen waarneembare bijmenging.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
-		<Waarde>keienMetKeitjes</Waarde>
-		<Categorie>zeer grove grond</Categorie>
-		<IMBRO>v</IMBRO>
-		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit de zeer grove fractie (groter dan 63 mm) bestaat, en waarvan de zeer grove fractie voor meer dan 50 % uit keien bestaat en voor de rest vooral uit keitjes bestaat. De rest van de grond, als de zeer grove fractie wordt uitgesloten, bevat geen waarneembare bijmenging.</Omschrijving>
-	</GeologischeGrondsoort>
-	<GeologischeGrondsoort>
 		<Waarde>keienMetGrind</Waarde>
 		<Categorie>zeer grove grond</Categorie>
 		<IMBRO>v</IMBRO>
@@ -55,13 +48,6 @@
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit de zeer grove fractie (groter dan 63 mm) bestaat, en waarvan de zeer grove fractie voor meer dan 50 % uit keitjes bestaat. De rest van de grond, als de zeer grove fractie wordt uitgesloten, bevat geen waarneembare bijmenging.</Omschrijving>
-	</GeologischeGrondsoort>
-	<GeologischeGrondsoort>
-		<Waarde>keitjesMetKeien</Waarde>
-		<Categorie>zeer grove grond</Categorie>
-		<IMBRO>v</IMBRO>
-		<IMBROA>v</IMBROA>
-		<Omschrijving>Een zeer grove grond, grond die voor meer dan 50 % van de massa uit de zeer grove fractie (groter dan 63 mm) bestaat, en waarvan de zeer grove fractie voor meer dan 50 % uit keitjes bestaat en voor de rest vooral uit keien bestaat. De rest van de grond, als de zeer grove fractie wordt uitgesloten, bevat geen waarneembare bijmenging.</Omschrijving>
 	</GeologischeGrondsoort>
 	<GeologischeGrondsoort>
 		<Waarde>keitjesMetGrind</Waarde>
