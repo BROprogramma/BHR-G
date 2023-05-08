@@ -3,11 +3,9 @@
 <h3>Toelichting beschrijfkwaliteiten</h3>
 	<p>In de bijlage is een overzichtelijke samenvatting opgenomen van de gegevens die voorkomen per beschrijfkwaliteit. Voor details en de precieze definitie moet altijd de gegevensdefinitie worden geraadpleegd. De gegevensdefinitie normatief en leidend.</p>
 
-     <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup></colgroup>
+     <table style="width: 100%;">
+         <colgroup style="width: 30%;"></colgroup>
+         <colgroup style="width: 70%;"></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
