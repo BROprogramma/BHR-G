@@ -1,8 +1,8 @@
 var respecConfig = {
-  specStatus: "GN-VV",
+  specStatus: "GN-WV",
   specType: "IM",
   subtitle: "Geologische boormonsterbeschrijving en boormonsteranalyse",
-  publishDate: "2023-05-09",
+  //publishDate: "2023-05-09",
   maxTocLevel: 4,
  logos: [{
     src: 'https://docs.geostandaarden.nl/bro/gen/logo_minbzk.png',
@@ -26,6 +26,6 @@ var respecConfig = {
   shortName: "bhr-g",
   pubDomain: "bro",
   github: "https://github.com/BROprogramma/BHR-G",
-  previousPublishDate: "2023-02-17",
-  previousStatus: "GN-CV",
+  previousPublishDate: "2023-05-09",
+  previousStatus: "GN-VV",
 };
