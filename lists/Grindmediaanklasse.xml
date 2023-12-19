@@ -49,4 +49,11 @@
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De mediaan van de grindfractie is niet bekend.</Omschrijving>
 	</Grindmediaanklasse>
+		<Grindmediaanklasse>
+		<Waarde>fantasie</Waarde>
+		<Bereik>n.v.t.</Bereik>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>test casus</Omschrijving>
+	</Grindmediaanklasse>
 </domeintabel>
