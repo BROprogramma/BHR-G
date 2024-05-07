@@ -43,11 +43,31 @@
 		<Omschrijving>De grindmediaan is gelijk aan of groter dan 16 mm en kleiner dan 63 mm. Een klasse onder de NEN 5104 procedure.</Omschrijving>
 	</Grindmediaanklasse>
 	<Grindmediaanklasse>
+		<Waarde>zeerFijnVerbraeck</Waarde>
+		<Bereik>2 - 5 mm</Bereik>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De grindmediaan is gelijk aan of groter dan 2 mm en kleiner dan 5 mm. Een klasse naar de indeling van Verbraeck.</Omschrijving>
+	</Grindmediaanklasse>
+	<Grindmediaanklasse>
+		<Waarde>fijnVerbraeck</Waarde>
+		<Bereik>5 - 16 mm</Bereik>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De grindmediaan is gelijk aan of groter dan 5 mm en kleiner dan 16 mm. Een klasse naar de indeling van Verbraeck.</Omschrijving>
+	</Grindmediaanklasse>
+	<Grindmediaanklasse>
+		<Waarde>grofVerbraeck</Waarde>
+		<Bereik>16 - 64 mm</Bereik>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De grindmediaan is gelijk aan of groter dan 16 mm en kleiner dan 64 mm. Een klasse naar de indeling van Verbraeck.</Omschrijving>
+	</Grindmediaanklasse>
+	<Grindmediaanklasse>
 		<Waarde>onbekend</Waarde>
 		<Bereik>n.v.t.</Bereik>
 		<IMBRO></IMBRO>
 		<IMBROA>v</IMBROA>
 		<Omschrijving>De mediaan van de grindfractie is niet bekend.</Omschrijving>
 	</Grindmediaanklasse>
-		
 </domeintabel>
