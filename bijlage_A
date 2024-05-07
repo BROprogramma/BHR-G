@@ -54,10 +54,15 @@
                   </td>
             </tr>
             <tr>
+                  <td>fysischGeografischStandaardArchief</td>
+                  <td>
+                           <p>De grond is op een standaard manier beschreven volgens de methode Berendsen en Stouthamer, met eventueel extra aspecten die geen onderdeel uitmaken van de procedure. Met verschillen in monsterkwaliteit is bij de beschrijving niet consequent rekening gehouden.</p>
+                  </td>
+            </tr>
+            <tr>
                <td>geologischNEN5104Archief</td>
-               <td>
-                  <p>De grond is beschreven op basis van NEN 5104, met eventueel extra aspecten die geen onderdeel uitmaken van de procedure. Met verschillen in monsterkwaliteit is bij de beschrijving niet consequent rekening gehouden.
-                     <em>GeologischNEN5104Archief</em> beslaat een breed spectrum in de mate van detail.</p>
+                  <td>
+                           <p>De grond is beschreven op basis van NEN 5104, met eventueel extra aspecten die geen onderdeel uitmaken van de procedure. Met verschillen in monsterkwaliteit is bij de beschrijving niet consequent rekening gehouden.</p>
                   </td>
             </tr>
          </tbody>
