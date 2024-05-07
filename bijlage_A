@@ -7,21 +7,11 @@
          <colgroup style="width: 70%;"></colgroup>
          <tbody>
             <tr>
-               <td>geologischStandaardGeroerd</td>
-               <td>
-                  
-                  <p>De grond is beschreven volgens de eisen in de Standaard Boor Beschrijvingsmethode (SBB) versie 6 gesteld aan een standaard geologische
-                     beschrijving van geroerde boormonsters.</p>
+               <td>geologischUitgebreidOngeroerd</td>
+               <td>                  
+                  <p>De grond is beschreven volgens de eisen in de Standaard Boor Beschrijvingsmethode (SBB) versie 6 gesteld aan een uitgebreide geologische beschrijving die is gemaakt van ongeroerde boormonsters.</p>
                   </td>
-            </tr>
-            <tr>
-               <td>geologischStandaardOngeroerd</td>
-               <td>
-                  
-                  <p>De grond is beschreven volgens de eisen in de Standaard Boor Beschrijvingsmethode (SBB) versie 6 gesteld aan een standaard geologische
-                     beschrijving die is gemaakt van ongeroerde boormonsters.</p>
-                  </td>
-            </tr>
+            </tr>            
             <tr>
                <td>geologischUitgebreidGeroerd</td>
                <td>
@@ -29,9 +19,24 @@
                   </td>
             </tr>
             <tr>
-               <td>geologischUitgebreidOngeroerd</td>
+               <td>geologischUitgebreidArchief</td>
+               <td>
+                  <p>De grond is op een uitgebreide manier beschreven volgens de Standaard Boor Beschrijvingsmethode (SBB) versie 4, 5, 5.1, 5.2 of 5.3, voor zowel geroerde als ongeroerde boormonsters.</p>
+                  </td>
+            </tr>            
+            <tr>
+               <td>geologischStandaardOngeroerd</td>
                <td>                  
-                  <p>De grond is beschreven volgens de eisen in de Standaard Boor Beschrijvingsmethode (SBB) versie 6 gesteld aan een uitgebreide geologische beschrijving die is gemaakt van ongeroerde boormonsters.</p>
+                  <p>De grond is beschreven volgens de eisen in de Standaard Boor Beschrijvingsmethode (SBB) versie 6 gesteld aan een standaard geologische
+                     beschrijving die is gemaakt van ongeroerde boormonsters.</p>
+                  </td>
+            </tr>
+            <tr>
+               <td>geologischStandaardGeroerd</td>
+               <td>
+                  
+                  <p>De grond is beschreven volgens de eisen in de Standaard Boor Beschrijvingsmethode (SBB) versie 6 gesteld aan een standaard geologische
+                     beschrijving van geroerde boormonsters.</p>
                   </td>
             </tr>
             <tr>
@@ -41,9 +46,9 @@
                   </td>
             </tr>
             <tr>
-               <td>geologischUitgebreidArchief</td>
-               <td>
-                  <p>De grond is op een uitgebreide manier beschreven volgens de Standaard Boor Beschrijvingsmethode (SBB) versie 4, 5, 5.1, 5.2 of 5.3, voor zowel geroerde als ongeroerde boormonsters.</p>
+               <td>geologischNEN5104Archief</td>
+                  <td>
+                           <p>De grond is beschreven op basis van NEN 5104, met eventueel extra aspecten die geen onderdeel uitmaken van de procedure. Met verschillen in monsterkwaliteit is bij de beschrijving niet consequent rekening gehouden.</p>
                   </td>
             </tr>
             <tr>
@@ -59,12 +64,7 @@
                            <p>De grond is op een standaard manier beschreven volgens de methode Berendsen en Stouthamer, met eventueel extra aspecten die geen onderdeel uitmaken van de procedure. Met verschillen in monsterkwaliteit is bij de beschrijving niet consequent rekening gehouden.</p>
                   </td>
             </tr>
-            <tr>
-               <td>geologischNEN5104Archief</td>
-                  <td>
-                           <p>De grond is beschreven op basis van NEN 5104, met eventueel extra aspecten die geen onderdeel uitmaken van de procedure. Met verschillen in monsterkwaliteit is bij de beschrijving niet consequent rekening gehouden.</p>
-                  </td>
-            </tr>
+            
          </tbody>
       </table>
 
