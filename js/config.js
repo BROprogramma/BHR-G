@@ -2,7 +2,7 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   // title is verplicht! Neem hier de titel van het document op ----------------------
-  title: "Basisregistratie Ondergrond Catalogus Grondwatermonitoringput",
+  title: "Basisregistratie Ondergrond Catalogus Geologische boormonsterbeschrijving en boormonsteranalyse",
   subtitle: "Versie 3.19",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   specStatus: "wv",                   // Werkversie
@@ -27,7 +27,7 @@ let respecConfig = {
   //licence: "cc0",                 // Public Domain Dedication
   licence: "cc-by",                 // Attribution, met bronvermelding
   //-- shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
-  shortName: "gmw",
+  shortName: "bhr-g",
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   //publishDate: "2024-04-12",
@@ -36,8 +36,8 @@ let respecConfig = {
   //publishVersion: "0.0.2",
   //previousVersion: "0.0.1",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
-  previousPublishDate: "2023-12-01",
-  previousMaturity: "cv",
+  previousPublishDate: "20230607",
+  previousMaturity: "def",
   //-- de namen van de Editor(s) / Redacteur(en)---------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors:
@@ -58,7 +58,7 @@ let respecConfig = {
       }
      ],
   //neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/BROprogramma/GMW",
+  github: "https://github.com/BROprogramma/BHR-G",
   // Create PDF and link to file in header (optional):
   //alternateFormats: [{label: "pdf", uri: "template.pdf",},],
 };
