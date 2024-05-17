@@ -77,14 +77,14 @@ Wanneer men ten slotte klaar is met boren kan het ontstane gat op een bepaalde m
 
 In het geval men monsters gestoken of gekernd heeft worden ook specificaties vastgelegd van het apparaat dat daarvoor gebruikt is. In [Figuur bemonsteringsapparaat1](#Figuur_bemonsteringsapparaat1) en [Figuur bemonsteringsapparaat2](#Figuur_bemonsteringsapparaat2) wordt geïllustreerd wat de belangrijkste kenmerken zijn.
 
-<figure id='#Figuur_bemonsteringsapparaat1'>
+<figure id='Figuur_bemonsteringsapparaat1'>
   <img src="./media/BHR_G_bemonsteringsapparaat1.png" alt="Bemonsteringsapparaat" width="500"/>
   <figcaption>
     <br><i>Het bemonsteringsapparaat: (a) een apparaat met een haakse steekmond, (b) een apparaat waarvan de steekmond een hoek (α) maakt met de verticaal en (c) een apparaat als b maar dan voorzien van een passieve zuiger. De letter l geeft de lengte van de container aan, d<sub>1</sub> de doorgangsdiameter en d<sub>2</sub> de diameter van de steekmond. De diameter van de container is gelijk aan de doorgangsdiameter.</i><br>
   </figcaption>
 </figure>
 
-<figure id='#Figuur_bemonsteringsapparaat2'>
+<figure id='Figuur_bemonsteringsapparaat2'>
   <img src="./media/BHR_G_bemonsteringsapparaat2.png" alt="Bemonsteringsapparaat2" width="500"/>
   <figcaption>
     <br><i>Het bemonsteringsapparaat: (a) een apparaat met een afschroefbare steekmond en een vanger en (b) eenzelfde apparaat maar dan met een variabele diameter en een container die voorzien is van een liner. De letter l geeft de lengte van de container aan, d<sub>1</sub> de doorgangsdiameter, d<sub>2</sub> de diameter van de steekmond en d<sub>3</sub> de diameter van de container.</i><br>
