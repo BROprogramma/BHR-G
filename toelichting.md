@@ -36,7 +36,7 @@ In de boormonsterbeschrijving wordt het materiaal dat uit de ondergrond naar bov
 <figure id='Figuur_deelonderzoeken'>
   <img src="./media/BHR_G_deelonderzoeken.png" alt="Deelonderzoeken" width="350"/>
 	<figcaption>
-    <i>Geologisch booronderzoek in deze versie van de catalogus; boormonsterfotografie en boorgatlogging zijn nog buiten scope.</i>
+    Geologisch booronderzoek in deze versie van de catalogus; boormonsterfotografie en boorgatlogging zijn nog buiten scope.
   </figcaption>
 </figure>
    
@@ -80,14 +80,14 @@ In het geval men monsters gestoken of gekernd heeft worden ook specificaties vas
 <figure id='Figuur_bemonsteringsapparaat1'>
   <img src="./media/BHR_G_bemonsteringsapparaat1.png" alt="Bemonsteringsapparaat" width="500"/>
   <figcaption>
-    <br><i>Het bemonsteringsapparaat: (a) een apparaat met een haakse steekmond, (b) een apparaat waarvan de steekmond een hoek (α) maakt met de verticaal en (c) een apparaat als b maar dan voorzien van een passieve zuiger. De letter l geeft de lengte van de container aan, d<sub>1</sub> de doorgangsdiameter en d<sub>2</sub> de diameter van de steekmond. De diameter van de container is gelijk aan de doorgangsdiameter.</i><br>
+    Het bemonsteringsapparaat: (a) een apparaat met een haakse steekmond, (b) een apparaat waarvan de steekmond een hoek (α) maakt met de verticaal en (c) een apparaat als b maar dan voorzien van een passieve zuiger. De letter l geeft de lengte van de container aan, d<sub>1</sub> de doorgangsdiameter en d<sub>2</sub> de diameter van de steekmond. De diameter van de container is gelijk aan de doorgangsdiameter.
   </figcaption>
 </figure>
 
 <figure id='Figuur_bemonsteringsapparaat2'>
   <img src="./media/BHR_G_bemonsteringsapparaat2.png" alt="Bemonsteringsapparaat2" width="500"/>
   <figcaption>
-    <br><i>Het bemonsteringsapparaat: (a) een apparaat met een afschroefbare steekmond en een vanger en (b) eenzelfde apparaat maar dan met een variabele diameter en een container die voorzien is van een liner. De letter l geeft de lengte van de container aan, d<sub>1</sub> de doorgangsdiameter, d<sub>2</sub> de diameter van de steekmond en d<sub>3</sub> de diameter van de container.</i><br>
+  	Het bemonsteringsapparaat: (a) een apparaat met een afschroefbare steekmond en een vanger en (b) eenzelfde apparaat maar dan met een variabele diameter en een container die voorzien is van een liner. De letter l geeft de lengte van de container aan, d<sub>1</sub> de doorgangsdiameter, d<sub>2</sub> de diameter van de steekmond en d<sub>3</sub> de diameter van de container.
   </figcaption>
 </figure>	
            
@@ -110,7 +110,7 @@ Een boorprofiel heeft een bepaalde beschrijfkwaliteit en dat wil zeggen dat de k
 <figure id='Figuur_Boorprofiel'>
   <img src="./media/BHR_G_boorprofiel.png" alt="Boorprofiel" width="500"/>
   <figcaption>
-    <br><i>Uit een boring komen geroerde en ongeroerde monsters en in de beschrijving worden dan twee boorprofielen gemaakt. In deze versie van de catalogus is de beschrijving van gesteente overigens buiten scope.</i><br>
+    Uit een boring komen geroerde en ongeroerde monsters en in de beschrijving worden dan twee boorprofielen gemaakt. In deze versie van de catalogus is de beschrijving van gesteente overigens buiten scope.
   </figcaption>
 </figure>
 Over het hele boortraject zijn monsters met een relatief lage kwaliteit, <i>geroerde</i> monsters, genomen. Daarnaast zijn van bepaalde dieptes monsters met een hoge kwaliteit, <i>ongeroerde</i> monsters, verkregen. Het verschil in kwaliteit is zo groot dat de monsters apart beschreven moeten worden. In het eerste geval ontstaat een continu profiel, in het tweede een discontinu profiel.
@@ -130,7 +130,7 @@ In het derde, zeer sporadisch voorkomende geval (<a href ="#Figuur_lagen"></a>c)
 <figure id='Figuur_lagen'>
   <img src="./media/BHR_G_lagen.png" alt="Lagen" width="500"/>
   <figcaption>
-    <br><i>De lichtgekleurde laag stelt een eenheid voor die uit een andere grondsoort bestaat dan de aangrenzende lagen. In het eerste geval (a) wordt de laag als een homogeen geheel beschreven met daarin een afwijkend laagje. In het tweede geval (b) wordt de laag beschreven als opgebouwd uit laagjes die in grondsoort verschillen. In het derde geval (c) wordt de laag beschreven als opgebouwd uit laagdelen die in grondsoort verschillen.</i><br>
+    De lichtgekleurde laag stelt een eenheid voor die uit een andere grondsoort bestaat dan de aangrenzende lagen. In het eerste geval (a) wordt de laag als een homogeen geheel beschreven met daarin een afwijkend laagje. In het tweede geval (b) wordt de laag beschreven als opgebouwd uit laagjes die in grondsoort verschillen. In het derde geval (c) wordt de laag beschreven als opgebouwd uit laagdelen die in grondsoort verschillen.
   </figcaption>
 </figure>	
 			
@@ -171,7 +171,7 @@ Een voorbeeld in <a href ="#Figuur_fractieverdeling"></a> moeten een en ander ve
 <figure id='Figuur_fractieverdeling'>
   <img src="./media/BHR_G_fractieverdeling.png" alt="Fractieverdeling" width="500"/>
   <figcaption>
-    <br><i>Er worden zes categorieën grond onderscheiden. Van zeer grove minerale gronden en bijzondere gronden wordt geen fractieverdeling bepaald, van de andere wel. Per categorie grond is in kleur aangegeven welke fracties tot 100 procent optellen. Voor verdere toelichting zie de tekst.</i><br>
+    Er worden zes categorieën grond onderscheiden. Van zeer grove minerale gronden en bijzondere gronden wordt geen fractieverdeling bepaald, van de andere wel. Per categorie grond is in kleur aangegeven welke fracties tot 100 procent optellen. Voor verdere toelichting zie de tekst.
   </figcaption>
 </figure>
 
@@ -191,9 +191,9 @@ In sommige gevallen vereist een bepaling een niet verstoord monster. Het deel da
 <figure id='Figuur_onderzocht_interval'>
   <img src="./media/BHR_G_onderzocht_interval.png" alt="Onderzocht interval" width="500"/>
   <figcaption>
-    <br><i>In het bovenste interval wordt een ring gestoken uit een niet verstoord boormonster en het materiaal in de ring vormt het proefstuk dat wordt onderzocht, daarnaast wordt uit hetzelfde interval materiaal genomen om te onderzoeken op andere eigenschappen; er blijft voldoende materiaal over om het materiaal op normale wijze te beschrijven. 
+    In het bovenste interval wordt een ring gestoken uit een niet verstoord boormonster en het materiaal in de ring vormt het proefstuk dat wordt onderzocht, daarnaast wordt uit hetzelfde interval materiaal genomen om te onderzoeken op andere eigenschappen; er blijft voldoende materiaal over om het materiaal op normale wijze te beschrijven. 
 In het middelste geval wordt alleen materiaal genomen om te onderzoeken op eigenschappen; er blijft voldoende materiaal over om het materiaal op normale wijze te beschrijven. 
-In het onderste interval word een ring gestoken uit een niet verstoord boormonster; er blijft onvoldoende materiaal over en het materiaal kan niet op de normale wijze worden beschreven en blijft buiten de boormonsterbeschrijving. In bepaalde gevallen worden de boven- en onderkant afgesneden, de zogenaamde afsnijdsels, en worden gebruikt voor aanvullende bepalingen.</i><br>
+In het onderste interval word een ring gestoken uit een niet verstoord boormonster; er blijft onvoldoende materiaal over en het materiaal kan niet op de normale wijze worden beschreven en blijft buiten de boormonsterbeschrijving. In bepaalde gevallen worden de boven- en onderkant afgesneden, de zogenaamde afsnijdsels, en worden gebruikt voor aanvullende bepalingen.
   </figcaption>
 </figure>
 
