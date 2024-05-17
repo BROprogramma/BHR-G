@@ -75,7 +75,7 @@ Wanneer men ten slotte klaar is met boren kan het ontstane gat op een bepaalde m
 
 ## Bemonsteringsapparaat
 
-In het geval men monsters gestoken of gekernd heeft worden ook specificaties vastgelegd van het apparaat dat daarvoor gebruikt is. In de figuren hieronder wordt geïllustreerd wat de belangrijkste kenmerken zijn.
+In het geval men monsters gestoken of gekernd heeft worden ook specificaties vastgelegd van het apparaat dat daarvoor gebruikt is. In <a href ="#Figuur_bemonsteringsapparaat1"></a> en <a href ="#Figuur_bemonsteringsapparaat2"></a> wordt geïllustreerd wat de belangrijkste kenmerken zijn.
 
 <figure id='Figuur_bemonsteringsapparaat1'>
   <img src="./media/BHR_G_bemonsteringsapparaat1.png" alt="Bemonsteringsapparaat" width="500"/>
