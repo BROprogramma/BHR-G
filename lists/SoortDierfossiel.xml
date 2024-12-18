@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SoortDierfossiel>
+		<Waarde>balanus</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Resten van zeepokken, een groep van sedentair levende kreeftachtigen die met name in getijdengebieden leven en een kegelvormige, uit kalkplaatjes opgebouwde schaal vormen.</Omschrijving>
+	</SoortDierfossiel>
+	<SoortDierfossiel>
+		<Waarde>bryozoa</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Resten van bryozoa of mosdiertjes, een groep van sedentair levende, kolonievormende ongewervelde dieren die in brak- en zoutwater voorkomen. De individuen zijn typisch 0,5 mm groot en vormen een kalkig of hoornachtig skelet in de vorm van een bekertje of buisje.</Omschrijving>
+	</SoortDierfossiel>
+	<SoortDierfossiel>
+		<Waarde>ditrupa</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Fossiele resten van de schaal van een mariene borstelworm. De buisvormige schalen lopen enigszins spits toe en zijn licht gebogen. Vertonen een sterke gelijkenis met een slagtand van een olifant, vandaar de in de volksmond gehanteerde naam Olifantstandjes.</Omschrijving>
+	</SoortDierfossiel>
+	<SoortDierfossiel>
+		<Waarde>foraminifeer</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Resten van foraminiferen, eencellige mariene organismen die een veelal kalkig schaaltje vormen dat typisch in grootte varieert tussen 0,1 en 5 mm.</Omschrijving>
+	</SoortDierfossiel>
+	<SoortDierfossiel>
+		<Waarde>haaientand</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Haaientanden of de herkenbare resten daarvan, al dan niet gefossiliseerd.</Omschrijving>
+	</SoortDierfossiel>
+	<SoortDierfossiel>
+		<Waarde>lingula</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Schelpen of schelpresten van Lingula, een levend fossiel dat al sinds het Siluur of mogelijk ouder bestaat. Lingula komt tegenwoordig specifiek voor in brak water. De schelpen kunnen herkend worden aan de vorm en het ontbreken van groeven of tanden op de schalen die het sluiten van de schelphelften ondersteunen.</Omschrijving>
+	</SoortDierfossiel>
+	<SoortDierfossiel>
+		<Waarde>ostracode</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Schildjes van ostracoden, ook wel mosselkreeftjes, zijn gemaakt van chitine en meestal verkalkt. Variëren sterk in vorm en versiering met een grootte van meestal 0,1 tot 2 mm.</Omschrijving>
+	</SoortDierfossiel>
+	<SoortDierfossiel>
+		<Waarde>visrest</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Resten van wervels, graten of andere delen van vissen. Vaak donkerbruin tot zwart van kleur, relatief licht van gewicht (veel lichter dan bot).</Omschrijving>
+	</SoortDierfossiel>
+	<SoortDierfossiel>
+		<Waarde>zeeEgelEchinocardium</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Schalen of fragmenten van een soort uit het genus &lt;i&gt;Echinocardium&lt;/i&gt;, een zee-egelgroep die veel voorkomt als gravende zee-egel. Een van de soorten is de &lt;i&gt;Echinocardium cordatum&lt;/i&gt;, bekend als de zeeklit. Deze kan tot ongeveer 6 cm groot worden.</Omschrijving>
+	</SoortDierfossiel>
+	<SoortDierfossiel>
+		<Waarde>zeeEgelEchinocyamus</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Schalen of fragmenten van &lt;i&gt;Echinocyamus pusillus&lt;/i&gt;, ook wel het zeeboontje genaamd, een vrij platte zee-egel uit de Noordzee met een maximale grootte van ongeveer 1 cm.</Omschrijving>
+	</SoortDierfossiel>
+	<SoortDierfossiel>
+		<Waarde>zeeEgelNietGespecificeerd</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Zee-egelschalen of fragmenten daarvan, niet toe te wijzen aan een specifieke soort.</Omschrijving>
+	</SoortDierfossiel>
+	<SoortDierfossiel>
+		<Waarde>zeeEgelStekel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Zee-egelstekels of fragmenten daarvan.</Omschrijving>
+	</SoortDierfossiel>
+	<SoortDierfossiel>
+		<Waarde>zoogdiertand</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Fossiele of recente tanden of kiezen van zoogdieren, bijvoorbeeld muizen, koeien of mammoeten.</Omschrijving>
+	</SoortDierfossiel>
+</domeintabel>

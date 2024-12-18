@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Glimmergehalteklasse>
+		<Waarde>glimmersGeen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Glimmers - dunne, plaatvormige sedimentdeeltjes met een goed herkenbaar glimmend oppervlak - komen niet voor.</Omschrijving>
+	</Glimmergehalteklasse>
+	<Glimmergehalteklasse>
+		<Waarde>glimmerSpoor</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Glimmers - dunne, plaatvormige sedimentdeeltjes met een goed herkenbaar glimmend oppervlak - zijn aanwezig en maken minder dan 0,1 % van het volume uit.</Omschrijving>
+	</Glimmergehalteklasse>
+	<Glimmergehalteklasse>
+		<Waarde>glimmerWeinig</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Glimmers - dunne, plaatvormige sedimentdeeltjes met een goed herkenbaar glimmend oppervlak - maken minimaal 0,1 en minder dan 1 % van het volume uit.</Omschrijving>
+	</Glimmergehalteklasse>
+	<Glimmergehalteklasse>
+		<Waarde>glimmerVeel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Glimmers - dunne, plaatvormige sedimentdeeltjes met een goed herkenbaar glimmend oppervlak - maken minstens 1 % van het volume uit.</Omschrijving>
+	</Glimmergehalteklasse>
+	<Glimmergehalteklasse>
+		<Waarde>onbekend</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het is niet bekend of glimmers aanwezig zijn.</Omschrijving>
+	</Glimmergehalteklasse>
+</domeintabel>

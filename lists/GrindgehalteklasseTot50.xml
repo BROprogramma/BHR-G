@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<GrindgehalteklasseTot50>
+		<Waarde>ietsGrindhoudendVerbraeck</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grind is aanwezig en maakt minder dan 10 % van de massa uit. Een klasse naar de indeling van Verbraeck.</Omschrijving>
+	</GrindgehalteklasseTot50>
+	<GrindgehalteklasseTot50>
+		<Waarde>matigGrindhoudendVerbraeck</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grind maakt minimaal 10 en minder dan 20 % van de massa uit. Een klasse naar de indeling van Verbraeck.</Omschrijving>
+	</GrindgehalteklasseTot50>
+	<GrindgehalteklasseTot50>
+		<Waarde>sterkGrindhoudendVerbraeck</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grind maakt minimaal 20 en minder dan 50 % van de massa uit. Een klasse naar de indeling van Verbraeck.</Omschrijving>
+	</GrindgehalteklasseTot50>
+	<GrindgehalteklasseTot50>
+		<Waarde>onbekend</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het is niet bekend of grind aanwezig is.</Omschrijving>
+	</GrindgehalteklasseTot50>
+</domeintabel>

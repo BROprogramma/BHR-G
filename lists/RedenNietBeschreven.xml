@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RedenNietBeschreven>
+		<Waarde>geenMonster</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het interval is niet beschreven omdat de monsters niet meer voorhanden waren.</Omschrijving>
+	</RedenNietBeschreven>
+	<RedenNietBeschreven>
+		<Waarde>geenOpbrengst</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het interval is niet beschreven omdat de monstercontainer voor een deel leeg was (of omdat een deel van interval dat continu gestoken had moeten worden, niet helemaal bemonsterd kon worden). Het ‘lege’ deel wordt altijd vastgelegd als diepste deel van een interval.</Omschrijving>
+	</RedenNietBeschreven>
+	<RedenNietBeschreven>
+		<Waarde>geenOpdracht</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het interval is niet beschreven omdat het was uitgesloten van de opdracht.</Omschrijving>
+	</RedenNietBeschreven>
+	<RedenNietBeschreven>
+		<Waarde>geenVasteOndergrond</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het interval is niet beschreven omdat er een holte in de ondergrond was (al dan niet opgevuld met water).</Omschrijving>
+	</RedenNietBeschreven>
+	<RedenNietBeschreven>
+		<Waarde>mechanischVerstoord</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het interval is niet beschreven omdat de laagopbouw ernstig verstoord is door een post-sedimentaire discontinuïteit.</Omschrijving>
+	</RedenNietBeschreven>
+	<RedenNietBeschreven>
+		<Waarde>naval</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het interval is niet beschreven omdat het aanwezige materiaal als naval is beschouwd.</Omschrijving>
+	</RedenNietBeschreven>
+	<RedenNietBeschreven>
+		<Waarde>proefstukUitgenomen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het interval is niet beschreven omdat een proefstuk is uitgenomen voor boormonsteranalyse dat de volledige doorsnede van het monster beslaat en er onvoldoende materiaal was om het op de juiste wijze te beschrijven.</Omschrijving>
+	</RedenNietBeschreven>
+	<RedenNietBeschreven>
+		<Waarde>antropogeenVerstoord</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het interval is niet beschreven omdat de laagopbouw verstoord is door de mens. Het interval bestaat uit materiaal dat door de mens is neergelegd of uit natuurlijke grond waarvan de samenhang door de mens volledig is verstoord.</Omschrijving>
+	</RedenNietBeschreven>
+	<RedenNietBeschreven>
+		<Waarde>beschrijvingOnvoldoende</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het interval is zeer summier beschreven en voldoet niet aan de eisen van de beschrijfkwaliteit van het boorprofiel.</Omschrijving>
+	</RedenNietBeschreven>
+	<RedenNietBeschreven>
+		<Waarde>gesteente</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>&lt;font color="#000c34"&gt;Gesteente: Het betreft een gesteentelaag. De geldende standaard is niet toereikend om gesteente lagen te beschrijven. Dit is de reden waarom er geen beschrijving van deze laag is opgenomen. Het is wel mogelijk dat de laag volgens een andere procedure is beschreven en buiten de BRO beschikbaar is.&lt;/font&gt;</Omschrijving>
+	</RedenNietBeschreven>
+	<RedenNietBeschreven>
+		<Waarde>onbekend</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De reden waarom het interval niet is beschreven is niet bekend.</Omschrijving>
+	</RedenNietBeschreven>
+</domeintabel>

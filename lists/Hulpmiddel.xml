@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Hulpmiddel>
+		<Waarde>beeldanalyseapparaat</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voor het bepalen van de grootte en de vorm van zandkorrels is een beeldanalyseapparaat (image analyser) gebruikt.</Omschrijving>
+	</Hulpmiddel>
+	<Hulpmiddel>
+		<Waarde>binoculair</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voor het bepalen van de kleur van zandkorrels is een binoculair gebruikt.</Omschrijving>
+	</Hulpmiddel>
+	<Hulpmiddel>
+		<Waarde>binoculairBeeldanalyseapparaat</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voor het bepalen van de kleur van zandkorrels is een binoculair gebruikt en voor het bepalen van de grootte en de vorm van zandkorrels is een beeldanalyseapparaat (image analyser) gebruikt.</Omschrijving>
+	</Hulpmiddel>
+	<Hulpmiddel>
+		<Waarde>binoculairVergelijkingsmicroscoop</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voor het bepalen van de kleur van zandkorrels is een binoculair gebruikt en voor het bepalen van de grootte en de vorm van zandkorrels is een vergelijkingsmicroscoop gebruikt.</Omschrijving>
+	</Hulpmiddel>
+	<Hulpmiddel>
+		<Waarde>binoculairVergelijkingsmicroscoopBeeldanalyseapparaat</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voor het bepalen van de kleur van zandkorrels is een binoculair gebruikt en voor het bepalen van de grootte en de vorm van zandkorrels is een vergelijkingsmicroscoop en een beeldanalyseapparaat (image analyser) gebruikt.</Omschrijving>
+	</Hulpmiddel>
+	<Hulpmiddel>
+		<Waarde>vergelijkingsmicroscoop</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voor het bepalen van de grootte en de vorm van zandkorrels is een vergelijkingsmicroscoop gebruikt.</Omschrijving>
+	</Hulpmiddel>
+	<Hulpmiddel>
+		<Waarde>vergelijkingsmicroscoopBeeldanalyseapparaat</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voor het bepalen van de grootte en de vorm van zandkorrels is een vergelijkingsmicroscoop en een beeldanalyseapparaat (image analyser) gebruikt.</Omschrijving>
+	</Hulpmiddel>
+</domeintabel>
