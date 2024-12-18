@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Zandmediaanklasse50Tot2000>
+		<Waarde>uiterstFijnVerbraeck</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De zandmediaan is gelijk aan of groter dan 50 μm en kleiner dan 105 μm. Een klasse naar de indeling van Verbraeck.</Omschrijving>
+	</Zandmediaanklasse50Tot2000>
+	<Zandmediaanklasse50Tot2000>
+		<Waarde>zeerFijnVerbraeck</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De zandmediaan is gelijk aan of groter dan 105 μm en kleiner dan 150 μm. Een klasse naar de indeling van Verbraeck.</Omschrijving>
+	</Zandmediaanklasse50Tot2000>
+	<Zandmediaanklasse50Tot2000>
+		<Waarde>matigFijnVerbraeck</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De zandmediaan is gelijk aan of groter dan 150 μm en kleiner dan 210 μm. Een klasse naar de indeling van Verbraeck.</Omschrijving>
+	</Zandmediaanklasse50Tot2000>
+	<Zandmediaanklasse50Tot2000>
+		<Waarde>matigGrofVerbraeck</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De zandmediaan is gelijk aan of groter dan 210 μm en kleiner dan 420 μm. Een klasse naar de indeling van Verbraeck.</Omschrijving>
+	</Zandmediaanklasse50Tot2000>
+	<Zandmediaanklasse50Tot2000>
+		<Waarde>grofTotZeerGrofVerbraeck</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De zandmediaan is gelijk aan of groter dan 420 μm en kleiner dan 2000 μm. Een klasse naar de indeling van Verbraeck.</Omschrijving>
+	</Zandmediaanklasse50Tot2000>
+	<Zandmediaanklasse50Tot2000>
+		<Waarde>onbekend</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De mediaan van de zandfractie is niet bekend</Omschrijving>
+	</Zandmediaanklasse50Tot2000>
+</domeintabel>
