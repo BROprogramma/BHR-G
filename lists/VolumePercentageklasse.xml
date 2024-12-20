@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VolumePercentageklasse>
+		<Waarde>geen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het bestanddeel komt niet voor.</Omschrijving>
+	</VolumePercentageklasse>
+	<VolumePercentageklasse>
+		<Waarde>spoorTot1</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er komt een spoor voor en dat betekent dat het aandeel in het volume minder dan 1 % is.</Omschrijving>
+	</VolumePercentageklasse>
+	<VolumePercentageklasse>
+		<Waarde>weinig1tot10</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er komt weinig voor en dat betekent dat het aandeel in het volume minimaal 1 en minder dan 10 % is.</Omschrijving>
+	</VolumePercentageklasse>
+	<VolumePercentageklasse>
+		<Waarde>veel10tot30</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er komt veel voor en dat betekent dat het aandeel in het volume minimaal 10 en minder dan 30 % is.</Omschrijving>
+	</VolumePercentageklasse>
+	<VolumePercentageklasse>
+		<Waarde>zeerVeel30tot50</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er komt zeer veel voor en dat betekent dat het aandeel in het volume minimaal 30 en minder dan 50 % is.</Omschrijving>
+	</VolumePercentageklasse>
+	<VolumePercentageklasse>
+		<Waarde>uiterstVeelMinstens50</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er komt uiterst veel voor en dat betekent dat het aandeel in het volume minstens 50 % is.</Omschrijving>
+	</VolumePercentageklasse>
+	<VolumePercentageklasse>
+		<Waarde>aandeelOnbekend</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het bestanddeel is aanwezig, maar het aandeel in het volume is niet bekend.</Omschrijving>
+	</VolumePercentageklasse>
+	<VolumePercentageklasse>
+		<Waarde>onbekend</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het is niet bekend of het bestanddeel aanwezig is.</Omschrijving>
+	</VolumePercentageklasse>
+	<VolumePercentageklasse>
+		<Waarde>zeerVeelTotUiterstVeelMinstens30</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er komt zeer veel tot uiterst veel voor en dat betekent dat het aandeel in het volume minstens 30 % is.</Omschrijving>
+	</VolumePercentageklasse>
+</domeintabel>
