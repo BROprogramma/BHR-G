@@ -76,7 +76,7 @@
 		<Waarde>opAfstandNatDeelsOpDiepteKernen</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Er zijn twee manieren van bemonsteren toegepast. Het materiaal is op diepte losgeroerd of losgespoten en de grond is naar boven gespoeld op een niet nader omschreven manier: omvat de IMBRO-waarden &lt;i&gt;opAfstandNat&lt;/i&gt;, op &lt;i&gt;AfstandNatBinnendoor &lt;/i&gt;en op &lt;i&gt;afstandNatBuitenlangs&lt;/i&gt;). Voor een deel van het interval is een kolom materiaal op diepte met een speciale boorbeitel of met draaiende spuiters vrijgeboord en in een container opgevangen (opDiepteKernen). Dit is bijvoorbeeld het geval bij straightflushboren waarbij ook is gekernd.</Omschrijving>
+		<Omschrijving>Er zijn twee manieren van bemonsteren toegepast. Het materiaal is op diepte losgeroerd of losgespoten en de grond is naar boven gespoeld op een niet nader omschreven manier: omvat de IMBRO-waarden <i>opAfstandNat</i>, op <i>AfstandNatBinnendoor </i>en op <i>afstandNatBuitenlangs</i>). Voor een deel van het interval is een kolom materiaal op diepte met een speciale boorbeitel of met draaiende spuiters vrijgeboord en in een container opgevangen (opDiepteKernen). Dit is bijvoorbeeld het geval bij straightflushboren waarbij ook is gekernd.</Omschrijving>
 	</Bemonsteringsmethode>
 	<Bemonsteringsmethode>
 		<Waarde>opAfstandNatDeelsOpDiepteUitsteken</Waarde>
