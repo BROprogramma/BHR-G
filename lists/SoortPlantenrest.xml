@@ -130,6 +130,6 @@
 		<Waarde>plantenrest</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Onverteerde plantenresten afkomstig van planten die niet verder ingedeeld zijn: omvat de waarden &lt;i&gt;plantenrestenHoutig &lt;/i&gt;en &lt;i&gt;plantenrestenNietHoutig&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>Onverteerde plantenresten afkomstig van planten die niet verder ingedeeld zijn: omvat de waarden <i>plantenrestenHoutig</i> en <i>plantenrestenNietHoutig</i>.</Omschrijving>
 	</SoortPlantenrest>
 </domeintabel>
