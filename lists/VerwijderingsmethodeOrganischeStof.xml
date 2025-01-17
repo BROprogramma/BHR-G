@@ -10,7 +10,7 @@
 		<Waarde>H2O2_15procent</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Organische stof is verwijderd met H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt; (15 %).</Omschrijving>
+		<Omschrijving>Organische stof is verwijderd met H<sub>2</sub>O<sub>2</sub> (15 %).</Omschrijving>
 	</VerwijderingsmethodeOrganischeStof>
 	<VerwijderingsmethodeOrganischeStof>
 		<Waarde>nietVerwijderd</Waarde>
