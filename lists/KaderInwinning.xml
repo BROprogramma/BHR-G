@@ -76,7 +76,7 @@
 		<Waarde>grondwaterMonitoringGebruik</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Onderzoek uitgevoerd voor het bepalen van de (hydro)geologische opbouw van de ondergrond ten behoeve van de aanleg van een grondwatermonitoringput, een grondwaterontrekkingsput, een infiltratieput of een gesloten of open WKO-installatie: omvat de IMBRO-waarden &lt;i&gt;gebiedsmodelGebruikGrondwater&lt;/i&gt;, &lt;i&gt;locatieModelGebruikGrondwater &lt;/i&gt;en &lt;i&gt;locatieModelMonitoringGrondwater&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>Onderzoek uitgevoerd voor het bepalen van de (hydro)geologische opbouw van de ondergrond ten behoeve van de aanleg van een grondwatermonitoringput, een grondwaterontrekkingsput, een infiltratieput of een gesloten of open WKO-installatie: omvat de IMBRO-waarden <i>gebiedsmodelGebruikGrondwater</i>, <i>locatieModelGebruikGrondwater</> en <i>locatieModelMonitoringGrondwater</i>.</Omschrijving>
 	</KaderInwinning>
 	<KaderInwinning>
 		<Waarde>onbekend</Waarde>
