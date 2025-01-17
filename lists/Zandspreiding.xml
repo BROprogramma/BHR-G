@@ -40,7 +40,7 @@
 		<Waarde>matigNEN5104</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Zand met een matige variatie in grootte van de zandkorrels: omvat de waarden &lt;i&gt;matigKleinNEN5104 &lt;/i&gt;en &lt;i&gt;matigGrootNEN5104&lt;/i&gt;. De gelijkmatigheidscoefficient D60/D10 (de verhouding tussen de korrelgrootten waarbij respectievelijk 60 % en 10 % van de massa van de zandfractie kleiner is) is groter dan of gelijk aan 1,8 en kleiner dan 3,0.</Omschrijving>
+		<Omschrijving>Zand met een matige variatie in grootte van de zandkorrels: omvat de waarden <i>matigKleinNEN5104</i> en <i>matigGrootNEN5104</i>. De gelijkmatigheidscoefficient D60/D10 (de verhouding tussen de korrelgrootten waarbij respectievelijk 60 % en 10 % van de massa van de zandfractie kleiner is) is groter dan of gelijk aan 1,8 en kleiner dan 3,0.</Omschrijving>
 	</Zandspreiding>
 	<Zandspreiding>
 		<Waarde>matigKleinNEN5104</Waarde>
