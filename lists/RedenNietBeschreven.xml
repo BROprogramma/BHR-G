@@ -55,12 +55,6 @@
 		<Omschrijving>Het interval is zeer summier beschreven en voldoet niet aan de eisen van de beschrijfkwaliteit van het boorprofiel.</Omschrijving>
 	</RedenNietBeschreven>
 	<RedenNietBeschreven>
-		<Waarde>gesteente</Waarde>
-		<IMBRO>v</IMBRO>
-		<IMBROA>v</IMBROA>
-		<Omschrijving>&lt;font color="#000c34"&gt;Gesteente: Het betreft een gesteentelaag. De geldende standaard is niet toereikend om gesteente lagen te beschrijven. Dit is de reden waarom er geen beschrijving van deze laag is opgenomen. Het is wel mogelijk dat de laag volgens een andere procedure is beschreven en buiten de BRO beschikbaar is.&lt;/font&gt;</Omschrijving>
-	</RedenNietBeschreven>
-	<RedenNietBeschreven>
 		<Waarde>onbekend</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
