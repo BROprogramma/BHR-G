@@ -64,13 +64,13 @@
 		<Waarde>verhittenCO2indirectMeten</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Methode voor het bepalen van het organische koolstofgehalte. Het materiaal wordt in tweeën gedeeld. Het eerste deel wordt bij een temperatuur van ten minste 500 °C verhit waarbij de aanwezige organische koolstof wordt omgezet in CO&lt;sub&gt;2&lt;/sub&gt;. Vervolgens wordt het materiaal bij een temperatuur van ten minste 1400 °C verhit waarbij het anorganische koolstof wordt omgezet in CO&lt;sub&gt;2&lt;/sub&gt;. Het tweede proefstuk wordt direct verhit bij een temperatuur van 1400 °C, waarbij al het koolstof wordt omgezet in CO&lt;sub&gt;2&lt;/sub&gt;. De hoeveelheid CO&lt;sub&gt;2&lt;/sub&gt; wordt gemeten en daaruit wordt het gehalte aan koolstof en anorganisch koolstof berekend. Uit het verschil van deze beide gehaltes wordt het aandeel organische koolstof berekend.</Omschrijving>
+		<Omschrijving>Methode voor het bepalen van het organische koolstofgehalte. Het materiaal wordt in tweeën gedeeld. Het eerste deel wordt bij een temperatuur van ten minste 500 °C verhit waarbij de aanwezige organische koolstof wordt omgezet in CO<sub>2</sub>. Vervolgens wordt het materiaal bij een temperatuur van ten minste 1400 °C verhit waarbij het anorganische koolstof wordt omgezet in CO<sub>2</sub>. Het tweede proefstuk wordt direct verhit bij een temperatuur van 1400 °C, waarbij al het koolstof wordt omgezet in CO<sub>2</sub>. De hoeveelheid CO<sub>2</sub> wordt gemeten en daaruit wordt het gehalte aan koolstof en anorganisch koolstof berekend. Uit het verschil van deze beide gehaltes wordt het aandeel organische koolstof berekend.</Omschrijving>
 	</Bepalingsmethode>
 	<Bepalingsmethode>
 		<Waarde>verhittenSO2meten</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Methode voor het bepalen van het zwavelgehalte. Het materiaal wordt bij een temperatuur van 1400°C verhit waarbij het aanwezige zwavel wordt omgezet in SO&lt;sub&gt;2&lt;/sub&gt;. De hoeveelheid SO&lt;sub&gt;2&lt;/sub&gt; wordt gemeten en daaruit wordt het gehalte aan zwavel berekend.</Omschrijving>
+		<Omschrijving>Methode voor het bepalen van het zwavelgehalte. Het materiaal wordt bij een temperatuur van 1400°C verhit waarbij het aanwezige zwavel wordt omgezet in SO<sub>2</sub>. De hoeveelheid SO<sub>2</sub> wordt gemeten en daaruit wordt het gehalte aan zwavel berekend.</Omschrijving>
 	</Bepalingsmethode>
 	<Bepalingsmethode>
 		<Waarde>volumeVoorbepaald</Waarde>
