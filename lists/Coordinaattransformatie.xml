@@ -34,12 +34,12 @@
 		<Waarde>RDNAPTRANS2008MV0</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de Transformatie RDNAPTRANS™, versie 2008. De verticale positie van het aardoppervlak is onbekend, bij transformatie is uitgegaan van 0 m NAP. RDNAPTRANS™ is de offici&amp;#235;le transformatie tussen RD/NAP en ETRS89 afkomstig van het Kadaster.</Omschrijving>
+		<Omschrijving>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de Transformatie RDNAPTRANS™, versie 2008. De verticale positie van het aardoppervlak is onbekend, bij transformatie is uitgegaan van 0 m NAP. RDNAPTRANS™ is de officiële transformatie tussen RD/NAP en ETRS89 afkomstig van het Kadaster.</Omschrijving>
 	</Coordinaattransformatie>
 	<Coordinaattransformatie>
 		<Waarde>RDNAPTRANS2018MV0</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de Transformatie RDNAPTRANS™, versie 2018. De verticale positie van het aardoppervlak is onbekend, bij transformatie is uitgegaan van 0 m NAP. RDNAPTRANS™ is de offici&amp;#235;le transformatie tussen RD/NAP en ETRS89 afkomstig van het Kadaster.</Omschrijving>
+		<Omschrijving>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de Transformatie RDNAPTRANS™, versie 2018. De verticale positie van het aardoppervlak is onbekend, bij transformatie is uitgegaan van 0 m NAP. RDNAPTRANS™ is de officiële transformatie tussen RD/NAP en ETRS89 afkomstig van het Kadaster.</Omschrijving>
 	</Coordinaattransformatie>
 </domeintabel>
