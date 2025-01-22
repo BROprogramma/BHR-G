@@ -34,31 +34,31 @@
 		<Waarde>zeerSlapNEN5104</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Grond die zonder knijpen tussen de vingers door loopt. Een klasse uit de indeling van De Bakker & Schelling (1966), gebruikt onder de Standaard Boor Beschrijvingsmethode tot en met versie 5.3.</Omschrijving>
+		<Omschrijving>Grond die zonder knijpen tussen de vingers door loopt. Een klasse uit de indeling van De Bakker en Schelling (1966), gebruikt onder de Standaard Boor Beschrijvingsmethode tot en met versie 5.3.</Omschrijving>
 	</ConsistentieFijneGrond>
 	<ConsistentieFijneGrond>
 		<Waarde>slapNEN5104</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Grond die bij knijpen zeer gemakkelijk tussen de vingers door loopt. Een klasse uit de indeling van De Bakker & Schelling (1966), gebruikt onder de Standaard Boor Beschrijvingsmethode tot en met versie 5.3.</Omschrijving>
+		<Omschrijving>Grond die bij knijpen zeer gemakkelijk tussen de vingers door loopt. Een klasse uit de indeling van De Bakker en Schelling (1966), gebruikt onder de Standaard Boor Beschrijvingsmethode tot en met versie 5.3.</Omschrijving>
 	</ConsistentieFijneGrond>
 	<ConsistentieFijneGrond>
 		<Waarde>matigSlapNEN5104</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Grond die bij knijpen nog goed tussen de vingers door loopt. Een klasse uit de indeling van De Bakker & Schelling (1966), gebruikt onder de Standaard Boor Beschrijvingsmethode tot en met versie 5.3.</Omschrijving>
+		<Omschrijving>Grond die bij knijpen nog goed tussen de vingers door loopt. Een klasse uit de indeling van De Bakker en Schelling (1966), gebruikt onder de Standaard Boor Beschrijvingsmethode tot en met versie 5.3.</Omschrijving>
 	</ConsistentieFijneGrond>
 	<ConsistentieFijneGrond>
 		<Waarde>matigStevigNEN5104</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Grond die met stevig knijpen nog juist tussen de vingers door te krijgen is. Een klasse uit de indeling van De Bakker & Schelling (1966), gebruikt onder de Standaard Boor Beschrijvingsmethode tot en met versie 5.3.</Omschrijving>
+		<Omschrijving>Grond die met stevig knijpen nog juist tussen de vingers door te krijgen is. Een klasse uit de indeling van De Bakker en Schelling (1966), gebruikt onder de Standaard Boor Beschrijvingsmethode tot en met versie 5.3.</Omschrijving>
 	</ConsistentieFijneGrond>
 	<ConsistentieFijneGrond>
 		<Waarde>stevigNEN5104</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Grond die niet tussen de vingers door te krijgen is. Een klasse uit de indeling van De Bakker & Schelling (1966), gebruikt onder de Standaard Boor Beschrijvingsmethode tot en met versie 5.3.</Omschrijving>
+		<Omschrijving>Grond die niet tussen de vingers door te krijgen is. Een klasse uit de indeling van De Bakker en Schelling (1966), gebruikt onder de Standaard Boor Beschrijvingsmethode tot en met versie 5.3.</Omschrijving>
 	</ConsistentieFijneGrond>
 	<ConsistentieFijneGrond>
 		<Waarde>zeerStevigNEN5104</Waarde>
@@ -70,12 +70,12 @@
 		<Waarde>hardNEN5104</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Grond waar met een mes in kan worden gesneden. Een klasse uit de indeling van Karim & de Ruyter (1993), gebruikt onder de Standaard Boor Beschrijvingsmethode tot en met versie 5.3.</Omschrijving>
+		<Omschrijving>Grond waar met een mes in kan worden gesneden. Een klasse uit de indeling van Karim en de Ruyter (1993), gebruikt onder de Standaard Boor Beschrijvingsmethode tot en met versie 5.3.</Omschrijving>
 	</ConsistentieFijneGrond>
 	<ConsistentieFijneGrond>
 		<Waarde>zeerHardNEN5104</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Grond waar met een mes met moeite in kan worden gesneden. Een klasse uit de indeling van Karim & de Ruyter (1993), gebruikt onder de Standaard Boor Beschrijvingsmethode tot en met versie 5.3.</Omschrijving>
+		<Omschrijving>Grond waar met een mes met moeite in kan worden gesneden. Een klasse uit de indeling van Karim en de Ruyter (1993), gebruikt onder de Standaard Boor Beschrijvingsmethode tot en met versie 5.3.</Omschrijving>
 	</ConsistentieFijneGrond>
 </domeintabel>
