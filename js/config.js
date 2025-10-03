@@ -33,7 +33,7 @@ let respecConfig = {
   publishDate: "2025-10-02",
   //custom header lines  
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
-  publishVersion: "3.2",
+  publishVersion: " ",
   previousVersion: "3.2",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
   previousPublishDate: "2024-12-20",
