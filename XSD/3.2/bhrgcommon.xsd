@@ -9,7 +9,7 @@
            targetNamespace="http://www.broservices.nl/xsd/bhrgcommon/3.2"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="3.2.1-1">
+           version="3.2.0">
    <xs:annotation>
       <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
          <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
