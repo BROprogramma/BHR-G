@@ -24,7 +24,54 @@
    </xs:annotation>
     <xs:element name="intakeResponse" type="brocom:IntakeResponseType" />
 <xs:element name="parseFault" type="brocom:ParseFaultType" />
-<xs:element name="correctionRequest"
+   <xs:element name="registrationRequest"
+               type="isbhrg:RegistrationRequestType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht RegistrationRequest is een specialisatie van de abstract klasse RegistrationRequest uit de package brocommon, waaraan het een sourceDocument toevoegt. Met dit bericht kan een nog niet geregistreerd formatieweerstandonderzoek in de BRO worden opgenomen of kan een geregistreerd formatieweerstandonderzoek aangevuld of voltooid worden.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="RegistrationRequestType">
+      <xs:complexContent>
+         <xs:extension base="brocom:RegistrationRequestType">
+            <xs:sequence>
+               <xs:element name="requestReference"
+                           type="xs:string"
+                           minOccurs="1"
+                           maxOccurs="1" />
+               <xs:element name="deliveryAccountableParty"
+                           type="brocom:OrganizationType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie die het bestuursorgaan, dat bronhouder is van de gegevens in de basisregistratie ondergrond, als onderneming in het Handelsregister heeft.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="broId"
+                           type="brocom:RegistrationObjectCodeType"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="qualityRegime"
+                           type="brocom:QualityRegimeType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.
+Explanation: Het gegeven is door de dataleverancier bij de overdracht meegegeven.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="sourceDocument"
+                           type="isbhrg:SourceDocumentPropertyType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het element sourceDocument bevat gegevens die in het BRO-systeem geregistreerd zullen worden en die in de catalogus van het registratieobject zijn gespecificeerd, met uitzondering van de gegevens die door het BRO-systeem worden gegenereerd of afgeleid uit het registratieverzoek.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:element name="correctionRequest"
                type="isbhrg:CorrectionRequestType">
       <xs:annotation>
          <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht correctionRequest (correctieverzoek) is een specialisatie van de abstract klasse CorrectionRequest uit de package brocommon, waaraan het een correctionReason en een sourceDocument toevoegt. Met dit bericht kan een bronhouder en/of dataleverancier in de BRO opgenomen gegevens vervangen (corrigeren). De eenheid van vervangen is een brondocument, dat eerder met een registrationRequest (registratieverzoek) is aangeboden bij de BRO. Het is niet mogelijk de waarde van een individueel attribuut te corrigeren.</xs:documentation>
@@ -34,6 +81,31 @@
       <xs:complexContent>
          <xs:extension base="brocom:CorrectionRequestType">
             <xs:sequence>
+               <xs:element name="requestReference"
+                           type="xs:string"
+                           minOccurs="1"
+                           maxOccurs="1" />
+               <xs:element name="deliveryAccountableParty"
+                           type="brocom:OrganizationType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie die het bestuursorgaan, dat bronhouder is van de gegevens in de basisregistratie ondergrond, als onderneming in het Handelsregister heeft.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="broId"
+                           type="brocom:RegistrationObjectCodeType"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="qualityRegime"
+                           type="brocom:QualityRegimeType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.
+Explanation: Het gegeven is door de dataleverancier bij de overdracht meegegeven.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
                <xs:element name="correctionReason"
                            minOccurs="1"
                            maxOccurs="1"
@@ -52,28 +124,6 @@
                            maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het element sourceDocument bevat gegevens die de in de BRO geregistreerde gegevens zullen vervangen en die in de catalogus van het registratieobject zijn gespecificeerd, met uitzondering van de gegevens die door het BRO-systeem worden gegenereerd of afgeleid uit het correctieverzoek.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:element name="registrationRequest"
-               type="isbhrg:RegistrationRequestType">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht RegistrationRequest is een specialisatie van de abstract klasse RegistrationRequest uit de package brocommon, waaraan het een sourceDocument toevoegt. Met dit bericht kan een nog niet geregistreerd formatieweerstandonderzoek in de BRO worden opgenomen of kan een geregistreerd formatieweerstandonderzoek aangevuld of voltooid worden.</xs:documentation>
-      </xs:annotation>
-   </xs:element>
-   <xs:complexType name="RegistrationRequestType">
-      <xs:complexContent>
-         <xs:extension base="brocom:RegistrationRequestType">
-            <xs:sequence>
-               <xs:element name="sourceDocument"
-                           type="isbhrg:SourceDocumentPropertyType"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het element sourceDocument bevat gegevens die in het BRO-systeem geregistreerd zullen worden en die in de catalogus van het registratieobject zijn gespecificeerd, met uitzondering van de gegevens die door het BRO-systeem worden gegenereerd of afgeleid uit het registratieverzoek.</xs:documentation>
                   </xs:annotation>
                </xs:element>
             </xs:sequence>
@@ -204,6 +254,15 @@ Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de b
                            type="bhrgcom:NITGCodeType"
                            minOccurs="0"
                            maxOccurs="1"/>
+               <xs:element name="UUCode"
+                           type="xs:string"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie die het booronderzoek in de registratie bij de Universiteit Utrecht had.
+Explanation: IMBRO/A Dit gegeven komt alleen voor onder IMBRO/A, en is alleen aanwezig wanneer het booronderzoek voor opname in de BRO geregistreerd was in de registratie bij de Universiteit Utrecht. De code begint met de letters UU en dan volgen 9 cijfers (4 voor de aanduiding van het jaar, 2 voor de aanduiding van de groep en 3 voor het volgnummer). Het gegeven is opgenomen om historische verwijzingen naar het booronderzoek te kunnen duiden.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
                <xs:element minOccurs="1"
                            maxOccurs="1"
                            name="deliveredLocation"
@@ -229,15 +288,6 @@ Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de b
                            type="bhrgcom:SiteCharacteristicType">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De toestand van het terrein tijdens het boren.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="UUCode"
-                           type="xs:string"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie die het booronderzoek in de registratie bij de Universiteit Utrecht had.
-Explanation: IMBRO/A Dit gegeven komt alleen voor onder IMBRO/A, en is alleen aanwezig wanneer het booronderzoek voor opname in de BRO geregistreerd was in de registratie bij de Universiteit Utrecht. De code begint met de letters UU en dan volgen 9 cijfers (4 voor de aanduiding van het jaar, 2 voor de aanduiding van de groep en 3 voor het volgnummer). Het gegeven is opgenomen om historische verwijzingen naar het booronderzoek te kunnen duiden.</xs:documentation>
                   </xs:annotation>
                </xs:element>
                <xs:element minOccurs="0"
@@ -292,14 +342,14 @@ Explanation: Het vakgebied is een gegeven dat dient om een categorie van boorond
                </xs:element>
                <xs:element minOccurs="0"
                            maxOccurs="1"
-                           name="boreholeSampleDescription"
-                           nillable="false"
-                           type="bhrgcom:BoreholeSampleDescriptionPropertyType"/>
-               <xs:element minOccurs="0"
-                           maxOccurs="1"
                            name="boreholeSampleAnalysis"
                            nillable="false"
                            type="bhrgcom:BoreholeSampleAnalysisPropertyType"/>
+               <xs:element minOccurs="0"
+                           maxOccurs="1"
+                           name="boreholeSampleDescription"
+                           nillable="false"
+                           type="bhrgcom:BoreholeSampleDescriptionPropertyType"/>
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>
