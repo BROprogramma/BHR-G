@@ -39,7 +39,7 @@
                            minOccurs="1"
                            maxOccurs="1" />
                <xs:element name="deliveryAccountableParty"
-                           type="brocom:OrganizationType"
+                           type="brocom:ChamberOfCommerceNumberType"
                            minOccurs="1"
                            maxOccurs="1">
                   <xs:annotation>
@@ -87,7 +87,7 @@ Explanation: Het gegeven is door de dataleverancier bij de overdracht meegegeven
                            maxOccurs="1" />
                <xs:element name="deliveryAccountableParty"
                            type="brocom:OrganizationType"
-                           minOccurs="1"
+                           minOccurs="0"
                            maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie die het bestuursorgaan, dat bronhouder is van de gegevens in de basisregistratie ondergrond, als onderneming in het Handelsregister heeft.</xs:documentation>
