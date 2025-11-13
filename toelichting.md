@@ -113,6 +113,7 @@ Een boorprofiel heeft een bepaalde beschrijfkwaliteit en dat wil zeggen dat de k
 </figure>
 Over het hele boortraject zijn monsters met een relatief lage kwaliteit, <i>geroerde</i> monsters, genomen. Daarnaast zijn van bepaalde dieptes monsters met een hoge kwaliteit, <i>ongeroerde</i> monsters, verkregen. Het verschil in kwaliteit is zo groot dat de monsters apart beschreven moeten worden. In het eerste geval ontstaat een continu profiel, in het tweede een discontinu profiel.
 Het uitgangspunt is dat het boorprofiel alle met een bepaalde kwaliteit bemonsterde intervallen dekt en dat de bemonsterde intervallen compleet zijn beschreven. Het kan echter zijn dat dit niet gelukt is, bijvoorbeeld omdat er per ongeluk een monster verdwenen is. De intervallen die niet beschreven konden worden, worden expliciet in het profiel opgenomen (<i>Niet-beschreven interval</i>) en de reden waarom het niet beschreven is wordt vastgelegd.
+De beschrijfkwaliteit duidt de mate van detail waarmee de opbouw van de ondergrond in het boorprofiel is beschreven. In de catalogus is dit verwerkt in regels bij de attributen. Een overzichtelijke samenvatting is beschikbaar op de BRO-productomgeving (zie BHR-G Overzicht beschrijfkwaliteiten versie 3.2). Voor details en de precieze definitie moet altijd de gegevensdefinitie in deze catalogus worden geraadpleegd.
 
 ## Laag
 
