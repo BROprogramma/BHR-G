@@ -59,6 +59,29 @@ let respecConfig = {
      ],
   //neem hier de URL van de github repository op waar het respec document in staat
   github: "https://github.com/BROprogramma/BHR-G",
+  // Voeg het BRO-logo toe aan het Doe mee-blok in de kop.
+  postProcess: [
+    ...((typeof organisationConfig !== "undefined" && Array.isArray(organisationConfig.postProcess))
+      ? organisationConfig.postProcess
+      : []),
+    () => {
+      const headDl = document.querySelector(".head dl");
+      if (!headDl) return;
+      const participateDt = [...headDl.querySelectorAll("dt")].find(dt => {
+        return dt.textContent && dt.textContent.trim().startsWith("Doe mee");
+      });
+      if (!participateDt || participateDt.querySelector("#logo_bro")) return;
+
+      const logo = document.createElement("img");
+      logo.id = "logo_bro";
+      logo.src = "https://docs.geostandaarden.nl/bro/gen/logo_bro.png";
+      logo.alt = "Basisregistratie Ondergrond";
+      logo.width = 223;
+      logo.height = 115;
+      logo.setAttribute("align", "right");
+      participateDt.prepend(logo);
+    },
+  ],
   // Create PDF and link to file in header (optional):
   //alternateFormats: [{label: "pdf", uri: "template.pdf",},],
 };
