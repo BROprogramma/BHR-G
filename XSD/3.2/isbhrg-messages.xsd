@@ -1,77 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/3.2"
+<xs:schema xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/3.1"
            xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
            xmlns:gml="http://www.opengis.net/gml/3.2"
            xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+           xmlns:imf="http://www.imvertor.org/xsl/functions"
+           xmlns:imvert="http://www.imvertor.org/schema/system"
            xmlns:isbhrg="http://www.broservices.nl/xsd/isbhrg/3.2"
+           xmlns:math="http://www.w3.org/2005/xpath-functions/math"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            targetNamespace="http://www.broservices.nl/xsd/isbhrg/3.2"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="3.2.0">
- <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
- <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
-<xs:import namespace="http://www.broservices.nl/xsd/bhrgcommon/3.2" schemaLocation="bhrgcommon.xsd"/>
-    <!--   <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0"
-            schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
-    <xs:import namespace="http://www.opengis.net/gml/3.2"
-            schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/> 
-            -->
+           version="3.2.1">
+
    <xs:annotation>
       <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
          <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
       </xs:appinfo>
    </xs:annotation>
-    <xs:element name="intakeResponse" type="brocom:IntakeResponseType" />
+
+   <xs:import namespace="http://www.broservices.nl/xsd/bhrgcommon/3.1"
+              schemaLocation="https://schema.broservices.nl/xsd/bhrgcommon/3.1/bhrgcommon.xsd"/>
+   <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0"
+              schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
+   <xs:import namespace="http://www.opengis.net/gml/3.2"
+              schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+
+<xs:element name="intakeResponse" type="brocom:IntakeResponseType" />
 <xs:element name="parseFault" type="brocom:ParseFaultType" />
-   <xs:element name="registrationRequest"
-               type="isbhrg:RegistrationRequestType">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht RegistrationRequest is een specialisatie van de abstract klasse RegistrationRequest uit de package brocommon, waaraan het een sourceDocument toevoegt. Met dit bericht kan een nog niet geregistreerd formatieweerstandonderzoek in de BRO worden opgenomen of kan een geregistreerd formatieweerstandonderzoek aangevuld of voltooid worden.</xs:documentation>
-      </xs:annotation>
-   </xs:element>
-   <xs:complexType name="RegistrationRequestType">
-      <xs:complexContent>
-         <xs:extension base="brocom:RegistrationRequestType">
-            <xs:sequence>
-               <xs:element name="requestReference"
-                           type="xs:string"
-                           minOccurs="1"
-                           maxOccurs="1" />
-               <xs:element name="deliveryAccountableParty"
-                           type="brocom:ChamberOfCommerceNumberType"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie die het bestuursorgaan, dat bronhouder is van de gegevens in de basisregistratie ondergrond, als onderneming in het Handelsregister heeft.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="broId"
-                           type="brocom:RegistrationObjectCodeType"
-                           minOccurs="1"
-                           maxOccurs="1"/>
-               <xs:element name="qualityRegime"
-                           type="brocom:QualityRegimeType"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.
-Explanation: Het gegeven is door de dataleverancier bij de overdracht meegegeven.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="sourceDocument"
-                           type="isbhrg:SourceDocumentPropertyType"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het element sourceDocument bevat gegevens die in het BRO-systeem geregistreerd zullen worden en die in de catalogus van het registratieobject zijn gespecificeerd, met uitzondering van de gegevens die door het BRO-systeem worden gegenereerd of afgeleid uit het registratieverzoek.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:element name="correctionRequest"
+
+   <xs:element name="сorrectionRequest"
                type="isbhrg:CorrectionRequestType">
       <xs:annotation>
          <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht correctionRequest (correctieverzoek) is een specialisatie van de abstract klasse CorrectionRequest uit de package brocommon, waaraan het een correctionReason en een sourceDocument toevoegt. Met dit bericht kan een bronhouder en/of dataleverancier in de BRO opgenomen gegevens vervangen (corrigeren). De eenheid van vervangen is een brondocument, dat eerder met een registrationRequest (registratieverzoek) is aangeboden bij de BRO. Het is niet mogelijk de waarde van een individueel attribuut te corrigeren.</xs:documentation>
@@ -81,31 +39,6 @@ Explanation: Het gegeven is door de dataleverancier bij de overdracht meegegeven
       <xs:complexContent>
          <xs:extension base="brocom:CorrectionRequestType">
             <xs:sequence>
-               <xs:element name="requestReference"
-                           type="xs:string"
-                           minOccurs="1"
-                           maxOccurs="1" />
-               <xs:element name="deliveryAccountableParty"
-                           type="brocom:OrganizationType"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie die het bestuursorgaan, dat bronhouder is van de gegevens in de basisregistratie ondergrond, als onderneming in het Handelsregister heeft.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="broId"
-                           type="brocom:RegistrationObjectCodeType"
-                           minOccurs="1"
-                           maxOccurs="1"/>
-               <xs:element name="qualityRegime"
-                           type="brocom:QualityRegimeType"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.
-Explanation: Het gegeven is door de dataleverancier bij de overdracht meegegeven.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
                <xs:element name="correctionReason"
                            minOccurs="1"
                            maxOccurs="1"
@@ -119,7 +52,7 @@ Explanation: Het gegeven is door de dataleverancier bij de overdracht meegegeven
                   </xs:annotation>
                </xs:element>
                <xs:element name="sourceDocument"
-                           type="isbhrg:SourceDocumentPropertyType"
+                           type="isbhrg:SourceDocumentType"
                            minOccurs="1"
                            maxOccurs="1">
                   <xs:annotation>
@@ -130,6 +63,29 @@ Explanation: Het gegeven is door de dataleverancier bij de overdracht meegegeven
          </xs:extension>
       </xs:complexContent>
    </xs:complexType>
+   <xs:element name="registrationRequest"
+               type="isbhrg:RegistrationRequestType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht RegistrationRequest is een specialisatie van de abstract klasse RegistrationRequest uit de package brocommon, waaraan het een sourceDocument toevoegt. Met dit bericht kan een nog niet geregistreerd formatieweerstandonderzoek in de BRO worden opgenomen of kan een geregistreerd formatieweerstandonderzoek aangevuld of voltooid worden.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="RegistrationRequestType">
+      <xs:complexContent>
+         <xs:extension base="brocom:RegistrationRequestType">
+            <xs:sequence>
+               <xs:element name="sourceDocument"
+                           type="isbhrg:SourceDocumentType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het element sourceDocument bevat gegevens die in het BRO-systeem geregistreerd zullen worden en die in de catalogus van het registratieobject zijn gespecificeerd, met uitzondering van de gegevens die door het BRO-systeem worden gegenereerd of afgeleid uit het registratieverzoek.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+
    <xs:element name="BHR_G_CompleteReport"
                type="isbhrg:BHR_G_CompleteReportType"
                substitutionGroup="isbhrg:BHR_G_StartReport">
@@ -155,10 +111,9 @@ Explanation: Het vakgebied is een gegeven dat dient om een categorie van boorond
       </xs:complexContent>
    </xs:complexType>
    <xs:complexType name="BHR_G_CompleteReportPropertyType">
-      <xs:sequence minOccurs="0">
+      <xs:sequence minOccurs="1">
          <xs:element ref="isbhrg:BHR_G_CompleteReport"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
    </xs:complexType>
    <xs:element name="BHR_G_StartReport"
                type="isbhrg:BHR_G_StartReportType"
@@ -242,7 +197,7 @@ Explanation: IMBRO/A Voor gegevens die zijn aangeleverd in het kader van archief
                   </xs:annotation>
                </xs:element>
                <xs:element name="researchOperator"
-                           type="brocom:ChamberOfCommerceNumberType"
+                           type="brocom:OrganizationType"
                            minOccurs="0"
                            maxOccurs="1">
                   <xs:annotation>
@@ -254,14 +209,16 @@ Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de b
                            type="bhrgcom:NITGCodeType"
                            minOccurs="0"
                            maxOccurs="1"/>
-               <xs:element name="UUCode"
-                           type="xs:string"
-                           minOccurs="0"
-                           maxOccurs="1">
+               <xs:element name="UUCode" minOccurs="0" maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie die het booronderzoek in de registratie bij de Universiteit Utrecht had.
 Explanation: IMBRO/A Dit gegeven komt alleen voor onder IMBRO/A, en is alleen aanwezig wanneer het booronderzoek voor opname in de BRO geregistreerd was in de registratie bij de Universiteit Utrecht. De code begint met de letters UU en dan volgen 9 cijfers (4 voor de aanduiding van het jaar, 2 voor de aanduiding van de groep en 3 voor het volgnummer). Het gegeven is opgenomen om historische verwijzingen naar het booronderzoek te kunnen duiden.</xs:documentation>
                   </xs:annotation>
+                  <xs:simpleType>
+                     <xs:restriction base="xs:string">
+                        <xs:length value="11"/>
+                     </xs:restriction>
+                  </xs:simpleType>
                </xs:element>
                <xs:element minOccurs="1"
                            maxOccurs="1"
@@ -290,11 +247,6 @@ Explanation: IMBRO/A Dit gegeven komt alleen voor onder IMBRO/A, en is alleen aa
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De toestand van het terrein tijdens het boren.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element minOccurs="0"
-                           maxOccurs="1"
-                           name="boreholeSampleAnalysis"
-                           nillable="false"
-                           type="bhrgcom:BoreholeSampleAnalysisPropertyType"/>
                <xs:element minOccurs="1"
                            maxOccurs="1"
                            name="boring"
@@ -302,23 +254,27 @@ Explanation: IMBRO/A Dit gegeven komt alleen voor onder IMBRO/A, en is alleen aa
                            type="bhrgcom:BoringPropertyType"/>
                <xs:element minOccurs="0"
                            maxOccurs="1"
+                           name="fluidMudLayer"
+                           nillable="false"
+                           type="bhrgcom:FluidMudLayerPropertyType"/>                           
+               <xs:element minOccurs="0"
+                           maxOccurs="1"
                            name="boreholeSampleDescription"
                            nillable="false"
                            type="bhrgcom:BoreholeSampleDescriptionPropertyType"/>
                <xs:element minOccurs="0"
                            maxOccurs="1"
-                           name="fluidMudLayer"
+                           name="boreholeSampleAnalysis"
                            nillable="false"
-                           type="bhrgcom:FluidMudLayerPropertyType"/>
+                           type="bhrgcom:BoreholeSampleAnalysisPropertyType"/>
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>
    </xs:complexType>
    <xs:complexType name="BHR_G_StartReportPropertyType">
-      <xs:sequence minOccurs="0">
+      <xs:sequence minOccurs="1">
          <xs:element ref="isbhrg:BHR_G_StartReport"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
    </xs:complexType>
    <xs:element name="BHR_G_EndReport"
                type="isbhrg:BHR_G_EndReportType"
@@ -331,6 +287,16 @@ Explanation: IMBRO/A Dit gegeven komt alleen voor onder IMBRO/A, en is alleen aa
       <xs:complexContent>
          <xs:extension base="gml:AbstractFeatureType">
             <xs:sequence>
+               <xs:element minOccurs="0"
+                           maxOccurs="1"
+                           name="boreholeSampleDescription"
+                           nillable="false"
+                           type="bhrgcom:BoreholeSampleDescriptionPropertyType"/>
+               <xs:element minOccurs="0"
+                           maxOccurs="1"
+                           name="boreholeSampleAnalysis"
+                           nillable="false"
+                           type="bhrgcom:BoreholeSampleAnalysisPropertyType"/>
                <xs:element name="researchReportDate"
                            type="brocom:PartialDateType"
                            minOccurs="1"
@@ -340,25 +306,14 @@ Explanation: IMBRO/A Dit gegeven komt alleen voor onder IMBRO/A, en is alleen aa
 Explanation: Het vakgebied is een gegeven dat dient om een categorie van booronderzoek in de registratie ondergrond te identificeren. Het gegeven bepaalt hoe het onderzoek is uitgevoerd en welke gegevens en categorieën van gegevens vastgelegd kunnen zijn. Onder geologisch onderzoek wordt geologisch specialistisch onderzoek verstaan dat nauw verbonden is met het doel modellen die de opbouw van de ondergrond in termen van (hydro)geologische eenheden beschrijven te maken en te verbeteren. Naast geologisch booronderzoek worden geologisch toegepast booronderzoek, geotechnisch booronderzoek, bodemkundig booronderzoek en cultuurtechnisch booronderzoek onderscheiden. In de uitvoeringspraktijk komt het voor dat in een booronderzoek gegevens worden vastgelegd die onder een van de vijf vakgebieden vallen en gegevens die eigenlijk in het domein van de milieukunde of de archeologie thuishoren. Omdat die disciplines buiten het bereik van de basisregistratie ondergrond liggen, zijn die extra gegevens niet gedefinieerd. Geologisch booronderzoek met een dergelijk multidisciplinair karakter wordt in de basisregistratie ondergrond opgenomen maar zonder die extra gegevens. Om gebruikers duidelijk te maken dat de onderzoeksresultaten niet volledig geregistreerd zijn wordt als waarde voor het vakgebied niet de waarde geologie vermeld, maar een waarde als geologieArcheologie.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element minOccurs="0"
-                           maxOccurs="1"
-                           name="boreholeSampleAnalysis"
-                           nillable="false"
-                           type="bhrgcom:BoreholeSampleAnalysisPropertyType"/>
-               <xs:element minOccurs="0"
-                           maxOccurs="1"
-                           name="boreholeSampleDescription"
-                           nillable="false"
-                           type="bhrgcom:BoreholeSampleDescriptionPropertyType"/>
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>
    </xs:complexType>
    <xs:complexType name="BHR_G_EndReportPropertyType">
-      <xs:sequence minOccurs="0">
+      <xs:sequence minOccurs="1">
          <xs:element ref="isbhrg:BHR_G_EndReport"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
    </xs:complexType>
    <xs:complexType name="CorrectionReasonType">
       <xs:simpleContent>
@@ -370,54 +325,11 @@ Explanation: Het vakgebied is een gegeven dat dient om een categorie van boorond
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
-   <xs:element name="SourceDocument" type="isbhrg:SourceDocumentType">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het datatype sourceDocument biedt de keuze uit een aantal verschillende typen brondocumenten, waarvan er één opgenomen is in een innameverzoek.</xs:documentation>
-      </xs:annotation>
-   </xs:element>
    <xs:complexType name="SourceDocumentType">
-      <xs:sequence>
-         <xs:element name="BHR_G_CompleteReport" minOccurs="1" maxOccurs="1">
-            <xs:complexType>
-               <xs:complexContent>
-                  <xs:extension base="gml:AbstractFeatureType">
-                     <xs:sequence>
-                        <xs:element ref="isbhrg:BHR_G_CompleteReport"/>
-                     </xs:sequence>
-                     <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-                  </xs:extension>
-               </xs:complexContent>
-            </xs:complexType>
-         </xs:element>
-         <xs:element name="BHR_G_StartReport" minOccurs="1" maxOccurs="1">
-            <xs:complexType>
-               <xs:complexContent>
-                  <xs:extension base="gml:AbstractFeatureType">
-                     <xs:sequence>
-                        <xs:element ref="isbhrg:BHR_G_StartReport"/>
-                     </xs:sequence>
-                     <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-                  </xs:extension>
-               </xs:complexContent>
-            </xs:complexType>
-         </xs:element>
-         <xs:element name="BHR_G_EndReport" minOccurs="1" maxOccurs="1">
-            <xs:complexType>
-               <xs:complexContent>
-                  <xs:extension base="gml:AbstractFeatureType">
-                     <xs:sequence>
-                        <xs:element ref="isbhrg:BHR_G_EndReport"/>
-                     </xs:sequence>
-                     <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-                  </xs:extension>
-               </xs:complexContent>
-            </xs:complexType>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:complexType name="SourceDocumentPropertyType">
-      <xs:sequence>
-         <xs:element ref="isbhrg:SourceDocument"/>
-      </xs:sequence>
+      <xs:choice minOccurs="1" maxOccurs="1">
+         <xs:element name="BHR_G_CompleteReport" type="isbhrg:BHR_G_CompleteReportType"/>
+         <xs:element name="BHR_G_StartReport" type="isbhrg:BHR_G_StartReportType"/>
+         <xs:element name="BHR_G_EndReport" type="isbhrg:BHR_G_EndReportType"/>
+      </xs:choice>
    </xs:complexType>
 </xs:schema>
