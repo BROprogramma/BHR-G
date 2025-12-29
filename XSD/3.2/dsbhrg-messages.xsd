@@ -42,6 +42,7 @@
          </xs:extension>
       </xs:complexContent>
    </xs:complexType>
+   <xs:element name="parseFault" type="brocom:ParseFaultType" />
    <xs:element name="dispatchCharacteristicsRequest"
                type="dsbhrg:DispatchCharacteristicsRequestType">
       <xs:annotation>
@@ -52,10 +53,6 @@
       <xs:complexContent>
          <xs:extension base="brocom:AbstractDispatchCharacteristicsRequestType">
             <xs:sequence>
-               <xs:element name="requestReference"
-                           type="xs:string"
-                           minOccurs="1"
-                           maxOccurs="1" />
                <xs:element minOccurs="1"
                            maxOccurs="1"
                            name="criteria"
@@ -65,27 +62,9 @@
          </xs:extension>
       </xs:complexContent>
    </xs:complexType>
-   <xs:element name="dispatchDataRequest" type="brocom:DispatchDataRequestType" />
-      <xs:complexType name="DispatchDataRequestType">
-      <xs:complexContent>
-         <xs:extension base="brocom:DispatchDataRequestType">
-            <xs:sequence>
-               <xs:element name="requestReference"
-                           type="xs:string"
-                           minOccurs="1"
-                           maxOccurs="1" />
-               <xs:element name="broId"
-                           type="brocom:RegistrationObjectCodeType"
-                           minOccurs="1"
-                           maxOccurs="1"/>
-               </>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
+
    <xs:element name="dispatchCharacteristicsResponse"
-               type="dsbhrg:DispatchCharacteristicsResponseType"
-               substitutionGroup="brocom:DispatchResponse">
+               type="dsbhrg:DispatchCharacteristicsResponseType">
       <xs:annotation>
          <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Aantal documenten</xs:documentation>
       </xs:annotation>
@@ -111,6 +90,44 @@
          </xs:extension>
       </xs:complexContent>
    </xs:complexType>
+   <xs:element name="dispatchDataRequest" type="brocom:DispatchDataRequestType" />
+      <xs:complexType name="DispatchDataRequestType">
+      <xs:complexContent>
+         <xs:extension base="brocom:DispatchDataRequestType">
+            <xs:sequence>
+               <xs:element name="requestReference"
+                           type="xs:string"
+                           minOccurs="1"
+                           maxOccurs="1" />
+               <xs:element name="broId"
+                           type="brocom:RegistrationObjectCodeType"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               </>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:element name="dispatchDataResponse"
+               type="dsbhrg:DispatchDataResponseType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchDataResponse is een specialisatie van de abstract klasse DispatchDataResponse uit de package brocommon, waaraan het een dispatchDocument toevoegt. Met dit bericht worden, als response op een DispatchDataRequest, de gegevens over een specifiek BHR_G registratieobject verzonden naar de aanvrager.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="DispatchDataResponseType">
+      <xs:complexContent>
+         <xs:extension base="brocom:DispatchResponseType">
+            <xs:sequence>
+               <xs:element minOccurs="0"
+                           maxOccurs="1"
+                           name="dispatchDocument"
+                           nillable="false"
+                           type="brocom:AbstractRegistrationObjectPropertyType"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+
    <xs:element name="BHR_G_C"
                type="dsbhrg:BHR_G_CType"
                substitutionGroup="brocom:AbstractCharacteristics">
@@ -301,10 +318,9 @@ Explanation: Een bemonsteringskwaliteit wordt maar een keer vermeld.</xs:documen
       </xs:complexContent>
    </xs:complexType>
    <xs:complexType name="BHR_G_CPropertyType">
-      <xs:sequence minOccurs="0">
+      <xs:sequence minOccurs="1">
          <xs:element ref="dsbhrg:BHR_G_C"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
    </xs:complexType>
    <xs:element name="BHR_G_O"
                type="dsbhrg:BHR_G_OType"
@@ -409,6 +425,17 @@ Explanation: IMBRO/A Voor gegevens die zijn aangeleverd in het kader van archief
                            type="bhrgcom:NITGCodeType"
                            minOccurs="0"
                            maxOccurs="1"/>
+               <xs:element name="UUCode" minOccurs="0" maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie die het booronderzoek in de registratie bij de Universiteit Utrecht had.
+Explanation: IMBRO/A Dit gegeven komt alleen voor onder IMBRO/A, en is alleen aanwezig wanneer het booronderzoek voor opname in de BRO geregistreerd was in de registratie bij de Universiteit Utrecht. De code begint met de letters UU en dan volgen 9 cijfers (4 voor de aanduiding van het jaar, 2 voor de aanduiding van de groep en 3 voor het volgnummer). Het gegeven is opgenomen om historische verwijzingen naar het booronderzoek te kunnen duiden.</xs:documentation>
+                  </xs:annotation>
+                  <xs:simpleType>
+                     <xs:restriction base="xs:string">
+                        <xs:length value="11"/>
+                     </xs:restriction>
+                  </xs:simpleType>
+               </xs:element>
                <xs:element minOccurs="1"
                            maxOccurs="1"
                            name="reportHistory"
@@ -480,10 +507,9 @@ Explanation: De locatie van het booronderzoek is gedefinieerd als een punt.</xs:
       </xs:complexContent>
    </xs:complexType>
    <xs:complexType name="BHR_G_OPropertyType">
-      <xs:sequence minOccurs="0">
+      <xs:sequence minOccurs="1">
          <xs:element ref="dsbhrg:BHR_G_O"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
    </xs:complexType>
    <xs:element name="BHR_G_O_DP"
                type="dsbhrg:BHR_G_O_DPType"
@@ -498,10 +524,9 @@ Explanation: De locatie van het booronderzoek is gedefinieerd als een punt.</xs:
       </xs:complexContent>
    </xs:complexType>
    <xs:complexType name="BHR_G_O_DPPropertyType">
-      <xs:sequence minOccurs="0">
+      <xs:sequence minOccurs="1">
          <xs:element ref="dsbhrg:BHR_G_O_DP"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
    </xs:complexType>
    <xs:complexType name="DeterminedPropertiesOverviewType">
       <xs:sequence>
