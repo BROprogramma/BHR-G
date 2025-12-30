@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope 
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.xmlsoap.org/soap/envelope/ http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <dispatchDataResponse
+                xmlns="http://www.broservices.nl/xsd/dsbhr-g/3.2"
+                xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/3.2"
+                xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.broservices.nl/xsd/dsbhrg/3.2 dsbhr-g-messages.xsd">
+            <!--Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de uitgifteservice.
+                Het is niet gevalideert door de uitgifteservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
+            -->
+            <brocom:responseType>dispatch</brocom:responseType>
+            <brocom:requestReference>blabla</brocom:requestReference>
+            <brocom:dispatchTime>2020-05-29T13:47:00+02:00</brocom:dispatchTime>
+            <dispatchDocument>
+                <BHR_G_O_DP gml:id="id_001">
+                    <brocom:broId>BHR123456789012</brocom:broId>
+                    <!-- optional; only present in BHR_G_O_DP dispatchDocument and if the delivery accountable party is another organization than the delivery responsible party.-->
+                    <brocom:deliveryAccountableParty>27376655</brocom:deliveryAccountableParty>
+                    <!-- optional; only present in BHR_G_O_DP dispatchDocument -->
+                    <brocom:objectIdAccountableParty>myIdForThisBoreholeResearch</brocom:objectIdAccountableParty>
+                    <!-- optional; only present in BHR_G_O_DP dispatchDocument -->
+                    <brocom:deliveryResponsibleParty>55667372</brocom:deliveryResponsibleParty>
+                    <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
+                    <deliveryContext codeSpace="urn:bro:bhrg:DeliveryContext">RO</deliveryContext>
+                    <surveyPurpose codeSpace="urn:bro:bhrg:SurveyPurpose">gebiedsmodelOrdeningOndergrond</surveyPurpose>
+                    <discipline codeSpace="urn:bro:bhrg:Discipline">geologie</discipline>
+                    <surveyProcedure codeSpace="urn:bro:bhrg:SurveyProcedure">EN1997d2v2007</surveyProcedure>
+                    <!--Optional: only allowed and mandatory if deliveredVerticalPosition.localVerticalReferencePoint='maaiveld'. -->
+                    <researchReportDate>
+                        <brocom:date>2020-02-28</brocom:date>
+                    </researchReportDate>
+                                <!-- optional; only present in BHR_G_O_DP dispatchDocument -->
+                    <researchOperator>
+                        <!-- You have a CHOICE of the next 2 items at this level
+                        <brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
+                        <brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
+                        -->
+                        <brocom:chamberOfCommerceNumber>52754834</brocom:chamberOfCommerceNumber>
+                    </researchOperator>
+                    <siteCharacteristicDetermined>ja</siteCharacteristicDetermined>
+                    <!--Optional:-->            
+                    <NITGCode>
+                        <bhrgcom:NITGCode>B25A1234</bhrgcom:NITGCode>
+                    </NITGCode>
+                    <!--Optional:-->
+                    <UUCode>UU199912123</UUCode>
+                    <registrationHistory>
+                        <brocom:objectRegistrationTime>2020-02-28T16:39:52+01:00</brocom:objectRegistrationTime>
+                        <brocom:registrationStatus codeSpace="urn:bro:RegistrationStatus">voltooid</brocom:registrationStatus>
+                        <brocom:corrected>nee</brocom:corrected>
+                        <brocom:underReview>nee</brocom:underReview>
+                        <brocom:deregistered>nee</brocom:deregistered>
+                        <brocom:reregistered>nee</brocom:reregistered>
+                    </registrationHistory>
+                    <reportHistory>
+                        <bhrgcom:event>
+                            <bhrgcom:date>
+                                <brocom:date>2020-07-13</brocom:date>
+                            </bhrgcom:date>
+                            <bhrgcom:name codeSpace="urn:bro:bhrg:EventName">volledigGerapporteerd</bhrgcom:name>
+                        </bhrgcom:event>
+                    </reportHistory>
+                    <deliveredLocation>
+                        <bhrgcom:location>
+                            <gml:Point gml:id="id_0002" srsName="urn:ogc:def:crs:EPSG::28992">
+                                <gml:pos>134750.000 477800.000</gml:pos>
+                            </gml:Point>
+                        </bhrgcom:location>
+                        <bhrgcom:horizontalPositioningDate>
+                                <brocom:date>2020-07-13</brocom:date>
+                        </bhrgcom:horizontalPositioningDate>
+                        <bhrgcom:horizontalPositioningMethod codeSpace="urn:bro:bhrg:HorizontalPositioningMethod">RTKGPS2tot5cm</bhrgcom:horizontalPositioningMethod>
+                        <!-- optional; only present in BHR_G_O_DP dispatchDocument -->
+                        <bhrgcom:horizontalPositioningOperator>
+                            <!-- You have a CHOICE of the next 2 items at this level
+                            <brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
+                            <brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
+                            -->
+                            <brocom:chamberOfCommerceNumber>83454527</brocom:chamberOfCommerceNumber>
+                        </bhrgcom:horizontalPositioningOperator>
+                    </deliveredLocation>
+                    <deliveredVerticalPosition>
+                        <bhrgcom:localVerticalReferencePoint codeSpace="urn:bro:bhrg:LocalVerticalReferencePoint">maaiveld</bhrgcom:localVerticalReferencePoint>
+                        <bhrgcom:offset uom="m">-1.38</bhrgcom:offset>
+                        <!-- Optional: only allowed and mandatory if localVerticalReferencePoint='waterbodem'.
+                        <bhrgcom:waterDepth uom="m">?</bhrgcom:waterDepth>
+                        -->
+                        <bhrgcom:verticalDatum codeSpace="urn:bro:bhrg:VerticalDatum">NAP</bhrgcom:verticalDatum>
+                        <bhrgcom:verticalPositioningDate>
+                            <brocom:date>2020-07-13</brocom:date>
+                        </bhrgcom:verticalPositioningDate>
+                        <bhrgcom:verticalPositioningMethod codeSpace="urn:bro:bhrg:VerticalPositioningMethod">RTKGPS0tot4cm</bhrgcom:verticalPositioningMethod>
+                        <!-- optional; only present in BHR_G_O_DP dispatchDocument -->
+                        <bhrgcom:verticalPositioningOperator>
+                            <!-- You have a CHOICE of the next 2 items at this level
+                            <brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
+                            <brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
+                            -->
+                            <brocom:chamberOfCommerceNumber>83454527</brocom:chamberOfCommerceNumber>
+                        </bhrgcom:verticalPositioningOperator>
+                    </deliveredVerticalPosition>
+                    <standardizedLocation>
+                        <brocom:location srsName="urn:ogc:def:crs:EPSG::4258" gml:id="id_0003">
+                            <gml:pos>52.287820210 5.090415500</gml:pos>
+                        </brocom:location>
+                        <brocom:coordinateTransformation codeSpace="urn:bro:CoordinateTransformation">RDNAPTRANS2008</brocom:coordinateTransformation>
+                    </standardizedLocation>
+                    <!-- Optional: -->
+                    <siteCharacteristic>
+                        <!-- Optional: -->
+                        <bhrgcom:soilUse codeSpace="urn:bro:bhrg:SoilUse">grasland</bhrgcom:soilUse>
+                        <!-- Optional: -->
+                        <bhrgcom:positionOnGroundBody codeSpace="urn:bro:bhrg:PositionOnGroundBody">binnenteen</bhrgcom:positionOnGroundBody>
+                        <!-- Optional: -->
+                        <bhrgcom:landscapeElement codeSpace="urn:bro:bhrg:LandscapeElement">restRandNietVerveend</bhrgcom:landscapeElement>
+                        <!-- Optional: -->
+                        <bhrgcom:hydrologicalSetting codeSpace="urn:bro:bhrg:HydrologicalSetting">kwelGeenWijst</bhrgcom:hydrologicalSetting>
+                        <!-- Optional: -->
+                        <bhrgcom:currentProcess codeSpace="urn:bro:bhrg:CurrentProcess">piping</bhrgcom:currentProcess>
+                        <!-- Optional: -->
+                        <bhrgcom:temporaryChange codeSpace="urn:bro:bhrg:TemporaryChange">voorbelasting</bhrgcom:temporaryChange>
+                    </siteCharacteristic>
+                    <boring>
+						<bhrgcom:Boring gml:id="boring1">
+							<bhrgcom:boringStartDate>
+								<brocom:date>2021-01-01</brocom:date>
+							</bhrgcom:boringStartDate>
+							<bhrgcom:boringEndDate>
+								<brocom:date>2021-01-01</brocom:date>
+							</bhrgcom:boringEndDate>
+							<bhrgcom:preparation codeSpace="urn:bro:bhrg:Preparation">onbekend</bhrgcom:preparation>
+							<bhrgcom:trajectoryExcavated>nee</bhrgcom:trajectoryExcavated>
+							<bhrgcom:rockReached>nee</bhrgcom:rockReached>
+							<bhrgcom:boringProcedure codeSpace="urn:bro:bhrg:BoringProcedure">onbekend</bhrgcom:boringProcedure>
+							<bhrgcom:finalDepthBoring uom="m">2.0</bhrgcom:finalDepthBoring>
+							<bhrgcom:stopCriterion codeSpace="urn:bro:bhrg:StopCriterionField">onbekend</bhrgcom:stopCriterion>
+							<bhrgcom:samplingProcedure codeSpace="urn:bro:bhrg:SamplingProcedure">onbekend</bhrgcom:samplingProcedure>
+							<bhrgcom:finalDepthSampling uom="m">1.8</bhrgcom:finalDepthSampling>
+							<bhrgcom:subsurfaceContaminated>nee</bhrgcom:subsurfaceContaminated>
+							<bhrgcom:boreholeCompleted>ja</bhrgcom:boreholeCompleted>
+							<bhrgcom:boredInterval></bhrgcom:boredInterval>
+							<bhrgcom:sampledInterval></bhrgcom:sampledInterval>
+						</bhrgcom:Boring>
+                    </boring>
+                    <boreholeSampleAnalysis>
+                    <bhrgcom:BoreholeSampleAnalysis gml:id="vb1.5">
+                        <bhrgcom:analysisReportDate>2021-01-01</bhrgcom:analysisReportDate>
+                        <bhrgcom:analysisProcedure codeSpace="urn:bro:bhrg:AnalysisProcedure">GDNpraktijkrichtlijnv2020</bhrgcom:analysisProcedure>
+                        <bhrgcom:analysisOperator>
+                            <brocom:chamberOfCommerceNumber>09098104</brocom:chamberOfCommerceNumber>
+                        </bhrgcom:analysisOperator>
+                        <bhrgcom:investigatedInterval>
+                            <bhrgcom:InvestigatedInterval gml:id="vb2.6">
+                                <bhrgcom:beginDepth uom="m">1.8</bhrgcom:beginDepth>
+                                <bhrgcom:endDepth uom="m">1.9</bhrgcom:endDepth>
+                                <bhrgcom:sampleQuality codeSpace="urn:bro:bhrg:SampleQuality">QM3</bhrgcom:sampleQuality>
+                                <!--De bepaalde samenstellingseigenschappen zonderKorrelverdeling bepaalt dat het kalkgehalte en het organische stof gehalte bepaald zijn-->
+                                <bhrgcom:determinedCompositionProperties codeSpace="urn:bro:bhrg:DeterminedCompositionProperties">zonderKorrelverdeling</bhrgcom:determinedCompositionProperties>
+                                <bhrgcom:determinedHydrophysicalProperties codeSpace="urn:bro:bhrg:DeterminedHydrophysicalProperties">geen</bhrgcom:determinedHydrophysicalProperties>
+                                <bhrgcom:waterContentDetermined>nee</bhrgcom:waterContentDetermined>
+                                <bhrgcom:volumetricMassDensityDetermined>nee</bhrgcom:volumetricMassDensityDetermined>
+                                <bhrgcom:described>nee</bhrgcom:described>
+                                <bhrgcom:carbonateContentDetermination>
+                                    <bhrgcom:CarbonateContentDetermination gml:id="vb2.7">
+                                    <bhrgcom:determinationProcedure codeSpace="urn:bro:bhrg:DeterminationProcedure"></bhrgcom:determinationProcedure>
+                                    <bhrgcom:determinationMethod codeSpace="urn:bro:bhrg:DeterminationMethod"></bhrgcom:determinationMethod>
+                                    <bhrgcom:dryingPeriod codeSpace="urn:bro:bhrg:DryingPeriod"></bhrgcom:dryingPeriod>
+                                    <!--Zero to 2 repetitions:-->
+                                    <bhrgcom:performanceIrregularity codeSpace="urn:bro:bhrg:PerformanceIrregularity"></bhrgcom:performanceIrregularity>
+                                    <!--Zero to 5 repetitions:-->
+                                    <bhrgcom:materialIrregularity codeSpace="urn:bro:bhrg:MaterialIrregularity"></bhrgcom:materialIrregularity>
+                                    <bhrgcom:carbonateContent uom="%">1</bhrgcom:carbonateContent>
+                                        <bhrgcom:massLossCarbonateContent>
+                                            <bhrgcom:mass105DegreesCelsius uom="g">1</bhrgcom:mass105DegreesCelsius>
+                                            <bhrgcom:mass800DegreesCelsius uom="g">2</bhrgcom:mass800DegreesCelsius>
+                                            <bhrgcom:mass1000DegreesCelsius uom="g">3</bhrgcom:mass1000DegreesCelsius>
+                                        </bhrgcom:massLossCarbonateContent>
+                                    </bhrgcom:CarbonateContentDetermination>
+                                </bhrgcom:carbonateContentDetermination>
+                                    <bhrgcom:organicMatterContentDetermination>
+                                    <bhrgcom:OrganicMatterContentDetermination gml:id="vb2.8">
+                                        <bhrgcom:determinationProcedure codeSpace="urn:bro:bhrg:DeterminationProcedure">ISO14688d2v2019NEN8990v2020</bhrgcom:determinationProcedure>
+                                        <bhrgcom:determinationMethod codeSpace="urn:bro:bhrg:DeterminationMethod">getraptVerhitten550</bhrgcom:determinationMethod>
+                                        <bhrgcom:dryingPeriod codeSpace="urn:bro:bhrg:DryingPeriod"></bhrgcom:dryingPeriod>
+                                        <bhrgcom:lutumCorrectionApplied>nee</bhrgcom:lutumCorrectionApplied>
+                                        <bhrgcom:freeIronCorrectionApplied>nee</bhrgcom:freeIronCorrectionApplied>
+                                        <!--optional: freeIronContent-->
+                                        <!--Zero to 2 repetitions: performanceIrregularity-->
+                                        <!--Zero to 5 repetitions: materialIrregularity-->
+                                        <bhrgcom:organicMatterContent uom="%">10</bhrgcom:organicMatterContent>
+                                        <bhrgcom:massLossOrganicMatterContent>
+                                            <bhrgcom:mass105DegreesCelsius uom="g">1</bhrgcom:mass105DegreesCelsius>
+                                            <bhrgcom:mass450DegreesCelsius uom="g">2</bhrgcom:mass450DegreesCelsius>
+                                            <bhrgcom:mass550DegreesCelsius uom="g">3</bhrgcom:mass550DegreesCelsius>
+                                        </bhrgcom:massLossOrganicMatterContent>
+                                    </bhrgcom:OrganicMatterContentDetermination>
+                                </bhrgcom:organicMatterContentDetermination>						
+                            </bhrgcom:InvestigatedInterval>
+                        </bhrgcom:investigatedInterval>
+                        </bhrgcom:BoreholeSampleAnalysis>
+                    </boreholeSampleAnalysis>
+                </BHR_G_O_DP>
+            </dispatchDocument>
+        </dispatchDataResponse>
+    </soap:Body>
+</soap:Envelope>
