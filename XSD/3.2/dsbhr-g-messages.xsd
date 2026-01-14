@@ -23,6 +23,23 @@
       </xs:appinfo>
    </xs:annotation>
    <xs:element name="parseFault" type="brocom:ParseFaultType" />
+      <xs:element name="dispatchDataRequest" type="brocom:DispatchDataRequestType" />
+      <xs:complexType name="DispatchDataRequestType">
+      <xs:complexContent>
+         <xs:extension base="brocom:DispatchDataRequestType">
+            <xs:sequence>
+               <xs:element name="requestReference"
+                           type="xs:string"
+                           minOccurs="1"
+                           maxOccurs="1" />
+               <xs:element name="broId"
+                           type="brocom:RegistrationObjectCodeType"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
       <xs:element name="dispatchDataResponse"
                type="dsbhrg:DispatchDataResponseType">
       <xs:annotation>
@@ -42,7 +59,6 @@
          </xs:extension>
       </xs:complexContent>
    </xs:complexType>
-   <xs:element name="parseFault" type="brocom:ParseFaultType" />
    <xs:element name="dispatchCharacteristicsRequest"
                type="dsbhrg:DispatchCharacteristicsRequestType">
       <xs:annotation>
@@ -90,44 +106,6 @@
          </xs:extension>
       </xs:complexContent>
    </xs:complexType>
-   <xs:element name="dispatchDataRequest" type="brocom:DispatchDataRequestType" />
-      <xs:complexType name="DispatchDataRequestType">
-      <xs:complexContent>
-         <xs:extension base="brocom:DispatchDataRequestType">
-            <xs:sequence>
-               <xs:element name="requestReference"
-                           type="xs:string"
-                           minOccurs="1"
-                           maxOccurs="1" />
-               <xs:element name="broId"
-                           type="brocom:RegistrationObjectCodeType"
-                           minOccurs="1"
-                           maxOccurs="1"/>
-               </>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:element name="dispatchDataResponse"
-               type="dsbhrg:DispatchDataResponseType">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchDataResponse is een specialisatie van de abstract klasse DispatchDataResponse uit de package brocommon, waaraan het een dispatchDocument toevoegt. Met dit bericht worden, als response op een DispatchDataRequest, de gegevens over een specifiek BHR_G registratieobject verzonden naar de aanvrager.</xs:documentation>
-      </xs:annotation>
-   </xs:element>
-   <xs:complexType name="DispatchDataResponseType">
-      <xs:complexContent>
-         <xs:extension base="brocom:DispatchResponseType">
-            <xs:sequence>
-               <xs:element minOccurs="0"
-                           maxOccurs="1"
-                           name="dispatchDocument"
-                           nillable="false"
-                           type="brocom:AbstractRegistrationObjectPropertyType"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-
    <xs:element name="BHR_G_C"
                type="dsbhrg:BHR_G_CType"
                substitutionGroup="brocom:AbstractCharacteristics">
