@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <registrationRequest 
         xmlns="http://www.broservices.nl/xsd/isbhrg/3.2"
-        xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/3.1"
+        xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/3.2"
         xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
         xmlns:swe="http://www.opengis.net/swe/2.0"
         xmlns:gml="http://www.opengis.net/gml/3.2"

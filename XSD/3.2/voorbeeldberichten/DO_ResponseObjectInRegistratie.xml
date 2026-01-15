@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://schemas.xmlsoap.org/soap/envelope/ http://schemas.xmlsoap.org/soap/envelope/">
     <soap:Body>
         <dispatchDataResponse
-                xmlns="http://www.broservices.nl/xsd/dsbhr-g/3.2"
+                xmlns="http://www.broservices.nl/xsd/dsbhrg/3.2"
                 xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/3.2"
                 xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
                 xmlns:gml="http://www.opengis.net/gml/3.2"
