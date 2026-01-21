@@ -124,7 +124,7 @@ Explanation: In de praktijkrichtlijn zijn (worden) afspraken opgenomen die aange
                   </xs:annotation>
                </xs:element>
                <xs:element name="analysisOperator"
-                           type="brocom:ChamberOfCommerceNumberType"
+                           type="brocom:OrganizationType"
                            minOccurs="0"
                            maxOccurs="1">
                   <xs:annotation>
@@ -194,7 +194,7 @@ Explanation: Het gegeven wordt alleen vastgelegd bij de uitgebreide beschrijving
                   </xs:annotation>
                </xs:element>
                <xs:element name="descriptionOperator"
-                           type="brocom:ChamberOfCommerceNumberType"
+                           type="brocom:OrganizationType"
                            minOccurs="0"
                            maxOccurs="1">
                   <xs:annotation>
@@ -431,7 +431,7 @@ Explanation: De afwerking geeft inzicht in hoe de ondergrond is achtergelaten na
                   </xs:annotation>
                </xs:element>
                <xs:element name="boringOperator"
-                           type="brocom:ChamberOfCommerceNumberType"
+                           type="brocom:OrganizationType"
                            minOccurs="0"
                            maxOccurs="1">
                   <xs:annotation>
@@ -696,7 +696,7 @@ Explanation: Het gegeven wordt vastgelegd omdat het in de boormonsteranalyse bel
          <xs:extension base="gml:AbstractFeatureType">
             <xs:sequence>
                <xs:element name="beginDepth"
-                           type="brocom:IndicationYesNoType"
+                           type="brocom:MeasureNillableType"
                            minOccurs="1"
                            maxOccurs="1">
                   <xs:annotation>
@@ -704,7 +704,7 @@ Explanation: Het gegeven wordt vastgelegd omdat het in de boormonsteranalyse bel
                   </xs:annotation>
                </xs:element>
                <xs:element name="endDepth"
-                           type="brocom:IndicationYesNoType"
+                           type="brocom:MeasureNillableType"
                            minOccurs="1"
                            maxOccurs="1">
                   <xs:annotation>
@@ -3320,7 +3320,7 @@ Explanation: Het gegeven geeft inzicht in de nauwkeurigheid waarmee de plaats va
             </xs:annotation>
          </xs:element>
          <xs:element name="horizontalPositioningOperator"
-                     type="brocom:ChamberOfCommerceNumberType"
+                     type="brocom:OrganizationType"
                      minOccurs="0"
                      maxOccurs="1">
             <xs:annotation>
@@ -3409,7 +3409,7 @@ Explanation: Het gegeven geeft inzicht in de nauwkeurigheid waarmee de verticale
             </xs:annotation>
          </xs:element>
          <xs:element name="verticalPositioningOperator"
-                     type="brocom:ChamberOfCommerceNumberType"
+                     type="brocom:OrganizationType"
                      minOccurs="0"
                      maxOccurs="1">
             <xs:annotation>
