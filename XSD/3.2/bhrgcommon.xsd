@@ -709,12 +709,22 @@ Explanation: De wand van het geboorde gat kan over bepaalde trajecten worden ver
                   </xs:complexType>
                </xs:element>
                <xs:element name="diameterPermanentCasing"
-                           type="brocom:MeasureNillableType"
+                           nillable="true"
                            minOccurs="0"
                            maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De buitendiameter van de permanente verbuizing.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                  <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom"
+                                          type="gml:UomIdentifier"
+                                          use="required"
+                                       fixed="mm"/>
+                        </xs:restriction>
+                  </xs:simpleContent>
+               </xs:complexType>
                </xs:element>
                <xs:element name="materialPermanentCasing"
                            minOccurs="0"
@@ -5012,28 +5022,58 @@ Explanation: Het gegeven heeft eerder een interpretatief dan een beschrijvend ka
             </xs:annotation>
          </xs:element>
          <xs:element name="sampleContainerDiameter"
-                     type="brocom:MeasureNillableType"
+                     nillable="true"
                      minOccurs="0"
                      maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De inwendige diameter van het deel van het apparaat waarin het monster wordt opgevangen.</xs:documentation>
             </xs:annotation>
+                  <xs:complexType>
+                  <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom"
+                                          type="gml:UomIdentifier"
+                                          use="required"
+                                       fixed="mm"/>
+                        </xs:restriction>
+                  </xs:simpleContent>
+               </xs:complexType>
          </xs:element>
          <xs:element name="sampleContainerLength"
-                     type="brocom:MeasureNillableType"
+                     nillable="true"
                      minOccurs="0"
                      maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De lengte van het deel van het apparaat waarin het monster wordt opgevangen.</xs:documentation>
             </xs:annotation>
+                  <xs:complexType>
+                  <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom"
+                                          type="gml:UomIdentifier"
+                                          use="required"
+                                       fixed="m"/>
+                        </xs:restriction>
+                  </xs:simpleContent>
+               </xs:complexType>
          </xs:element>
          <xs:element name="cuttingShoeInsideDiameter"
-                     type="brocom:MeasureNillableType"
+                     nillable="true"
                      minOccurs="0"
                      maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De kleinste diameter van de doorgang voor het monster aan de onderzijde van het apparaat, bij volledig openstaande vanger.</xs:documentation>
             </xs:annotation>
+                  <xs:complexType>
+                  <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom"
+                                          type="gml:UomIdentifier"
+                                          use="required"
+                                       fixed="mm"/>
+                        </xs:restriction>
+                  </xs:simpleContent>
+               </xs:complexType>
          </xs:element>
          <xs:element name="stockingUsed"
                      type="brocom:IndicationYesNoType"
@@ -5060,12 +5100,22 @@ Explanation: Het gegeven heeft eerder een interpretatief dan een beschrijvend ka
             </xs:annotation>
          </xs:element>
          <xs:element name="cuttingShoeOutsideDiameter"
-                     type="brocom:MeasureNillableType"
+                     nillable="true"
                      minOccurs="0"
                      maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De grootste uitwendige diameter van de steekmond.</xs:documentation>
             </xs:annotation>
+                  <xs:complexType>
+                  <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom"
+                                          type="gml:UomIdentifier"
+                                          use="required"
+                                       fixed="mm"/>
+                        </xs:restriction>
+                  </xs:simpleContent>
+               </xs:complexType>
          </xs:element>
          <xs:element name="lubricationFluidUsed"
                      type="brocom:IndicationYesNoType"
