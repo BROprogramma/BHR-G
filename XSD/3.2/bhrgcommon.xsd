@@ -3566,13 +3566,16 @@ Explanation: Het domein bevat begrippen die naar een oppervlak verwijzen. Het lo
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De verticale positie van het lokaal verticaal referentiepunt t.o.v. het verticaal referentievlak.
 Explanation: De waarde kan positief of negatief zijn. Als de waarde positief is, ligt het lokaal verticaal referentiepunt boven het verticaal referentievlak. Met behulp van de verschuiving kan een diepte omgerekend worden naar een positie ten opzichte van het verticaal referentievlak. IMBRO/A Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht kan de verschuiving niet bepaald zijn.</xs:documentation>
             </xs:annotation>
-            <xs:complexType>
-               <xs:simpleContent>
-                  <xs:extension base="brocom:MeasureNillableType">
-                     <xs:attribute name="nilReason" type="xs:string" use="optional"/>
-                  </xs:extension>
-               </xs:simpleContent>
-            </xs:complexType>
+               <xs:complexType>
+                  <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom"
+                                          type="gml:UomIdentifier"
+                                          use="required"
+                                       fixed="m"/>
+                        </xs:restriction>
+                  </xs:simpleContent>
+               </xs:complexType>
          </xs:element>
          <xs:element name="waterDepth"
                      nillable="true"
@@ -3680,13 +3683,16 @@ Explanation: Het gegeven staat niet in een brondocument, maar wordt automatisch 
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het geschat aandeel zand in de massa van het geheel van vier minerale fracties, te weten grind, zand, silt en lutum.</xs:documentation>
             </xs:annotation>
-            <xs:complexType>
-               <xs:simpleContent>
-                  <xs:extension base="brocom:MeasureNillableType">
-                     <xs:attribute name="nilReason" type="xs:string" use="optional"/>
-                  </xs:extension>
-               </xs:simpleContent>
-            </xs:complexType>
+                  <xs:complexType>
+                  <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom"
+                                          type="gml:UomIdentifier"
+                                          use="required"
+                                       fixed="%"/>
+                        </xs:restriction>
+                  </xs:simpleContent>
+               </xs:complexType>
          </xs:element>
          <xs:element name="estimatedMassProportionSilt"
                      minOccurs="1"
@@ -3710,13 +3716,16 @@ Explanation: Het gegeven staat niet in een brondocument, maar wordt automatisch 
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het geschat aandeel lutum in de massa van het geheel van vier minerale fracties, te weten grind, zand, silt en lutum.</xs:documentation>
             </xs:annotation>
-            <xs:complexType>
-               <xs:simpleContent>
-                  <xs:extension base="brocom:MeasureNillableType">
-                     <xs:attribute name="nilReason" type="xs:string" use="optional"/>
-                  </xs:extension>
-               </xs:simpleContent>
-            </xs:complexType>
+                  <xs:complexType>
+                  <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom"
+                                          type="gml:UomIdentifier"
+                                          use="required"
+                                       fixed="%"/>
+                        </xs:restriction>
+                  </xs:simpleContent>
+               </xs:complexType>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
@@ -3744,13 +3753,16 @@ Explanation: Het gegeven staat niet in een brondocument, maar wordt automatisch 
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het geschat aandeel silt in de massa van het geheel van de drie fijne minerale fracties.</xs:documentation>
             </xs:annotation>
-            <xs:complexType>
-               <xs:simpleContent>
-                  <xs:extension base="brocom:MeasureNillableType">
-                     <xs:attribute name="nilReason" type="xs:string" use="optional"/>
-                  </xs:extension>
-               </xs:simpleContent>
-            </xs:complexType>
+                  <xs:complexType>
+                  <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom"
+                                          type="gml:UomIdentifier"
+                                          use="required"
+                                       fixed="%"/>
+                        </xs:restriction>
+                  </xs:simpleContent>
+               </xs:complexType>
          </xs:element>
          <xs:element name="estimatedMassProportionLutum"
                      minOccurs="1"
@@ -3788,13 +3800,16 @@ Explanation: IMBRO/A Voor gegevens die zijn aangeleverd in het kader van archief
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het geschatte aandeel organisch materiaal in de massa van de grond onder uitsluiting van de fracties schelpmateriaal en grind.
 Explanation: Het gegeven wordt bepaald van alle gronden waarvan de fractieverdeling wordt beschreven. In de Standaard Boor Beschrijvingsmethode (SBB) wordt het begrip organische stof gebruikt, maar opgemerkt wordt dat de term is gedefinieerd als organisch materiaal.</xs:documentation>
             </xs:annotation>
-            <xs:complexType>
-               <xs:simpleContent>
-                  <xs:extension base="brocom:MeasureNillableType">
-                     <xs:attribute name="nilReason" type="xs:string" use="optional"/>
-                  </xs:extension>
-               </xs:simpleContent>
-            </xs:complexType>
+                  <xs:complexType>
+                  <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom"
+                                          type="gml:UomIdentifier"
+                                          use="required"
+                                       fixed="%"/>
+                        </xs:restriction>
+                  </xs:simpleContent>
+               </xs:complexType>
          </xs:element>
          <xs:element name="estimatedMassProportionShellMatter"
                      minOccurs="0"
@@ -3804,13 +3819,16 @@ Explanation: Het gegeven wordt bepaald van alle gronden waarvan de fractieverdel
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het geschatte aandeel schelpmateriaal in de massa van de grond onder uitsluiting van de fracties organische stof en grind.
 Explanation: Schelpmateriaal bestaat uit gruis, fragmenten en hele schelpen. Het gegeven werd voor de invoering van de Standaard Boor Beschrijvingsmethode 6 systematisch vastgelegd. Het gegeven past eigenlijk niet in de systematiek die voor het vastleggen van de fractieverdeling volgens de Standaard Boor Beschrijvingsmethode 6 wordt gehanteerd, maar kan door de uitvoerder vastgelegd worden om de aansluiting op oudere methodes te borgen. IMBRO/A Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht is dit gegeven niet vastgelegd. Voor de invoering van de Standaard Boor Beschrijvingsmethode 6 werd het aandeel schelpen (fragmenten en hele schelpen) vastgelegd.</xs:documentation>
             </xs:annotation>
-            <xs:complexType>
-               <xs:simpleContent>
-                  <xs:extension base="brocom:MeasureNillableType">
-                     <xs:attribute name="nilReason" type="xs:string" use="optional"/>
-                  </xs:extension>
-               </xs:simpleContent>
-            </xs:complexType>
+                  <xs:complexType>
+                  <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom"
+                                          type="gml:UomIdentifier"
+                                          use="required"
+                                       fixed="%"/>
+                        </xs:restriction>
+                  </xs:simpleContent>
+               </xs:complexType>
          </xs:element>
          <xs:element name="estimatedVolumeProportionShellMatter"
                      type="brocom:MeasureNillableType"
@@ -3829,13 +3847,16 @@ Explanation: Schelpmateriaal bestaat uit gruis, fragmenten en hele schelpen. Het
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het geschatte aandeel schelpen in de massa van de grond onder uitsluiting van de fracties organische stof en grind.
 Explanation: IMBRO/A Schelpen bestaan uit fragmenten en hele schelpen. Het gegeven komt alleen voor onder IMBRO/A. Vanaf Standaard Boor Beschrijvingsmethode 6 wordt het aandeel schelpmateriaal (gruis, fragmenten en hele schelpen) vastgelegd.</xs:documentation>
             </xs:annotation>
-            <xs:complexType>
-               <xs:simpleContent>
-                  <xs:extension base="brocom:MeasureNillableType">
-                     <xs:attribute name="nilReason" type="xs:string" use="optional"/>
-                  </xs:extension>
-               </xs:simpleContent>
-            </xs:complexType>
+                  <xs:complexType>
+                  <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom"
+                                          type="gml:UomIdentifier"
+                                          use="required"
+                                       fixed="%"/>
+                        </xs:restriction>
+                  </xs:simpleContent>
+               </xs:complexType>
          </xs:element>
          <xs:element name="estimatedMassProportionGravel"
                      minOccurs="0"
