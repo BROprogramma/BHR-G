@@ -3,11 +3,11 @@ let respecConfig = {
   useLabel: true,
   // title is verplicht! Neem hier de titel van het document op ----------------------
   title: "Catalogus registratie ondergrond - Geologische boormonsterbeschrijving en boormonsteranalyse",
-  subtitle: "Versie 3.2",
+  //subtitle: "Versie 3.2",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  //specStatus: "wv",                   // Werkversie
+  specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
-  specStatus: "vv",               // Versie ter vaststelling
+  //specStatus: "vv",               // Versie ter vaststelling
   //specStatus: "def",              // Vastgestelde versie
   //specStatus: "basis",            // Basis Document
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
@@ -36,7 +36,7 @@ let respecConfig = {
   publishVersion: " ",
   previousVersion: "3.2",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
-  previousPublishDate: "2024-12-20",
+  previousPublishDate: "2025-10-02",
   previousMaturity: "vv",
   //-- de namen van de Editor(s) / Redacteur(en)---------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
