@@ -13,7 +13,8 @@
    </xs:annotation>
    <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd" />
    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd" />
-   <!--   <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0"
+   <!--   <xs:import
+   namespace="http://www.broservices.nl/xsd/brocommon/3.0"
    schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
    <xs:import namespace="http://www.opengis.net/gml/3.2"
    schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
@@ -738,13 +739,21 @@
                         bijzonderheden altijd vast.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="carbonateContent" type="brocom:MeasureNillableType" minOccurs="1"
+               <xs:element name="carbonateContent" minOccurs="1"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
                         source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                         Het aandeel koolzure kalk in de massa van het droge materiaal.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="%" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
                <xs:element minOccurs="1" maxOccurs="1" name="massLossCarbonateContent"
                   nillable="false" type="bhrgcom:MassLossCarbonateContentType">
@@ -1200,21 +1209,37 @@
       <xs:complexContent>
          <xs:extension base="gml:AbstractFeatureType">
             <xs:sequence>
-               <xs:element name="upperBoundary" type="brocom:MeasureNillableType" minOccurs="1"
+               <xs:element name="upperBoundary" minOccurs="1"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
                         source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                         De diepte van de bovenkant van de laag.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="m" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
-               <xs:element name="lowerBoundary" type="brocom:MeasureNillableType" minOccurs="1"
+               <xs:element name="lowerBoundary" minOccurs="1"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
                         source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                         De diepte van de onderkant van de laag.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="m" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
                <xs:element name="excavatedMaterial" minOccurs="1" maxOccurs="1"
                   type="bhrgcom:ExcavatedMaterialType">
@@ -1259,13 +1284,21 @@
       <xs:complexContent>
          <xs:extension base="gml:AbstractFeatureType">
             <xs:sequence>
-               <xs:element name="thickness" type="brocom:MeasureNillableType" minOccurs="1"
+               <xs:element name="thickness" minOccurs="1"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
                         source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                         De dikte van de sliblaag.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="m" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
                <xs:element name="colour" minOccurs="1" maxOccurs="1" nillable="true"
                   type="bhrgcom:ColourType">
@@ -1535,13 +1568,21 @@
       <xs:complexContent>
          <xs:extension base="gml:AbstractFeatureType">
             <xs:sequence>
-               <xs:element name="upperBoundary" type="brocom:MeasureNillableType" minOccurs="1"
+               <xs:element name="upperBoundary" minOccurs="1"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
                         source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                         De diepte van de bovenkant van de laag.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="m" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
                <xs:element name="upperBoundaryDetermination" minOccurs="1" maxOccurs="1"
                   type="bhrgcom:BoundaryPositioningMethodType">
@@ -1558,13 +1599,21 @@
                         samenvalt met het maaiveld of de waterbodem, geldt die als waargenomen.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="lowerBoundary" type="brocom:MeasureNillableType" minOccurs="1"
+               <xs:element name="lowerBoundary" minOccurs="1"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
                         source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                         De diepte van de onderkant van de laag.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="m" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
                <xs:element name="lowerBoundaryDetermination" minOccurs="1" maxOccurs="1"
                   type="bhrgcom:BoundaryPositioningMethodType">
@@ -1993,7 +2042,7 @@
                         bijzonderheden altijd vast.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="detectionLimit" type="brocom:MeasureNillableType" minOccurs="1"
+               <xs:element name="detectionLimit" minOccurs="1"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
@@ -2005,14 +2054,29 @@
                         Het komt sporadisch voor dat het organisch koolstofgehalte onder de
                         detectielimiet zit.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="%" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
-               <xs:element name="organicCarbonContent" type="brocom:MeasureNillableType"
-                  minOccurs="1" maxOccurs="1">
+               <xs:element name="organicCarbonContent" minOccurs="1" maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
                         source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                         Het aandeel organische koolstof in de massa van het droge materiaal.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="%" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
             </xs:sequence>
          </xs:extension>
@@ -2126,7 +2190,7 @@
                         verhitten verdampt.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="freeIronContent" type="brocom:MeasureNillableType" minOccurs="0"
+               <xs:element name="freeIronContent" minOccurs="0"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
@@ -2135,7 +2199,15 @@
                         bepaling van het gehalte aan vrij ijzer is uitgevoerd conform de NEN-EN-ISO
                         12782-2 uit 2012</xs:documentation>
                   </xs:annotation>
-               </xs:element>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="%" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
+             </xs:element>
                <xs:element name="performanceIrregularity" minOccurs="0" maxOccurs="2"
                   type="bhrgcom:PerformanceIrregularityType">
                   <xs:annotation>
@@ -2176,13 +2248,20 @@
                         bijzonderheden altijd vast.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="organicMatterContent" type="brocom:MeasureNillableType"
-                  minOccurs="1" maxOccurs="1">
+               <xs:element name="organicMatterContent" minOccurs="1" maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
                         source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                         Het aandeel organische stof in de massa van het droge materiaal.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="%" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
                <xs:element minOccurs="1" maxOccurs="1" name="massLossOrganicMatterContent"
                   nillable="false" type="bhrgcom:MassLossOrganicMatterContentType">
@@ -2361,8 +2440,7 @@
                         geen).</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="massDryMaterial" type="brocom:MeasureNillableType" minOccurs="0"
-                  maxOccurs="1">
+               <xs:element name="massDryMaterial" minOccurs="0" maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
                         source="http://www.imvertor.org/model-info/technical-documentation">Definition:
@@ -2375,15 +2453,30 @@
                         In dat geval is het resultaat minder betrouwbaar en wordt ook de massa van
                         het onderzochte materiaal vastgelegd.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="g" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
-               <xs:element name="calculationValueParticleDensity" type="brocom:MeasureNillableType"
-                  minOccurs="0" maxOccurs="1">
+               <xs:element name="calculationValueParticleDensity" minOccurs="0" maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
                         source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                         De volumieke massa van de korrels van de fijne fractie die is gebruikt om de
                         diameter van de korrels uit de bezinksnelheid te berekenen.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="g/cm3" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
                <xs:element name="dispersionMethod" minOccurs="0" maxOccurs="1"
                   type="bhrgcom:DispersionMethodType">
@@ -2830,7 +2923,7 @@
                         waterverzadigd standaard ontgast.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="volumetricMassDensityWater" type="brocom:MeasureNillableType"
+               <xs:element name="volumetricMassDensityWater"
                   minOccurs="0" maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
@@ -2841,7 +2934,15 @@
                         afhankelijk van het zoutgehalte. Bij gebruik van SAR13-water wordt de
                         volumieke massa van het gebruikte water vastgelegd.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="g/cm3" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
+             </xs:element>
                <xs:element name="porousDiscWet" type="brocom:IndicationYesNoType" minOccurs="0"
                   maxOccurs="1">
                   <xs:annotation>
@@ -2855,7 +2956,7 @@
                         voordat het gehele proefstuk is verzadigd voor aanvang van de proef.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="verticalStrain" type="brocom:MeasureNillableType" minOccurs="0"
+               <xs:element name="verticalStrain" minOccurs="0"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
@@ -2866,7 +2967,15 @@
                         proefstuk tijdens de verzadiging gaat zwellen wordt dit vastgelegd. De
                         verticale rek wordt uitgedrukt in procenten.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="%" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
+             </xs:element>
                <xs:element name="swellObserved" type="brocom:IndicationYesNoType" minOccurs="0"
                   maxOccurs="1">
                   <xs:annotation>
@@ -2904,7 +3013,7 @@
                         In de bodemkunde is de stroming standaard neerwaarts.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="temperature" type="brocom:MeasureNillableType" minOccurs="1"
+               <xs:element name="temperature" minOccurs="1"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
@@ -2914,7 +3023,15 @@
                         afhankelijk van de temperatuur. De resultaten worden nooit omgerekend naar
                         een andere temperatuur.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="Cel" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
+                </xs:element>
                <xs:element name="performanceIrregularity" minOccurs="0" maxOccurs="2"
                   type="bhrgcom:PerformanceIrregularityType">
                   <xs:annotation>
@@ -2952,7 +3069,7 @@
                         bijzonderheden altijd vast.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="maximumGradient" type="brocom:MeasureNillableType" minOccurs="1"
+               <xs:element name="maximumGradient" minOccurs="1"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
@@ -2965,6 +3082,14 @@
                         uitvoerder bepaalt van te voren de maximale gradiënt en die is afhankelijk
                         van het te onderzoeken materiaal.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="cm/cm" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
                <xs:element name="waterContentAfterwards" type="brocom:MeasureNillableType"
                   minOccurs="0" maxOccurs="1">
@@ -3081,7 +3206,7 @@
                         bijzonderheden altijd vast.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="detectionLimit" type="brocom:MeasureNillableType" minOccurs="1"
+               <xs:element name="detectionLimit" minOccurs="1"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
@@ -3092,15 +3217,31 @@
                         is hoe groter de meetonnauwkeurigheid. Het komt sporadisch voor dat het
                         organisch koolstofgehalte onder de detectielimiet zit.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
-               <xs:element name="sulfurContent" type="brocom:MeasureNillableType" minOccurs="1"
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="%" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
+             </xs:element>
+               <xs:element name="sulfurContent" minOccurs="1"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
                         source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                         Het aandeel zwavel in de massa van het droge materiaal.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="%" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
+             </xs:element>
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>
@@ -3173,7 +3314,7 @@
                         water het volume van het monster is gewijzigd.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="specimenVolume" type="brocom:MeasureNillableType" minOccurs="0"
+               <xs:element name="specimenVolume" minOccurs="0"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
@@ -3185,7 +3326,15 @@
                         proefstuk vast gelegd. Het volume (in het Engels volume) wordt aangeduid met
                         het symbool V.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="cm3" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
+                </xs:element>
                <xs:element name="underLoad" type="brocom:IndicationYesNoType" minOccurs="1"
                   maxOccurs="1">
                   <xs:annotation>
@@ -3197,7 +3346,7 @@
                         het volume van het proefstuk wijzigt.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="verticalStrain" type="brocom:MeasureNillableType" minOccurs="0"
+               <xs:element name="verticalStrain" minOccurs="0"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
@@ -3209,7 +3358,15 @@
                         wordt aangeduid met het symbool ɛv. De beginhoogte van het proefstuk is de
                         hoogte van de ring. De verticale rek wordt uitgedrukt in procenten.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="%" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
+             </xs:element>
                <xs:element name="saturated" type="brocom:IndicationYesNoType" minOccurs="1"
                   maxOccurs="1">
                   <xs:annotation>
@@ -3269,7 +3426,7 @@
                         praktijk legt de uitvoerder eventuele bijzonderheden altijd vast.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="volumetricMassDensity" type="brocom:MeasureNillableType"
+               <xs:element name="volumetricMassDensity"
                   minOccurs="1" maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
@@ -3279,6 +3436,14 @@
                         poriënwater. De volumieke massa (in het Engels bulk density) wordt aangeduid
                         met het symbool ρ.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="g/cm3" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
             </xs:sequence>
          </xs:extension>
@@ -3438,7 +3603,7 @@
                         bijzonderheden altijd vast.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="volumetricMassDensitySolids" type="brocom:MeasureNillableType"
+               <xs:element name="volumetricMassDensitySolids"
                   minOccurs="1" maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
@@ -3447,6 +3612,14 @@
                         Explanation: De volumieke massa vaste delen (in het Engels density of solid
                         particles) wordt aangeduid met het symbool ρs.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="g/cm3" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
             </xs:sequence>
          </xs:extension>
@@ -3524,7 +3697,7 @@
                         het volume van het proefstuk is gewijzigd.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="specimenVolume" type="brocom:MeasureNillableType" minOccurs="0"
+               <xs:element name="specimenVolume" minOccurs="0"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
@@ -3536,8 +3709,15 @@
                         proefstuk vast gelegd. Het volume (in het Engels volume) wordt aangeduid met
                         het symbool V.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
-               <xs:element name="underLoad" type="brocom:IndicationYesNoType" minOccurs="1"
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="cm3" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
+               </xs:element>               <xs:element name="underLoad" type="brocom:IndicationYesNoType" minOccurs="1"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation
@@ -6599,7 +6779,7 @@
                   veel kortere lijst gebruikt dan bij de uitgebreide beschrijving.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="relativeAbundance" type="brocom:MeasureNillableType" minOccurs="0"
+         <xs:element name="relativeAbundance" minOccurs="0"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
@@ -6613,6 +6793,13 @@
                   (associatieaandeelklasse of associatieaandeelklasse archief) en niet als
                   meetwaarde, en om die reden is dit gegeven niet vastgelegd.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="%" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
          <xs:element name="relativeAbundanceClass" minOccurs="0" maxOccurs="1"
             type="bhrgcom:RelativeAbundanceClassType">
@@ -7901,29 +8088,50 @@
    </xs:complexType>
    <xs:complexType name="StandardDistributionFractionLarger2mmType">
       <xs:sequence>
-         <xs:element name="fraction2to5.6mm" type="brocom:MeasureNillableType" minOccurs="1"
+         <xs:element name="fraction2to5.6mm" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het aandeel van de korrels met een diameter van 2 tot 5,6 mm in de massa van het
                   materiaal.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="%" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
-         <xs:element name="fraction5.6to6.3mm" type="brocom:MeasureNillableType" minOccurs="1"
+         <xs:element name="fraction5.6to6.3mm" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het aandeel van de korrels met een diameter van 5,6 tot 6,3 mm in de massa van het
                   materiaal.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="%" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
-         <xs:element name="fraction6.3to10mm" type="brocom:MeasureNillableType" minOccurs="1"
+         <xs:element name="fraction6.3to10mm" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het aandeel van de korrels met een diameter van 6,3 tot 10 mm in de massa van het
                   materiaal.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="%" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
          <xs:element name="fraction10to16mm" minOccurs="1" maxOccurs="1">
             <xs:annotation>
@@ -7953,65 +8161,114 @@
                </xs:simpleContent>
             </xs:complexType>
          </xs:element>
-         <xs:element name="fraction20to37.5mm" type="brocom:MeasureNillableType" minOccurs="1"
+         <xs:element name="fraction20to37.5mm" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het aandeel van de korrels met een diameter van 20 tot 37,5 mm in de massa van het
                   materiaal.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="%" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
-         <xs:element name="fraction37.5to63mm" type="brocom:MeasureNillableType" minOccurs="1"
+         <xs:element name="fraction37.5to63mm" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het aandeel van de korrels met een diameter van 37,5 tot 63 mm in de massa van het
                   materiaal.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="%" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
-         <xs:element name="fractionLarger63mm" type="brocom:MeasureNillableType" minOccurs="1"
+         <xs:element name="fractionLarger63mm" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het aandeel van de korrels met een diameter groter dan 63 mm in de massa van het
                   materiaal.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="%" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="StandardDistributionFractionSmaller63umType">
       <xs:sequence>
-         <xs:element name="fraction0to0.2um" type="brocom:MeasureNillableType" minOccurs="1"
+         <xs:element name="fraction0to0.2um" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het aandeel van de korrels met een diameter kleiner dan 0,2 µm in de massa van het
                   materiaal.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="%" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
-         <xs:element name="fraction0.2to0.5um" type="brocom:MeasureNillableType" minOccurs="1"
+         <xs:element name="fraction0.2to0.5um" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het aandeel van de korrels met een diameter van 0,2 tot 0,5 µm in de massa van het
                   materiaal.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="%" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
-         <xs:element name="fraction0.5to1um" type="brocom:MeasureNillableType" minOccurs="1"
+         <xs:element name="fraction0.5to1um" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het aandeel van de korrels met een diameter van 0,5 tot 1 µm in de massa van het
                   materiaal.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="%" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
-         <xs:element name="fraction1to2um" type="brocom:MeasureNillableType" minOccurs="1"
+         <xs:element name="fraction1to2um" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het aandeel van de korrels met een diameter van 1 tot 2 µm in de massa van het
                   materiaal.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="%" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
          <xs:element name="fraction2to4um" minOccurs="1" maxOccurs="1">
             <xs:annotation>
@@ -8055,21 +8312,35 @@
                </xs:simpleContent>
             </xs:complexType>
          </xs:element>
-         <xs:element name="fraction16to25um" type="brocom:MeasureNillableType" minOccurs="1"
+         <xs:element name="fraction16to25um" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het aandeel van de korrels met een diameter van 16 tot 25 µm in de massa van het
                   materiaal.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="%" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
-         <xs:element name="fraction25to32um" type="brocom:MeasureNillableType" minOccurs="1"
+         <xs:element name="fraction25to32um" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het aandeel van de korrels met een diameter van 25 tot 32 µm in de massa van het
                   materiaal.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="%" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
          <xs:element name="fraction32to50um" minOccurs="1" maxOccurs="1">
             <xs:annotation>
@@ -8103,7 +8374,7 @@
    </xs:complexType>
    <xs:complexType name="SaturatedPermeabilityAtSpecificLoadType">
       <xs:sequence>
-         <xs:element name="load" type="brocom:MeasureNillableType" minOccurs="1" maxOccurs="1">
+         <xs:element name="load" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   De hoeveelheid druk die op het proefstuk is aangebracht. Explanation: De druk die
@@ -8113,8 +8384,15 @@
                   dat de in situ situatie voldoende wordt nagebootst door een druk van 0 kilopascal
                   te nemen. Het symbool voor de verzadigde waterdoorlatendheid is p.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="kPa" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
-         <xs:element name="saturatedPermeability" type="brocom:MeasureNillableType" minOccurs="1"
+         <xs:element name="saturatedPermeability" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
@@ -8122,12 +8400,19 @@
                   De verzadigde waterdoorlatendheid is altijd bij de temperatuur de gemeten
                   temperatuur weergegeven. Het symbool voor de verzadigde waterdoorlatendheid is k.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="m/d" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="ThinStratumType">
       <xs:sequence>
-         <xs:element name="layerProportion" type="brocom:MeasureNillableType" minOccurs="0"
+         <xs:element name="layerProportion" minOccurs="0"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
@@ -8137,6 +8422,13 @@
                   laagaandeelklasse archief wanneer niet bekend is hoe het aandeel is bepaald) en
                   niet als meetwaarde.</xs:documentation>
             </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:restriction base="brocom:MeasureNillableType">
+                     <xs:attribute name="uom" type="gml:UomIdentifier" use="required" fixed="%" />
+                  </xs:restriction>
+               </xs:simpleContent>
+            </xs:complexType>
          </xs:element>
          <xs:element name="layerProportionClass" minOccurs="0" maxOccurs="1"
             type="bhrgcom:LayerProportionClassType">

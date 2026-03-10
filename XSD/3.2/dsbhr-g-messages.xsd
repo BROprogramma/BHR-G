@@ -219,13 +219,20 @@ Explanation: Wanneer de ondergrond niet uit grond maar uit gesteente bestaat, wo
                   </xs:annotation>
                </xs:element>
                <xs:element name="finalDepthBoring"
-                           type="brocom:MeasureNillableType"
                            minOccurs="1"
                            maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De diepte waarop het boren is geëindigd.
 Explanation: IMBRO/A Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht is de einddiepte in bijna alle gevallen afgeleid uit de boormonsterbeschrijving.</xs:documentation>
                   </xs:annotation>
+                  <xs:complexType>
+                     <xs:simpleContent>
+                        <xs:restriction base="brocom:MeasureNillableType">
+                           <xs:attribute name="uom" type="gml:UomIdentifier" use="required"
+                              fixed="m" />
+                        </xs:restriction>
+                     </xs:simpleContent>
+                  </xs:complexType>
                </xs:element>
                <xs:element name="descriptionReportDate"
                            type="brocom:PartialDateType"
