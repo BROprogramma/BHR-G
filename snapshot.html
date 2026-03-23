@@ -341,7 +341,7 @@ img.license{float:left;padding-right:5px;background:0 0}
     <h2>
       BRO Standaard<br>
       Werkversie
-      <time class="dt-published" datetime="2025-10-02">17 maart 2026</time>
+      <time class="dt-published" datetime="2025-10-02">23 maart 2026</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
@@ -903,11 +903,11 @@ Het domein wordt volledig gespecificeerd door met de aanduiding tekst ook de max
 </section><section id="tijdstip"><div class="header-wrapper"><h4 id="x5-2-6-tijdstip"><bdi class="secno">5.2.6 </bdi>Tijdstip</h4><a class="self-link" href="#tijdstip" aria-label="Permalink for Section 5.2.6"></a></div>
 <p>Voor gegevens over tijdstippen worden twee domeinen gebruikt. Een voor een tijdstip tot op de seconde nauwkeurig (DatumTijd) en een voor een tijdstip tot op de dag nauwkeurig (Datum).</p>
 <p>In ieder domein gaat het om de datum gemeten volgens de Gregoriaanse kalender. Bij het domein 'DatumTijd' wordt de tijd gemeten volgens de <em>Universal Time Coordinated</em> (UTC) en moet de tijdzone worden meegegeven. UTC is de mondiaal geaccepteerde standaardtijd en de opvolger van GMT <em>(Greenwich Mean Time)</em>. Door de tijdzone mee te geven kan lokale tijd worden omgezet naar UTC.</p>
-<p>De opbouw van de twee domeinen volgt dezelfde conventies, conform de ISO-standaard voor de aanduiding van kalender, datum en tijd (ISO 8601). Het eerste element in de opbouw staat voor het jaar, dan volgt de maand, enz., en het laatste element staat voor de tijdzone. Om de verschillende elementen aan te geven worden letters gebruikt: jaar (J), maand (M), dag (D), uur (U), minuut (M)en seconde (S), gevolgd door de tijdzone. Het aantal letters geeft de lengte aan.</p>
-<p>Voor de meest uitgebreide variant van de opbouw, die van DatumTijd, wordt dit JJJJ-MM-DDTUU:MM:SS+UU:MM. De T is het teken dat de datum en het tijdstip op die datum scheidt. De + is het scheidingteken tussen het tijdstip en de tijdzone. Zoals uit de opbouw blijkt wordt de tijdzone in uren en minuten gegeven. De meeste tijdzones zijn overigens uitgedrukt in gehele uren (UU:00). In Nederland geldt Centraal Europese Tijd (UTC+1:00) of Centraal Europese Zomertijd (UTC+2.00).</p>
+<p>De opbouw van de twee domeinen volgt dezelfde conventies, conform de ISO-standaard voor de aanduiding van kalender, datum en tijd (ISO 8601). Het eerste element in de opbouw staat voor het jaar, dan volgt de maand, enz., en het laatste element staat voor de tijdzone. Om de verschillende elementen aan te geven worden letters gebruikt: jaar (J), maand (M), dag (D), uur (U), minuut (M) en seconde (S), gevolgd door de tijdzone. Het aantal letters geeft de lengte aan.</p>
+<p>Voor de meest uitgebreide variant van de opbouw, die van DatumTijd, wordt dit JJJJ-MM-DDTUU:MM:SS+UU:MM. De T is het teken dat de datum en het tijdstip op die datum scheidt. De + is het scheidingsteken tussen het tijdstip en de tijdzone. Zoals uit de opbouw blijkt wordt de tijdzone in uren en minuten gegeven. De meeste tijdzones zijn overigens uitgedrukt in gehele uren (UU:00). In Nederland geldt Centraal Europese Tijd (UTC+1:00) of Centraal Europese Zomertijd (UTC+2.00).</p>
 <section id="datum"><div class="header-wrapper"><h5 id="x5-2-6-1-datum"><bdi class="secno">5.2.6.1 </bdi>Datum</h5><a class="self-link" href="#datum" aria-label="Permalink for Section 5.2.6.1"></a></div>
 <p>Het domein 'Datum' wordt gebruikt om een datum volgens de Gregoriaanse kalender tot op de dag nauwkeurig aan te geven. De opbouw is JJJJ-MM-DD.
-Bij 'het domein 'Datum' is het voldoende de naam te geven, omdat de opbouw altijd hetzelfde is. Gewoonlijk wordt de waardeverzameling verder ingeperkt door een bereik te specificeren.</p>
+Bij het domein 'Datum' is het voldoende de naam te geven, omdat de opbouw altijd hetzelfde is. Gewoonlijk wordt de waardeverzameling verder ingeperkt door een bereik te specificeren.</p>
 </section><section id="datumtijd"><div class="header-wrapper"><h5 id="x5-2-6-2-datumtijd"><bdi class="secno">5.2.6.2 </bdi>DatumTijd</h5><a class="self-link" href="#datumtijd" aria-label="Permalink for Section 5.2.6.2"></a></div>
 <p>Het domein 'DatumTijd' wordt gebruikt om een tijdstip volgens de Gregoriaanse kalender tot op de seconde nauwkeurig aan te geven. De opbouw is JJJJ-MM-DDTUU:MM:SS+UU:MM.
 Bij het domein 'DatumTijd' is het voldoende de naam te geven, omdat de opbouw altijd hetzelfde is. Gewoonlijk wordt de waardeverzameling verder ingeperkt door een bereik te specificeren.</p>
@@ -1137,7 +1137,7 @@ Een meetreeks heeft een bepaalde naam. Alleen in het domeinmodel is de meetreeks
 <p><em>De kardinaliteit= [1] en er is een aanvullende regel opgenomen die aangeeft waarom een waarde toch mag ontbreken.</em> Dit betekent dat het attribuut altijd aanwezig is maar bij uitzondering en om een specifieke reden geen waarde kan hebben.</p>
 <p><em>De kardinaliteit= [0..1] en er zijn 1 of meer aanvullende regels opgenomen.</em> Dit betekent dat de regels bepalen of het attribuut wel of niet voorkomt en bepalen of het gegeven wel of geen waarde heeft.</p>
 <p><em>De kardinaliteit= [0..1] en er is geen aanvullende regel opgenomen.</em> Dit betekent dat het attribuut alleen aanwezig is als het een waarde heeft.</p>
-<p>Voor de kardinaliteiten [0..<em>] optonioneel en meervoudig en [1..</em>] verplicht en meervoudig, geldt in essentie hetzelfde.</p>
+<p>Voor de kardinaliteiten [0..<em>] optioneel en meervoudig en [1..</em>] verplicht en meervoudig geldt in essentie hetzelfde.</p>
 </section></section>		
 
 	
