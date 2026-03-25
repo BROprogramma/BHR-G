@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/3.2"
+<xs:schema xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/3"
            xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
            xmlns:gml="http://www.opengis.net/gml/3.2"
            xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
-           xmlns:dsbhrg="http://www.broservices.nl/xsd/dsbhrg/3.2"
+           xmlns:dsbhrg="http://www.broservices.nl/xsd/dsbhrg/3"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://www.broservices.nl/xsd/dsbhrg/3.2"
+           targetNamespace="http://www.broservices.nl/xsd/dsbhrg/3"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
            version="3.2.0">
  <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
  <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
-<xs:import namespace="http://www.broservices.nl/xsd/bhrgcommon/3.2" schemaLocation="bhrgcommon.xsd"/>
+<xs:import namespace="http://www.broservices.nl/xsd/bhrgcommon/3" schemaLocation="bhrgcommon.xsd"/>
     <!--   <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0"
             schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2"

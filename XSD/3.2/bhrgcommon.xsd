@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xs:schema xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/3.2"
+<xs:schema xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/3"
    xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
    xmlns:dlogger="http://www.armatiek.nl/functions/dlogger-proxy"
    xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
    xmlns:imf="http://www.imvertor.org/xsl/functions" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-   targetNamespace="http://www.broservices.nl/xsd/bhrgcommon/3.2" elementFormDefault="qualified"
+   targetNamespace="http://www.broservices.nl/xsd/bhrgcommon/3" elementFormDefault="qualified"
    attributeFormDefault="unqualified" version="3.2.0">
    <xs:annotation>
       <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
