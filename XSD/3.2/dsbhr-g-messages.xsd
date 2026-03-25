@@ -9,15 +9,15 @@
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
            version="3.2.0">
- <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
- <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
 <xs:import namespace="http://www.broservices.nl/xsd/bhrgcommon/3" schemaLocation="bhrgcommon.xsd"/>
-    <!--   <xs:import
+<xs:import
    namespace="http://www.broservices.nl/xsd/brocommon/3.0"
-            schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
-    <xs:import namespace="http://www.opengis.net/gml/3.2"
-            schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/> 
-            -->
+            schemaLocation="http://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
+<xs:import namespace="http://www.opengis.net/gml/3.2"
+            schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+<!-- <xs:import namespace="http://www.broservices.nl/xsd/bhrgcommon/3"
+      schemaLocation="https://schema.broservices.nl/xsd/bhrgcommon/3/bhrgcommon.xsd" />
+-->
    <xs:annotation>
       <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
          <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
