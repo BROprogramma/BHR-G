@@ -12,14 +12,15 @@
 <xs:import namespace="http://www.broservices.nl/xsd/bhrgcommon/3" schemaLocation="bhrgcommon.xsd"/>
 <xs:import
    namespace="http://www.broservices.nl/xsd/brocommon/3.0"
-            schemaLocation="http://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
+            schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
 <xs:import namespace="http://www.opengis.net/gml/3.2"
             schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
-<!-- <xs:import namespace="http://www.broservices.nl/xsd/bhrgcommon/3"
+<!-- <xs:import
+   namespace="https://www.broservices.nl/xsd/bhrgcommon/3"
       schemaLocation="https://schema.broservices.nl/xsd/bhrgcommon/3/bhrgcommon.xsd" />
 -->
    <xs:annotation>
-      <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+      <xs:appinfo source="https://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
          <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
       </xs:appinfo>
    </xs:annotation>
@@ -409,17 +410,6 @@ Explanation: Het gegeven is alleen aanwezig wanneer alle deelonderzoeken zijn ge
                         het terrein vastgelegd.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element minOccurs="1"
-                  maxOccurs="1"
-                  name="registrationHistory"
-                  nillable="false"
-                  type="brocom:RegistrationHistoryType">
-                  <xs:annotation>
-                     <xs:documentation
-                        source="http://www.imvertor.org/model-info/technical-documentation">Definition:
-                        De geschiedenis van het booronderzoek in de registratie ondergrond.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
                <xs:element name="NITGCode"
                   type="bhrgcom:NITGCodeType"
                   minOccurs="0"
@@ -442,6 +432,17 @@ Explanation: Het gegeven is alleen aanwezig wanneer alle deelonderzoeken zijn ge
                         <xs:length value="11" />
                      </xs:restriction>
                   </xs:simpleType>
+               </xs:element>
+               <xs:element minOccurs="1"
+                  maxOccurs="1"
+                  name="registrationHistory"
+                  nillable="false"
+                  type="brocom:RegistrationHistoryType">
+                  <xs:annotation>
+                     <xs:documentation
+                        source="http://www.imvertor.org/model-info/technical-documentation">Definition:
+                        De geschiedenis van het booronderzoek in de registratie ondergrond.</xs:documentation>
+                  </xs:annotation>
                </xs:element>
                <xs:element minOccurs="1"
                   maxOccurs="1"

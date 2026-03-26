@@ -5,12 +5,12 @@
         xsi:schemaLocation="http://schemas.xmlsoap.org/soap/envelope/ http://schemas.xmlsoap.org/soap/envelope/">
     <soap:Body>
         <dispatchDataResponse
-                xmlns="http://www.broservices.nl/xsd/dsbhrg/3.2"
-                xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/3.2"
+                xmlns="http://www.broservices.nl/xsd/dsbhrg/3"
+                xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/3"
                 xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
                 xmlns:gml="http://www.opengis.net/gml/3.2"
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                xsi:schemaLocation="http://www.broservices.nl/xsd/dsbhrg/3.2 dsbhr-g-messages.xsd">
+                xsi:schemaLocation="https://www.broservices.nl/xsd/dsbhrg/3/dsbhr-g-messages.xsd">
             <!--Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de uitgifteservice.
                 Het is niet gevalideert door de uitgifteservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
             -->
@@ -46,7 +46,7 @@
                     <siteCharacteristicDetermined>ja</siteCharacteristicDetermined>
                     <!--Optional:-->            
                     <NITGCode>
-                        <bhrgcom:NITGCode>B25A1234</bhrgcom:NITGCode>
+                        <bhrgcom:NITGCode>BA251234</bhrgcom:NITGCode>
                     </NITGCode>
                     <!--Optional:-->
                     <UUCode>UU199912123</UUCode>
