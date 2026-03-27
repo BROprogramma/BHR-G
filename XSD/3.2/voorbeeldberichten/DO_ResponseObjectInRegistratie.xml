@@ -45,9 +45,7 @@
                     </researchOperator>
                     <siteCharacteristicDetermined>ja</siteCharacteristicDetermined>
                     <!--Optional:-->            
-                    <NITGCode>
-                        <bhrgcom:NITGCode>BA251234</bhrgcom:NITGCode>
-                    </NITGCode>
+                    <NITGCode>BA251234</NITGCode>
                     <!--Optional:-->
                     <UUCode>UU199912123</UUCode>
                     <registrationHistory>
