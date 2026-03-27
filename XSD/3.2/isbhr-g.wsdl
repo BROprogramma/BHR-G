@@ -6,15 +6,15 @@
                   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                   xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
                   xmlns:msg="http://www.broservices.nl/xsd/isbhrg/3"
-                  xmlns:tns="http://www.broservices.nl/wsdl/isbhrg/3"
-                  targetNamespace="http://www.broservices.nl/wsdl/isbhrg/3">
+                  xmlns:tns="http://www.broservices.nl/wsdl/isbhrg/1.0"
+                  targetNamespace="http://www.broservices.nl/wsdl/isbhrg/1.0">
 
     <wsdl:documentation>
         Deze WSDL beschrijft de webservice voor inname van geologisch booronderzoek (isbhr-g). Verise - 3.2.0
     </wsdl:documentation>
 
     <wsdl:types>
-        <xsd:schema xmlns:tns="http://www.broservices.nl/wsdl/isbhrg/3" targetNamespace="http://www.broservices.nl/wsdl/isbhrg/3">
+        <xsd:schema xmlns:tns="http://www.broservices.nl/wsdl/isbhrg/1.0" targetNamespace="http://www.broservices.nl/wsdl/isbhrg/1">
             <xsd:import namespace="http://www.broservices.nl/xsd/isbhrg/3" schemaLocation="./isbhr-g-messages.xsd"/>
             <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0"
                 schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd" />
@@ -46,13 +46,13 @@
 
     <wsdl:portType name="isbhr-g">
         <wsdl:operation name="register">
-            <wsdl:input message="tns:registrationRequest" wsam:Action="http://www.broservices.nl/wsdl/isbhr-g/3/registrationRequest"/>
-            <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wsdl/isbhr-g/3/intakeResponse"/>
+            <wsdl:input message="tns:registrationRequest" wsam:Action="http://www.broservices.nl/wsdl/isbhr-g/registrationRequest"/>
+            <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wsdl/isbhr-g/intakeResponse"/>
             <wsdl:fault message="tns:parseSoapFault" name="parseFault" wsam:Action="http://www.broservices.nl/wus/isbhr-g/parseSoapFault"/>
         </wsdl:operation>
         <wsdl:operation name="correct">
-            <wsdl:input message="tns:correctionRequest" wsam:Action="http://www.broservices.nl/wsdl/isbhr-/3/correctionRequest" />
-            <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wsdl/isbhr-g/3/intakeResponse" />
+            <wsdl:input message="tns:correctionRequest" wsam:Action="http://www.broservices.nl/wsdl/isbhr-g/correctionRequest" />
+            <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wsdl/isbhr-g/intakeResponse" />
             <wsdl:fault message="tns:parseSoapFault" name="parseFault" wsam:Action="http://www.broservices.nl/wus/isbhr-g/parseSoapFault" />
         </wsdl:operation>
     </wsdl:portType>
