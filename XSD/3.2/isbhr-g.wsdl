@@ -57,7 +57,7 @@
         </wsdl:operation>
     </wsdl:portType>
 
-    <wsdl:binding name="isbh-rg_SOAP" type="tns:isbhr-g">
+    <wsdl:binding name="isbhr-g_SOAP" type="tns:isbhr-g">
         <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
         <wsdl:operation name="register">
             <soap:operation soapAction="" style="document"/>
