@@ -10,7 +10,8 @@
          <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
       </xs:appinfo>
    </xs:annotation>
-   <!-- <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd" />
+   <!-- <xs:import
+   namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd" />
    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd" />
    -->
    <xs:import
@@ -6540,6 +6541,30 @@
                   archiefoverdracht is een andere indeling gehanteerd.</xs:documentation>
             </xs:annotation>
          </xs:element>
+         <xs:element name="sandMedianClass50to2000" minOccurs="1" maxOccurs="1"
+            type="bhrgcom:SandMedianClass50to2000Type">
+            <xs:annotation>
+               <xs:appinfo>
+                  <CodeListName>SandMedianClass</CodeListName>
+               <CodeListURI />
+               </xs:appinfo>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
+                  De mediane korrelgrootte in de massa van de zandfractie, uitgedrukt in een klasse,
+                  met hantering van 50 µm als ondergrens voor de korrelgrootte.
+                  --Regels--
+                  Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut
+                  beschrijfkwaliteit van de entiteit Boorprofiel gelijk is aan
+                  geologischStandaardGeroerd, geologischStandaardOngeroerd,
+                  geologischUitgebreidGeroerd of geologischUitgebreidOngeroerd, en dat is onder
+                  IMBRO altijd het geval.
+                  --Regels IMBRO/A--
+                  De waarde van het attribuut moet gelijk zijn aan uiterstFijnVerbraeck,
+                  zeerFijnVerbraeck, matigFijnVerbraeck, matigGrofVerbraeck,
+                  grofTotZeerGrofVerbraeck of onbekend wanneer de waarde van het attribuut
+                  beschrijfkwaliteit van de entiteit Boorprofiel gelijk is aan
+                  fysischGeografischStandaardArchief.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
          <xs:element name="sandSorting" minOccurs="0" maxOccurs="1" type="bhrgcom:SandSortingType">
             <xs:annotation>
                <xs:appinfo>
@@ -7338,6 +7363,33 @@
                   meestal alleen grind zijn.</xs:documentation>
             </xs:annotation>
          </xs:element>
+         <xs:element name="gravelContentClassTo50" minOccurs="0" maxOccurs="1"
+            type="bhrgcom:GravelContentClassTo50Type">
+            <xs:annotation>
+               <xs:appinfo>
+                  <CodeListName>gravelContentClassTo50</CodeListName>
+               <CodeListURI />
+               </xs:appinfo>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
+                  Het gehalte aan grind uitgedrukt in een klasse bij een gehalte tot 50 %.
+                  --Regels-- Het attribuut mag niet aanwezig zijn wanneer de waarde van het
+                  attribuut beschrijfkwaliteit van de entiteit Boorprofiel gelijk is aan
+                  geologischStandaardGeroerd, geologischStandaardOngeroerd,
+                  geologischUitgebreidGeroerd of geologischUitgebreidOngeroerd, en dat is onder
+                  IMBRO altijd het geval. --Regels IMBRO/A-- Het attribuut moet aanwezig zijn
+                  wanneer de waarde van het attribuut beschrijfkwaliteit van de entiteit Boorprofiel
+                  gelijk is aan fysischGeografischStandaardArchief, en de waarde van het attribuut
+                  grondsoort Berendsen en Stouthamer gelijk is aan een waarde uit de categorie
+                  schelprijke grond, organische grond, grindarme minerale grond of bijzondere grond.
+                  Het attribuut mag niet anwezig zijn wanneer de waarde van het attribuut
+                  beschrijfkwaliteit van de entiteit Boorprofiel gelijk is aan
+                  fysischGeografischStandaardArchief, en de waarde van het attribuut grondsoort
+                  Berendsen en Stouthamer gelijk is aan een waarde uit de categorie zeer grove grond
+                  of grindrijke minerale grond. Het attribuut mag niet aanwezig zijn wanneer de
+                  waarde van het attribuut beschrijfkwaliteit van de entiteit Boorprofiel gelijk is
+                  aan geologischNEN5104Archief. .</xs:documentation>
+            </xs:annotation>
+         </xs:element>
          <xs:element name="micaContentClass" minOccurs="0" maxOccurs="1"
             type="bhrgcom:MicaContentClassType">
             <xs:annotation>
@@ -7359,7 +7411,8 @@
                   hoeveelheid moet beschouwd worden als indicatief.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="micaContentClassArchive" minOccurs="0" maxOccurs="1"
+         <xs:element
+            name="micaContentClassArchive" minOccurs="0" maxOccurs="1"
             type="bhrgcom:ArchiveClassType">
             <xs:annotation>
                <xs:appinfo>
@@ -7381,7 +7434,8 @@
                   indicatief.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="organicMatterContentClass" minOccurs="0" maxOccurs="1"
+         <xs:element
+            name="organicMatterContentClass" minOccurs="0" maxOccurs="1"
             type="bhrgcom:OrganicMatterContentClassType">
             <xs:annotation>
                <xs:appinfo>
@@ -7398,7 +7452,8 @@
                   archiefoverdracht is dit gegeven niet vastgelegd.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="organicMatterContentClassNEN5104" minOccurs="0" maxOccurs="1"
+         <xs:element
+            name="organicMatterContentClassNEN5104" minOccurs="0" maxOccurs="1"
             type="bhrgcom:OrganicMatterContentClassNEN5104Type">
             <xs:annotation>
                <xs:appinfo>
@@ -7421,7 +7476,8 @@
                   (beschrijfkwaliteit fysischGeografischStandaardArchief).</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="shellMatterContentClass" minOccurs="0" maxOccurs="1"
+         <xs:element
+            name="shellMatterContentClass" minOccurs="0" maxOccurs="1"
             type="bhrgcom:VolumePercentageClassType">
             <xs:annotation>
                <xs:appinfo>
@@ -7443,7 +7499,8 @@
                   vastgelegd.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="shellMatterContentClassArchive" minOccurs="0" maxOccurs="1"
+         <xs:element
+            name="shellMatterContentClassArchive" minOccurs="0" maxOccurs="1"
             type="bhrgcom:ArchiveClassType">
             <xs:annotation>
                <xs:appinfo>
@@ -7468,7 +7525,8 @@
                   beschouwd worden als indicatief.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="veryCoarseFractionContentClass" minOccurs="0" maxOccurs="2"
+         <xs:element
+            name="veryCoarseFractionContentClass" minOccurs="0" maxOccurs="2"
             type="bhrgcom:VeryCoarseFractionContentClassType">
             <xs:annotation>
                <xs:appinfo>
@@ -7492,7 +7550,8 @@
                   indicatief.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="veryCoarseFractionContentClassArchive" minOccurs="0" maxOccurs="2"
+         <xs:element
+            name="veryCoarseFractionContentClassArchive" minOccurs="0" maxOccurs="2"
             type="bhrgcom:VeryCoarseFractionContentClassArchiveType">
             <xs:annotation>
                <xs:appinfo>
@@ -7516,7 +7575,8 @@
                   indicatief.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="glauconiteContentClass" minOccurs="0" maxOccurs="1"
+         <xs:element
+            name="glauconiteContentClass" minOccurs="0" maxOccurs="1"
             type="bhrgcom:VolumePercentageClassType">
             <xs:annotation>
                <xs:appinfo>
@@ -7536,7 +7596,8 @@
                   glaucietgehalteklasse archief in plaats van de glaucietgehalteklasse vastgelegd.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="glauconiteContentClassArchive" minOccurs="0" maxOccurs="1"
+         <xs:element
+            name="glauconiteContentClassArchive" minOccurs="0" maxOccurs="1"
             type="bhrgcom:ArchiveClassType">
             <xs:annotation>
                <xs:appinfo>
@@ -7560,7 +7621,8 @@
                   indicatief.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="carbonateContentClass" minOccurs="1" maxOccurs="1"
+         <xs:element
+            name="carbonateContentClass" minOccurs="1" maxOccurs="1"
             type="bhrgcom:CarbonateContentClassType">
             <xs:annotation>
                <xs:appinfo>
@@ -7575,7 +7637,8 @@
                   kader van archiefoverdracht onder IMBRO/A is een andere indeling gehanteerd.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="colour" minOccurs="1" maxOccurs="1" type="bhrgcom:ColourType">
+         <xs:element
+            name="colour" minOccurs="1" maxOccurs="1" type="bhrgcom:ColourType">
             <xs:annotation>
                <xs:appinfo>
                   <CodeListName>Colour</CodeListName>
@@ -7596,7 +7659,8 @@
                   combinatie van twee kleuren.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="mottled" type="brocom:IndicationYesNoType" minOccurs="0" maxOccurs="1">
+         <xs:element
+            name="mottled" type="brocom:IndicationYesNoType" minOccurs="0" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   De aanduiding die aangeeft of de grond vlekken vertoont. Explanation: Het
@@ -7604,7 +7668,8 @@
                   samenstelling van de grond na afzetting van het sediment.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="fineSoilConsistency" minOccurs="0" maxOccurs="1"
+         <xs:element
+            name="fineSoilConsistency" minOccurs="0" maxOccurs="1"
             type="bhrgcom:FineSoilConsistencyType">
             <xs:annotation>
                <xs:appinfo>
@@ -7619,7 +7684,8 @@
                   onder IMBRO/A is een andere indeling gehanteerd.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="organicSoilConsistency" minOccurs="0" maxOccurs="1"
+         <xs:element
+            name="organicSoilConsistency" minOccurs="0" maxOccurs="1"
             type="bhrgcom:OrganicSoilConsistencyType">
             <xs:annotation>
                <xs:appinfo>
@@ -7633,7 +7699,8 @@
                   beoordeelt zelf wanneer dat het geval is.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="sedimentaryPhenomenon" minOccurs="0" maxOccurs="1"
+         <xs:element
+            name="sedimentaryPhenomenon" minOccurs="0" maxOccurs="1"
             type="bhrgcom:SedimentaryPhenomenonType">
             <xs:annotation>
                <xs:appinfo>
@@ -7647,7 +7714,8 @@
                   in het kader van archiefoverdracht is dit gegeven niet vastgelegd.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="organicSoilTexture" minOccurs="0" maxOccurs="1"
+         <xs:element
+            name="organicSoilTexture" minOccurs="0" maxOccurs="1"
             type="bhrgcom:OrganicSoilTextureType">
             <xs:annotation>
                <xs:appinfo>
@@ -7665,7 +7733,8 @@
                   gehanteerd.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element minOccurs="0" maxOccurs="unbounded" name="particularConstituent"
+         <xs:element
+            minOccurs="0" maxOccurs="unbounded" name="particularConstituent"
             nillable="false" type="bhrgcom:ParticularConstituentType">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
@@ -7674,7 +7743,8 @@
                   algemeen voorkomend bestanddeel van grond.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element minOccurs="0" maxOccurs="4" name="anomalousLayer" nillable="false"
+         <xs:element
+            minOccurs="0" maxOccurs="4" name="anomalousLayer" nillable="false"
             type="bhrgcom:AnomalousLayerType">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
@@ -7683,63 +7753,72 @@
                   laagjes van een ander materiaal en met een bepaalde dikte bestaat.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element minOccurs="0" maxOccurs="3" name="chunk" nillable="false"
+         <xs:element
+            minOccurs="0" maxOccurs="3" name="chunk" nillable="false"
             type="bhrgcom:ChunkType">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Een voorkomen in grond van brokjes van een afwijkende grondsoort.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element minOccurs="0" maxOccurs="1" name="gravelFraction" nillable="false"
+         <xs:element
+            minOccurs="0" maxOccurs="1" name="gravelFraction" nillable="false"
             type="bhrgcom:GravelFractionType">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het deel van de grond dat uit grind bestaat.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element minOccurs="0" maxOccurs="1" name="sandFraction" nillable="false"
+         <xs:element
+            minOccurs="0" maxOccurs="1" name="sandFraction" nillable="false"
             type="bhrgcom:SandFractionType">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het deel van de grond dat uit zand bestaat.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element minOccurs="0" maxOccurs="1" name="shellFraction" nillable="false"
+         <xs:element
+            minOccurs="0" maxOccurs="1" name="shellFraction" nillable="false"
             type="bhrgcom:ShellFractionType">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het deel van de grond dat uit schelpmateriaal bestaat.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element minOccurs="0" maxOccurs="1" name="shellFractionArchive" nillable="false"
+         <xs:element
+            minOccurs="0" maxOccurs="1" name="shellFractionArchive" nillable="false"
             type="bhrgcom:ShellFractionArchiveType">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het deel van de grond dat uit schelpmateriaal bestaat.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element minOccurs="0" maxOccurs="1" name="peatFraction" nillable="false"
+         <xs:element
+            minOccurs="0" maxOccurs="1" name="peatFraction" nillable="false"
             type="bhrgcom:PeatFractionType">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Het deel van de grond dat uit organisch materiaal bestaat.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element minOccurs="0" maxOccurs="1" name="munsellColour" nillable="false"
+         <xs:element
+            minOccurs="0" maxOccurs="1" name="munsellColour" nillable="false"
             type="bhrgcom:MunsellColourType">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   De kleur volgens het Munsell-systeem.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element minOccurs="0" maxOccurs="3" name="mottle" nillable="false"
+         <xs:element
+            minOccurs="0" maxOccurs="3" name="mottle" nillable="false"
             type="bhrgcom:MottleType">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   De gegevens van de vlekken die een bepaalde kleur hebben.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element minOccurs="0" maxOccurs="3" name="inclusion" nillable="false"
+         <xs:element
+            minOccurs="0" maxOccurs="3" name="inclusion" nillable="false"
             type="bhrgcom:InclusionType">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
@@ -7748,7 +7827,8 @@
                   vervorming van eerder afgezet sediment.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element minOccurs="0" maxOccurs="4" name="sedimentLens" nillable="false"
+         <xs:element
+            minOccurs="0" maxOccurs="4" name="sedimentLens" nillable="false"
             type="bhrgcom:SedimentLensType">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
@@ -7756,14 +7836,16 @@
                   afwijkende grondsoort, die herkend worden als in deeltjes afgezet.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element minOccurs="0" maxOccurs="unbounded" name="animalFossil" nillable="false"
+         <xs:element
+            minOccurs="0" maxOccurs="unbounded" name="animalFossil" nillable="false"
             type="bhrgcom:AnimalFossilType">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
                   Een voorkomen van een bepaalde categorie van fossiele overblijfselen van dieren.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element minOccurs="0" maxOccurs="1" name="fractionDistribution" nillable="false"
+         <xs:element
+            minOccurs="0" maxOccurs="1" name="fractionDistribution" nillable="false"
             type="bhrgcom:FractionDistributionType">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
@@ -8872,6 +8954,14 @@
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
+   <xs:complexType name="GravelContentClassTo50Type">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required"
+               fixed="urn:bro:bhrg:GravelContentClassTo50" />
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
    <xs:complexType name="GravelMedianClassType">
       <xs:simpleContent>
          <xs:restriction base="gml:CodeWithAuthorityType">
@@ -9229,6 +9319,14 @@
          <xs:restriction base="gml:CodeWithAuthorityType">
             <xs:attribute name="codeSpace" type="xs:anyURI" use="required"
                fixed="urn:bro:bhrg:SandMedianClass" />
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="SandMedianClass50to2000Type">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required"
+               fixed="urn:bro:bhrg:SandMedianClass50to2000" />
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
