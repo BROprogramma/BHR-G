@@ -7367,7 +7367,7 @@
             type="bhrgcom:GravelContentClassTo50Type">
             <xs:annotation>
                <xs:appinfo>
-                  <CodeListName>gravelContentClassTo50</CodeListName>
+                  <CodeListName>GravelContentClassTo50</CodeListName>
                <CodeListURI />
                </xs:appinfo>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition:
