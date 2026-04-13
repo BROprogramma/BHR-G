@@ -30,7 +30,7 @@ let respecConfig = {
   shortName: "bhr-g",
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  publishDate: "2025-10-02",
+  //publishDate: "2025-10-02",
   //custom header lines  
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   publishVersion: " ",
@@ -60,7 +60,7 @@ let respecConfig = {
   //neem hier de URL van de github repository op waar het respec document in staat
   github: "https://github.com/BROprogramma/BHR-G",
   // Voeg het BRO-logo toe aan het Doe mee-blok in de kop.
-  postProcess: [
+ // postProcess: [
     ...((typeof organisationConfig !== "undefined" && Array.isArray(organisationConfig.postProcess))
       ? organisationConfig.postProcess
       : []),
