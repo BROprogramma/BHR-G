@@ -7340,6 +7340,39 @@
                   definitie wordt verwezen naar de Berendsen en Stouthamer.</xs:documentation>
             </xs:annotation>
          </xs:element>
+         <xs:element name="geologicalSoilNameInterpreted" minOccurs="0" maxOccurs="1"
+            type="bhrgcom:GeologicalSoilNameInterpretedType">
+            <xs:annotation>
+               <xs:appinfo>
+                  <CodeListName>GeologicalSoilNameInterpreted</CodeListName>
+                  <CodeListURI />
+               </xs:appinfo>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">--Definitie--
+                  De naam van de grondsoort vanuit geologisch perspectief zoals vertaald vanuit de
+                  grondsoort Berendsen en Stouthamer.
+
+                  --Regels--
+                  Het attribuut mag niet aanwezig zijn wanneer de waarde van het attribuut
+                  beschrijfkwaliteit van de entiteit Boorprofiel gelijk is aan
+                  geologischStandaardGeroerd, geologischStandaardOngeroerd,
+                  geologischUitgebreidGeroerd of geologischUitgebreidOngeroerd, en dat is onder
+                  IMBRO altijd het geval.
+
+                  --Regels IMBRO/A--
+                  Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut
+                  beschrijfkwaliteit van de entiteit Boorprofiel gelijk is aan
+                  fysischGeografischStandaardArchief.
+                  Het attribuut mag niet aanwezig zijn in alle andere gevallen.
+
+                  --Toelichting--
+                  De geologische grondsoort geinterpreteerd is een vertaling van de fysisch
+                  geografische grondsoort volgens Berendsen en Stouthamer (grondsoort Berendsen en
+                  Stouthamer) naar een geologische grondsoort. De vertaalslag is uitgevoerd om het
+                  gegeven beter bruikbaar te maken voor algemene toepassing. Omdat het een vertaald
+                  c.q. geïnterpreteerd gegeven betreft, is het niet-authentiek.
+                  .</xs:documentation>
+            </xs:annotation>
+         </xs:element>
          <xs:element name="gravelContentClass" minOccurs="0" maxOccurs="1"
             type="bhrgcom:GravelContentClassType">
             <xs:annotation>
@@ -8927,6 +8960,14 @@
          <xs:restriction base="gml:CodeWithAuthorityType">
             <xs:attribute name="codeSpace" type="xs:anyURI" use="required"
                fixed="urn:bro:bhrg:GeologicalSoilName" />
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="GeologicalSoilNameInterpretedType">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required"
+               fixed="urn:bro:bhrg:GeologicalSoilNameInterpreted" />
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
