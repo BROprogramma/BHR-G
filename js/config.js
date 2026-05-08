@@ -76,7 +76,7 @@ let respecConfig = {
       },
     ],
   //neem hier de URL van de github repository op waar het respec document in staat
-  edDraftURI: "https://broprogramma.github.io/BHR-G/",
+  edDraftURI: "https://broprogramma.github.io/bhr-g/",
   //github: "https://github.com/BROprogramma/BHR-G",
   postProcess: [
     ...(typeof organisationConfig !== "undefined" &&
