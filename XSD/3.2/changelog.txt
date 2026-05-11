@@ -1,0 +1,93 @@
+Changelog – 11-05-2026
+
+1. bhrgcommon.xsd
+
+Algemene wijzigingen voor betere leesbaarheid
+- Stijlistische en formatteringswijzigingen doorgevoerd:
+  - indentatie aangepast;
+  - XML-attributen opnieuw uitgelijnd;
+  - regelafbrekingen opgeschoond;
+  - documentatieblokken opnieuw geformatteerd.
+
+- XML-declaratie aangepast naar een consistente notatie:
+  <?xml version="1.0" encoding="UTF-8"?>
+
+Inhoudelijke wijzigingen
+
+Wijziging van extension naar restriction
+- Voor meerdere measure-type-elementen is de modellering aangepast van uitbreiding (xs:extension) naar beperking (xs:restriction).
+
+Dit is toegepast voor de volgende typen:
+- FineFractionDistributionNonGravellyMineralSoilType
+- FineFractionDistributionOrganicSoilType
+- FineFractionDistributionShellySoilArchiveType
+
+Toegevoegde vaste eenheden (fixed uom)
+- Voor verschillende meetwaarden zijn ontbrekende eenheden toegevoegd of aangescherpt, onder andere:
+  - %
+  - g
+  - overige vaste uom-waarden via:
+    fixed="..."
+
+Lijst van bijgewerkte elementen:
+- LayerComponentType.LayerProportion
+- LimitedDistributionFraction63UmTo2MmType.Fraction1400UmTo2Mm
+- LimitedDistributionFraction63UmTo2MmType.Fraction630To1000Um
+- LimitedDistributionFraction63UmTo2MmType.Fraction420To600Um
+- LimitedDistributionFraction63UmTo2MmType.Fraction300To420Um
+- LimitedDistributionFraction63UmTo2MmType.Fraction63To300Um
+- MinimalDistributionFraction63UmTo2MmType.Fraction1400UmTo2Mm
+- MinimalDistributionFraction63UmTo2MmType.Fraction1000To1400Um
+- MinimalDistributionFraction63UmTo2MmType.Fraction710To1000Um
+- MinimalDistributionFraction63UmTo2MmType.Fraction63To90Um
+- MinimalDistributionFractionSmaller63UmType.Fraction0To2Um
+- BasicParticleSizeDistributionType.FractionLarger2Mm
+- BasicParticleSizeDistributionType.Fraction63UmTo2Mm
+- BasicParticleSizeDistributionType.FractionSmaller63Um
+- VolumetricMassDryDensityDeterminationType.VolumetricMassDryDensity
+- VolumetricMassDryDensityDeterminationType.VerticalStrain
+- WaterContentDeterminationType.WaterContent
+- SaturatedPermeabilityDeterminationType.WaterContentAfterwards
+- MassLossCarbonateContentType.Mass105DegreesCelsius
+- MassLossCarbonateContentType.Mass800DegreesCelsius
+- MassLossCarbonateContentType.Mass1000DegreesCelsius
+- MassLossOrganicMatterContentType.Mass105DegreesCelsius
+- MassLossOrganicMatterContentType.Mass450DegreesCelsius
+- MassLossOrganicMatterContentType.Mass550DegreesCelsius
+- AnomalousLayerType.LayerProportion
+- FineFractionDistributionShellySoilType.EstimatedVolumeProportionLutum
+- FineFractionDistributionShellySoilType.EstimatedVolumeProportionSilt
+- FineFractionDistributionShellySoilType.EstimatedVolumeProportionSand
+- FractionDistributionType.EstimatedVolumeProportionGravel
+- FractionDistributionType.EstimatedVolumeProportionShellMatter
+- SandFractionType.EstimatedMedian
+- GravelFractionType.EstimatedMedian
+- SamplerType.TaperAngle
+
+Overige wijzigingen
+- Element "sandMedianClass" aangepast van verplicht (minOccurs="1") naar optioneel (minOccurs="0").
+
+
+2. dsbhr-g-messages.xsd
+
+Algemene wijzigingen voor betere leesbaarheid
+- Stijlistische en formatteringswijzigingen doorgevoerd:
+  - indentatie aangepast;
+  - XML-attributen opnieuw uitgelijnd;
+  - regelafbrekingen opgeschoond;
+  - documentatieblokken opnieuw geformatteerd.
+
+Elementwijziging
+- Element "offset" (regel 170):
+  - restriction met vaste uom "m" toegevoegd;
+  - toegepast in plaats van string met nilReason-extension.
+
+
+3. isbhr-g-messages.xsd
+
+Algemene wijzigingen voor betere leesbaarheid
+- Stijlistische en formatteringswijzigingen doorgevoerd:
+  - indentatie aangepast;
+  - XML-attributen opnieuw uitgelijnd;
+  - regelafbrekingen opgeschoond;
+  - documentatieblokken opnieuw geformatteerd.
