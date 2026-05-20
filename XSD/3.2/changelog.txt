@@ -79,3 +79,28 @@ File bhrgcommon.xsd:
   Files dsbhr-g-messages.xsd and isbhr-g-messages.xsd
 
   1. The brocommon namespace changed from 3.0 to 3.
+
+
+  20-05-2026
+
+  1. For the example files (see the following list) brocommon namespace was changed from 3.0 to 3:
+
+  - BHR_G_CompleteReport_vb1
+  - BHR_G_EndReport_vb1
+  - BHR_G_Start_Report_vb1
+  - DC_Request_BoundingBox
+  - DC_Request_Cirkel_error
+  - DC_ResponseAfwijzing
+  - DC_ResponseLevering
+  - DO_Request
+  - DO_ResponseAfwijzing
+  - DO_ResponseObjectInRegistratie
+  - DO_ResponseObjectUitRegistratie
+
+  2. For isbhr-g-messages.xsd cyrrilic C changed to C from dutch language - line 32
+
+  3. For brocommon.xsd - brocommon namespace changed from 3.0 to 3.
+
+  4. For dsbhr-g.wsdl - brocommon namespace changed from 3.0 to 3
+
+  5. For isbhr-g.wsdl - brocommon namespace changed from 3.0 to 3

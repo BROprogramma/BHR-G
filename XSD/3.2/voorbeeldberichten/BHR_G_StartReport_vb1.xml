@@ -2,7 +2,7 @@
 <registrationRequest 
         xmlns="http://www.broservices.nl/xsd/isbhrg/3"
         xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/3"
-        xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+        xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3"
         xmlns:swe="http://www.opengis.net/swe/2.0"
         xmlns:gml="http://www.opengis.net/gml/3.2"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -24,7 +24,7 @@
             <surveyProcedure codeSpace="urn:bro:bhrg:SurveyProcedure">EN1997d2v2007</surveyProcedure>
             <siteCharacteristicDetermined>ja</siteCharacteristicDetermined> 
             <!--Optional:-->
-            <researchOperator xmlns:n1="http://www.broservices.nl/xsd/brocommon/3.0">
+            <researchOperator xmlns:n1="http://www.broservices.nl/xsd/brocommon/3">
                 <brocom:chamberOfCommerceNumber>09098104</brocom:chamberOfCommerceNumber>
             </researchOperator>
 			<!--Optional:-->            

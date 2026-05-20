@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
         xmlns:gml="http://www.opengis.net/gml/3.2"
-        xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
-        targetNamespace="http://www.broservices.nl/xsd/brocommon/3.0"
+        xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3"
+        targetNamespace="http://www.broservices.nl/xsd/brocommon/3"
         elementFormDefault="qualified"
-        version="3.0.8">
+        version="3.0.9">
 
     <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
     <!--
@@ -49,6 +49,8 @@
                 - changed layout
                 - Added gml:Polygon to DeliveredGeometryType 
                 - Added gml:MultiGeometry to StandardizedGeometryType: 
+            Version 3.0.9
+                - namespace changed from 3.0 to 3
         </documentation>
     </annotation>
 

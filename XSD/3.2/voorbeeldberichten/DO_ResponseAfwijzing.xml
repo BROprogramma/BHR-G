@@ -6,7 +6,7 @@
     <soap:Body>
 <dispatchDataResponse
         xmlns="http://www.broservices.nl/xsd/dsbhrg/3"
-        xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+        xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="https://www.broservices.nl/xsd/dsbhrg/3/dsbhr-g-messages.xsd">
     <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de uitgiftewebservice.

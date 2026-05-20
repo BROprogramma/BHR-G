@@ -29,7 +29,7 @@
                 type="brocom:IntakeResponseType" />
     <xs:element name="parseFault"
                 type="brocom:ParseFaultType" />
-    <xs:element name="сorrectionRequest"
+    <xs:element name="correctionRequest"
                 type="isbhrg:CorrectionRequestType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht correctionRequest (correctieverzoek) is een specialisatie van de abstract klasse CorrectionRequest uit de package brocommon, waaraan het een correctionReason en een sourceDocument toevoegt. Met dit bericht kan een bronhouder en/of dataleverancier in de BRO opgenomen gegevens vervangen (corrigeren). De eenheid van vervangen is een brondocument, dat eerder met een registrationRequest (registratieverzoek) is aangeboden bij de BRO. Het is niet mogelijk de waarde van een individueel attribuut te corrigeren.</xs:documentation>

@@ -2,7 +2,7 @@
 <registrationRequest 
         xmlns="http://www.broservices.nl/xsd/isbhrg/3"
         xmlns:bhrgcom="http://www.broservices.nl/xsd/bhrgcommon/3"
-        xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+        xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3"
         xmlns:swe="http://www.opengis.net/swe/2.0"
         xmlns:gml="http://www.opengis.net/gml/3.2"
         xmlns:xlink="http://www.w3.org/1999/xlink"

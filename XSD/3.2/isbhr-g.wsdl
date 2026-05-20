@@ -4,7 +4,7 @@
                   xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
                   xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
                   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                  xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
+                  xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3"
                   xmlns:msg="http://www.broservices.nl/xsd/isbhrg/3"
                   xmlns:tns="http://www.broservices.nl/wsdl/isbhrg/3"
                   targetNamespace="http://www.broservices.nl/wsdl/isbhrg/3">
@@ -16,8 +16,8 @@
     <wsdl:types>
         <xsd:schema xmlns:tns="http://www.broservices.nl/wsdl/isbhrg/3" targetNamespace="http://www.broservices.nl/wsdl/isbhrg/3">
             <xsd:import namespace="http://www.broservices.nl/xsd/isbhrg/3" schemaLocation="./isbhr-g-messages.xsd"/>
-            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0"
-                schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd" />
+            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3"
+                schemaLocation="https://schema.broservices.nl/xsd/brocommon/3/brocommon.xsd" />
             <!--
             <xsd:import namespace="http://www.broservices.nl/xsd/isbhrg/3" schemaLocation="https://schema.broservices.nl/xsd/isbhrg/3/isbhr-g-messages.xsd"/>
                         -->
