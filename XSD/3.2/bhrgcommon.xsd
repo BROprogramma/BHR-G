@@ -8173,10 +8173,10 @@
                 </xs:annotation>
             </xs:element>
             <xs:element name="geologicalSoilNameInterpreted" minOccurs="0" maxOccurs="1"
-                type="bhrgcom:GeologicalSoilNameInterpretedType">
+                type="bhrgcom:GeologicalSoilNameType">
                 <xs:annotation>
                     <xs:appinfo>
-                        <CodeListName>GeologicalSoilNameInterpreted</CodeListName>
+                        <CodeListName>GeologicalSoilName</CodeListName>
                   <CodeListURI />
                     </xs:appinfo>
                     <xs:documentation
@@ -9932,14 +9932,6 @@
             <xs:restriction base="gml:CodeWithAuthorityType">
                 <xs:attribute name="codeSpace" type="xs:anyURI" use="required"
                     fixed="urn:bro:bhrg:GeologicalSoilName" />
-            </xs:restriction>
-        </xs:simpleContent>
-    </xs:complexType>
-    <xs:complexType name="GeologicalSoilNameInterpretedType">
-        <xs:simpleContent>
-            <xs:restriction base="gml:CodeWithAuthorityType">
-                <xs:attribute name="codeSpace" type="xs:anyURI" use="required"
-                    fixed="urn:bro:bhrg:GeologicalSoilNameInterpreted" />
             </xs:restriction>
         </xs:simpleContent>
     </xs:complexType>
