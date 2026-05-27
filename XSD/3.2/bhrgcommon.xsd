@@ -5580,7 +5580,7 @@
                         van archiefoverdracht is een andere indeling gehanteerd.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="angularity" minOccurs="1" maxOccurs="1" type="bhrgcom:AngularityType">
+            <xs:element name="angularity" minOccurs="0" maxOccurs="1" type="bhrgcom:AngularityType">
                 <xs:annotation>
                     <xs:appinfo>
                         <CodeListName>Angularity</CodeListName>
