@@ -4,7 +4,8 @@ Version 1.3.0 - 27.05.2026
 ----------------------------
 
 1. For the bhrgcommon file:
-- UPDATED cardinality (from 1 to 0) for the GravelFractionType.angularity (line 5583) 
+- UPDATED cardinality (from 1 to 0) for the GravelFractionType.angularity (line 5583)
+- locatie voor SoilNameBerendsenStouthamer bijgewerkt van "https:..." naar "urn:bro:bhrg:SoilNameBerendsenStouthamer" (line 10374)
 
 
 ----------------------------

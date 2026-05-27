@@ -10371,7 +10371,7 @@
         <xs:simpleContent>
             <xs:restriction base="gml:CodeWithAuthorityType">
                 <xs:attribute name="codeSpace" type="xs:anyURI" use="required"
-                    fixed="https://raw.githubusercontent.com/BROprogramma/BHR-G/gh-pages/lists/GrondsoortBerendsenStouthamer" />
+                    fixed="urn:bro:bhrg:SoilNameBerendsenStouthamer" />
             </xs:restriction>
         </xs:simpleContent>
     </xs:complexType>
