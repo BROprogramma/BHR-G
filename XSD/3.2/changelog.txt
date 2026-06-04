@@ -1,0 +1,81 @@
+Changelog 13.05.2026
+
+File bhrgcommon.xsd:
+
+1. The brocommon namespace changed from 3.0 to 3.
+
+2. For element "bhrgcom:SandMedianClass50to2000Type" - minOccurs changed from 1 to 0.
+
+3. Extension for elements (see list met elements). changed to restriction including datatype:
+  - FineFractionDistributionGravellyMineralSoilType:
+    - estimatedMassProportionSilt
+    - estimatedMassProportionLutum
+  - FractionDistributionType:
+    - estimatedMassProportionGravel
+  - FineFractionDistributionOrganicSoilType:
+    - estimatedMassProportionSand
+    - estimatedMassProportionSilt
+    - estimatedMassProportionLutum
+  - FineFractionDistributionShellySoilArchiveType:
+    - estimatedMassProportionSand
+    - estimatedMassProportionSilt
+    - estimatedMassProportionLutum
+
+4. Missing datatypes are added with the use of restriction (not extenstion). See the list of changed elements:
+  - SaturatedPermeabilityDeterminationType:
+    - waterContentAfterwards
+  - VolumetricMassDryDensityDeterminationType:
+    - verticalStrain
+    - volumetricMassDryDensity
+  - WaterContentDeterminationType:
+    - waterContent
+  - AnomalousLayerType:
+    -layerProportion
+  - BasicParticleSizeDistributionType:
+    - fractionSmaller63um
+    - fraction63umTo2mm
+    - fractionLarger2mm
+  - FractionDistributionType:
+    - estimatedVolumeProportionShellMatter
+    - estimatedVolumeProportionGravel
+  - FineFractionDistributionShellySoilType:
+    - estimatedVolumeProportionSand
+    - estimatedVolumeProportionSilt
+    - estimatedVolumeProportionLutum
+  - GravelFractionType:
+    - estimatedMedian
+  - LimitedDistributionFraction63UmTo2MmType:
+    - fraction63to300um
+    - fraction300to420Um
+    - fraction420to600Um
+    - fraction630to1000um
+    - fraction1400umTo2mm
+  - LayerComponentType:
+    - layerProportion
+  - MassLossCarbonateContentType:
+    - mass105DegreesCelsius
+    - mass800DegreeCelsius
+    - mass1000DegreeCelsius
+  - MassLossOrganicMatterContentType:
+    - mass105DegreeCeslsius
+    - mass450DegreeCelsius
+    - mass550DegreesCelsius
+  - MinimalDistributionFraction63umTo2mmType:
+    - fraction63to90um
+    - fraction710to1000um
+    - fraction1000to1400um
+    - fraction1400umto2mm
+  - MinimalDistributionFractionSmaller63umType:
+    - fraction0to2um
+  - SamplerType:
+    - taperAngle
+- SandFractionType:
+  - estimatedMedian
+- SaturatedPermeabilityDeterminationType:
+  - waterContentAfterwards.
+
+
+
+  Files dsbhr-g-messages.xsd and isbhr-g-messages.xsd
+
+  1. The brocommon namespace changed from 3.0 to 3.
