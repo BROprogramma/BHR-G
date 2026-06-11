@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 35.8.0">
+<meta name="generator" content="ReSpec 37.0.0">
 <style>
 .issue-label{text-transform:initial}
 .warning>p:first-child{margin-top:0}
@@ -29,6 +29,7 @@ dfn{cursor:pointer}
 .dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
 .dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
 .dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel .marker.cddl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
 .dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
 .dfn-panel a[href]:hover{border-bottom-width:1px}
 .dfn-panel ul{padding:0}
@@ -68,13 +69,17 @@ a.bibref{text-decoration:none}
 .respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
 }
 #references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+@media (prefers-color-scheme:dark){
+#references :target{background:color-mix(in srgb, #eaf3ff 15%, transparent)}
+}
+body:has(input[name=color-scheme][value=dark]:checked) #references :target{background:color-mix(in srgb, #eaf3ff 15%, transparent)}
 cite .bibref{font-style:italic}
 a[href].orcid{padding-left:4px;padding-right:4px}
 a[href].orcid>svg{margin-bottom:-2px}
 ol.tof,ul.tof{list-style:none outside none}
 .caption{margin-top:.5em;font-style:italic}
 #issue-summary>ul{column-count:2}
-#issue-summary li{list-style:none;display:inline-block}
+#issue-summary li{list-style:none}
 details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
 details.respec-tests-details>*{padding-right:2em}
 details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
@@ -83,7 +88,8 @@ details.respec-tests-details>ul{width:100%;margin-top:-.3em}
 details.respec-tests-details>li{padding-left:1em}
 .self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
 aside.example .marker>a.self-link{color:inherit}
-.header-wrapper{display:flex;align-items:baseline;position:relative;left:-.5em}
+.header-wrapper{display:flex;align-items:baseline}
+:is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2):has(+a.self-link){position:relative;left:-.5em}
 :is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-.7em;font-size:1rem;opacity:.5}
 :is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
 :is(h2,h3)+a.self-link{top:-.2em}
@@ -94,6 +100,8 @@ dd{margin-left:0}
 @media print{
 .removeOnSave{display:none}
 }
+body:has(input[name=color-scheme][value=light]:checked),head:not(:has(meta[name=color-scheme][content~=dark]))+body{color-scheme:light}
+body:has(input[name=color-scheme][value=dark]:checked){color-scheme:dark}
 </style>
 <style id="respec-nlgov">
 img.license{float:left;padding-right:5px;background:0 0}
@@ -354,7 +362,7 @@ img.license{float:left;padding-right:5px;background:0 0}
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/base.css"></head>
 
-<body class="h-entry informative toc-inline"><div class="head">
+<body class="h-entry informative"><div class="head">
     <a class="logo" href="https://www.geobasisregistraties.nl/basisregistraties/ondergrond"><img alt="Ministerie van Volkshuisvesting en Ruimtelijke Ordering" height="163" id="logo_minbzk" src="https://docs.geostandaarden.nl/bro/gen/logo_minbzk.png" width="776">
   </a> <h1 id="title" class="title">Catalogus registratie ondergrond Booronderzoek - Geologische boormonsterbeschrijving en boormonsteranalyse</h1>
     <h2 id="subtitle" class="subtitle">Versie 3.21</h2>
@@ -413,24 +421,20 @@ img.license{float:left;padding-right:5px;background:0 0}
 	<section id="inleiding">
 		<div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
 		<section id="leeswijzer"><div class="header-wrapper"><h3 id="x1-1-leeswijzer"><bdi class="secno">1.1 </bdi>Leeswijzer</h3><a class="self-link" href="#leeswijzer" aria-label="Permalink for Section 1.1"></a></div>
-        <p><a href="#inleiding">Hoofdstuk 1</a> geeft het doel en de doelgroep van een catalogus.</p>
-        <p><a href="#h2-algemene-kenmerken-en-begrippen">Hoofdstuk 2</a> behandelt enkele algemene aspecten van het systeem van de registratie ondergrond en begrippen van algemene aard.</p>
-        <p><a href="#booronderzoek">Hoofdstuk 3</a> plaatst het registratieobject in de gegevenssystematiek van de registratie ondergrond en vertelt wat de benadering is geweest bij het opstellen van de gegevensdefinitie.</p>
-        <p><a href="#booronderzoek_geologie">Hoofdstuk 4</a> is de toelichting op de gegevensdefinitie van het registratieobject.</p>
-        <p><a href="#h5-gegevensdefinitie">Hoofdstuk 5</a> vertelt hoe de gegevensdefinitie is opgebouwd en welke aspecten van de gegevens daarin worden beschreven.</p>
-        <p><a href="#gegevensdefinitie-0">Hoofdstuk 6</a> geeft de inhoud weer van het registratieobject, van de delen waaruit het is opgebouwd, de entiteiten, en van de eigenschappen van die entiteiten, de attributen.</p>
-        <p><a href="#uitbreidbare-waardelijsten">Hoofdstuk 7</a> geeft de inhoud van de uitbreidbare waardelijsten weer, dat wil zeggen een lijst van waarden die een attribuut uit hoofdstuk 6 mag hebben.</p></section>
+		<p><a href="#inleiding">Hoofdstuk 1</a> geeft het doel en de doelgroep van een catalogus.</p>
+		<p><a href="#h2-algemene-kenmerken-en-begrippen">Hoofdstuk 2</a> behandelt enkele algemene aspecten van het systeem van de registratie ondergrond en begrippen van algemene aard.</p>
+		<p><a href="#booronderzoek">Hoofdstuk 3</a> plaatst het registratieobject in de gegevenssystematiek van de registratie ondergrond en vertelt wat de benadering is geweest bij het opstellen van de gegevensdefinitie.</p>
+		<p><a href="#booronderzoek_geologie">Hoofdstuk 4</a> is de toelichting op de gegevensdefinitie van het registratieobject.</p>
+		<p><a href="#h5-gegevensdefinitie">Hoofdstuk 5</a> vertelt hoe de gegevensdefinitie is opgebouwd en welke aspecten van de gegevens daarin worden beschreven.</p>
+		<p><a href="#gegevensdefinitie-0">Hoofdstuk 6</a> geeft de inhoud weer van het registratieobject, van de delen waaruit het is opgebouwd, de entiteiten, en van de eigenschappen van die entiteiten, de attributen.</p>
+		<p><a href="#uitbreidbare-waardelijsten">Hoofdstuk 7</a> geeft de inhoud van de uitbreidbare waardelijsten weer, dat wil zeggen een lijst van waarden die een attribuut uit hoofdstuk 6 mag hebben.</p></section>
 		<section id="doel-en-doelgroep"><div class="header-wrapper"><h3 id="x1-2-doel-en-doelgroep"><bdi class="secno">1.2 </bdi>Doel en doelgroep</h3><a class="self-link" href="#doel-en-doelgroep" aria-label="Permalink for Section 1.2"></a></div>
-In de basisregistratie ondergrond (BRO) wordt een aantal typen gegevens geregistreerd, de registratieobjecten.
-
-<p>Een catalogus is de gegevensdefinitie van een registratieobject en beschrijft welke gegevens van dit registratieobject in de registratie ondergrond zijn opgeslagen. Het document is bedoeld voor alle gebruikers van de registratie ondergrond en maakt duidelijk welke gegevens er precies in de registratie ondergrond zijn opgenomen. Aan aanleverende partijen geeft het inzicht in welke gegevens in de registratie ondergrond moeten worden opgenomen en aan welke eisen die moeten voldoen. Aan afnemende partijen geeft het inzicht in welke gegevens zij in de registratie ondergrond mogen verwachten. Het document is voor een breed publiek bedoeld en de informatie moet naast precies ook begrijpelijk zijn.</p>
+In de basisregistratie ondergrond (BRO) wordt een aantal typen gegevens geregistreerd, de registratieobjecten.<p>Een catalogus is de gegevensdefinitie van een registratieobject en beschrijft welke gegevens van dit registratieobject in de registratie ondergrond zijn opgeslagen. Het document is bedoeld voor alle gebruikers van de registratie ondergrond en maakt duidelijk welke gegevens er precies in de registratie ondergrond zijn opgenomen. Aan aanleverende partijen geeft het inzicht in welke gegevens in de registratie ondergrond moeten worden opgenomen en aan welke eisen die moeten voldoen. Aan afnemende partijen geeft het inzicht in welke gegevens zij in de registratie ondergrond mogen verwachten. Het document is voor een breed publiek bedoeld en de informatie moet naast precies ook begrijpelijk zijn.</p>
 </section>
 		<section id="totstandkoming"><div class="header-wrapper"><h3 id="x1-3-totstandkoming"><bdi class="secno">1.3 </bdi>Totstandkoming</h3><a class="self-link" href="#totstandkoming" aria-label="Permalink for Section 1.3"></a></div>
 Een catalogus is het resultaat van een proces van standaardisatie dat geruime tijd in beslag kan nemen. Het standaardisatieproces is een open proces waarin de belanghebbende partijen actief betrokken worden. Het eindresultaat wordt vastgesteld als bijlage van de Regeling Bro.</section>
 		<section id="beheer"><div class="header-wrapper"><h3 id="x1-4-beheer"><bdi class="secno">1.4 </bdi>Beheer</h3><a class="self-link" href="#beheer" aria-label="Permalink for Section 1.4"></a></div>
-De eerste wettelijk vastgestelde catalogus (zoals bekendgemaakt in de Regeling Bro) krijgt het versienummer 1.0. Verwacht mag worden dat er na enige tijd behoefte ontstaat aan gegevens die nog niet in de catalogus zijn opgenomen.
-
-<p>De beheerder hanteert drie typen versies voor een wijziging van een catalogus. Bijvoorbeeld: versie 2.1.0 (=X.Y.Z):</p>
+De eerste wettelijk vastgestelde catalogus (zoals bekendgemaakt in de Regeling Bro) krijgt het versienummer 1.0. Verwacht mag worden dat er na enige tijd behoefte ontstaat aan gegevens die nog niet in de catalogus zijn opgenomen.<p>De beheerder hanteert drie typen versies voor een wijziging van een catalogus. Bijvoorbeeld: versie 2.1.0 (=X.Y.Z):</p>
 <p>X-wijzigingen
 Deze wijzigingen veranderen de structuur van de catalogus, en/of de namen van bestaande attributen of codelijsten (ook in de berichtencatalogi inname- en uitgiftewebservice) en/of de domeinwaarden. Hierdoor zijn X-wijzigingen niet backwards compatible.
 Frequentie: maximaal 1 keer per 2 jaar.</p>
@@ -444,20 +448,15 @@ Frequentie: maximaal 1 keer per jaar.</p>
 	</section>
 
 	
-	<section id="h2-algemene-kenmerken-en-begrippen"><div class="header-wrapper"><h2 id="x2-algemene-kenmerken-en-begrippen"><bdi class="secno">2. </bdi>Algemene kenmerken en begrippen</h2><a class="self-link" href="#h2-algemene-kenmerken-en-begrippen" aria-label="Permalink for Section 2."></a></div>
-
-<section id="opzet-van-de-landelijke-voorziening"><div class="header-wrapper"><h3 id="x2-1-opzet-van-de-landelijke-voorziening"><bdi class="secno">2.1 </bdi>Opzet van de landelijke voorziening</h3><a class="self-link" href="#opzet-van-de-landelijke-voorziening" aria-label="Permalink for Section 2.1"></a></div>
+	<section id="h2-algemene-kenmerken-en-begrippen"><div class="header-wrapper"><h2 id="x2-algemene-kenmerken-en-begrippen"><bdi class="secno">2. </bdi>Algemene kenmerken en begrippen</h2><a class="self-link" href="#h2-algemene-kenmerken-en-begrippen" aria-label="Permalink for Section 2."></a></div><section id="opzet-van-de-landelijke-voorziening"><div class="header-wrapper"><h3 id="x2-1-opzet-van-de-landelijke-voorziening"><bdi class="secno">2.1 </bdi>Opzet van de landelijke voorziening</h3><a class="self-link" href="#opzet-van-de-landelijke-voorziening" aria-label="Permalink for Section 2.1"></a></div>
 <p>De landelijke voorziening van de basisregistratie ondergrond (BRO) is een systeem dat een schakel vormt in een informatieketen. Aan het begin van de keten staan meestal bronhouders die gegevens genereren of ontvangen (artikel 9 van de Wet Bro). Deze gegevens levert de bronhouder of, namens hem, een dataleverancier, aan de beheerder van de landelijke voorziening van de BRO, de registerbeheerder. De bronhouder is verantwoordelijk voor de levering en de kwaliteit van gegevens. De registerbeheerder registreert de geleverde gegevens en levert deze voor (her)gebruik door aan allerlei afnemers, bijvoorbeeld aan een bronhouder vanuit haar rol als bevoegd gezag. </p>
 <p>De opzet van de BRO moet begrepen worden vanuit de verantwoordelijkheden die in de keten zijn belegd. De geleverde gegevens vallen onder de verantwoordelijkheid van de bronhouder en de registerbeheerder mag die gegevens niet veranderen. De registerbeheerder moet echter wel gegevens toevoegen om de BRO te kunnen beheren en hij kan gegevens toevoegen om de afnemers goed van dienst te kunnen zijn.</p>
 <p>Bij wet is geregeld dat de BRO zo wordt opgezet dat er onderscheid bestaat tussen de gegevens die aan de registerbeheerder zijn aangeleverd en de gegevens die de registerbeheerder aan de afnemers verstrekt. De BRO valt uiteen in twee grote deelsystemen, het register brondocumenten ondergrond en de registratie ondergrond (Figuur 1).</p>
 <p>Een geheel van gegevens dat een bronhouder levert, wordt een ‘brondocument’ genoemd. De brondocumenten worden in het register brondocumenten ondergrond opgeslagen. De gegevens uit de brondocumenten worden samen met de gegevens die de registerbeheerder toevoegt, in de registratie ondergrond vastgelegd. De registratie ondergrond is het deelsysteem dat gebruikt wordt voor uitgifte.</p>
 <figure id="fig-de-twee-grote-deelsystemen-van-de-landelijke-voorziening-van-de-bro">
-    <img src="https://docs.geostandaarden.nl/bro/gen/media/image002.png" width="350">
-    <figcaption><a class="self-link" href="#fig-de-twee-grote-deelsystemen-van-de-landelijke-voorziening-van-de-bro">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">De twee grote deelsystemen van de landelijke voorziening van de BRO.</span></figcaption>
-</figure><br><br>
-
-
-<p>Met deze opzet verkrijgt de BRO de nodige flexibiliteit. Zo kan een object in de registratie ondergrond gegevens bevatten die uit meer dan één brondocument afkomstig zijn en bij uitgifte kunnen gegevens van verschillende objecten met elkaar gecombineerd worden. Ook is het mogelijk met het brondocument gegevens op te slaan die alleen voor de bronhouder en de dataleverancier van belang zijn.</p>
+	<img src="https://docs.geostandaarden.nl/bro/gen/media/image002.png" width="350">
+	<figcaption><a class="self-link" href="#fig-de-twee-grote-deelsystemen-van-de-landelijke-voorziening-van-de-bro">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">De twee grote deelsystemen van de landelijke voorziening van de BRO.</span></figcaption>
+</figure><br><br><p>Met deze opzet verkrijgt de BRO de nodige flexibiliteit. Zo kan een object in de registratie ondergrond gegevens bevatten die uit meer dan één brondocument afkomstig zijn en bij uitgifte kunnen gegevens van verschillende objecten met elkaar gecombineerd worden. Ook is het mogelijk met het brondocument gegevens op te slaan die alleen voor de bronhouder en de dataleverancier van belang zijn.</p>
 <p>De catalogus dekt alle gegevens die opgenomen zijn in de registratie ondergrond. Verreweg de meeste gegevens komen uit de brondocumenten die de dataleverancier levert. Verder komen nog enkele gegevens voort uit de overdracht van een brondocument aan de registerbeheerder. Aan de geleverde gegevens voegt de registerbeheerder enkele gegevens toe. Als de registerbeheerder een gegeven heeft toegevoegd wordt dat in de beschrijving expliciet vermeld.</p>
 <p>Alle gegevens in de registratie ondergrond worden uitgegeven, maar niet alle afnemers krijgen alle gegevens geleverd. De gegevens die niet aan alle afnemers worden uitgeleverd zijn de gegevens die alleen nodig zijn in de communicatie tussen de registerbeheerder enerzijds en de dataleveranciers en bronhouders anderzijds, of niet openbaar zijn op grond van een wettelijk voorschrift. Zo zijn persoonsgegevens over bronhouder, dataleverancier en onderzoeker/uitvoerder alleen toegankelijk voor de betreffende bronhouder en dataleverancier op grond van de Algemene verordening gegevensbescherming (AVG).</p>
 </section><section id="registratieobject"><div class="header-wrapper"><h3 id="x2-2-registratieobject"><bdi class="secno">2.2 </bdi>Registratieobject</h3><a class="self-link" href="#registratieobject" aria-label="Permalink for Section 2.2"></a></div>
@@ -489,11 +488,9 @@ Deze historische gegevens kunnen niet altijd voldoen aan de strikte regels die d
 <p>Artikel 41 van de Wet Bro geeft de bronhouder van een gegeven over een registratieobject dat valt onder de categorie verkenningen, gedurende drie jaar na inwerkingtreding van dit registratieobject, een zekere mate van vrijheid om bij levering van gegevens te kiezen voor IMBRO/A. Als een gegeven voortkomt uit een schriftelijke opdracht van voor inwerkingtreding van dit registratieobject, kan het praktisch blijken het IMBRO/A-regime te hanteren voor gegevens die pas na deze datum zijn geproduceerd. De periode waarin de bronhouders die vrijheid hebben wordt de ‘transitieperiode’ genoemd. Na afloop van de transitieperiode kunnen alleen gegevens onder het strikte IMBRO-regime worden geleverd.</p>
 <p>In schema (artikelen verwijzen naar de wet Bro):</p>
 <figure id="fig-overzicht-verschillen-tussen-de-kwaliteitsregimes">
-    <img src="https://raw.githubusercontent.com/BROprogramma/generiek/gh-pages/media/tabel_kwaliteitsregime.png" width="350">
-    <figcaption><a class="self-link" href="#fig-overzicht-verschillen-tussen-de-kwaliteitsregimes">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Overzicht verschillen tussen de kwaliteitsregimes.</span></figcaption>
-</figure><br><br>
-
-<p>Voor een nadere toelichting van het kwaliteitsregime met een beschrijving van verschillende scenario's voor het corrigeren van het kwaliteitsregime van geleverde gegevens, wordt verwezen naar de <a href="https://www.bro-productomgeving.nl/bpo/latest/informatie-voor-bro-gebruikers/handreiking-aanleveren-bro-gegevens">Handreiking aanleveren BRO-gegevens</a> op de BRO-Productomgeving.</p>
+	<img src="https://raw.githubusercontent.com/BROprogramma/generiek/gh-pages/media/tabel_kwaliteitsregime.png" width="350">
+	<figcaption><a class="self-link" href="#fig-overzicht-verschillen-tussen-de-kwaliteitsregimes">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Overzicht verschillen tussen de kwaliteitsregimes.</span></figcaption>
+</figure><br><br><p>Voor een nadere toelichting van het kwaliteitsregime met een beschrijving van verschillende scenario's voor het corrigeren van het kwaliteitsregime van geleverde gegevens, wordt verwezen naar de <a href="https://www.bro-productomgeving.nl/bpo/latest/informatie-voor-bro-gebruikers/handreiking-aanleveren-bro-gegevens">Handreiking aanleveren BRO-gegevens</a> op de BRO-Productomgeving.</p>
 </section><section id="formele-en-materiele-geschiedenis"><div class="header-wrapper"><h3 id="x2-5-formele-en-materiele-geschiedenis"><bdi class="secno">2.5 </bdi>Formele en materiële geschiedenis</h3><a class="self-link" href="#formele-en-materiele-geschiedenis" aria-label="Permalink for Section 2.5"></a></div>
 <p>De BRO maakt deel uit van een stelsel van basisregistraties. Binnen het stelsel maakt men onderscheid tussen de materiële geschiedenis en de formele geschiedenis van een object.</p>
 <p>Het begrip materiële geschiedenis wordt gebruikt om de veranderingen van eigenschappen van een object in de werkelijkheid aan te duiden (dus niet attributen in een systeem). De materiële geschiedenis van een object wordt, voor zover relevant, in de BRO vastgelegd. Niet alle registratieobjecten hebben een materiële geschiedenis, alleen de registratieobjecten met een levensduur, zoals de grondwatermonitoringput.</p>
@@ -592,17 +589,13 @@ In een wand is de opbouw van de ondergrond direct zichtbaar en de plekken waar m
 <figure id="indeling_ruimte">
     <img src="https://docs.geostandaarden.nl/bro/bg/indeling_ruimte.png" alt="begrippen indeling ruimte" width="350">
     <figcaption><a class="self-link" href="#indeling_ruimte">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">De begrippen die in de basisregistratie ondergrond gebruikt worden voor de indeling van de ruimte.</span></figcaption>
-</figure>
-
-<p>Voor de basisregistratie omvat de <em>ondergrond</em> alles wat zich onder het oppervlak van de vaste aarde bevindt. Als we ons beperken tot de bovenste kilometers - het deel dat nog met boren wordt bereikt- bestaat de ondergrond van Nederland gewoonlijk uit relatief los materiaal bovenin en relatief vast materiaal onderin. In de basisregistratie ondergrond gebruiken we dat verschil om uitdrukking te geven aan de begrippen die we ook in de gewone spreektaal gebruiken: <em>grond</em>, en respectievelijk <em>gesteente</em>.</p>
+</figure><p>Voor de basisregistratie omvat de <em>ondergrond</em> alles wat zich onder het oppervlak van de vaste aarde bevindt. Als we ons beperken tot de bovenste kilometers - het deel dat nog met boren wordt bereikt- bestaat de ondergrond van Nederland gewoonlijk uit relatief los materiaal bovenin en relatief vast materiaal onderin. In de basisregistratie ondergrond gebruiken we dat verschil om uitdrukking te geven aan de begrippen die we ook in de gewone spreektaal gebruiken: <em>grond</em>, en respectievelijk <em>gesteente</em>.</p>
 <p>Het begrip <em>bodem</em> wordt gebruikt voor het bovenste deel van de ondergrond en dat op een nogal losse manier. Het begrip wordt vaak strikter gedefinieerd bijvoorbeeld door het te beperken tot de bovenste 120 cm van de ondergrond of tot het deel waarin bodemvormende processen spelen, maar die striktheid is vooralsnog niet handig gebleken.</p>
 <p>Het oppervlak dat de vaste aarde begrenst is een belangrijk element in het begrippenkader. Daar waar het oppervlak niet met water bedekt is, begint de ondergrond bij het <em>maaiveld</em> (<a href="#verticaal_referentiepunt" class="fig-ref" title="Het nulpunt voor de diepte, het lokaal verticaal referentiepunt, is in een boring het punt waar de boring het maaiveld (1) of de waterbodem (2) snijdt en is in een wand het punt waar de zgn. beschrijflijn het maaiveld snijdt. Wanden worden nooit gerealiseerd onder water waar de waterbodem als nulpunt fungeert. De afstand tussen het lokaal verticaal referentiepunt en het verticaal referentievlak, NAP in dit geval, is de verschuiving.">Figuur <bdi class="">4</bdi></a>). Daar waar de aarde bedekt is met water, begint de ondergrond bij de bodem van het waterlichaam, de <em>waterbodem</em>. Het grensvlak fungeert als nulpunt voor de diepte. In de terminologie van de basisregistratie is het <em>lokaal verticaal referentiepunt</em> het punt waar een boring of wand het grensvlak snijdt. De afstand tot het referentievlak - NAP op land - wordt <em>verschuiving</em> genoemd (<a href="#verticaal_referentiepunt" class="fig-ref" title="Het nulpunt voor de diepte, het lokaal verticaal referentiepunt, is in een boring het punt waar de boring het maaiveld (1) of de waterbodem (2) snijdt en is in een wand het punt waar de zgn. beschrijflijn het maaiveld snijdt. Wanden worden nooit gerealiseerd onder water waar de waterbodem als nulpunt fungeert. De afstand tussen het lokaal verticaal referentiepunt en het verticaal referentievlak, NAP in dit geval, is de verschuiving.">Figuur <bdi class="">4</bdi></a>).</p>
 <figure id="verticaal_referentiepunt">
     <img src="https://docs.geostandaarden.nl/bro/bg/BG_lokaal_verticaal_referentiepunt.png" alt="lokaal verticaal referentiepunt" width="50">
     <figcaption><a class="self-link" href="#verticaal_referentiepunt">Figuur <bdi class="figno">4</bdi></a> <span class="fig-title">Het nulpunt voor de diepte, het lokaal verticaal referentiepunt, is in een boring het punt waar de boring het maaiveld (1) of de waterbodem (2) snijdt en is in een wand het punt waar de zgn. beschrijflijn het maaiveld snijdt. Wanden worden nooit gerealiseerd onder water waar de waterbodem als nulpunt fungeert. De afstand tussen het lokaal verticaal referentiepunt en het verticaal referentievlak, NAP in dit geval, is de verschuiving.</span></figcaption>
-</figure>
-
-<p>Binnen bepaalde vakgebieden wordt in het onderzoek ook aandacht gegeven aan materiaal dat op de ondergrond ligt. In de bodemkunde en toegepaste geologie kan de laag strooisel die lokaal, met name in bossen, op het maaiveld ligt worden onderzocht (zie <a href="#indeling_ruimte" class="fig-ref" title="De begrippen die in de basisregistratie ondergrond gebruikt worden voor de indeling van de ruimte.">Figuur <bdi class="">3</bdi></a>). In de geotechniek en geologie wordt soms de laag slib, een mengsel van water en sediment, die lokaal op de waterbodem ligt in het onderzoek meegenomen (<a href="#verticaal_referentiepunt" class="fig-ref" title="Het nulpunt voor de diepte, het lokaal verticaal referentiepunt, is in een boring het punt waar de boring het maaiveld (1) of de waterbodem (2) snijdt en is in een wand het punt waar de zgn. beschrijflijn het maaiveld snijdt. Wanden worden nooit gerealiseerd onder water waar de waterbodem als nulpunt fungeert. De afstand tussen het lokaal verticaal referentiepunt en het verticaal referentievlak, NAP in dit geval, is de verschuiving.">Figuur <bdi class="">4</bdi></a>).</p>
+</figure><p>Binnen bepaalde vakgebieden wordt in het onderzoek ook aandacht gegeven aan materiaal dat op de ondergrond ligt. In de bodemkunde en toegepaste geologie kan de laag strooisel die lokaal, met name in bossen, op het maaiveld ligt worden onderzocht (zie <a href="#indeling_ruimte" class="fig-ref" title="De begrippen die in de basisregistratie ondergrond gebruikt worden voor de indeling van de ruimte.">Figuur <bdi class="">3</bdi></a>). In de geotechniek en geologie wordt soms de laag slib, een mengsel van water en sediment, die lokaal op de waterbodem ligt in het onderzoek meegenomen (<a href="#verticaal_referentiepunt" class="fig-ref" title="Het nulpunt voor de diepte, het lokaal verticaal referentiepunt, is in een boring het punt waar de boring het maaiveld (1) of de waterbodem (2) snijdt en is in een wand het punt waar de zgn. beschrijflijn het maaiveld snijdt. Wanden worden nooit gerealiseerd onder water waar de waterbodem als nulpunt fungeert. De afstand tussen het lokaal verticaal referentiepunt en het verticaal referentievlak, NAP in dit geval, is de verschuiving.">Figuur <bdi class="">4</bdi></a>).</p>
 </section>
 		<section id="registratieobject-booronderzoek">
 			<div class="header-wrapper"><h3 id="x3-5-registratieobject-booronderzoek"><bdi class="secno">3.5 </bdi>Registratieobject booronderzoek</h3><a class="self-link" href="#registratieobject-booronderzoek" aria-label="Permalink for Section 3.5"></a></div>
@@ -644,9 +637,7 @@ De tweede categorie gegevens omvat gegevens die voortkomen uit basisgegevens. De
 	</section>
 
 	
-	<section id="geologisch-booronderzoek"><div class="header-wrapper"><h2 id="x4-geologisch-booronderzoek"><bdi class="secno">4. </bdi>Geologisch booronderzoek</h2><a class="self-link" href="#geologisch-booronderzoek" aria-label="Permalink for Section 4."></a></div>
-
-<section id="inleiding-0"><div class="header-wrapper"><h3 id="x4-1-inleiding"><bdi class="secno">4.1 </bdi>Inleiding</h3><a class="self-link" href="#inleiding-0" aria-label="Permalink for Section 4.1"></a></div>
+	<section id="geologisch-booronderzoek"><div class="header-wrapper"><h2 id="x4-geologisch-booronderzoek"><bdi class="secno">4. </bdi>Geologisch booronderzoek</h2><a class="self-link" href="#geologisch-booronderzoek" aria-label="Permalink for Section 4."></a></div><section id="inleiding-0"><div class="header-wrapper"><h3 id="x4-1-inleiding"><bdi class="secno">4.1 </bdi>Inleiding</h3><a class="self-link" href="#inleiding-0" aria-label="Permalink for Section 4.1"></a></div>
 <p>De catalogus voor het geologisch booronderzoek beschrijft de gegevens die in de registratie ondergrond zijn opgenomen van het booronderzoek dat vanuit het vakgebied van de geologie is uitgevoerd. De catalogus beschrijft de algemene gegevens van dit booronderzoek samen met de gedetailleerde uitwerking van de gegevens van de boormonsterbeschrijving, en van de gegevens die voortkomen uit het analyseren van boormonsters, en kent een aantal beperkingen. De boormonsterbeschrijving omvat alleen de gegevens die onder de standaard boor beschrijvingsmethode die binnen de Geologische Dienst Nederland wordt gebruikt worden vastgelegd en de beschrijving van gesteente is nog niet opgenomen. Verder beperkt deze versie zich tot onderzoek dat onder kwaliteitsregime IMBRO valt. Het kwaliteitsregime IMBRO/A, dat bedoeld is voor historische gegevens, beperkt zich tot de beschrijvingen die onder de <i>standaard boor beschrijvingsmethode</i> (SBB), <i>archeologische standaard boorbeschrijvingsmethode</i> (ASB), <i>NEN 5104</i> en <i>Berendsen en Stouthamer</i> zijn vastgelegd. De eisen voor IMBRO/A voor andere historische gegevens, worden in een volgende versie opgenomen.</p>
 <p>Een <i>booronderzoek</i> is in de basisregistratie ondergrond het geheel van gegevens dat betrekking heeft op een specifiek booronderzoek dat op een specifiek moment en op een specifieke locatie in Nederland en onder een bepaalde opdracht is uitgevoerd. Booronderzoek levert een grote verscheidenheid aan gegevens en dat vraagt om ordening van informatie. Het belangrijkste gegeven om het onderzoek in te delen is het vakgebied.
 <br>Voor de gegevens die onder de basisregistratie ondergrond vallen, wordt een indeling in vijf verschillende vakgebieden gehanteerd. Naast geologie zijn dat toegepaste geologie, bodemkunde, cultuurtechniek en geotechniek. De catalogus voor het registratieobject komt in delen tot stand. Eerst wordt voor ieder vakgebied een catalogus gemaakt. Wanneer de vijf catalogi gereed zijn wordt een nieuwe catalogus gemaakt die alle vakgebieden omvat en waarin de ongewenste verschillen zijn weggenomen. Die catalogus geeft een samenhangende beschrijving van het registratieobject booronderzoek.</p>
@@ -655,7 +646,8 @@ De tweede categorie gegevens omvat gegevens die voortkomen uit basisgegevens. De
 Het specialistische karakter van het onderzoek komt onder meer naar voren in de eigen manier van het beschrijven van boormonsters. Die beschrijving is erop gericht gegevens vast te leggen die het mogelijk maken natuurlijke eenheden te identificeren. Daartoe wordt de samenstelling van het materiaal in detail vastgelegd en er wordt bijvoorbeeld gelet op allerlei aspecten die informatie in zich dragen over de omstandigheden waaronder het materiaal is gevormd en over de herkomst en de ouderdom ervan. Dat soort gegevens is nodig voor het maken van interpretaties die weer gebruikt worden voor het maken van de modellen. De interpretaties en de modellen vallen in de systematiek van de basisregistratie niet onder het booronderzoek. Modellen vormen een apart registratiedomein en alleen bepaalde landelijke modellen worden in de basisregistratie opgenomen. De modellen waarvoor de gegevens worden ingewonnen hebben een definiërend karakter en leveren de kaders voor praktisch alle vormen van onderzoek aan de ondergrond, waaronder booronderzoek vanuit andere vakgebieden.
 Geologisch booronderzoek wordt zowel op land als op zee uitgevoerd en kan tot duizenden meters diepte onder maaiveld of waterbodem reiken. Op grote diepte bestaat de ondergrond niet langer uit grond maar uit gesteente. Geologisch onderzoek richt zich vooral op de natuurlijke ondergrond, maar ook de grondlichamen die door de mens zijn neergelegd worden in het onderzoek meegenomen.
 De indeling naar vakgebied heeft haar beperkingen. In de werkelijkheid komt het voor dat booronderzoek een multidisciplinair karakter heeft en vanuit een combinatie van vakgebieden wordt uitgevoerd. Wanneer het om multidisciplinair onderzoek gaat dat een combinatie is van vakgebieden die onder de reikwijdte van de basisregistratie vallen, zullen de bijzondere eisen die ervoor gelden worden vastgelegd in de catalogus die voor het booronderzoek in zijn geheel gaat gelden.
-Archeologisch booronderzoek valt echter buiten het bereik van de basisregistratie ondergrond. Wanneer geologisch onderzoek wordt gecombineerd met archeologisch onderzoek wordt alleen het geologische deel van het onderzoek in de basisregistratie ondergrond opgenomen. In zo’n geval wordt wel gepreciseerd dat slechts een deel van de resultaten is geregistreerd.</p>
+Archeologisch booronderzoek valt echter buiten het bereik van de basisregistratie ondergrond. Wanneer geologisch onderzoek wordt gecombineerd met archeologisch onderzoek wordt alleen het geologische deel van het onderzoek in de basisregistratie ondergrond opgenomen. In zo’n geval wordt wel gepreciseerd dat slechts een deel van de resultaten is geregistreerd.
+			</p>
 </section><section id="boren"><div class="header-wrapper"><h4 id="x4-1-2-boren"><bdi class="secno">4.1.2 </bdi>Boren</h4><a class="self-link" href="#boren" aria-label="Permalink for Section 4.1.2"></a></div>
 <p>Booronderzoek omvat vormen van onderzoek die ermee beginnen dat de ondergrond door boren wordt ontsloten. Wat onder boren moet worden verstaan is in verreweg de meeste gevallen triviaal, het is het maken van een gat met behulp van een apparaat dat we een boor noemen. In de definities wordt duidelijk dat er ook andere manieren zijn om een gat in de ondergrond te maken en die worden gemakshalve toch tot het boren gerekend. Er worden echter ook gaten in de ondergrond gemaakt met afwijkende methoden die buiten het bereik van deze catalogus vallen. Dat zijn allemaal methoden die op water worden gebruikt en die tot doel hebben een hap uit de waterbodem te nemen. Apparaten die daarvoor gebruikt worden zijn bijvoorbeeld de boxcorer en de Van Veen-bodemhapper. Onderzoek dat gebaseerd is op dergelijke technieken valt helemaal buiten het bereik van de basisregistratie ondergrond en de reden daarvoor is dat de resultaten een zeer geringe waarde voor hergebruik hebben, omdat de diepte van het bemonsterde interval niet goed bepaald is en de waterbodem binnen korte tijd kan veranderen.</p>
 </section><section id="kwaliteit-van-de-monsters"><div class="header-wrapper"><h4 id="x4-1-3-kwaliteit-van-de-monsters"><bdi class="secno">4.1.3 </bdi>Kwaliteit van de monsters</h4><a class="self-link" href="#kwaliteit-van-de-monsters" aria-label="Permalink for Section 4.1.3"></a></div>
@@ -666,12 +658,10 @@ De kwaliteit van de monsters is van een groot aantal factoren afhankelijk: hoe e
 <p>In de boormonsterbeschrijving wordt het materiaal dat uit de ondergrond naar boven is gehaald, beschreven op een manier die inzicht geeft in de opbouw van de ondergrond en de globale eigenschappen ervan. De boormonsterbeschrijving is het onderzoek dat traditioneel de grondslag levert voor (hydro)geologische modellen. In het laboratorium worden allerlei proeven uitgevoerd om de samenstelling en een grote verscheidenheid aan eigenschappen nauwkeurig te bepalen. De verscheidenheid aan bepalingen is groot en iedere bepaling vraagt een eigen definitie. Dat vergt tijd en om die reden wordt de standaardisatie van boormonsteranalyse in fasen gerealiseerd.</p>
 <figure id="Figuur_deelonderzoeken">
   <img src="./media/BHR_G_deelonderzoeken.png" alt="Deelonderzoeken" width="350">
-    <figcaption><a class="self-link" href="#Figuur_deelonderzoeken">Figuur <bdi class="figno">6</bdi></a> <span class="fig-title">
+	<figcaption><a class="self-link" href="#Figuur_deelonderzoeken">Figuur <bdi class="figno">6</bdi></a> <span class="fig-title">
     Geologisch booronderzoek in deze versie van de catalogus; boormonsterfotografie en boorgatlogging zijn nog buiten scope.
   </span></figcaption>
-</figure>
-   
-</section><section id="methode-van-beschrijven"><div class="header-wrapper"><h4 id="x4-1-5-methode-van-beschrijven"><bdi class="secno">4.1.5 </bdi>Methode van beschrijven</h4><a class="self-link" href="#methode-van-beschrijven" aria-label="Permalink for Section 4.1.5"></a></div>
+</figure></section><section id="methode-van-beschrijven"><div class="header-wrapper"><h4 id="x4-1-5-methode-van-beschrijven"><bdi class="secno">4.1.5 </bdi>Methode van beschrijven</h4><a class="self-link" href="#methode-van-beschrijven" aria-label="Permalink for Section 4.1.5"></a></div>
 <p>Voor 2017 hadden boormonsterbeschrijvingen in de vakgebieden geologie, toegepaste geologie en de geotechniek een gemeenschappelijke grondslag en dat was de NEN 5104. Voor de geotechniek is internationaal inmiddels een nieuwe norm van kracht geworden en in 2019 is daarvan een Nederlandse invulling gemaakt (NEN-EN-ISO 14688). De nieuwe norm is op een andere leest geschoeid dan de oude. In de beschrijving van grond onder NEN 5104 staat de samenstelling van grond centraal en in de beschrijving onder NEN-EN-ISO 14688 het gedrag van grond. Dit verschil in benadering maakt de beschrijvingen minder geschikt voor de geologen die de landelijke (hydro)geologische modellen maken. Voor dat doel moet juist de samenstelling van de grond in de beschrijving centraal staan. De geologen van de Geologische Dienst Nederland die de landelijke modellen maakt, blijven zich daarom baseren op een eigen, op de NEN 5104 gebaseerde, methode: de Standaard Boor Beschrijvingsmethode (SBB).
 Met het van kracht worden van de nieuwe norm zijn de al bestaande verschillen tussen geologisch en geotechnisch booronderzoek groter geworden. Dat geldt ook voor het verschil tussen geologisch en toegepast geologisch onderzoek. Toegepast geologisch booronderzoek zal aansluiten op de NEN-EN-ISO 14688.
 De SBB kent verschillende kwaliteitsniveaus en die staan voor verschillen in expertiseniveau en monsterkwaliteit. Het expertiseniveau van de beschrijver bepaalt tot in welk detail de grond wordt beschreven en de kwaliteit van de monsters bepaalt welke aspecten worden beschreven. Van geroerde monsters worden met name de samenstelling en de kleur van de grond beschreven. De beschrijving van ongeroerde monsters is gericht op het herkennen van de lagen waaruit de ondergrond is opgebouwd. Van een laag worden allerlei aspecten vastgelegd die inzicht geven in de omstandigheden waaronder de laag is gevormd. De opdracht bepaalt het kwaliteitsniveau.<br>In de basisregistratie ondergrond kunnen niet alleen beschrijvingen die onder SBB zijn gemaakt worden geregistreerd, maar ook oude beschrijvingen die onder de ASB, NEN 5104 of Berendsen en Stouthamer zijn gemaakt kunnen onder het kwaliteitsregime IMBRO/A worden geregistreerd. Zowel onder de ASB, NEN 5104 en Berendsen en Stouthamer worden minder gegevens vastgelegd. Daarnaast werd bij oude beschrijvingen geen strikt onderscheid gemaakt tussen gegevens die uit het beschrijven en de gegevens die uit het meten voortkomen. Met als gevolg dat niet altijd duidelijk is waarop de gegevens van een oude beschrijving berusten. Bij beschrijvingen die onder NEN 5104 of Berendsen en Stouthamer tot stand zijn gekomen, zijn eventueel extra aspecten beschreven die geen onderdeel uitmaken van de procedure. Deze set booronderzoeken beslaat een breed spectrum in de mate van detail van beschrijven.</p>
@@ -683,9 +673,7 @@ Booronderzoek begint eigenlijk altijd met activiteiten in het veld en die worden
 <div class="note" role="note" id="voetnoot1"><div role="heading" class="note-title marker" id="h-note-0" aria-level="5"><span>Noot</span></div><div class="" role="note">
 <div role="heading" class="note-title marker" id="h-note" aria-level="5"></div>
 <aside class="">De eisen die voor de gegevens van deze vorm van booronderzoek moeten gelden zijn nog niet vastgesteld.</aside>
-</div></div>
-
-</section><section id="registratiegeschiedenis"><div class="header-wrapper"><h4 id="x4-2-2-registratiegeschiedenis"><bdi class="secno">4.2.2 </bdi>Registratiegeschiedenis</h4><a class="self-link" href="#registratiegeschiedenis" aria-label="Permalink for Section 4.2.2"></a></div>
+</div></div></section><section id="registratiegeschiedenis"><div class="header-wrapper"><h4 id="x4-2-2-registratiegeschiedenis"><bdi class="secno">4.2.2 </bdi>Registratiegeschiedenis</h4><a class="self-link" href="#registratiegeschiedenis" aria-label="Permalink for Section 4.2.2"></a></div>
 <p>De <i>registratiegeschiedenis</i> van een booronderzoek geeft de essentie van de geschiedenis van het object in de registratie ondergrond, de zgn. <i>formele geschiedenis</i>. De registratiegeschiedenis vertelt bijvoorbeeld wanneer voor het eerst gegevens van het object zijn geregistreerd en of er na registratie correcties zijn doorgevoerd.</p>
 </section><section id="rapportagegeschiedenis"><div class="header-wrapper"><h4 id="x4-2-3-rapportagegeschiedenis"><bdi class="secno">4.2.3 </bdi>Rapportagegeschiedenis</h4><a class="self-link" href="#rapportagegeschiedenis" aria-label="Permalink for Section 4.2.3"></a></div>
 <p>De bronhouder beslist of hij de resultaten van een booronderzoek in delen of in hun geheel gerapporteerd wil krijgen. Wanneer een rapport dat onder de wettelijke verplichtingen valt door de bronhouder is geaccepteerd, wordt het ter registratie aan de landelijke voorziening aangeboden. De <i>rapportagegeschiedenis</i> geeft de essentie van het verloop van de rapportage en vormt de zgn. <i>materiële geschiedenis</i> van het object booronderzoek.</p>
@@ -703,16 +691,12 @@ Wanneer men ten slotte klaar is met boren kan het ontstane gat op een bepaalde m
   <figcaption><a class="self-link" href="#Figuur_bemonsteringsapparaat1">Figuur <bdi class="figno">7</bdi></a> <span class="fig-title">
     Het bemonsteringsapparaat: (a) een apparaat met een haakse steekmond, (b) een apparaat waarvan de steekmond een hoek (α) maakt met de verticaal en (c) een apparaat als b maar dan voorzien van een passieve zuiger. De letter l geeft de lengte van de container aan, d<sub>1</sub> de doorgangsdiameter en d<sub>2</sub> de diameter van de steekmond. De diameter van de container is gelijk aan de doorgangsdiameter.
   </span></figcaption>
-</figure>
-
-<figure id="Figuur_bemonsteringsapparaat2">
+</figure><figure id="Figuur_bemonsteringsapparaat2">
   <img src="./media/BHR_G_bemonsteringsapparaat2.png" alt="Bemonsteringsapparaat2" width="500">
   <figcaption><a class="self-link" href="#Figuur_bemonsteringsapparaat2">Figuur <bdi class="figno">8</bdi></a> <span class="fig-title">
-      Het bemonsteringsapparaat: (a) een apparaat met een afschroefbare steekmond en een vanger en (b) eenzelfde apparaat maar dan met een variabele diameter en een container die voorzien is van een liner. De letter l geeft de lengte van de container aan, d<sub>1</sub> de doorgangsdiameter, d<sub>2</sub> de diameter van de steekmond en d<sub>3</sub> de diameter van de container.
+  	Het bemonsteringsapparaat: (a) een apparaat met een afschroefbare steekmond en een vanger en (b) eenzelfde apparaat maar dan met een variabele diameter en een container die voorzien is van een liner. De letter l geeft de lengte van de container aan, d<sub>1</sub> de doorgangsdiameter, d<sub>2</sub> de diameter van de steekmond en d<sub>3</sub> de diameter van de container.
   </span></figcaption>
-</figure>	
-           
-</section><section id="terreintoestand"><div class="header-wrapper"><h4 id="x4-2-6-terreintoestand"><bdi class="secno">4.2.6 </bdi>Terreintoestand</h4><a class="self-link" href="#terreintoestand" aria-label="Permalink for Section 4.2.6"></a></div>
+</figure>	</section><section id="terreintoestand"><div class="header-wrapper"><h4 id="x4-2-6-terreintoestand"><bdi class="secno">4.2.6 </bdi>Terreintoestand</h4><a class="self-link" href="#terreintoestand" aria-label="Permalink for Section 4.2.6"></a></div>
 <p>Voor, tijdens of direct na het boren kunnen in het veld waarnemingen worden gedaan die deel uitmaken van het booronderzoek. Die waarnemingen hebben betrekking op de toestand van het terrein. Dat begrip wordt in nogal ruime zin opgevat en dekt alle gegevens die vastgelegd worden om een goed begrip te krijgen van de ruimtelijke context waarbinnen het onderzoek is uitgevoerd.</p>
 </section><section id="sliblaag"><div class="header-wrapper"><h4 id="x4-2-7-sliblaag"><bdi class="secno">4.2.7 </bdi>Sliblaag</h4><a class="self-link" href="#sliblaag" aria-label="Permalink for Section 4.2.7"></a></div>
 <p>Bij boren op water kan er op de waterbodem een laag slib blijken te liggen. Wanneer dat voor het onderzoek relevant geacht is, worden enkele kenmerken daarvan vastgelegd.</p>
@@ -729,9 +713,7 @@ Een boorprofiel heeft een bepaalde beschrijfkwaliteit en dat wil zeggen dat de k
 </figure>
 Over het hele boortraject zijn monsters met een relatief lage kwaliteit, <i>geroerde</i> monsters, genomen. Daarnaast zijn van bepaalde dieptes monsters met een hoge kwaliteit, <i>ongeroerde</i> monsters, verkregen. Het verschil in kwaliteit is zo groot dat de monsters apart beschreven moeten worden. In het eerste geval ontstaat een continu profiel, in het tweede een discontinu profiel.
 Het uitgangspunt is dat het boorprofiel alle met een bepaalde kwaliteit bemonsterde intervallen dekt en dat de bemonsterde intervallen compleet zijn beschreven. Het kan echter zijn dat dit niet gelukt is, bijvoorbeeld omdat er per ongeluk een monster verdwenen is. De intervallen die niet beschreven konden worden, worden expliciet in het profiel opgenomen (<i>Niet-beschreven interval</i>) en de reden waarom het niet beschreven is wordt vastgelegd.
-De beschrijfkwaliteit duidt de mate van detail waarmee de opbouw van de ondergrond in het boorprofiel is beschreven. In de catalogus is dit verwerkt in regels bij de attributen. Een overzichtelijke samenvatting is beschikbaar op de BRO-productomgeving (zie BHR-G Overzicht beschrijfkwaliteiten versie 3.2). Voor details en de precieze definitie moet altijd de gegevensdefinitie in deze catalogus worden geraadpleegd.
-
-</section><section id="laag"><div class="header-wrapper"><h4 id="x4-2-10-laag"><bdi class="secno">4.2.10 </bdi>Laag</h4><a class="self-link" href="#laag" aria-label="Permalink for Section 4.2.10"></a></div>
+De beschrijfkwaliteit duidt de mate van detail waarmee de opbouw van de ondergrond in het boorprofiel is beschreven. In de catalogus is dit verwerkt in regels bij de attributen. Een overzichtelijke samenvatting is beschikbaar op de BRO-productomgeving (zie BHR-G Overzicht beschrijfkwaliteiten versie 3.2). Voor details en de precieze definitie moet altijd de gegevensdefinitie in deze catalogus worden geraadpleegd.</section><section id="laag"><div class="header-wrapper"><h4 id="x4-2-10-laag"><bdi class="secno">4.2.10 </bdi>Laag</h4><a class="self-link" href="#laag" aria-label="Permalink for Section 4.2.10"></a></div>
 <p>De belangrijkste entiteiten in een boorprofiel zijn de lagen. Een laag bestaat uit grond of uit bijzonder materiaal, dat is materiaal dat niet als grond of gesteente wordt beschouwd (of uit gesteente, maar dat valt nog buiten het bereik van de catalogus). Een laag die uit bijzonder materiaal bestaat wordt summier beschreven, een laag die uit grond bestaat wordt uitvoerig beschreven. Een laag heeft een boven- en ondergrens en is van natuurlijke of menselijke (<i>antropogeen</i>) oorsprong.
 Wat een laag in een geologisch boorprofiel voorstelt, hangt echter af van de kwaliteit van de monsters.<br>Onder NEN 5104 is niet vastgelegd op welke wijze de grenzen van lagen zijn bepaald. Ook zijn er geen beperkingen gesteld aan de laagdikte. Veiligheidshalve zou men de lagen in een boorprofiel dat is beschreven onder NEN 5104 altijd moeten beschouwen als beschrijfeenheden.
 In een boorprofiel dat betrekking heeft op geroerde monsters, is de laag een bemonsteringseenheid en vertegenwoordigt iedere laag een monster. Zo’n laag wordt beschreven als een lithologisch homogeen geheel en heeft een soort grond (<i>Grond</i>).
@@ -746,9 +728,7 @@ In het derde, zeer sporadisch voorkomende geval (<a href="#Figuur_lagen" class="
   <figcaption><a class="self-link" href="#Figuur_lagen">Figuur <bdi class="figno">10</bdi></a> <span class="fig-title">
     De lichtgekleurde laag stelt een eenheid voor die uit een andere grondsoort bestaat dan de aangrenzende lagen. In het eerste geval (a) wordt de laag als een homogeen geheel beschreven met daarin een afwijkend laagje. In het tweede geval (b) wordt de laag beschreven als opgebouwd uit laagjes die in grondsoort verschillen. In het derde geval (c) wordt de laag beschreven als opgebouwd uit laagdelen die in grondsoort verschillen.
   </span></figcaption>
-</figure>	
-            
-</section><section id="grond"><div class="header-wrapper"><h4 id="x4-2-11-grond"><bdi class="secno">4.2.11 </bdi>Grond</h4><a class="self-link" href="#grond" aria-label="Permalink for Section 4.2.11"></a></div>
+</figure>	</section><section id="grond"><div class="header-wrapper"><h4 id="x4-2-11-grond"><bdi class="secno">4.2.11 </bdi>Grond</h4><a class="self-link" href="#grond" aria-label="Permalink for Section 4.2.11"></a></div>
 <p>Onder SBB 6 versie 2022 wordt van grond altijd de grondsoort, de kleur, de hoeveelheid glauconiet en het al dan niet voorkomen van sporen van beworteling vastgelegd. Welke kenmerken er verder worden vastgelegd hangt af van de beschrijfkwaliteit, de kwaliteit van de monsters en de grondsoort.	Om de gegevens beter bruikbaar te maken voor de geotechniek wordt naast de geologische naam van de grondsoort, ook de geotechnische naam volgens NEN-EN-ISO 14688 vastgelegd.
 Wanneer de grond bestanddelen bevat die niet als een normaal onderdeel van grond gelden, wordt het voorkomen ervan beschreven (<i>Bijzonder bestanddeel</i>) en hetzelfde geldt voor brokjes van een andere grondsoort (<i>Brokje</i>). Welke kenmerken er verder worden vastgelegd hangt af van de grondsoort en de beschrijfkwaliteit, en dat laatste wil zeggen: de combinatie van expertiseniveau en kwaliteit van de monsters.<br>Onder NEN 5104 wordt altijd de grondsoort vastgelegd en afhankelijk van de grondsoort ook het gehalte aan grind en organische stof. Wat er verder wordt vastgelegd is onder NEN 5104 niet gespecificeerd.</p>
 </section><section id="grindfractie"><div class="header-wrapper"><h4 id="x4-2-12-grindfractie"><bdi class="secno">4.2.12 </bdi>Grindfractie</h4><a class="self-link" href="#grindfractie" aria-label="Permalink for Section 4.2.12"></a></div>
@@ -761,7 +741,7 @@ Wanneer de grond bestanddelen bevat die niet als een normaal onderdeel van grond
 <p>Het deel van de grond dat uit organisch materiaal bestaat wordt apart beschreven. Standaard wordt benoemd of het houtige of niet-houtige plantenresten betreft. De specialisten benoemen ook de verschillende soorten plantenresten (<i>Organisch bestanddeel</i>). Wanneer het organisch materiaal veen bevat, wordt ook het soort veen benoemd (<i>soort veen</i>).</p>
 </section><section id="afwijkend-laagje-insluitsel-sedimentlens-en-vlek"><div class="header-wrapper"><h4 id="x4-2-16-afwijkend-laagje-insluitsel-sedimentlens-en-vlek"><bdi class="secno">4.2.16 </bdi>Afwijkend laagje, insluitsel, sedimentlens en vlek</h4><a class="self-link" href="#afwijkend-laagje-insluitsel-sedimentlens-en-vlek" aria-label="Permalink for Section 4.2.16"></a></div>
 <p>Bij de beschrijving van grond van ongeroerde monsters wordt niet alleen op het voorkomen van brokjes van andere grondsoorten gelet. Andere grondsoorten kunnen ook voorkomen in de vorm van laagjes (<i>Afwijkend laagje</i>), als lenzen die sedimentair van oorsprong zijn (<i>Sedimentlens</i>) of als grillig verlopende lichamen die door de verstoring van dunne laagjes zijn ontstaan (<i>Insluitsel</i>).
-                <br>Wanneer de grond gevlekt is wordt het voorkomen van de vlekken beschreven (<i>Vlek</i>).</p>
+				<br>Wanneer de grond gevlekt is wordt het voorkomen van de vlekken beschreven (<i>Vlek</i>).</p>
 </section><section id="munsellkleur-en-dierlijk-fossiel"><div class="header-wrapper"><h4 id="x4-2-17-munsellkleur-en-dierlijk-fossiel"><bdi class="secno">4.2.17 </bdi>Munsellkleur en dierlijk fossiel</h4><a class="self-link" href="#munsellkleur-en-dierlijk-fossiel" aria-label="Permalink for Section 4.2.17"></a></div>
 <p>Beschrijvers met een bijzondere expertise leggen het voorkomen van de fossiele resten van bepaalde dierlijke organismen (<i>Dierlijk fossiel</i>) vast bij de uitgebreide beschrijving. De kleur van de grond volgens de systematiek van Munsell (<i>Munsellkleur</i>) wordt ook bij de uitgebreide beschrijving vastgelegd.</p>
 </section><section id="fractieverdeling"><div class="header-wrapper"><h4 id="x4-2-18-fractieverdeling"><bdi class="secno">4.2.18 </bdi>Fractieverdeling</h4><a class="self-link" href="#fractieverdeling" aria-label="Permalink for Section 4.2.18"></a></div>
@@ -772,9 +752,7 @@ Een voorbeeld in <a href="#Figuur_fractieverdeling" class="fig-ref" title="Er wo
   <figcaption><a class="self-link" href="#Figuur_fractieverdeling">Figuur <bdi class="figno">11</bdi></a> <span class="fig-title">
     Er worden zes categorieën grond onderscheiden. Van zeer grove minerale gronden en bijzondere gronden wordt geen fractieverdeling bepaald, van de andere wel. Per categorie grond is in kleur aangegeven welke fracties tot 100 procent optellen. Voor verdere toelichting zie de tekst.
   </span></figcaption>
-</figure>
-
-</section><section id="post-sedimentaire-discontinuiteit"><div class="header-wrapper"><h4 id="x4-2-19-post-sedimentaire-discontinuiteit"><bdi class="secno">4.2.19 </bdi>Post-sedimentaire discontinuïteit</h4><a class="self-link" href="#post-sedimentaire-discontinuiteit" aria-label="Permalink for Section 4.2.19"></a></div>
+</figure></section><section id="post-sedimentaire-discontinuiteit"><div class="header-wrapper"><h4 id="x4-2-19-post-sedimentaire-discontinuiteit"><bdi class="secno">4.2.19 </bdi>Post-sedimentaire discontinuïteit</h4><a class="self-link" href="#post-sedimentaire-discontinuiteit" aria-label="Permalink for Section 4.2.19"></a></div>
 <p>De laagopbouw kan verstoord zijn doordat discontinuïteiten de lagen doorsnijden. Wanneer de laagopbouw ondanks de verstoring nog goed te beschrijven is, worden naast de lagen ook de kenmerken van de discontinuïteit vastgelegd. De zogenaamde post-sedimentaire discontinuïteit is van menselijke (antropogeen) of natuurlijke oorsprong, zoals breuken, krimpscheuren en ijswiggen. Als door verstoring de beschrijving van de laagopbouw praktisch onmogelijk is, wordt het verstoorde interval niet beschreven. In dat geval beveelt de procedure aan een foto van het verstoorde interval te maken.</p>
 </section><section id="boormonsteranalyse"><div class="header-wrapper"><h4 id="x4-2-20-boormonsteranalyse"><bdi class="secno">4.2.20 </bdi>Boormonsteranalyse</h4><a class="self-link" href="#boormonsteranalyse" aria-label="Permalink for Section 4.2.20"></a></div>
 <p>Boormonsteranalyse is het deelonderzoek dat betrekking heeft op het doen van metingen aan boormonsters. De metingen worden in een laboratorium uitgevoerd. De catalogus dekt een deel van de bepalingen die in standaard geologisch booronderzoek uitgevoerd worden en dat zijn altijd bepalingen aan grond en bijzonder materiaal.
@@ -789,9 +767,7 @@ In sommige gevallen vereist een bepaling een niet verstoord monster. Het deel da
 In het middelste geval wordt alleen materiaal genomen om te onderzoeken op eigenschappen; er blijft voldoende materiaal over om het materiaal op normale wijze te beschrijven. 
 In het onderste interval word een ring gestoken uit een niet verstoord boormonster; er blijft onvoldoende materiaal over en het materiaal kan niet op de normale wijze worden beschreven en blijft buiten de boormonsterbeschrijving. In bepaalde gevallen worden de boven- en onderkant afgesneden, de zogenaamde afsnijdsels, en worden gebruikt voor aanvullende bepalingen.
   </span></figcaption>
-</figure>
-
-<p>Welke bepalingen er zijn uitgevoerd, wordt voor ieder onderzocht interval vastgelegd. Het gaat om hydrofysische eigenschappen, eigenschappen die op de samenstelling van het materiaal betrekking hebben of chemische eigenschappen.
+</figure><p>Welke bepalingen er zijn uitgevoerd, wordt voor ieder onderzocht interval vastgelegd. Het gaat om hydrofysische eigenschappen, eigenschappen die op de samenstelling van het materiaal betrekking hebben of chemische eigenschappen.
 Iedere bepaling die als onderdeel van de boormonsteranalyse wordt uitgevoerd, is aan een bepaalde procedure onderworpen en wordt volgens een bepaalde methode uitgevoerd. Wanneer er in de uitvoering keuzen worden gemaakt die voor de gebruiker van de gegevens relevant kan zijn, worden die vastgelegd. Datzelfde geldt voor de eventuele bijzonderheden die zich tijdens de uitvoering voordoen of die men na afloop constateert door het materiaal te bekijken.</p>
 </section><section id="onderzocht-materiaal"><div class="header-wrapper"><h4 id="x4-2-22-onderzocht-materiaal"><bdi class="secno">4.2.22 </bdi>Onderzocht materiaal</h4><a class="self-link" href="#onderzocht-materiaal" aria-label="Permalink for Section 4.2.22"></a></div>
 <p>Het materiaal waaruit een proefstuk bestaat dat de volledige doorsnede van een niet verstoord boormonster omvat, wordt pas na afloop van de bepaling beschreven (zie <a href="#Figuur_onderzocht_interval" class="fig-ref" title="In het bovenste interval wordt een ring gestoken uit een niet verstoord boormonster en het materiaal in de ring vormt het proefstuk dat wordt onderzocht, daarnaast wordt uit hetzelfde interval materiaal genomen om te onderzoeken op andere eigenschappen; er blijft voldoende materiaal over om het materiaal op normale wijze te beschrijven. In het middelste geval wordt alleen materiaal genomen om te onderzoeken op eigenschappen; er blijft voldoende materiaal over om het materiaal op normale wijze te beschrijven. In het onderste interval word een ring gestoken uit een niet verstoord boormonster; er blijft onvoldoende materiaal over en het materiaal kan niet op de normale wijze worden beschreven en blijft buiten de boormonsterbeschrijving. In bepaalde gevallen worden de boven- en onderkant afgesneden, de zogenaamde afsnijdsels, en worden gebruikt voor aanvullende bepalingen.">Figuur <bdi class="">12</bdi></a>). Het resultaat wordt apart vastgelegd en alleen de aspecten die na afloop van de bepaling nog als representatief voor het oorspronkelijk monster kunnen worden beschouwd, worden beschreven. In het uitzonderlijke geval dat het interval uit bijzonder materiaal bestaat, wordt alleen de naam van het materiaal vastgelegd.</p>
@@ -832,9 +808,7 @@ Het gegeven is een basisparameter die altijd samen met andere gegevens gebruikt 
 </section></section>
 
 	
-	<section id="h5-gegevensdefinitie"><div class="header-wrapper"><h2 id="x5-opbouw-van-de-gegevensdefinitie"><bdi class="secno">5. </bdi>Opbouw van de gegevensdefinitie</h2><a class="self-link" href="#h5-gegevensdefinitie" aria-label="Permalink for Section 5."></a></div>
-
-<section id="de-gegevensdefinitie"><div class="header-wrapper"><h3 id="x5-1-de-gegevensdefinitie"><bdi class="secno">5.1 </bdi>De gegevensdefinitie</h3><a class="self-link" href="#de-gegevensdefinitie" aria-label="Permalink for Section 5.1"></a></div>
+	<section id="h5-gegevensdefinitie"><div class="header-wrapper"><h2 id="x5-opbouw-van-de-gegevensdefinitie"><bdi class="secno">5. </bdi>Opbouw van de gegevensdefinitie</h2><a class="self-link" href="#h5-gegevensdefinitie" aria-label="Permalink for Section 5."></a></div><section id="de-gegevensdefinitie"><div class="header-wrapper"><h3 id="x5-1-de-gegevensdefinitie"><bdi class="secno">5.1 </bdi>De gegevensdefinitie</h3><a class="self-link" href="#de-gegevensdefinitie" aria-label="Permalink for Section 5.1"></a></div>
 <p>De gegevensdefinitie vormt het hart van de catalogus en geeft een beschrijving van alle gegevens van het registratieobject. Eerst wordt de definitie van het registratieobject gegeven inclusief de plaatjes van het zgn. domeinmodel, en vervolgens de definities van de entiteiten waaruit het registratieobject is opgebouwd met de eigenschappen van die entiteiten, de attributen. De entiteiten worden op volgorde van de nummers in het domeinmodel behandeld. De volgende aspecten van de gegevens worden vastgelegd.</p>
 <ul>
 <li><p>De Nederlandse naam van het gegeven.</p>
@@ -995,53 +969,39 @@ In de registratie ondergrond zijn de geometrieën conform het GML Simple Feature
 <section id="punt"><div class="header-wrapper"><h5 id="x5-2-8-1-punt"><bdi class="secno">5.2.8.1 </bdi>Punt</h5><a class="self-link" href="#punt" aria-label="Permalink for Section 5.2.8.1"></a></div>
 <p>Het domein 'Punt' wordt gebruikt om de positie van een object vast te leggen. De positie wordt bepaald in een tweedimensionaal vlak, een specifiek referentiestelsel en uitgedrukt in coördinaten. In sommige gevallen wordt daarnaast de hoogte (derde dimensie) van het Punt vastgelegd.</p>
 <figure id="fig-een-punt-geometrie-iso-19107-2003-spatial-schema">
-    <img src="https://docs.geostandaarden.nl/bro/gen/media/punt.png" alt="Punt" width="150">
-    <figcaption><a class="self-link" href="#fig-een-punt-geometrie-iso-19107-2003-spatial-schema">Figuur <bdi class="figno">13</bdi></a> <span class="fig-title">Een punt geometrie (ISO 19107:2003 Spatial Schema).</span></figcaption>
-</figure><br><br>
-
-</section><section id="lijn"><div class="header-wrapper"><h5 id="x5-2-8-2-lijn"><bdi class="secno">5.2.8.2 </bdi>Lijn</h5><a class="self-link" href="#lijn" aria-label="Permalink for Section 5.2.8.2"></a></div>
+	<img src="https://docs.geostandaarden.nl/bro/gen/media/punt.png" alt="Punt" width="150">
+	<figcaption><a class="self-link" href="#fig-een-punt-geometrie-iso-19107-2003-spatial-schema">Figuur <bdi class="figno">13</bdi></a> <span class="fig-title">Een punt geometrie (ISO 19107:2003 Spatial Schema).</span></figcaption>
+</figure><br><br></section><section id="lijn"><div class="header-wrapper"><h5 id="x5-2-8-2-lijn"><bdi class="secno">5.2.8.2 </bdi>Lijn</h5><a class="self-link" href="#lijn" aria-label="Permalink for Section 5.2.8.2"></a></div>
 <p>Het domein 'Lijn' wordt gebruikt om de vorm, afmetingen en positie van een object in een lijn uit te drukken. De positie wordt bepaald in een specifiek referentiestelsel en uitgedrukt in één of meerdere lijnsegmenten. Een lijnsegment is de verbinding tussen twee punten. Lijnsegmenten zijn aan elkaar verbonden doordat het eindpunt van een segment is verbonden aan het beginpunt van een volgend lijnsegment. Een Lijn kan in een tweedimensionaal vlak (x- en y-coördinaat of in een driedimensionale ruimte (x-, y- en z-coördinaat) worden vastgelegd.</p>
 <figure id="fig-een-lijn-geometrie-iso-19107-2003-spatial-schema">
-    <img src="https://docs.geostandaarden.nl/bro/gen/media/lijn.png" alt="Lijn" width="150">
-    <figcaption><a class="self-link" href="#fig-een-lijn-geometrie-iso-19107-2003-spatial-schema">Figuur <bdi class="figno">14</bdi></a> <span class="fig-title">Een lijn geometrie (ISO 19107:2003 Spatial Schema).</span></figcaption>
-</figure><br><br>
-
-</section><section id="multilijn"><div class="header-wrapper"><h5 id="x5-2-8-3-multilijn"><bdi class="secno">5.2.8.3 </bdi>Multilijn</h5><a class="self-link" href="#multilijn" aria-label="Permalink for Section 5.2.8.3"></a></div>
+	<img src="https://docs.geostandaarden.nl/bro/gen/media/lijn.png" alt="Lijn" width="150">
+	<figcaption><a class="self-link" href="#fig-een-lijn-geometrie-iso-19107-2003-spatial-schema">Figuur <bdi class="figno">14</bdi></a> <span class="fig-title">Een lijn geometrie (ISO 19107:2003 Spatial Schema).</span></figcaption>
+</figure><br><br></section><section id="multilijn"><div class="header-wrapper"><h5 id="x5-2-8-3-multilijn"><bdi class="secno">5.2.8.3 </bdi>Multilijn</h5><a class="self-link" href="#multilijn" aria-label="Permalink for Section 5.2.8.3"></a></div>
 <p>Het domein 'Multilijn' bestaat uit een verzameling van lijnen die gezamenlijk één object vormen en wordt gebruikt om de vorm, afmetingen en positie van een object in meerdere lijnen uit te drukken. De positie wordt bepaald in een specifiek referentiestelsel en uitgedrukt in meer lijnen met één of meerdere lijnsegmenten. Tussen de lijnen die samen een Multilijn vormen mag geen intersectie plaatsvinden tenzij dit gebeurt in de eindpunten van de lijnen (er mag geen kruising van lijnen plaatsvinden, wel vertakkingen). Een Multilijn kan in een tweedimensionaal vlak (x- en y-coördinaat) of in een driedimensionale ruimte (x-, y- en z-coördinaat) worden vastgelegd.</p>
 <figure id="fig-een-multilijn-geometrie">
-    <img src="https://docs.geostandaarden.nl/bro/gen/media/multilijn.png" alt="Multilijn" width="150">
-    <figcaption><a class="self-link" href="#fig-een-multilijn-geometrie">Figuur <bdi class="figno">15</bdi></a> <span class="fig-title">Een multilijn geometrie</span></figcaption>
-</figure><br><br>
-
-</section><section id="vlak"><div class="header-wrapper"><h5 id="x5-2-8-4-vlak"><bdi class="secno">5.2.8.4 </bdi>Vlak</h5><a class="self-link" href="#vlak" aria-label="Permalink for Section 5.2.8.4"></a></div>
+	<img src="https://docs.geostandaarden.nl/bro/gen/media/multilijn.png" alt="Multilijn" width="150">
+	<figcaption><a class="self-link" href="#fig-een-multilijn-geometrie">Figuur <bdi class="figno">15</bdi></a> <span class="fig-title">Een multilijn geometrie</span></figcaption>
+</figure><br><br></section><section id="vlak"><div class="header-wrapper"><h5 id="x5-2-8-4-vlak"><bdi class="secno">5.2.8.4 </bdi>Vlak</h5><a class="self-link" href="#vlak" aria-label="Permalink for Section 5.2.8.4"></a></div>
 <p>Het domein 'Vlak' wordt binnen de geometrie gebruikt voor de representatie van de vorm, afmetingen en positie van een object als een vlak. De positie wordt bepaald in een specifiek referentiestelsel. Een vlak heeft altijd een buitengrens, daarnaast kan een vlak ook nog een of meer interne begrenzingen hebben. Een Vlak kan in een tweedimensionaal vlak (x- en y-coördinaat) of in een driedimensionale ruimte (x-, y- en z-coördinaat) worden vastgelegd.</p>
 <figure id="fig-een-vlak-is-een-geometrie-dat-een-beeld-van-een-continue-regio-of-vlak-vertegenwoordigd-iso-19107-2003-spatial-schema">
-    <img src="https://docs.geostandaarden.nl/bro/gen/media/vlak.png" alt="Vlak" width="150">
-    <figcaption><a class="self-link" href="#fig-een-vlak-is-een-geometrie-dat-een-beeld-van-een-continue-regio-of-vlak-vertegenwoordigd-iso-19107-2003-spatial-schema">Figuur <bdi class="figno">16</bdi></a> <span class="fig-title">Een vlak is een geometrie dat een beeld van een continue regio of vlak vertegenwoordigd (ISO 19107:2003 Spatial Schema).</span></figcaption>
-</figure><br><br>
-
-</section><section id="multivlak"><div class="header-wrapper"><h5 id="x5-2-8-5-multivlak"><bdi class="secno">5.2.8.5 </bdi>Multivlak</h5><a class="self-link" href="#multivlak" aria-label="Permalink for Section 5.2.8.5"></a></div>
+	<img src="https://docs.geostandaarden.nl/bro/gen/media/vlak.png" alt="Vlak" width="150">
+	<figcaption><a class="self-link" href="#fig-een-vlak-is-een-geometrie-dat-een-beeld-van-een-continue-regio-of-vlak-vertegenwoordigd-iso-19107-2003-spatial-schema">Figuur <bdi class="figno">16</bdi></a> <span class="fig-title">Een vlak is een geometrie dat een beeld van een continue regio of vlak vertegenwoordigd (ISO 19107:2003 Spatial Schema).</span></figcaption>
+</figure><br><br></section><section id="multivlak"><div class="header-wrapper"><h5 id="x5-2-8-5-multivlak"><bdi class="secno">5.2.8.5 </bdi>Multivlak</h5><a class="self-link" href="#multivlak" aria-label="Permalink for Section 5.2.8.5"></a></div>
 <p>Het domein 'Multivlak' bestaat uit een verzameling van vlakken die gezamenlijk één object vormen en wordt gebruikt om de vorm, afmetingen en positie van een object uit te drukken. De vlakken die samen een multivlak vormen mogen elkaar niet overlappen, wel mogen zij in een eindig aantal punten elkaar raken (wel punten maar geen grenzen gemeenschappelijk). De posities van de vlakken worden bepaald in een specifiek referentiestelsel. Een Multivlak kan in een tweedimensionaal vlak (x- en y-coördinaat) of in een driedimensionale ruimte (x-, y- en z-coördinaat) worden vastgelegd.</p>
 <figure id="fig-een-multivlak-geometrie">
-    <img src="https://docs.geostandaarden.nl/bro/gen/media/multivlak.png" alt="Multivlak" width="150">
-    <figcaption><a class="self-link" href="#fig-een-multivlak-geometrie">Figuur <bdi class="figno">17</bdi></a> <span class="fig-title">Een Multivlak geometrie.</span></figcaption>
-</figure><br><br>
-
-</section><section id="volume"><div class="header-wrapper"><h5 id="x5-2-8-6-volume"><bdi class="secno">5.2.8.6 </bdi>Volume</h5><a class="self-link" href="#volume" aria-label="Permalink for Section 5.2.8.6"></a></div>
+	<img src="https://docs.geostandaarden.nl/bro/gen/media/multivlak.png" alt="Multivlak" width="150">
+	<figcaption><a class="self-link" href="#fig-een-multivlak-geometrie">Figuur <bdi class="figno">17</bdi></a> <span class="fig-title">Een Multivlak geometrie.</span></figcaption>
+</figure><br><br></section><section id="volume"><div class="header-wrapper"><h5 id="x5-2-8-6-volume"><bdi class="secno">5.2.8.6 </bdi>Volume</h5><a class="self-link" href="#volume" aria-label="Permalink for Section 5.2.8.6"></a></div>
 <p>Het domein 'Volume' wordt gebruikt om de vorm, afmetingen en positie van een object uit te drukken. De geometrie van een volume is opgebouwd uit grenzen die elk een vlak zijn. Deze zijn naar buiten toe georiënteerd; de bovenkant van elk vlak is van de buitenkant van het volume object te zien. Een Volume geometrie kan in een tweedimensionaal vlak (x- en y-coördinaat of in een driedimensionale ruimte (x-, y-, en z-coördinaat)) worden vastgelegd.</p>
 <figure id="fig-een-volume-geometrie-iso-19107-2003-spatial-schema">
-    <img src="https://docs.geostandaarden.nl/bro/gen/media/volume.png" alt="Volume" width="150">
-    <figcaption><a class="self-link" href="#fig-een-volume-geometrie-iso-19107-2003-spatial-schema">Figuur <bdi class="figno">18</bdi></a> <span class="fig-title">Een volume geometrie (ISO 19107:2003 Spatial Schema).</span></figcaption>
-</figure><br><br>
-
-</section><section id="minimum-begrenzing"><div class="header-wrapper"><h5 id="x5-2-8-7-minimum-begrenzing"><bdi class="secno">5.2.8.7 </bdi>Minimum begrenzing</h5><a class="self-link" href="#minimum-begrenzing" aria-label="Permalink for Section 5.2.8.7"></a></div>
+	<img src="https://docs.geostandaarden.nl/bro/gen/media/volume.png" alt="Volume" width="150">
+	<figcaption><a class="self-link" href="#fig-een-volume-geometrie-iso-19107-2003-spatial-schema">Figuur <bdi class="figno">18</bdi></a> <span class="fig-title">Een volume geometrie (ISO 19107:2003 Spatial Schema).</span></figcaption>
+</figure><br><br></section><section id="minimum-begrenzing"><div class="header-wrapper"><h5 id="x5-2-8-7-minimum-begrenzing"><bdi class="secno">5.2.8.7 </bdi>Minimum begrenzing</h5><a class="self-link" href="#minimum-begrenzing" aria-label="Permalink for Section 5.2.8.7"></a></div>
 <p>Het domein 'Minimum begrenzing' wordt gebruikt om de positie van één of meer geometrieobjecten te begrenzen. De geometrie van de Minimum begrenzing is opgebouwd uit twee punten, waarbij het eerste punt de hoek aan de linker onderkant van het selectiekader weergeeft en het tweede punt de hoek aan de rechter bovenkant. De positie van de punten worden bepaald in een specifiek referentiestelsel. Een Minimum begrenzing kan in een tweedimensionaal vlak (x- en y-coördinaat of in een driedimensionale ruimte (x-, y-, en z-coördinaat) worden vastgelegd.</p>
 <figure id="fig-minimum-begrenzing">
-    <img src="https://raw.githubusercontent.com/BROprogramma/generiek/gh-pages/media/minimumBegrenzing3.png" alt="Minimum begrenzing" width="150">
-    <figcaption><a class="self-link" href="#fig-minimum-begrenzing">Figuur <bdi class="figno">19</bdi></a> <span class="fig-title">Minimum begrenzing.</span></figcaption>
-</figure><br><br>
-
-</section></section><section id="coordinatenpaar"><div class="header-wrapper"><h4 id="x5-2-9-coordinatenpaar"><bdi class="secno">5.2.9 </bdi>Coördinatenpaar</h4><a class="self-link" href="#coordinatenpaar" aria-label="Permalink for Section 5.2.9"></a></div>
+	<img src="https://raw.githubusercontent.com/BROprogramma/generiek/gh-pages/media/minimumBegrenzing3.png" alt="Minimum begrenzing" width="150">
+	<figcaption><a class="self-link" href="#fig-minimum-begrenzing">Figuur <bdi class="figno">19</bdi></a> <span class="fig-title">Minimum begrenzing.</span></figcaption>
+</figure><br><br></section></section><section id="coordinatenpaar"><div class="header-wrapper"><h4 id="x5-2-9-coordinatenpaar"><bdi class="secno">5.2.9 </bdi>Coördinatenpaar</h4><a class="self-link" href="#coordinatenpaar" aria-label="Permalink for Section 5.2.9"></a></div>
 <p>Het domein 'Coördinatenpaar' wordt gebruikt om de positie van een punt op het aardoppervlak vast te leggen. De positie wordt bepaald in een specifiek referentiestelsel en uitgedrukt in twee coördinaten. Ieder van de coördinaten heeft een meetwaarde en de notatie voor het paar is (coördinaat 1, coördinaat 2).In de registratie ondergrond worden drie referentiestelsels voor horizontale posities gebruikt. Het referentiestelsel bepaalt hoe de tweedimensionale ruimte wordt beschreven en daarmee wat de coördinaten voorstellen en wat de karakteristiek van de twee meetwaarden is.Voor het referentiestelsel RD zijn de coördinaten cartesisch en is de notatie (x,y). De eerste coördinaat (x) heeft betrekking op de positie op een west-oost georiënteerde as, de tweede coördinaat (y) op een zuid-noord georiënteerde as. Een positie oostelijk van de oorsprong, resp. noordelijk van de oorsprong heeft een positieve waarde. Voor WGS84 (ongeprojecteerd) en ETRS89 (ongeprojecteerd) zijn de coördinaten geografisch en is de notatie (φ,λ). De eerste coördinaat heeft betrekking op de geografische breedte, de tweede op de geografische lengte. Een positie oostelijk van de Greenwichmeridiaan, resp. noordelijk van de evenaar heeft een positieve waarde.
 Bij het domein 'Coördinatenpaar' is het voldoende de naam te geven, omdat de opbouw altijd hetzelfde is.</p>
 <p>Coördinatenpaar voor RD (x,y)</p>
@@ -1135,11 +1095,9 @@ Een meetreeks heeft een bepaalde naam. Alleen in het domeinmodel is de meetreeks
 <p>Soms zijn een aantal attributen gegroepeerd in een groep, aangeduid als gegevensgroep. Het blijven attributen van de entiteit, maar de inhoudelijke definiëring van de gegevensgroep staat elders. Gegevensgroepen kunnen bij meerdere entiteiten terugkomen.</p>
 <p>Het domeinmodel laat daarnaast ook zien hoe entiteiten aan elkaar gerelateerd zijn. Een beschrijving van deze relatie is opgenomen bij de bron-entiteit van de relatie. Een relatie heeft altijd een richting en in de meeste gevallen loopt deze van bron naar doel. In het plaatje van een domeinmodel heeft de relatie een naam en een kardinaliteit. Om de leesbaarheid te vergroten staat de kardinaliteit bij de doelentiteit.</p>
 <figure id="fig-voorbeeld-class-model">
-    <img src="https://docs.geostandaarden.nl/bro/gen/media/domeinmodel-intro-class-model.png" alt="Voorbeeld class model">
-        <figcaption><a class="self-link" href="#fig-voorbeeld-class-model">Figuur <bdi class="figno">20</bdi></a> <span class="fig-title">Voorbeeld class model.</span></figcaption>
-</figure>
-
-<p>Bovenstaand voorbeeld is te lezen als: de entiteit Bepaling bevat één of meer metingen. Een meting bestaat uit een meetwaarde en meetconfiguratie-gegevens. De meetconfiguratie bestaat uit twee parameters.</p>
+	<img src="https://docs.geostandaarden.nl/bro/gen/media/domeinmodel-intro-class-model.png" alt="Voorbeeld class model">
+		<figcaption><a class="self-link" href="#fig-voorbeeld-class-model">Figuur <bdi class="figno">20</bdi></a> <span class="fig-title">Voorbeeld class model.</span></figcaption>
+</figure><p>Bovenstaand voorbeeld is te lezen als: de entiteit Bepaling bevat één of meer metingen. Een meting bestaat uit een meetwaarde en meetconfiguratie-gegevens. De meetconfiguratie bestaat uit twee parameters.</p>
 </section><section id="verplichte-gegevens-verplichte-waarden"><div class="header-wrapper"><h3 id="x5-5-verplichte-gegevens-verplichte-waarden"><bdi class="secno">5.5 </bdi>Verplichte gegevens, verplichte waarden</h3><a class="self-link" href="#verplichte-gegevens-verplichte-waarden" aria-label="Permalink for Section 5.5"></a></div>
 <p>De kardinaliteit en de regels bepalen samen of een gegeven al dan niet aanwezig is. Voor een goed begrip van de gegevensdefinitie is dat nog niet zorgvuldig genoeg geformuleerd. In de praktijk van gegevensuitwisseling is het namelijk mogelijk een attribuut op te nemen zonder waarde. Verbijzonderd voor attributen is de juiste formulering daarom dat de kardinaliteit en de regels samen bepalen of een attribuut al dan niet aanwezig is en of een attribuut al dan niet een waarde heeft.</p>
 <p>Uitgangspunt is dat een attribuut dat aanwezig is een waarde heeft. Een attribuut wordt alleen bij uitzondering zonder waarde in de berichten opgenomen. Het onderstaande overzicht geeft de vier mogelijkheden die voorkomen.</p>
@@ -9107,8 +9065,11 @@ function setupPanel() {
 }
 
 function panelListener() {
-  /** @type {HTMLElement} */
+  /** @type {HTMLElement | null} */
   let panel = null;
+  /**
+   * @param {KeyboardEvent|MouseEvent} event
+   */
   return event => {
     const { target, type } = event;
 
@@ -9116,24 +9077,34 @@ function panelListener() {
 
     // For keys, we only care about Enter key to activate the panel
     // otherwise it's activated via a click.
-    if (type === "keydown" && event.key !== "Enter") return;
+    if (
+      type === "keydown" &&
+      /** @type {KeyboardEvent} */ (event).key !== "Enter"
+    )
+      return;
 
     const action = deriveAction(event);
 
     switch (action) {
       case "show": {
         hidePanel(panel);
-        /** @type {HTMLElement} */
+        /** @type {HTMLElement | null} */
         const dfn = target.closest("dfn, .index-term");
+        if (!dfn?.id) break;
         panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
-        const coords = deriveCoordinates(event);
+        if (!panel) break;
+        const coords = deriveCoordinates(
+          /** @type {MouseEvent|KeyboardEvent} */ (event)
+        );
         displayPanel(dfn, panel, coords);
         break;
       }
       case "dock": {
-        panel.style.left = null;
-        panel.style.top = null;
-        panel.classList.add("docked");
+        if (panel) {
+          panel.style.left = "";
+          panel.style.top = "";
+          panel.classList.add("docked");
+        }
         break;
       }
       case "hide": {
@@ -9184,7 +9155,8 @@ function deriveAction(event) {
     if (hitALink) {
       return target.classList.contains("self-link") ? "hide" : "dock";
     }
-    const panel = target.closest(".dfn-panel");
+
+    const panel = /** @type {HTMLElement} */ (target.closest(".dfn-panel"));
     return panel.classList.contains("docked") ? "hide" : "none";
   }
   if (document.querySelector(".dfn-panel:not([hidden])")) {
@@ -9228,9 +9200,9 @@ function displayPanel(dfn, panel, { x, y }) {
     const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
     const newCaretOffset = left - newLeft;
     panel.style.left = `${newLeft}px`;
-    /** @type {HTMLElement} */
+    /** @type {HTMLElement | null} */
     const caret = panel.querySelector(".caret");
-    caret.style.left = `${newCaretOffset}px`;
+    if (caret) caret.style.left = `${newCaretOffset}px`;
   }
 
   // As it's a dialog, we trap focus.
@@ -9279,6 +9251,9 @@ function trapFocus(panel, dfn) {
 function createTrapListener(anchors, panel, dfn) {
   const lastIndex = anchors.length - 1;
   let currentIndex = 0;
+  /**
+   * @param {KeyboardEvent} event
+   */
   return event => {
     switch (event.key) {
       // Hitting "Tab" traps us in a nice loop around elements.
@@ -9308,7 +9283,7 @@ function createTrapListener(anchors, panel, dfn) {
   };
 }
 
-/** @param {HTMLElement} panel */
+/** @param {HTMLElement | null} panel */
 function hidePanel(panel) {
   if (!panel) return;
   panel.hidden = true;
