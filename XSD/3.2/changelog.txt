@@ -1,5 +1,12 @@
  Changelog
 ----------------------------
+Version 1.4.0 - 11.06.2026
+----------------------------
+
+1. For the bhrgcommon file:
+ - UPDATED cardinality fro SandMedianClass - from 1 to 0 (line 7282)
+
+----------------------------
 Version 1.3.0 - 27.05.2026
 ----------------------------
 

@@ -7279,7 +7279,7 @@
                         onder Berendsen en Stouthamer tot stand is gekomen.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="sandMedianClass" minOccurs="1" maxOccurs="1"
+            <xs:element name="sandMedianClass" minOccurs="0" maxOccurs="1"
                 type="bhrgcom:SandMedianClassType">
                 <xs:annotation>
                     <xs:appinfo>
