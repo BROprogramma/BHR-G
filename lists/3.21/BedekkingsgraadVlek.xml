@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<BedekkingsgraadVlek>
+		<Waarde>weinigTot2</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vlekken beslaan tot 2 % van het oppervlak.</Omschrijving>
+	</BedekkingsgraadVlek>
+	<BedekkingsgraadVlek>
+		<Waarde>matig2tot20</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vlekken beslaan 2 tot 20 % van het oppervlak.</Omschrijving>
+	</BedekkingsgraadVlek>
+	<BedekkingsgraadVlek>
+		<Waarde>veel20tot50</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vlekken beslaan 20 tot 50 % van het oppervlak.</Omschrijving>
+	</BedekkingsgraadVlek>
+	<BedekkingsgraadVlek>
+		<Waarde>spoorSBBarchief</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vlekken beslaan minder dan 1 % van het oppervlak. Een klasse gebruikt onder de Standaard Boor Beschrijvingsmethode tot versie 6.</Omschrijving>
+	</BedekkingsgraadVlek>
+	<BedekkingsgraadVlek>
+		<Waarde>weinigSBBarchief</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vlekken beslaan minimaal 1 tot minder dan 10 % van het oppervlak. Een klasse gebruikt onder de Standaard Boor Beschrijvingsmethode tot versie 6.</Omschrijving>
+	</BedekkingsgraadVlek>
+	<BedekkingsgraadVlek>
+		<Waarde>veelSBBarchief</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vlekken beslaan minimaal 10 tot minder dan 50 % van het oppervlak. Een klasse gebruikt onder de Standaard Boor Beschrijvingsmethode tot versie 6.</Omschrijving>
+	</BedekkingsgraadVlek>
+	<BedekkingsgraadVlek>
+		<Waarde>spoorArchief</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vlekken beslaan een spoor van het oppervlak. Het is niet bekend hoe het aandeel is bepaald, en wat het aandeel precies betekent. Het aandeel moet beschouwd worden als indicatief.</Omschrijving>
+	</BedekkingsgraadVlek>
+	<BedekkingsgraadVlek>
+		<Waarde>weinigArchief</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vlekken beslaan weinig van het oppervlak. Het is niet bekend hoe het aandeel is bepaald, en wat het aandeel precies betekent. Het aandeel moet beschouwd worden als indicatief.</Omschrijving>
+	</BedekkingsgraadVlek>
+	<BedekkingsgraadVlek>
+		<Waarde>veelArchief</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vlekken beslaan veel van het oppervlak. Het is niet bekend hoe het aandeel is bepaald, en wat het aandeel precies betekent. Het aandeel moet beschouwd worden als indicatief.</Omschrijving>
+	</BedekkingsgraadVlek>
+	<BedekkingsgraadVlek>
+		<Waarde>aandeelOnbekend</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Vlekken zijn aanwezig, maar het deel dat door de vlekken van een bepaalde kleur in beslag wordt genomen is niet bekend.</Omschrijving>
+	</BedekkingsgraadVlek>
+</domeintabel>

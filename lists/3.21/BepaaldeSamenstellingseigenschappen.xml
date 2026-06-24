@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<BepaaldeSamenstellingseigenschappen>
+		<Waarde>geen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er zijn geen samenstellingseigenschappen bepaald.</Omschrijving>
+	</BepaaldeSamenstellingseigenschappen>
+	<BepaaldeSamenstellingseigenschappen>
+		<Waarde>standaard</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Van het onderzocht interval zijn de standaard samenstellingseigenschappen bepaald en dat zijn de korrelgrootteverdeling, het kalkgehalte en organische stof gehalte. Het organisch koolstofgehalte en zwavelgehalte zijn niet bepaald. In zeer uitzonderlijke gevallen kan het voorkomen dat bij de bepaling van het organische stof gehalte of kalkgehalte iets misgaat in de uitvoering en alleen in dat geval ontbreken die bepalingen. De bepaling van de standaard samenstellingseigenschappen vereist een interval met een minimum lengte van 1 cm. De monsterkwaliteit stelt geen beperkingen.</Omschrijving>
+	</BepaaldeSamenstellingseigenschappen>
+	<BepaaldeSamenstellingseigenschappen>
+		<Waarde>standaardMetChemie</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Van het onderzocht interval zijn de standaard samenstellingseigenschappen en chemische eigenschappen bepaald en dat zijn de korrelgrootteverdeling, het kalkgehalte, organische stof gehalte, organisch koolstofgehalte en zwavelgehalte. In zeer uitzonderlijke gevallen kan het voorkomen dat bij de bepaling van het kalkgehalte, organische stof gehalte, organisch koolstofgehalte of zwavelgehalte iets misgaat in de uitvoering en alleen in dat geval ontbreken die bepalingen. De bepaling van de standaard samenstellingseigenschappen en chemische eigenschappen vereist een interval met een minimum lengte van 1 cm. De monsterkwaliteit stelt geen beperkingen.</Omschrijving>
+	</BepaaldeSamenstellingseigenschappen>
+	<BepaaldeSamenstellingseigenschappen>
+		<Waarde>zonderKorrelverdeling</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Van het onderzocht interval zijn het organische stof gehalte en kalkgehalte bepaald. Het organisch koolstofgehalte en zwavelgehalte zijn niet bepaald. De bepaling van de korrelgrootteverdeling ontbreekt omdat de bepaling niet is gelukt en dat is het geval bij sterk organisch materiaal. Dit vereist een interval met een minimum lengte van 1 cm. De monsterkwaliteit stelt geen beperkingen.</Omschrijving>
+	</BepaaldeSamenstellingseigenschappen>
+	<BepaaldeSamenstellingseigenschappen>
+		<Waarde>zonderKorrelverdelingMetChemie</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Van het onderzocht interval zijn het organische stof gehalte, kalkgehalte, organisch koolstofgehalte en zwavelgehalte bepaald. De bepaling van de korrelgrootteverdeling ontbreekt omdat de bepaling niet is gelukt en dat is het geval bij sterk organisch materiaal. Dit vereist een interval met een minimum lengte van 1 cm. De monsterkwaliteit stelt geen beperkingen.</Omschrijving>
+	</BepaaldeSamenstellingseigenschappen>
+</domeintabel>

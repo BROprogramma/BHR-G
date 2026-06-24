@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SoortArcheologischBestanddeel>
+		<Waarde>aardewerk</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Aardewerk en fragmenten van aardewerk, bijvoorbeeld potscherven of pijpenkoppen.</Omschrijving>
+	</SoortArcheologischBestanddeel>
+	<SoortArcheologischBestanddeel>
+		<Waarde>baksteen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Baksteen en fragmenten van baksteen.</Omschrijving>
+	</SoortArcheologischBestanddeel>
+	<SoortArcheologischBestanddeel>
+		<Waarde>botOnverbrand</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Bot en fragmenten van bot die niet verbrand en al dan niet bewerkt zijn.</Omschrijving>
+	</SoortArcheologischBestanddeel>
+	<SoortArcheologischBestanddeel>
+		<Waarde>botVerbrand</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Bot en fragmenten van bot die verbrand en al dan niet bewerkt zijn.</Omschrijving>
+	</SoortArcheologischBestanddeel>
+	<SoortArcheologischBestanddeel>
+		<Waarde>gebrokenKwarts</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Gebroken, hoekig gesteentegruis, enkele millimeters groot, dat herkend wordt als gebruikt voor de verschraling van klei voor het vervaardigen van keramische objecten, bijvoorbeeld potten.</Omschrijving>
+	</SoortArcheologischBestanddeel>
+	<SoortArcheologischBestanddeel>
+		<Waarde>glas</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Glas en glasscherven.</Omschrijving>
+	</SoortArcheologischBestanddeel>
+	<SoortArcheologischBestanddeel>
+		<Waarde>houtskoolBrokken</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Houtskoolresten die groter zijn dan 2 mm.</Omschrijving>
+	</SoortArcheologischBestanddeel>
+	<SoortArcheologischBestanddeel>
+		<Waarde>houtskoolSpikkels</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Houtskoolresten die kleiner zijn dan 2 mm.</Omschrijving>
+	</SoortArcheologischBestanddeel>
+	<SoortArcheologischBestanddeel>
+		<Waarde>metaal</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Metaalresten en metalen gebruiksvoorwerpen.</Omschrijving>
+	</SoortArcheologischBestanddeel>
+	<SoortArcheologischBestanddeel>
+		<Waarde>natuursteen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Steen die herkend wordt als een door de mens behandeld of verwerkte brok gesteente.</Omschrijving>
+	</SoortArcheologischBestanddeel>
+	<SoortArcheologischBestanddeel>
+		<Waarde>verbrandeLeem</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Leem of klei die door blootstelling aan hitte geblakerd of gebakken is.</Omschrijving>
+	</SoortArcheologischBestanddeel>
+	<SoortArcheologischBestanddeel>
+		<Waarde>verbrandingsresten</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Minerale verbrandingsresten en amorfe bijproducten van verbranding of verbranding of verhitting die niet uit leem bestaan.</Omschrijving>
+	</SoortArcheologischBestanddeel>
+	<SoortArcheologischBestanddeel>
+		<Waarde>visrest</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Delen van vissen die door de mens gebruikt zijn als voedsel.</Omschrijving>
+	</SoortArcheologischBestanddeel>
+	<SoortArcheologischBestanddeel>
+		<Waarde>vuursteenBewerkt</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Vuursteenfragmenten die herkend worden als het product van bewerking.</Omschrijving>
+	</SoortArcheologischBestanddeel>
+</domeintabel>

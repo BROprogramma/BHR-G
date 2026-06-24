@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerwijderingsmethodeOrganischeStof>
+		<Waarde>handmatig</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Organische stof is handmatig verwijderd en enkel grove bestanddelen zijn verwijderd.</Omschrijving>
+	</VerwijderingsmethodeOrganischeStof>
+	<VerwijderingsmethodeOrganischeStof>
+		<Waarde>H2O2_15procent</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Organische stof is verwijderd met H<sub>2</sub>O<sub>2</sub> (15 %).</Omschrijving>
+	</VerwijderingsmethodeOrganischeStof>
+	<VerwijderingsmethodeOrganischeStof>
+		<Waarde>nietVerwijderd</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Organische stof is niet verwijderd.</Omschrijving>
+	</VerwijderingsmethodeOrganischeStof>
+</domeintabel>

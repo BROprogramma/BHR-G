@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerwijderdMateriaal>
+		<Waarde>antropogeenNietStenigBestanddeel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voorafgaand aan de bepaling is niet-stenig antropogeen materiaal verwijderd.</Omschrijving>
+	</VerwijderdMateriaal>
+	<VerwijderdMateriaal>
+		<Waarde>antropogeenStenigBestanddeel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voorafgaand aan de bepaling is stenig antropogeen materiaal verwijderd en dat is licht stenig ophoogmateriaal, puin, stenen, verbrandingsresten en wegverhardingsmateriaal.</Omschrijving>
+	</VerwijderdMateriaal>
+	<VerwijderdMateriaal>
+		<Waarde>botresten</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er is voorafgaand aan de bepaling zijn botten, of resten daarvan, afkomstig van gewervelde dieren of mensen verwijderd.</Omschrijving>
+	</VerwijderdMateriaal>
+	<VerwijderdMateriaal>
+		<Waarde>geen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er is voorafgaand aan de bepaling geen materiaal verwijderd.</Omschrijving>
+	</VerwijderdMateriaal>
+	<VerwijderdMateriaal>
+		<Waarde>grind</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voorafgaand aan de bepaling is grind en grover materiaal verwijderd.</Omschrijving>
+	</VerwijderdMateriaal>
+	<VerwijderdMateriaal>
+		<Waarde>houtskool</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voorafgaand aan de bepaling zijn door verbranding verkoolde resten van hout verwijderd.</Omschrijving>
+	</VerwijderdMateriaal>
+	<VerwijderdMateriaal>
+		<Waarde>ijzerconcreties</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voorafgaand aan de bepaling zijn korrels of brokken samengesteld materiaal van neergeslagen ijzerverbindingen in een matrix van zand en/of grind, klei of silt, verwijderd.</Omschrijving>
+	</VerwijderdMateriaal>
+	<VerwijderdMateriaal>
+		<Waarde>kalkconcreties</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voorafgaand aan de bepaling zijn concreties die door carbonaat tot een geheel zijn verkit verwijderd.</Omschrijving>
+	</VerwijderdMateriaal>
+	<VerwijderdMateriaal>
+		<Waarde>plantenrestenHoutig</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voorafgaand aan de bepaling zijn houtige, onverteerde resten van planten, zoals stammen en takken verwijderd.</Omschrijving>
+	</VerwijderdMateriaal>
+	<VerwijderdMateriaal>
+		<Waarde>plantenrestenNietHoutig</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voorafgaand aan de bepaling zijn niet-houtige, onverteerde resten van planten, zoals worteltjes, rietstengels en bladeren verwijderd.</Omschrijving>
+	</VerwijderdMateriaal>
+	<VerwijderdMateriaal>
+		<Waarde>schelpmateriaal</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Voorafgaand aan de bepaling zijn schelpen en resten van schelpen verwijderd.</Omschrijving>
+	</VerwijderdMateriaal>
+</domeintabel>

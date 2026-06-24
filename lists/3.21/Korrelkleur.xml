@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Korrelkleur>
+		<Waarde>grijzeKorrels</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De zandkorrels zijn licht- tot donkergrijs en niet transparant.</Omschrijving>
+	</Korrelkleur>
+	<Korrelkleur>
+		<Waarde>groeneKorrels</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De zandkorrels zijn licht- tot donkergroen en niet transparant.</Omschrijving>
+	</Korrelkleur>
+	<Korrelkleur>
+		<Waarde>rozeKorrels</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De zandkorrels zijn lichtrood of roze en niet transparant.</Omschrijving>
+	</Korrelkleur>
+	<Korrelkleur>
+		<Waarde>transparanteKorrels</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De zandkorrels zijn lichtgrijs tot kleurloos en enigszins transparant.</Omschrijving>
+	</Korrelkleur>
+	<Korrelkleur>
+		<Waarde>witteKorrels</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De zandkorrels zijn wit en niet transparant.</Omschrijving>
+	</Korrelkleur>
+	<Korrelkleur>
+		<Waarde>zwarteKorrels</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De zandkorrels zijn zwart, niet tot iets transparant en vaak dof. De korrelvorm is vergelijkbaar met de vorm van andere zandkorrels.</Omschrijving>
+	</Korrelkleur>
+</domeintabel>

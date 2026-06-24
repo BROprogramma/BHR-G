@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Grindherkomst>
+		<Waarde>fluviatielEridanos</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grind dat aangevoerd is door het Baltisch riviersysteem (Eridanos) en voornamelijk afkomstig is uit het Oostzeegebied. Kenmerkende grindsoorten zijn: zeer groot aandeel van heldere kwarts. Zeldzame gidssoorten zijn: verkiezelde fossielen en barnsteen.</Omschrijving>
+	</Grindherkomst>
+	<Grindherkomst>
+		<Waarde>fluviatielMaas</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grind dat aangevoerd is door het Maas riviersysteem en voornamelijk afkomstig uit de Ardennen, Noord-Frankrijk en de Vogezen. Kenmerkende grindsoorten zijn: groot aandeel witte kwarts met in mindere mate heldere kwarts, gerolde vuursteen (ook wel Maas-eitjes), conglomeraat en kalksteen. Zeldzame gidssoorten zijn: Revinienkwartsiet en Vogezengraniet.</Omschrijving>
+	</Grindherkomst>
+	<Grindherkomst>
+		<Waarde>fluviatielNoordDuits</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grind dat aangevoerd is door het Noord-Duits riviersysteem en voornamelijk afkomstig is uit de Noord-Duitse middengebergten. Kenmerkende veel voorkomende grindsoorten zijn: porfier, lydiet, rode zandsteen, witte en heldere kwarts. Een zeldzame gidssoort is: Thüringerwoudporfier.</Omschrijving>
+	</Grindherkomst>
+	<Grindherkomst>
+		<Waarde>fluviatielRijnAlpien</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grind dat aangevoerd is door het Alpiene Rijnsysteem en voornamelijk afkomstig is van het Rijn-Leisteenplateau. Kenmerkende grindsoorten zijn: porfier, rode ijzerkiezel, rode en groene zandsteen, kwartsiet.</Omschrijving>
+	</Grindherkomst>
+	<Grindherkomst>
+		<Waarde>fluviatielRijnPreAlpien</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grind dat aangevoerd is door het pre-Alpiene Rijnsysteem. Kenmerkende grindsoorten zijn: groot aandeel witte kwarts met in mindere mate heldere kwarts. Een zeldzame gidssoort is: kiezeloöliet.</Omschrijving>
+	</Grindherkomst>
+	<Grindherkomst>
+		<Waarde>fluviatielSchelde</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grind dat aangevoerd is door het Schelde systeem, afkomstig uit Midden België. Grindsamenstelling varieert maar bestaat voor het overgrote deel uit hoekige vuursteen en witte kwarts met in mindere mate heldere kwarts.</Omschrijving>
+	</Grindherkomst>
+	<Grindherkomst>
+		<Waarde>glaciaal</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grind dat aangevoerd is door het landijs vanuit Zweden, Finland, Denemarken en soms uit Noorwegen. Kenmerkende veel voorkomende grindsoorten zijn: graniet, niet-gerolde vuursteen en kalksteen. Zeldzame gidssoorten zijn Rapakivigraniet en Rhombenporfier.</Omschrijving>
+	</Grindherkomst>
+	<Grindherkomst>
+		<Waarde>nietBepaald</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De herkomst van het grind kon niet worden bepaald.</Omschrijving>
+	</Grindherkomst>
+	<Grindherkomst>
+		<Waarde>fluviatielOostelijk</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grind dat aangevoerd is uit oostelijke richting door het Baltisch riviersysteem (Eridanos) of door het Noord-Duitse riviersysteem.</Omschrijving>
+	</Grindherkomst>
+	<Grindherkomst>
+		<Waarde>fluviatielZuidelijk</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grind dat aangevoerd is uit zuidelijke richting door het riviersysteem van de Rijn of door het riviersysteem van de Maas.</Omschrijving>
+	</Grindherkomst>
+	<Grindherkomst>
+		<Waarde>fluviatielZuidelijkEnGlaciaal</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grind dat aangevoerd is uit zuidelijke richting gemengd met grind dat is aangevoerd door landijs. Vaak is dit grind afkomstig van geërodeerde glaciale en zuidelijke afzettingen en gezamenlijk afgezet. Het aandeel glaciaal en zuidelijk varieert maar beide zijn goed herkenbaar.</Omschrijving>
+	</Grindherkomst>
+</domeintabel>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<GebruiktMedium>
+		<Waarde>butanol</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>In de bepaling is de vloeistof butanol gebruikt.</Omschrijving>
+	</GebruiktMedium>
+	<GebruiktMedium>
+		<Waarde>gezuiverdWater</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>In de bepaling is leidingwater gebruikt dat door destillatie, demineralisatie of ionisatie gezuiverd is van alle zouten en mineralen.</Omschrijving>
+	</GebruiktMedium>
+	<GebruiktMedium>
+		<Waarde>hexaan</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>In de bepaling is de vloeistof hexaan gebruikt.</Omschrijving>
+	</GebruiktMedium>
+	<GebruiktMedium>
+		<Waarde>leidingwater</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>In de bepaling is water gebruikt dat bestemd is voor menselijke consumptie en via leidingen wordt getransporteerd.</Omschrijving>
+	</GebruiktMedium>
+	<GebruiktMedium>
+		<Waarde>SAR13water</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>In de bepaling is zogenaamd SAR-water gebruikt met SAR waarde (sodium adsorption ratio) 13. De SAR waarde geeft de verhouding tussen natrium en calcium plus magnesium.</Omschrijving>
+	</GebruiktMedium>
+	<GebruiktMedium>
+		<Waarde>spiritus</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>In de bepaling is de vloeistof spiritus gebruikt.</Omschrijving>
+	</GebruiktMedium>
+</domeintabel>

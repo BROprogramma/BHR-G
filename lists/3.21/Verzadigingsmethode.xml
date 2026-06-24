@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Verzadigingsmethode>
+		<Waarde>waterverzadigen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Methode voor het vooraf verzadigen van het proefstuk. Het proefstuk in de ring wordt met behulp van een monsterhouder in een waterbad met deksel geplaatst. Het proefstuk wordt uiterst langzaam van onderaf verzadigd. Dit duurt ca. 4 tot 10 dagen. Na verzadiging wordt aan de bovenkant van het proefstuk eenmalig 25 mm water afgezogen.</Omschrijving>
+	</Verzadigingsmethode>
+	<Verzadigingsmethode>
+		<Waarde>onderBelasting</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Methode voor het vooraf verzadigen van het proefstuk. Het proefstuk wordt tussen twee poreuze stenen in het apparaat geplaatst onder druk en krijgt eerst de gelegenheid om zich aan te passen aan de nieuwe druk (het proefstuk is <i>geconsolideerd</i>). Dit duurt 24 uur. Vervolgens krijgt het proefstuk de gelegenheid om water vanaf de onderkant op te nemen. Dit duurt circa 1 tot 3 dagen.</Omschrijving>
+	</Verzadigingsmethode>
+</domeintabel>

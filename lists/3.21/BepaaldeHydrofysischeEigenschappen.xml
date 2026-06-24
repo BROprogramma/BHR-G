@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<BepaaldeHydrofysischeEigenschappen>
+		<Waarde>geen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er zijn geen hydrofysische eigenschappen bepaald.</Omschrijving>
+	</BepaaldeHydrofysischeEigenschappen>
+	<BepaaldeHydrofysischeEigenschappen>
+		<Waarde>standaard</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De verzadigde waterdoorlatendheid, de droge volumieke massa en de volumieke massa zijn bepaald, en de volumieke massa vaste delen is niet bepaald. Dit vereist een interval met een minimum lengte van 2 cm. De vereiste monsterkwaliteit is QM1, QM2 of QM3.</Omschrijving>
+	</BepaaldeHydrofysischeEigenschappen>
+	<BepaaldeHydrofysischeEigenschappen>
+		<Waarde>uitgebreid</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De verzadigde waterdoorlatendheid, de droge volumieke massa en de volumieke massa vaste delen zijn bepaald. Dit vereist een interval met een minimum lengte van 2 cm. De vereiste monsterkwaliteit is QM1, QM2 of QM3.</Omschrijving>
+	</BepaaldeHydrofysischeEigenschappen>
+	<BepaaldeHydrofysischeEigenschappen>
+		<Waarde>waterdoorlatendheidMislukt</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De bepaling van de verzadigde waterdoorlatendheid is niet geslaagd. De droge volumieke massa, de volumieke massa en/of de volumieke massa vaste delen is bepaald. Dit vereist een interval met een minimum lengte van 2 cm. De monsterkwaliteit is gelijk aan QM1, QM2 of QM3.</Omschrijving>
+	</BepaaldeHydrofysischeEigenschappen>
+</domeintabel>

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<GrindgehalteklasseTot50>
+		<Waarde>nietGrindhoudend</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grind is niet aanwezig.</Omschrijving>
+	</GrindgehalteklasseTot50>
+	<GrindgehalteklasseTot50>
 		<Waarde>ietsGrindhoudendVerbraeck</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>

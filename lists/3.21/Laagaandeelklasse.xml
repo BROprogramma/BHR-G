@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Laagaandeelklasse>
+		<Waarde>spoorTot1</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er komt een spoor voor en dat betekent dat het aandeel in het volume minder dan 1 % is.</Omschrijving>
+	</Laagaandeelklasse>
+	<Laagaandeelklasse>
+		<Waarde>weinig1Tot10</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er komt weinig voor en dat betekent dat het aandeel in het volume minimaal 1 en minder dan 10 % is.</Omschrijving>
+	</Laagaandeelklasse>
+	<Laagaandeelklasse>
+		<Waarde>veel10Tot30</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er komt veel voor en dat betekent dat het aandeel in het volume minimaal 10 en minder dan 30 % is.</Omschrijving>
+	</Laagaandeelklasse>
+	<Laagaandeelklasse>
+		<Waarde>zeerVeel30Tot50</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er komt zeer veel voor en dat betekent dat het aandeel in het volume minimaal 30 en minder dan 50 % is.</Omschrijving>
+	</Laagaandeelklasse>
+	<Laagaandeelklasse>
+		<Waarde>uiterstVeel50Tot70</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er komt uiterst veel voor en dat betekent dat het aandeel in het volume minimaal 50 en minder dan 70 % is.</Omschrijving>
+	</Laagaandeelklasse>
+	<Laagaandeelklasse>
+		<Waarde>merendeels70Tot90</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er komt mnerendeels voor en dat betekent dat het aandeel in het volume minimaal 70 en minder dan 90 % is.</Omschrijving>
+	</Laagaandeelklasse>
+	<Laagaandeelklasse>
+		<Waarde>grotendeels90Tot99</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er komt grotendeels voor en dat betekent dat het aandeel in het volume minimaal 90 en minder dan 99 % is.</Omschrijving>
+	</Laagaandeelklasse>
+	<Laagaandeelklasse>
+		<Waarde>bijnaVolledigTenminste99</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Er komt bijna volledig voor en dat betekent dat het aandeel in het volume minstens 99 % is.</Omschrijving>
+	</Laagaandeelklasse>
+	<Laagaandeelklasse>
+		<Waarde>aandeelOnbekend</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Laagjes zijn aanwezig, maar het aandeel in het volume is niet bekend.</Omschrijving>
+	</Laagaandeelklasse>
+</domeintabel>

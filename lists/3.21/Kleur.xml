@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Kleur>
+		<Waarde>lichtblauw</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Lichtblauw omvat de Munsellkleur 5B 7/6 (light blue). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtblauwGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtblauwGrijs omvat de Munsellkleuren 10B 7/1, 10B 8/1, 5B 7/1, 5B 8/1, 5PB 7/1 en 5PB 8/1 (light bluish gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtblauwGroen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtblauwGroen omvat de Munsellkleuren 5BG 6/6 (light blue green) en 5BG 7/2 (pale blue green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>blauw</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Blauw omvat de Munsellkleur 5B 5/6 (moderate blue). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>blauwGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>BlauwGrijs omvat de Munsellkleuren 10B 5/1, 10B 6/1 , 5B 5/1, 5B 6/1, 5PB 5/1, 5PB 6/1 (bluish gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>blauwGroen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>BlauwGroen omvat de Munsellkleuren 5BG 4/6 (moderate blue green) en 5BG 5/2 (grayish blue green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>blauwWit</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>BlauwWit omvat de Munsellkleur 5B 9/1 (bluish white). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>blauwZwart</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>BlauwZwart omvat de Munsellkleuren 10B 2.5/1, 5B 2.5/1 en 5PB 2.5/1 (bluish black). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerblauwGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkerblauwGrijs omvat de Munsellkleuren 10B 4/1, 5B 4/1, 5PB 4/1 (dark bluish gray), 5B 3/1 en 5PB 3/1, 10B 3/1 (very dark bluish gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerblauwGroen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkerblauwGroen omvat de Munsellkleur 5BG 3/2 (dusky blue green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtbruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Lichtbruin omvat de Munsellkleuren 7.5YR 6/3 en 7.5YR 6/4 (light brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtbruinGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtbruinGrijs omvat de Munsellkleuren 10YR 6/2 en 2.5Y 6/2 (light brownish gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>bruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Bruin omvat de Munsellkleuren 10YR 4/3, 10YR 5/3, 7.5YR 4/2, 7.5YR 4/3, 7.5YR 4/4, 7.5YR 5/2, 7.5YR 5/3, 7.5YR 5/4 (brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>bruinGeel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>BruinGeel omvat de Munsellkleuren 10YR 6/6 en 10YR 6/8 (brownish yellow). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>bruinRood</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>BruinRood omvat de Munsellkleuren 10R 3/2, 10R 3/3, 10R 3/4, 5R 3/2, 5R 3/3, 5R 3/4, 7.5R 3/2, 7.5R 3/3, 7.5R 3/4 en 2.5YR 3/2 (dusky red). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>bruinZwart</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>BruinZwart omvat de Munsellkleur 5YR 2/1 (brownish black). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerbruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Donkerbruin omvat de Munsellkleuren 10YR 3/3, 7.5YR 3/2, 7.5YR 3/3 en 7.5YR 3/4 (dark brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerbruinRood</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkerbruinRood omvat de Munsellkleuren 10R 2.5/2, 2.5YR 2.5/2, 5R 2.5/2, 5R 2.5/3, 5R 2.5/4, 7.5R 2.5/2, 7.5R 2.5/3 en 7.5R 2.5/4 (very dusky red). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgeelBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtgeelBruin omvat de Munsellkleuren 10YR 6/4, 2.5Y 6/3 en 2.5Y 6/4 (light yellowish brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgeelGroen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtgeelGroen omvat de Munsellkleur 5GY 6/4 en 10GY 7/2 (pale yellowish green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgeelRoze</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtgeelRoze omvat de Munsellkleuren 7.5YR 9.5/2 en 7.5YR 9/2 (pale yellowish pink). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>geel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Geel omvat de Munsellkleuren 10YR 7/6, 10YR 7/8, 10YR 8/6, 10YR 8/8, 2.5Y 7/6, 2.5Y 7/8, 2.5Y 8/6, 2.5Y 8/8, 5Y 7/6, 5Y 7/8, 5Y 8/6 en 5Y 8/8 (yellow). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>geelBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GeelBruin omvat de Munsellkleuren 10YR 5/4, 10YR 5/6 en 10YR 5/8 (yellowish brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>geelGroen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GeelGroen omvat de Munsellkleuren 10GY 6/4 (moderate yellowish green) en 5GY 7/4 (moderate yellow green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>geelRood</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GeelRood omvat de Munsellkleuren 5YR 4/6, 5YR 5/6 en 5YR 5/8 (yellowish red). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergeelBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkergeelBruin omvat de Munsellkleuren 10YR 3/4, 10YR 3/6, 10YR 4/4 en 10YR 4/6 (dark yellowish brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergeelGroen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkergeelGroen omvat de Munsellkleur 10GY 4/4 (dark yellowish green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Lichtgrijs omvat de Munsellkleuren 10YR 7/1, 10YR 7/2, 2.5Y 7/1, 2.5Y 7/2, 5Y 7/1, 5Y 7/2, 5YR 7/1, 7.5YR 7/1 en N 7/ (light gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgrijsBlauw</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtgrijsBlauw omvat de Munsellkleuren 5B 6/2 en 5PB 7/2 (pale blue). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgrijsBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtgrijsBruin omvat de Munsellkleuren 10YR 6/3, 2.5Y 7/3, 2.5Y 7/4, 2.5Y 8/2, 2.5Y 8/3 en 2.5Y 8/4 (pale brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgrijsGeel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtgrijsGeel omvat de Munsellkleuren 2.5Y 8.5/2, 5Y 7/3, 5Y 7/4, 5Y 8/2, 5Y 8/3 en 5Y 8/4 (pale yellow). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgrijsGroen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtgrijsGroen omvat de Munsellkleuren 5G 6/2, 5G 7/2, 5G 8/2, 10G 6/2 (pale green), 5GY 7/2 (grayish yellow green), 10G 8/2 (very pale green) en 5GY 6/2 (light grayish green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgrijsOlijf</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtgrijsOlijf omvat de Munsellkleuren 10Y 6/2 (light grayish olive), 10Y 6/4, 5Y 6/3 en 5Y 6/4 (pale olive). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgrijsRood</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtgrijsRood omvat de Munsellkleuren 10R 6/2, 10R 6/3, 10R 6/4, 10R 7/2, 10R 7/3, 10R 7/4, 2.5YR 6/2, 2.5YR 7/2, 5R 6/2, 5R 6/3, 5R 6/4, 5R 7/2, 5R 7/3, 5R 7/4, 7.5R 6/2, 7.5R 6/3, 7.5R 6/4, 7.5R 7/2, 7.5R 7/3 en 7.5R 7/4 (pale red). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgrijsRoze</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtgrijsRoze omvat de Munsellkleur 5RP 8/2 (pale pink). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>grijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grijs omvat de Munsellkleuren 10YR 5/1, 10YR 6/1, 2.5Y 5/1, 2.5Y 6/1, 5Y 5/1, 5Y 6/1, 5YR 5/1, 5YR 6/1, 7.5YR 5/1, 7.5YR 6/1, N 5/ en N 6/ (gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>grijsBlauw</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GrijsBlauw omvat de Munsellkleuren 5PB 3/2 (dusky blue) en 5PB 5/2 (grayish blue). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>grijsBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GrijsBruin omvat de Munsellkleuren 10YR 5/2 en 2.5Y 5/2 (grayish brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>grijsGroen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GrijsGroen omvat de Munsellkleuren 5G 4/2, 5G 5/2, 5GY 5/2, 5GY 5/2 (grayish green) en 10G 4/2, 10GY 5/2 (grayish green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>grijsOlijf</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GrijsOlijf omvat de Munsellkleuren 10Y 5/2 (grayish olive). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>grijsPaars</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GrijsPaars omvat de Munsellkleuren 5P 4/2 (grayish purple) en 5RP 4/2 (grayish red purple). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>grijsRood</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GrijsRood omvat de Munsellkleuren 10R 4/2, 10R 4/3, 10R 4/4, 10R 5/2, 10R 5/3, 10R 5/4, 2.5YR 4/2, 2.5YR 5/2, 5R 4/2, 5R 4/3, 5R 4/4, 5R 5/2, 5R 5/3, 5R 5/4, 7.5R 4/2, 7.5R 4/3, 7.5R 4/4, 7.5R 5/2, 7.5R 5/3 en 7.5R 5/4 (weak red). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Donkergrijs omvat de Munsellkleuren 10YR 4/1, 2.5Y 4/1, 5Y 4/1, 5YR 4/1, 7.5YR 4/1, N 4/ (dark gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergrijsBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkergrijsBruin omvat de Munsellkleuren 10YR 4/2, 2.5Y 4/2 (dark grayish brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergrijsGroen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkergrijsGroen omvat de Munsellkleuren 5GY 3/2 (very dark grayish green), 5GY 4/2 (dark grayish green) en 10GY 3/2 (dusky yellowish green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergrijsOlijf</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkergrijsOlijf omvat de Munsellkleuren 10Y 3/2 (very dark grayish olive) en 10Y 4/2 (dark grayish olive). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgroen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Lichtgroen omvat de Munsellkleur 5G 7/4 (light green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgroenGeel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtgroenGeel omvat de Munsellkleur 10Y 8/2 (pale greenish yellow). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgroenGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtgroenGrijs omvat de Munsellkleuren 10BG 7/1, 10BG 8/1, 10G 7/1, 10G 8/1, 10GY 7/1, 10GY 8/1, 10Y 7/1, 10Y 8/1, 5BG 7/1, 5BG 8/1, 5G 7/1, 5G 8/1, 5GY 7/1 en 5GY 8/1 (light greenish gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>groen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Groen omvat de Munsellkleuren 5G 5/6 (moderate green) en 5G 6/6 (brilliant green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>groenGeel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GroenGeel omvat de Munsellkleur 10Y 7/4 (moderate greenish yellow). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>groenGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GroenGrijs omvat de Munsellkleuren 10BG 5/1, 10BG 6/1, 10G 5/1, 10G 6/1, 10GY 5/1, 10GY 6/1, 10Y 5/1, 10Y 6/1, 5BG 5/1, 5BG 6/1, 5G 5/1, 5G 6/1, 5GY 5/1 en 5GY 6/1 (greenish gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>groenZwart</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GroenZwart omvat de Munsellkleuren 10BG 2.5/1, 5G 2/1, 10G 2.5/1, 5GY 2/1, 10GY 2.5/1, 10Y 2.5/1, 5BG 2.5/1, 5G 2.5/1 en 5GY 2.5/1 (greenish black). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergroenGeel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkergroenGeel omvat de Munsellkleur 10Y 6/6 (dark greenish yellow). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergroenGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkergroenGrijs omvat de Munsellkleuren 10GY 4/1, 10BG 4/1, 10G 4/1, 10Y 4/1, 5BG 4/1, 5G 4/1, 5GY 4/1 (dark greenish gray) en 5G 3/1 (very dark greenish gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergroenZwart</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkergroenZwart omvat de Munsellkleuren 10Y 3/1 en 5GY 3/1, 10GY 3/1, 5G 3/1 (very dark greenish gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtolijf</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Lichtolijf omvat de Munsellkleur 10Y 5/4 (light olive). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtolijfBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtolijfBruin omvat de Munsellkleuren 2.5Y 5/3, 2.5Y 5/4, 2.5Y 5/6 en 2.5Y 5/8 (light olive brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtolijfGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtolijfGrijs omvat de Munsellkleur 5Y 6/2 (light olive gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtolijfGroen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtolijfGroen omvat de Munsellkleuren 5GY 5/4 (light olive green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>olijf</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Olijf omvat de Munsellkleuren 10Y 4/4, 5Y 4/3, 5Y 4/4, 5Y 5/3, 5Y 5/4 en 5Y 5/6 (olive). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>olijfBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>OlijfBruin omvat de Munsellkleuren 2.5Y 4/3, 2.5Y 4/4 en 2.5Y 4/6 (olive brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>olijfGeel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>OlijfGeel omvat de Munsellkleuren 2.5Y 6/6, 2.5Y 6/8, 5Y 6/6 en 5Y 6/8 (olive yellow). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>olijfGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>OlijfGrijs omvat de Munsellkleuren 5Y 4/2 en 5Y 5/2 (olive gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>olijfGroen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>OlijfGroen omvat de Munsellkleur 5GY 4/4 (olive green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>olijfZwart</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>OlijfZwart omvat de Munsellkleur 5Y 2/1 (olive black). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerolijf</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Donkerolijf omvat de Munsellkleur 10Y 3/4 (dark olive). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerolijfBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkerolijfBruin omvat de Munsellkleuren 2.5Y 3/3 (dark olive brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerolijfGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkerolijfGrijs omvat de Munsellkleur 5Y 3/2 (dark olive gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerolijfGroen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkerolijfGroen omvat de Munsellkleuren 5GY 3/4 (dark olive green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtpaars</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Lichtpaars omvat de Munsellkleuren 5P 6/2 (pale red purple) en 5RP 6/2 (pale red purple). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerpaars</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Donkerpaars omvat de Munsellkleuren 5P 2/2 en 5RP 2/2 (very dusky purple). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerpaarsRood</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkerpaarsRood omvat de Munsellkleur 10R 2/2 (very dusky red). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtrood</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Lichtrood omvat de Munsellkleuren 10R 6/6, 10R 6/8, 10R 7/6, 10R 7/8, 2.5YR 6/6, 2.5YR 6/8, 2.5YR 7/6, 2.5YR 7/8, 5R 6/6, 5R 6/8, 5R 7/6, 5R 7/8, 7.5R 6/6, 7.5R 6/8, 7.5R 7/6 en 7.5R 7/8 (light red). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtroodBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtroodBruin omvat de Munsellkleuren 2.5YR 6/3, 2.5YR 6/4, 2.5YR 7/3, 2.5YR 7/4, 5YR 6/3 en 5YR 6/4 (light reddish brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtroodGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtroodGrijs omvat de Munsellkleuren 2.5YR 7/1 (light reddish gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>rood</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Rood omvat de Munsellkleuren 10R 4/6, 10R 4/8, 10R 5/6, 10R 5/8, 2.5YR 4/6, 2.5YR 4/8, 2.5YR 5/6, 2.5YR 5/8, 5R 4/6, 5R 4/8, 5R 5/6, 5R 5/8, 7.5R 4/6, 7.5R 4/8, 7.5R 5/6 en 7.5R 5/8 (red). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>roodBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>RoodBruin omvat de Munsellkleuren 2.5YR 4/3, 2.5YR 4/4, 2.5YR 5/3, 2.5YR 5/4, 5YR 4/3, 5YR 4/4, 5YR 5/3 en 5YR 5/4 (reddish brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>roodGeel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>RoodGeel omvat de Munsellkleuren 5YR 6/6, 5YR 6/8, 5YR 7/6, 5YR 7/8, 7.5YR 6/6, 7.5YR 6/8, 7.5YR 7/6, 7.5YR 7/8 en 7.5YR 8/6 (reddish yellow). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>roodGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>RoodGrijs omvat de Munsellkleuren 10R 5/1, 10R 6/1, 2.5YR 5/1, 2.5YR 6/1, 5R 5/1, 5R 6/1, 5YR 5/2, 7.5R 5/1 en 7.5R 6/1 (reddish gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>roodZwart</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>RoodZwart omvat de Munsellkleuren 10R 2.5/1 en 2.5YR 2.5/1 (reddish black). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerrood</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Donkerrood omvat de Munsellkleuren 10R 3/6, 2.5YR 3/6, 5R 2.5/6, 5R 3/6, 5R 3/8, 7.5R 3/6 en 7.5R 3/8 (dark red). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerroodBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkerroodBruin omvat de Munsellkleuren 2.5YR 2.5/3, 2.5YR 2.5/4, 2.5YR 3/3, 2.5YR 3/4 , 5YR 2.5/2, 5YR 3/2, 5YR 3/3, 5YR 3/4 (dark reddish brown), 5YR 2/2 (dusky brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerroodGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkerroodGrijs omvat de Munsellkleuren 10R 3/1, 10R 4/1, 2.5YR 3/1, 2.5YR 4/1, 5R 3/1, 5R 4/1, 5YR 4/2, 7.5R 3/1 en 7.5R 4/1 (dark reddish gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtoranjeGeel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtoranjeGeel omvat de Munsellkleuren 10YR 9.5/2 en 10YR 9/2 (pale orange yellow). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>oranjeBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>OranjeBruin omvat de Munsellkleuren 7.5YR 4/6, 7.5YR 5/6 en 7.5YR 5/8 (strong brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtroze</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Lichtroze omvat de Munsellkleuren 5R 8/2, 5R 8/3, 5R 8/4, 7.5R 8/2, 7.5R 8/3 en 7.5R 8/4 (light pink). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>roze</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Roze omvat de Munsellkleuren 10R 8/3, 10R 8/4, 2.5YR 8/3, 2.5YR 8/4, 5YR 7/3, 5YR 7/4, 5YR 8/3, 5YR 8/4, 7.5YR 7/3, 7.5YR 7/4, 7.5YR 8/3 en 7.5YR 8/4 (pink). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>rozeGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>RozeGrijs omvat de Munsellkleuren 10R 7/1, 5R 7/1, 5YR 6/2, 5YR 7/2, 7.5R 7/1, 7.5YR 6/2, 7.5YR 7/2 (pinkish gray). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>rozeWit</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>RozeWit omvat de Munsellkleuren 10R 8/2, 2.5YR 8/2, 5YR 8/2, 7.5YR 8.5/2 en 7.5YR 8/2 (pinkish white). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>wit</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Wit omvat de Munsellkleuren 10R 8/1, 10YR 8.5/1, 10YR 8/1, 10YR 9.5/1, 10YR 9/1, 2.5Y 8.5/1, 2.5Y 8/1, 2.5Y 9.5/1, 2.5Y 9/1, 2.5YR 8/1, 5R 8/1, 5Y 8/1, 5YR 8/1, 7.5R 8/1, 7.5YR 8.5/1, 7.5YR 8/1, 7.5YR 9.5/1, 7.5YR 9/1, N 8.5/, N 8/ en N 9/, N9.5/ (white). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>witBlauw</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>WitBlauw omvat de Munsellkleur 5B 8/2 (very pale blue). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>witBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>WitBruin omvat de Munsellkleuren 10YR 7/3, 10YR 7/4, 10YR 8.5/2, 10YR 8/2, 10YR 8/3, en 10YR 8/4 (very pale brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>witGeel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>WitGeel omvat de Munsellkleuren 2.5Y 9.5/2 en 2.5Y 9/2 (very pale yellow). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>zwart</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Zwart omvat de Munsellkleuren 10YR 2/1, 2.5Y 2.5/1, 5Y 2.5/1, 5Y 2.5/2, 5YR 2.5/1, N 1/ en 7.5YR 2.5/1 (black). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>zwartBruin</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>ZwartBruin omvat de Munsellkleuren 10YR 2/2 (very dark brown), 10YR 3/2, 2.5Y 3/2 very dark grayish brown, 7.5YR 2.5/2 en 7.5YR 2.5/3 (very dark brown). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>zwartGrijs</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>ZwartGrijs omvat de Munsellkleuren 10YR 3/1, 2.5Y 3/1, 5Y 3/1, 5YR 3/1, 7.5YR 3/1 en N 3/ (very dark gray), N 2/ (grayish black). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>zwartGroen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>ZwartGroen omvat de Munsellkleuren 10BG 3/1, 10G 3/1, 10GY 3/1, 5BG 3/1 (very dark greenish gray), 5G 2.5/2 en 5G 3/2 (very dark grayish green). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>zwartOlijf</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>ZwartOlijf omvat de Munsellkleuren 10Y 3/2 (very dark grayish olive). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>zwartRood</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>ZwartRood omvat de Munsellkleuren 5R 2.5/1, 7.5R 2.5/1 (reddish black), 5R 2/2 (blackish red) en 5R 2/6 (very dark red). Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht onder IMBRO/A is de vertaling naar de Munsellkleur niet van toepassing.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>blauwBruin</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>BlauwBruin zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>bruinBlauw</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>BruinBlauw zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>bruinGrijs</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>BruinGrijs zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>bruinGroen</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>BruinGroen zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>bruinOranje</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>BruinOranje zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>bruinPaars</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>BruinPaars zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>bruinWit</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>BruinWit zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerblauw</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Donkerblauw zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerbruinGeel</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkerbruinGeel zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerbruinGrijs</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkerbruinGrijs zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerbruinGroen</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkerbruinGroen zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkerbruinZwart</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkerbruinZwart zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergeel</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Donkergeel zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergeelGrijs</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkergeelGrijs zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergrijsBlauw</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkergrijsBlauw zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergrijsGeel</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkergrijsGeel zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergrijsRood</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkergrijsRood zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkergroen</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Donkergroen zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>donkeroranjeBruin</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>DonkeroranjeBruin zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>geelBlauw</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GeelBlauw zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>geelGrijs</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GeelGrijs zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>grijsGeel</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GrijsGeel zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>grijsOranje</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GrijsOranje zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>grijsWit</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GrijsWit zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>groenBruin</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GroenBruin zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>groenRood</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GroenRood zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>groenWit</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>GroenWit zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtbruinGeel</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtbruinGeel zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgeel</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Lichtgeel zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgeelGrijs</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtgeelGrijs zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtgrijsWit</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtgrijsWit zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtOranje</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtOranje zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtroodGeel</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtroodGeel zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>lichtwitGrijs</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>LichtwitGrijs zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>onbekend</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De kleur is niet bekend.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>oranje</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Oranje zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>oranjeBlauw</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>OranjeBlauw zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>oranjeGeel</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>OranjeGeel zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>oranjeGrijs</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>OranjeGrijs zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>oranjeGroen</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>OranjeGroen zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>oranjeRood</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>OranjeRood zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>paars</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Paars zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>paarsGrijs</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>PaarsGrijs zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>witGrijs</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>WitGrijs zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>zwartBlauw</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>ZwartBlauw zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+	<Kleur>
+		<Waarde>zwartGeel</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>ZwartGeel zoals gebruikt voor archiefgegevens.</Omschrijving>
+	</Kleur>
+</domeintabel>

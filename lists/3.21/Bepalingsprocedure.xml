@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bepalingsprocedure>
+		<Waarde>GDNpraktijkrichtlijnv2023_waterdoorlatendheid</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving><i>Praktijkrichtlijn Geologische Dienst Nederland</i>, versie 2023 beschrijft in het deel waterdoorlatendheid de procedure voor het bepalen van de verzadigde waterdoorlatendheid.</Omschrijving>
+	</Bepalingsprocedure>
+	<Bepalingsprocedure>
+		<Waarde>EN15936v2012</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>NEN-EN 15936:2012 <i>Slib, behandeld biologisch afval, bodem en afval – Bepaling van de totale organische koolstof (TOC) door droge verbranding</i> beschrijft de procedure voor het bepalen van het organisch koolstofgehalte. Een Europese norm geaccepteerd door Nederland.</Omschrijving>
+	</Bepalingsprocedure>
+	<Bepalingsprocedure>
+		<Waarde>ISO13320v2009</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>NEN-ISO 13320:2009 <i>Analyse van de deeltjesgrootteverdeling - Methoden met laserdiffractie</i> beschrijft de procedure voor het bepalen van de korrelgrootteverdeling door middel van laserdiffractie. Een internationale norm geaccepteerd door Nederland.</Omschrijving>
+	</Bepalingsprocedure>
+	<Bepalingsprocedure>
+		<Waarde>ISO14688d2v2019NEN8990v2020</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>NEN-EN-ISO 14688-2:2019+NEN 8990:2020 <i>Geotechnisch onderzoek en beproeving - Identificatie en classificatie van grond - Deel 2: Grondslagen voor een classificatie + NEN 8991:2020 Geotechnisch onderzoek en beproeving – Identificatie en classificatie van grond – Nederlandse aanvulling op NEN-EN-ISO 14688-2</i> beschrijft de zogenaamde classificatieproeven. De uitwerking van de bepaling van het organischestofgehalte en het kalkgehalte zijn in de Nederlandse bijlage opgenomen.</Omschrijving>
+	</Bepalingsprocedure>
+	<Bepalingsprocedure>
+		<Waarde>ISO15178v2000</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>ISO 15178:2000 <i>Soil quality - Determination of total sulfur by dry combustion</i> beschrijft de procedure voor het bepalen van het zwavelgehalte.</Omschrijving>
+	</Bepalingsprocedure>
+	<Bepalingsprocedure>
+		<Waarde>ISO17892d1v2014</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>NEN-EN-ISO 17892-1:2014 <i>Geotechnisch onderzoek en beproeving - Beproeving van grond in het laboratorium - Deel 1: Bepaling van het watergehalte</i> beschrijft de procedure voor het bepalen van het watergehalte door middel van drogen. Een internationale norm geaccepteerd door Europa en Nederland.</Omschrijving>
+	</Bepalingsprocedure>
+	<Bepalingsprocedure>
+		<Waarde>ISO17892d2v2014</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>NEN-EN-ISO 17892-2:2014 <i>Geotechnisch onderzoek en beproeving - Beproeving van grond in het laboratorium - Deel 2: Bepaling van de dichtheid van fijn korrelige grond</i> beschrijft de procedure voor het bepalen van de volumieke massa en de droge volumieke massa. Een internationale norm geaccepteerd door Europa en Nederland.</Omschrijving>
+	</Bepalingsprocedure>
+	<Bepalingsprocedure>
+		<Waarde>ISO17892d3v2016</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>NEN-EN-ISO 17892-3:2016 <i>Geotechnisch onderzoek en beproeving - Beproeving van grond in het laboratorium - Deel 3: Bepaling van de dichtheid van gronddeeltjes </i>beschrijft de procedure voor het bepalen van volumieke massa van de vaste delen met de gas- en vloeistofpyknometer. Een internationale norm geaccepteerd door Europa en Nederland.</Omschrijving>
+	</Bepalingsprocedure>
+	<Bepalingsprocedure>
+		<Waarde>ISO17892d4v2016</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>NEN-EN-ISO 17892-4:2016 <i>Geotechnisch onderzoek en beproeving - Beproeving van grond in het laboratorium - Deel 4: Bepaling van de korrelgrootte verdeling</i> beschrijft de procedure voor het bepalen van de korrelgrootteverdeling van fracties door middel van natte zeving over de 63µm-zeef, droge zeving voor fracties groter dan 63 µm en voor de fracties kleiner dan 63 µm met de hydrometer en de pipetmethode. Een internationale norm geaccepteerd door Europa en Nederland.</Omschrijving>
+	</Bepalingsprocedure>
+	<Bepalingsprocedure>
+		<Waarde>ISO17892d11v2019</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>NEN-EN 15936:2012 <i>Slib, behandeld biologisch afval, bodem en afval - Bepaling van de totale organische koolstof door droge verbranding</i> en beschrijft de procedure voor het bepalen van het organische koolstofgehalte.</Omschrijving>
+	</Bepalingsprocedure>
+</domeintabel>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bontheid>
+		<Waarde>nietBont</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De fractie bestaat voor meer dan 99 % van het volume uit korrels die doorschijnend, wit, licht- tot donkergrijs of zwart zijn.</Omschrijving>
+	</Bontheid>
+	<Bontheid>
+		<Waarde>matigBont</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De fractie bestaat voor minimaal 90 en minder dan 99 % van het volume uit korrels die doorschijnend, wit, licht- tot donkergrijs of zwart zijn.</Omschrijving>
+	</Bontheid>
+	<Bontheid>
+		<Waarde>zeerBont</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De fractie bestaat voor minder dan 90 % van het volume uit korrels die doorschijnend, wit, licht- tot donkergrijs of zwart zijn.</Omschrijving>
+	</Bontheid>
+	<Bontheid>
+		<Waarde>nietBontArchief</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De fractie is niet bont. Het is niet bekend hoe de bontheid is bepaald, en wat het precies betekent. De aanduiding moet beschouwd worden als indicatief.</Omschrijving>
+	</Bontheid>
+	<Bontheid>
+		<Waarde>matigBontArchief</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De fractie is matig bont. Het is niet bekend hoe de bontheid is bepaald, en wat het precies betekent. De aanduiding moet beschouwd worden als indicatief.</Omschrijving>
+	</Bontheid>
+	<Bontheid>
+		<Waarde>zeerBontArchief</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De fractie is zeer bont. Het is niet bekend hoe de bontheid is bepaald, en wat het precies betekent. De aanduiding moet beschouwd worden als indicatief.</Omschrijving>
+	</Bontheid>
+	<Bontheid>
+		<Waarde>onbekend</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het aandeel kleurige korrels is niet bekend.</Omschrijving>
+	</Bontheid>
+</domeintabel>

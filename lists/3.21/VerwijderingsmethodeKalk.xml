@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerwijderingsmethodeKalk>
+		<Waarde>handmatig</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Koolzure kalk is handmatig verwijderd en enkel grove bestanddelen zijn verwijderd.</Omschrijving>
+	</VerwijderingsmethodeKalk>
+	<VerwijderingsmethodeKalk>
+		<Waarde>HCL_0.5M</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Koolzure kalk is verwijderd met HCL (0,5 M).</Omschrijving>
+	</VerwijderingsmethodeKalk>
+	<VerwijderingsmethodeKalk>
+		<Waarde>nietVerwijderd</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Koolzure kalk is niet verwijderd.</Omschrijving>
+	</VerwijderingsmethodeKalk>
+</domeintabel>

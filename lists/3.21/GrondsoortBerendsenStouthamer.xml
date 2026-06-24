@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>stenen</Waarde>
+		<Categorie>zeer grove grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die voor meer dan 50 % van de massa uit stenen (diameter 64 tot 100 mm) bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>keien</Waarde>
+		<Categorie>zeer grove grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die voor meer dan 50 % van de massa uit keien (diameter 100 tot 500 mm) bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>blokken</Waarde>
+		<Categorie>zeer grove grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die voor meer dan 50 % van de massa uit blokken (diameter groter dan 500 mm) bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>sterkZandigGrind</Waarde>
+		<Categorie>grindrijke minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die voor 50 tot 80 % van de massa uit grind bestaat, waarvan in het resterende gedeelte het aandeel zand groter is dan het aandeel silt plus lutum en die niet veel organische stof bevat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>matigZandigGrind</Waarde>
+		<Categorie>grindrijke minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die voor 80 tot 90 % van de massa uit grind bestaat, waarvan in het resterende gedeelte het aandeel zand groter is dan het aandeel silt plus lutum en die niet veel organische stof bevat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>zwakZandigGrind</Waarde>
+		<Categorie>grindrijke minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die voor meer dan 90 % van massa uit grind bestaat, waarvan in het resterende gedeelte het aandeel zand groter is dan het aandeel silt plus lutum en die niet veel organische stof bevat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>grindNietGespecificeerd</Waarde>
+		<Categorie>grindrijke minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die voor meer dan 50 % van de massa uit grind bestaat, waarvan het aandeel silt plus lutum en zand niet bekend is en die niet veel organische stof bevat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>mineraalarmVeen</Waarde>
+		<Categorie>organische grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die voor meer dan 35 % uit organisch materiaal,  minder dan 30 % uit lutum en voor minder dan 65 % uit silt plus zand bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>zandigVeen</Waarde>
+		<Categorie>organische grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die voor 22,5 tot 40 % uit organisch materiaal, minder dan 7 % uit lutum en 53 tot 77,5 % uit silt plus zand bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>kleiigVeen</Waarde>
+		<Categorie>organische grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die voor 25 tot 70 % uit organisch materiaal, 7 % tot 55 % uit lutum en minder dan 70 % uit silt + zand bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>venigZand</Waarde>
+		<Categorie>organische grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die voor 70 tot 85 % uit silt + zand, 15 tot 25 % uit organisch materiaal en minder dan 7 % uit lutum bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>venigeKlei</Waarde>
+		<Categorie>organische grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die voor 7 tot 70 % uit lutum, minder dan 77,5 % uit silt + zand en 15 tot 45 % uit organisch materiaal bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>zeerZwareKlei</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor meer dan 50 % uit lutum bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>matigZwareKlei</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor 35 tot 50 % uit lutum bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>lichteKlei</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor 25 tot 35 % uit lutum, minder dan 70 % uit silt en minder dan 75 % uit zand bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>zwareZavel</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor 12,5 tot 82,5 % uit zand, 17,5 tot 25 % uit lutum en minder dan 62,5 % uit silt bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>matigLichteZavel</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor 30 tot 88 % uit zand, 12 tot 17,5 % uit lutum en minder dan 52,5 % uit silt bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>zeerLichteZavel</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor 40 tot 92 % uit zand, 8 tot 12 % uit lutum en minder dan 40 % uit silt bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>zeerSterkLemigZand</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor 50 tot 67,5 % uit zand en minder dan 8 % uit lutum bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>sterkLemigZand</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor 67,5 tot 82,5 % uit zand en minder dan 8 % uit lutum bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>zwakLemigZand</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor 82,5 tot 90 % uit zand en minder dan 8 % uit lutum bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>leemarmZand</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor meer dan 90 % uit zand en minder dan 8 % uit lutum bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>lemigZand</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor 50 tot 90 % uit zand en minder dan 8 % uit lutum bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>zandNietGespecificeerd</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor meer dan 50 % uit zand, minder dan 8 % uit lutum en minder dan 50  % uit silt bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>zwareSiltigeLeem</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor 62 tot 88 % uit silt, 12 tot 30 % uit lutum en minder dan 15 % uit zand bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>lichteSiltigeLeem</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor meer dan 72 % uit silt, minder dan 12 % uit lutum en minder dan 15% uit zand bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>siltigeLeem</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor meer dan 62 % uit silt, minder dan 30 % uit lutum en minder dan 15 % uit zand bestaat</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>zwareZandigeLeem</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor 42 tot 77 % uit silt, 15 tot 50 % uit zand en 8 tot 23 % uit lutum bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>lichteZandigeLeem</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor 42 tot 85 % uit silt, 15 tot 50 % uit zand en minder dan 8 % uit lutum bestaat.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+	<GrondsoortBerendsenStouthamer>
+		<Waarde>zandigeLeem</Waarde>
+		<Categorie>grindarme minerale grond</Categorie>
+		<IMBRO></IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Grond die minder dan 50 % grind en minder dan 30 % organisch materiaal bevat en waarvan de massa, als die twee bestanddelen worden uitgesloten, voor meer dan 42 % uit silt, minder dan 23 % uit lutum en 15 tot 50 % uit zand bestaat, maar waarvan de precieze verhouding tussen de hoeveelheden zand, silt en lutum niet goed in woorden is uit te drukken.</Omschrijving>
+	</GrondsoortBerendsenStouthamer>
+</domeintabel>
